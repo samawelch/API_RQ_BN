@@ -1,0 +1,71 @@
+---
+title: "Tiered Bayesian Risk Assessment of Estrogen Mixtures"
+output: html_notebook
+---
+
+
+```{r packages}
+library(tidyverse)
+library(lme4)
+library(readxl)
+library(drc)
+# Set wd to project folder
+
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+```
+
+
+# Input
+
+```{r data_input}
+# Sales per year, from our earlier work
+estrogen_sales_weights <- read_excel(path = "Data/Example_Estrogen_Sales.xlsx")
+# estrogen toxicity (adversity and MoA) from RaDB
+estrogen_toxicity_adversity <- read_excel(path = "Data/RaDB_Estrogen_Toxicity.xlsx", sheet = 3) %>% 
+# frustratingly, it's not possible to select discontinuous columns, so we have to do this
+  select("ET_SUM_EFF_PK", "DATA_SOURCE", "SAMPLE_MATRIX",
+"SPECIES_GROUP", 
+"TARGET", "TARGET_SYMBOL", "TEST_TYPE", "EFFECT_TYPE", "ENDPOINT", "TREND", "DATA_TYPE", "MEASURED_CATEGORY",  "STRESSOR_ID",   "STRESSOR_NAME", 
+"EC05_STD1", "EC95_STD1", "MEDIAN_STD1", "AVG_STD1", "STDEV_STD1", "SEM_STD1", "CONF_95_STD1", "MAX_STD1", "MIN_STD1", "MEASURED_UNIT_STD1",
+"COUNTER")
+estrogen_toxicity_MoA <- read_excel(path = "Data/RaDB_Estrogen_Toxicity.xlsx", sheet = 4)
+```
+
+# Exposure Distributions
+
+```{r linear_mixed_model}
+
+fit <- lmer(log(Sales_Weight_g) ~ -1 + API + (1 | Year), data = estrogen_example_data)
+summary(fit)
+
+exp(summary(fit)$coef[,"Estimate"])
+
+plot(fit)
+
+# Standard error = SD / sqrt(n)
+# Standard deviation = sqrt(var)
+# SE = sqrt(var) / sqrt (n)
+# sqrt(var) = SE *  sqrt (n)
+# var = (SE * sqrt(n)) ^ 2
+
+(0.1901 * sqrt(5)) ^ 2
+# = 0.18069
+
+```
+
+# Toxicity Distribution
+
+Mainly an experiment in visualising data from RaDB at this point
+
+```{r toxicity_visualisation}
+ee2_drc_data <- estrogen_toxicity_adversity[1,]
+# it didn't work, but I need to turn a StDev into a variance anyway
+8.100668e-07 ^ 2
+
+
+# How are the toxicity datas distributed
+estrogen_toxicity_adversity %>% 
+  ggplot(mapping = aes(x = AVG_STD1, fill = SAMPLE_MATRIX)) +
+   geom_histogram(bins = 5) +
+  facet_wrap(facets = vars(TARGET, SAMPLE_MATRIX), scales = "fixed" )
+```

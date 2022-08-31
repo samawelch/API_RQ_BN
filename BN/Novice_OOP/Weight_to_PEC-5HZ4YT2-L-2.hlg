@@ -1,0 +1,335 @@
+Using model for API_RQ to generate a conditional probability table
+Node API_RQ does not have a (unique) state labeled `HR_Syntax_Error:'
+Tue Mar  8 09:51:41 2022
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    Wastewater_Production
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    Norway_Pop
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    API_TU_Invertebrates
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_TU_Algae
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_TU_Fish
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_RQ
+This component is a clique of cost 6
+
+Triangulating prime component with 1 member:
+    API_Sales_Weight
+This component is a clique of cost 5
+
+
+Total cost of triangulation for all prime components is 28
+
+
+Elimination sequence:
+
+    API_RQ
+    API_Sales_Weight
+    Wastewater_Production
+    Norway_Pop
+    API_TU_Invertebrates
+    API_TU_Algae
+    API_TU_Fish
+
+
+Cliques:
+
+Clique 7, 1 member, table size = 5:
+    API_Sales_Weight
+
+Clique 6, 1 member, table size = 6:
+    API_RQ
+
+Clique 5, 1 member, table size = 3:
+    API_TU_Fish
+
+Clique 4, 1 member, table size = 3:
+    API_TU_Algae
+
+Clique 3, 1 member, table size = 3:
+    API_TU_Invertebrates
+
+Clique 2, 1 member, table size = 4:
+    Norway_Pop
+
+Clique 1, 1 member, table size = 4:
+    Wastewater_Production
+
+Total clique table size: 28
+
+
+The junction forest:
+
+Creating junction tree with clique 7 as root ...
+
+Creating junction tree with clique 6 as root ...
+
+Creating junction tree with clique 5 as root ...
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node Wastewater_Production assigned to clique 1
+    Node Norway_Pop assigned to clique 2
+    Node API_TU_Invertebrates assigned to clique 3
+    Node API_TU_Algae assigned to clique 4
+    Node API_TU_Fish assigned to clique 5
+    Node API_RQ assigned to clique 6
+    Node API_Sales_Weight assigned to clique 7
+
+
+Checking conditional probability potentials:
+
+    No errors found
+Using model for API_RQ to generate a conditional probability table
+Node API_RQ does not have a (unique) state labeled `HR_Syntax_Error:'
+Using model for API_RQ to generate a conditional probability table
+Node API_RQ does not have a (unique) state labeled `HR_Syntax_Error:'
+Tue Mar  8 09:53:21 2022
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    Wastewater_Production
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    Norway_Pop
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    API_TU_Invertebrates
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_TU_Algae
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_TU_Fish
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_RQ
+This component is a clique of cost 6
+
+Triangulating prime component with 1 member:
+    API_Sales_Weight
+This component is a clique of cost 5
+
+
+Total cost of triangulation for all prime components is 28
+
+
+Elimination sequence:
+
+    API_RQ
+    API_Sales_Weight
+    Wastewater_Production
+    Norway_Pop
+    API_TU_Invertebrates
+    API_TU_Algae
+    API_TU_Fish
+
+
+Cliques:
+
+Clique 7, 1 member, table size = 5:
+    API_Sales_Weight
+
+Clique 6, 1 member, table size = 6:
+    API_RQ
+
+Clique 5, 1 member, table size = 3:
+    API_TU_Fish
+
+Clique 4, 1 member, table size = 3:
+    API_TU_Algae
+
+Clique 3, 1 member, table size = 3:
+    API_TU_Invertebrates
+
+Clique 2, 1 member, table size = 4:
+    Norway_Pop
+
+Clique 1, 1 member, table size = 4:
+    Wastewater_Production
+
+Total clique table size: 28
+
+
+The junction forest:
+
+Creating junction tree with clique 7 as root ...
+
+Creating junction tree with clique 6 as root ...
+
+Creating junction tree with clique 5 as root ...
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node Wastewater_Production assigned to clique 1
+    Node Norway_Pop assigned to clique 2
+    Node API_TU_Invertebrates assigned to clique 3
+    Node API_TU_Algae assigned to clique 4
+    Node API_TU_Fish assigned to clique 5
+    Node API_RQ assigned to clique 6
+    Node API_Sales_Weight assigned to clique 7
+
+
+Checking conditional probability potentials:
+
+    No errors found
+Using model for API_RQ to generate a conditional probability table
+Evaluation of function node API_PEC failed
+Using model for API_RQ to generate a conditional probability table
+Evaluation of function node API_PEC failed
+Tue Mar  8 09:56:47 2022
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    Wastewater_Production
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    Norway_Pop
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    API_TU_Invertebrates
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_TU_Algae
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_TU_Fish
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    API_RQ
+This component is a clique of cost 6
+
+Triangulating prime component with 1 member:
+    API_Sales_Weight
+This component is a clique of cost 5
+
+
+Total cost of triangulation for all prime components is 28
+
+
+Elimination sequence:
+
+    API_RQ
+    API_Sales_Weight
+    Wastewater_Production
+    Norway_Pop
+    API_TU_Invertebrates
+    API_TU_Algae
+    API_TU_Fish
+
+
+Cliques:
+
+Clique 7, 1 member, table size = 5:
+    API_Sales_Weight
+
+Clique 6, 1 member, table size = 6:
+    API_RQ
+
+Clique 5, 1 member, table size = 3:
+    API_TU_Fish
+
+Clique 4, 1 member, table size = 3:
+    API_TU_Algae
+
+Clique 3, 1 member, table size = 3:
+    API_TU_Invertebrates
+
+Clique 2, 1 member, table size = 4:
+    Norway_Pop
+
+Clique 1, 1 member, table size = 4:
+    Wastewater_Production
+
+Total clique table size: 28
+
+
+The junction forest:
+
+Creating junction tree with clique 7 as root ...
+
+Creating junction tree with clique 6 as root ...
+
+Creating junction tree with clique 5 as root ...
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node Wastewater_Production assigned to clique 1
+    Node Norway_Pop assigned to clique 2
+    Node API_TU_Invertebrates assigned to clique 3
+    Node API_TU_Algae assigned to clique 4
+    Node API_TU_Fish assigned to clique 5
+    Node API_RQ assigned to clique 6
+    Node API_Sales_Weight assigned to clique 7
+
+
+Checking conditional probability potentials:
+
+    No errors found
+Using model for API_RQ to generate a conditional probability table
+Evaluation of function node API_PEC failed
+Using model for API_RQ to generate a conditional probability table
+Evaluation of function node API_PEC failed

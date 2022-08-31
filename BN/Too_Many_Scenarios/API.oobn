@@ -1,0 +1,331 @@
+class API
+{
+    inputs = (Dilution_Factor WW_Consumption Population Demographic_Factor API_WWTP_Removal API_Metabolic_Removal Year);
+    outputs = (API_RQ API_PEC_Effluent API_PEC_SW API_PEC_Influent);
+    node_size = (80 40);
+    HR_Instantiated_in = "";
+    HR_DBN_Num_Slices = "5";
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "81";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Utility_Link = "63";
+    HR_Probabilistic_Link = "63";
+    HR_Functional_Link = "63";
+    HR_Binding_Link = "63";
+    HR_Information_Arc = "63";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_DiscreteFunction = "5";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    node Year
+    {
+	label = "";
+	position = (275 137);
+	states = ("State 1" "State 2");
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[API_Weight_Sold:0]";
+	HR_LinkMode = "[API_Weight_Sold:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Group = "0";
+    }
+
+    node API_PEC_SW
+    {
+	label = "";
+	position = (550 677);
+	states = ("State 1" "State 2");
+	HR_LinkGroup = "[API_RQ:0]";
+	HR_LinkMode = "[API_RQ:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Group = "0";
+    }
+
+    node API_PEC_Effluent
+    {
+	label = "";
+	position = (548 542);
+	states = ("State 1" "State 2");
+	HR_NodeSize = "(189, 120)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[API_PEC_SW:0]";
+	HR_LinkGroup = "[API_PEC_SW:0]";
+	HR_LinkControlPoints = "";
+	HR_Group = "0";
+    }
+
+    node API_Metabolic_Removal
+    {
+	label = "";
+	position = (285 281);
+	states = ("State 1" "State 2");
+	HR_LinkControlPoints = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[API_PEC:0]";
+	HR_LinkGroup = "[API_PEC_Influent:0]";
+	HR_Group = "0";
+    }
+
+    node API_WWTP_Removal
+    {
+	label = "";
+	position = (276 544);
+	states = ("State 1" "State 2");
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[API_PEC_Effluent:0]";
+	HR_LinkMode = "[API_PEC:0][API_PEC_Effluent:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Group = "0";
+    }
+
+    node Demographic_Factor
+    {
+	label = "";
+	position = (833 203);
+	states = ("State 1" "State 2");
+	HR_NodeSize = "(189, 120)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "";
+	HR_LinkGroup = "";
+	HR_LinkControlPoints = "";
+	HR_Group = "0";
+    }
+
+    node Population
+    {
+	label = "";
+	position = (832 315);
+	states = ("State 1" "State 2");
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[Demographic_Factor:0][API_Weight_Sold:0]";
+	HR_LinkMode = "[Demographic_Factor:0][API_Weight_Sold:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Group = "0";
+    }
+
+    node WW_Consumption
+    {
+	label = "";
+	position = (833 424);
+	states = ("State 1" "State 2");
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[API_PEC_Influent:0]";
+	HR_LinkMode = "[API_PEC:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Group = "0";
+    }
+
+    node Dilution_Factor
+    {
+	label = "";
+	position = (835 669);
+	states = ("" "" "" "" "");
+	subtype = interval;
+	state_values = (0 0.1 1 10 100 1000);
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_LinkControlPoints = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[API_PEC_SW:0]";
+	HR_LinkGroup = "[API_PEC_SW:0]";
+	HR_Group = "0";
+    }
+
+    node API_RQ
+    {
+	label = "";
+	position = (546 812);
+	states = ("State 1" "State 2");
+	HR_NodeSize = "(189, 120)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "";
+	HR_LinkGroup = "";
+	HR_Group = "0";
+    }
+
+    node API_PEC_Influent
+    {
+	label = "";
+	position = (542 394);
+	states = ("State 1" "State 2");
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[API_PEC_Effluent:0]";
+	HR_LinkMode = "[API_PEC_Effluent:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Group = "0";
+    }
+
+    node API_Weight_Sold
+    {
+	label = "";
+	position = (542 202);
+	states = ("State 1" "State 2");
+	HR_LinkControlPoints = "";
+	HR_NodeSize = "(189, 120)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[API_PEC:0]";
+	HR_LinkGroup = "[API_PEC_Influent:0]";
+	HR_Group = "0";
+    }
+
+    potential (Year)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (API_PEC_SW | Dilution_Factor API_PEC_Effluent)
+    {
+	data = ((( 1 1 )	%  Dilution_Factor=interval(0,0.1)  API_PEC_Effluent=State 1
+		 ( 1 1 ))	%  Dilution_Factor=interval(0,0.1)  API_PEC_Effluent=State 2
+		(( 1 1 )	%  Dilution_Factor=interval(0.1,1)  API_PEC_Effluent=State 1
+		 ( 1 1 ))	%  Dilution_Factor=interval(0.1,1)  API_PEC_Effluent=State 2
+		(( 1 1 )	%  Dilution_Factor=interval(1,10)  API_PEC_Effluent=State 1
+		 ( 1 1 ))	%  Dilution_Factor=interval(1,10)  API_PEC_Effluent=State 2
+		(( 1 1 )	%  Dilution_Factor=interval(10,100)  API_PEC_Effluent=State 1
+		 ( 1 1 ))	%  Dilution_Factor=interval(10,100)  API_PEC_Effluent=State 2
+		(( 1 1 )	%  Dilution_Factor=interval(100,1000)  API_PEC_Effluent=State 1
+		 ( 1 1 )));	%  Dilution_Factor=interval(100,1000)  API_PEC_Effluent=State 2
+    }
+
+    potential (API_PEC_Effluent | API_PEC_Influent API_WWTP_Removal)
+    {
+	data = ((( 1 1 )	%  API_PEC_Influent=State 1  API_WWTP_Removal=State 1
+		 ( 1 1 ))	%  API_PEC_Influent=State 1  API_WWTP_Removal=State 2
+		(( 1 1 )	%  API_PEC_Influent=State 2  API_WWTP_Removal=State 1
+		 ( 1 1 )));	%  API_PEC_Influent=State 2  API_WWTP_Removal=State 2
+    }
+
+    potential (API_Metabolic_Removal)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (API_WWTP_Removal)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (Demographic_Factor)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (Population)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (WW_Consumption)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (Dilution_Factor)
+    {
+	data = ( 1 1 1 1 1 );
+    }
+
+    potential (API_RQ | API_PEC_SW)
+    {
+	data = (( 1 1 )	%  API_PEC_SW=State 1
+		( 1 1 ));	%  API_PEC_SW=State 2
+    }
+
+    potential (API_PEC_Influent | API_Metabolic_Removal Population WW_Consumption API_Weight_Sold)
+    {
+	data = ((((( 1 1 )	%  API_Metabolic_Removal=State 1  Population=State 1  WW_Consumption=State 1  API_Weight_Sold=State 1
+		   ( 1 1 ))	%  API_Metabolic_Removal=State 1  Population=State 1  WW_Consumption=State 1  API_Weight_Sold=State 2
+		  (( 1 1 )	%  API_Metabolic_Removal=State 1  Population=State 1  WW_Consumption=State 2  API_Weight_Sold=State 1
+		   ( 1 1 )))	%  API_Metabolic_Removal=State 1  Population=State 1  WW_Consumption=State 2  API_Weight_Sold=State 2
+		 ((( 1 1 )	%  API_Metabolic_Removal=State 1  Population=State 2  WW_Consumption=State 1  API_Weight_Sold=State 1
+		   ( 1 1 ))	%  API_Metabolic_Removal=State 1  Population=State 2  WW_Consumption=State 1  API_Weight_Sold=State 2
+		  (( 1 1 )	%  API_Metabolic_Removal=State 1  Population=State 2  WW_Consumption=State 2  API_Weight_Sold=State 1
+		   ( 1 1 ))))	%  API_Metabolic_Removal=State 1  Population=State 2  WW_Consumption=State 2  API_Weight_Sold=State 2
+		(((( 1 1 )	%  API_Metabolic_Removal=State 2  Population=State 1  WW_Consumption=State 1  API_Weight_Sold=State 1
+		   ( 1 1 ))	%  API_Metabolic_Removal=State 2  Population=State 1  WW_Consumption=State 1  API_Weight_Sold=State 2
+		  (( 1 1 )	%  API_Metabolic_Removal=State 2  Population=State 1  WW_Consumption=State 2  API_Weight_Sold=State 1
+		   ( 1 1 )))	%  API_Metabolic_Removal=State 2  Population=State 1  WW_Consumption=State 2  API_Weight_Sold=State 2
+		 ((( 1 1 )	%  API_Metabolic_Removal=State 2  Population=State 2  WW_Consumption=State 1  API_Weight_Sold=State 1
+		   ( 1 1 ))	%  API_Metabolic_Removal=State 2  Population=State 2  WW_Consumption=State 1  API_Weight_Sold=State 2
+		  (( 1 1 )	%  API_Metabolic_Removal=State 2  Population=State 2  WW_Consumption=State 2  API_Weight_Sold=State 1
+		   ( 1 1 )))));	%  API_Metabolic_Removal=State 2  Population=State 2  WW_Consumption=State 2  API_Weight_Sold=State 2
+    }
+
+    potential (API_Weight_Sold | Year Population Demographic_Factor)
+    {
+	data = (((( 1 1 )	%  Year=State 1  Population=State 1  Demographic_Factor=State 1
+		  ( 1 1 ))	%  Year=State 1  Population=State 1  Demographic_Factor=State 2
+		 (( 1 1 )	%  Year=State 1  Population=State 2  Demographic_Factor=State 1
+		  ( 1 1 )))	%  Year=State 1  Population=State 2  Demographic_Factor=State 2
+		((( 1 1 )	%  Year=State 2  Population=State 1  Demographic_Factor=State 1
+		  ( 1 1 ))	%  Year=State 2  Population=State 1  Demographic_Factor=State 2
+		 (( 1 1 )	%  Year=State 2  Population=State 2  Demographic_Factor=State 1
+		  ( 1 1 ))));	%  Year=State 2  Population=State 2  Demographic_Factor=State 2
+    }
+} % class API

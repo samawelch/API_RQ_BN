@@ -1,0 +1,925 @@
+Using model for API_TU_F to generate a conditional probability table
+Using model for API_RQ to generate a conditional probability table
+Using model for API_PEC to generate a conditional probability table
+Thu Mar 10 07:30:13 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 4
+
+
+Total cost of triangulation for all prime components is 14
+
+
+Elimination sequence:
+
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PNEC
+    API_RQ
+    API_PEC
+
+
+Cliques:
+
+Clique 3, 3 members, table size = 4:
+    API_PEC, API_RQ, API_PNEC
+
+Clique 2, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 1, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Total clique table size: 14
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 1 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+
+Assignment of potentials to cliques:
+
+    Node API_EC50_F assigned to clique 2
+    Node API_TU_F assigned to clique 2
+    Node Population assigned to clique 1
+    Node Wastewater assigned to clique 1
+    Node API_RQ assigned to clique 3
+    Node API_Sales assigned to clique 1
+    Node API_PEC assigned to clique 1
+    Node API_PNEC assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    API_EC50_F --> 100
+
+    API_TU_F --> #0
+
+    Population --> 5.28
+
+    Wastewater --> 180
+
+    API_RQ --> #0
+
+    API_Sales:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    API_PEC --> #0
+
+    API_PNEC --> 100
+Using model for API_TU_F to generate a conditional probability table
+Using model for API_RQ to generate a conditional probability table
+Thu Mar 10 07:34:05 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 4
+
+
+Total cost of triangulation for all prime components is 14
+
+
+Elimination sequence:
+
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PNEC
+    API_RQ
+    API_PEC
+
+
+Cliques:
+
+Clique 3, 3 members, table size = 4:
+    API_PEC, API_RQ, API_PNEC
+
+Clique 2, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 1, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Total clique table size: 14
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 1 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+
+Assignment of potentials to cliques:
+
+    Node API_EC50_F assigned to clique 2
+    Node API_TU_F assigned to clique 2
+    Node Population assigned to clique 1
+    Node Wastewater assigned to clique 1
+    Node API_RQ assigned to clique 3
+    Node API_Sales assigned to clique 1
+    Node API_PEC assigned to clique 1
+    Node API_PNEC assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    API_EC50_F --> 2
+
+    API_TU_F --> #0
+
+    Population --> 5.28
+
+    Wastewater --> 180
+
+    API_RQ --> #0
+
+    API_Sales:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    API_PEC --> #0
+
+    API_PNEC --> 1
+Thu Mar 10 07:34:24 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 4
+
+
+Total cost of triangulation for all prime components is 14
+
+
+Elimination sequence:
+
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PNEC
+    API_RQ
+    API_PEC
+
+
+Cliques:
+
+Clique 3, 3 members, table size = 4:
+    API_PEC, API_RQ, API_PNEC
+
+Clique 2, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 1, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Total clique table size: 14
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 1 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+
+Assignment of potentials to cliques:
+
+    Node API_EC50_F assigned to clique 2
+    Node API_TU_F assigned to clique 2
+    Node Population assigned to clique 1
+    Node Wastewater assigned to clique 1
+    Node API_RQ assigned to clique 3
+    Node API_Sales assigned to clique 1
+    Node API_PEC assigned to clique 1
+    Node API_PNEC assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    API_EC50_F --> 2
+
+    API_TU_F --> #0
+
+    Population --> 5.28
+
+    Wastewater --> 180
+
+    API_RQ --> #0
+
+    API_Sales:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    API_PEC --> #0
+
+    API_PNEC --> 1
+Thu Mar 10 07:35:04 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 4
+
+
+Total cost of triangulation for all prime components is 14
+
+
+Elimination sequence:
+
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PNEC
+    API_RQ
+    API_PEC
+
+
+Cliques:
+
+Clique 3, 3 members, table size = 4:
+    API_PEC, API_RQ, API_PNEC
+
+Clique 2, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 1, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Total clique table size: 14
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 1 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+
+Assignment of potentials to cliques:
+
+    Node API_EC50_F assigned to clique 2
+    Node API_TU_F assigned to clique 2
+    Node Population assigned to clique 1
+    Node Wastewater assigned to clique 1
+    Node API_RQ assigned to clique 3
+    Node API_Sales assigned to clique 1
+    Node API_PEC assigned to clique 1
+    Node API_PNEC assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    API_EC50_F --> 2
+
+    API_TU_F --> #0
+
+    Population --> 5.28
+
+    Wastewater --> 180
+
+    API_RQ --> #0
+
+    API_Sales:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    API_PEC --> #0
+
+    API_PNEC --> 1
+Using model for API_RQ to generate a conditional probability table
+Thu Mar 10 07:35:34 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 8
+
+
+Total cost of triangulation for all prime components is 18
+
+
+Elimination sequence:
+
+    API_PNEC
+    API_RQ
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PEC
+
+
+Cliques:
+
+Clique 3, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 2, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Clique 1, 3 members, table size = 8:
+    API_PEC, API_RQ, API_PNEC
+
+Total clique table size: 18
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 1 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+
+Assignment of potentials to cliques:
+
+    Node API_EC50_F assigned to clique 3
+    Node API_TU_F assigned to clique 3
+    Node Population assigned to clique 2
+    Node Wastewater assigned to clique 2
+    Node API_RQ assigned to clique 1
+    Node API_Sales assigned to clique 2
+    Node API_PEC assigned to clique 2
+    Node API_PNEC assigned to clique 1
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    API_EC50_F --> 2
+
+    API_TU_F --> #0
+
+    Population --> 5.28
+
+    Wastewater --> 180
+
+    API_RQ --> #0
+
+    API_Sales:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    API_PEC --> #0
+
+    API_PNEC:
+	state0   0.5
+	state1   0.5
+Using model for API_RQ to generate a conditional probability table
+Thu Mar 10 07:35:50 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 4
+
+
+Total cost of triangulation for all prime components is 14
+
+
+Elimination sequence:
+
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PNEC
+    API_RQ
+    API_PEC
+
+
+Cliques:
+
+Clique 3, 3 members, table size = 4:
+    API_PEC, API_RQ, API_PNEC
+
+Clique 2, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 1, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Total clique table size: 14
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 1 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+
+Assignment of potentials to cliques:
+
+    Node API_EC50_F assigned to clique 2
+    Node API_TU_F assigned to clique 2
+    Node Population assigned to clique 1
+    Node Wastewater assigned to clique 1
+    Node API_RQ assigned to clique 3
+    Node API_Sales assigned to clique 1
+    Node API_PEC assigned to clique 1
+    Node API_PNEC assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    API_EC50_F --> 2
+
+    API_TU_F --> #0
+
+    Population --> 5.28
+
+    Wastewater --> 180
+
+    API_RQ --> #0
+
+    API_Sales:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    API_PEC --> #0
+
+    API_PNEC --> 2
+Using model for API_TU_F_1 to generate a conditional probability table
+Invalid expression at index 0
+Using model for API_TU_F to generate a conditional probability table
+Value for node API_TU_F is out of bounds: 3.33333
+Using model for API_PEC to generate a conditional probability table
+Thu Mar 10 13:01:57 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    WWTP_Deg
+This component is a clique of cost 1
+
+Triangulating prime component with 2 members:
+    API_TU_F_1, EC50_F_Cont
+This component is a clique of cost 6
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 4
+
+
+Total cost of triangulation for all prime components is 21
+
+
+Elimination sequence:
+
+    EC50_F_Cont
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PNEC
+    API_RQ
+    API_PEC
+    API_TU_F_1
+    WWTP_Deg
+
+
+Cliques:
+
+Clique 5, 3 members, table size = 4:
+    API_PEC, API_RQ, API_PNEC
+
+Clique 4, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 3, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Clique 2, 2 members, table size = 2 + 4:
+    API_TU_F_1, EC50_F_Cont
+
+Clique 1, 1 member, table size = 1:
+    WWTP_Deg
+
+Total clique table size: 17 + 4
+
+
+The junction forest:
+
+Creating junction tree with clique 5 as root ...
+
+Cliques 4 and 5 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 3 and 5 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node WWTP_Deg assigned to clique 1
+    Node API_TU_F_1 assigned to clique 2
+    Node EC50_F_Cont assigned to clique 2
+    Node API_EC50_F assigned to clique 4
+    Node API_TU_F assigned to clique 4
+    Node Population assigned to clique 3
+    Node Wastewater assigned to clique 3
+    Node API_RQ assigned to clique 5
+    Node API_Sales assigned to clique 3
+    Node API_PEC assigned to clique 3
+    Node API_PNEC assigned to clique 5
+
+
+Checking conditional probability potentials:
+
+    No errors found
+Using model for API_TU_F_1 to generate a conditional probability table
+Invalid expression at index 0
+Using model for API_TU_F_1 to generate a conditional probability table
+Invalid expression at index 0
+Using model for API_TU_F to generate a conditional probability table
+Value for node API_TU_F is out of bounds: 3.33333
+Using model for API_TU_F to generate a conditional probability table
+Value for node API_TU_F is out of bounds: 3.33333
+Thu Mar 10 13:02:07 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Triangulating prime component with 1 member:
+    WWTP_Deg
+This component is a clique of cost 1
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 4
+
+
+Total cost of triangulation for all prime components is 15
+
+
+Elimination sequence:
+
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PNEC
+    API_RQ
+    API_PEC
+    WWTP_Deg
+
+
+Cliques:
+
+Clique 4, 3 members, table size = 4:
+    API_PEC, API_RQ, API_PNEC
+
+Clique 3, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 2, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Clique 1, 1 member, table size = 1:
+    WWTP_Deg
+
+Total clique table size: 15
+
+
+The junction forest:
+
+Creating junction tree with clique 4 as root ...
+
+Cliques 3 and 4 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 2 and 4 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node WWTP_Deg assigned to clique 1
+    Node API_EC50_F assigned to clique 3
+    Node API_TU_F assigned to clique 3
+    Node Population assigned to clique 2
+    Node Wastewater assigned to clique 2
+    Node API_RQ assigned to clique 4
+    Node API_Sales assigned to clique 2
+    Node API_PEC assigned to clique 2
+    Node API_PNEC assigned to clique 4
+
+
+Checking conditional probability potentials:
+
+    No errors found
+Using model for API_TU_F to generate a conditional probability table
+Value for node API_TU_F is out of bounds: 3.33333
+Using model for API_TU_F to generate a conditional probability table
+Value for node API_TU_F is out of bounds: 3.33333
+Using model for API_TU_F to generate a conditional probability table
+Value for node API_TU_F is out of bounds: 3.33333
+Using model for API_RQ to generate a conditional probability table
+Using model for API_PEC to generate a conditional probability table
+Thu Mar 10 13:02:43 2022
+
+
+Moral links:
+
+    Marrying Wastewater and Population
+    Marrying API_Sales and Population
+    Marrying API_Sales and Wastewater
+    Marrying API_PEC and API_EC50_F
+    Marrying API_PNEC and API_PEC
+
+
+Triangulating prime component with 4 members:
+    Population, Wastewater, API_Sales, API_PEC
+This component is a clique of cost 6
+
+Triangulating prime component with 3 members:
+    API_EC50_F, API_TU_F, API_PEC
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    API_RQ, API_PEC, API_PNEC
+This component is a clique of cost 4
+
+
+Total cost of triangulation for all prime components is 14
+
+
+Elimination sequence:
+
+    API_Sales
+    Wastewater
+    Population
+    API_TU_F
+    API_EC50_F
+    API_PNEC
+    API_RQ
+    API_PEC
+
+
+Cliques:
+
+Clique 3, 3 members, table size = 4:
+    API_PEC, API_RQ, API_PNEC
+
+Clique 2, 3 members, table size = 4:
+    API_PEC, API_EC50_F, API_TU_F
+
+Clique 1, 4 members, table size = 6:
+    API_PEC, Population, Wastewater, API_Sales
+
+Total clique table size: 14
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+Cliques 1 and 3 linked, separator has 1 member and table size = 2:
+    API_PEC
+
+
+Assignment of potentials to cliques:
+
+    Node API_EC50_F assigned to clique 2
+    Node API_TU_F assigned to clique 2
+    Node Population assigned to clique 1
+    Node Wastewater assigned to clique 1
+    Node API_RQ assigned to clique 3
+    Node API_Sales assigned to clique 1
+    Node API_PEC assigned to clique 1
+    Node API_PNEC assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+Using model for API_TU_F to generate a conditional probability table
+Value for node API_TU_F is out of bounds: 3.33333
+Using model for API_TU_F to generate a conditional probability table
+Value for node API_TU_F is out of bounds: 3.33333
