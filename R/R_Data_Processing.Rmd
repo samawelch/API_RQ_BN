@@ -134,3 +134,19 @@ plot(NIPH_Sales_Weights_ts_forecast)
 NIPH_Sales_Weights_ts_forecast_2 <- holt(NIPH_Sales_Weights_ts, h = 31)
 plot(NIPH_Sales_Weights_ts_forecast_2)
 ```
+
+```{r holt_WW_forecast}
+# We can also try a forecast of WW consumption to 2050, although there isn't much
+# data to go off and I'm not comfortable with it 
+
+SSB_WW_Consumption <- c(193, 209, 206, 202, 204, 197, 198, 207, 213, 
+                        209, 199, 208, 206, 207, 190)
+
+ts(data = SSB_WW_Consumption,
+                            start = 2002,
+                            end =  2016,
+                            frequency = 1)
+
+# Actually, I guess we have two different contradictory datasets of WW consumption!
+# Will email SSB to ask...
+```
