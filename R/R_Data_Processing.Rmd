@@ -3,6 +3,7 @@ title: "Tiered Bayesian Risk Assessment of Estrogen Mixtures"
 output: html_notebook
 ---
 
+# Packages
 
 ```{r packages, warning=FALSE}
 library(tidyverse)
@@ -11,6 +12,8 @@ library(readxl)
 library(drc)
 library(TTR)
 library(forecast)
+library(lme4)
+library(sjPlot)
 ```
 
 
@@ -22,7 +25,7 @@ getwd()
 NIPH_Sales_Weights <- read_excel(path = "Data/NIPH_DB/t830_Product_API_sold_per_year_20220629.xlsx")
 
 # Immediately shortlist to interesting APIs to save time later
-Interesting_APIs <- c("estradiol", "etinylestradiol", "levonorgestrel", "diclofenac", 
+Interesting_APIs <- c("estradiol", "ethinylestradiol", "levonorgestrel", "diclofenac", 
                       "ibuprofen", "paracetamol", "ciprofloxacin", "amoxicillin")
 
 NIPH_Sales_Weights <- NIPH_Sales_Weights %>% filter(API_Name %in% Interesting_APIs)
@@ -53,43 +56,14 @@ Norway_Wastewater_Year <- read_xlsx(path = "Data/Statistics_Norway/WW_per_PD_201
 # Obviously this doesn't go back far enough, so we'll backfill it to 1999 with fake data
   add_row(Year = 1999:2014, L_per_person_per_day = 180)
   
-```
-
-## PEC Function
-
-```{r PEC_function}
-
-# A function to calculate PECs for 2015 - 2020 using the standard EMA ERA equation
-# This function now takes a year as argument, and references the 
-# wastewater per person per day and Norway population from separate SSB tibbles
-
-calculate_conv_PEC_gL <- function(g_sold,
-                                  year_sold,
-                                  WWTP_removal = 0, 
-                                  metabolic_removal = 0, 
-                                  dilution_factor = 10)
-{
-   
-# Match year against wastewater_per_person_per_day, save internally
-  wastewater_per_person_per_day <- Norway_Wastewater_Year %>% 
-    filter(Year == year_sold) %>% 
-    pull(L_per_person_per_day)
-  
-# Match year against norway_population, save internally
-  norway_population <- Norway_Population_Year %>% 
-    filter(Year == year_sold) %>% 
-    pull(Population)
-
-  conv_PEC_SW_gL = (
-    g_sold * (1 - WWTP_removal / 100) * (1 - metabolic_removal / 100)) /
-    (365 * norway_population * wastewater_per_person_per_day * dilution_factor) 
-  return(conv_PEC_SW_gL)
-}
-
-# At some point it became necessary to vectorise this function, to stop it
-# taking the whole year_sold vector. I don't understand why, and it now
-# Takes twice as long to run. But it does run!
-calculate_conv_PEC_gL <- Vectorize(calculate_conv_PEC_gL)
+# Norwegian Population Predictions from SSB (No Uncertainty Included)
+Norway_Population_Projections_21C <- read_xlsx(path = "Data/Statistics_Norway/Pop_Forecasts_21C.xlsx",
+                                               range = "B4:J7") %>% 
+  rename("Scenario" = `...1`) %>% 
+  pivot_longer(cols = 2:9,
+               names_to = "Year",
+               values_to = "Population") %>% 
+  mutate(Year = as.double(Year))
 ```
 
 
@@ -106,47 +80,64 @@ ggplot(data = NIPH_Sales_Weights_Summed,
   scale_y_continuous(trans = "log10")
 ```
 
-```{r forecasting_sales}
-NIPH_Sales_Weights_Summed_Amox <- NIPH_Sales_Weights_Summed %>% 
-  filter(API_Name == "paracetamol", sYear != 2019) %>% 
-  ungroup() %>% 
-  dplyr::select(-API_Name, -sYear)
+```{r API_sales_by_population}
+API_sales_by_population <- 
+  NIPH_Sales_Weights_Summed %>% left_join(y = Norway_Population_Year, by = c("sYear" = "Year"))
 
+ggplot(data = API_sales_by_population, mapping = 
+         aes(x = Population, 
+             y = Total_Sold_g,
+             colour = API_Name)) + 
+  geom_point() +
+  geom_smooth(method = "lm") 
 
-NIPH_Sales_Weights_ts <- ts(data = NIPH_Sales_Weights_Summed_Amox,
-                            start = 1999,
-                            end =  2019,
-                            frequency = 1)
+# Calculate a linear relationship between sales and population
+# Sales_over_Pop <- lm(Total_Sold_g ~  API_Name:Population, data = API_sales_by_population) %>% 
+# coef() %>% 
+#   as.list() %>% 
+#   as.tibble() %>% 
+#   pivot_longer(cols = 2:9) %>% 
+#   transmute(API_Name = str_remove_all(string = name, pattern = "(API_Name)|(:Population)"),
+#             Sales_over_Pop_g = value)
 
-plot.ts(NIPH_Sales_Weights_ts)
+# Pretty sure the above lm sucked, so let's try running individual LMs
+LMs_API <- API_sales_by_population %>% 
+  group_by(API_Name) %>% 
+  summarise(lm_intercept = coef(lm(Total_Sold_g ~ Population))[[1]],
+            lm_coef = coef(lm(Total_Sold_g ~ Population))[[2]])
 
-# We can try smoothing, but it doesn't seem appropriate given our data?
-NIPH_Sales_Weights_ts_SMA3 <- SMA(x = NIPH_Sales_Weights_ts, n = 3)
-plot.ts(NIPH_Sales_Weights_ts_SMA3)
+ggplot(data = Norway_Population_Projections_21C, mapping = aes(
+  x = Year,
+  y = Population,
+  colour = Scenario,
+  group = Scenario)) +
+  geom_point() +
+  geom_path()
 
-NIPH_Sales_Weights_ts_forecast <- HoltWinters(NIPH_Sales_Weights_ts,
-                                              beta = FALSE,
-                                              gamma = FALSE)
-plot(NIPH_Sales_Weights_ts_forecast)
+# Run some examples and see how it looks graphed
+Sales_Projections_21C <- 
+  crossing(LMs_API, Norway_Population_Projections_21C) %>% 
+  mutate(Sales_Proj_g = Population * lm_coef + lm_intercept) %>% 
+# Pick some APIs
+  filter(API_Name %in% c("paracetamol", "ethinylestradiol"))
 
-# An attempt at an actual forecast 31 (!) years into the future
-# Using the Holt function from Forecast
-NIPH_Sales_Weights_ts_forecast_2 <- holt(NIPH_Sales_Weights_ts, h = 31)
-plot(NIPH_Sales_Weights_ts_forecast_2)
+# Join projections and records together to plot on one graph
+Sales_Projections_Records <- Sales_Projections_21C %>% 
+  transmute(API_Name,
+            Total_Sold_g = Sales_Proj_g, 
+            sYear = Year, 
+            Scenario) %>% 
+  add_row(NIPH_Sales_Weights_Summed %>% transmute(API_Name,
+                                                  sYear,
+                                                  Total_Sold_g,
+                                                  Scenario = "Measured")) %>% 
+    filter(API_Name %in% c("paracetamol", "ethinylestradiol"))
+
+ggplot(data = Sales_Projections_Records,
+       mapping = aes(x = sYear, 
+                     y = Total_Sold_g,
+                     colour = API_Name,
+                     shape = Scenario)) + 
+  geom_point()
 ```
 
-```{r holt_WW_forecast}
-# We can also try a forecast of WW consumption to 2050, although there isn't much
-# data to go off and I'm not comfortable with it 
-
-SSB_WW_Consumption <- c(193, 209, 206, 202, 204, 197, 198, 207, 213, 
-                        209, 199, 208, 206, 207, 190)
-
-ts(data = SSB_WW_Consumption,
-                            start = 2002,
-                            end =  2016,
-                            frequency = 1)
-
-# Actually, I guess we have two different contradictory datasets of WW consumption!
-# Will email SSB to ask...
-```
