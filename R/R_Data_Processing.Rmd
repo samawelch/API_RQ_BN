@@ -16,7 +16,6 @@ library(lme4)
 library(sjPlot)
 ```
 
-
 # Input
 
 ```{r data_input, warning=FALSE}
@@ -65,7 +64,6 @@ Norway_Population_Projections_21C <- read_xlsx(path = "Data/Statistics_Norway/Po
                values_to = "Population") %>% 
   mutate(Year = as.double(Year))
 ```
-
 
 # Dataset Summary
 
@@ -141,3 +139,30 @@ ggplot(data = Sales_Projections_Records,
   geom_point()
 ```
 
+```{r checks}
+# TODO: Finish & generalise this
+# Some comparisons between calculations in Hugin and here
+# We'll compare paracetamol in 2018 here and 2020 in the BN
+Paracetamol_Projections_21C <- Sales_Projections_Records %>% 
+  filter(API_Name == "paracetamol") %>% 
+  left_join(Norway_Population_Projections_21C, by = c("Scenario", "sYear" = "Year"))
+```
+
+
+```{r Hugin_Data_Maker}
+# Make data files for automated data input/output to Hugin
+Hugin_Data_File <- LMs_API %>% 
+  transmute(API_Name,
+            API_LM_Coeff = lm_coef,
+            API_LM_Interc = lm_intercept) %>% 
+  # Use vector recycling via crossing to set up the various scenario combinations easily
+  crossing(Population_Scenario = c("Low", "Main", "High"),
+           Year = c("2020", "2030", "2040", "2050", "2060", "2070", "2080", "2090", "2100"),
+           WWTP_Removal_Scenario = c("0 - 0.001", "0.001 - 0.9", "0.9 - 0.95", "0.95 - 0.99")) %>% 
+  add_column(`[MEAN]Norway_Population_mil` = NA, API_Sales_Weight_kg = NA, Water_Consumption_ML = NA,
+             PEC_Inf_gL = NA, PEC_Eff_gL = NA, PEC_SW_gL = NA,
+             PNEC_SW_gL = NA, RQ = NA)
+
+write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na = "")
+write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile_2.csv", na = "")
+```
