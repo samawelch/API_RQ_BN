@@ -69,30 +69,6 @@ API_PNECs <- read.csv(file = "Data/APIs_PBMT_byYear_2022-09-01_12.12.csv") %>%
   filter(API_Name %in% Interesting_APIs) %>% 
   distinct()
 
-# Import in Joanke's API removal rates
-API_Removal_Rate <- read_excel(path = "Data/Removal_efficiencies_JvD.xlsx",
-                               col_names = c("API_Name",
-                                             "Source",
-                                             "ATC",
-                                             "CAS",
-                                             "SMILES",
-                                             "InChIKey",
-                                             "Mol_mass",
-                                             "Primary",
-                                             "Secondary",
-                                             "Tertiary",
-                                             "Advanced",
-                                             "Ozone",
-                                             "Act_Carbon",
-                                             "Ozone_Act_Carbon"),
-                               skip = 1, n_max = 59)
-```
-
-## JvD Data Cleaning
-
-```{r removal_rate_cleaning}
-API_Removal_Rate_Clean <- API_Removal_Rate %>% 
-  dplyr::select(API_Name, Primary, Secondary, Advanced)
 ```
 
 # Dataset Summary
@@ -188,9 +164,9 @@ Hugin_Data_File <- LMs_API %>%
             API_LM_Interc = lm_intercept,
             API_PNEC_gL = PNEC_gL) %>% 
   # Use vector recycling via crossing to set up the various scenario combinations easily
-  crossing(Population_Scenario = c("Low", "Main", "High"),
+  crossing(Population_Scenario = as_factor(c("Low", "Main", "High")),
            Year = c("2020", "2030", "2040", "2050", "2060", "2070", "2080", "2090", "2100"),
-           WWTP_Removal_Scenario = c("Low", "Moderate", "High")) %>% 
+           WWTP_Removal_Scenario = c("0-0.25", "0.25-0.5", "0.5-0.75", "0.75-1")) %>% 
   add_column(`[MEAN](Norway_Population_mil)` = NA, 
              `[MEAN](API_Sales_Weight_kg)` = NA, 
              `[MEAN](Water_Consumption_ML)` = NA,
@@ -213,10 +189,13 @@ write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na =
 
 ```{r Hugin_Data_Reader}
 # Hugin has done its thing, so let's import the data
-Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_Paracetamol_Output.csv",
-                              show_col_types = FALSE)
+Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_API_Output.csv",
+                              show_col_types = FALSE) %>% 
   # rename_with(cols = 8:15, ~str_remove(string = ., pattern = "\\[MEAN\\]")) %>% 
   # rename_with(cols = 8:15, ~str_remove_all(string = ., pattern = "\\W"))
+# Need to refactorise population scenarios
+  mutate(Population_Scenario = fct_relevel(Population_Scenario, c("Low", "Main", "High")),
+         WWTP_Removal_Scenario = fct_rev(WWTP_Removal_Scenario))
 ```
 
 ```{r Some_Graphs}
@@ -224,7 +203,7 @@ Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_Paracetamol_Output.csv",
 # Sales Weight, by year, scenario & API
 ggplot(data = Hugin_Data_Output,
        mapping = aes(x = Year,
-                     y = API_Sales_Weight_kg,
+                     y = `[MEAN](API_Sales_Weight_kg)`,
                      colour = Population_Scenario,
                      shape = Population_Scenario)) +
   geom_point() +
@@ -237,13 +216,13 @@ ggplot(data = Hugin_Data_Output,
 Diclofenac_Weird <- Hugin_Data_Output %>% 
   filter(API_Name == "diclofenac",
          WWTP_Removal_Scenario == "0 - 0.001") %>% 
-  dplyr::select(API_Name, Year, API_Sales_Weight_kg, Population_Scenario) %>% 
+  dplyr::select(API_Name, Year, `[MEAN](API_Sales_Weight_kg)`, Population_Scenario) %>% 
   distinct()
 
 # Various PECs
 ggplot(data = Hugin_Data_Output,
        mapping = aes(x = Year,
-                     y = PEC_Inf_gL,
+                     y = `[MEAN](PEC_Inf_gL)`,
                      colour = Population_Scenario,
                      shape = Population_Scenario)) +
   geom_point() +
@@ -255,7 +234,7 @@ ggplot(data = Hugin_Data_Output,
 # RQ by year, scenario & API
 ggplot(data = Hugin_Data_Output,
        mapping = aes(x = Year,
-                     y = RQ,
+                     y = `[MEAN](RQ)`,
                      colour = WWTP_Removal_Scenario,
                      shape = Population_Scenario)) +
   geom_point() +
@@ -266,12 +245,20 @@ ggplot(data = Hugin_Data_Output,
 
 # Now we're gonna try and make some graphs like Sophie's!
 Sophie_Graph_Data <- Hugin_Data_Output %>% 
-  filter(API_Name == "paracetamol") %>% 
+  filter(API_Name == "levonorgestrel") %>% 
   dplyr::select(1, 5:7, 15:23) %>% 
   pivot_longer(cols = 5:13,
                names_to = "RQ_Bin",
                values_to = "Probability")
-         
+
+# Set up some custom labels for a slightly more sense-making facet
+Sophie_Graph_Labeller = c("0-0.25" = "Primary: 0 - 0.25", "0.25-0.5" = "Secondary: 0.25 - 0.5", 
+                          "0.5-0.75" = "Tertiary: 0.5 - 0.75", "0.75-1" = "Advanced: 0.75 - 1",
+                          "High" = "High Growth Population", 
+                          "Main" = "Main Growth Population",
+                          "Low" = "Low Growth Population")
+# Doesn't work right now, will troubleshoot some other time
+
 ggplot(data = Sophie_Graph_Data, 
        mapping = aes(x = Year,
                      y = Probability,
@@ -279,6 +266,6 @@ ggplot(data = Sophie_Graph_Data,
   geom_col(position = position_fill(reverse = TRUE)) +
   facet_grid(rows = vars(Population_Scenario),
              cols = vars(WWTP_Removal_Scenario)) +
-  scale_fill_viridis_d()
+  scale_fill_viridis_d(option = "plasma", direction = 1)
 
 ```
