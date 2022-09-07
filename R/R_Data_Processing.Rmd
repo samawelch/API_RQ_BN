@@ -12,7 +12,6 @@ library(readxl)
 library(drc)
 library(TTR)
 library(forecast)
-library(lme4)
 library(sjPlot)
 ```
 
@@ -63,6 +62,12 @@ Norway_Population_Projections_21C <- read_xlsx(path = "Data/Statistics_Norway/Po
                names_to = "Year",
                values_to = "Population") %>% 
   mutate(Year = as.double(Year))
+
+# PNECs for our interesting APIs
+API_PNECs <- read.csv(file = "Data/APIs_PBMT_byYear_2022-09-01_12.12.csv") %>% 
+  dplyr::select(API_Name, PNEC_gL) %>% 
+  filter(API_Name %in% Interesting_APIs) %>% 
+  distinct()
 ```
 
 # Dataset Summary
@@ -152,17 +157,28 @@ Paracetamol_Projections_21C <- Sales_Projections_Records %>%
 ```{r Hugin_Data_Maker}
 # Make data files for automated data input/output to Hugin
 Hugin_Data_File <- LMs_API %>% 
+  left_join(API_PNECs, by = "API_Name") %>% 
   transmute(API_Name,
             API_LM_Coeff = lm_coef,
-            API_LM_Interc = lm_intercept) %>% 
+            API_LM_Interc = lm_intercept,
+            API_PNEC_gL = PNEC_gL) %>% 
   # Use vector recycling via crossing to set up the various scenario combinations easily
   crossing(Population_Scenario = c("Low", "Main", "High"),
            Year = c("2020", "2030", "2040", "2050", "2060", "2070", "2080", "2090", "2100"),
            WWTP_Removal_Scenario = c("0 - 0.001", "0.001 - 0.9", "0.9 - 0.95", "0.95 - 0.99")) %>% 
-  add_column(`[MEAN]Norway_Population_mil` = NA, API_Sales_Weight_kg = NA, Water_Consumption_ML = NA,
-             PEC_Inf_gL = NA, PEC_Eff_gL = NA, PEC_SW_gL = NA,
-             PNEC_SW_gL = NA, RQ = NA)
+  add_column(`[MEAN](Norway_Population_mil)` = NA, 
+             `[MEAN](API_Sales_Weight_kg)` = NA, 
+             `[MEAN](Water_Consumption_ML)` = NA,
+             `[MEAN](PEC_Inf_gL)` = NA, 
+             `[MEAN](PEC_Eff_gL)` = NA, 
+             `[MEAN](PEC_SW_gL)` = NA,
+             `[MEAN](RQ)` = NA)
 
 write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na = "")
-write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile_2.csv", na = "")
+```
+
+```{r Hugin_Data_Reader}
+# Hugin has done its thing, so let's import the data
+Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_Paracetamol_Output.csv")
+
 ```
