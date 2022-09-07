@@ -172,13 +172,88 @@ Hugin_Data_File <- LMs_API %>%
              `[MEAN](PEC_Inf_gL)` = NA, 
              `[MEAN](PEC_Eff_gL)` = NA, 
              `[MEAN](PEC_SW_gL)` = NA,
-             `[MEAN](RQ)` = NA)
+             `[MEAN](RQ)` = NA,
+             `P(RQ=0-0.01)` = NA,
+             `P(RQ=0.01-0.1)` = NA,
+             `P(RQ=0.1-1)` = NA,
+             `P(RQ=1-10)` = NA,
+             `P(RQ=10-100)` = NA,
+             `P(RQ=100-1000)` = NA,
+             `P(RQ=1000-10000)` = NA,
+             `P(RQ=10000-100000)` = NA,             
+             `P(RQ=100000-inf)` = NA)
 
 write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na = "")
 ```
 
 ```{r Hugin_Data_Reader}
 # Hugin has done its thing, so let's import the data
-Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_Paracetamol_Output.csv")
+Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_Paracetamol_Output.csv",
+                              show_col_types = FALSE)
+  # rename_with(cols = 8:15, ~str_remove(string = ., pattern = "\\[MEAN\\]")) %>% 
+  # rename_with(cols = 8:15, ~str_remove_all(string = ., pattern = "\\W"))
+```
+
+```{r SOome_Graphs}
+# I'm gonna make some graphs!
+# Sales Weight, by year, scenario & API
+ggplot(data = Hugin_Data_Output,
+       mapping = aes(x = Year,
+                     y = API_Sales_Weight_kg,
+                     colour = Population_Scenario,
+                     shape = Population_Scenario)) +
+  geom_point() +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), ncol = 4, scales = "free") +
+  scale_color_discrete(breaks = c("Low", "Main", "High")) +
+  scale_shape_discrete(breaks = c("Low", "Main", "High"))
+
+# What's going on with these APIs?
+Diclofenac_Weird <- Hugin_Data_Output %>% 
+  filter(API_Name == "diclofenac",
+         WWTP_Removal_Scenario == "0 - 0.001") %>% 
+  dplyr::select(API_Name, Year, API_Sales_Weight_kg, Population_Scenario) %>% 
+  distinct()
+
+# Various PECs
+ggplot(data = Hugin_Data_Output,
+       mapping = aes(x = Year,
+                     y = PEC_Inf_gL,
+                     colour = Population_Scenario,
+                     shape = Population_Scenario)) +
+  geom_point() +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), ncol = 4, scales = "free") +
+  scale_color_discrete(breaks = c("Low", "Main", "High")) +
+  scale_shape_discrete(breaks = c("Low", "Main", "High"))
+
+# RQ by year, scenario & API
+ggplot(data = Hugin_Data_Output,
+       mapping = aes(x = Year,
+                     y = RQ,
+                     colour = WWTP_Removal_Scenario,
+                     shape = Population_Scenario)) +
+  geom_point() +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), ncol = 4) +
+  scale_color_discrete(breaks = c("Low", "Main", "High")) +
+  scale_shape_discrete(breaks = c("Low", "Main", "High"))
+
+# Now we're gonna try and make some graphs like Sophie's!
+Sophie_Graph_Data <- Hugin_Data_Output %>% 
+  filter(API_Name == "paracetamol") %>% 
+  dplyr::select(1, 5:7, 15:23) %>% 
+  pivot_longer(cols = 5:13,
+               names_to = "RQ_Bin",
+               values_to = "Probability")
+         
+ggplot(data = Sophie_Graph_Data, 
+       mapping = aes(x = Year,
+                     y = Probability,
+                     fill = RQ_Bin)) +
+  geom_col(position = position_fill(reverse = TRUE)) +
+  facet_grid(rows = vars(Population_Scenario),
+             cols = vars(WWTP_Removal_Scenario)) +
+  scale_fill_viridis_d()
 
 ```
