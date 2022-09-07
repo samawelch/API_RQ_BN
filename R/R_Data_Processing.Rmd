@@ -85,7 +85,7 @@ API_Removal_Rate <- read_excel(path = "Data/Removal_efficiencies_JvD.xlsx",
                                              "Ozone",
                                              "Act_Carbon",
                                              "Ozone_Act_Carbon"),
-                               skip = 1, n_max = 58)
+                               skip = 1, n_max = 59)
 ```
 
 ## JvD Data Cleaning
