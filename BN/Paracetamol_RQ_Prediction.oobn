@@ -56,13 +56,25 @@ class Paracetamol_RQ_Prediction
     HR_Grid_Y = "40";
     HR_Grid_X = "40";
 
+    function API_Removal
+    {
+	label = "";
+	position = (1049 599);
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_LinkGroup = "[PEC_Eff_gL:0]";
+	HR_LinkMode = "[PEC_Eff_gL:0]";
+	HR_NodeSize = "(136, 79)";
+	HR_Group = "0";
+    }
+
     function API_PNEC_gL
     {
 	label = "";
 	position = (1430 303);
 	HR_NodeSize = "(136, 79)";
-	HR_LinkMode = "[RQ:0]";
-	HR_LinkGroup = "[RQ:0]";
+	HR_LinkMode = "";
+	HR_LinkGroup = "";
 	HR_Desc = "";
 	HR_HTML_Desc = "";
 	HR_Group = "0";
@@ -183,10 +195,11 @@ class Paracetamol_RQ_Prediction
     node WWTP_Removal_Scenario
     {
 	label = "";
-	position = (1166 848);
+	position = (1073 716);
 	states = ("" "" "" "");
 	subtype = interval;
 	state_values = (0 0.001 0.9 0.95 0.99);
+	HR_LinkControlPoints = "";
 	HR_HTML_Desc = "";
 	HR_State_3 = "";
 	HR_State_2 = "";
@@ -194,8 +207,8 @@ class Paracetamol_RQ_Prediction
 	HR_Desc = "";
 	HR_State_1 = "";
 	HR_State_0 = "";
-	HR_LinkMode = "[PEC_Eff_gL:0]";
-	HR_LinkGroup = "[PEC_Eff_gL:0]";
+	HR_LinkMode = "[API_Removal:0]";
+	HR_LinkGroup = "[API_Removal:0]";
 	HR_Group = "0";
     }
 
@@ -313,6 +326,12 @@ class Paracetamol_RQ_Prediction
 	HR_State_0 = "";
     }
 
+    potential (API_Removal | WWTP_Removal_Scenario)
+    {
+	model_nodes = ();
+	model_data = ( 1 );
+    }
+
     potential (API_PNEC_gL)
     {
 	model_nodes = ();
@@ -351,44 +370,33 @@ class Paracetamol_RQ_Prediction
 		( 0 0 0 0 0 0 0 0 1 0 ));	%  PEC_Eff_gL=interval(100,infinity)
     }
 
-    potential (PEC_Eff_gL | WWTP_Removal_Scenario PEC_Inf_gL)
+    potential (PEC_Eff_gL | PEC_Inf_gL API_Removal)
     {
 	model_nodes = ();
-	model_data = ( PEC_Inf_gL * (1 - WWTP_Removal_Scenario) );
-	data = ((( 0 0 0.12 0.88 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.001)  PEC_Inf_gL=interval(0,0.001)
-		 ( 0 0 0 0 1 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.001)  PEC_Inf_gL=interval(0.001,0.01)
-		 ( 0 0 0 0 1 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.001)  PEC_Inf_gL=interval(0.01,0.1)
-		 ( 0 0 0 0 0 1 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.001)  PEC_Inf_gL=interval(0.1,1)
-		 ( 0 0 0 0 0 0 1 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.001)  PEC_Inf_gL=interval(1,10)
-		 ( 0 0 0 0 0 0 0 1 0 )	%  WWTP_Removal_Scenario=interval(0,0.001)  PEC_Inf_gL=interval(10,100)
-		 ( 0 0 0 0 0 0 0 0 1 ))	%  WWTP_Removal_Scenario=interval(0,0.001)  PEC_Inf_gL=interval(100,infinity)
-		(( 0 0.0208 0.2352 0.744 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.001,0.9)  PEC_Inf_gL=interval(0,0.001)
-		 ( 0 0 0 0.176 0.824 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.001,0.9)  PEC_Inf_gL=interval(0.001,0.01)
-		 ( 0 0 0 0 1 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.001,0.9)  PEC_Inf_gL=interval(0.01,0.1)
-		 ( 0 0 0 0 0.176 0.824 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.001,0.9)  PEC_Inf_gL=interval(0.1,1)
-		 ( 0 0 0 0 0 0.176 0.824 0 0 )	%  WWTP_Removal_Scenario=interval(0.001,0.9)  PEC_Inf_gL=interval(1,10)
-		 ( 0 0 0 0 0 0 0.176 0.824 0 )	%  WWTP_Removal_Scenario=interval(0.001,0.9)  PEC_Inf_gL=interval(10,100)
-		 ( 0 0 0 0 0 0 0 1 0 ))	%  WWTP_Removal_Scenario=interval(0.001,0.9)  PEC_Inf_gL=interval(100,infinity)
-		(( 0 0.1424 0.8576 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.9,0.95)  PEC_Inf_gL=interval(0,0.001)
-		 ( 0 0 0.04 0.96 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.9,0.95)  PEC_Inf_gL=interval(0.001,0.01)
-		 ( 0 0 0 0.04 0.96 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.9,0.95)  PEC_Inf_gL=interval(0.01,0.1)
-		 ( 0 0 0 0 1 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.9,0.95)  PEC_Inf_gL=interval(0.1,1)
-		 ( 0 0 0 0 0.04 0.96 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.9,0.95)  PEC_Inf_gL=interval(1,10)
-		 ( 0 0 0 0 0 0.04 0.96 0 0 )	%  WWTP_Removal_Scenario=interval(0.9,0.95)  PEC_Inf_gL=interval(10,100)
-		 ( 0 0 0 0 0 0 1 0 0 ))	%  WWTP_Removal_Scenario=interval(0.9,0.95)  PEC_Inf_gL=interval(100,infinity)
-		(( 0.0464 0.3552 0.5984 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.95,0.99)  PEC_Inf_gL=interval(0,0.001)
-		 ( 0 0 0.336 0.664 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.95,0.99)  PEC_Inf_gL=interval(0.001,0.01)
-		 ( 0 0 0 0.336 0.664 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.95,0.99)  PEC_Inf_gL=interval(0.01,0.1)
-		 ( 0 0 0 0 1 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.95,0.99)  PEC_Inf_gL=interval(0.1,1)
-		 ( 0 0 0 0 0.336 0.664 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.95,0.99)  PEC_Inf_gL=interval(1,10)
-		 ( 0 0 0 0 0 0.336 0.664 0 0 )	%  WWTP_Removal_Scenario=interval(0.95,0.99)  PEC_Inf_gL=interval(10,100)
-		 ( 0 0 0 0 0 0 1 0 0 )));	%  WWTP_Removal_Scenario=interval(0.95,0.99)  PEC_Inf_gL=interval(100,infinity)
+	model_data = ( PEC_Inf_gL * (1 - API_Removal) );
+	data = (( 1 0 0 0 0 0 0 0 0 )	%  PEC_Inf_gL=interval(0,0.001)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_Inf_gL=interval(0.001,0.01)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_Inf_gL=interval(0.01,0.1)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_Inf_gL=interval(0.1,1)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_Inf_gL=interval(1,10)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_Inf_gL=interval(10,100)
+		( 1 0 0 0 0 0 0 0 0 ));	%  PEC_Inf_gL=interval(100,infinity)
     }
 
     potential (RQ | PEC_SW_gL API_PNEC_gL)
     {
 	model_nodes = ();
 	model_data = ( PEC_SW_gL / API_PNEC_gL );
+	data = (( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0,1E-06)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(1E-06,1E-05)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(1E-05,0.0001)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.0001,0.001)
+		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.001,0.01)
+		( 0 1 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.01,0.1)
+		( 0 0 1 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.1,1)
+		( 0 0 0 1 0 0 0 0 0 )	%  PEC_SW_gL=interval(1,10)
+		( 0 0 0 0 1 0 0 0 0 )	%  PEC_SW_gL=interval(10,100)
+		( 0 0 0 0 0 1 0 0 0 ));	%  PEC_SW_gL=interval(100,infinity)
     }
 
     potential (WWTP_Removal_Scenario)

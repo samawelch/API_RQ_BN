@@ -68,6 +68,31 @@ API_PNECs <- read.csv(file = "Data/APIs_PBMT_byYear_2022-09-01_12.12.csv") %>%
   dplyr::select(API_Name, PNEC_gL) %>% 
   filter(API_Name %in% Interesting_APIs) %>% 
   distinct()
+
+# Import in Joanke's API removal rates
+API_Removal_Rate <- read_excel(path = "Data/Removal_efficiencies_JvD.xlsx",
+                               col_names = c("API_Name",
+                                             "Source",
+                                             "ATC",
+                                             "CAS",
+                                             "SMILES",
+                                             "InChIKey",
+                                             "Mol_mass",
+                                             "Primary",
+                                             "Secondary",
+                                             "Tertiary",
+                                             "Advanced",
+                                             "Ozone",
+                                             "Act_Carbon",
+                                             "Ozone_Act_Carbon"),
+                               skip = 1, n_max = 58)
+```
+
+## JvD Data Cleaning
+
+```{r removal_rate_cleaning}
+API_Removal_Rate_Clean <- API_Removal_Rate %>% 
+  dplyr::select(API_Name, Primary, Secondary, Advanced)
 ```
 
 # Dataset Summary
@@ -165,7 +190,7 @@ Hugin_Data_File <- LMs_API %>%
   # Use vector recycling via crossing to set up the various scenario combinations easily
   crossing(Population_Scenario = c("Low", "Main", "High"),
            Year = c("2020", "2030", "2040", "2050", "2060", "2070", "2080", "2090", "2100"),
-           WWTP_Removal_Scenario = c("0 - 0.001", "0.001 - 0.9", "0.9 - 0.95", "0.95 - 0.99")) %>% 
+           WWTP_Removal_Scenario = c("Low", "Moderate", "High")) %>% 
   add_column(`[MEAN](Norway_Population_mil)` = NA, 
              `[MEAN](API_Sales_Weight_kg)` = NA, 
              `[MEAN](Water_Consumption_ML)` = NA,
@@ -194,7 +219,7 @@ Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_Paracetamol_Output.csv",
   # rename_with(cols = 8:15, ~str_remove_all(string = ., pattern = "\\W"))
 ```
 
-```{r SOome_Graphs}
+```{r Some_Graphs}
 # I'm gonna make some graphs!
 # Sales Weight, by year, scenario & API
 ggplot(data = Hugin_Data_Output,
