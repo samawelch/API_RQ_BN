@@ -175,15 +175,12 @@ Hugin_Data_File <- LMs_API %>%
              `[MEAN](PEC_Eff_gL)` = NA, 
              `[MEAN](PEC_SW_gL)` = NA,
              `[MEAN](RQ)` = NA,
-             `P(RQ=0-0.01)` = NA,
-             `P(RQ=0.01-0.1)` = NA,
-             `P(RQ=0.1-1)` = NA,
+             `P(RQ=0-1)` = NA,
              `P(RQ=1-10)` = NA,
              `P(RQ=10-100)` = NA,
              `P(RQ=100-1000)` = NA,
              `P(RQ=1000-10000)` = NA,
-             `P(RQ=10000-100000)` = NA,             
-             `P(RQ=100000-inf)` = NA)
+             `P(RQ=10000-inf)` = NA)
 
 write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na = "")
 ```
@@ -252,9 +249,9 @@ RQ_by_Year_Scen_API
 
 # Now we're gonna try and make some graphs like Sophie's!
 Sophie_Graph_Data <- Hugin_Data_Output %>% 
-  filter(API_Name == "levonorgestrel") %>% 
-  dplyr::select(1, 4:6, 14:22) %>% 
-  pivot_longer(cols = 5:13,
+  filter(API_Name == "paracetamol") %>% 
+  dplyr::select(1, 4:6, 14:19) %>% 
+  pivot_longer(cols = 5:10,
                names_to = "RQ_Bin",
                values_to = "Probability")
 
@@ -273,7 +270,7 @@ RQ_by_Bin <- ggplot(data = Sophie_Graph_Data,
   geom_col(position = position_fill(reverse = TRUE)) +
   facet_grid(rows = vars(Population_Scenario),
              cols = vars(WWTP_Removal_Scenario)) +
-  scale_fill_viridis_d(option = "plasma", direction = 1)
+  scale_fill_viridis_d(option = "inferno", direction = 1)
 
 RQ_by_Bin
 

@@ -13,7 +13,7 @@ class Paracetamol_RQ_Prediction
     HR_Desc = "";
     HR_OOBN_CheckConsistency = "1";
     HR_OOBN_FitExpand = "1";
-    HR_Zoom_ZoomFactor = "37";
+    HR_Zoom_ZoomFactor = "19";
     HR_Groups_GroupColors = "";
     HR_Groups_GroupNames = "";
     HR_Groups_UserGroupsNo = "0";
@@ -59,10 +59,10 @@ class Paracetamol_RQ_Prediction
     node PEC_SW_gL
     {
 	label = "";
-	position = (1254 479);
-	states = ("" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "");
+	position = (1276 498);
+	states = ("" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "");
 	subtype = interval;
-	state_values = (0 1E-09 3E-09 1E-08 3E-08 1E-07 3E-07 1E-06 3E-06 1E-05 3E-05 0.0001 0.0003 0.001 0.003 0.01 0.03 0.1 0.3 1 3 10 30 100 300 1000 infinity);
+	state_values = (0 1E-09 3E-09 1E-08 3E-08 1E-07 3E-07 1E-06 3E-06 1E-05 3E-05 0.0001 0.0003 0.001 0.003 0.01 infinity);
 	HR_HTML_Desc = "";
 	HR_State_25 = "";
 	HR_State_24 = "";
@@ -100,10 +100,10 @@ class Paracetamol_RQ_Prediction
     node PEC_Eff_gL
     {
 	label = "";
-	position = (839 524);
-	states = ("" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "");
+	position = (1075 499);
+	states = ("" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "");
 	subtype = interval;
-	state_values = (0 1E-09 3E-09 1E-08 3E-08 1E-07 3E-07 1E-06 3E-06 1E-05 3E-05 0.0001 0.0003 0.001 0.003 0.01 0.03 0.1 0.3 1 3 10 30 100 300 1000 infinity);
+	state_values = (0 1E-09 3E-09 1E-08 3E-08 1E-07 3E-07 1E-06 3E-06 1E-05 3E-05 0.0001 0.0003 0.001 0.003 0.01 infinity);
 	HR_LinkGroup = "[PEC_SW_gL:0]";
 	HR_LinkMode = "[PEC_SW_gL:0]";
 	HR_State_0 = "";
@@ -141,7 +141,7 @@ class Paracetamol_RQ_Prediction
     function API_PNEC_gL
     {
 	label = "";
-	position = (1135 222);
+	position = (1526 138);
 	HR_NodeSize = "(136, 79)";
 	HR_LinkMode = "[RQ:0]";
 	HR_LinkGroup = "[RQ:0]";
@@ -153,7 +153,7 @@ class Paracetamol_RQ_Prediction
     function API_LM_Coeff
     {
 	label = "";
-	position = (623 192);
+	position = (576 115);
 	HR_Group = "0";
 	HR_HTML_Desc = "grams per person";
 	HR_Desc = "grams per person";
@@ -165,7 +165,7 @@ class Paracetamol_RQ_Prediction
     node Population_Scenario
     {
 	label = "";
-	position = (469 288);
+	position = (105 262);
 	states = ("Low" "Main" "High");
 	HR_HTML_Desc = "";
 	HR_LinkGroup = "[Norway_Population_mil:0]";
@@ -181,10 +181,10 @@ class Paracetamol_RQ_Prediction
     node RQ
     {
 	label = "";
-	position = (1505 397);
-	states = ("" "" "" "" "" "" "" "" "");
+	position = (1526 498);
+	states = ("" "" "" "" "" "");
 	subtype = interval;
-	state_values = (0 0.01 0.1 1 10 100 1000 10000 100000 infinity);
+	state_values = (0 1 10 100 1000 10000 infinity);
 	HR_State_8 = "";
 	HR_HTML_Desc = "";
 	HR_State_7 = "";
@@ -205,7 +205,7 @@ class Paracetamol_RQ_Prediction
     node WWTP_Removal_Scenario
     {
 	label = "";
-	position = (1102 779);
+	position = (1075 689);
 	states = ("" "" "" "");
 	subtype = interval;
 	state_values = (0 0.25 0.5 0.75 1);
@@ -226,10 +226,10 @@ class Paracetamol_RQ_Prediction
     node PEC_Inf_gL
     {
 	label = "";
-	position = (1053 497);
-	states = ("" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "");
+	position = (875 500);
+	states = ("" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "");
 	subtype = interval;
-	state_values = (0 1E-09 3E-09 1E-08 3E-08 1E-07 3E-07 1E-06 3E-06 1E-05 3E-05 0.0001 0.0003 0.001 0.003 0.01 0.03 0.1 0.3 1 3 10 30 100 300 1000 infinity);
+	state_values = (0 1E-09 3E-09 1E-08 3E-08 1E-07 3E-07 1E-06 3E-06 1E-05 3E-05 0.0001 0.0003 0.001 0.003 0.01 infinity);
 	HR_LinkControlPoints = "";
 	HR_HTML_Desc = "";
 	HR_State_25 = "";
@@ -268,10 +268,10 @@ class Paracetamol_RQ_Prediction
     node API_Sales_Weight_kg
     {
 	label = "";
-	position = (871 189);
-	states = ("" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "");
+	position = (572 399);
+	states = ("" "" "" "" "" "" "" "" "" "" "");
 	subtype = interval;
-	state_values = (0 30 100 300 1000 3000 10000 30000 100000 300000 1000000 3000000 10000000 30000000 1E+08 3E+08 1E+09 infinity);
+	state_values = (0 30 100 300 1000 3000 10000 30000 100000 300000 1000000 infinity);
 	HR_State_16 = "";
 	HR_State_15 = "";
 	HR_State_14 = "";
@@ -301,7 +301,7 @@ class Paracetamol_RQ_Prediction
     node Water_Consumption_ML
     {
 	label = "";
-	position = (650 757);
+	position = (553 614);
 	states = ("" "" "" "" "");
 	subtype = interval;
 	state_values = (0 500 1000 1500 2000 infinity);
@@ -323,7 +323,7 @@ class Paracetamol_RQ_Prediction
     node Year
     {
 	label = "";
-	position = (453 669);
+	position = (97 671);
 	states = ("" "" "" "" "" "" "" "" "");
 	subtype = number;
 	state_values = (2020 2030 2040 2050 2060 2070 2080 2090 2100);
@@ -346,7 +346,7 @@ class Paracetamol_RQ_Prediction
     node Norway_Population_mil
     {
 	label = "";
-	position = (625 444);
+	position = (366 466);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (4 5 6 7 8 9 10);
@@ -368,142 +368,12 @@ class Paracetamol_RQ_Prediction
     {
 	model_nodes = ();
 	model_data = ( PEC_Eff_gL / 10 );
-	data = (( 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0,1E-09)
-		( 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(1E-09,3E-09)
-		( 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(3E-09,1E-08)
-		( 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(1E-08,3E-08)
-		( 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(3E-08,1E-07)
-		( 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(1E-07,3E-07)
-		( 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(3E-07,1E-06)
-		( 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(1E-06,3E-06)
-		( 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(3E-06,1E-05)
-		( 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(1E-05,3E-05)
-		( 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(3E-05,0.0001)
-		( 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0.0001,0.0003)
-		( 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0.0003,0.001)
-		( 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0.001,0.003)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0.003,0.01)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0.01,0.03)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0.03,0.1)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0.1,0.3)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(0.3,1)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(1,3)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(3,10)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 )	%  PEC_Eff_gL=interval(10,30)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 )	%  PEC_Eff_gL=interval(30,100)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 )	%  PEC_Eff_gL=interval(100,300)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 )	%  PEC_Eff_gL=interval(300,1000)
-		( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 ));	%  PEC_Eff_gL=interval(1000,infinity)
     }
 
     potential (PEC_Eff_gL | WWTP_Removal_Scenario PEC_Inf_gL)
     {
 	model_nodes = ();
 	model_data = ( PEC_Inf_gL * (1 - WWTP_Removal_Scenario) );
-	data = ((( 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0,1E-09)
-		 ( 0.0736 0.9264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(1E-09,3E-09)
-		 ( 0 0.064 0.936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(3E-09,1E-08)
-		 ( 0 0 0.0736 0.9264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(1E-08,3E-08)
-		 ( 0 0 0 0.064 0.936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(3E-08,1E-07)
-		 ( 0 0 0 0 0.0736 0.9264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(1E-07,3E-07)
-		 ( 0 0 0 0 0 0.064 0.936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(3E-07,1E-06)
-		 ( 0 0 0 0 0 0 0.0736 0.9264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(1E-06,3E-06)
-		 ( 0 0 0 0 0 0 0 0.064 0.936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(3E-06,1E-05)
-		 ( 0 0 0 0 0 0 0 0 0.0736 0.9264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(1E-05,3E-05)
-		 ( 0 0 0 0 0 0 0 0 0 0.064 0.936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(3E-05,0.0001)
-		 ( 0 0 0 0 0 0 0 0 0 0 0.0736 0.9264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0.0001,0.0003)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.064 0.936 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0.0003,0.001)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.0736 0.9264 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0.001,0.003)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.064 0.936 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0.003,0.01)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0736 0.9264 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0.01,0.03)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.064 0.936 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0.03,0.1)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0736 0.9264 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0.1,0.3)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.064 0.936 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(0.3,1)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0736 0.9264 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(1,3)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.064 0.936 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(3,10)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0736 0.9264 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(10,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.064 0.936 0 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0736 0.9264 0 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.064 0.936 0 )	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ))	%  WWTP_Removal_Scenario=interval(0,0.25)  PEC_Inf_gL=interval(1000,infinity)
-		(( 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0,1E-09)
-		 ( 0.312 0.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(1E-09,3E-09)
-		 ( 0 0.2672 0.7328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(3E-09,1E-08)
-		 ( 0 0 0.312 0.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(1E-08,3E-08)
-		 ( 0 0 0 0.2672 0.7328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(3E-08,1E-07)
-		 ( 0 0 0 0 0.3104 0.6896 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(1E-07,3E-07)
-		 ( 0 0 0 0 0 0.2672 0.7328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(3E-07,1E-06)
-		 ( 0 0 0 0 0 0 0.3104 0.6896 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(1E-06,3E-06)
-		 ( 0 0 0 0 0 0 0 0.2672 0.7328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(3E-06,1E-05)
-		 ( 0 0 0 0 0 0 0 0 0.3104 0.6896 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(1E-05,3E-05)
-		 ( 0 0 0 0 0 0 0 0 0 0.2672 0.7328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(3E-05,0.0001)
-		 ( 0 0 0 0 0 0 0 0 0 0 0.312 0.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0.0001,0.0003)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.2672 0.7328 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0.0003,0.001)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.3104 0.6896 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0.001,0.003)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2672 0.7328 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0.003,0.01)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3104 0.6896 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0.01,0.03)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2672 0.7328 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0.03,0.1)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3104 0.6896 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0.1,0.3)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2672 0.7328 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(0.3,1)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3104 0.6896 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(1,3)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2672 0.7328 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(3,10)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3104 0.6896 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(10,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2672 0.7328 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3104 0.6896 0 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2672 0.7328 0 )	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ))	%  WWTP_Removal_Scenario=interval(0.25,0.5)  PEC_Inf_gL=interval(1000,infinity)
-		(( 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0,1E-09)
-		 ( 0.8128 0.1872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(1E-09,3E-09)
-		 ( 0.0208 0.7072 0.272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(3E-09,1E-08)
-		 ( 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(1E-08,3E-08)
-		 ( 0 0 0.0208 0.7072 0.272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(3E-08,1E-07)
-		 ( 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(1E-07,3E-07)
-		 ( 0 0 0 0 0.0208 0.7072 0.272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(3E-07,1E-06)
-		 ( 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(1E-06,3E-06)
-		 ( 0 0 0 0 0 0 0.0208 0.7072 0.272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(3E-06,1E-05)
-		 ( 0 0 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(1E-05,3E-05)
-		 ( 0 0 0 0 0 0 0 0 0.0208 0.7072 0.272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(3E-05,0.0001)
-		 ( 0 0 0 0 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0.0001,0.0003)
-		 ( 0 0 0 0 0 0 0 0 0 0 0.0208 0.7072 0.272 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0.0003,0.001)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0.001,0.003)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.0208 0.7072 0.272 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0.003,0.01)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0.01,0.03)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0208 0.7072 0.272 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0.03,0.1)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0.1,0.3)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0208 0.7072 0.272 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(0.3,1)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(1,3)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0208 0.7072 0.272 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(3,10)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(10,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0208 0.7072 0.272 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0096 0.8032 0.1872 0 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0208 0.7072 0.272 0 )	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0.8 0 ))	%  WWTP_Removal_Scenario=interval(0.5,0.75)  PEC_Inf_gL=interval(1000,infinity)
-		(( 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0,1E-09)
-		 ( 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(1E-09,3E-09)
-		 ( 0.6672 0.3328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(3E-09,1E-08)
-		 ( 0.2192 0.4304 0.3504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(1E-08,3E-08)
-		 ( 0.0672 0.1408 0.4592 0.3328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(3E-08,1E-07)
-		 ( 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(1E-07,3E-07)
-		 ( 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(3E-07,1E-06)
-		 ( 0 0 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(1E-06,3E-06)
-		 ( 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(3E-06,1E-05)
-		 ( 0 0 0 0 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(1E-05,3E-05)
-		 ( 0 0 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(3E-05,0.0001)
-		 ( 0 0 0 0 0 0 0.0192 0.0432 0.1568 0.4304 0.3504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0.0001,0.0003)
-		 ( 0 0 0 0 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0.0003,0.001)
-		 ( 0 0 0 0 0 0 0 0 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0.001,0.003)
-		 ( 0 0 0 0 0 0 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0.003,0.01)
-		 ( 0 0 0 0 0 0 0 0 0 0 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0.01,0.03)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0.03,0.1)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0.1,0.3)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(0.3,1)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(1,3)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(3,10)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(10,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0192 0.0432 0.1568 0.4288 0.352 0 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0176 0.0496 0.1408 0.4592 0.3328 0 0 )	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0.08 0.28 0.6 0 0 )));	%  WWTP_Removal_Scenario=interval(0.75,1)  PEC_Inf_gL=interval(1000,infinity)
     }
 
     potential (API_PNEC_gL)
@@ -527,32 +397,6 @@ class Paracetamol_RQ_Prediction
     {
 	model_nodes = ();
 	model_data = ( PEC_SW_gL / API_PNEC_gL );
-	data = (( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0,1E-09)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(1E-09,3E-09)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(3E-09,1E-08)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(1E-08,3E-08)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(3E-08,1E-07)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(1E-07,3E-07)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(3E-07,1E-06)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(1E-06,3E-06)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(3E-06,1E-05)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(1E-05,3E-05)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(3E-05,0.0001)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.0001,0.0003)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.0003,0.001)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.001,0.003)
-		( 1 0 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.003,0.01)
-		( 0 1 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.01,0.03)
-		( 0 1 0 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.03,0.1)
-		( 0 0 1 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.1,0.3)
-		( 0 0 1 0 0 0 0 0 0 )	%  PEC_SW_gL=interval(0.3,1)
-		( 0 0 0 1 0 0 0 0 0 )	%  PEC_SW_gL=interval(1,3)
-		( 0 0 0 1 0 0 0 0 0 )	%  PEC_SW_gL=interval(3,10)
-		( 0 0 0 0 1 0 0 0 0 )	%  PEC_SW_gL=interval(10,30)
-		( 0 0 0 0 1 0 0 0 0 )	%  PEC_SW_gL=interval(30,100)
-		( 0 0 0 0 0 1 0 0 0 )	%  PEC_SW_gL=interval(100,300)
-		( 0 0 0 0 0 1 0 0 0 )	%  PEC_SW_gL=interval(300,1000)
-		( 0 0 0 0 0 0 1 0 0 ));	%  PEC_SW_gL=interval(1000,infinity)
     }
 
     potential (WWTP_Removal_Scenario)
@@ -563,116 +407,25 @@ class Paracetamol_RQ_Prediction
     potential (PEC_Inf_gL | Water_Consumption_ML API_Sales_Weight_kg)
     {
 	model_nodes = ();
-	model_data = ( API_Sales_Weight_kg * 1000 / (Water_Consumption_ML * 1000 * 365) );
-	data = ((( 0 0 0 0 0 0 0 0 0.0272 0.0624 0.2144 0.424 0.1888 0.0576 0.0256 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(0,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.08 0.5632 0.2384 0.0816 0.0368 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.0928 0.5424 0.2528 0.0736 0.0384 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0.5632 0.2384 0.0816 0.0368 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0928 0.5424 0.2528 0.0736 0.0384 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(1000,3000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0.5632 0.2384 0.0816 0.0368 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(3000,10000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0928 0.5424 0.2528 0.0736 0.0384 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(10000,30000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0.5632 0.2384 0.0816 0.0368 0 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(30000,100000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0928 0.5424 0.2528 0.0736 0.0384 0 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(100000,300000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0.5632 0.2384 0.0816 0.0368 0 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(300000,1000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0928 0.5424 0.2528 0.0736 0.0384 0 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(1000000,3000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0.5632 0.2384 0.0816 0.0368 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(3000000,10000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0928 0.5424 0.2528 0.112 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(10000000,30000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0.5632 0.3568 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(30000000,1E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0928 0.9072 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(1E+08,3E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 )	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(3E+08,1E+09)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ))	%  Water_Consumption_ML=interval(0,500)  API_Sales_Weight_kg=interval(1E+09,infinity)
-		(( 0 0 0 0 0 0 0 0.0368 0.0576 0.1792 0.6016 0.1248 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(0,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0.016 0.7168 0.2672 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.0048 0.808 0.1872 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.016 0.7168 0.2672 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0048 0.808 0.1872 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(1000,3000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.016 0.7168 0.2672 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(3000,10000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0048 0.808 0.1872 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(10000,30000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.016 0.7168 0.2672 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(30000,100000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0048 0.808 0.1872 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(100000,300000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.016 0.7168 0.2672 0 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(300000,1000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0048 0.808 0.1872 0 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(1000000,3000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.016 0.7168 0.2672 0 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(3000000,10000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0048 0.808 0.1872 0 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(10000000,30000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.016 0.7168 0.2672 0 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(30000000,1E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0048 0.808 0.1872 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(1E+08,3E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.016 0.984 )	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(3E+08,1E+09)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ))	%  Water_Consumption_ML=interval(500,1000)  API_Sales_Weight_kg=interval(1E+09,infinity)
-		(( 0 0 0 0 0 0 0 0.04 0.1088 0.3072 0.544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(0,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0.2224 0.7776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.1856 0.8144 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.2224 0.7776 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1856 0.8144 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(1000,3000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2224 0.7776 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(3000,10000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1856 0.8144 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(10000,30000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2224 0.7776 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(30000,100000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1856 0.8144 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(100000,300000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2224 0.7776 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(300000,1000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1856 0.8144 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(1000000,3000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2224 0.7776 0 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(3000000,10000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1856 0.8144 0 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(10000000,30000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2224 0.7776 0 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(30000000,1E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1856 0.8144 0 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(1E+08,3E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2224 0.7776 )	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(3E+08,1E+09)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ))	%  Water_Consumption_ML=interval(1000,1500)  API_Sales_Weight_kg=interval(1E+09,infinity)
-		(( 0 0 0 0 0 0 0.0288 0.04 0.1472 0.424 0.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(0,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0.4832 0.5168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.4576 0.5424 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.4832 0.5168 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4576 0.5424 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(1000,3000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4832 0.5168 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(3000,10000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4576 0.5424 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(10000,30000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4832 0.5168 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(30000,100000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4576 0.5424 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(100000,300000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4832 0.5168 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(300000,1000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4576 0.5424 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(1000000,3000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4832 0.5168 0 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(3000000,10000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4576 0.5424 0 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(10000000,30000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4832 0.5168 0 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(30000000,1E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4576 0.5424 0 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(1E+08,3E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4832 0.5168 )	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(3E+08,1E+09)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ))	%  Water_Consumption_ML=interval(1500,2000)  API_Sales_Weight_kg=interval(1E+09,infinity)
-		(( 0 0 0 0 0 0 0.04 0.04 0.16 0.48 0.28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(0,30)
-		 ( 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(30,100)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(100,300)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(300,1000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(1000,3000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(3000,10000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(10000,30000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(30000,100000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(100000,300000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(300000,1000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(1000000,3000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(3000000,10000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(10000000,30000000)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(30000000,1E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 0 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(1E+08,3E+08)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0.4 )	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(3E+08,1E+09)
-		 ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 )));	%  Water_Consumption_ML=interval(2000,infinity)  API_Sales_Weight_kg=interval(1E+09,infinity)
+	model_data = ( API_Sales_Weight_kg / (Water_Consumption_ML * 1000 * 365) );
     }
 
     potential (API_Sales_Weight_kg | Norway_Population_mil API_LM_Coeff)
     {
 	model_nodes = ();
 	model_data = ( Norway_Population_mil * 1E+06 * API_LM_Coeff / 1000 );
-	data = (( 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 )	%  Norway_Population_mil=interval(4,5)
-		( 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 )	%  Norway_Population_mil=interval(5,6)
-		( 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 )	%  Norway_Population_mil=interval(6,7)
-		( 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 )	%  Norway_Population_mil=interval(7,8)
-		( 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 )	%  Norway_Population_mil=interval(8,9)
-		( 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 ));	%  Norway_Population_mil=interval(9,10)
+	data = (( 0 0 0 0 0 1 0 0 0 0 0 )	%  Norway_Population_mil=interval(4,5)
+		( 0 0 0 0 0 1 0 0 0 0 0 )	%  Norway_Population_mil=interval(5,6)
+		( 0 0 0 0 0 1 0 0 0 0 0 )	%  Norway_Population_mil=interval(6,7)
+		( 0 0 0 0 0 1 0 0 0 0 0 )	%  Norway_Population_mil=interval(7,8)
+		( 0 0 0 0 0 1 0 0 0 0 0 )	%  Norway_Population_mil=interval(8,9)
+		( 0 0 0 0 0 1 0 0 0 0 0 ));	%  Norway_Population_mil=interval(9,10)
     }
 
     potential (Water_Consumption_ML | Norway_Population_mil)
     {
 	model_nodes = ();
 	model_data = ( Norway_Population_mil * 180 );
-	data = (( 0 1 0 0 0 )	%  Norway_Population_mil=interval(4,5)
-		( 0 0.56 0.44 0 0 )	%  Norway_Population_mil=interval(5,6)
-		( 0 0 1 0 0 )	%  Norway_Population_mil=interval(6,7)
-		( 0 0 1 0 0 )	%  Norway_Population_mil=interval(7,8)
-		( 0 0 0.32 0.68 0 )	%  Norway_Population_mil=interval(8,9)
-		( 0 0 0 1 0 ));	%  Norway_Population_mil=interval(9,10)
     }
 
     potential (Year)
