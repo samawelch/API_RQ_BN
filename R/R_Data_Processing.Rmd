@@ -93,7 +93,8 @@ ggplot(data = API_sales_by_population, mapping =
              y = Total_Sold_g,
              colour = API_Name)) + 
   geom_point() +
-  geom_smooth(method = "lm") 
+  geom_smooth(method = "lm") +
+  scale_y_log10()
 
 # Calculate a linear relationship between sales and population
 # Sales_over_Pop <- lm(Total_Sold_g ~  API_Name:Population, data = API_sales_by_population) %>% 
@@ -105,10 +106,13 @@ ggplot(data = API_sales_by_population, mapping =
 #             Sales_over_Pop_g = value)
 
 # Pretty sure the above lm sucked, so let's try running individual LMs
+# TODO: Previously I ran all this stuff with 2019 left in. Let's take it out.
 LMs_API <- API_sales_by_population %>% 
+  filter(sYear != 2019) %>% 
   group_by(API_Name) %>% 
-  summarise(lm_intercept = coef(lm(Total_Sold_g ~ Population))[[1]],
-            lm_coef = coef(lm(Total_Sold_g ~ Population))[[2]])
+  # NB: The formula x ~ y -1 should calculate an lm without an intercept
+  # This was (may have been) causing me big problems before
+  summarise(lm_coef = coef(lm(Total_Sold_g ~ Population - 1))[[1]])
 
 ggplot(data = Norway_Population_Projections_21C, mapping = aes(
   x = Year,
@@ -121,9 +125,7 @@ ggplot(data = Norway_Population_Projections_21C, mapping = aes(
 # Run some examples and see how it looks graphed
 Sales_Projections_21C <- 
   crossing(LMs_API, Norway_Population_Projections_21C) %>% 
-  mutate(Sales_Proj_g = Population * lm_coef + lm_intercept) %>% 
-# Pick some APIs
-  filter(API_Name %in% c("paracetamol", "ethinylestradiol"))
+  mutate(Sales_Proj_g = Population * lm_coef)
 
 # Join projections and records together to plot on one graph
 Sales_Projections_Records <- Sales_Projections_21C %>% 
@@ -134,15 +136,15 @@ Sales_Projections_Records <- Sales_Projections_21C %>%
   add_row(NIPH_Sales_Weights_Summed %>% transmute(API_Name,
                                                   sYear,
                                                   Total_Sold_g,
-                                                  Scenario = "Measured")) %>% 
-    filter(API_Name %in% c("paracetamol", "ethinylestradiol"))
+                                                  Scenario = "Measured"))
 
-ggplot(data = Sales_Projections_Records,
+ggplot(data = Sales_Projections_Records %>% filter(API_Name %in% c("paracetamol","ethinylestradiol")),
        mapping = aes(x = sYear, 
                      y = Total_Sold_g,
                      colour = API_Name,
                      shape = Scenario)) + 
-  geom_point()
+  geom_point() +
+  scale_y_log10()
 ```
 
 ```{r checks}
@@ -161,7 +163,6 @@ Hugin_Data_File <- LMs_API %>%
   left_join(API_PNECs, by = "API_Name") %>% 
   transmute(API_Name,
             API_LM_Coeff = lm_coef,
-            API_LM_Interc = lm_intercept,
             API_PNEC_gL = PNEC_gL) %>% 
   # Use vector recycling via crossing to set up the various scenario combinations easily
   crossing(Population_Scenario = as_factor(c("Low", "Main", "High")),
@@ -201,7 +202,7 @@ Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_API_Output.csv",
 ```{r Some_Graphs}
 # I'm gonna make some graphs!
 # Sales Weight, by year, scenario & API
-ggplot(data = Hugin_Data_Output,
+SW_by_Year_Scen_API <- ggplot(data = Hugin_Data_Output,
        mapping = aes(x = Year,
                      y = `[MEAN](API_Sales_Weight_kg)`,
                      colour = Population_Scenario,
@@ -212,6 +213,8 @@ ggplot(data = Hugin_Data_Output,
   scale_color_discrete(breaks = c("Low", "Main", "High")) +
   scale_shape_discrete(breaks = c("Low", "Main", "High"))
 
+SW_by_Year_Scen_API
+
 # What's going on with these APIs?
 Diclofenac_Weird <- Hugin_Data_Output %>% 
   filter(API_Name == "diclofenac",
@@ -220,7 +223,7 @@ Diclofenac_Weird <- Hugin_Data_Output %>%
   distinct()
 
 # Various PECs
-ggplot(data = Hugin_Data_Output,
+Various_PECS <- ggplot(data = Hugin_Data_Output,
        mapping = aes(x = Year,
                      y = `[MEAN](PEC_Inf_gL)`,
                      colour = Population_Scenario,
@@ -232,7 +235,7 @@ ggplot(data = Hugin_Data_Output,
   scale_shape_discrete(breaks = c("Low", "Main", "High"))
 
 # RQ by year, scenario & API
-ggplot(data = Hugin_Data_Output,
+RQ_by_Year_Scen_API <- ggplot(data = Hugin_Data_Output,
        mapping = aes(x = Year,
                      y = `[MEAN](RQ)`,
                      colour = WWTP_Removal_Scenario,
@@ -240,13 +243,15 @@ ggplot(data = Hugin_Data_Output,
   geom_point() +
   geom_path() +
   facet_wrap(facets = vars(API_Name), ncol = 4) +
-  scale_color_discrete(breaks = c("Low", "Main", "High")) +
+  scale_color_viridis_d() +
   scale_shape_discrete(breaks = c("Low", "Main", "High"))
+
+RQ_by_Year_Scen_API
 
 # Now we're gonna try and make some graphs like Sophie's!
 Sophie_Graph_Data <- Hugin_Data_Output %>% 
   filter(API_Name == "levonorgestrel") %>% 
-  dplyr::select(1, 5:7, 15:23) %>% 
+  dplyr::select(1, 4:6, 14:22) %>% 
   pivot_longer(cols = 5:13,
                names_to = "RQ_Bin",
                values_to = "Probability")
@@ -259,7 +264,7 @@ Sophie_Graph_Labeller = c("0-0.25" = "Primary: 0 - 0.25", "0.25-0.5" = "Secondar
                           "Low" = "Low Growth Population")
 # Doesn't work right now, will troubleshoot some other time
 
-ggplot(data = Sophie_Graph_Data, 
+RQ_by_Bin <- ggplot(data = Sophie_Graph_Data, 
        mapping = aes(x = Year,
                      y = Probability,
                      fill = RQ_Bin)) +
@@ -267,5 +272,20 @@ ggplot(data = Sophie_Graph_Data,
   facet_grid(rows = vars(Population_Scenario),
              cols = vars(WWTP_Removal_Scenario)) +
   scale_fill_viridis_d(option = "plasma", direction = 1)
+
+RQ_by_Bin
+
+```
+
+```{r thinking_about_parameterisation}
+ggplot(data = Sales_Projections_Records %>% filter(sYear != 2019), 
+       mapping = aes(x = sYear, 
+                     y = Total_Sold_g, 
+                     colour = Scenario)) + 
+  geom_path() + 
+  facet_wrap(facets = vars(API_Name))
+
+# What's a natural log sequence we can use for API sales weights?
+natlog_scale <- 10 ^ log(1:20)
 
 ```
