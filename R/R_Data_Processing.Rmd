@@ -223,7 +223,7 @@ Diclofenac_Weird <- Hugin_Data_Output %>%
   distinct()
 
 # Various PECs
-Various_PECS <- ggplot(data = Hugin_Data_Output,
+Various_PECs <- ggplot(data = Hugin_Data_Output,
        mapping = aes(x = Year,
                      y = `[MEAN](PEC_Inf_gL)`,
                      colour = Population_Scenario,
@@ -233,6 +233,8 @@ Various_PECS <- ggplot(data = Hugin_Data_Output,
   facet_wrap(facets = vars(API_Name), ncol = 4, scales = "free") +
   scale_color_discrete(breaks = c("Low", "Main", "High")) +
   scale_shape_discrete(breaks = c("Low", "Main", "High"))
+
+Various_PECs
 
 # RQ by year, scenario & API
 RQ_by_Year_Scen_API <- ggplot(data = Hugin_Data_Output,
