@@ -154,8 +154,18 @@ ggplot(data = Sales_Projections_Records %>% filter(API_Name %in% c("paracetamol"
 Paracetamol_Projections_21C <- Sales_Projections_Records %>% 
   filter(API_Name == "paracetamol") %>% 
   left_join(Norway_Population_Projections_21C, by = c("Scenario", "sYear" = "Year"))
+
+# Some more experimentation with LMs
+ggplot(data = Sales_Projections_21C %>% filter(Year != 2019), 
+       mapping = aes(x = Population, 
+                     y = Sales_Proj_g, 
+                     colour = Scenario)) + 
+  geom_path() + 
+  facet_wrap(facets = vars(API_Name),
+             scales = "free")
 ```
 
+# R to Hugin
 
 ```{r Hugin_Data_Maker}
 # Make data files for automated data input/output to Hugin
@@ -167,7 +177,7 @@ Hugin_Data_File <- LMs_API %>%
   # Use vector recycling via crossing to set up the various scenario combinations easily
   crossing(Population_Scenario = as_factor(c("Low", "Main", "High")),
            Year = c("2020", "2030", "2040", "2050", "2060", "2070", "2080", "2090", "2100"),
-           WWTP_Removal_Scenario = c("0-0.25", "0.25-0.5", "0.5-0.75", "0.75-1")) %>% 
+           WWTP_Removal_Scenario = c("0", "0.25", "0.5", "0.75")) %>% 
   add_column(`[MEAN](Norway_Population_mil)` = NA, 
              `[MEAN](API_Sales_Weight_kg)` = NA, 
              `[MEAN](Water_Consumption_ML)` = NA,
@@ -185,15 +195,16 @@ Hugin_Data_File <- LMs_API %>%
 write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na = "")
 ```
 
+# Hugin to R 
+
 ```{r Hugin_Data_Reader}
 # Hugin has done its thing, so let's import the data
-Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_API_Output.csv",
+Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_to_R_datafile.csv",
                               show_col_types = FALSE) %>% 
   # rename_with(cols = 8:15, ~str_remove(string = ., pattern = "\\[MEAN\\]")) %>% 
   # rename_with(cols = 8:15, ~str_remove_all(string = ., pattern = "\\W"))
 # Need to refactorise population scenarios
-  mutate(Population_Scenario = fct_relevel(Population_Scenario, c("Low", "Main", "High")),
-         WWTP_Removal_Scenario = fct_rev(WWTP_Removal_Scenario))
+  mutate(Population_Scenario = fct_relevel(Population_Scenario, c("Low", "Main", "High")))
 ```
 
 ```{r Some_Graphs}
@@ -242,7 +253,7 @@ RQ_by_Year_Scen_API <- ggplot(data = Hugin_Data_Output,
   geom_point() +
   geom_path() +
   facet_wrap(facets = vars(API_Name), ncol = 4) +
-  scale_color_viridis_d() +
+  scale_color_viridis_c() +
   scale_shape_discrete(breaks = c("Low", "Main", "High"))
 
 RQ_by_Year_Scen_API
@@ -283,8 +294,5 @@ ggplot(data = Sales_Projections_Records %>% filter(sYear != 2019),
                      colour = Scenario)) + 
   geom_path() + 
   facet_wrap(facets = vars(API_Name))
-
-# What's a natural log sequence we can use for API sales weights?
-natlog_scale <- 10 ^ log(1:20)
 
 ```
