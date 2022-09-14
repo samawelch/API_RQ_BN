@@ -145,6 +145,26 @@ ggplot(data = Sales_Projections_Records %>% filter(API_Name %in% c("paracetamol"
                      shape = Scenario)) + 
   geom_point() +
   scale_y_log10()
+
+# Another graph - population and sales to 0, with historical data and LMs
+ggplot(data = API_sales_by_population %>% filter(sYear != 2019), 
+       mapping = aes(x = Population, 
+                     y = Total_Sold_g,
+                     colour = API_Name)) +
+  geom_point() +
+  xlim(c(0, 1e7)) +
+  scale_y_log10(limits = c(0.1, 3e8)) +
+  geom_smooth(se = FALSE, fullrange = TRUE)
+
+# Let's try and implement API ~ Population + Year, as suggested by JMO
+LMs_API <- API_sales_by_population %>% 
+  mutate(KPopulation = Population / 1000) %>% 
+  filter(sYear != 2019) %>% 
+  group_by(API_Name) %>% 
+  summarise(lm_intercept = coef(lm(Total_Sold_g ~ KPopulation + sYear))[[1]],
+            lm_coef_kpop = coef(lm(Total_Sold_g ~ KPopulation + sYear))[[2]],
+            lm_coef_year = coef(lm(Total_Sold_g ~ KPopulation + sYear))[[3]])
+
 ```
 
 ```{r checks}
@@ -172,7 +192,9 @@ ggplot(data = Sales_Projections_21C %>% filter(Year != 2019),
 Hugin_Data_File <- LMs_API %>% 
   left_join(API_PNECs, by = "API_Name") %>% 
   transmute(API_Name,
-            API_LM_Coeff = lm_coef,
+            API_LM_Intercept = lm_intercept,
+            API_LM_Coeff_KPop = lm_coef_kpop,
+            API_LM_Coeff_Year = lm_coef_year,
             API_PNEC_gL = PNEC_gL) %>% 
   # Use vector recycling via crossing to set up the various scenario combinations easily
   crossing(Population_Scenario = as_factor(c("Low", "Main", "High")),
@@ -261,8 +283,8 @@ RQ_by_Year_Scen_API
 # Now we're gonna try and make some graphs like Sophie's!
 Sophie_Graph_Data <- Hugin_Data_Output %>% 
   filter(API_Name == "paracetamol") %>% 
-  dplyr::select(1, 4:6, 14:19) %>% 
-  pivot_longer(cols = 5:10,
+  dplyr::select(1, 5:8, 16:21) %>% 
+  pivot_longer(cols = 6:11,
                names_to = "RQ_Bin",
                values_to = "Probability")
 
