@@ -183,6 +183,38 @@ ggplot(data = Sales_Projections_21C %>% filter(Year != 2019),
   geom_path() + 
   facet_wrap(facets = vars(API_Name),
              scales = "free")
+
+
+# uhhhh
+# gonna try and reconstruct the API_Sales_Weight calculations here
+LM_Modelling <- LMs_API %>% 
+  crossing(Population_mil = c(4.5, 5.5, 6.5, 7.5, 8.5, 9.5),
+           Year = c(2020, 2030, 2040, 2050, 2060, 2070, 2080, 2090, 2100)) %>% 
+  mutate(Sales_Weight_kg = (Population_mil * lm_coef_kpop * 1000) + (Year * lm_coef_year) + lm_intercept)
+
+# Plot out
+ggplot(data = LM_Modelling, mapping = aes(x = Year, 
+                                          y = Sales_Weight_kg,
+                                          colour = as.factor(Population_mil))) +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), scales = "free")
+
+# Plot with minimum value of 0
+ggplot(data = LM_Modelling, mapping = aes(x = Year, 
+                                          y = pmax(0, Sales_Weight_kg),
+                                          colour = as.factor(Population_mil))) +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), scales = "free")
+
+# Plot with Pop on X axis
+ggplot(data = LM_Modelling, mapping = aes(x = Population_mil, 
+                                          y = pmax(0, Sales_Weight_kg),
+                                          colour = as.factor(Year))) +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), scales = "free")
+
+# What does the original data look lile?
+
 ```
 
 # R to Hugin
@@ -226,7 +258,8 @@ Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_to_R_datafile.csv",
   # rename_with(cols = 8:15, ~str_remove(string = ., pattern = "\\[MEAN\\]")) %>% 
   # rename_with(cols = 8:15, ~str_remove_all(string = ., pattern = "\\W"))
 # Need to refactorise population scenarios
-  mutate(Population_Scenario = fct_relevel(Population_Scenario, c("Low", "Main", "High")))
+  mutate(Population_Scenario = fct_relevel(Population_Scenario, c("Low", "Main", "High")),
+         WWTP_Removal_Scenario = as.ordered(WWTP_Removal_Scenario))
 ```
 
 ```{r Some_Graphs}
@@ -275,7 +308,7 @@ RQ_by_Year_Scen_API <- ggplot(data = Hugin_Data_Output,
   geom_point() +
   geom_path() +
   facet_wrap(facets = vars(API_Name), ncol = 4) +
-  scale_color_viridis_c() +
+  scale_color_viridis_d() +
   scale_shape_discrete(breaks = c("Low", "Main", "High"))
 
 RQ_by_Year_Scen_API
