@@ -1,4 +1,4 @@
-class API_RQ_Prediction
+class API_RQ_Prediction_Year_Pop_removed
 {
     inputs = ();
     outputs = ();
@@ -714,4 +714,4 @@ class API_RQ_Prediction
 		 ( 0 0 0 0 1 0 )	%  Population_Scenario=High  Year=2090
 		 ( 0 0 0 0 0 1 )));	%  Population_Scenario=High  Year=2100
     }
-} % class API_RQ_Prediction
+} % class API_RQ_Prediction_Year_Pop_removed
