@@ -1,0 +1,4444 @@
+Using model for PEC_Inf_H_gL to generate a conditional probability table
+(1,0,1): 0.0736 (min=0, max=1)
+(1,0,2): 0.584 (min=0, max=1)
+(1,0,3): 0.3088 (min=0, max=1)
+(1,0,4): 0.0336 (min=0, max=1)
+(1,1,1): 0.2176 (min=0, max=1)
+(1,1,2): 0.7824 (min=0, max=1)
+(1,2,1): 0.3664 (min=0, max=1)
+(1,2,2): 0.6336 (min=0, max=1)
+(1,3,1): 0.5104 (min=0, max=1)
+(1,3,2): 0.4896 (min=0, max=1)
+(1,4,1): 0.6576 (min=0, max=1)
+(1,4,2): 0.3424 (min=0, max=1)
+(2,0,2): 0.008 (min=0, max=1)
+(2,0,3): 0.6144 (min=0, max=1)
+(2,0,4): 0.3408 (min=0, max=1)
+(2,0,5): 0.0368 (min=0, max=1)
+(2,1,2): 0.1312 (min=0, max=1)
+(2,1,3): 0.8688 (min=0, max=1)
+(2,2,2): 0.2944 (min=0, max=1)
+(2,2,3): 0.7056 (min=0, max=1)
+(2,3,2): 0.456 (min=0, max=1)
+(2,3,3): 0.544 (min=0, max=1)
+(2,4,2): 0.6176 (min=0, max=1)
+(2,4,3): 0.3824 (min=0, max=1)
+(3,0,3): 0.008 (min=0, max=1)
+(3,0,4): 0.6144 (min=0, max=1)
+(3,0,5): 0.3776 (min=0, max=1)
+(3,1,3): 0.1312 (min=0, max=1)
+(3,1,4): 0.8688 (min=0, max=1)
+(3,2,3): 0.2944 (min=0, max=1)
+(3,2,4): 0.7056 (min=0, max=1)
+(3,3,3): 0.456 (min=0, max=1)
+(3,3,4): 0.544 (min=0, max=1)
+(3,4,3): 0.6176 (min=0, max=1)
+(3,4,4): 0.3824 (min=0, max=1)
+(4,0,4): 0.008 (min=0, max=1)
+(4,0,5): 0.992 (min=0, max=1)
+(4,1,4): 0.1312 (min=0, max=1)
+(4,1,5): 0.8688 (min=0, max=1)
+(4,2,4): 0.2944 (min=0, max=1)
+(4,2,5): 0.7056 (min=0, max=1)
+(4,3,4): 0.456 (min=0, max=1)
+(4,3,5): 0.544 (min=0, max=1)
+(4,4,4): 0.6176 (min=0, max=1)
+(4,4,5): 0.3824 (min=0, max=1)
+Fri Sep 23 09:55:57 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 4 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, RQ_SW
+This component is a clique of cost 1680
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8652084
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    Weight_Class
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PEC_SW_L_gL
+    PEC_SW_H_gL
+    PNEC_gL
+    PEC_Eff_L_gL
+    PEC_Inf_H_gL
+    PEC_Inf_L_gL
+    PEC_Eff_H_gL
+    API_Name
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 5 members, table size = 6048:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Clique 10, 5 members, table size = 7056:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Clique 9, 4 members, table size = 2688:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Clique 8, 4 members, table size = 2016:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Clique 7, 4 members, table size = 2352:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Clique 6, 4 members, table size = 1680:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL, RQ_SW
+
+Clique 5, 5 members, table size = 10080:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Clique 4, 5 members, table size = 10080:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Clique 3, 5 members, table size = 8400:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg,
+    Population
+
+Clique 2, 9 members, table size = 8601600:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear, Weight_Class
+
+Clique 1, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Total clique table size: 8652084
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 4 members and table size = 1008:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL
+
+Cliques 9 and 10 linked, separator has 3 members and table size = 336:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 336:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 336:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 336:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Cliques 5 and 11 linked, separator has 3 members and table size = 336:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Cliques 4 and 5 linked, separator has 4 members and table size = 1440:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 3 and 4 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg
+
+Cliques 2 and 3 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 1
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 2
+    Node Pop_Coeff_kgkpers assigned to clique 2
+    Node Year_Coeff_kgyear assigned to clique 2
+    Node PEC_SW_L_gL assigned to clique 7
+    Node PEC_Eff_L_gL assigned to clique 10
+    Node PEC_SW_H_gL assigned to clique 8
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 1
+    Node PNEC_gL assigned to clique 9
+    Node Weight_Class assigned to clique 2
+    Node RQ_SW assigned to clique 6
+    Node Population assigned to clique 1
+    Node Water_Consumption_ML assigned to clique 3
+    Node PEC_Inf_L_gL assigned to clique 5
+    Node PEC_Inf_H_gL assigned to clique 4
+    Node Weight_Light_kg assigned to clique 2
+    Node API_Name assigned to clique 9
+    Node Weight_Heavy_kg assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.375
+	state1   0.0011776
+	state2   0.025601
+	state3   0.144667
+	state4   0.453555
+	state5   0
+
+    PEC_Eff_H_gL:
+	state0   0.375
+	state1   0.0011776
+	state2   0.025601
+	state3   0.144667
+	state4   0.453555
+	state5   0
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.50168
+	state1   0.196147
+	state2   0.154787
+	state3   0.114625
+	state4   0.0327607
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Inf_H_gL:
+	state0   0.375
+	state1   0
+	state2   0.00736
+	state3   0.121366
+	state4   0.266994
+	state5   0.229279
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0
+Using model for PEC_SW_H_gL to generate a conditional probability table
+Using model for PEC_Eff_H_gL to generate a conditional probability table
+(2,0,1): 0.04 (min=0, max=1)
+(2,0,2): 0.96 (min=0, max=1)
+(2,1,1): 0.12 (min=0, max=1)
+(2,1,2): 0.88 (min=0, max=1)
+(2,2,1): 0.32 (min=0, max=1)
+(2,2,2): 0.68 (min=0, max=1)
+(3,0,2): 0.04 (min=0, max=1)
+(3,0,3): 0.96 (min=0, max=1)
+(3,1,2): 0.12 (min=0, max=1)
+(3,1,3): 0.88 (min=0, max=1)
+(3,2,2): 0.32 (min=0, max=1)
+(3,2,3): 0.68 (min=0, max=1)
+(4,0,3): 0.04 (min=0, max=1)
+(4,0,4): 0.96 (min=0, max=1)
+(4,1,3): 0.12 (min=0, max=1)
+(4,1,4): 0.88 (min=0, max=1)
+(4,2,3): 0.32 (min=0, max=1)
+(4,2,4): 0.68 (min=0, max=1)
+(5,0,4): 0.04 (min=0, max=1)
+(5,0,5): 0.96 (min=0, max=1)
+(5,1,4): 0.12 (min=0, max=1)
+(5,1,5): 0.88 (min=0, max=1)
+(5,2,4): 0.32 (min=0, max=1)
+(5,2,5): 0.68 (min=0, max=1)
+Using model for PEC_Inf_H_gL to generate a conditional probability table
+(0,1,0): 0.0256 (min=0, max=1)
+(0,1,1): 0.9744 (min=0, max=1)
+(0,2,0): 0.04 (min=0, max=1)
+(0,2,1): 0.96 (min=0, max=1)
+(0,3,0): 0.04 (min=0, max=1)
+(0,3,1): 0.96 (min=0, max=1)
+(0,4,0): 0.0752 (min=0, max=1)
+(0,4,1): 0.9248 (min=0, max=1)
+(1,0,1): 0.0736 (min=0, max=1)
+(1,0,2): 0.584 (min=0, max=1)
+(1,0,3): 0.3088 (min=0, max=1)
+(1,0,4): 0.0336 (min=0, max=1)
+(1,1,1): 0.2176 (min=0, max=1)
+(1,1,2): 0.7824 (min=0, max=1)
+(1,2,1): 0.3664 (min=0, max=1)
+(1,2,2): 0.6336 (min=0, max=1)
+(1,3,1): 0.5104 (min=0, max=1)
+(1,3,2): 0.4896 (min=0, max=1)
+(1,4,1): 0.6576 (min=0, max=1)
+(1,4,2): 0.3424 (min=0, max=1)
+(2,0,2): 0.008 (min=0, max=1)
+(2,0,3): 0.6144 (min=0, max=1)
+(2,0,4): 0.3408 (min=0, max=1)
+(2,0,5): 0.0368 (min=0, max=1)
+(2,1,2): 0.1312 (min=0, max=1)
+(2,1,3): 0.8688 (min=0, max=1)
+(2,2,2): 0.2944 (min=0, max=1)
+(2,2,3): 0.7056 (min=0, max=1)
+(2,3,2): 0.456 (min=0, max=1)
+(2,3,3): 0.544 (min=0, max=1)
+(2,4,2): 0.6176 (min=0, max=1)
+(2,4,3): 0.3824 (min=0, max=1)
+(3,0,3): 0.008 (min=0, max=1)
+(3,0,4): 0.6144 (min=0, max=1)
+(3,0,5): 0.3408 (min=0, max=1)
+(3,0,6): 0.0368 (min=0, max=1)
+(3,1,3): 0.1312 (min=0, max=1)
+(3,1,4): 0.8688 (min=0, max=1)
+(3,2,3): 0.2944 (min=0, max=1)
+(3,2,4): 0.7056 (min=0, max=1)
+(3,3,3): 0.456 (min=0, max=1)
+(3,3,4): 0.544 (min=0, max=1)
+(3,4,3): 0.6176 (min=0, max=1)
+(3,4,4): 0.3824 (min=0, max=1)
+(4,0,4): 0.008 (min=0, max=1)
+(4,0,5): 0.6144 (min=0, max=1)
+(4,0,6): 0.3776 (min=0, max=1)
+(4,1,4): 0.1312 (min=0, max=1)
+(4,1,5): 0.8688 (min=0, max=1)
+(4,2,4): 0.2944 (min=0, max=1)
+(4,2,5): 0.7056 (min=0, max=1)
+(4,3,4): 0.456 (min=0, max=1)
+(4,3,5): 0.544 (min=0, max=1)
+(4,4,4): 0.6176 (min=0, max=1)
+(4,4,5): 0.3824 (min=0, max=1)
+(5,0,5): 0.008 (min=0, max=1)
+(5,0,6): 0.992 (min=0, max=1)
+(5,1,5): 0.1312 (min=0, max=1)
+(5,1,6): 0.8688 (min=0, max=1)
+(5,2,5): 0.2944 (min=0, max=1)
+(5,2,6): 0.7056 (min=0, max=1)
+(5,3,5): 0.456 (min=0, max=1)
+(5,3,6): 0.544 (min=0, max=1)
+(5,4,5): 0.6176 (min=0, max=1)
+(5,4,6): 0.3824 (min=0, max=1)
+Fri Sep 23 09:57:46 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 4 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, RQ_SW
+This component is a clique of cost 1680
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8655171
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    Weight_Class
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PNEC_gL
+    PEC_Eff_L_gL
+    PEC_Inf_L_gL
+    PEC_SW_L_gL
+    API_Name
+    PEC_Eff_H_gL
+    PEC_SW_H_gL
+    PEC_Inf_H_gL
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 4 members, table size = 882:
+    API_Removal, PEC_Inf_H_gL, PEC_SW_H_gL, PEC_Eff_H_gL
+
+Clique 10, 5 members, table size = 7056:
+    API_Removal, PEC_Inf_H_gL, PEC_SW_H_gL, API_Name, PEC_SW_L_gL
+
+Clique 9, 5 members, table size = 8232:
+    API_Removal, PEC_Inf_H_gL, API_Name, PEC_SW_L_gL, PEC_Inf_L_gL
+
+Clique 8, 4 members, table size = 1029:
+    API_Removal, PEC_SW_L_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Clique 7, 5 members, table size = 11760:
+    PEC_Inf_H_gL, API_Name, PEC_Inf_L_gL, Weight_Light_kg, Water_Consumption_ML
+
+Clique 6, 5 members, table size = 11760:
+    PEC_Inf_H_gL, API_Name, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Clique 5, 5 members, table size = 8400:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg,
+    Population
+
+Clique 4, 9 members, table size = 8601600:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear, Weight_Class
+
+Clique 3, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Clique 2, 4 members, table size = 2688:
+    PEC_SW_H_gL, API_Name, PEC_SW_L_gL, PNEC_gL
+
+Clique 1, 4 members, table size = 1680:
+    PEC_SW_H_gL, PEC_SW_L_gL, PNEC_gL, RQ_SW
+
+Total clique table size: 8655171
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 3 members and table size = 126:
+    API_Removal, PEC_Inf_H_gL, PEC_SW_H_gL
+
+Cliques 9 and 10 linked, separator has 4 members and table size = 1176:
+    API_Removal, PEC_Inf_H_gL, API_Name, PEC_SW_L_gL
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 147:
+    API_Removal, PEC_SW_L_gL, PEC_Inf_L_gL
+
+Cliques 7 and 9 linked, separator has 3 members and table size = 392:
+    PEC_Inf_H_gL, API_Name, PEC_Inf_L_gL
+
+Cliques 6 and 7 linked, separator has 4 members and table size = 1680:
+    PEC_Inf_H_gL, API_Name, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 5 and 6 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg
+
+Cliques 4 and 5 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 3 and 4 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+Cliques 2 and 10 linked, separator has 3 members and table size = 336:
+    PEC_SW_H_gL, API_Name, PEC_SW_L_gL
+
+Cliques 1 and 2 linked, separator has 3 members and table size = 336:
+    PEC_SW_H_gL, PEC_SW_L_gL, PNEC_gL
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 3
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 4
+    Node Pop_Coeff_kgkpers assigned to clique 4
+    Node Year_Coeff_kgyear assigned to clique 4
+    Node PEC_SW_L_gL assigned to clique 8
+    Node PEC_Eff_L_gL assigned to clique 8
+    Node PEC_SW_H_gL assigned to clique 11
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 3
+    Node PNEC_gL assigned to clique 2
+    Node Weight_Class assigned to clique 4
+    Node RQ_SW assigned to clique 1
+    Node Population assigned to clique 3
+    Node Water_Consumption_ML assigned to clique 5
+    Node PEC_Inf_L_gL assigned to clique 7
+    Node PEC_Inf_H_gL assigned to clique 6
+    Node Weight_Light_kg assigned to clique 4
+    Node API_Name assigned to clique 2
+    Node Weight_Heavy_kg assigned to clique 4
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.015
+	state1   0.361178
+	state2   0.025601
+	state3   0.144667
+	state4   0.24263
+	state5   0.210925
+
+    PEC_Eff_H_gL:
+	state0   0.015
+	state1   0.361178
+	state2   0.025601
+	state3   0.144667
+	state4   0.24263
+	state5   0.210925
+	state6   0
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.037695
+	state1   0.264402
+	state2   0.361492
+	state3   0.30365
+	state4   0.0327607
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Inf_H_gL:
+	state0   0.015
+	state1   0.36
+	state2   0.00736
+	state3   0.121366
+	state4   0.266994
+	state5   0.114718
+	state6   0.114562
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0
+Using model for PEC_SW_H_gL to generate a conditional probability table
+Using model for RQ_SW to generate a conditional probability table
+(0,2,0,0): 0.9472 (min=0, max=1)
+(0,2,0,1): 0.0528 (min=0, max=1)
+(0,3,0,0): 0.448 (min=0, max=1)
+(0,3,0,1): 0.552 (min=0, max=1)
+(0,4,0,1): 0.9424 (min=0, max=1)
+(0,4,0,2): 0.0576 (min=0, max=1)
+(0,4,1,0): 0.2224 (min=0, max=1)
+(0,4,1,1): 0.7776 (min=0, max=1)
+(0,5,1,1): 0.28 (min=0, max=1)
+(0,5,1,2): 0.72 (min=0, max=1)
+(0,5,2,0): 0.32 (min=0, max=1)
+(0,5,2,1): 0.68 (min=0, max=1)
+(1,0,0,2): 0.08 (min=0, max=1)
+(1,0,0,3): 0.92 (min=0, max=1)
+(1,0,1,1): 0.04 (min=0, max=1)
+(1,0,1,2): 0.32 (min=0, max=1)
+(1,0,1,3): 0.64 (min=0, max=1)
+(1,0,2,0): 0.04 (min=0, max=1)
+(1,0,2,1): 0.36 (min=0, max=1)
+(1,0,2,2): 0.6 (min=0, max=1)
+(1,0,3,0): 0.48 (min=0, max=1)
+(1,0,3,1): 0.52 (min=0, max=1)
+(1,1,0,2): 0.08 (min=0, max=1)
+(1,1,0,3): 0.92 (min=0, max=1)
+(1,1,1,1): 0.04 (min=0, max=1)
+(1,1,1,2): 0.32 (min=0, max=1)
+(1,1,1,3): 0.64 (min=0, max=1)
+(1,1,2,0): 0.04 (min=0, max=1)
+(1,1,2,1): 0.36 (min=0, max=1)
+(1,1,2,2): 0.6 (min=0, max=1)
+(1,1,3,0): 0.48 (min=0, max=1)
+(1,1,3,1): 0.52 (min=0, max=1)
+(1,2,0,2): 0.08 (min=0, max=1)
+(1,2,0,3): 0.92 (min=0, max=1)
+(1,2,1,1): 0.04 (min=0, max=1)
+(1,2,1,2): 0.32 (min=0, max=1)
+(1,2,1,3): 0.64 (min=0, max=1)
+(1,2,2,0): 0.04 (min=0, max=1)
+(1,2,2,1): 0.36 (min=0, max=1)
+(1,2,2,2): 0.6 (min=0, max=1)
+(1,2,3,0): 0.48 (min=0, max=1)
+(1,2,3,1): 0.52 (min=0, max=1)
+(1,3,0,2): 0.08 (min=0, max=1)
+(1,3,0,3): 0.92 (min=0, max=1)
+(1,3,1,1): 0.04 (min=0, max=1)
+(1,3,1,2): 0.32 (min=0, max=1)
+(1,3,1,3): 0.64 (min=0, max=1)
+(1,3,2,0): 0.04 (min=0, max=1)
+(1,3,2,1): 0.36 (min=0, max=1)
+(1,3,2,2): 0.6 (min=0, max=1)
+(1,3,3,0): 0.48 (min=0, max=1)
+(1,3,3,1): 0.52 (min=0, max=1)
+(1,4,0,2): 0.08 (min=0, max=1)
+(1,4,0,3): 0.92 (min=0, max=1)
+(1,4,1,1): 0.04 (min=0, max=1)
+(1,4,1,2): 0.3168 (min=0, max=1)
+(1,4,1,3): 0.6432 (min=0, max=1)
+(1,4,2,0): 0.04 (min=0, max=1)
+(1,4,2,1): 0.36 (min=0, max=1)
+(1,4,2,2): 0.6 (min=0, max=1)
+(1,4,3,0): 0.48 (min=0, max=1)
+(1,4,3,1): 0.52 (min=0, max=1)
+(1,5,0,2): 0.0432 (min=0, max=1)
+(1,5,0,3): 0.904 (min=0, max=1)
+(1,5,0,4): 0.0528 (min=0, max=1)
+(1,5,1,1): 0.0016 (min=0, max=1)
+(1,5,1,2): 0.2912 (min=0, max=1)
+(1,5,1,3): 0.7072 (min=0, max=1)
+(1,5,2,0): 0.0048 (min=0, max=1)
+(1,5,2,1): 0.3424 (min=0, max=1)
+(1,5,2,2): 0.6528 (min=0, max=1)
+(1,5,3,0): 0.4432 (min=0, max=1)
+(1,5,3,1): 0.5568 (min=0, max=1)
+(1,6,0,3): 0.88 (min=0, max=1)
+(1,6,0,4): 0.12 (min=0, max=1)
+(1,6,1,2): 0.24 (min=0, max=1)
+(1,6,1,3): 0.76 (min=0, max=1)
+(1,6,2,1): 0.28 (min=0, max=1)
+(1,6,2,2): 0.72 (min=0, max=1)
+(1,6,3,0): 0.4 (min=0, max=1)
+(1,6,3,1): 0.6 (min=0, max=1)
+(2,0,1,3): 0.28 (min=0, max=1)
+(2,0,1,4): 0.72 (min=0, max=1)
+(2,0,2,2): 0.32 (min=0, max=1)
+(2,0,2,3): 0.68 (min=0, max=1)
+(2,0,3,1): 0.44 (min=0, max=1)
+(2,0,3,2): 0.56 (min=0, max=1)
+(2,0,4,0): 0.44 (min=0, max=1)
+(2,0,4,1): 0.56 (min=0, max=1)
+(2,0,5,0): 0.76 (min=0, max=1)
+(2,0,5,1): 0.24 (min=0, max=1)
+(2,1,1,3): 0.28 (min=0, max=1)
+(2,1,1,4): 0.72 (min=0, max=1)
+(2,1,2,2): 0.32 (min=0, max=1)
+(2,1,2,3): 0.68 (min=0, max=1)
+(2,1,3,1): 0.44 (min=0, max=1)
+(2,1,3,2): 0.56 (min=0, max=1)
+(2,1,4,0): 0.44 (min=0, max=1)
+(2,1,4,1): 0.56 (min=0, max=1)
+(2,1,5,0): 0.76 (min=0, max=1)
+(2,1,5,1): 0.24 (min=0, max=1)
+(2,2,1,3): 0.28 (min=0, max=1)
+(2,2,1,4): 0.72 (min=0, max=1)
+(2,2,2,2): 0.32 (min=0, max=1)
+(2,2,2,3): 0.68 (min=0, max=1)
+(2,2,3,1): 0.44 (min=0, max=1)
+(2,2,3,2): 0.56 (min=0, max=1)
+(2,2,4,0): 0.44 (min=0, max=1)
+(2,2,4,1): 0.56 (min=0, max=1)
+(2,2,5,0): 0.76 (min=0, max=1)
+(2,2,5,1): 0.24 (min=0, max=1)
+(2,3,1,3): 0.28 (min=0, max=1)
+(2,3,1,4): 0.72 (min=0, max=1)
+(2,3,2,2): 0.32 (min=0, max=1)
+(2,3,2,3): 0.68 (min=0, max=1)
+(2,3,3,1): 0.44 (min=0, max=1)
+(2,3,3,2): 0.56 (min=0, max=1)
+(2,3,4,0): 0.44 (min=0, max=1)
+(2,3,4,1): 0.56 (min=0, max=1)
+(2,3,5,0): 0.76 (min=0, max=1)
+(2,3,5,1): 0.24 (min=0, max=1)
+(2,4,1,3): 0.28 (min=0, max=1)
+(2,4,1,4): 0.72 (min=0, max=1)
+(2,4,2,2): 0.32 (min=0, max=1)
+(2,4,2,3): 0.68 (min=0, max=1)
+(2,4,3,1): 0.44 (min=0, max=1)
+(2,4,3,2): 0.56 (min=0, max=1)
+(2,4,4,0): 0.44 (min=0, max=1)
+(2,4,4,1): 0.56 (min=0, max=1)
+(2,4,5,0): 0.76 (min=0, max=1)
+(2,4,5,1): 0.24 (min=0, max=1)
+(2,5,1,3): 0.28 (min=0, max=1)
+(2,5,1,4): 0.72 (min=0, max=1)
+(2,5,2,2): 0.32 (min=0, max=1)
+(2,5,2,3): 0.68 (min=0, max=1)
+(2,5,3,1): 0.44 (min=0, max=1)
+(2,5,3,2): 0.56 (min=0, max=1)
+(2,5,4,0): 0.44 (min=0, max=1)
+(2,5,4,1): 0.56 (min=0, max=1)
+(2,5,5,0): 0.76 (min=0, max=1)
+(2,5,5,1): 0.24 (min=0, max=1)
+(2,6,1,3): 0.28 (min=0, max=1)
+(2,6,1,4): 0.72 (min=0, max=1)
+(2,6,2,2): 0.32 (min=0, max=1)
+(2,6,2,3): 0.68 (min=0, max=1)
+(2,6,3,1): 0.44 (min=0, max=1)
+(2,6,3,2): 0.56 (min=0, max=1)
+(2,6,4,0): 0.44 (min=0, max=1)
+(2,6,4,1): 0.56 (min=0, max=1)
+(2,6,5,0): 0.76 (min=0, max=1)
+(2,6,5,1): 0.24 (min=0, max=1)
+(3,0,2,3): 0.32 (min=0, max=1)
+(3,0,2,4): 0.68 (min=0, max=1)
+(3,0,3,2): 0.44 (min=0, max=1)
+(3,0,3,3): 0.56 (min=0, max=1)
+(3,0,4,1): 0.44 (min=0, max=1)
+(3,0,4,2): 0.56 (min=0, max=1)
+(3,0,5,1): 0.76 (min=0, max=1)
+(3,0,5,2): 0.24 (min=0, max=1)
+(3,1,2,3): 0.32 (min=0, max=1)
+(3,1,2,4): 0.68 (min=0, max=1)
+(3,1,3,2): 0.44 (min=0, max=1)
+(3,1,3,3): 0.56 (min=0, max=1)
+(3,1,4,1): 0.44 (min=0, max=1)
+(3,1,4,2): 0.56 (min=0, max=1)
+(3,1,5,1): 0.76 (min=0, max=1)
+(3,1,5,2): 0.24 (min=0, max=1)
+(3,2,2,3): 0.32 (min=0, max=1)
+(3,2,2,4): 0.68 (min=0, max=1)
+(3,2,3,2): 0.44 (min=0, max=1)
+(3,2,3,3): 0.56 (min=0, max=1)
+(3,2,4,1): 0.44 (min=0, max=1)
+(3,2,4,2): 0.56 (min=0, max=1)
+(3,2,5,1): 0.76 (min=0, max=1)
+(3,2,5,2): 0.24 (min=0, max=1)
+(3,3,2,3): 0.32 (min=0, max=1)
+(3,3,2,4): 0.68 (min=0, max=1)
+(3,3,3,2): 0.44 (min=0, max=1)
+(3,3,3,3): 0.56 (min=0, max=1)
+(3,3,4,1): 0.44 (min=0, max=1)
+(3,3,4,2): 0.56 (min=0, max=1)
+(3,3,5,1): 0.76 (min=0, max=1)
+(3,3,5,2): 0.24 (min=0, max=1)
+(3,4,2,3): 0.32 (min=0, max=1)
+(3,4,2,4): 0.68 (min=0, max=1)
+(3,4,3,2): 0.44 (min=0, max=1)
+(3,4,3,3): 0.56 (min=0, max=1)
+(3,4,4,1): 0.44 (min=0, max=1)
+(3,4,4,2): 0.56 (min=0, max=1)
+(3,4,5,1): 0.76 (min=0, max=1)
+(3,4,5,2): 0.24 (min=0, max=1)
+(3,5,2,3): 0.32 (min=0, max=1)
+(3,5,2,4): 0.68 (min=0, max=1)
+(3,5,3,2): 0.44 (min=0, max=1)
+(3,5,3,3): 0.56 (min=0, max=1)
+(3,5,4,1): 0.44 (min=0, max=1)
+(3,5,4,2): 0.56 (min=0, max=1)
+(3,5,5,1): 0.76 (min=0, max=1)
+(3,5,5,2): 0.24 (min=0, max=1)
+(3,6,2,3): 0.32 (min=0, max=1)
+(3,6,2,4): 0.68 (min=0, max=1)
+(3,6,3,2): 0.44 (min=0, max=1)
+(3,6,3,3): 0.56 (min=0, max=1)
+(3,6,4,1): 0.44 (min=0, max=1)
+(3,6,4,2): 0.56 (min=0, max=1)
+(3,6,5,1): 0.76 (min=0, max=1)
+(3,6,5,2): 0.24 (min=0, max=1)
+(4,0,3,3): 0.44 (min=0, max=1)
+(4,0,3,4): 0.56 (min=0, max=1)
+(4,0,4,2): 0.44 (min=0, max=1)
+(4,0,4,3): 0.56 (min=0, max=1)
+(4,0,5,2): 0.76 (min=0, max=1)
+(4,0,5,3): 0.24 (min=0, max=1)
+(4,0,7,0): 0.92 (min=0, max=1)
+(4,0,7,1): 0.08 (min=0, max=1)
+(4,1,3,3): 0.44 (min=0, max=1)
+(4,1,3,4): 0.56 (min=0, max=1)
+(4,1,4,2): 0.44 (min=0, max=1)
+(4,1,4,3): 0.56 (min=0, max=1)
+(4,1,5,2): 0.76 (min=0, max=1)
+(4,1,5,3): 0.24 (min=0, max=1)
+(4,1,7,0): 0.92 (min=0, max=1)
+(4,1,7,1): 0.08 (min=0, max=1)
+(4,2,3,3): 0.44 (min=0, max=1)
+(4,2,3,4): 0.56 (min=0, max=1)
+(4,2,4,2): 0.44 (min=0, max=1)
+(4,2,4,3): 0.56 (min=0, max=1)
+(4,2,5,2): 0.76 (min=0, max=1)
+(4,2,5,3): 0.24 (min=0, max=1)
+(4,2,7,0): 0.92 (min=0, max=1)
+(4,2,7,1): 0.08 (min=0, max=1)
+(4,3,3,3): 0.44 (min=0, max=1)
+(4,3,3,4): 0.56 (min=0, max=1)
+(4,3,4,2): 0.44 (min=0, max=1)
+(4,3,4,3): 0.56 (min=0, max=1)
+(4,3,5,2): 0.76 (min=0, max=1)
+(4,3,5,3): 0.24 (min=0, max=1)
+(4,3,7,0): 0.92 (min=0, max=1)
+(4,3,7,1): 0.08 (min=0, max=1)
+(4,4,3,3): 0.44 (min=0, max=1)
+(4,4,3,4): 0.56 (min=0, max=1)
+(4,4,4,2): 0.44 (min=0, max=1)
+(4,4,4,3): 0.56 (min=0, max=1)
+(4,4,5,2): 0.76 (min=0, max=1)
+(4,4,5,3): 0.24 (min=0, max=1)
+(4,4,7,0): 0.92 (min=0, max=1)
+(4,4,7,1): 0.08 (min=0, max=1)
+(4,5,3,3): 0.44 (min=0, max=1)
+(4,5,3,4): 0.56 (min=0, max=1)
+(4,5,4,2): 0.44 (min=0, max=1)
+(4,5,4,3): 0.56 (min=0, max=1)
+(4,5,5,2): 0.76 (min=0, max=1)
+(4,5,5,3): 0.24 (min=0, max=1)
+(4,5,7,0): 0.92 (min=0, max=1)
+(4,5,7,1): 0.08 (min=0, max=1)
+(4,6,3,3): 0.44 (min=0, max=1)
+(4,6,3,4): 0.56 (min=0, max=1)
+(4,6,4,2): 0.44 (min=0, max=1)
+(4,6,4,3): 0.56 (min=0, max=1)
+(4,6,5,2): 0.76 (min=0, max=1)
+(4,6,5,3): 0.24 (min=0, max=1)
+(4,6,7,0): 0.92 (min=0, max=1)
+(4,6,7,1): 0.08 (min=0, max=1)
+(5,0,4,3): 0.44 (min=0, max=1)
+(5,0,4,4): 0.56 (min=0, max=1)
+(5,0,5,3): 0.76 (min=0, max=1)
+(5,0,5,4): 0.24 (min=0, max=1)
+(5,0,7,1): 0.92 (min=0, max=1)
+(5,0,7,2): 0.08 (min=0, max=1)
+(5,1,4,3): 0.44 (min=0, max=1)
+(5,1,4,4): 0.56 (min=0, max=1)
+(5,1,5,3): 0.76 (min=0, max=1)
+(5,1,5,4): 0.24 (min=0, max=1)
+(5,1,7,1): 0.92 (min=0, max=1)
+(5,1,7,2): 0.08 (min=0, max=1)
+(5,2,4,3): 0.44 (min=0, max=1)
+(5,2,4,4): 0.56 (min=0, max=1)
+(5,2,5,3): 0.76 (min=0, max=1)
+(5,2,5,4): 0.24 (min=0, max=1)
+(5,2,7,1): 0.92 (min=0, max=1)
+(5,2,7,2): 0.08 (min=0, max=1)
+(5,3,4,3): 0.44 (min=0, max=1)
+(5,3,4,4): 0.56 (min=0, max=1)
+(5,3,5,3): 0.76 (min=0, max=1)
+(5,3,5,4): 0.24 (min=0, max=1)
+(5,3,7,1): 0.92 (min=0, max=1)
+(5,3,7,2): 0.08 (min=0, max=1)
+(5,4,4,3): 0.44 (min=0, max=1)
+(5,4,4,4): 0.56 (min=0, max=1)
+(5,4,5,3): 0.76 (min=0, max=1)
+(5,4,5,4): 0.24 (min=0, max=1)
+(5,4,7,1): 0.92 (min=0, max=1)
+(5,4,7,2): 0.08 (min=0, max=1)
+(5,5,4,3): 0.44 (min=0, max=1)
+(5,5,4,4): 0.56 (min=0, max=1)
+(5,5,5,3): 0.76 (min=0, max=1)
+(5,5,5,4): 0.24 (min=0, max=1)
+(5,5,7,1): 0.92 (min=0, max=1)
+(5,5,7,2): 0.08 (min=0, max=1)
+(5,6,4,3): 0.44 (min=0, max=1)
+(5,6,4,4): 0.56 (min=0, max=1)
+(5,6,5,3): 0.76 (min=0, max=1)
+(5,6,5,4): 0.24 (min=0, max=1)
+(5,6,7,1): 0.92 (min=0, max=1)
+(5,6,7,2): 0.08 (min=0, max=1)
+Fri Sep 23 10:00:18 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 4 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, RQ_SW
+This component is a clique of cost 1960
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8660652
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    Weight_Class
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PEC_SW_L_gL
+    PEC_SW_H_gL
+    PNEC_gL
+    PEC_Eff_L_gL
+    PEC_Inf_H_gL
+    PEC_Inf_L_gL
+    PEC_Eff_H_gL
+    API_Name
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Clique 10, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Clique 9, 4 members, table size = 3136:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Clique 8, 4 members, table size = 2744:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Clique 7, 4 members, table size = 2744:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Clique 6, 4 members, table size = 1960:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL, RQ_SW
+
+Clique 5, 5 members, table size = 11760:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Clique 4, 5 members, table size = 11760:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Clique 3, 5 members, table size = 8400:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg,
+    Population
+
+Clique 2, 9 members, table size = 8601600:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear, Weight_Class
+
+Clique 1, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Total clique table size: 8660652
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 4 members and table size = 1176:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL
+
+Cliques 9 and 10 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 392:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 392:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 392:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Cliques 5 and 11 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Cliques 4 and 5 linked, separator has 4 members and table size = 1680:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 3 and 4 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg
+
+Cliques 2 and 3 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 1
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 2
+    Node Pop_Coeff_kgkpers assigned to clique 2
+    Node Year_Coeff_kgyear assigned to clique 2
+    Node PEC_SW_L_gL assigned to clique 7
+    Node PEC_Eff_L_gL assigned to clique 10
+    Node PEC_SW_H_gL assigned to clique 8
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 1
+    Node PNEC_gL assigned to clique 9
+    Node Weight_Class assigned to clique 2
+    Node RQ_SW assigned to clique 6
+    Node Population assigned to clique 1
+    Node Water_Consumption_ML assigned to clique 3
+    Node PEC_Inf_L_gL assigned to clique 5
+    Node PEC_Inf_H_gL assigned to clique 4
+    Node Weight_Light_kg assigned to clique 2
+    Node API_Name assigned to clique 9
+    Node Weight_Heavy_kg assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.015
+	state1   0.361178
+	state2   0.025601
+	state3   0.144667
+	state4   0.24263
+	state5   0.210925
+	state6   0
+
+    PEC_Eff_H_gL:
+	state0   0.015
+	state1   0.361178
+	state2   0.025601
+	state3   0.144667
+	state4   0.24263
+	state5   0.210925
+	state6   0
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.037695
+	state1   0.254943
+	state2   0.370951
+	state3   0.301327
+	state4   0.0350841
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Inf_H_gL:
+	state0   0.015
+	state1   0.36
+	state2   0.00736
+	state3   0.121366
+	state4   0.266994
+	state5   0.114718
+	state6   0.114562
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0
+Fri Sep 23 10:03:46 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 4 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, RQ_SW
+This component is a clique of cost 1960
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8660652
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    Weight_Class
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PEC_SW_L_gL
+    PEC_SW_H_gL
+    PNEC_gL
+    PEC_Eff_L_gL
+    PEC_Inf_H_gL
+    PEC_Inf_L_gL
+    PEC_Eff_H_gL
+    API_Name
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Clique 10, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Clique 9, 4 members, table size = 3136:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Clique 8, 4 members, table size = 2744:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Clique 7, 4 members, table size = 2744:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Clique 6, 4 members, table size = 1960:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL, RQ_SW
+
+Clique 5, 5 members, table size = 11760:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Clique 4, 5 members, table size = 11760:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Clique 3, 5 members, table size = 8400:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg,
+    Population
+
+Clique 2, 9 members, table size = 8601600:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear, Weight_Class
+
+Clique 1, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Total clique table size: 8660652
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 4 members and table size = 1176:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL
+
+Cliques 9 and 10 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 392:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 392:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 392:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Cliques 5 and 11 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Cliques 4 and 5 linked, separator has 4 members and table size = 1680:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 3 and 4 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg
+
+Cliques 2 and 3 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 1
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 2
+    Node Pop_Coeff_kgkpers assigned to clique 2
+    Node Year_Coeff_kgyear assigned to clique 2
+    Node PEC_SW_L_gL assigned to clique 7
+    Node PEC_Eff_L_gL assigned to clique 10
+    Node PEC_SW_H_gL assigned to clique 8
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 1
+    Node PNEC_gL assigned to clique 9
+    Node Weight_Class assigned to clique 2
+    Node RQ_SW assigned to clique 6
+    Node Population assigned to clique 1
+    Node Water_Consumption_ML assigned to clique 3
+    Node PEC_Inf_L_gL assigned to clique 5
+    Node PEC_Inf_H_gL assigned to clique 4
+    Node Weight_Light_kg assigned to clique 2
+    Node API_Name assigned to clique 9
+    Node Weight_Heavy_kg assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.015
+	state1   0.361178
+	state2   0.025601
+	state3   0.144667
+	state4   0.24263
+	state5   0.210925
+	state6   0
+
+    PEC_Eff_H_gL:
+	state0   0.015
+	state1   0.361178
+	state2   0.025601
+	state3   0.144667
+	state4   0.24263
+	state5   0.210925
+	state6   0
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.037695
+	state1   0.254943
+	state2   0.370951
+	state3   0.301327
+	state4   0.0350841
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Inf_H_gL:
+	state0   0.015
+	state1   0.36
+	state2   0.00736
+	state3   0.121366
+	state4   0.266994
+	state5   0.114718
+	state6   0.114562
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0
+Using model for PEC_Eff_H_gL to generate a conditional probability table
+(1,0,1): 0.12 (min=0, max=1)
+(1,0,2): 0.88 (min=0, max=1)
+(1,1,1): 0.2 (min=0, max=1)
+(1,1,2): 0.8 (min=0, max=1)
+(1,2,1): 0.4 (min=0, max=1)
+(1,2,2): 0.6 (min=0, max=1)
+(2,0,2): 0.04 (min=0, max=1)
+(2,0,3): 0.96 (min=0, max=1)
+(2,1,2): 0.12 (min=0, max=1)
+(2,1,3): 0.88 (min=0, max=1)
+(2,2,2): 0.32 (min=0, max=1)
+(2,2,3): 0.68 (min=0, max=1)
+(3,0,3): 0.04 (min=0, max=1)
+(3,0,4): 0.96 (min=0, max=1)
+(3,1,3): 0.12 (min=0, max=1)
+(3,1,4): 0.88 (min=0, max=1)
+(3,2,3): 0.32 (min=0, max=1)
+(3,2,4): 0.68 (min=0, max=1)
+(4,0,4): 0.04 (min=0, max=1)
+(4,0,5): 0.96 (min=0, max=1)
+(4,1,4): 0.12 (min=0, max=1)
+(4,1,5): 0.88 (min=0, max=1)
+(4,2,4): 0.32 (min=0, max=1)
+(4,2,5): 0.68 (min=0, max=1)
+(5,0,5): 0.04 (min=0, max=1)
+(5,0,6): 0.96 (min=0, max=1)
+(5,1,5): 0.12 (min=0, max=1)
+(5,1,6): 0.88 (min=0, max=1)
+(5,2,5): 0.32 (min=0, max=1)
+(5,2,6): 0.68 (min=0, max=1)
+Using model for PEC_Inf_H_gL to generate a conditional probability table
+(0,1,0): 0.0256 (min=0, max=1)
+(0,1,1): 0.9744 (min=0, max=1)
+(0,2,0): 0.04 (min=0, max=1)
+(0,2,1): 0.96 (min=0, max=1)
+(0,3,0): 0.04 (min=0, max=1)
+(0,3,1): 0.96 (min=0, max=1)
+(0,4,0): 0.0752 (min=0, max=1)
+(0,4,1): 0.9248 (min=0, max=1)
+(1,0,1): 0.6576 (min=0, max=1)
+(1,0,2): 0.3088 (min=0, max=1)
+(1,0,3): 0.0336 (min=0, max=1)
+(2,0,1): 0.008 (min=0, max=1)
+(2,0,2): 0.6144 (min=0, max=1)
+(2,0,3): 0.3408 (min=0, max=1)
+(2,0,4): 0.0368 (min=0, max=1)
+(2,1,1): 0.1312 (min=0, max=1)
+(2,1,2): 0.8688 (min=0, max=1)
+(2,2,1): 0.2944 (min=0, max=1)
+(2,2,2): 0.7056 (min=0, max=1)
+(2,3,1): 0.456 (min=0, max=1)
+(2,3,2): 0.544 (min=0, max=1)
+(2,4,1): 0.6176 (min=0, max=1)
+(2,4,2): 0.3824 (min=0, max=1)
+(3,0,2): 0.008 (min=0, max=1)
+(3,0,3): 0.6144 (min=0, max=1)
+(3,0,4): 0.3408 (min=0, max=1)
+(3,0,5): 0.0368 (min=0, max=1)
+(3,1,2): 0.1312 (min=0, max=1)
+(3,1,3): 0.8688 (min=0, max=1)
+(3,2,2): 0.2944 (min=0, max=1)
+(3,2,3): 0.7056 (min=0, max=1)
+(3,3,2): 0.456 (min=0, max=1)
+(3,3,3): 0.544 (min=0, max=1)
+(3,4,2): 0.6176 (min=0, max=1)
+(3,4,3): 0.3824 (min=0, max=1)
+(4,0,3): 0.008 (min=0, max=1)
+(4,0,4): 0.6144 (min=0, max=1)
+(4,0,5): 0.3408 (min=0, max=1)
+(4,0,6): 0.0368 (min=0, max=1)
+(4,1,3): 0.1312 (min=0, max=1)
+(4,1,4): 0.8688 (min=0, max=1)
+(4,2,3): 0.2944 (min=0, max=1)
+(4,2,4): 0.7056 (min=0, max=1)
+(4,3,3): 0.456 (min=0, max=1)
+(4,3,4): 0.544 (min=0, max=1)
+(4,4,3): 0.6176 (min=0, max=1)
+(4,4,4): 0.3824 (min=0, max=1)
+(5,0,4): 0.008 (min=0, max=1)
+(5,0,5): 0.6144 (min=0, max=1)
+(5,0,6): 0.3776 (min=0, max=1)
+(5,1,4): 0.1312 (min=0, max=1)
+(5,1,5): 0.8688 (min=0, max=1)
+(5,2,4): 0.2944 (min=0, max=1)
+(5,2,5): 0.7056 (min=0, max=1)
+(5,3,4): 0.456 (min=0, max=1)
+(5,3,5): 0.544 (min=0, max=1)
+(5,4,4): 0.6176 (min=0, max=1)
+(5,4,5): 0.3824 (min=0, max=1)
+(6,0,5): 0.32 (min=0, max=1)
+(6,0,6): 0.68 (min=0, max=1)
+Fri Sep 23 10:14:17 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 4 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, RQ_SW
+This component is a clique of cost 1960
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8660652
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    Weight_Class
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PEC_SW_L_gL
+    PEC_SW_H_gL
+    PNEC_gL
+    PEC_Eff_L_gL
+    PEC_Inf_H_gL
+    PEC_Inf_L_gL
+    PEC_Eff_H_gL
+    API_Name
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Clique 10, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Clique 9, 4 members, table size = 3136:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Clique 8, 4 members, table size = 2744:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Clique 7, 4 members, table size = 2744:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Clique 6, 4 members, table size = 1960:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL, RQ_SW
+
+Clique 5, 5 members, table size = 11760:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Clique 4, 5 members, table size = 11760:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Clique 3, 5 members, table size = 8400:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg,
+    Population
+
+Clique 2, 9 members, table size = 8601600:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear, Weight_Class
+
+Clique 1, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Total clique table size: 8660652
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 4 members and table size = 1176:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL
+
+Cliques 9 and 10 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 392:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 392:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 392:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Cliques 5 and 11 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Cliques 4 and 5 linked, separator has 4 members and table size = 1680:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 3 and 4 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg
+
+Cliques 2 and 3 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 1
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 2
+    Node Pop_Coeff_kgkpers assigned to clique 2
+    Node Year_Coeff_kgyear assigned to clique 2
+    Node PEC_SW_L_gL assigned to clique 7
+    Node PEC_Eff_L_gL assigned to clique 10
+    Node PEC_SW_H_gL assigned to clique 8
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 1
+    Node PNEC_gL assigned to clique 9
+    Node Weight_Class assigned to clique 2
+    Node RQ_SW assigned to clique 6
+    Node Population assigned to clique 1
+    Node Water_Consumption_ML assigned to clique 3
+    Node PEC_Inf_L_gL assigned to clique 5
+    Node PEC_Inf_H_gL assigned to clique 4
+    Node Weight_Light_kg assigned to clique 2
+    Node API_Name assigned to clique 9
+    Node Weight_Heavy_kg assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.015
+	state1   0.0881664
+	state2   0.298612
+	state3   0.144667
+	state4   0.24263
+	state5   0.114693
+	state6   0.0962318
+
+    PEC_Eff_H_gL:
+	state0   0.015
+	state1   0.0881664
+	state2   0.298612
+	state3   0.144667
+	state4   0.24263
+	state5   0.114693
+	state6   0.0962318
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.0343296
+	state1   0.152147
+	state2   0.35087
+	state3   0.270705
+	state4   0.191948
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Inf_H_gL:
+	state0   0.015
+	state1   0.36736
+	state2   0.121366
+	state3   0.266994
+	state4   0.114718
+	state5   0.114562
+	state6   0
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0
+Using model for PEC_SW_H_gL to generate a conditional probability table
+(1,1): 0.08 (min=0, max=1)
+(1,2): 0.92 (min=0, max=1)
+Using model for PEC_Eff_H_gL to generate a conditional probability table
+(2,0,1): 0.04 (min=0, max=1)
+(2,0,2): 0.96 (min=0, max=1)
+(2,1,1): 0.12 (min=0, max=1)
+(2,1,2): 0.88 (min=0, max=1)
+(2,2,1): 0.32 (min=0, max=1)
+(2,2,2): 0.68 (min=0, max=1)
+(3,0,2): 0.04 (min=0, max=1)
+(3,0,3): 0.96 (min=0, max=1)
+(3,1,2): 0.12 (min=0, max=1)
+(3,1,3): 0.88 (min=0, max=1)
+(3,2,2): 0.32 (min=0, max=1)
+(3,2,3): 0.68 (min=0, max=1)
+(4,0,3): 0.04 (min=0, max=1)
+(4,0,4): 0.96 (min=0, max=1)
+(4,1,3): 0.12 (min=0, max=1)
+(4,1,4): 0.88 (min=0, max=1)
+(4,2,3): 0.32 (min=0, max=1)
+(4,2,4): 0.68 (min=0, max=1)
+(5,0,4): 0.04 (min=0, max=1)
+(5,0,5): 0.96 (min=0, max=1)
+(5,1,4): 0.12 (min=0, max=1)
+(5,1,5): 0.88 (min=0, max=1)
+(5,2,4): 0.32 (min=0, max=1)
+(5,2,5): 0.68 (min=0, max=1)
+Fri Sep 23 10:20:23 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 4 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, RQ_SW
+This component is a clique of cost 1960
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8660652
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    Weight_Class
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PEC_SW_L_gL
+    PEC_SW_H_gL
+    PNEC_gL
+    PEC_Eff_L_gL
+    PEC_Inf_H_gL
+    PEC_Inf_L_gL
+    PEC_Eff_H_gL
+    API_Name
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Clique 10, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Clique 9, 4 members, table size = 3136:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Clique 8, 4 members, table size = 2744:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Clique 7, 4 members, table size = 2744:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Clique 6, 4 members, table size = 1960:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL, RQ_SW
+
+Clique 5, 5 members, table size = 11760:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Clique 4, 5 members, table size = 11760:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Clique 3, 5 members, table size = 8400:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg,
+    Population
+
+Clique 2, 9 members, table size = 8601600:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear, Weight_Class
+
+Clique 1, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Total clique table size: 8660652
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 4 members and table size = 1176:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL
+
+Cliques 9 and 10 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 392:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 392:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 392:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Cliques 5 and 11 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Cliques 4 and 5 linked, separator has 4 members and table size = 1680:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 3 and 4 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg
+
+Cliques 2 and 3 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 1
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 2
+    Node Pop_Coeff_kgkpers assigned to clique 2
+    Node Year_Coeff_kgyear assigned to clique 2
+    Node PEC_SW_L_gL assigned to clique 7
+    Node PEC_Eff_L_gL assigned to clique 10
+    Node PEC_SW_H_gL assigned to clique 8
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 1
+    Node PNEC_gL assigned to clique 9
+    Node Weight_Class assigned to clique 2
+    Node RQ_SW assigned to clique 6
+    Node Population assigned to clique 1
+    Node Water_Consumption_ML assigned to clique 3
+    Node PEC_Inf_L_gL assigned to clique 5
+    Node PEC_Inf_H_gL assigned to clique 4
+    Node Weight_Light_kg assigned to clique 2
+    Node API_Name assigned to clique 9
+    Node Weight_Heavy_kg assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.015
+	state1   0.0309423
+	state2   0.355836
+	state3   0.144667
+	state4   0.24263
+	state5   0.114693
+	state6   0.0962318
+
+    PEC_Eff_H_gL:
+	state0   0.015
+	state1   0.386779
+	state2   0.144667
+	state3   0.24263
+	state4   0.114693
+	state5   0.0962318
+	state6   0
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.0336627
+	state1   0.144051
+	state2   0.338129
+	state3   0.259185
+	state4   0.224972
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Inf_H_gL:
+	state0   0.015
+	state1   0.36736
+	state2   0.121366
+	state3   0.266994
+	state4   0.114718
+	state5   0.114562
+	state6   0
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0
+Using model for PEC_SW_H_gL to generate a conditional probability table
+(1,1): 0.08 (min=0, max=1)
+(1,2): 0.92 (min=0, max=1)
+Using model for RQ_SW to generate a conditional probability table
+(0,4,1,0): 0.28 (min=0, max=1)
+(0,4,1,1): 0.72 (min=0, max=1)
+(0,5,1,1): 0.28 (min=0, max=1)
+(0,5,1,2): 0.72 (min=0, max=1)
+(0,5,2,0): 0.32 (min=0, max=1)
+(0,5,2,1): 0.68 (min=0, max=1)
+(1,0,0,2): 0.08 (min=0, max=1)
+(1,0,0,3): 0.92 (min=0, max=1)
+(1,0,1,1): 0.04 (min=0, max=1)
+(1,0,1,2): 0.32 (min=0, max=1)
+(1,0,1,3): 0.64 (min=0, max=1)
+(1,0,2,0): 0.04 (min=0, max=1)
+(1,0,2,1): 0.36 (min=0, max=1)
+(1,0,2,2): 0.6 (min=0, max=1)
+(1,0,3,0): 0.48 (min=0, max=1)
+(1,0,3,1): 0.52 (min=0, max=1)
+(1,1,0,2): 0.08 (min=0, max=1)
+(1,1,0,3): 0.92 (min=0, max=1)
+(1,1,1,1): 0.04 (min=0, max=1)
+(1,1,1,2): 0.32 (min=0, max=1)
+(1,1,1,3): 0.64 (min=0, max=1)
+(1,1,2,0): 0.04 (min=0, max=1)
+(1,1,2,1): 0.36 (min=0, max=1)
+(1,1,2,2): 0.6 (min=0, max=1)
+(1,1,3,0): 0.48 (min=0, max=1)
+(1,1,3,1): 0.52 (min=0, max=1)
+(1,2,0,2): 0.08 (min=0, max=1)
+(1,2,0,3): 0.92 (min=0, max=1)
+(1,2,1,1): 0.04 (min=0, max=1)
+(1,2,1,2): 0.32 (min=0, max=1)
+(1,2,1,3): 0.64 (min=0, max=1)
+(1,2,2,0): 0.04 (min=0, max=1)
+(1,2,2,1): 0.36 (min=0, max=1)
+(1,2,2,2): 0.6 (min=0, max=1)
+(1,2,3,0): 0.48 (min=0, max=1)
+(1,2,3,1): 0.52 (min=0, max=1)
+(1,3,0,2): 0.08 (min=0, max=1)
+(1,3,0,3): 0.92 (min=0, max=1)
+(1,3,1,1): 0.04 (min=0, max=1)
+(1,3,1,2): 0.32 (min=0, max=1)
+(1,3,1,3): 0.64 (min=0, max=1)
+(1,3,2,0): 0.04 (min=0, max=1)
+(1,3,2,1): 0.36 (min=0, max=1)
+(1,3,2,2): 0.6 (min=0, max=1)
+(1,3,3,0): 0.48 (min=0, max=1)
+(1,3,3,1): 0.52 (min=0, max=1)
+(1,4,0,2): 0.08 (min=0, max=1)
+(1,4,0,3): 0.92 (min=0, max=1)
+(1,4,1,1): 0.04 (min=0, max=1)
+(1,4,1,2): 0.32 (min=0, max=1)
+(1,4,1,3): 0.64 (min=0, max=1)
+(1,4,2,0): 0.04 (min=0, max=1)
+(1,4,2,1): 0.36 (min=0, max=1)
+(1,4,2,2): 0.6 (min=0, max=1)
+(1,4,3,0): 0.48 (min=0, max=1)
+(1,4,3,1): 0.52 (min=0, max=1)
+(1,5,0,2): 0.0432 (min=0, max=1)
+(1,5,0,3): 0.904 (min=0, max=1)
+(1,5,0,4): 0.0528 (min=0, max=1)
+(1,5,1,1): 0.0016 (min=0, max=1)
+(1,5,1,2): 0.2912 (min=0, max=1)
+(1,5,1,3): 0.7072 (min=0, max=1)
+(1,5,2,0): 0.0048 (min=0, max=1)
+(1,5,2,1): 0.3424 (min=0, max=1)
+(1,5,2,2): 0.6528 (min=0, max=1)
+(1,5,3,0): 0.4432 (min=0, max=1)
+(1,5,3,1): 0.5568 (min=0, max=1)
+(1,6,0,3): 0.88 (min=0, max=1)
+(1,6,0,4): 0.12 (min=0, max=1)
+(1,6,1,2): 0.24 (min=0, max=1)
+(1,6,1,3): 0.76 (min=0, max=1)
+(1,6,2,1): 0.28 (min=0, max=1)
+(1,6,2,2): 0.72 (min=0, max=1)
+(1,6,3,0): 0.4 (min=0, max=1)
+(1,6,3,1): 0.6 (min=0, max=1)
+(2,0,1,3): 0.04 (min=0, max=1)
+(2,0,1,4): 0.96 (min=0, max=1)
+(2,0,2,2): 0.04 (min=0, max=1)
+(2,0,2,3): 0.36 (min=0, max=1)
+(2,0,2,4): 0.6 (min=0, max=1)
+(2,0,3,1): 0.04 (min=0, max=1)
+(2,0,3,2): 0.44 (min=0, max=1)
+(2,0,3,3): 0.52 (min=0, max=1)
+(2,0,4,0): 0.04 (min=0, max=1)
+(2,0,4,1): 0.44 (min=0, max=1)
+(2,0,4,2): 0.52 (min=0, max=1)
+(2,0,5,0): 0.08 (min=0, max=1)
+(2,0,5,1): 0.68 (min=0, max=1)
+(2,0,5,2): 0.24 (min=0, max=1)
+(2,1,1,3): 0.04 (min=0, max=1)
+(2,1,1,4): 0.96 (min=0, max=1)
+(2,1,2,2): 0.04 (min=0, max=1)
+(2,1,2,3): 0.36 (min=0, max=1)
+(2,1,2,4): 0.6 (min=0, max=1)
+(2,1,3,1): 0.04 (min=0, max=1)
+(2,1,3,2): 0.44 (min=0, max=1)
+(2,1,3,3): 0.52 (min=0, max=1)
+(2,1,4,0): 0.04 (min=0, max=1)
+(2,1,4,1): 0.44 (min=0, max=1)
+(2,1,4,2): 0.52 (min=0, max=1)
+(2,1,5,0): 0.08 (min=0, max=1)
+(2,1,5,1): 0.68 (min=0, max=1)
+(2,1,5,2): 0.24 (min=0, max=1)
+(2,2,1,3): 0.04 (min=0, max=1)
+(2,2,1,4): 0.96 (min=0, max=1)
+(2,2,2,2): 0.04 (min=0, max=1)
+(2,2,2,3): 0.36 (min=0, max=1)
+(2,2,2,4): 0.6 (min=0, max=1)
+(2,2,3,1): 0.04 (min=0, max=1)
+(2,2,3,2): 0.44 (min=0, max=1)
+(2,2,3,3): 0.52 (min=0, max=1)
+(2,2,4,0): 0.04 (min=0, max=1)
+(2,2,4,1): 0.44 (min=0, max=1)
+(2,2,4,2): 0.52 (min=0, max=1)
+(2,2,5,0): 0.08 (min=0, max=1)
+(2,2,5,1): 0.68 (min=0, max=1)
+(2,2,5,2): 0.24 (min=0, max=1)
+(2,3,1,3): 0.04 (min=0, max=1)
+(2,3,1,4): 0.96 (min=0, max=1)
+(2,3,2,2): 0.04 (min=0, max=1)
+(2,3,2,3): 0.36 (min=0, max=1)
+(2,3,2,4): 0.6 (min=0, max=1)
+(2,3,3,1): 0.04 (min=0, max=1)
+(2,3,3,2): 0.44 (min=0, max=1)
+(2,3,3,3): 0.52 (min=0, max=1)
+(2,3,4,0): 0.04 (min=0, max=1)
+(2,3,4,1): 0.44 (min=0, max=1)
+(2,3,4,2): 0.52 (min=0, max=1)
+(2,3,5,0): 0.08 (min=0, max=1)
+(2,3,5,1): 0.68 (min=0, max=1)
+(2,3,5,2): 0.24 (min=0, max=1)
+(2,4,1,3): 0.04 (min=0, max=1)
+(2,4,1,4): 0.96 (min=0, max=1)
+(2,4,2,2): 0.04 (min=0, max=1)
+(2,4,2,3): 0.36 (min=0, max=1)
+(2,4,2,4): 0.6 (min=0, max=1)
+(2,4,3,1): 0.04 (min=0, max=1)
+(2,4,3,2): 0.44 (min=0, max=1)
+(2,4,3,3): 0.52 (min=0, max=1)
+(2,4,4,0): 0.04 (min=0, max=1)
+(2,4,4,1): 0.44 (min=0, max=1)
+(2,4,4,2): 0.52 (min=0, max=1)
+(2,4,5,0): 0.08 (min=0, max=1)
+(2,4,5,1): 0.68 (min=0, max=1)
+(2,4,5,2): 0.24 (min=0, max=1)
+(2,5,1,3): 0.04 (min=0, max=1)
+(2,5,1,4): 0.96 (min=0, max=1)
+(2,5,2,2): 0.04 (min=0, max=1)
+(2,5,2,3): 0.36 (min=0, max=1)
+(2,5,2,4): 0.6 (min=0, max=1)
+(2,5,3,1): 0.04 (min=0, max=1)
+(2,5,3,2): 0.44 (min=0, max=1)
+(2,5,3,3): 0.52 (min=0, max=1)
+(2,5,4,0): 0.04 (min=0, max=1)
+(2,5,4,1): 0.44 (min=0, max=1)
+(2,5,4,2): 0.52 (min=0, max=1)
+(2,5,5,0): 0.08 (min=0, max=1)
+(2,5,5,1): 0.68 (min=0, max=1)
+(2,5,5,2): 0.24 (min=0, max=1)
+(2,6,1,3): 0.04 (min=0, max=1)
+(2,6,1,4): 0.96 (min=0, max=1)
+(2,6,2,2): 0.04 (min=0, max=1)
+(2,6,2,3): 0.36 (min=0, max=1)
+(2,6,2,4): 0.6 (min=0, max=1)
+(2,6,3,1): 0.04 (min=0, max=1)
+(2,6,3,2): 0.44 (min=0, max=1)
+(2,6,3,3): 0.52 (min=0, max=1)
+(2,6,4,0): 0.04 (min=0, max=1)
+(2,6,4,1): 0.44 (min=0, max=1)
+(2,6,4,2): 0.52 (min=0, max=1)
+(2,6,5,0): 0.08 (min=0, max=1)
+(2,6,5,1): 0.68 (min=0, max=1)
+(2,6,5,2): 0.24 (min=0, max=1)
+(3,0,3,3): 0.44 (min=0, max=1)
+(3,0,3,4): 0.56 (min=0, max=1)
+(3,0,4,2): 0.44 (min=0, max=1)
+(3,0,4,3): 0.56 (min=0, max=1)
+(3,0,5,2): 0.76 (min=0, max=1)
+(3,0,5,3): 0.24 (min=0, max=1)
+(3,0,7,0): 0.92 (min=0, max=1)
+(3,0,7,1): 0.08 (min=0, max=1)
+(3,1,3,3): 0.44 (min=0, max=1)
+(3,1,3,4): 0.56 (min=0, max=1)
+(3,1,4,2): 0.44 (min=0, max=1)
+(3,1,4,3): 0.56 (min=0, max=1)
+(3,1,5,2): 0.76 (min=0, max=1)
+(3,1,5,3): 0.24 (min=0, max=1)
+(3,1,7,0): 0.92 (min=0, max=1)
+(3,1,7,1): 0.08 (min=0, max=1)
+(3,2,3,3): 0.44 (min=0, max=1)
+(3,2,3,4): 0.56 (min=0, max=1)
+(3,2,4,2): 0.44 (min=0, max=1)
+(3,2,4,3): 0.56 (min=0, max=1)
+(3,2,5,2): 0.76 (min=0, max=1)
+(3,2,5,3): 0.24 (min=0, max=1)
+(3,2,7,0): 0.92 (min=0, max=1)
+(3,2,7,1): 0.08 (min=0, max=1)
+(3,3,3,3): 0.44 (min=0, max=1)
+(3,3,3,4): 0.56 (min=0, max=1)
+(3,3,4,2): 0.44 (min=0, max=1)
+(3,3,4,3): 0.56 (min=0, max=1)
+(3,3,5,2): 0.76 (min=0, max=1)
+(3,3,5,3): 0.24 (min=0, max=1)
+(3,3,7,0): 0.92 (min=0, max=1)
+(3,3,7,1): 0.08 (min=0, max=1)
+(3,4,3,3): 0.44 (min=0, max=1)
+(3,4,3,4): 0.56 (min=0, max=1)
+(3,4,4,2): 0.44 (min=0, max=1)
+(3,4,4,3): 0.56 (min=0, max=1)
+(3,4,5,2): 0.76 (min=0, max=1)
+(3,4,5,3): 0.24 (min=0, max=1)
+(3,4,7,0): 0.92 (min=0, max=1)
+(3,4,7,1): 0.08 (min=0, max=1)
+(3,5,3,3): 0.44 (min=0, max=1)
+(3,5,3,4): 0.56 (min=0, max=1)
+(3,5,4,2): 0.44 (min=0, max=1)
+(3,5,4,3): 0.56 (min=0, max=1)
+(3,5,5,2): 0.76 (min=0, max=1)
+(3,5,5,3): 0.24 (min=0, max=1)
+(3,5,7,0): 0.92 (min=0, max=1)
+(3,5,7,1): 0.08 (min=0, max=1)
+(3,6,3,3): 0.44 (min=0, max=1)
+(3,6,3,4): 0.56 (min=0, max=1)
+(3,6,4,2): 0.44 (min=0, max=1)
+(3,6,4,3): 0.56 (min=0, max=1)
+(3,6,5,2): 0.76 (min=0, max=1)
+(3,6,5,3): 0.24 (min=0, max=1)
+(3,6,7,0): 0.92 (min=0, max=1)
+(3,6,7,1): 0.08 (min=0, max=1)
+(4,0,4,3): 0.44 (min=0, max=1)
+(4,0,4,4): 0.56 (min=0, max=1)
+(4,0,5,3): 0.76 (min=0, max=1)
+(4,0,5,4): 0.24 (min=0, max=1)
+(4,0,7,1): 0.92 (min=0, max=1)
+(4,0,7,2): 0.08 (min=0, max=1)
+(4,1,4,3): 0.44 (min=0, max=1)
+(4,1,4,4): 0.56 (min=0, max=1)
+(4,1,5,3): 0.76 (min=0, max=1)
+(4,1,5,4): 0.24 (min=0, max=1)
+(4,1,7,1): 0.92 (min=0, max=1)
+(4,1,7,2): 0.08 (min=0, max=1)
+(4,2,4,3): 0.44 (min=0, max=1)
+(4,2,4,4): 0.56 (min=0, max=1)
+(4,2,5,3): 0.76 (min=0, max=1)
+(4,2,5,4): 0.24 (min=0, max=1)
+(4,2,7,1): 0.92 (min=0, max=1)
+(4,2,7,2): 0.08 (min=0, max=1)
+(4,3,4,3): 0.44 (min=0, max=1)
+(4,3,4,4): 0.56 (min=0, max=1)
+(4,3,5,3): 0.76 (min=0, max=1)
+(4,3,5,4): 0.24 (min=0, max=1)
+(4,3,7,1): 0.92 (min=0, max=1)
+(4,3,7,2): 0.08 (min=0, max=1)
+(4,4,4,3): 0.44 (min=0, max=1)
+(4,4,4,4): 0.56 (min=0, max=1)
+(4,4,5,3): 0.76 (min=0, max=1)
+(4,4,5,4): 0.24 (min=0, max=1)
+(4,4,7,1): 0.92 (min=0, max=1)
+(4,4,7,2): 0.08 (min=0, max=1)
+(4,5,4,3): 0.44 (min=0, max=1)
+(4,5,4,4): 0.56 (min=0, max=1)
+(4,5,5,3): 0.76 (min=0, max=1)
+(4,5,5,4): 0.24 (min=0, max=1)
+(4,5,7,1): 0.92 (min=0, max=1)
+(4,5,7,2): 0.08 (min=0, max=1)
+(4,6,4,3): 0.44 (min=0, max=1)
+(4,6,4,4): 0.56 (min=0, max=1)
+(4,6,5,3): 0.76 (min=0, max=1)
+(4,6,5,4): 0.24 (min=0, max=1)
+(4,6,7,1): 0.92 (min=0, max=1)
+(4,6,7,2): 0.08 (min=0, max=1)
+(5,0,7,2): 0.92 (min=0, max=1)
+(5,0,7,3): 0.08 (min=0, max=1)
+(5,1,7,2): 0.92 (min=0, max=1)
+(5,1,7,3): 0.08 (min=0, max=1)
+(5,2,7,2): 0.92 (min=0, max=1)
+(5,2,7,3): 0.08 (min=0, max=1)
+(5,3,7,2): 0.92 (min=0, max=1)
+(5,3,7,3): 0.08 (min=0, max=1)
+(5,4,7,2): 0.92 (min=0, max=1)
+(5,4,7,3): 0.08 (min=0, max=1)
+(5,5,7,2): 0.92 (min=0, max=1)
+(5,5,7,3): 0.08 (min=0, max=1)
+(5,6,7,2): 0.92 (min=0, max=1)
+(5,6,7,3): 0.08 (min=0, max=1)
+Fri Sep 23 10:23:25 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 4 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, RQ_SW
+This component is a clique of cost 1960
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8660652
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    Weight_Class
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PEC_SW_L_gL
+    PEC_SW_H_gL
+    PNEC_gL
+    PEC_Eff_L_gL
+    PEC_Inf_H_gL
+    PEC_Inf_L_gL
+    PEC_Eff_H_gL
+    API_Name
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Clique 10, 5 members, table size = 8232:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Clique 9, 4 members, table size = 3136:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Clique 8, 4 members, table size = 2744:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Clique 7, 4 members, table size = 2744:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Clique 6, 4 members, table size = 1960:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL, RQ_SW
+
+Clique 5, 5 members, table size = 11760:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Clique 4, 5 members, table size = 11760:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Clique 3, 5 members, table size = 8400:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg,
+    Population
+
+Clique 2, 9 members, table size = 8601600:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear, Weight_Class
+
+Clique 1, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Total clique table size: 8660652
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 4 members and table size = 1176:
+    API_Removal, API_Name, PEC_Eff_H_gL, PEC_Inf_L_gL
+
+Cliques 9 and 10 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Eff_H_gL, PEC_Eff_L_gL
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 392:
+    PEC_Eff_H_gL, PEC_Eff_L_gL, PNEC_gL
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 392:
+    PEC_Eff_L_gL, PNEC_gL, PEC_SW_H_gL
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 392:
+    PNEC_gL, PEC_SW_H_gL, PEC_SW_L_gL
+
+Cliques 5 and 11 linked, separator has 3 members and table size = 392:
+    API_Name, PEC_Inf_L_gL, PEC_Inf_H_gL
+
+Cliques 4 and 5 linked, separator has 4 members and table size = 1680:
+    API_Name, PEC_Inf_H_gL, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 3 and 4 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Water_Consumption_ML, Weight_Heavy_kg
+
+Cliques 2 and 3 linked, separator has 4 members and table size = 1680:
+    API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 1
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 2
+    Node Pop_Coeff_kgkpers assigned to clique 2
+    Node Year_Coeff_kgyear assigned to clique 2
+    Node PEC_SW_L_gL assigned to clique 7
+    Node PEC_Eff_L_gL assigned to clique 10
+    Node PEC_SW_H_gL assigned to clique 8
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 1
+    Node PNEC_gL assigned to clique 9
+    Node Weight_Class assigned to clique 2
+    Node RQ_SW assigned to clique 6
+    Node Population assigned to clique 1
+    Node Water_Consumption_ML assigned to clique 3
+    Node PEC_Inf_L_gL assigned to clique 5
+    Node PEC_Inf_H_gL assigned to clique 4
+    Node Weight_Light_kg assigned to clique 2
+    Node API_Name assigned to clique 9
+    Node Weight_Heavy_kg assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.015
+	state1   0.0309423
+	state2   0.500503
+	state3   0.24263
+	state4   0.114693
+	state5   0.0962318
+	state6   0
+
+    PEC_Eff_H_gL:
+	state0   0.015
+	state1   0.386779
+	state2   0.144667
+	state3   0.24263
+	state4   0.114693
+	state5   0.0962318
+	state6   0
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.0331781
+	state1   0.138736
+	state2   0.30211
+	state3   0.208268
+	state4   0.317708
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.646
+	state1   0.354
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+	state6   0
+
+    PEC_Inf_H_gL:
+	state0   0.015
+	state1   0.36736
+	state2   0.121366
+	state3   0.266994
+	state4   0.114718
+	state5   0.114562
+	state6   0
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0
+Using model for RQ_SW to generate a conditional probability table
+(0,1,0,0,2): 0.08 (min=0, max=1)
+(0,1,0,0,3): 0.92 (min=0, max=1)
+(0,1,0,1,1): 0.04 (min=0, max=1)
+(0,1,0,1,2): 0.32 (min=0, max=1)
+(0,1,0,1,3): 0.64 (min=0, max=1)
+(0,1,0,2,0): 0.04 (min=0, max=1)
+(0,1,0,2,1): 0.36 (min=0, max=1)
+(0,1,0,2,2): 0.6 (min=0, max=1)
+(0,1,0,3,0): 0.48 (min=0, max=1)
+(0,1,0,3,1): 0.52 (min=0, max=1)
+(0,1,1,0,2): 0.08 (min=0, max=1)
+(0,1,1,0,3): 0.92 (min=0, max=1)
+(0,1,1,1,1): 0.04 (min=0, max=1)
+(0,1,1,1,2): 0.32 (min=0, max=1)
+(0,1,1,1,3): 0.64 (min=0, max=1)
+(0,1,1,2,0): 0.04 (min=0, max=1)
+(0,1,1,2,1): 0.36 (min=0, max=1)
+(0,1,1,2,2): 0.6 (min=0, max=1)
+(0,1,1,3,0): 0.48 (min=0, max=1)
+(0,1,1,3,1): 0.52 (min=0, max=1)
+(0,1,2,0,2): 0.08 (min=0, max=1)
+(0,1,2,0,3): 0.92 (min=0, max=1)
+(0,1,2,1,1): 0.04 (min=0, max=1)
+(0,1,2,1,2): 0.32 (min=0, max=1)
+(0,1,2,1,3): 0.64 (min=0, max=1)
+(0,1,2,2,0): 0.04 (min=0, max=1)
+(0,1,2,2,1): 0.36 (min=0, max=1)
+(0,1,2,2,2): 0.6 (min=0, max=1)
+(0,1,2,3,0): 0.48 (min=0, max=1)
+(0,1,2,3,1): 0.52 (min=0, max=1)
+(0,1,3,0,2): 0.08 (min=0, max=1)
+(0,1,3,0,3): 0.92 (min=0, max=1)
+(0,1,3,1,1): 0.04 (min=0, max=1)
+(0,1,3,1,2): 0.32 (min=0, max=1)
+(0,1,3,1,3): 0.64 (min=0, max=1)
+(0,1,3,2,0): 0.04 (min=0, max=1)
+(0,1,3,2,1): 0.36 (min=0, max=1)
+(0,1,3,2,2): 0.6 (min=0, max=1)
+(0,1,3,3,0): 0.48 (min=0, max=1)
+(0,1,3,3,1): 0.52 (min=0, max=1)
+(0,1,4,0,2): 0.08 (min=0, max=1)
+(0,1,4,0,3): 0.92 (min=0, max=1)
+(0,1,4,1,1): 0.04 (min=0, max=1)
+(0,1,4,1,2): 0.32 (min=0, max=1)
+(0,1,4,1,3): 0.64 (min=0, max=1)
+(0,1,4,2,0): 0.04 (min=0, max=1)
+(0,1,4,2,1): 0.36 (min=0, max=1)
+(0,1,4,2,2): 0.6 (min=0, max=1)
+(0,1,4,3,0): 0.48 (min=0, max=1)
+(0,1,4,3,1): 0.52 (min=0, max=1)
+(0,1,5,0,2): 0.08 (min=0, max=1)
+(0,1,5,0,3): 0.92 (min=0, max=1)
+(0,1,5,1,1): 0.04 (min=0, max=1)
+(0,1,5,1,2): 0.32 (min=0, max=1)
+(0,1,5,1,3): 0.64 (min=0, max=1)
+(0,1,5,2,0): 0.04 (min=0, max=1)
+(0,1,5,2,1): 0.36 (min=0, max=1)
+(0,1,5,2,2): 0.6 (min=0, max=1)
+(0,1,5,3,0): 0.48 (min=0, max=1)
+(0,1,5,3,1): 0.52 (min=0, max=1)
+(0,1,6,0,2): 0.08 (min=0, max=1)
+(0,1,6,0,3): 0.92 (min=0, max=1)
+(0,1,6,1,1): 0.04 (min=0, max=1)
+(0,1,6,1,2): 0.32 (min=0, max=1)
+(0,1,6,1,3): 0.64 (min=0, max=1)
+(0,1,6,2,0): 0.04 (min=0, max=1)
+(0,1,6,2,1): 0.36 (min=0, max=1)
+(0,1,6,2,2): 0.6 (min=0, max=1)
+(0,1,6,3,0): 0.48 (min=0, max=1)
+(0,1,6,3,1): 0.52 (min=0, max=1)
+(0,2,0,1,3): 0.04 (min=0, max=1)
+(0,2,0,1,4): 0.96 (min=0, max=1)
+(0,2,0,2,2): 0.04 (min=0, max=1)
+(0,2,0,2,3): 0.36 (min=0, max=1)
+(0,2,0,2,4): 0.6 (min=0, max=1)
+(0,2,0,3,1): 0.04 (min=0, max=1)
+(0,2,0,3,2): 0.44 (min=0, max=1)
+(0,2,0,3,3): 0.52 (min=0, max=1)
+(0,2,0,4,0): 0.04 (min=0, max=1)
+(0,2,0,4,1): 0.44 (min=0, max=1)
+(0,2,0,4,2): 0.52 (min=0, max=1)
+(0,2,0,5,0): 0.08 (min=0, max=1)
+(0,2,0,5,1): 0.68 (min=0, max=1)
+(0,2,0,5,2): 0.24 (min=0, max=1)
+(0,2,1,1,3): 0.04 (min=0, max=1)
+(0,2,1,1,4): 0.96 (min=0, max=1)
+(0,2,1,2,2): 0.04 (min=0, max=1)
+(0,2,1,2,3): 0.36 (min=0, max=1)
+(0,2,1,2,4): 0.6 (min=0, max=1)
+(0,2,1,3,1): 0.04 (min=0, max=1)
+(0,2,1,3,2): 0.44 (min=0, max=1)
+(0,2,1,3,3): 0.52 (min=0, max=1)
+(0,2,1,4,0): 0.04 (min=0, max=1)
+(0,2,1,4,1): 0.44 (min=0, max=1)
+(0,2,1,4,2): 0.52 (min=0, max=1)
+(0,2,1,5,0): 0.08 (min=0, max=1)
+(0,2,1,5,1): 0.68 (min=0, max=1)
+(0,2,1,5,2): 0.24 (min=0, max=1)
+(0,2,2,1,3): 0.04 (min=0, max=1)
+(0,2,2,1,4): 0.96 (min=0, max=1)
+(0,2,2,2,2): 0.04 (min=0, max=1)
+(0,2,2,2,3): 0.36 (min=0, max=1)
+(0,2,2,2,4): 0.6 (min=0, max=1)
+(0,2,2,3,1): 0.04 (min=0, max=1)
+(0,2,2,3,2): 0.44 (min=0, max=1)
+(0,2,2,3,3): 0.52 (min=0, max=1)
+(0,2,2,4,0): 0.04 (min=0, max=1)
+(0,2,2,4,1): 0.44 (min=0, max=1)
+(0,2,2,4,2): 0.52 (min=0, max=1)
+(0,2,2,5,0): 0.08 (min=0, max=1)
+(0,2,2,5,1): 0.68 (min=0, max=1)
+(0,2,2,5,2): 0.24 (min=0, max=1)
+(0,2,3,1,3): 0.04 (min=0, max=1)
+(0,2,3,1,4): 0.96 (min=0, max=1)
+(0,2,3,2,2): 0.04 (min=0, max=1)
+(0,2,3,2,3): 0.36 (min=0, max=1)
+(0,2,3,2,4): 0.6 (min=0, max=1)
+(0,2,3,3,1): 0.04 (min=0, max=1)
+(0,2,3,3,2): 0.44 (min=0, max=1)
+(0,2,3,3,3): 0.52 (min=0, max=1)
+(0,2,3,4,0): 0.04 (min=0, max=1)
+(0,2,3,4,1): 0.44 (min=0, max=1)
+(0,2,3,4,2): 0.52 (min=0, max=1)
+(0,2,3,5,0): 0.08 (min=0, max=1)
+(0,2,3,5,1): 0.68 (min=0, max=1)
+(0,2,3,5,2): 0.24 (min=0, max=1)
+(0,2,4,1,3): 0.04 (min=0, max=1)
+(0,2,4,1,4): 0.96 (min=0, max=1)
+(0,2,4,2,2): 0.04 (min=0, max=1)
+(0,2,4,2,3): 0.36 (min=0, max=1)
+(0,2,4,2,4): 0.6 (min=0, max=1)
+(0,2,4,3,1): 0.04 (min=0, max=1)
+(0,2,4,3,2): 0.44 (min=0, max=1)
+(0,2,4,3,3): 0.52 (min=0, max=1)
+(0,2,4,4,0): 0.04 (min=0, max=1)
+(0,2,4,4,1): 0.44 (min=0, max=1)
+(0,2,4,4,2): 0.52 (min=0, max=1)
+(0,2,4,5,0): 0.08 (min=0, max=1)
+(0,2,4,5,1): 0.68 (min=0, max=1)
+(0,2,4,5,2): 0.24 (min=0, max=1)
+(0,2,5,1,3): 0.04 (min=0, max=1)
+(0,2,5,1,4): 0.96 (min=0, max=1)
+(0,2,5,2,2): 0.04 (min=0, max=1)
+(0,2,5,2,3): 0.36 (min=0, max=1)
+(0,2,5,2,4): 0.6 (min=0, max=1)
+(0,2,5,3,1): 0.04 (min=0, max=1)
+(0,2,5,3,2): 0.44 (min=0, max=1)
+(0,2,5,3,3): 0.52 (min=0, max=1)
+(0,2,5,4,0): 0.04 (min=0, max=1)
+(0,2,5,4,1): 0.44 (min=0, max=1)
+(0,2,5,4,2): 0.52 (min=0, max=1)
+(0,2,5,5,0): 0.08 (min=0, max=1)
+(0,2,5,5,1): 0.68 (min=0, max=1)
+(0,2,5,5,2): 0.24 (min=0, max=1)
+(0,2,6,1,3): 0.04 (min=0, max=1)
+(0,2,6,1,4): 0.96 (min=0, max=1)
+(0,2,6,2,2): 0.04 (min=0, max=1)
+(0,2,6,2,3): 0.36 (min=0, max=1)
+(0,2,6,2,4): 0.6 (min=0, max=1)
+(0,2,6,3,1): 0.04 (min=0, max=1)
+(0,2,6,3,2): 0.44 (min=0, max=1)
+(0,2,6,3,3): 0.52 (min=0, max=1)
+(0,2,6,4,0): 0.04 (min=0, max=1)
+(0,2,6,4,1): 0.44 (min=0, max=1)
+(0,2,6,4,2): 0.52 (min=0, max=1)
+(0,2,6,5,0): 0.08 (min=0, max=1)
+(0,2,6,5,1): 0.68 (min=0, max=1)
+(0,2,6,5,2): 0.24 (min=0, max=1)
+(0,3,0,3,3): 0.44 (min=0, max=1)
+(0,3,0,3,4): 0.56 (min=0, max=1)
+(0,3,0,4,2): 0.44 (min=0, max=1)
+(0,3,0,4,3): 0.56 (min=0, max=1)
+(0,3,0,5,2): 0.76 (min=0, max=1)
+(0,3,0,5,3): 0.24 (min=0, max=1)
+(0,3,0,7,0): 0.92 (min=0, max=1)
+(0,3,0,7,1): 0.08 (min=0, max=1)
+(0,3,1,3,3): 0.44 (min=0, max=1)
+(0,3,1,3,4): 0.56 (min=0, max=1)
+(0,3,1,4,2): 0.44 (min=0, max=1)
+(0,3,1,4,3): 0.56 (min=0, max=1)
+(0,3,1,5,2): 0.76 (min=0, max=1)
+(0,3,1,5,3): 0.24 (min=0, max=1)
+(0,3,1,7,0): 0.92 (min=0, max=1)
+(0,3,1,7,1): 0.08 (min=0, max=1)
+(0,3,2,3,3): 0.44 (min=0, max=1)
+(0,3,2,3,4): 0.56 (min=0, max=1)
+(0,3,2,4,2): 0.44 (min=0, max=1)
+(0,3,2,4,3): 0.56 (min=0, max=1)
+(0,3,2,5,2): 0.76 (min=0, max=1)
+(0,3,2,5,3): 0.24 (min=0, max=1)
+(0,3,2,7,0): 0.92 (min=0, max=1)
+(0,3,2,7,1): 0.08 (min=0, max=1)
+(0,3,3,3,3): 0.44 (min=0, max=1)
+(0,3,3,3,4): 0.56 (min=0, max=1)
+(0,3,3,4,2): 0.44 (min=0, max=1)
+(0,3,3,4,3): 0.56 (min=0, max=1)
+(0,3,3,5,2): 0.76 (min=0, max=1)
+(0,3,3,5,3): 0.24 (min=0, max=1)
+(0,3,3,7,0): 0.92 (min=0, max=1)
+(0,3,3,7,1): 0.08 (min=0, max=1)
+(0,3,4,3,3): 0.44 (min=0, max=1)
+(0,3,4,3,4): 0.56 (min=0, max=1)
+(0,3,4,4,2): 0.44 (min=0, max=1)
+(0,3,4,4,3): 0.56 (min=0, max=1)
+(0,3,4,5,2): 0.76 (min=0, max=1)
+(0,3,4,5,3): 0.24 (min=0, max=1)
+(0,3,4,7,0): 0.92 (min=0, max=1)
+(0,3,4,7,1): 0.08 (min=0, max=1)
+(0,3,5,3,3): 0.44 (min=0, max=1)
+(0,3,5,3,4): 0.56 (min=0, max=1)
+(0,3,5,4,2): 0.44 (min=0, max=1)
+(0,3,5,4,3): 0.56 (min=0, max=1)
+(0,3,5,5,2): 0.76 (min=0, max=1)
+(0,3,5,5,3): 0.24 (min=0, max=1)
+(0,3,5,7,0): 0.92 (min=0, max=1)
+(0,3,5,7,1): 0.08 (min=0, max=1)
+(0,3,6,3,3): 0.44 (min=0, max=1)
+(0,3,6,3,4): 0.56 (min=0, max=1)
+(0,3,6,4,2): 0.44 (min=0, max=1)
+(0,3,6,4,3): 0.56 (min=0, max=1)
+(0,3,6,5,2): 0.76 (min=0, max=1)
+(0,3,6,5,3): 0.24 (min=0, max=1)
+(0,3,6,7,0): 0.92 (min=0, max=1)
+(0,3,6,7,1): 0.08 (min=0, max=1)
+(0,4,0,4,3): 0.44 (min=0, max=1)
+(0,4,0,4,4): 0.56 (min=0, max=1)
+(0,4,0,5,3): 0.76 (min=0, max=1)
+(0,4,0,5,4): 0.24 (min=0, max=1)
+(0,4,0,7,1): 0.92 (min=0, max=1)
+(0,4,0,7,2): 0.08 (min=0, max=1)
+(0,4,1,4,3): 0.44 (min=0, max=1)
+(0,4,1,4,4): 0.56 (min=0, max=1)
+(0,4,1,5,3): 0.76 (min=0, max=1)
+(0,4,1,5,4): 0.24 (min=0, max=1)
+(0,4,1,7,1): 0.92 (min=0, max=1)
+(0,4,1,7,2): 0.08 (min=0, max=1)
+(0,4,2,4,3): 0.44 (min=0, max=1)
+(0,4,2,4,4): 0.56 (min=0, max=1)
+(0,4,2,5,3): 0.76 (min=0, max=1)
+(0,4,2,5,4): 0.24 (min=0, max=1)
+(0,4,2,7,1): 0.92 (min=0, max=1)
+(0,4,2,7,2): 0.08 (min=0, max=1)
+(0,4,3,4,3): 0.44 (min=0, max=1)
+(0,4,3,4,4): 0.56 (min=0, max=1)
+(0,4,3,5,3): 0.76 (min=0, max=1)
+(0,4,3,5,4): 0.24 (min=0, max=1)
+(0,4,3,7,1): 0.92 (min=0, max=1)
+(0,4,3,7,2): 0.08 (min=0, max=1)
+(0,4,4,4,3): 0.44 (min=0, max=1)
+(0,4,4,4,4): 0.56 (min=0, max=1)
+(0,4,4,5,3): 0.76 (min=0, max=1)
+(0,4,4,5,4): 0.24 (min=0, max=1)
+(0,4,4,7,1): 0.92 (min=0, max=1)
+(0,4,4,7,2): 0.08 (min=0, max=1)
+(0,4,5,4,3): 0.44 (min=0, max=1)
+(0,4,5,4,4): 0.56 (min=0, max=1)
+(0,4,5,5,3): 0.76 (min=0, max=1)
+(0,4,5,5,4): 0.24 (min=0, max=1)
+(0,4,5,7,1): 0.92 (min=0, max=1)
+(0,4,5,7,2): 0.08 (min=0, max=1)
+(0,4,6,4,3): 0.44 (min=0, max=1)
+(0,4,6,4,4): 0.56 (min=0, max=1)
+(0,4,6,5,3): 0.76 (min=0, max=1)
+(0,4,6,5,4): 0.24 (min=0, max=1)
+(0,4,6,7,1): 0.92 (min=0, max=1)
+(0,4,6,7,2): 0.08 (min=0, max=1)
+(0,5,0,7,2): 0.92 (min=0, max=1)
+(0,5,0,7,3): 0.08 (min=0, max=1)
+(0,5,1,7,2): 0.92 (min=0, max=1)
+(0,5,1,7,3): 0.08 (min=0, max=1)
+(0,5,2,7,2): 0.92 (min=0, max=1)
+(0,5,2,7,3): 0.08 (min=0, max=1)
+(0,5,3,7,2): 0.92 (min=0, max=1)
+(0,5,3,7,3): 0.08 (min=0, max=1)
+(0,5,4,7,2): 0.92 (min=0, max=1)
+(0,5,4,7,3): 0.08 (min=0, max=1)
+(0,5,5,7,2): 0.92 (min=0, max=1)
+(0,5,5,7,3): 0.08 (min=0, max=1)
+(0,5,6,7,2): 0.92 (min=0, max=1)
+(0,5,6,7,3): 0.08 (min=0, max=1)
+(1,0,4,1,0): 0.28 (min=0, max=1)
+(1,0,4,1,1): 0.72 (min=0, max=1)
+(1,0,5,1,1): 0.28 (min=0, max=1)
+(1,0,5,1,2): 0.72 (min=0, max=1)
+(1,0,5,2,0): 0.32 (min=0, max=1)
+(1,0,5,2,1): 0.68 (min=0, max=1)
+(1,1,4,1,0): 0.28 (min=0, max=1)
+(1,1,4,1,1): 0.72 (min=0, max=1)
+(1,1,5,1,1): 0.28 (min=0, max=1)
+(1,1,5,1,2): 0.72 (min=0, max=1)
+(1,1,5,2,0): 0.32 (min=0, max=1)
+(1,1,5,2,1): 0.68 (min=0, max=1)
+(1,2,4,1,0): 0.28 (min=0, max=1)
+(1,2,4,1,1): 0.72 (min=0, max=1)
+(1,2,5,1,1): 0.28 (min=0, max=1)
+(1,2,5,1,2): 0.72 (min=0, max=1)
+(1,2,5,2,0): 0.32 (min=0, max=1)
+(1,2,5,2,1): 0.68 (min=0, max=1)
+(1,3,4,1,0): 0.28 (min=0, max=1)
+(1,3,4,1,1): 0.72 (min=0, max=1)
+(1,3,5,1,1): 0.28 (min=0, max=1)
+(1,3,5,1,2): 0.72 (min=0, max=1)
+(1,3,5,2,0): 0.32 (min=0, max=1)
+(1,3,5,2,1): 0.68 (min=0, max=1)
+(1,4,4,1,0): 0.28 (min=0, max=1)
+(1,4,4,1,1): 0.72 (min=0, max=1)
+(1,4,5,1,1): 0.28 (min=0, max=1)
+(1,4,5,1,2): 0.72 (min=0, max=1)
+(1,4,5,2,0): 0.32 (min=0, max=1)
+(1,4,5,2,1): 0.68 (min=0, max=1)
+(1,5,4,1,0): 0.28 (min=0, max=1)
+(1,5,4,1,1): 0.72 (min=0, max=1)
+(1,5,5,1,1): 0.28 (min=0, max=1)
+(1,5,5,1,2): 0.72 (min=0, max=1)
+(1,5,5,2,0): 0.32 (min=0, max=1)
+(1,5,5,2,1): 0.68 (min=0, max=1)
+(1,6,4,1,0): 0.28 (min=0, max=1)
+(1,6,4,1,1): 0.72 (min=0, max=1)
+(1,6,5,1,1): 0.28 (min=0, max=1)
+(1,6,5,1,2): 0.72 (min=0, max=1)
+(1,6,5,2,0): 0.32 (min=0, max=1)
+(1,6,5,2,1): 0.68 (min=0, max=1)
+Using model for RQ_SW to generate a conditional probability table
+(0,1,0,0,2): 0.08 (min=0, max=1)
+(0,1,0,0,3): 0.92 (min=0, max=1)
+(0,1,0,1,1): 0.04 (min=0, max=1)
+(0,1,0,1,2): 0.32 (min=0, max=1)
+(0,1,0,1,3): 0.64 (min=0, max=1)
+(0,1,0,2,0): 0.04 (min=0, max=1)
+(0,1,0,2,1): 0.36 (min=0, max=1)
+(0,1,0,2,2): 0.6 (min=0, max=1)
+(0,1,0,3,0): 0.48 (min=0, max=1)
+(0,1,0,3,1): 0.52 (min=0, max=1)
+(0,1,1,0,2): 0.08 (min=0, max=1)
+(0,1,1,0,3): 0.92 (min=0, max=1)
+(0,1,1,1,1): 0.04 (min=0, max=1)
+(0,1,1,1,2): 0.32 (min=0, max=1)
+(0,1,1,1,3): 0.64 (min=0, max=1)
+(0,1,1,2,0): 0.04 (min=0, max=1)
+(0,1,1,2,1): 0.36 (min=0, max=1)
+(0,1,1,2,2): 0.6 (min=0, max=1)
+(0,1,1,3,0): 0.48 (min=0, max=1)
+(0,1,1,3,1): 0.52 (min=0, max=1)
+(0,1,2,0,2): 0.08 (min=0, max=1)
+(0,1,2,0,3): 0.92 (min=0, max=1)
+(0,1,2,1,1): 0.04 (min=0, max=1)
+(0,1,2,1,2): 0.32 (min=0, max=1)
+(0,1,2,1,3): 0.64 (min=0, max=1)
+(0,1,2,2,0): 0.04 (min=0, max=1)
+(0,1,2,2,1): 0.36 (min=0, max=1)
+(0,1,2,2,2): 0.6 (min=0, max=1)
+(0,1,2,3,0): 0.48 (min=0, max=1)
+(0,1,2,3,1): 0.52 (min=0, max=1)
+(0,1,3,0,2): 0.08 (min=0, max=1)
+(0,1,3,0,3): 0.92 (min=0, max=1)
+(0,1,3,1,1): 0.04 (min=0, max=1)
+(0,1,3,1,2): 0.32 (min=0, max=1)
+(0,1,3,1,3): 0.64 (min=0, max=1)
+(0,1,3,2,0): 0.04 (min=0, max=1)
+(0,1,3,2,1): 0.36 (min=0, max=1)
+(0,1,3,2,2): 0.6 (min=0, max=1)
+(0,1,3,3,0): 0.48 (min=0, max=1)
+(0,1,3,3,1): 0.52 (min=0, max=1)
+(0,1,4,0,2): 0.08 (min=0, max=1)
+(0,1,4,0,3): 0.92 (min=0, max=1)
+(0,1,4,1,1): 0.04 (min=0, max=1)
+(0,1,4,1,2): 0.32 (min=0, max=1)
+(0,1,4,1,3): 0.64 (min=0, max=1)
+(0,1,4,2,0): 0.04 (min=0, max=1)
+(0,1,4,2,1): 0.36 (min=0, max=1)
+(0,1,4,2,2): 0.6 (min=0, max=1)
+(0,1,4,3,0): 0.48 (min=0, max=1)
+(0,1,4,3,1): 0.52 (min=0, max=1)
+(0,1,5,0,2): 0.08 (min=0, max=1)
+(0,1,5,0,3): 0.92 (min=0, max=1)
+(0,1,5,1,1): 0.04 (min=0, max=1)
+(0,1,5,1,2): 0.32 (min=0, max=1)
+(0,1,5,1,3): 0.64 (min=0, max=1)
+(0,1,5,2,0): 0.04 (min=0, max=1)
+(0,1,5,2,1): 0.36 (min=0, max=1)
+(0,1,5,2,2): 0.6 (min=0, max=1)
+(0,1,5,3,0): 0.48 (min=0, max=1)
+(0,1,5,3,1): 0.52 (min=0, max=1)
+(0,1,6,0,2): 0.08 (min=0, max=1)
+(0,1,6,0,3): 0.92 (min=0, max=1)
+(0,1,6,1,1): 0.04 (min=0, max=1)
+(0,1,6,1,2): 0.32 (min=0, max=1)
+(0,1,6,1,3): 0.64 (min=0, max=1)
+(0,1,6,2,0): 0.04 (min=0, max=1)
+(0,1,6,2,1): 0.36 (min=0, max=1)
+(0,1,6,2,2): 0.6 (min=0, max=1)
+(0,1,6,3,0): 0.48 (min=0, max=1)
+(0,1,6,3,1): 0.52 (min=0, max=1)
+(0,2,0,1,3): 0.04 (min=0, max=1)
+(0,2,0,1,4): 0.96 (min=0, max=1)
+(0,2,0,2,2): 0.04 (min=0, max=1)
+(0,2,0,2,3): 0.36 (min=0, max=1)
+(0,2,0,2,4): 0.6 (min=0, max=1)
+(0,2,0,3,1): 0.04 (min=0, max=1)
+(0,2,0,3,2): 0.44 (min=0, max=1)
+(0,2,0,3,3): 0.52 (min=0, max=1)
+(0,2,0,4,0): 0.04 (min=0, max=1)
+(0,2,0,4,1): 0.44 (min=0, max=1)
+(0,2,0,4,2): 0.52 (min=0, max=1)
+(0,2,0,5,0): 0.08 (min=0, max=1)
+(0,2,0,5,1): 0.68 (min=0, max=1)
+(0,2,0,5,2): 0.24 (min=0, max=1)
+(0,2,1,1,3): 0.04 (min=0, max=1)
+(0,2,1,1,4): 0.96 (min=0, max=1)
+(0,2,1,2,2): 0.04 (min=0, max=1)
+(0,2,1,2,3): 0.36 (min=0, max=1)
+(0,2,1,2,4): 0.6 (min=0, max=1)
+(0,2,1,3,1): 0.04 (min=0, max=1)
+(0,2,1,3,2): 0.44 (min=0, max=1)
+(0,2,1,3,3): 0.52 (min=0, max=1)
+(0,2,1,4,0): 0.04 (min=0, max=1)
+(0,2,1,4,1): 0.44 (min=0, max=1)
+(0,2,1,4,2): 0.52 (min=0, max=1)
+(0,2,1,5,0): 0.08 (min=0, max=1)
+(0,2,1,5,1): 0.68 (min=0, max=1)
+(0,2,1,5,2): 0.24 (min=0, max=1)
+(0,2,2,1,3): 0.04 (min=0, max=1)
+(0,2,2,1,4): 0.96 (min=0, max=1)
+(0,2,2,2,2): 0.04 (min=0, max=1)
+(0,2,2,2,3): 0.36 (min=0, max=1)
+(0,2,2,2,4): 0.6 (min=0, max=1)
+(0,2,2,3,1): 0.04 (min=0, max=1)
+(0,2,2,3,2): 0.44 (min=0, max=1)
+(0,2,2,3,3): 0.52 (min=0, max=1)
+(0,2,2,4,0): 0.04 (min=0, max=1)
+(0,2,2,4,1): 0.44 (min=0, max=1)
+(0,2,2,4,2): 0.52 (min=0, max=1)
+(0,2,2,5,0): 0.08 (min=0, max=1)
+(0,2,2,5,1): 0.68 (min=0, max=1)
+(0,2,2,5,2): 0.24 (min=0, max=1)
+(0,2,3,1,3): 0.04 (min=0, max=1)
+(0,2,3,1,4): 0.96 (min=0, max=1)
+(0,2,3,2,2): 0.04 (min=0, max=1)
+(0,2,3,2,3): 0.36 (min=0, max=1)
+(0,2,3,2,4): 0.6 (min=0, max=1)
+(0,2,3,3,1): 0.04 (min=0, max=1)
+(0,2,3,3,2): 0.44 (min=0, max=1)
+(0,2,3,3,3): 0.52 (min=0, max=1)
+(0,2,3,4,0): 0.04 (min=0, max=1)
+(0,2,3,4,1): 0.44 (min=0, max=1)
+(0,2,3,4,2): 0.52 (min=0, max=1)
+(0,2,3,5,0): 0.08 (min=0, max=1)
+(0,2,3,5,1): 0.68 (min=0, max=1)
+(0,2,3,5,2): 0.24 (min=0, max=1)
+(0,2,4,1,3): 0.04 (min=0, max=1)
+(0,2,4,1,4): 0.96 (min=0, max=1)
+(0,2,4,2,2): 0.04 (min=0, max=1)
+(0,2,4,2,3): 0.36 (min=0, max=1)
+(0,2,4,2,4): 0.6 (min=0, max=1)
+(0,2,4,3,1): 0.04 (min=0, max=1)
+(0,2,4,3,2): 0.44 (min=0, max=1)
+(0,2,4,3,3): 0.52 (min=0, max=1)
+(0,2,4,4,0): 0.04 (min=0, max=1)
+(0,2,4,4,1): 0.44 (min=0, max=1)
+(0,2,4,4,2): 0.52 (min=0, max=1)
+(0,2,4,5,0): 0.08 (min=0, max=1)
+(0,2,4,5,1): 0.68 (min=0, max=1)
+(0,2,4,5,2): 0.24 (min=0, max=1)
+(0,2,5,1,3): 0.04 (min=0, max=1)
+(0,2,5,1,4): 0.96 (min=0, max=1)
+(0,2,5,2,2): 0.04 (min=0, max=1)
+(0,2,5,2,3): 0.36 (min=0, max=1)
+(0,2,5,2,4): 0.6 (min=0, max=1)
+(0,2,5,3,1): 0.04 (min=0, max=1)
+(0,2,5,3,2): 0.44 (min=0, max=1)
+(0,2,5,3,3): 0.52 (min=0, max=1)
+(0,2,5,4,0): 0.04 (min=0, max=1)
+(0,2,5,4,1): 0.44 (min=0, max=1)
+(0,2,5,4,2): 0.52 (min=0, max=1)
+(0,2,5,5,0): 0.08 (min=0, max=1)
+(0,2,5,5,1): 0.68 (min=0, max=1)
+(0,2,5,5,2): 0.24 (min=0, max=1)
+(0,2,6,1,3): 0.04 (min=0, max=1)
+(0,2,6,1,4): 0.96 (min=0, max=1)
+(0,2,6,2,2): 0.04 (min=0, max=1)
+(0,2,6,2,3): 0.36 (min=0, max=1)
+(0,2,6,2,4): 0.6 (min=0, max=1)
+(0,2,6,3,1): 0.04 (min=0, max=1)
+(0,2,6,3,2): 0.44 (min=0, max=1)
+(0,2,6,3,3): 0.52 (min=0, max=1)
+(0,2,6,4,0): 0.04 (min=0, max=1)
+(0,2,6,4,1): 0.44 (min=0, max=1)
+(0,2,6,4,2): 0.52 (min=0, max=1)
+(0,2,6,5,0): 0.08 (min=0, max=1)
+(0,2,6,5,1): 0.68 (min=0, max=1)
+(0,2,6,5,2): 0.24 (min=0, max=1)
+(0,3,0,3,3): 0.44 (min=0, max=1)
+(0,3,0,3,4): 0.56 (min=0, max=1)
+(0,3,0,4,2): 0.44 (min=0, max=1)
+(0,3,0,4,3): 0.56 (min=0, max=1)
+(0,3,0,5,2): 0.76 (min=0, max=1)
+(0,3,0,5,3): 0.24 (min=0, max=1)
+(0,3,0,7,0): 0.92 (min=0, max=1)
+(0,3,0,7,1): 0.08 (min=0, max=1)
+(0,3,1,3,3): 0.44 (min=0, max=1)
+(0,3,1,3,4): 0.56 (min=0, max=1)
+(0,3,1,4,2): 0.44 (min=0, max=1)
+(0,3,1,4,3): 0.56 (min=0, max=1)
+(0,3,1,5,2): 0.76 (min=0, max=1)
+(0,3,1,5,3): 0.24 (min=0, max=1)
+(0,3,1,7,0): 0.92 (min=0, max=1)
+(0,3,1,7,1): 0.08 (min=0, max=1)
+(0,3,2,3,3): 0.44 (min=0, max=1)
+(0,3,2,3,4): 0.56 (min=0, max=1)
+(0,3,2,4,2): 0.44 (min=0, max=1)
+(0,3,2,4,3): 0.56 (min=0, max=1)
+(0,3,2,5,2): 0.76 (min=0, max=1)
+(0,3,2,5,3): 0.24 (min=0, max=1)
+(0,3,2,7,0): 0.92 (min=0, max=1)
+(0,3,2,7,1): 0.08 (min=0, max=1)
+(0,3,3,3,3): 0.44 (min=0, max=1)
+(0,3,3,3,4): 0.56 (min=0, max=1)
+(0,3,3,4,2): 0.44 (min=0, max=1)
+(0,3,3,4,3): 0.56 (min=0, max=1)
+(0,3,3,5,2): 0.76 (min=0, max=1)
+(0,3,3,5,3): 0.24 (min=0, max=1)
+(0,3,3,7,0): 0.92 (min=0, max=1)
+(0,3,3,7,1): 0.08 (min=0, max=1)
+(0,3,4,3,3): 0.44 (min=0, max=1)
+(0,3,4,3,4): 0.56 (min=0, max=1)
+(0,3,4,4,2): 0.44 (min=0, max=1)
+(0,3,4,4,3): 0.56 (min=0, max=1)
+(0,3,4,5,2): 0.76 (min=0, max=1)
+(0,3,4,5,3): 0.24 (min=0, max=1)
+(0,3,4,7,0): 0.92 (min=0, max=1)
+(0,3,4,7,1): 0.08 (min=0, max=1)
+(0,3,5,3,3): 0.44 (min=0, max=1)
+(0,3,5,3,4): 0.56 (min=0, max=1)
+(0,3,5,4,2): 0.44 (min=0, max=1)
+(0,3,5,4,3): 0.56 (min=0, max=1)
+(0,3,5,5,2): 0.76 (min=0, max=1)
+(0,3,5,5,3): 0.24 (min=0, max=1)
+(0,3,5,7,0): 0.92 (min=0, max=1)
+(0,3,5,7,1): 0.08 (min=0, max=1)
+(0,3,6,3,3): 0.44 (min=0, max=1)
+(0,3,6,3,4): 0.56 (min=0, max=1)
+(0,3,6,4,2): 0.44 (min=0, max=1)
+(0,3,6,4,3): 0.56 (min=0, max=1)
+(0,3,6,5,2): 0.76 (min=0, max=1)
+(0,3,6,5,3): 0.24 (min=0, max=1)
+(0,3,6,7,0): 0.92 (min=0, max=1)
+(0,3,6,7,1): 0.08 (min=0, max=1)
+(0,4,0,4,3): 0.44 (min=0, max=1)
+(0,4,0,4,4): 0.56 (min=0, max=1)
+(0,4,0,5,3): 0.76 (min=0, max=1)
+(0,4,0,5,4): 0.24 (min=0, max=1)
+(0,4,0,7,1): 0.92 (min=0, max=1)
+(0,4,0,7,2): 0.08 (min=0, max=1)
+(0,4,1,4,3): 0.44 (min=0, max=1)
+(0,4,1,4,4): 0.56 (min=0, max=1)
+(0,4,1,5,3): 0.76 (min=0, max=1)
+(0,4,1,5,4): 0.24 (min=0, max=1)
+(0,4,1,7,1): 0.92 (min=0, max=1)
+(0,4,1,7,2): 0.08 (min=0, max=1)
+(0,4,2,4,3): 0.44 (min=0, max=1)
+(0,4,2,4,4): 0.56 (min=0, max=1)
+(0,4,2,5,3): 0.76 (min=0, max=1)
+(0,4,2,5,4): 0.24 (min=0, max=1)
+(0,4,2,7,1): 0.92 (min=0, max=1)
+(0,4,2,7,2): 0.08 (min=0, max=1)
+(0,4,3,4,3): 0.44 (min=0, max=1)
+(0,4,3,4,4): 0.56 (min=0, max=1)
+(0,4,3,5,3): 0.76 (min=0, max=1)
+(0,4,3,5,4): 0.24 (min=0, max=1)
+(0,4,3,7,1): 0.92 (min=0, max=1)
+(0,4,3,7,2): 0.08 (min=0, max=1)
+(0,4,4,4,3): 0.44 (min=0, max=1)
+(0,4,4,4,4): 0.56 (min=0, max=1)
+(0,4,4,5,3): 0.76 (min=0, max=1)
+(0,4,4,5,4): 0.24 (min=0, max=1)
+(0,4,4,7,1): 0.92 (min=0, max=1)
+(0,4,4,7,2): 0.08 (min=0, max=1)
+(0,4,5,4,3): 0.44 (min=0, max=1)
+(0,4,5,4,4): 0.56 (min=0, max=1)
+(0,4,5,5,3): 0.76 (min=0, max=1)
+(0,4,5,5,4): 0.24 (min=0, max=1)
+(0,4,5,7,1): 0.92 (min=0, max=1)
+(0,4,5,7,2): 0.08 (min=0, max=1)
+(0,4,6,4,3): 0.44 (min=0, max=1)
+(0,4,6,4,4): 0.56 (min=0, max=1)
+(0,4,6,5,3): 0.76 (min=0, max=1)
+(0,4,6,5,4): 0.24 (min=0, max=1)
+(0,4,6,7,1): 0.92 (min=0, max=1)
+(0,4,6,7,2): 0.08 (min=0, max=1)
+(0,5,0,7,2): 0.92 (min=0, max=1)
+(0,5,0,7,3): 0.08 (min=0, max=1)
+(0,5,1,7,2): 0.92 (min=0, max=1)
+(0,5,1,7,3): 0.08 (min=0, max=1)
+(0,5,2,7,2): 0.92 (min=0, max=1)
+(0,5,2,7,3): 0.08 (min=0, max=1)
+(0,5,3,7,2): 0.92 (min=0, max=1)
+(0,5,3,7,3): 0.08 (min=0, max=1)
+(0,5,4,7,2): 0.92 (min=0, max=1)
+(0,5,4,7,3): 0.08 (min=0, max=1)
+(0,5,5,7,2): 0.92 (min=0, max=1)
+(0,5,5,7,3): 0.08 (min=0, max=1)
+(0,5,6,7,2): 0.92 (min=0, max=1)
+(0,5,6,7,3): 0.08 (min=0, max=1)
+(1,0,4,1,0): 0.28 (min=0, max=1)
+(1,0,4,1,1): 0.72 (min=0, max=1)
+(1,0,5,1,1): 0.28 (min=0, max=1)
+(1,0,5,1,2): 0.72 (min=0, max=1)
+(1,0,5,2,0): 0.32 (min=0, max=1)
+(1,0,5,2,1): 0.68 (min=0, max=1)
+(1,1,4,1,0): 0.28 (min=0, max=1)
+(1,1,4,1,1): 0.72 (min=0, max=1)
+(1,1,5,1,1): 0.28 (min=0, max=1)
+(1,1,5,1,2): 0.72 (min=0, max=1)
+(1,1,5,2,0): 0.32 (min=0, max=1)
+(1,1,5,2,1): 0.68 (min=0, max=1)
+(1,2,4,1,0): 0.28 (min=0, max=1)
+(1,2,4,1,1): 0.72 (min=0, max=1)
+(1,2,5,1,1): 0.28 (min=0, max=1)
+(1,2,5,1,2): 0.72 (min=0, max=1)
+(1,2,5,2,0): 0.32 (min=0, max=1)
+(1,2,5,2,1): 0.68 (min=0, max=1)
+(1,3,4,1,0): 0.28 (min=0, max=1)
+(1,3,4,1,1): 0.72 (min=0, max=1)
+(1,3,5,1,1): 0.28 (min=0, max=1)
+(1,3,5,1,2): 0.72 (min=0, max=1)
+(1,3,5,2,0): 0.32 (min=0, max=1)
+(1,3,5,2,1): 0.68 (min=0, max=1)
+(1,4,4,1,0): 0.28 (min=0, max=1)
+(1,4,4,1,1): 0.72 (min=0, max=1)
+(1,4,5,1,1): 0.28 (min=0, max=1)
+(1,4,5,1,2): 0.72 (min=0, max=1)
+(1,4,5,2,0): 0.32 (min=0, max=1)
+(1,4,5,2,1): 0.68 (min=0, max=1)
+(1,5,4,1,0): 0.28 (min=0, max=1)
+(1,5,4,1,1): 0.72 (min=0, max=1)
+(1,5,5,1,1): 0.28 (min=0, max=1)
+(1,5,5,1,2): 0.72 (min=0, max=1)
+(1,5,5,2,0): 0.32 (min=0, max=1)
+(1,5,5,2,1): 0.68 (min=0, max=1)
+(1,6,4,1,0): 0.28 (min=0, max=1)
+(1,6,4,1,1): 0.72 (min=0, max=1)
+(1,6,5,1,1): 0.28 (min=0, max=1)
+(1,6,5,1,2): 0.72 (min=0, max=1)
+(1,6,5,2,0): 0.32 (min=0, max=1)
+(1,6,5,2,1): 0.68 (min=0, max=1)
+Using model for PEC_Inf_L_gL to generate a conditional probability table
+(0,1,0): 0.0256 (min=0, max=1)
+(0,1,1): 0.9744 (min=0, max=1)
+(0,2,0): 0.04 (min=0, max=1)
+(0,2,1): 0.96 (min=0, max=1)
+(0,3,0): 0.04 (min=0, max=1)
+(0,3,1): 0.96 (min=0, max=1)
+(0,4,0): 0.0752 (min=0, max=1)
+(0,4,1): 0.9248 (min=0, max=1)
+(1,0,3): 0.0736 (min=0, max=1)
+(1,0,4): 0.584 (min=0, max=1)
+(1,0,5): 0.3088 (min=0, max=1)
+(1,0,6): 0.0336 (min=0, max=1)
+(1,1,2): 0.0256 (min=0, max=1)
+(1,1,3): 0.192 (min=0, max=1)
+(1,1,4): 0.7824 (min=0, max=1)
+(1,2,2): 0.04 (min=0, max=1)
+(1,2,3): 0.3264 (min=0, max=1)
+(1,2,4): 0.6336 (min=0, max=1)
+(1,3,2): 0.04 (min=0, max=1)
+(1,3,3): 0.4704 (min=0, max=1)
+(1,3,4): 0.4896 (min=0, max=1)
+(1,4,2): 0.0752 (min=0, max=1)
+(1,4,3): 0.5824 (min=0, max=1)
+(1,4,4): 0.3424 (min=0, max=1)
+(2,0,4): 0.008 (min=0, max=1)
+(2,0,5): 0.6144 (min=0, max=1)
+(2,0,6): 0.3776 (min=0, max=1)
+(2,1,4): 0.1312 (min=0, max=1)
+(2,1,5): 0.8688 (min=0, max=1)
+(2,2,4): 0.2944 (min=0, max=1)
+(2,2,5): 0.7056 (min=0, max=1)
+(2,3,4): 0.456 (min=0, max=1)
+(2,3,5): 0.544 (min=0, max=1)
+(2,4,4): 0.6176 (min=0, max=1)
+(2,4,5): 0.3824 (min=0, max=1)
+(3,0,5): 0.008 (min=0, max=1)
+(3,0,6): 0.992 (min=0, max=1)
+(3,1,5): 0.1312 (min=0, max=1)
+(3,1,6): 0.8688 (min=0, max=1)
+(3,2,5): 0.2944 (min=0, max=1)
+(3,2,6): 0.7056 (min=0, max=1)
+(3,3,5): 0.456 (min=0, max=1)
+(3,3,6): 0.544 (min=0, max=1)
+(3,4,5): 0.6176 (min=0, max=1)
+(3,4,6): 0.3824 (min=0, max=1)
+Fri Sep 23 10:32:31 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Weight_Class and PEC_SW_H_gL
+    Marrying Weight_Class and PEC_SW_L_gL
+    Marrying Weight_Class and PNEC_gL
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 5 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, Weight_Class, RQ_SW
+This component is a clique of cost 3920
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8723393
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    PEC_Eff_L_gL
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PNEC_gL
+    API_Name
+    Weight_Class
+    PEC_Inf_L_gL
+    PEC_SW_L_gL
+    PEC_Eff_H_gL
+    PEC_Inf_H_gL
+    PEC_SW_H_gL
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 4 members, table size = 1029:
+    API_Removal, PEC_SW_H_gL, PEC_Inf_H_gL, PEC_Eff_H_gL
+
+Clique 10, 5 members, table size = 7203:
+    API_Removal, PEC_SW_H_gL, PEC_Inf_H_gL, PEC_SW_L_gL, PEC_Inf_L_gL
+
+Clique 9, 6 members, table size = 38416:
+    PEC_SW_H_gL, PEC_Inf_H_gL, PEC_SW_L_gL, PEC_Inf_L_gL, Weight_Class,
+    API_Name
+
+Clique 8, 5 members, table size = 6272:
+    PEC_SW_H_gL, PEC_SW_L_gL, Weight_Class, API_Name, PNEC_gL
+
+Clique 7, 5 members, table size = 3920:
+    PEC_SW_H_gL, PEC_SW_L_gL, Weight_Class, PNEC_gL, RQ_SW
+
+Clique 6, 6 members, table size = 23520:
+    PEC_Inf_H_gL, PEC_Inf_L_gL, Weight_Class, API_Name, Weight_Light_kg,
+    Water_Consumption_ML
+
+Clique 5, 6 members, table size = 23520:
+    PEC_Inf_H_gL, Weight_Class, API_Name, Weight_Light_kg,
+    Water_Consumption_ML, Weight_Heavy_kg
+
+Clique 4, 6 members, table size = 16800:
+    Weight_Class, API_Name, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg, Population
+
+Clique 3, 9 members, table size = 8601600:
+    Weight_Class, API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear
+
+Clique 2, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Clique 1, 4 members, table size = 1029:
+    API_Removal, PEC_SW_L_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Total clique table size: 8723393
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 3 members and table size = 147:
+    API_Removal, PEC_SW_H_gL, PEC_Inf_H_gL
+
+Cliques 9 and 10 linked, separator has 4 members and table size = 2401:
+    PEC_SW_H_gL, PEC_Inf_H_gL, PEC_SW_L_gL, PEC_Inf_L_gL
+
+Cliques 8 and 9 linked, separator has 4 members and table size = 784:
+    PEC_SW_H_gL, PEC_SW_L_gL, Weight_Class, API_Name
+
+Cliques 7 and 8 linked, separator has 4 members and table size = 784:
+    PEC_SW_H_gL, PEC_SW_L_gL, Weight_Class, PNEC_gL
+
+Cliques 6 and 9 linked, separator has 4 members and table size = 784:
+    PEC_Inf_H_gL, PEC_Inf_L_gL, Weight_Class, API_Name
+
+Cliques 5 and 6 linked, separator has 5 members and table size = 3360:
+    PEC_Inf_H_gL, Weight_Class, API_Name, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 4 and 5 linked, separator has 5 members and table size = 3360:
+    Weight_Class, API_Name, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Cliques 3 and 4 linked, separator has 5 members and table size = 3360:
+    Weight_Class, API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 2 and 3 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+Cliques 1 and 10 linked, separator has 3 members and table size = 147:
+    API_Removal, PEC_SW_L_gL, PEC_Inf_L_gL
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 2
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 3
+    Node Pop_Coeff_kgkpers assigned to clique 3
+    Node Year_Coeff_kgyear assigned to clique 3
+    Node PEC_SW_L_gL assigned to clique 1
+    Node PEC_Eff_L_gL assigned to clique 1
+    Node PEC_SW_H_gL assigned to clique 11
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 2
+    Node PNEC_gL assigned to clique 8
+    Node Weight_Class assigned to clique 8
+    Node RQ_SW assigned to clique 7
+    Node Population assigned to clique 2
+    Node Water_Consumption_ML assigned to clique 4
+    Node PEC_Inf_L_gL assigned to clique 6
+    Node PEC_Inf_H_gL assigned to clique 5
+    Node Weight_Light_kg assigned to clique 3
+    Node API_Name assigned to clique 8
+    Node Weight_Heavy_kg assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.02584
+	state1   0.620169
+	state2   0.000114432
+	state3   0.000893269
+	state4   0.0151053
+	state5   0.337878
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.02584
+	state1   0.620169
+	state2   0.000114432
+	state3   0.000893269
+	state4   0.0151053
+	state5   0.337878
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.015
+	state1   0.0309423
+	state2   0.500503
+	state3   0.24263
+	state4   0.114693
+	state5   0.0962318
+	state6   0
+
+    PEC_Eff_H_gL:
+	state0   0.015
+	state1   0.386779
+	state2   0.144667
+	state3   0.24263
+	state4   0.114693
+	state5   0.0962318
+	state6   0
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.0777337
+	state1   0.250252
+	state2   0.487798
+	state3   0.149132
+	state4   0.0350841
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.02584
+	state1   0.62016
+	state2   5.33333e-05
+	state3   0.0004352
+	state4   0.00329813
+	state5   0.0770931
+	state6   0.27312
+
+    PEC_Inf_H_gL:
+	state0   0.015
+	state1   0.36736
+	state2   0.121366
+	state3   0.266994
+	state4   0.114718
+	state5   0.114562
+	state6   0
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0

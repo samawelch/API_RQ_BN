@@ -158,18 +158,15 @@ ggplot(data = API_sales_by_population %>% filter(sYear != 2019),
 
 # Let's try and implement API ~ Population + Year, as suggested by JMO
 LMs_API <- API_sales_by_population %>% 
-  mutate(KPopulation = Population / 1000) %>% 
+  mutate(KPopulation = Population / 1000,
+         Total_Sold_kg = Total_Sold_g / 1000) %>% 
   filter(sYear != 2019) %>% 
   group_by(API_Name) %>% 
-  summarise(lm_intercept = coef(lm(Total_Sold_g ~ KPopulation + sYear))[[1]],
-            lm_coef_kpop = coef(lm(Total_Sold_g ~ KPopulation + sYear))[[2]],
-            lm_coef_year = coef(lm(Total_Sold_g ~ KPopulation + sYear))[[3]])
 
+  summarise(lm_intercept_kg = coef(lm(Total_Sold_kg ~ KPopulation + sYear))[[1]],
+            lm_coef_kg_kpop = coef(lm(Total_Sold_kg ~ KPopulation + sYear))[[2]],
+            lm_coef_kg_year = coef(lm(Total_Sold_kg ~ KPopulation + sYear))[[3]])
 
-tmp_lm <- lm(data = API_sales_by_population %>% 
-  mutate(KPopulation = Population / 1000) %>% 
-  filter(sYear != 2019, API_Name == "levonorgestrel"),
-  Total_Sold_g ~ KPopulation + sYear)
 ```
 
 ```{r checks}
@@ -188,22 +185,57 @@ ggplot(data = Sales_Projections_21C %>% filter(Year != 2019),
   geom_path() + 
   facet_wrap(facets = vars(API_Name),
              scales = "free")
+
+
+# uhhhh
+# gonna try and reconstruct the API_Sales_Weight calculations here
+LM_Modelling <- LMs_API %>% 
+  crossing(Population_mil = c(4.5, 5.5, 6.5, 7.5, 8.5, 9.5),
+           Year = c(2020, 2030, 2040, 2050, 2060, 2070, 2080, 2090, 2100)) %>% 
+  mutate(Sales_Weight_kg = (Population_mil * lm_coef_kpop * 1000) + (Year * lm_coef_year) + lm_intercept)
+
+# Plot out
+ggplot(data = LM_Modelling, mapping = aes(x = Year, 
+                                          y = Sales_Weight_kg,
+                                          colour = as.factor(Population_mil))) +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), scales = "free")
+
+# Plot with minimum value of 0
+ggplot(data = LM_Modelling, mapping = aes(x = Year, 
+                                          y = pmax(0, Sales_Weight_kg),
+                                          colour = as.factor(Population_mil))) +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), scales = "free")
+
+# Plot with Pop on X axis
+ggplot(data = LM_Modelling, mapping = aes(x = Population_mil, 
+                                          y = pmax(0, Sales_Weight_kg),
+                                          colour = as.factor(Year))) +
+  geom_path() +
+  facet_wrap(facets = vars(API_Name), scales = "free")
+
+# What does the original data look lile?
+
 ```
 
 # R to Hugin
 
 ```{r Hugin_Data_Maker}
+# Pick three APIs with high/medium/low sales weights
+three_APIs <- c("paracetamol", "diclofenac", "levonorgestrel")
+
 # Make data files for automated data input/output to Hugin
 Hugin_Data_File <- LMs_API %>% 
   left_join(API_PNECs, by = "API_Name") %>% 
   transmute(API_Name,
-            API_LM_Intercept = lm_intercept,
-            API_LM_Coeff_KPop = lm_coef_kpop,
-            API_LM_Coeff_Year = lm_coef_year,
+            API_LM_Intercept_g = lm_intercept_g,
+            API_LM_Coeff_g_KPop = lm_coef_g_kpop,
+            API_LM_Coeff_g_Year = lm_coef_g_year,
             API_PNEC_gL = PNEC_gL) %>% 
   # Use vector recycling via crossing to set up the various scenario combinations easily
   crossing(Population_Scenario = as_factor(c("Low", "Main", "High")),
-           Year = c("2020", "2030", "2040", "2050", "2060", "2070", "2080", "2090", "2100"),
+           Year = c("2010", "2020", "2030", "2040", "2050"),
            WWTP_Removal_Scenario = c("0", "0.25", "0.5", "0.75")) %>% 
   add_column(`[MEAN](Norway_Population_mil)` = NA, 
              `[MEAN](API_Sales_Weight_kg)` = NA, 
@@ -222,7 +254,7 @@ Hugin_Data_File <- LMs_API %>%
 write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na = "")
 ```
 
-# Hugin to R 
+# Hugin to R
 
 ```{r Hugin_Data_Reader}
 # Hugin has done its thing, so let's import the data
@@ -231,7 +263,8 @@ Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_to_R_datafile.csv",
   # rename_with(cols = 8:15, ~str_remove(string = ., pattern = "\\[MEAN\\]")) %>% 
   # rename_with(cols = 8:15, ~str_remove_all(string = ., pattern = "\\W"))
 # Need to refactorise population scenarios
-  mutate(Population_Scenario = fct_relevel(Population_Scenario, c("Low", "Main", "High")))
+  mutate(Population_Scenario = fct_relevel(Population_Scenario, c("Low", "Main", "High")),
+         WWTP_Removal_Scenario = as.ordered(WWTP_Removal_Scenario))
 ```
 
 ```{r Some_Graphs}
@@ -275,20 +308,19 @@ Various_PECs
 RQ_by_Year_Scen_API <- ggplot(data = Hugin_Data_Output,
        mapping = aes(x = Year,
                      y = `[MEAN](RQ)`,
-                     colour = WWTP_Removal_Scenario,
+                     colour = as.factor(WWTP_Removal_Scenario),
                      shape = Population_Scenario)) +
-  geom_point(size = 2) +
+  geom_point() +
   geom_path() +
   facet_wrap(facets = vars(API_Name), ncol = 4) +
+  scale_color_viridis_d() +
   scale_shape_discrete(breaks = c("Low", "Main", "High"))
 
 RQ_by_Year_Scen_API
 
-
-
 # Now we're gonna try and make some graphs like Sophie's!
 Sophie_Graph_Data <- Hugin_Data_Output %>% 
-  filter(API_Name == "levonorgestrel") %>% 
+  filter(API_Name == "paracetamol") %>% 
   dplyr::select(1, 5:8, 16:21) %>% 
   pivot_longer(cols = 6:11,
                names_to = "RQ_Bin",

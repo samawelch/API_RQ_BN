@@ -1,0 +1,376 @@
+class Two_API_Switcher
+{
+    inputs = ();
+    outputs = ();
+    node_size = (122 90);
+    HR_TextLabel_IDs = "2";
+    HR_TextLabel_2_Size = "137,69";
+    HR_TextLabel_2_Position = "2507,1970";
+    HR_TextLabel_2_Description = "parameterised for low sales weights APIs (levonorgestrel)";
+    HR_Group_5_Description = "";
+    HR_Group_5_Color = "17";
+    HR_Group_5_Name = "Risk";
+    HR_Group_4_Description = "";
+    HR_Group_4_Color = "25";
+    HR_Group_4_Name = "Scenario";
+    HR_Group_3_Description = "";
+    HR_Group_3_Color = "9";
+    HR_Group_3_Name = "API3";
+    HR_Group_2_Description = "";
+    HR_Group_2_Color = "5";
+    HR_Group_2_Name = "API2";
+    HR_Group_1_Description = "";
+    HR_Group_1_Color = "1";
+    HR_Group_1_Name = "API1";
+    HR_DBN_Use_BK = "0";
+    HR_Html_Desc = "0";
+    HR_HTML_Desc = "";
+    HR_Link_Groups_IDs = "";
+    HR_Groups_IDs = "1,2,3,4,5";
+    HR_Node_Label_Style = "0";
+    HR_DBN_Num_Slices = "5";
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "48";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Utility_Link = "63";
+    HR_Probabilistic_Link = "63";
+    HR_Functional_Link = "63";
+    HR_Binding_Link = "63";
+    HR_Information_Arc = "63";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_DiscreteFunction = "5";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    instance API_Instance_Low_Tonnage_2 : API_Instance_Low_Tonnage (; API_Instance_Low_Tonnage_2_API_RQ = API_RQ)
+    {
+	label = "";
+	position = (734 527);
+	HR_Input_Order = "Year\tWWTP_Removal_Scenario\tAPI_LM_Coeff_KPop\tAPI_LM_Coeff_kg_Year\tAPI_LM_Intercept\tNorway_Population_mil\tWater_Consumption_ML\t";
+	HR_isCollapsed = "false";
+    }
+
+    instance API_Instance_Low_Tonnage_1 : API_Instance_Low_Tonnage (; API_Instance_Low_Tonnage_1_API_RQ = API_RQ)
+    {
+	label = "";
+	position = (737 346);
+	HR_isCollapsed = "false";
+    }
+
+    node Weight_Low
+    {
+	label = "API Low\nSales Weight";
+	position = (439 208);
+	states = ("false" "true");
+	subtype = boolean;
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_HTML_Desc = "";
+	HR_NodeSize = "(122, 90)";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_State_4 = "";
+	HR_State_5 = "";
+	HR_State_6 = "";
+	HR_State_7 = "";
+	HR_Group = "0";
+    }
+
+    node API_Name
+    {
+	label = "API Name";
+	position = (438 122);
+	states = ("estradiol" "ethinylestradiol" "levonorgestrel" "diclofenac" "ibuprofen" "paracetamol" "ciprofloxacin" "amoxicillin");
+	HR_LinkMode = "[Tonnage_Low:0]";
+	HR_LinkGroup = "[Weight_Low:0]";
+	HR_State_7 = "";
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(122, 90)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node Sum_RQ
+    {
+	label = "Sum of\nRisk Quotients";
+	position = (1143 158);
+	states = ("" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1 10 100 1000 10000 infinity);
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(122, 91)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "";
+	HR_LinkGroup = "";
+	HR_HTML_Desc = "";
+	HR_Group = "5";
+    }
+
+    node Joint_Exceedence_Probability
+    {
+	label = "Probability of \nExceedence";
+	position = (1176 231);
+	states = ("false" "true");
+	subtype = boolean;
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(122, 91)";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_Group = "5";
+    }
+
+    node RQ_Threshold
+    {
+	label = "Risk Quotient\nExceedence Threshold";
+	position = (1171 303);
+	states = ("" "" "" "" "");
+	subtype = number;
+	state_values = (0.1 1 10 100 1000);
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(122, 91)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[Joint_Exceedence_Probability:0]";
+	HR_LinkGroup = "[Joint_Exceedence_Probability:0]";
+	HR_HTML_Desc = "";
+	HR_Group = "5";
+    }
+
+    node WWTP_Removal_Scenario
+    {
+	label = "WWTP Removal\nScenario\n";
+	position = (232 636);
+	states = ("Low" "Main" "High");
+	HR_State_2 = "";
+	HR_NodeSize = "(122, 91)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[WWTP_Removal_Scenario:0]";
+	HR_LinkGroup = "[API_Instance_Low_Tonnage_1_WWTP_Removal_Scenario:0][API_Instance_Low_Tonnage_2_WWTP_Removal_Scenario:0]";
+	HR_HTML_Desc = "";
+	HR_Group = "4";
+    }
+
+    node Population_Scenario
+    {
+	label = "SSB Population\nGrowth Scenario";
+	position = (120 521);
+	states = ("Low" "Main" "High");
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "[Norway_Population_mil:0]";
+	HR_LinkMode = "[Norway_Population_mil:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(122, 91)";
+	HR_State_2 = "";
+	HR_Group = "4";
+    }
+
+    node Water_Consumption_ML
+    {
+	label = "Total Water \nConsumption (ML)";
+	position = (243 531);
+	states = ("" "" "" "" "");
+	subtype = interval;
+	state_values = (0 400 800 1200 1600 2000);
+	HR_HTML_Desc = "";
+	HR_LinkControlPoints = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(122, 91)";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "4";
+    }
+
+    node Year
+    {
+	label = "";
+	position = (246 225);
+	states = ("" "" "" "" "");
+	subtype = number;
+	state_values = (2010 2020 2030 2040 2050);
+	HR_HTML_Desc = "";
+	HR_LinkControlPoints = "";
+	HR_State_8 = "";
+	HR_State_7 = "";
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_LinkGroup = "[Norway_Population_mil:0][API_Instance_Low_Tonnage_1_Year:0][API_Instance_Low_Tonnage_2_Year:0]";
+	HR_LinkMode = "[Norway_Population_mil:0][Year:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(122, 91)";
+	HR_Group = "4";
+    }
+
+    node Norway_Population_mil
+    {
+	label = "Total Population\n(million)";
+	position = (166 370);
+	states = ("" "" "" "" "" "");
+	subtype = interval;
+	state_values = (4 4.5 5 5.5 6 6.5 7);
+	HR_HTML_Desc = "";
+	HR_LinkControlPoints = "";
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_LinkMode = "[Water_Consumption_ML:0][Norway_Population_mil:0][Year:0]";
+	HR_LinkGroup = "[Water_Consumption_ML:0][Norway_Population_mil:0][API_Instance_Low_Tonnage_1_Norway_Population_mil:0][API_Instance_Low_Tonnage_2_Year:0][API_Instance_Low_Tonnage_2_Norway_Population_mil:0]";
+	HR_NodeSize = "(122, 91)";
+	HR_Group = "4";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    potential (Weight_Low | API_Name)
+    {
+	data = (( 0 1 )	%  API_Name=estradiol
+		( 0 1 )	%  API_Name=ethinylestradiol
+		( 0 1 )	%  API_Name=levonorgestrel
+		( 1 0 )	%  API_Name=diclofenac
+		( 1 0 )	%  API_Name=ibuprofen
+		( 1 0 )	%  API_Name=paracetamol
+		( 1 0 )	%  API_Name=ciprofloxacin
+		( 1 0 ));	%  API_Name=amoxicillin
+    }
+
+    potential (API_Name)
+    {
+	data = ( 1 1 1 1 1 1 1 1 );
+    }
+
+    potential (Sum_RQ)
+    {
+	model_nodes = ();
+	model_data = ( if (true, "HR_Syntax_Error:", "API1_RQ + (API2_RQ + API3_RQ)") );
+    }
+
+    potential (Joint_Exceedence_Probability | RQ_Threshold)
+    {
+	model_nodes = ();
+	model_data = ( if (true, "HR_Syntax_Error:", "if (API1_RQ > RQ_Threshold, true, if (API2_RQ > RQ_Threshold, true, if (API3_RQ > RQ_Threshold, true, false)))") );
+    }
+
+    potential (RQ_Threshold)
+    {
+	data = ( 1 1 1 1 1 );
+    }
+
+    potential (WWTP_Removal_Scenario)
+    {
+	data = ( 1 1 1 );
+    }
+
+    potential (Population_Scenario)
+    {
+	data = ( 1 1 1 );
+    }
+
+    potential (Water_Consumption_ML | Norway_Population_mil)
+    {
+	model_nodes = ();
+	model_data = ( Norway_Population_mil * 180 );
+	data = (( 0 0.88 0.12 0 0 )	%  Norway_Population_mil=interval(4,4.5)
+		( 0 0 1 0 0 )	%  Norway_Population_mil=interval(4.5,5)
+		( 0 0 1 0 0 )	%  Norway_Population_mil=interval(5,5.5)
+		( 0 0 1 0 0 )	%  Norway_Population_mil=interval(5.5,6)
+		( 0 0 1 0 0 )	%  Norway_Population_mil=interval(6,6.5)
+		( 0 0 0.32 0.68 0 ));	%  Norway_Population_mil=interval(6.5,7)
+    }
+
+    potential (Year)
+    {
+	data = ( 1 1 1 1 1 );
+    }
+
+    potential (Norway_Population_mil | Population_Scenario Year)
+    {
+	data = ((( 0 1 0 0 0 0 )	%  Population_Scenario=Low  Year=2010
+		 ( 0 0 1 0 0 0 )	%  Population_Scenario=Low  Year=2020
+		 ( 0 0 1 0 0 0 )	%  Population_Scenario=Low  Year=2030
+		 ( 0 1 0 0 0 0 )	%  Population_Scenario=Low  Year=2040
+		 ( 0 1 0 0 0 0 ))	%  Population_Scenario=Low  Year=2050
+		(( 0 1 0 0 0 0 )	%  Population_Scenario=Main  Year=2010
+		 ( 0 0 1 0 0 0 )	%  Population_Scenario=Main  Year=2020
+		 ( 0 0 0 1 0 0 )	%  Population_Scenario=Main  Year=2030
+		 ( 0 0 0 1 0 0 )	%  Population_Scenario=Main  Year=2040
+		 ( 0 0 0 0 1 0 ))	%  Population_Scenario=Main  Year=2050
+		(( 0 1 0 0 0 0 )	%  Population_Scenario=High  Year=2010
+		 ( 0 0 1 0 0 0 )	%  Population_Scenario=High  Year=2020
+		 ( 0 0 0 1 0 0 )	%  Population_Scenario=High  Year=2030
+		 ( 0 0 0 0 1 0 )	%  Population_Scenario=High  Year=2040
+		 ( 0 0 0 0 0 1 )));	%  Population_Scenario=High  Year=2050
+    }
+} % class Two_API_Switcher

@@ -1,0 +1,558 @@
+class API_Instance_Low_Tonnage
+{
+    inputs = (Year WWTP_Removal_Scenario API_LM_Coeff_KPop API_LM_Coeff_kg_Year API_LM_Intercept Norway_Population_mil Water_Consumption_ML);
+    outputs = (API_RQ);
+    node_size = (80 40);
+    HR_Instantiated_in = "\"Two_API_Switcher\", \"Two_API_Switcher\"";
+    HR_TextLabel_IDs = "1";
+    HR_Group_4_Color = "25";
+    HR_Group_4_Name = "Scenario";
+    HR_Group_3_Color = "9";
+    HR_Group_3_Name = "API3";
+    HR_Groups_IDs = ",3,4";
+    HR_DBN_Num_Slices = "5";
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "65";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Utility_Link = "63";
+    HR_Probabilistic_Link = "63";
+    HR_Functional_Link = "63";
+    HR_Binding_Link = "63";
+    HR_Information_Arc = "63";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_DiscreteFunction = "5";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    node Year
+    {
+	label = "";
+	position = (194 98);
+	states = ("" "" "" "" "");
+	subtype = number;
+	state_values = (2010 2020 2030 2040 2050);
+	HR_NodeSize = "(80, 40)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_State_4 = "";
+	HR_State_5 = "";
+	HR_State_6 = "";
+	HR_State_7 = "";
+	HR_State_8 = "";
+	HR_LinkControlPoints = "";
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "4";
+    }
+
+    node Norway_Population_mil
+    {
+	label = "Total Population\n(million)";
+	position = (137 315);
+	states = ("" "" "" "" "" "");
+	subtype = interval;
+	state_values = (4 4.5 5 5.5 6 6.5 7);
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(80, 40)";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_State_4 = "";
+	HR_State_5 = "";
+	HR_State_6 = "";
+	HR_LinkControlPoints = "";
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "4";
+    }
+
+    node Water_Consumption_ML
+    {
+	label = "Total Water \nConsumption (ML)";
+	position = (153 495);
+	states = ("" "" "" "" "");
+	subtype = interval;
+	state_values = (0 400 800 1200 1600 2000);
+	HR_NodeSize = "(122, 91)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_State_4 = "";
+	HR_State_5 = "";
+	HR_LinkControlPoints = "";
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "4";
+    }
+
+    node WWTP_Removal_Scenario
+    {
+	label = "WWTP Removal\nScenario\n";
+	position = (153 644);
+	states = ("Low" "Main" "High");
+	HR_HTML_Desc = "";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(80, 40)";
+	HR_State_2 = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "4";
+    }
+
+    node API_WWTP_Removal
+    {
+	label = "API\nWWTP Removal";
+	position = (756 398);
+	states = ("" "" "" "");
+	subtype = number;
+	state_values = (0 0.25 0.5 0.75);
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(119, 91)";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_HTML_Desc = "";
+	HR_LinkControlPoints = "";
+	HR_State_4 = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "3";
+    }
+
+    node API_RQ
+    {
+	label = "API RQ";
+	position = (1050 295);
+	states = ("" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1 10 100 1000 10000 infinity);
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(119, 91)";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_State_4 = "";
+	HR_State_5 = "";
+	HR_State_6 = "";
+	HR_State_7 = "";
+	HR_HTML_Desc = "";
+	HR_State_8 = "";
+	HR_Group = "3";
+    }
+
+    node API_PEC_SW_gL
+    {
+	label = "API PEC Surface \nWater (g/L)";
+	position = (917 295);
+	states = ("" "" "" "" "" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1E-14 1E-13 1E-12 1E-11 1E-10 1E-09 1E-08 1E-07 1E-06 infinity);
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(119, 91)";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_State_4 = "";
+	HR_State_5 = "";
+	HR_State_6 = "";
+	HR_State_7 = "";
+	HR_State_8 = "";
+	HR_State_9 = "";
+	HR_State_10 = "";
+	HR_State_11 = "";
+	HR_State_12 = "";
+	HR_State_13 = "";
+	HR_State_14 = "";
+	HR_State_15 = "";
+	HR_State_16 = "";
+	HR_State_17 = "";
+	HR_State_18 = "";
+	HR_State_19 = "";
+	HR_State_20 = "";
+	HR_State_21 = "";
+	HR_State_22 = "";
+	HR_State_23 = "";
+	HR_State_24 = "";
+	HR_State_25 = "";
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "3";
+    }
+
+    function API_LM_Coeff_kg_Year
+    {
+	label = "API LM\nkg/Year";
+	position = (284 92);
+	HR_NodeSize = "(80, 40)";
+	HR_Desc = "";
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "3";
+    }
+
+    function API_LM_Coeff_KPop
+    {
+	label = "API LM\n(kg/k people)";
+	position = (234 274);
+	HR_NodeSize = "(80, 40)";
+	HR_Desc = "";
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "3";
+    }
+
+    function API_LM_Intercept
+    {
+	label = "API LM\nIntercept (kg)";
+	position = (492 88);
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_NodeSize = "(80, 40)";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "3";
+    }
+
+    node API_Sales_Weight_kg
+    {
+	label = "API Sales\nWeight (kg)";
+	position = (429 297);
+	states = ("" "" "" "" "" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1E-06 1E-05 0.0001 0.001 0.01 0.1 1 10 100 infinity);
+	HR_NodeSize = "(116, 91)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_State_4 = "";
+	HR_State_5 = "";
+	HR_State_6 = "";
+	HR_State_7 = "";
+	HR_State_8 = "";
+	HR_LinkControlPoints = "";
+	HR_State_9 = "";
+	HR_HTML_Desc = "";
+	HR_State_10 = "";
+	HR_State_11 = "";
+	HR_State_12 = "";
+	HR_State_13 = "";
+	HR_State_14 = "";
+	HR_State_15 = "";
+	HR_State_16 = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "3";
+    }
+
+    node API_PEC_Inf_gL
+    {
+	label = "API PEC Influent\n(g/L)";
+	position = (609 296);
+	states = ("" "" "" "" "" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1E-14 1E-13 1E-12 1E-11 1E-10 1E-09 1E-08 1E-07 1E-06 infinity);
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_NodeSize = "(119, 91)";
+	HR_State_2 = "";
+	HR_State_3 = "";
+	HR_State_4 = "";
+	HR_State_5 = "";
+	HR_State_6 = "";
+	HR_State_7 = "";
+	HR_State_8 = "";
+	HR_State_9 = "";
+	HR_State_10 = "";
+	HR_State_11 = "";
+	HR_State_12 = "";
+	HR_State_13 = "";
+	HR_State_14 = "";
+	HR_State_15 = "";
+	HR_State_16 = "";
+	HR_State_17 = "";
+	HR_State_18 = "";
+	HR_State_19 = "";
+	HR_State_20 = "";
+	HR_State_21 = "";
+	HR_State_22 = "";
+	HR_State_23 = "";
+	HR_State_24 = "";
+	HR_State_25 = "";
+	HR_HTML_Desc = "";
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "3";
+    }
+
+    node API_PEC_Eff_gL
+    {
+	label = "API PEC Effluent\n(g/L)";
+	position = (756 295);
+	states = ("" "" "" "" "" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1E-14 1E-13 1E-12 1E-11 1E-10 1E-09 1E-08 1E-07 1E-06 infinity);
+	HR_HTML_Desc = "";
+	HR_State_25 = "";
+	HR_State_24 = "";
+	HR_State_23 = "";
+	HR_State_22 = "";
+	HR_State_21 = "";
+	HR_State_20 = "";
+	HR_State_19 = "";
+	HR_State_18 = "";
+	HR_State_17 = "";
+	HR_State_16 = "";
+	HR_State_15 = "";
+	HR_State_14 = "";
+	HR_State_13 = "";
+	HR_State_12 = "";
+	HR_State_11 = "";
+	HR_State_10 = "";
+	HR_State_9 = "";
+	HR_State_8 = "";
+	HR_State_7 = "";
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(119, 91)";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "3";
+    }
+
+    potential (Year)
+    {
+	data = ( 1 1 1 1 1 );
+    }
+
+    potential (Norway_Population_mil)
+    {
+	data = ( 1 1 1 1 1 1 );
+    }
+
+    potential (Water_Consumption_ML)
+    {
+	data = ( 1 1 1 1 1 );
+    }
+
+    potential (WWTP_Removal_Scenario)
+    {
+	data = ( 1 1 1 );
+    }
+
+    potential (API_WWTP_Removal | WWTP_Removal_Scenario)
+    {
+	data = (( 1 1 0 0 )	%  WWTP_Removal_Scenario=Low
+		( 0 1 1 0 )	%  WWTP_Removal_Scenario=Main
+		( 0 0 1 1 ));	%  WWTP_Removal_Scenario=High
+    }
+
+    potential (API_RQ | API_PEC_SW_gL)
+    {
+	model_nodes = ();
+	model_data = (  );
+    }
+
+    potential (API_PEC_SW_gL | API_PEC_Eff_gL)
+    {
+	model_nodes = ();
+	model_data = ( API_PEC_Eff_gL / 10 );
+	data = (( 1 0 0 0 0 0 0 0 0 0 )	%  API_PEC_Eff_gL=interval(0,1E-14)
+		( 1 0 0 0 0 0 0 0 0 0 )	%  API_PEC_Eff_gL=interval(1E-14,1E-13)
+		( 0 1 0 0 0 0 0 0 0 0 )	%  API_PEC_Eff_gL=interval(1E-13,1E-12)
+		( 0 0 1 0 0 0 0 0 0 0 )	%  API_PEC_Eff_gL=interval(1E-12,1E-11)
+		( 0 0 0 1 0 0 0 0 0 0 )	%  API_PEC_Eff_gL=interval(1E-11,1E-10)
+		( 0 0 0 0 1 0 0 0 0 0 )	%  API_PEC_Eff_gL=interval(1E-10,1E-09)
+		( 0 0 0 0 0 1 0 0 0 0 )	%  API_PEC_Eff_gL=interval(1E-09,1E-08)
+		( 0 0 0 0 0 0 1 0 0 0 )	%  API_PEC_Eff_gL=interval(1E-08,1E-07)
+		( 0 0 0 0 0 0 0 1 0 0 )	%  API_PEC_Eff_gL=interval(1E-07,1E-06)
+		( 0 0 0 0 0 0 0 0 1 0 ));	%  API_PEC_Eff_gL=interval(1E-06,infinity)
+    }
+
+    potential (API_LM_Coeff_kg_Year)
+    {
+	model_nodes = ();
+	model_data = ( -0.130601 );
+    }
+
+    potential (API_LM_Coeff_KPop)
+    {
+	model_nodes = ();
+	model_data = ( 0.0109438 );
+    }
+
+    potential (API_LM_Intercept)
+    {
+	model_nodes = ();
+	model_data = ( 212.529 );
+    }
+
+    potential (API_Sales_Weight_kg | Norway_Population_mil Year API_LM_Intercept API_LM_Coeff_KPop API_LM_Coeff_kg_Year)
+    {
+	model_nodes = ();
+	model_data = ( max (0, Norway_Population_mil * API_LM_Coeff_KPop * 1000 + Year * API_LM_Coeff_kg_Year + API_LM_Intercept) );
+    }
+
+    potential (API_PEC_Inf_gL | Water_Consumption_ML API_Sales_Weight_kg)
+    {
+	model_nodes = ();
+	model_data = ( API_Sales_Weight_kg / (Water_Consumption_ML * 1000 * 365) );
+	data = ((( 0.6576 0.3088 0.0336 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(0,1E-06)
+		 ( 0.008 0.616 0.3392 0.0368 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(1E-06,1E-05)
+		 ( 0 0.008 0.6144 0.3408 0.0368 0 0 0 0 0 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(1E-05,0.0001)
+		 ( 0 0 0.008 0.6144 0.3408 0.0368 0 0 0 0 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(0.0001,0.001)
+		 ( 0 0 0 0.008 0.6144 0.3408 0.0368 0 0 0 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(0.001,0.01)
+		 ( 0 0 0 0 0.008 0.616 0.3392 0.0368 0 0 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(0.01,0.1)
+		 ( 0 0 0 0 0 0.008 0.6144 0.3408 0.0368 0 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(0.1,1)
+		 ( 0 0 0 0 0 0 0.008 0.6144 0.3408 0.0368 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(1,10)
+		 ( 0 0 0 0 0 0 0 0.008 0.6144 0.3776 )	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(10,100)
+		 ( 0 0 0 0 0 0 0 0 0.32 0.68 ))	%  Water_Consumption_ML=interval(0,400)  API_Sales_Weight_kg=interval(100,infinity)
+		(( 1 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(0,1E-06)
+		 ( 0.1312 0.8688 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(1E-06,1E-05)
+		 ( 0 0.1312 0.8688 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(1E-05,0.0001)
+		 ( 0 0 0.1312 0.8688 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(0.0001,0.001)
+		 ( 0 0 0 0.1312 0.8688 0 0 0 0 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(0.001,0.01)
+		 ( 0 0 0 0 0.1312 0.8688 0 0 0 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(0.01,0.1)
+		 ( 0 0 0 0 0 0.1312 0.8688 0 0 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(0.1,1)
+		 ( 0 0 0 0 0 0 0.1312 0.8688 0 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(1,10)
+		 ( 0 0 0 0 0 0 0 0.1312 0.8688 0 )	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(10,100)
+		 ( 0 0 0 0 0 0 0 0 1 0 ))	%  Water_Consumption_ML=interval(400,800)  API_Sales_Weight_kg=interval(100,infinity)
+		(( 1 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(0,1E-06)
+		 ( 0.2944 0.7056 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(1E-06,1E-05)
+		 ( 0 0.2944 0.7056 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(1E-05,0.0001)
+		 ( 0 0 0.2944 0.7056 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(0.0001,0.001)
+		 ( 0 0 0 0.2944 0.7056 0 0 0 0 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(0.001,0.01)
+		 ( 0 0 0 0 0.2944 0.7056 0 0 0 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(0.01,0.1)
+		 ( 0 0 0 0 0 0.2944 0.7056 0 0 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(0.1,1)
+		 ( 0 0 0 0 0 0 0.2944 0.7056 0 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(1,10)
+		 ( 0 0 0 0 0 0 0 0.2944 0.7056 0 )	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(10,100)
+		 ( 0 0 0 0 0 0 0 0 1 0 ))	%  Water_Consumption_ML=interval(800,1200)  API_Sales_Weight_kg=interval(100,infinity)
+		(( 1 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(0,1E-06)
+		 ( 0.456 0.544 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(1E-06,1E-05)
+		 ( 0 0.456 0.544 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(1E-05,0.0001)
+		 ( 0 0 0.456 0.544 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(0.0001,0.001)
+		 ( 0 0 0 0.456 0.544 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(0.001,0.01)
+		 ( 0 0 0 0 0.456 0.544 0 0 0 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(0.01,0.1)
+		 ( 0 0 0 0 0 0.456 0.544 0 0 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(0.1,1)
+		 ( 0 0 0 0 0 0 0.456 0.544 0 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(1,10)
+		 ( 0 0 0 0 0 0 0 0.456 0.544 0 )	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(10,100)
+		 ( 0 0 0 0 0 0 0 0 1 0 ))	%  Water_Consumption_ML=interval(1200,1600)  API_Sales_Weight_kg=interval(100,infinity)
+		(( 1 0 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(0,1E-06)
+		 ( 0.6176 0.3824 0 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(1E-06,1E-05)
+		 ( 0 0.6176 0.3824 0 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(1E-05,0.0001)
+		 ( 0 0 0.6176 0.3824 0 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(0.0001,0.001)
+		 ( 0 0 0 0.6176 0.3824 0 0 0 0 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(0.001,0.01)
+		 ( 0 0 0 0 0.6176 0.3824 0 0 0 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(0.01,0.1)
+		 ( 0 0 0 0 0 0.6176 0.3824 0 0 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(0.1,1)
+		 ( 0 0 0 0 0 0 0.6176 0.3824 0 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(1,10)
+		 ( 0 0 0 0 0 0 0 0.6176 0.3824 0 )	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(10,100)
+		 ( 0 0 0 0 0 0 0 0 1 0 )));	%  Water_Consumption_ML=interval(1600,2000)  API_Sales_Weight_kg=interval(100,infinity)
+    }
+
+    potential (API_PEC_Eff_gL | API_PEC_Inf_gL API_WWTP_Removal)
+    {
+	model_nodes = ();
+	model_data = ( API_PEC_Inf_gL * (1 - API_WWTP_Removal) );
+	data = ((( 1 0 0 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(0,1E-14)  API_WWTP_Removal=0
+		 ( 1 0 0 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(0,1E-14)  API_WWTP_Removal=0.25
+		 ( 1 0 0 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(0,1E-14)  API_WWTP_Removal=0.5
+		 ( 1 0 0 0 0 0 0 0 0 0 ))	%  API_PEC_Inf_gL=interval(0,1E-14)  API_WWTP_Removal=0.75
+		(( 0 1 0 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-14,1E-13)  API_WWTP_Removal=0
+		 ( 0.04 0.96 0 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-14,1E-13)  API_WWTP_Removal=0.25
+		 ( 0.12 0.88 0 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-14,1E-13)  API_WWTP_Removal=0.5
+		 ( 0.32 0.68 0 0 0 0 0 0 0 0 ))	%  API_PEC_Inf_gL=interval(1E-14,1E-13)  API_WWTP_Removal=0.75
+		(( 0 0 1 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-13,1E-12)  API_WWTP_Removal=0
+		 ( 0 0.04 0.96 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-13,1E-12)  API_WWTP_Removal=0.25
+		 ( 0 0.12 0.88 0 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-13,1E-12)  API_WWTP_Removal=0.5
+		 ( 0 0.32 0.68 0 0 0 0 0 0 0 ))	%  API_PEC_Inf_gL=interval(1E-13,1E-12)  API_WWTP_Removal=0.75
+		(( 0 0 0 1 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-12,1E-11)  API_WWTP_Removal=0
+		 ( 0 0 0.04 0.96 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-12,1E-11)  API_WWTP_Removal=0.25
+		 ( 0 0 0.12 0.88 0 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-12,1E-11)  API_WWTP_Removal=0.5
+		 ( 0 0 0.32 0.68 0 0 0 0 0 0 ))	%  API_PEC_Inf_gL=interval(1E-12,1E-11)  API_WWTP_Removal=0.75
+		(( 0 0 0 0 1 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-11,1E-10)  API_WWTP_Removal=0
+		 ( 0 0 0 0.04 0.96 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-11,1E-10)  API_WWTP_Removal=0.25
+		 ( 0 0 0 0.12 0.88 0 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-11,1E-10)  API_WWTP_Removal=0.5
+		 ( 0 0 0 0.32 0.68 0 0 0 0 0 ))	%  API_PEC_Inf_gL=interval(1E-11,1E-10)  API_WWTP_Removal=0.75
+		(( 0 0 0 0 0 1 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-10,1E-09)  API_WWTP_Removal=0
+		 ( 0 0 0 0 0.04 0.96 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-10,1E-09)  API_WWTP_Removal=0.25
+		 ( 0 0 0 0 0.12 0.88 0 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-10,1E-09)  API_WWTP_Removal=0.5
+		 ( 0 0 0 0 0.32 0.68 0 0 0 0 ))	%  API_PEC_Inf_gL=interval(1E-10,1E-09)  API_WWTP_Removal=0.75
+		(( 0 0 0 0 0 0 1 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-09,1E-08)  API_WWTP_Removal=0
+		 ( 0 0 0 0 0 0.04 0.96 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-09,1E-08)  API_WWTP_Removal=0.25
+		 ( 0 0 0 0 0 0.12 0.88 0 0 0 )	%  API_PEC_Inf_gL=interval(1E-09,1E-08)  API_WWTP_Removal=0.5
+		 ( 0 0 0 0 0 0.32 0.68 0 0 0 ))	%  API_PEC_Inf_gL=interval(1E-09,1E-08)  API_WWTP_Removal=0.75
+		(( 0 0 0 0 0 0 0 1 0 0 )	%  API_PEC_Inf_gL=interval(1E-08,1E-07)  API_WWTP_Removal=0
+		 ( 0 0 0 0 0 0 0.04 0.96 0 0 )	%  API_PEC_Inf_gL=interval(1E-08,1E-07)  API_WWTP_Removal=0.25
+		 ( 0 0 0 0 0 0 0.12 0.88 0 0 )	%  API_PEC_Inf_gL=interval(1E-08,1E-07)  API_WWTP_Removal=0.5
+		 ( 0 0 0 0 0 0 0.32 0.68 0 0 ))	%  API_PEC_Inf_gL=interval(1E-08,1E-07)  API_WWTP_Removal=0.75
+		(( 0 0 0 0 0 0 0 0 1 0 )	%  API_PEC_Inf_gL=interval(1E-07,1E-06)  API_WWTP_Removal=0
+		 ( 0 0 0 0 0 0 0 0.04 0.96 0 )	%  API_PEC_Inf_gL=interval(1E-07,1E-06)  API_WWTP_Removal=0.25
+		 ( 0 0 0 0 0 0 0 0.12 0.88 0 )	%  API_PEC_Inf_gL=interval(1E-07,1E-06)  API_WWTP_Removal=0.5
+		 ( 0 0 0 0 0 0 0 0.32 0.68 0 ))	%  API_PEC_Inf_gL=interval(1E-07,1E-06)  API_WWTP_Removal=0.75
+		(( 0 0 0 0 0 0 0 0 0 1 )	%  API_PEC_Inf_gL=interval(1E-06,infinity)  API_WWTP_Removal=0
+		 ( 0 0 0 0 0 0 0 0 1 0 )	%  API_PEC_Inf_gL=interval(1E-06,infinity)  API_WWTP_Removal=0.25
+		 ( 0 0 0 0 0 0 0 0 1 0 )	%  API_PEC_Inf_gL=interval(1E-06,infinity)  API_WWTP_Removal=0.5
+		 ( 0 0 0 0 0 0 0 0 1 0 )));	%  API_PEC_Inf_gL=interval(1E-06,infinity)  API_WWTP_Removal=0.75
+    }
+} % class API_Instance_Low_Tonnage
