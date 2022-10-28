@@ -30,7 +30,7 @@ In practical terms I've made a quick spreadsheet and attempted to classify all t
 
 ```{r packages}
 # renv::init()
-renv::restore()
+# renv::restore()
 
 # Library
 library(tidyverse)
@@ -40,7 +40,7 @@ library(glue)
 
 # Leaflet stuff
 library(splmaps)
-library(tidyverse)
+options("rgdal_show_exportToProj4_warnings"="none")
 library(sf)
 library(leaflet)
 library(rgdal)
@@ -68,22 +68,25 @@ analysed_APIs <- c("estradiol", "ethinylestradiol", "diclofenac",
 API_sales_weights_1999_2018 <- API_sales_weights_1999_2018 %>% 
   filter(API_Name %in% analysed_APIs)
 
+# Norwegian and English classifications of WWT technologies
+source(file = "src/data_importers/WWT_class_import.R")
+
 # van Dijk et al.'s unpublished pharmaceutical removal rates dataset
-# doesn't work yet 'cos it needs the NIPH dataset with InChIKeys to complete the names
 source(file = "src/data_importers/WWT_removal_import.R")
+# match names using InChIKeys and filter results
+API_removal_rates <- API_removal_rates %>% 
+  left_join(API_sales_weights_1999_2018 %>% select(API_Name, InChIKey_string), 
+            by = "InChIKey_string") %>% 
+  distinct() %>% 
+  mutate(API_Name = case_when(InChIKey_string == "mean" ~ "mean",
+        TRUE ~ API_Name)) %>% 
+  filter(!is.na(API_Name))
 ```
 
 
 ## 2.5 Other Data
 
 ```{r other_data}
-### INTERESTING APIs
-# Just a list of 8 high-RQ APIs we're working with
-
-
-### WWTP Definitions
-# Own work, based on SSB and EU documents
-WWTP_definitions <- read_excel(path = "Data/WWTP_Definitions_Norway.xlsx")
 
 ### FK/FASS: API PNECs
 API_PNECs <- read.csv(file = "Data/APIs_PBMT_byYear_2022-09-01_12.12.csv") %>% 
@@ -93,10 +96,7 @@ API_PNECs <- read.csv(file = "Data/APIs_PBMT_byYear_2022-09-01_12.12.csv") %>%
 
 # 3. Dataset Processing
 
-## 3.1 Sales Weights Summary
-
-Firstly we simply summarise sales by API, and convert to kg.
- TODO: Make this obsolete.
+## 3.1 Sales Weights 
 
 ```{r add_APIs}
 
@@ -128,25 +128,16 @@ NIPH_Sales_Weights_Summed <- NIPH_Sales_Weights_Summed %>%
 
 ## 3.2 Population Share by County
 ```{r population_share}
-# What share of the population does each county have?
-total_pop_2020 <- pop_by_county_2020 %>% 
-  summarise(sum(Population)) %>% 
-  pull()
-
-pop_share_by_county_2020 <- pop_by_county_2020 %>% 
-  group_by(County_Code) %>% 
-  summarise(County_Code,
-            Population,
-            Population_Share = round(Population / total_pop_2020, digits = 2))
+source(file = "src/data_processing/pop_share_county.R")
 
 # We can then use Population_Share to estimate sales weights per API, per county
 API_sales_weight_by_county <- crossing(API_Sales, pop_share_by_county_2020) %>% 
-  transmute(API_Name,
-            Year,
-            Vet,
-            County_Code,
-            AmountSold_County_g =  Population_Share * AmountSold_g)
-# Or we can plug it straight in to the sales weights lm!
+    transmute(API_Name,
+              Year,
+              Vet,
+              County_Code,
+              AmountSold_County_g =  Population_Share * AmountSold_g)
+
 ```
 
 ## 3.3 WWTP Share by County
@@ -304,9 +295,8 @@ columns for variables we want to pull out.
 ```{r Hugin_Data_Maker}
 
 # Make data files for automated data input/output to Hugin
-Six_Interesting_APIs <- Interesting_APIs[c(1, 2, 4:7)]
     
-All_RQ_Interval_Nodes <- append(paste0("API_RQ_FW_", str_to_title(Six_Interesting_APIs)), 
+All_RQ_Interval_Nodes <- append(paste0("API_RQ_FW_", str_to_title(analysed_APIs)), 
                                 c("SumRQ_Estrogens", "SumRQ_Antibiotics", 
                                   "SumRQ_Painkillers","SumRQ_Total"))
 

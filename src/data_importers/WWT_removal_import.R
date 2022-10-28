@@ -1,6 +1,6 @@
 ### Average Removal Rates for ~60 APIs
 # Unpublished dataset from Joanke van Dijk
-API_removal_rates <- read_excel(path = "Data/Removal_efficiencies_JvD.xlsx", 
+API_removal_rates <- read_excel(path = "data/raw//Removal_efficiencies_JvD.xlsx", 
                                 range = "A1:M59") %>% 
     transmute(InChIKey_string = `InChI Key`,
               primary_removal = `Primary (conventional settelers)`,
@@ -9,14 +9,18 @@ API_removal_rates <- read_excel(path = "Data/Removal_efficiencies_JvD.xlsx",
               advanced_removal = `Advanced treatment (Chlorination, UV)`,
               ozone_removal = `Ozone`,
               activated_carbon_removal = AC) %>% 
-    left_join(API_Sales %>% select(API_Name, InChIKey_string), by = "InChIKey_string") %>% 
     distinct() %>% 
-    relocate(API_Name) %>% 
-    pivot_longer(cols = 3:8, 
-                 names_to = "treatment_removal_rate")
+    pivot_longer(cols = 2:7, 
+                 names_to = "treatment",
+                 values_to = "removal_rate_perc") 
+
+API_removal_rates <- API_removal_rates %>% add_row(
 # We'll reuse JvD's assumption that APIs without removal data will be removed
 # at the average rate  
-API_removal_rates_mean <- API_removal_rates %>% 
-    group_by(treatment_removal_rate) %>% 
-    summarise(mean_removal = mean(value, na.rm = TRUE),
-              stdev_removal = sd(value, na.rm = TRUE))
+    API_removal_rates %>% 
+    group_by(treatment) %>% 
+    summarise(removal_rate_perc = mean(removal_rate_perc, na.rm = TRUE),
+              treatment,
+              InChIKey_string = "mean") %>% 
+        distinct()
+    )
