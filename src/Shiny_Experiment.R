@@ -1,9 +1,3 @@
-library(sf)
-library(leaflet)
-library(shiny)
-library(tidyverse)
-library(rgdal)
-
 # Set up data from main RMD
 pd_county <- splmaps::nor_nuts3_map_b2020_default_sf %>% 
     mutate(County_Code = str_extract(location_code, pattern = "[0-9]{2}")) %>% 

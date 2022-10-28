@@ -1,0 +1,33 @@
+Scenario,Year,Population
+NA,2030,2030
+NA,2040,2040
+NA,2050,2050
+NA,2060,2060
+NA,2070,2070
+NA,2080,2080
+NA,2090,2090
+NA,2100,2100
+Main alternative (MMM),2030,5629226
+Main alternative (MMM),2040,5856848
+Main alternative (MMM),2050,6001759
+Main alternative (MMM),2060,6073637
+Main alternative (MMM),2070,6133044
+Main alternative (MMM),2080,6197498
+Main alternative (MMM),2090,6222878
+Main alternative (MMM),2100,6253696
+Low national growth (LLL),2030,5471314
+Low national growth (LLL),2040,5469668
+Low national growth (LLL),2050,5366121
+Low national growth (LLL),2060,5163329
+Low national growth (LLL),2070,4912394
+Low national growth (LLL),2080,4650851
+Low national growth (LLL),2090,4338480
+Low national growth (LLL),2100,4021932
+High national growth (HHH),2030,5788246
+High national growth (HHH),2040,6233432
+High national growth (HHH),2050,6653729
+High national growth (HHH),2060,7080670
+High national growth (HHH),2070,7564676
+High national growth (HHH),2080,8102586
+High national growth (HHH),2090,8665701
+High national growth (HHH),2100,9289902
