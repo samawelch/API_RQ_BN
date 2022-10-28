@@ -1,0 +1,50 @@
+class class_spatial
+{
+    inputs = ();
+    outputs = ();
+    node_size = (0 0);
+} % class class_spatial
+
+class class_API_light
+{
+    inputs = ();
+    outputs = ();
+    node_size = (0 0);
+} % class class_API_light
+
+class class_API_medium
+{
+    inputs = ();
+    outputs = ();
+    node_size = (0 0);
+} % class class_API_medium
+
+class class_API_heavy
+{
+    inputs = ();
+    outputs = ();
+    node_size = (0 0);
+} % class class_API_heavy
+
+class class_master
+{
+    inputs = ();
+    outputs = ();
+    node_size = (0 0);
+
+    instance I4 : class_API_heavy ()
+    {
+    }
+
+    instance I3 : class_API_medium ()
+    {
+    }
+
+    instance I2 : class_API_light ()
+    {
+    }
+
+    instance I1 : class_spatial ()
+    {
+    }
+} % class class_master

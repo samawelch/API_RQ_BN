@@ -1,0 +1,13 @@
+class C1
+{
+    inputs = ();
+    outputs = ();
+    node_size = (0 0);
+} % class C1
+
+class C2
+{
+    inputs = ();
+    outputs = ();
+    node_size = (0 0);
+} % class C2

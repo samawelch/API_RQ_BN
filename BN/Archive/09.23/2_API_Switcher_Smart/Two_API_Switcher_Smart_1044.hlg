@@ -1,0 +1,368 @@
+Fri Sep 23 10:58:04 2022
+
+
+Moral links:
+
+    Marrying Pop_Coeff_kgkpers and Weight_Intercept_kg
+    Marrying Year_Coeff_kgyear and Pop_Coeff_kgkpers
+    Marrying Year_Coeff_kgyear and Weight_Intercept_kg
+    Marrying PEC_SW_H_gL and PEC_SW_L_gL
+    Marrying Year and Year_Coeff_kgyear
+    Marrying Year and Pop_Coeff_kgkpers
+    Marrying Year and Weight_Intercept_kg
+    Marrying Year and Pop_Scenario
+    Marrying PNEC_gL and PEC_SW_H_gL
+    Marrying PNEC_gL and PEC_SW_L_gL
+    Marrying Weight_Class and Year_Coeff_kgyear
+    Marrying Weight_Class and Pop_Coeff_kgkpers
+    Marrying Weight_Class and Weight_Intercept_kg
+    Marrying Weight_Class and Year
+    Marrying Weight_Class and PEC_SW_H_gL
+    Marrying Weight_Class and PEC_SW_L_gL
+    Marrying Weight_Class and PNEC_gL
+    Marrying Population and Year_Coeff_kgyear
+    Marrying Population and Pop_Coeff_kgkpers
+    Marrying Population and Weight_Intercept_kg
+    Marrying Population and Weight_Class
+    Marrying PEC_Inf_L_gL and API_Removal
+    Marrying PEC_Inf_H_gL and API_Removal
+    Marrying Weight_Light_kg and Water_Consumption_ML
+    Marrying API_Name and Year
+    Marrying API_Name and Population
+    Marrying Weight_Heavy_kg and Water_Consumption_ML
+
+
+Triangulating prime component with 2 members:
+    API_Removal, WWTP_Scenario
+This component is a clique of cost 9
+
+Triangulating prime component with 5 members:
+    PEC_SW_L_gL, PEC_SW_H_gL, PNEC_gL, Weight_Class, RQ_SW
+This component is a clique of cost 3920
+
+Triangulating prime component with 3 members:
+    Pop_Scenario, Year, Population
+This component is a clique of cost 75
+
+Triangulating prime component with 18 members:
+    API_Removal, Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear,
+    PEC_SW_L_gL, PEC_Eff_L_gL, PEC_SW_H_gL, PEC_Eff_H_gL, Year, PNEC_gL,
+    Weight_Class, Population, Water_Consumption_ML, PEC_Inf_L_gL, PEC_Inf_H_gL,
+    Weight_Light_kg, API_Name, Weight_Heavy_kg
+
+    Using the best greedy heuristic for triangulation
+
+
+
+Total cost of triangulation for all prime components is 8723393
+
+
+Elimination sequence:
+
+    Pop_Scenario
+    PEC_Eff_L_gL
+    Year_Coeff_kgyear
+    Pop_Coeff_kgkpers
+    Weight_Intercept_kg
+    Year
+    Population
+    Weight_Heavy_kg
+    Water_Consumption_ML
+    Weight_Light_kg
+    RQ_SW
+    PNEC_gL
+    API_Name
+    Weight_Class
+    PEC_Inf_L_gL
+    PEC_SW_L_gL
+    PEC_Eff_H_gL
+    PEC_Inf_H_gL
+    PEC_SW_H_gL
+    WWTP_Scenario
+    API_Removal
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 9:
+    API_Removal, WWTP_Scenario
+
+Clique 11, 4 members, table size = 1029:
+    API_Removal, PEC_SW_H_gL, PEC_Inf_H_gL, PEC_Eff_H_gL
+
+Clique 10, 5 members, table size = 7203:
+    API_Removal, PEC_SW_H_gL, PEC_Inf_H_gL, PEC_SW_L_gL, PEC_Inf_L_gL
+
+Clique 9, 6 members, table size = 38416:
+    PEC_SW_H_gL, PEC_Inf_H_gL, PEC_SW_L_gL, PEC_Inf_L_gL, Weight_Class,
+    API_Name
+
+Clique 8, 5 members, table size = 6272:
+    PEC_SW_H_gL, PEC_SW_L_gL, Weight_Class, API_Name, PNEC_gL
+
+Clique 7, 5 members, table size = 3920:
+    PEC_SW_H_gL, PEC_SW_L_gL, Weight_Class, PNEC_gL, RQ_SW
+
+Clique 6, 6 members, table size = 23520:
+    PEC_Inf_H_gL, PEC_Inf_L_gL, Weight_Class, API_Name, Weight_Light_kg,
+    Water_Consumption_ML
+
+Clique 5, 6 members, table size = 23520:
+    PEC_Inf_H_gL, Weight_Class, API_Name, Weight_Light_kg,
+    Water_Consumption_ML, Weight_Heavy_kg
+
+Clique 4, 6 members, table size = 16800:
+    Weight_Class, API_Name, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg, Population
+
+Clique 3, 9 members, table size = 8601600:
+    Weight_Class, API_Name, Weight_Light_kg, Weight_Heavy_kg, Population, Year,
+    Weight_Intercept_kg, Pop_Coeff_kgkpers, Year_Coeff_kgyear
+
+Clique 2, 3 members, table size = 75:
+    Population, Year, Pop_Scenario
+
+Clique 1, 4 members, table size = 1029:
+    API_Removal, PEC_SW_L_gL, PEC_Inf_L_gL, PEC_Eff_L_gL
+
+Total clique table size: 8723393
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 3:
+    API_Removal
+
+Cliques 10 and 11 linked, separator has 3 members and table size = 147:
+    API_Removal, PEC_SW_H_gL, PEC_Inf_H_gL
+
+Cliques 9 and 10 linked, separator has 4 members and table size = 2401:
+    PEC_SW_H_gL, PEC_Inf_H_gL, PEC_SW_L_gL, PEC_Inf_L_gL
+
+Cliques 8 and 9 linked, separator has 4 members and table size = 784:
+    PEC_SW_H_gL, PEC_SW_L_gL, Weight_Class, API_Name
+
+Cliques 7 and 8 linked, separator has 4 members and table size = 784:
+    PEC_SW_H_gL, PEC_SW_L_gL, Weight_Class, PNEC_gL
+
+Cliques 6 and 9 linked, separator has 4 members and table size = 784:
+    PEC_Inf_H_gL, PEC_Inf_L_gL, Weight_Class, API_Name
+
+Cliques 5 and 6 linked, separator has 5 members and table size = 3360:
+    PEC_Inf_H_gL, Weight_Class, API_Name, Weight_Light_kg, Water_Consumption_ML
+
+Cliques 4 and 5 linked, separator has 5 members and table size = 3360:
+    Weight_Class, API_Name, Weight_Light_kg, Water_Consumption_ML,
+    Weight_Heavy_kg
+
+Cliques 3 and 4 linked, separator has 5 members and table size = 3360:
+    Weight_Class, API_Name, Weight_Light_kg, Weight_Heavy_kg, Population
+
+Cliques 2 and 3 linked, separator has 2 members and table size = 25:
+    Population, Year
+
+Cliques 1 and 10 linked, separator has 3 members and table size = 147:
+    API_Removal, PEC_SW_L_gL, PEC_Inf_L_gL
+
+
+Assignment of potentials to cliques:
+
+    Node Pop_Scenario assigned to clique 2
+    Node API_Removal assigned to clique 12
+    Node WWTP_Scenario assigned to clique 12
+    Node Weight_Intercept_kg assigned to clique 3
+    Node Pop_Coeff_kgkpers assigned to clique 3
+    Node Year_Coeff_kgyear assigned to clique 3
+    Node PEC_SW_L_gL assigned to clique 1
+    Node PEC_Eff_L_gL assigned to clique 1
+    Node PEC_SW_H_gL assigned to clique 11
+    Node PEC_Eff_H_gL assigned to clique 11
+    Node Year assigned to clique 2
+    Node PNEC_gL assigned to clique 8
+    Node Weight_Class assigned to clique 8
+    Node RQ_SW assigned to clique 7
+    Node Population assigned to clique 2
+    Node Water_Consumption_ML assigned to clique 4
+    Node PEC_Inf_L_gL assigned to clique 6
+    Node PEC_Inf_H_gL assigned to clique 5
+    Node Weight_Light_kg assigned to clique 3
+    Node API_Name assigned to clique 8
+    Node Weight_Heavy_kg assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Pop_Scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    API_Removal:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    WWTP_Scenario:
+	Low        0.333333
+	Medium     0.333333
+	High       0.333333
+
+    Weight_Intercept_kg:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Pop_Coeff_kgkpers:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Year_Coeff_kgyear:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    PEC_SW_L_gL:
+	state0   0.02584
+	state1   0.620169
+	state2   0.000114432
+	state3   0.000893269
+	state4   0.0151053
+	state5   0.337878
+	state6   0
+
+    PEC_Eff_L_gL:
+	state0   0.02584
+	state1   0.620169
+	state2   0.000114432
+	state3   0.000893269
+	state4   0.0151053
+	state5   0.337878
+	state6   0
+
+    PEC_SW_H_gL:
+	state0   0.015
+	state1   0.0309423
+	state2   0.500503
+	state3   0.24263
+	state4   0.114693
+	state5   0.0962318
+	state6   0
+
+    PEC_Eff_H_gL:
+	state0   0.015
+	state1   0.386779
+	state2   0.144667
+	state3   0.24263
+	state4   0.114693
+	state5   0.0962318
+	state6   0
+
+    Year:
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
+
+    PNEC_gL:
+	state0   0.125
+	state1   0.125
+	state2   0.125
+	state3   0.125
+	state4   0.125
+	state5   0.125
+	state6   0.125
+	state7   0.125
+
+    Weight_Class:
+	Heavy      0.625
+	Light      0.375
+
+    RQ_SW:
+	state0   0.0777337
+	state1   0.250252
+	state2   0.487798
+	state3   0.149132
+	state4   0.0350841
+
+    Population:
+	state0   0.2
+	state1   0.4
+	state2   0.2
+	state3   0.133333
+	state4   0.0666667
+
+    Water_Consumption_ML:
+	state0   0
+	state1   0
+	state2   0.954667
+	state3   0.0453333
+	state4   0
+
+    PEC_Inf_L_gL:
+	state0   0.02584
+	state1   0.62016
+	state2   5.33333e-05
+	state3   0.0004352
+	state4   0.00329813
+	state5   0.0770931
+	state6   0.27312
+
+    PEC_Inf_H_gL:
+	state0   0.015
+	state1   0.36736
+	state2   0.121366
+	state3   0.266994
+	state4   0.114718
+	state5   0.114562
+	state6   0
+
+    Weight_Light_kg:
+	state0   0.646
+	state1   0.00133333
+	state2   0.00833333
+	state3   0.236667
+	state4   0.107667
+	state5   0
+
+    API_Name:
+	Paracetamol 0.125
+	Ibuprofen  0.125
+	Amoxcillin 0.125
+	Diclofenac 0.125
+	Ciprofloxacin 0.125
+	Estradiol  0.125
+	Ethinylestradiol 0.125
+	Levonorgestrel 0.125
+
+    Weight_Heavy_kg:
+	state0   0.375
+	state1   0
+	state2   0.025
+	state3   0.343
+	state4   0.0926667
+	state5   0.164333
+	state6   0

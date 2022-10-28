@@ -1,0 +1,805 @@
+Tue Oct 18 13:38:17 2022
+
+
+Moral links:
+
+    Marrying class_API_medium_amoxicillin.API_removal_WWT_2 and class_API_medium_amoxicillin.API_removal_WWT_1
+    Marrying class_API_medium_amoxicillin.API_PEC_SW_gL and class_API_medium_amoxicillin.API_PNEC_gL
+    Marrying class_API_medium_amoxicillin.API_PEC_inf_gL and class_API_medium_amoxicillin.API_removal_WWT_2
+    Marrying class_API_medium_amoxicillin.API_PEC_inf_gL and class_API_medium_amoxicillin.API_removal_WWT_1
+    Marrying class_API_medium_amoxicillin.API_lm_intercept_kg and class_API_medium_amoxicillin.API_pop_mill
+    Marrying class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year and class_API_medium_amoxicillin.API_pop_mill
+    Marrying class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year and class_API_medium_amoxicillin.API_lm_intercept_kg
+    Marrying class_API_medium_amoxicillin.API_year and class_API_medium_amoxicillin.API_pop_mill
+    Marrying class_API_medium_amoxicillin.API_year and class_API_medium_amoxicillin.API_lm_intercept_kg
+    Marrying class_API_medium_amoxicillin.API_year and class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_API_medium_amoxicillin.API_vet_prop and class_API_medium_amoxicillin.API_PEC_inf_gL
+    Marrying class_API_medium_amoxicillin.API_vet_prop and class_API_medium_amoxicillin.API_removal_WWT_2
+    Marrying class_API_medium_amoxicillin.API_vet_prop and class_API_medium_amoxicillin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_amoxicillin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_amoxicillin.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_amoxicillin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_amoxicillin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_spatial.spatial_county_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_amoxicillin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_amoxicillin.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_amoxicillin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_amoxicillin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_dilution and class_API_medium_amoxicillin.API_PEC_eff_gL
+    Marrying class_spatial.spatial_county_WW_ML and class_API_medium_amoxicillin.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_amoxicillin.API_pop_mill
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_amoxicillin.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_amoxicillin.API_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_WWT_0 and class_spatial.spatial_county_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_spatial.spatial_county_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_amoxicillin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_amoxicillin.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_amoxicillin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_amoxicillin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WW_Lpd and class_spatial.spatial_county_pop_share
+    Marrying class_API_diclofenac.API_removal_WWT_1 and class_spatial.spatial_county_WWT_1
+    Marrying class_API_diclofenac.API_removal_WWT_1 and class_spatial.spatial_county_WWT_2
+    Marrying class_API_diclofenac.API_removal_WWT_1 and class_spatial.spatial_county_WWT_0
+    Marrying class_API_diclofenac.API_removal_WWT_2 and class_spatial.spatial_county_WWT_1
+    Marrying class_API_diclofenac.API_removal_WWT_2 and class_spatial.spatial_county_WWT_2
+    Marrying class_API_diclofenac.API_removal_WWT_2 and class_spatial.spatial_county_WWT_0
+    Marrying class_API_diclofenac.API_removal_WWT_2 and class_API_diclofenac.API_removal_WWT_1
+    Marrying class_API_diclofenac.API_PEC_SW_gL and class_API_diclofenac.API_PNEC_gL
+    Marrying class_API_diclofenac.API_PEC_eff_gL and class_spatial.spatial_county_dilution
+    Marrying class_API_diclofenac.API_PEC_inf_gL and class_spatial.spatial_county_WWT_1
+    Marrying class_API_diclofenac.API_PEC_inf_gL and class_spatial.spatial_county_WWT_2
+    Marrying class_API_diclofenac.API_PEC_inf_gL and class_spatial.spatial_county_WWT_0
+    Marrying class_API_diclofenac.API_PEC_inf_gL and class_API_diclofenac.API_removal_WWT_2
+    Marrying class_API_diclofenac.API_PEC_inf_gL and class_API_diclofenac.API_removal_WWT_1
+    Marrying class_API_diclofenac.API_lm_intercept_kg and class_spatial.spatial_county_pop_share
+    Marrying class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year and class_spatial.spatial_county_pop_share
+    Marrying class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year and class_API_diclofenac.API_lm_intercept_kg
+    Marrying class_API_diclofenac.API_sales_weight_kg and class_spatial.spatial_county_WW_ML
+    Marrying class_API_diclofenac.API_vet_prop and class_API_diclofenac.API_PEC_inf_gL
+    Marrying class_API_diclofenac.API_vet_prop and class_spatial.spatial_county_WWT_1
+    Marrying class_API_diclofenac.API_vet_prop and class_spatial.spatial_county_WWT_2
+    Marrying class_API_diclofenac.API_vet_prop and class_spatial.spatial_county_WWT_0
+    Marrying class_API_diclofenac.API_vet_prop and class_API_diclofenac.API_removal_WWT_2
+    Marrying class_API_diclofenac.API_vet_prop and class_API_diclofenac.API_removal_WWT_1
+    Marrying master_pop_mill and class_spatial.spatial_county_pop_share
+    Marrying master_pop_mill and class_API_diclofenac.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_spatial.spatial_county_WW_Lpd
+    Marrying master_year and master_pop_scenario
+    Marrying master_year and class_spatial.spatial_county_pop_share
+    Marrying master_year and class_API_diclofenac.API_lm_intercept_kg
+    Marrying master_year and class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_county and master_WWT_scenario
+
+
+Triangulating prime component with 2 members:
+    API_RQ_FW_amoxicillin, class_API_medium_amoxicillin.API_RQ_FW
+This component is a clique of cost 36
+
+Triangulating prime component with 2 members:
+    class_API_diclofenac.API_RQ_FW, API_RQ_FW_Diclofenac
+This component is a clique of cost 36
+
+Triangulating prime component with 3 members:
+    class_API_medium_amoxicillin.API_PNEC_gL,
+    class_API_medium_amoxicillin.API_RQ_FW,
+    class_API_medium_amoxicillin.API_PEC_SW_gL
+This component is a clique of cost 108
+
+Triangulating prime component with 3 members:
+    class_API_diclofenac.API_PNEC_gL, class_API_diclofenac.API_RQ_FW,
+    class_API_diclofenac.API_PEC_SW_gL
+This component is a clique of cost 108
+
+Triangulating prime component with 3 members:
+    master_pop_mill, master_pop_scenario, master_year
+This component is a clique of cost 54
+
+Triangulating prime component with 6 members:
+    class_API_medium_amoxicillin.API_pop_mill,
+    class_API_medium_amoxicillin.API_lm_intercept_kg,
+    class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year,
+    class_API_medium_amoxicillin.API_sales_weight_kg,
+    class_API_medium_amoxicillin.API_year,
+    class_spatial.spatial_county_pop_share
+This component is a clique of cost 7776
+
+Triangulating prime component with 6 members:
+    class_spatial.spatial_county_pop_share,
+    class_API_diclofenac.API_lm_intercept_kg,
+    class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year,
+    class_API_diclofenac.API_sales_weight_kg, master_pop_mill, master_year
+This component is a clique of cost 7776
+
+Triangulating prime component with 2 members:
+    class_spatial.spatial_recieving_water, master_county
+This component is a clique of cost 24
+
+Triangulating prime component with 33 members:
+    class_API_medium_amoxicillin.API_total_WWT_removal,
+    class_API_medium_amoxicillin.API_PNEC_gL,
+    class_API_medium_amoxicillin.API_removal_WWT_1,
+    class_API_medium_amoxicillin.API_removal_WWT_2,
+    class_API_medium_amoxicillin.API_PEC_SW_gL,
+    class_API_medium_amoxicillin.API_PEC_eff_gL,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_medium_amoxicillin.API_lm_intercept_kg,
+    class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year,
+    class_API_medium_amoxicillin.API_sales_weight_kg,
+    class_API_medium_amoxicillin.API_vet_prop, API_medium_amoxicillin,
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_dilution, class_spatial.spatial_county_WW_ML,
+    class_spatial.spatial_county_pop_share, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_WW_Lpd,
+    class_API_diclofenac.API_total_WWT_removal,
+    class_API_diclofenac.API_PNEC_gL, class_API_diclofenac.API_removal_WWT_1,
+    class_API_diclofenac.API_removal_WWT_2, class_API_diclofenac.API_PEC_SW_gL,
+    class_API_diclofenac.API_PEC_eff_gL, class_API_diclofenac.API_PEC_inf_gL,
+    class_API_diclofenac.API_lm_intercept_kg,
+    class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year,
+    class_API_diclofenac.API_sales_weight_kg,
+    class_API_diclofenac.API_vet_prop, API_medium_diclofenac, master_pop_mill,
+    master_county
+
+    Using the best greedy heuristic for triangulation
+
+
+Triangulating prime component with 5 members:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, master_WWT_scenario, master_county
+This component is a clique of cost 1800
+
+
+Total cost of triangulation for all prime components is 3259770
+
+
+Elimination sequence:
+
+    API_RQ_FW_Diclofenac
+    API_RQ_FW_amoxicillin
+    class_API_medium_amoxicillin.API_RQ_FW
+    class_API_diclofenac.API_RQ_FW
+    master_pop_scenario
+    class_API_diclofenac.API_PNEC_gL
+    class_API_medium_amoxicillin.API_PNEC_gL
+    class_API_medium_amoxicillin.API_year
+    class_API_medium_amoxicillin.API_pop_mill
+    class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year
+    class_API_medium_amoxicillin.API_lm_intercept_kg
+    class_API_medium_amoxicillin.API_PEC_SW_gL
+    class_API_diclofenac.API_PEC_SW_gL
+    class_spatial.spatial_county_WW_Lpd
+    master_year
+    class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    class_API_diclofenac.API_lm_intercept_kg
+    class_API_medium_amoxicillin.API_sales_weight_kg
+    class_API_diclofenac.API_PEC_eff_gL
+    class_API_medium_amoxicillin.API_PEC_eff_gL
+    master_pop_mill
+    class_API_diclofenac.API_sales_weight_kg
+    class_spatial.spatial_county_WW_ML
+    class_spatial.spatial_county_pop_share
+    class_API_diclofenac.API_vet_prop
+    class_API_diclofenac.API_removal_WWT_2
+    class_API_diclofenac.API_removal_WWT_1
+    class_API_medium_amoxicillin.API_vet_prop
+    class_API_medium_amoxicillin.API_removal_WWT_2
+    class_API_medium_amoxicillin.API_removal_WWT_1
+    class_API_medium_amoxicillin.API_total_WWT_removal
+    class_API_diclofenac.API_total_WWT_removal
+    class_API_diclofenac.API_PEC_inf_gL
+    class_API_medium_amoxicillin.API_PEC_inf_gL
+    class_spatial.spatial_county_dilution
+    API_medium_amoxicillin
+    API_medium_diclofenac
+    master_WWT_scenario
+    class_spatial.spatial_county_WWT_0
+    class_spatial.spatial_county_WWT_1
+    class_spatial.spatial_county_WWT_2
+    class_spatial.spatial_recieving_water
+    master_county
+
+
+Cliques:
+
+Clique 27, 2 members, table size = 24:
+    master_county, class_spatial.spatial_recieving_water
+
+Clique 26, 5 members, table size = 1800:
+    master_county, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    master_WWT_scenario
+
+Clique 25, 9 members, table size = 874800:
+    master_county, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_medium_diclofenac, API_medium_amoxicillin,
+    class_spatial.spatial_county_dilution,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_diclofenac.API_PEC_inf_gL
+
+Clique 24, 7 members, table size = 24300:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_diclofenac,
+    class_spatial.spatial_county_dilution, class_API_diclofenac.API_PEC_inf_gL,
+    class_API_diclofenac.API_total_WWT_removal
+
+Clique 23, 9 members, table size = 1012500:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_diclofenac,
+    class_API_diclofenac.API_PEC_inf_gL,
+    class_API_diclofenac.API_total_WWT_removal,
+    class_API_diclofenac.API_removal_WWT_1,
+    class_API_diclofenac.API_removal_WWT_2, class_API_diclofenac.API_vet_prop
+
+Clique 22, 5 members, table size = 1944:
+    API_medium_diclofenac, class_spatial.spatial_county_dilution,
+    class_API_diclofenac.API_PEC_inf_gL,
+    class_API_diclofenac.API_total_WWT_removal,
+    class_API_diclofenac.API_PEC_eff_gL
+
+Clique 21, 4 members, table size = 324:
+    API_medium_diclofenac, class_spatial.spatial_county_dilution,
+    class_API_diclofenac.API_PEC_eff_gL, class_API_diclofenac.API_PEC_SW_gL
+
+Clique 20, 3 members, table size = 54:
+    API_medium_diclofenac, class_API_diclofenac.API_PEC_SW_gL,
+    class_API_diclofenac.API_PNEC_gL
+
+Clique 19, 3 members, table size = 108:
+    class_API_diclofenac.API_PEC_SW_gL, class_API_diclofenac.API_PNEC_gL,
+    class_API_diclofenac.API_RQ_FW
+
+Clique 18, 2 members, table size = 36:
+    class_API_diclofenac.API_RQ_FW, API_RQ_FW_Diclofenac
+
+Clique 17, 7 members, table size = 24300:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_amoxicillin,
+    class_spatial.spatial_county_dilution,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_medium_amoxicillin.API_total_WWT_removal
+
+Clique 16, 9 members, table size = 1012500:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_amoxicillin,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_medium_amoxicillin.API_total_WWT_removal,
+    class_API_medium_amoxicillin.API_removal_WWT_1,
+    class_API_medium_amoxicillin.API_removal_WWT_2,
+    class_API_medium_amoxicillin.API_vet_prop
+
+Clique 15, 5 members, table size = 1944:
+    API_medium_amoxicillin, class_spatial.spatial_county_dilution,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_medium_amoxicillin.API_total_WWT_removal,
+    class_API_medium_amoxicillin.API_PEC_eff_gL
+
+Clique 14, 4 members, table size = 324:
+    API_medium_amoxicillin, class_spatial.spatial_county_dilution,
+    class_API_medium_amoxicillin.API_PEC_eff_gL,
+    class_API_medium_amoxicillin.API_PEC_SW_gL
+
+Clique 13, 3 members, table size = 54:
+    API_medium_amoxicillin, class_API_medium_amoxicillin.API_PEC_SW_gL,
+    class_API_medium_amoxicillin.API_PNEC_gL
+
+Clique 12, 3 members, table size = 108:
+    class_API_medium_amoxicillin.API_PEC_SW_gL,
+    class_API_medium_amoxicillin.API_PNEC_gL,
+    class_API_medium_amoxicillin.API_RQ_FW
+
+Clique 11, 2 members, table size = 36:
+    class_API_medium_amoxicillin.API_RQ_FW, API_RQ_FW_amoxicillin
+
+Clique 10, 7 members, table size = 139968:
+    master_county, API_medium_diclofenac, API_medium_amoxicillin,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_diclofenac.API_PEC_inf_gL,
+    class_spatial.spatial_county_pop_share, class_spatial.spatial_county_WW_ML
+
+Clique 9, 6 members, table size = 62208:
+    master_county, API_medium_diclofenac, class_API_diclofenac.API_PEC_inf_gL,
+    class_spatial.spatial_county_pop_share, class_spatial.spatial_county_WW_ML,
+    class_API_diclofenac.API_sales_weight_kg
+
+Clique 8, 6 members, table size = 62208:
+    master_county, API_medium_diclofenac,
+    class_spatial.spatial_county_pop_share, class_spatial.spatial_county_WW_ML,
+    class_API_diclofenac.API_sales_weight_kg, master_pop_mill
+
+Clique 7, 6 members, table size = 7776:
+    API_medium_diclofenac, class_spatial.spatial_county_pop_share,
+    class_API_diclofenac.API_sales_weight_kg, master_pop_mill,
+    class_API_diclofenac.API_lm_intercept_kg,
+    class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year
+
+Clique 6, 6 members, table size = 7776:
+    class_spatial.spatial_county_pop_share,
+    class_API_diclofenac.API_sales_weight_kg, master_pop_mill,
+    class_API_diclofenac.API_lm_intercept_kg,
+    class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year, master_year
+
+Clique 5, 3 members, table size = 54:
+    master_pop_mill, master_year, master_pop_scenario
+
+Clique 4, 5 members, table size = 10368:
+    master_county, class_spatial.spatial_county_pop_share,
+    class_spatial.spatial_county_WW_ML, master_pop_mill,
+    class_spatial.spatial_county_WW_Lpd
+
+Clique 3, 5 members, table size = 5184:
+    API_medium_amoxicillin, class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_spatial.spatial_county_pop_share, class_spatial.spatial_county_WW_ML,
+    class_API_medium_amoxicillin.API_sales_weight_kg
+
+Clique 2, 5 members, table size = 1296:
+    API_medium_amoxicillin, class_spatial.spatial_county_pop_share,
+    class_API_medium_amoxicillin.API_sales_weight_kg,
+    class_API_medium_amoxicillin.API_lm_intercept_kg,
+    class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year
+
+Clique 1, 6 members, table size = 7776:
+    class_spatial.spatial_county_pop_share,
+    class_API_medium_amoxicillin.API_sales_weight_kg,
+    class_API_medium_amoxicillin.API_lm_intercept_kg,
+    class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year,
+    class_API_medium_amoxicillin.API_pop_mill,
+    class_API_medium_amoxicillin.API_year
+
+Total clique table size: 3259770
+
+
+The junction forest:
+
+Creating junction tree with clique 27 as root ...
+
+Cliques 26 and 27 linked, separator has 1 member and table size = 12:
+    master_county
+
+Cliques 25 and 26 linked, separator has 4 members and table size = 900:
+    master_county, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0
+
+Cliques 24 and 25 linked, separator has 6 members and table size = 4050:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_diclofenac,
+    class_spatial.spatial_county_dilution, class_API_diclofenac.API_PEC_inf_gL
+
+Cliques 23 and 24 linked, separator has 6 members and table size = 8100:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_diclofenac,
+    class_API_diclofenac.API_PEC_inf_gL,
+    class_API_diclofenac.API_total_WWT_removal
+
+Cliques 22 and 24 linked, separator has 4 members and table size = 324:
+    API_medium_diclofenac, class_spatial.spatial_county_dilution,
+    class_API_diclofenac.API_PEC_inf_gL,
+    class_API_diclofenac.API_total_WWT_removal
+
+Cliques 21 and 22 linked, separator has 3 members and table size = 54:
+    API_medium_diclofenac, class_spatial.spatial_county_dilution,
+    class_API_diclofenac.API_PEC_eff_gL
+
+Cliques 20 and 21 linked, separator has 2 members and table size = 18:
+    API_medium_diclofenac, class_API_diclofenac.API_PEC_SW_gL
+
+Cliques 19 and 20 linked, separator has 2 members and table size = 18:
+    class_API_diclofenac.API_PEC_SW_gL, class_API_diclofenac.API_PNEC_gL
+
+Cliques 18 and 19 linked, separator has 1 member and table size = 6:
+    class_API_diclofenac.API_RQ_FW
+
+Cliques 17 and 25 linked, separator has 6 members and table size = 4050:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_amoxicillin,
+    class_spatial.spatial_county_dilution,
+    class_API_medium_amoxicillin.API_PEC_inf_gL
+
+Cliques 16 and 17 linked, separator has 6 members and table size = 8100:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_amoxicillin,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_medium_amoxicillin.API_total_WWT_removal
+
+Cliques 15 and 17 linked, separator has 4 members and table size = 324:
+    API_medium_amoxicillin, class_spatial.spatial_county_dilution,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_medium_amoxicillin.API_total_WWT_removal
+
+Cliques 14 and 15 linked, separator has 3 members and table size = 54:
+    API_medium_amoxicillin, class_spatial.spatial_county_dilution,
+    class_API_medium_amoxicillin.API_PEC_eff_gL
+
+Cliques 13 and 14 linked, separator has 2 members and table size = 18:
+    API_medium_amoxicillin, class_API_medium_amoxicillin.API_PEC_SW_gL
+
+Cliques 12 and 13 linked, separator has 2 members and table size = 18:
+    class_API_medium_amoxicillin.API_PEC_SW_gL,
+    class_API_medium_amoxicillin.API_PNEC_gL
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 6:
+    class_API_medium_amoxicillin.API_RQ_FW
+
+Cliques 10 and 25 linked, separator has 5 members and table size = 3888:
+    master_county, API_medium_diclofenac, API_medium_amoxicillin,
+    class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_API_diclofenac.API_PEC_inf_gL
+
+Cliques 9 and 10 linked, separator has 5 members and table size = 7776:
+    master_county, API_medium_diclofenac, class_API_diclofenac.API_PEC_inf_gL,
+    class_spatial.spatial_county_pop_share, class_spatial.spatial_county_WW_ML
+
+Cliques 8 and 9 linked, separator has 5 members and table size = 10368:
+    master_county, API_medium_diclofenac,
+    class_spatial.spatial_county_pop_share, class_spatial.spatial_county_WW_ML,
+    class_API_diclofenac.API_sales_weight_kg
+
+Cliques 7 and 8 linked, separator has 4 members and table size = 864:
+    API_medium_diclofenac, class_spatial.spatial_county_pop_share,
+    class_API_diclofenac.API_sales_weight_kg, master_pop_mill
+
+Cliques 6 and 7 linked, separator has 5 members and table size = 2592:
+    class_spatial.spatial_county_pop_share,
+    class_API_diclofenac.API_sales_weight_kg, master_pop_mill,
+    class_API_diclofenac.API_lm_intercept_kg,
+    class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year
+
+Cliques 5 and 6 linked, separator has 2 members and table size = 18:
+    master_pop_mill, master_year
+
+Cliques 4 and 8 linked, separator has 4 members and table size = 2592:
+    master_county, class_spatial.spatial_county_pop_share,
+    class_spatial.spatial_county_WW_ML, master_pop_mill
+
+Cliques 3 and 10 linked, separator has 4 members and table size = 648:
+    API_medium_amoxicillin, class_API_medium_amoxicillin.API_PEC_inf_gL,
+    class_spatial.spatial_county_pop_share, class_spatial.spatial_county_WW_ML
+
+Cliques 2 and 3 linked, separator has 3 members and table size = 144:
+    API_medium_amoxicillin, class_spatial.spatial_county_pop_share,
+    class_API_medium_amoxicillin.API_sales_weight_kg
+
+Cliques 1 and 2 linked, separator has 4 members and table size = 432:
+    class_spatial.spatial_county_pop_share,
+    class_API_medium_amoxicillin.API_sales_weight_kg,
+    class_API_medium_amoxicillin.API_lm_intercept_kg,
+    class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year
+
+
+Assignment of potentials to cliques:
+
+    Node API_RQ_FW_amoxicillin assigned to clique 11
+    Node class_API_medium_amoxicillin.API_total_WWT_removal assigned to clique 16
+    Node class_API_medium_amoxicillin.API_PNEC_gL assigned to clique 13
+    Node class_API_medium_amoxicillin.API_pop_mill assigned to clique 1
+    Node class_API_medium_amoxicillin.API_RQ_FW assigned to clique 12
+    Node class_API_medium_amoxicillin.API_removal_WWT_1 assigned to clique 16
+    Node class_API_medium_amoxicillin.API_removal_WWT_2 assigned to clique 16
+    Node class_API_medium_amoxicillin.API_PEC_SW_gL assigned to clique 14
+    Node class_API_medium_amoxicillin.API_PEC_eff_gL assigned to clique 15
+    Node class_API_medium_amoxicillin.API_PEC_inf_gL assigned to clique 3
+    Node class_API_medium_amoxicillin.API_lm_intercept_kg assigned to clique 2
+    Node class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year assigned to clique 2
+    Node class_API_medium_amoxicillin.API_sales_weight_kg assigned to clique 1
+    Node class_API_medium_amoxicillin.API_year assigned to clique 1
+    Node class_API_medium_amoxicillin.API_vet_prop assigned to clique 16
+    Node API_medium_amoxicillin assigned to clique 13
+    Node class_spatial.spatial_county_WWT_2 assigned to clique 26
+    Node class_spatial.spatial_county_WWT_1 assigned to clique 26
+    Node class_spatial.spatial_county_dilution assigned to clique 25
+    Node class_spatial.spatial_county_WW_ML assigned to clique 4
+    Node class_spatial.spatial_county_pop_share assigned to clique 4
+    Node class_spatial.spatial_recieving_water assigned to clique 27
+    Node class_spatial.spatial_county_WWT_0 assigned to clique 26
+    Node class_spatial.spatial_county_WW_Lpd assigned to clique 4
+    Node class_API_diclofenac.API_total_WWT_removal assigned to clique 23
+    Node class_API_diclofenac.API_PNEC_gL assigned to clique 20
+    Node class_API_diclofenac.API_RQ_FW assigned to clique 19
+    Node class_API_diclofenac.API_removal_WWT_1 assigned to clique 23
+    Node class_API_diclofenac.API_removal_WWT_2 assigned to clique 23
+    Node class_API_diclofenac.API_PEC_SW_gL assigned to clique 21
+    Node class_API_diclofenac.API_PEC_eff_gL assigned to clique 22
+    Node class_API_diclofenac.API_PEC_inf_gL assigned to clique 9
+    Node class_API_diclofenac.API_lm_intercept_kg assigned to clique 7
+    Node class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year assigned to clique 7
+    Node class_API_diclofenac.API_sales_weight_kg assigned to clique 6
+    Node class_API_diclofenac.API_vet_prop assigned to clique 23
+    Node API_medium_diclofenac assigned to clique 20
+    Node API_RQ_FW_Diclofenac assigned to clique 18
+    Node master_pop_mill assigned to clique 5
+    Node master_WWT_scenario assigned to clique 26
+    Node master_pop_scenario assigned to clique 5
+    Node master_year assigned to clique 5
+    Node master_county assigned to clique 27
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    API_RQ_FW_amoxicillin:
+	state0   0.0263747
+	state1   0.202463
+	state2   0.435863
+	state3   0.284315
+	state4   0.0508042
+	state5   0.000179753
+
+    class_API_medium_amoxicillin.API_total_WWT_removal:
+	state0   0
+	state1   0.486111
+	state2   0.361111
+	state3   0.0694444
+	state4   0.0555556
+	state5   0.0277778
+
+    class_API_medium_amoxicillin.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_amoxicillin.API_pop_mill:
+	state0   0.166667
+	state1   0.166667
+	state2   0.166667
+	state3   0.166667
+	state4   0.166667
+	state5   0.166667
+
+    class_API_medium_amoxicillin.API_RQ_FW:
+	state0   0.0263747
+	state1   0.202463
+	state2   0.435863
+	state3   0.284315
+	state4   0.0508042
+	state5   0.000179753
+
+    class_API_medium_amoxicillin.API_removal_WWT_1:
+	state0   0.333333
+	state1   0.666667
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_medium_amoxicillin.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.333333
+	state3   0.666667
+	state4   0
+
+    class_API_medium_amoxicillin.API_PEC_SW_gL:
+	state0   0
+	state1   0.0912725
+	state2   0.468295
+	state3   0.440112
+	state4   0.000320988
+	state5   0
+
+    class_API_medium_amoxicillin.API_PEC_eff_gL:
+	state0   0
+	state1   0.00187405
+	state2   0.0893984
+	state3   0.468295
+	state4   0.440112
+	state5   0.000320988
+
+    class_API_medium_amoxicillin.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0129185
+	state3   0.461057
+	state4   0.461936
+	state5   0.0640889
+
+    class_API_medium_amoxicillin.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_amoxicillin.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_amoxicillin.API_sales_weight_kg:
+	state0   0
+	state1   0
+	state2   0.037037
+	state3   0.322531
+	state4   0.493827
+	state5   0.0910494
+	state6   0.0555556
+	state7   0
+
+    class_API_medium_amoxicillin.API_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_amoxicillin.API_vet_prop --> 0
+
+    API_medium_amoxicillin:
+	amoxicillin 0.333333
+	ciprofloxacin 0.333333
+	diclofenac 0.333333
+
+    class_spatial.spatial_county_WWT_2:
+	state0   0.125
+	state1   0
+	state2   0.0833333
+	state3   0.125
+	state4   0.666667
+
+    class_spatial.spatial_county_WWT_1:
+	state0   0.666667
+	state1   0.125
+	state2   0.0833333
+	state3   0.125
+	state4   0
+
+    class_spatial.spatial_county_dilution --> 10
+
+    class_spatial.spatial_county_WW_ML:
+	state0   0.944444
+	state1   0.0555556
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+
+    class_spatial.spatial_county_pop_share:
+	state0   0.25
+	state1   0.416667
+	state2   0.166667
+	state3   0
+	state4   0.0833333
+	state5   0.0833333
+
+    class_spatial.spatial_recieving_water --> "fresh"
+
+    class_spatial.spatial_county_WWT_0:
+	state0   0.916667
+	state1   0.0833333
+	state2   0
+
+    class_spatial.spatial_county_WW_Lpd:
+	state0   0.166667
+	state1   0.416667
+	state2   0.25
+	state3   0.166667
+
+    class_API_diclofenac.API_total_WWT_removal:
+	state0   0
+	state1   0.486111
+	state2   0.361111
+	state3   0.0694444
+	state4   0.0555556
+	state5   0.0277778
+
+    class_API_diclofenac.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_diclofenac.API_RQ_FW:
+	state0   0.0268229
+	state1   0.203209
+	state2   0.432024
+	state3   0.282599
+	state4   0.0551287
+	state5   0.000215704
+
+    class_API_diclofenac.API_removal_WWT_1:
+	state0   0.333333
+	state1   0.666667
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_diclofenac.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.333333
+	state3   0.666667
+	state4   0
+
+    class_API_diclofenac.API_PEC_SW_gL:
+	state0   0
+	state1   0.0875998
+	state2   0.47066
+	state3   0.441355
+	state4   0.000385185
+	state5   0
+
+    class_API_diclofenac.API_PEC_eff_gL:
+	state0   0
+	state1   0.00140553
+	state2   0.0861943
+	state3   0.47066
+	state4   0.441355
+	state5   0.000385185
+
+    class_API_diclofenac.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.00968889
+	state3   0.461657
+	state4   0.467027
+	state5   0.0616267
+
+    class_API_diclofenac.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_diclofenac.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_diclofenac.API_sales_weight_kg:
+	state0   0
+	state1   0
+	state2   0.0277778
+	state3   0.330247
+	state4   0.496914
+	state5   0.0925926
+	state6   0.0524691
+	state7   0
+
+    class_API_diclofenac.API_vet_prop --> 0
+
+    API_medium_diclofenac:
+	amoxicillin 0.333333
+	ciprofloxacin 0.333333
+	diclofenac 0.333333
+
+    API_RQ_FW_Diclofenac:
+	state0   0.0268229
+	state1   0.203209
+	state2   0.432024
+	state3   0.282599
+	state4   0.0551287
+	state5   0.000215704
+
+    master_pop_mill:
+	state0   0
+	state1   0
+	state2   0.555556
+	state3   0.333333
+	state4   0
+	state5   0.111111
+
+    master_WWT_scenario:
+	Current    0.5
+	Compliance 0.5
+
+    master_pop_scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    master_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    master_county:
+	Total      0.0833333
+	Innlandet  0.0833333
+	Vestfold og Telemark 0.0833333
+	Agder      0.0833333
+	Rogaland   0.0833333
+	Vestland   0.0833333
+	Møre og Romsdal 0.0833333
+	Trøndelag 0.0833333
+	Nordland   0.0833333
+	Troms og Finnmark 0.0833333
+	Oslo       0.0833333
+	Viken      0.0833333

@@ -1,0 +1,122 @@
+library(sf)
+library(leaflet)
+library(shiny)
+library(tidyverse)
+library(rgdal)
+
+# Set up data from main RMD
+pd_county <- splmaps::nor_nuts3_map_b2020_default_sf %>% 
+    mutate(County_Code = str_extract(location_code, pattern = "[0-9]{2}")) %>% 
+    left_join(county_codes, by = "County_Code") %>% 
+    select(-location_code)
+
+avg_RQ_county <- Hugin_Data_Output_Tall %>% 
+    group_by(master_pop_scenario, master_year, master_WWT_scenario, master_county, API_Name) %>% 
+    mutate(Risk_Bin_avg = case_when(Risk_Bin == "0-1" ~ 0.5,
+                                    Risk_Bin == "1 - 10" ~ 5.5,
+                                    Risk_Bin == "10-100" ~ 55,
+                                    Risk_Bin == "100-1000" ~ 550,
+                                    Risk_Bin == "1000-10000" ~ 5500,
+                                    Risk_Bin == "10000-inf" ~ 10000),
+           County_Name = master_county) %>% 
+    summarise(Avg_RQ = sum(Risk_Bin_avg * Probability, na.rm = TRUE),
+              County_Name,
+              API_Name) %>% 
+    ungroup() %>% 
+    select(-master_county) %>% 
+    distinct()
+
+pd_county_joined <- merge(pd_county, avg_RQ_county)
+
+### SHINY / LEAFLET ###
+
+## UI ##
+ui <- fluidPage(titlePanel("Average Sum of Pharmaceutical Risk Quotients, Norway"),
+
+                sidebarPanel(
+
+                    radioButtons(inputId = "radio_pop_scen", 
+                                 h3("Population Growth Scenario"),
+                                 choices = list("Low", "Main", "High"),
+                                 selected = "Main"),
+
+                    radioButtons(inputId = "radio_wwt_scen", 
+                                 h3("WWT Scenario"),
+                                 choices = list("Current", "Compliance"),
+                                 selected = "Current"),
+                    
+                    sliderInput(inputId = "slider_year", 
+                                h3("Year"),
+                                       min = 2020, max = 2050, value = 2020, step = 30, sep = ""),
+                    
+                    selectInput(inputId = "select_API_name",
+                                h3("API or Group"),
+                                choices = c("Estradiol", "Ethinylestradiol", "Diclofenac",
+                                            "Ibuprofen", "Paracetamol", "Ciprofloxacin",
+                                            "Estrogens", "Antibiotics", "Painkillers", "Total"),
+                                selected = "Total")
+                ),
+                mainPanel(
+                    # Add a map to the UI
+                    leafletOutput("test_map")
+                )
+                           )
+
+
+## SERVER ##
+server <- function(input, output) {
+    # Create a palette for average Sum RQs
+    AvgRQ_Pal <- colorNumeric(palette = "viridis", domain = c(0, 6000))
+    
+    # Reactively filter pd_county_joined to the selected year and scenarios
+    pd_county_joined_filtered <- reactive({
+        req(input$slider_year)
+        pd_county_joined %>% filter(master_year == input$slider_year,
+                                    master_pop_scenario == input$radio_pop_scen,
+                                    master_WWT_scenario == input$radio_wwt_scen,
+                                    API_Name == input$select_API_name)
+    })
+        
+    output$test_map <- renderLeaflet({
+        leaflet(data = pd_county_joined_filtered()) %>%
+            addProviderTiles("Stamen.TonerLite") %>% 
+            addPolygons(data = pd_county_joined_filtered(),
+                        weight = 0.3,
+                        opacity = 1,
+                        fillColor = ~AvgRQ_Pal(Avg_RQ),
+                        layerId = ~County_Name,
+                        color = "white",
+                        fillOpacity = 0.5,
+                        highlightOptions = highlightOptions(
+                            weight = 1,
+                            color = "#666",
+                            # If dashArray = "". as in the vignette, only the first polygon will appear
+                            dashArray = NULL,
+                            fillOpacity = 0.7,
+                            bringToFront = TRUE),
+                        label = sprintf(
+                            "<strong>%s</strong><br/>Mean RQ = %g",
+                            pd_county_joined_filtered()$County_Name, 
+                            pd_county_joined_filtered()$Avg_RQ) %>% 
+                            lapply(htmltools::HTML),
+                        labelOptions = labelOptions(
+                            style = list("font-weight" = "normal", padding = "3px 8px"),
+                            textsize = "15px",
+                            direction = "auto")
+                        ) %>% 
+            addLegend(position = "bottomright",
+                      pal = AvgRQ_Pal,
+                      values = c(0, 6000),
+                      opacity = 1,
+                      title = "Mean RQ",
+                     )
+    })
+    }
+
+shinyApp(ui = ui, server = server)
+
+# TODO:
+# * Implement Leaflet Proxy
+# * Add RQ histograms on click
+# * Make map box bigger
+# * Host on shinyapps.io

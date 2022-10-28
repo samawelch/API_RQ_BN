@@ -1,0 +1,3708 @@
+Thu Oct 27 09:06:51 2022
+
+
+Moral links:
+
+    Marrying PRQ_1_Antibiotics and PRQ_1_Painkillers
+    Marrying PRQ_1_Estrogens and PRQ_1_Painkillers
+    Marrying PRQ_1_Estrogens and PRQ_1_Antibiotics
+    Marrying SumRQ_Estrogens and SumRQ_Antibiotics
+    Marrying SumRQ_Painkillers and SumRQ_Estrogens
+    Marrying SumRQ_Painkillers and SumRQ_Antibiotics
+    Marrying class_API_heavy_paracetamol.API_removal_WWT_2 and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_API_heavy_paracetamol.API_PEC_SW_gL and class_API_heavy_paracetamol.API_PNEC_gL
+    Marrying class_API_heavy_paracetamol.API_PEC_inf_gL and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_API_heavy_paracetamol.API_PEC_inf_gL and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year and class_API_heavy_paracetamol.API_lm_intercept_kg
+    Marrying class_API_heavy_paracetamol.API_vet_prop and class_API_heavy_paracetamol.API_PEC_inf_gL
+    Marrying class_API_heavy_paracetamol.API_vet_prop and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_API_heavy_paracetamol.API_vet_prop and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying API_RQ_FW_Ibuprofen and API_RQ_FW_Paracetamol
+    Marrying class_API_heavy_ibuprofen.API_removal_WWT_2 and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_API_heavy_ibuprofen.API_PEC_SW_gL and class_API_heavy_ibuprofen.API_PNEC_gL
+    Marrying class_API_heavy_ibuprofen.API_PEC_inf_gL and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_API_heavy_ibuprofen.API_PEC_inf_gL and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year and class_API_heavy_ibuprofen.API_lm_intercept_kg
+    Marrying class_API_heavy_ibuprofen.API_vet_prop and class_API_heavy_ibuprofen.API_PEC_inf_gL
+    Marrying class_API_heavy_ibuprofen.API_vet_prop and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_API_heavy_ibuprofen.API_vet_prop and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying API_RQ_FW_Estradiol and API_RQ_FW_Ethinylestradiol
+    Marrying class_API_light_estradiol.API_removal_WWT_2 and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_API_light_estradiol.API_PEC_SW_gL and class_API_light_estradiol.API_PNEC_gL
+    Marrying class_API_light_estradiol.API_PEC_inf_gL and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_API_light_estradiol.API_PEC_inf_gL and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year and class_API_light_estradiol.API_lm_intercept_kg
+    Marrying class_API_light_estradiol.API_vet_prop and class_API_light_estradiol.API_PEC_inf_gL
+    Marrying class_API_light_estradiol.API_vet_prop and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_API_light_estradiol.API_vet_prop and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_API_light_ethinylestradiol.API_removal_WWT_2 and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_API_light_ethinylestradiol.API_PEC_SW_gL and class_API_light_ethinylestradiol.API_PNEC_gL
+    Marrying class_API_light_ethinylestradiol.API_PEC_inf_gL and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_API_light_ethinylestradiol.API_PEC_inf_gL and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year and class_API_light_ethinylestradiol.API_lm_intercept_kg
+    Marrying class_API_light_ethinylestradiol.API_vet_prop and class_API_light_ethinylestradiol.API_PEC_inf_gL
+    Marrying class_API_light_ethinylestradiol.API_vet_prop and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_API_light_ethinylestradiol.API_vet_prop and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_API_medium_ciprofloxacin.API_removal_WWT_2 and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_API_medium_ciprofloxacin.API_PEC_SW_gL and class_API_medium_ciprofloxacin.API_PNEC_gL
+    Marrying class_API_medium_ciprofloxacin.API_PEC_inf_gL and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_API_medium_ciprofloxacin.API_PEC_inf_gL and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year and class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    Marrying class_API_medium_ciprofloxacin.API_vet_prop and class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    Marrying class_API_medium_ciprofloxacin.API_vet_prop and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_API_medium_ciprofloxacin.API_vet_prop and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_API_medium_diclofenac.API_removal_WWT_2 and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_API_medium_diclofenac.API_PEC_SW_gL and class_API_medium_diclofenac.API_PNEC_gL
+    Marrying class_API_medium_diclofenac.API_PEC_inf_gL and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_API_medium_diclofenac.API_PEC_inf_gL and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year and class_API_medium_diclofenac.API_lm_intercept_kg
+    Marrying class_API_medium_diclofenac.API_vet_prop and class_API_medium_diclofenac.API_PEC_inf_gL
+    Marrying class_API_medium_diclofenac.API_vet_prop and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_API_medium_diclofenac.API_vet_prop and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_diclofenac.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_diclofenac.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_ciprofloxacin.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_ethinylestradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_ethinylestradiol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_estradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_estradiol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_ibuprofen.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_ibuprofen.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_paracetamol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_paracetamol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_diclofenac.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_spatial.spatial_county_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_diclofenac.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_ciprofloxacin.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_ethinylestradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_ethinylestradiol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_estradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_estradiol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_ibuprofen.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_ibuprofen.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_paracetamol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_paracetamol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WW_ML and class_API_medium_diclofenac.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_medium_ciprofloxacin.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_light_ethinylestradiol.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_light_estradiol.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_heavy_ibuprofen.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_heavy_paracetamol.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_diclofenac.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_light_ethinylestradiol.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_light_estradiol.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_heavy_ibuprofen.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_heavy_paracetamol.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_diclofenac.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_spatial.spatial_county_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_spatial.spatial_county_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_diclofenac.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_ciprofloxacin.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_ethinylestradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_ethinylestradiol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_estradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_estradiol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_ibuprofen.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_ibuprofen.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_paracetamol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_paracetamol.API_vet_prop
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WW_Lpd and class_spatial.spatial_county_pop_share
+    Marrying API_RQ_FW_Diclofenac and API_RQ_FW_Paracetamol
+    Marrying API_RQ_FW_Diclofenac and API_RQ_FW_Ibuprofen
+    Marrying master_pop_mill and class_spatial.spatial_county_WW_Lpd
+    Marrying master_pop_mill and class_spatial.spatial_county_pop_share
+    Marrying master_pop_mill and class_API_medium_diclofenac.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_light_ethinylestradiol.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_light_estradiol.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_heavy_ibuprofen.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_heavy_paracetamol.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and master_pop_scenario
+    Marrying master_year and class_spatial.spatial_county_pop_share
+    Marrying master_year and class_API_medium_diclofenac.API_lm_intercept_kg
+    Marrying master_year and class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    Marrying master_year and class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_light_ethinylestradiol.API_lm_intercept_kg
+    Marrying master_year and class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_light_estradiol.API_lm_intercept_kg
+    Marrying master_year and class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_heavy_ibuprofen.API_lm_intercept_kg
+    Marrying master_year and class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_heavy_paracetamol.API_lm_intercept_kg
+    Marrying master_year and class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_county and master_WWT_scenario
+
+
+Triangulating prime component with 4 members:
+    PRQ_1_Total, PRQ_1_Painkillers, PRQ_1_Antibiotics, PRQ_1_Estrogens
+This component is a clique of cost 16
+
+Triangulating prime component with 4 members:
+    SumRQ_Total, SumRQ_Antibiotics, SumRQ_Estrogens, SumRQ_Painkillers
+This component is a clique of cost 1296
+
+Triangulating prime component with 3 members:
+    master_pop_mill, master_pop_scenario, master_year
+This component is a clique of cost 36
+
+Triangulating prime component with 99 members:
+    PRQ_1_Painkillers, PRQ_1_Antibiotics, PRQ_1_Estrogens, SumRQ_Antibiotics,
+    SumRQ_Estrogens, SumRQ_Painkillers,
+    class_API_heavy_paracetamol.API_total_WWT_removal,
+    class_API_heavy_paracetamol.API_PNEC_gL,
+    class_API_heavy_paracetamol.API_RQ_FW,
+    class_API_heavy_paracetamol.API_removal_WWT_1,
+    class_API_heavy_paracetamol.API_removal_WWT_2,
+    class_API_heavy_paracetamol.API_PEC_SW_gL,
+    class_API_heavy_paracetamol.API_PEC_eff_gL,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_lm_intercept_kg,
+    class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year,
+    class_API_heavy_paracetamol.API_sales_weight_kg,
+    class_API_heavy_paracetamol.API_vet_prop, API_RQ_FW_Paracetamol,
+    API_heavy_ibuprofen, API_heavy_paracetamol, API_RQ_FW_Ibuprofen,
+    class_API_heavy_ibuprofen.API_total_WWT_removal,
+    class_API_heavy_ibuprofen.API_PNEC_gL, class_API_heavy_ibuprofen.API_RQ_FW,
+    class_API_heavy_ibuprofen.API_removal_WWT_1,
+    class_API_heavy_ibuprofen.API_removal_WWT_2,
+    class_API_heavy_ibuprofen.API_PEC_SW_gL,
+    class_API_heavy_ibuprofen.API_PEC_eff_gL,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_lm_intercept_kg,
+    class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year,
+    class_API_heavy_ibuprofen.API_sales_weight_kg,
+    class_API_heavy_ibuprofen.API_vet_prop, API_RQ_FW_Ethinylestradiol,
+    API_RQ_FW_Estradiol, API_light_estradiol, API_light_ethinylestradiol,
+    class_API_light_estradiol.API_total_WWT_removal,
+    class_API_light_estradiol.API_PNEC_gL, class_API_light_estradiol.API_RQ_FW,
+    class_API_light_estradiol.API_removal_WWT_1,
+    class_API_light_estradiol.API_removal_WWT_2,
+    class_API_light_estradiol.API_PEC_SW_gL,
+    class_API_light_estradiol.API_PEC_eff_gL,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_lm_intercept_kg,
+    class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year,
+    class_API_light_estradiol.API_sales_weight_kg,
+    class_API_light_estradiol.API_vet_prop,
+    class_API_light_ethinylestradiol.API_total_WWT_removal,
+    class_API_light_ethinylestradiol.API_PNEC_gL,
+    class_API_light_ethinylestradiol.API_RQ_FW,
+    class_API_light_ethinylestradiol.API_removal_WWT_1,
+    class_API_light_ethinylestradiol.API_removal_WWT_2,
+    class_API_light_ethinylestradiol.API_PEC_SW_gL,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_lm_intercept_kg,
+    class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year,
+    class_API_light_ethinylestradiol.API_sales_weight_kg,
+    class_API_light_ethinylestradiol.API_vet_prop, API_RQ_FW_Ciprofloxacin,
+    API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal,
+    class_API_medium_ciprofloxacin.API_PNEC_gL,
+    class_API_medium_ciprofloxacin.API_RQ_FW,
+    class_API_medium_ciprofloxacin.API_removal_WWT_1,
+    class_API_medium_ciprofloxacin.API_removal_WWT_2,
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL,
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_lm_intercept_kg,
+    class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year,
+    class_API_medium_ciprofloxacin.API_sales_weight_kg,
+    class_API_medium_ciprofloxacin.API_vet_prop,
+    class_API_medium_diclofenac.API_total_WWT_removal,
+    class_API_medium_diclofenac.API_PNEC_gL,
+    class_API_medium_diclofenac.API_RQ_FW,
+    class_API_medium_diclofenac.API_removal_WWT_1,
+    class_API_medium_diclofenac.API_removal_WWT_2,
+    class_API_medium_diclofenac.API_PEC_SW_gL,
+    class_API_medium_diclofenac.API_PEC_eff_gL,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_lm_intercept_kg,
+    class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year,
+    class_API_medium_diclofenac.API_sales_weight_kg,
+    class_API_medium_diclofenac.API_vet_prop,
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WW_ML, class_spatial.spatial_county_pop_share,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_WW_Lpd,
+    API_medium_diclofenac, API_RQ_FW_Diclofenac, master_pop_mill, master_year,
+    master_county
+
+    Using the best greedy heuristic for triangulation
+
+
+Triangulating prime component with 5 members:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, master_WWT_scenario, master_county
+This component is a clique of cost 1800
+
+
+Total cost of triangulation for all prime components is 192784204
+
+
+Elimination sequence:
+
+    master_pop_scenario
+    SumRQ_Total
+    SumRQ_Antibiotics
+    class_API_medium_diclofenac.API_PNEC_gL
+    class_API_medium_diclofenac.API_PEC_SW_gL
+    class_API_medium_diclofenac.API_RQ_FW
+    class_API_light_ethinylestradiol.API_PNEC_gL
+    class_API_light_ethinylestradiol.API_PEC_SW_gL
+    class_API_light_ethinylestradiol.API_RQ_FW
+    class_API_light_estradiol.API_PNEC_gL
+    class_API_light_estradiol.API_PEC_SW_gL
+    class_API_light_estradiol.API_RQ_FW
+    class_API_medium_ciprofloxacin.API_PNEC_gL
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL
+    class_API_medium_ciprofloxacin.API_RQ_FW
+    class_API_heavy_ibuprofen.API_PNEC_gL
+    class_API_heavy_ibuprofen.API_PEC_SW_gL
+    class_API_heavy_ibuprofen.API_RQ_FW
+    class_API_heavy_paracetamol.API_PNEC_gL
+    class_API_heavy_paracetamol.API_PEC_SW_gL
+    class_API_heavy_paracetamol.API_RQ_FW
+    SumRQ_Estrogens
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL
+    class_API_light_estradiol.API_PEC_eff_gL
+    class_API_light_ethinylestradiol.API_PEC_eff_gL
+    class_API_medium_diclofenac.API_PEC_eff_gL
+    class_API_heavy_paracetamol.API_PEC_eff_gL
+    class_API_heavy_ibuprofen.API_PEC_eff_gL
+    master_WWT_scenario
+    master_county
+    class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+    class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    class_API_medium_diclofenac.API_lm_intercept_kg
+    class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+    class_API_light_estradiol.API_lm_intercept_kg
+    class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+    class_API_light_ethinylestradiol.API_lm_intercept_kg
+    class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+    class_API_heavy_paracetamol.API_lm_intercept_kg
+    class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+    class_API_heavy_ibuprofen.API_lm_intercept_kg
+    class_API_medium_ciprofloxacin.API_vet_prop
+    class_API_medium_ciprofloxacin.API_removal_WWT_2
+    class_API_medium_ciprofloxacin.API_removal_WWT_1
+    class_API_light_estradiol.API_vet_prop
+    class_API_light_estradiol.API_removal_WWT_2
+    class_API_light_estradiol.API_removal_WWT_1
+    class_API_light_ethinylestradiol.API_vet_prop
+    class_API_light_ethinylestradiol.API_removal_WWT_2
+    class_API_light_ethinylestradiol.API_removal_WWT_1
+    class_API_medium_diclofenac.API_vet_prop
+    class_API_medium_diclofenac.API_removal_WWT_2
+    class_API_medium_diclofenac.API_removal_WWT_1
+    class_API_heavy_paracetamol.API_vet_prop
+    class_API_heavy_paracetamol.API_removal_WWT_2
+    class_API_heavy_paracetamol.API_removal_WWT_1
+    class_API_heavy_ibuprofen.API_vet_prop
+    class_API_heavy_ibuprofen.API_removal_WWT_2
+    class_API_heavy_ibuprofen.API_removal_WWT_1
+    class_spatial.spatial_county_WW_Lpd
+    class_API_medium_diclofenac.API_sales_weight_kg
+    class_API_medium_ciprofloxacin.API_sales_weight_kg
+    class_API_light_ethinylestradiol.API_sales_weight_kg
+    class_API_light_estradiol.API_sales_weight_kg
+    class_API_medium_diclofenac.API_total_WWT_removal
+    class_API_light_ethinylestradiol.API_total_WWT_removal
+    class_API_light_estradiol.API_total_WWT_removal
+    class_API_medium_ciprofloxacin.API_total_WWT_removal
+    class_API_heavy_ibuprofen.API_sales_weight_kg
+    class_API_heavy_paracetamol.API_sales_weight_kg
+    class_API_heavy_ibuprofen.API_total_WWT_removal
+    class_API_heavy_paracetamol.API_total_WWT_removal
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    API_medium_ciprofloxacin
+    class_API_light_estradiol.API_PEC_inf_gL
+    API_light_estradiol
+    class_API_light_ethinylestradiol.API_PEC_inf_gL
+    API_light_ethinylestradiol
+    class_API_medium_diclofenac.API_PEC_inf_gL
+    API_medium_diclofenac
+    class_API_heavy_paracetamol.API_PEC_inf_gL
+    API_heavy_paracetamol
+    class_API_heavy_ibuprofen.API_PEC_inf_gL
+    API_heavy_ibuprofen
+    API_RQ_FW_Diclofenac
+    API_RQ_FW_Ibuprofen
+    API_RQ_FW_Paracetamol
+    SumRQ_Painkillers
+    class_spatial.spatial_county_WW_ML
+    master_year
+    master_pop_mill
+    class_spatial.spatial_county_pop_share
+    class_spatial.spatial_county_WWT_0
+    class_spatial.spatial_county_WWT_1
+    class_spatial.spatial_county_WWT_2
+    API_RQ_FW_Estradiol
+    API_RQ_FW_Ethinylestradiol
+    API_RQ_FW_Ciprofloxacin
+    PRQ_1_Total
+    PRQ_1_Antibiotics
+    PRQ_1_Estrogens
+    PRQ_1_Painkillers
+
+
+Cliques:
+
+Clique 66, 4 members, table size = 16:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, PRQ_1_Antibiotics, PRQ_1_Total
+
+Clique 65, 4 members, table size = 48:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, PRQ_1_Antibiotics,
+    API_RQ_FW_Ciprofloxacin
+
+Clique 64, 5 members, table size = 864:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, API_RQ_FW_Ciprofloxacin,
+    API_RQ_FW_Ethinylestradiol, API_RQ_FW_Estradiol
+
+Clique 63, 12 members, table size = 83980800:
+    PRQ_1_Painkillers, API_RQ_FW_Ciprofloxacin, API_RQ_FW_Ethinylestradiol,
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, SumRQ_Painkillers
+
+Clique 62, 12 members, table size = 83980800:
+    PRQ_1_Painkillers, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, SumRQ_Painkillers,
+    API_RQ_FW_Paracetamol, API_RQ_FW_Ibuprofen, API_RQ_FW_Diclofenac
+
+Clique 61, 10 members, table size = 2332800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL
+
+Clique 60, 7 members, table size = 32400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Ibuprofen,
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal
+
+Clique 59, 9 members, table size = 675000:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal,
+    class_API_heavy_ibuprofen.API_removal_WWT_1,
+    class_API_heavy_ibuprofen.API_removal_WWT_2,
+    class_API_heavy_ibuprofen.API_vet_prop
+
+Clique 58, 5 members, table size = 2592:
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal,
+    class_API_heavy_ibuprofen.API_PEC_eff_gL
+
+Clique 57, 4 members, table size = 432:
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_eff_gL,
+    class_API_heavy_ibuprofen.API_RQ_FW
+
+Clique 56, 4 members, table size = 432:
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_PEC_eff_gL,
+    class_API_heavy_ibuprofen.API_RQ_FW,
+    class_API_heavy_ibuprofen.API_PEC_SW_gL
+
+Clique 55, 4 members, table size = 144:
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_RQ_FW,
+    class_API_heavy_ibuprofen.API_PEC_SW_gL,
+    class_API_heavy_ibuprofen.API_PNEC_gL
+
+Clique 54, 7 members, table size = 36288:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_sales_weight_kg
+
+Clique 53, 7 members, table size = 4032:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_sales_weight_kg,
+    class_API_heavy_ibuprofen.API_lm_intercept_kg,
+    class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+
+Clique 52, 10 members, table size = 2332800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL
+
+Clique 51, 7 members, table size = 32400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Paracetamol,
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal
+
+Clique 50, 9 members, table size = 675000:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal,
+    class_API_heavy_paracetamol.API_removal_WWT_1,
+    class_API_heavy_paracetamol.API_removal_WWT_2,
+    class_API_heavy_paracetamol.API_vet_prop
+
+Clique 49, 5 members, table size = 2592:
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal,
+    class_API_heavy_paracetamol.API_PEC_eff_gL
+
+Clique 48, 4 members, table size = 432:
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_eff_gL,
+    class_API_heavy_paracetamol.API_RQ_FW
+
+Clique 47, 4 members, table size = 432:
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_PEC_eff_gL,
+    class_API_heavy_paracetamol.API_RQ_FW,
+    class_API_heavy_paracetamol.API_PEC_SW_gL
+
+Clique 46, 4 members, table size = 144:
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_RQ_FW,
+    class_API_heavy_paracetamol.API_PEC_SW_gL,
+    class_API_heavy_paracetamol.API_PNEC_gL
+
+Clique 45, 7 members, table size = 36288:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_sales_weight_kg
+
+Clique 44, 7 members, table size = 4032:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_sales_weight_kg,
+    class_API_heavy_paracetamol.API_lm_intercept_kg,
+    class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+
+Clique 43, 3 members, table size = 36:
+    master_pop_mill, master_year, master_pop_scenario
+
+Clique 42, 7 members, table size = 64800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, class_spatial.spatial_county_WW_ML,
+    class_spatial.spatial_county_WW_Lpd
+
+Clique 41, 6 members, table size = 21600:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    class_spatial.spatial_county_WW_Lpd, master_county
+
+Clique 40, 5 members, table size = 1800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, master_county, master_WWT_scenario
+
+Clique 39, 10 members, table size = 3499200:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL
+
+Clique 38, 7 members, table size = 48600:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Diclofenac,
+    API_medium_diclofenac, class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal
+
+Clique 37, 9 members, table size = 1012500:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal,
+    class_API_medium_diclofenac.API_removal_WWT_1,
+    class_API_medium_diclofenac.API_removal_WWT_2,
+    class_API_medium_diclofenac.API_vet_prop
+
+Clique 36, 5 members, table size = 3888:
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal,
+    class_API_medium_diclofenac.API_PEC_eff_gL
+
+Clique 35, 4 members, table size = 648:
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_eff_gL,
+    class_API_medium_diclofenac.API_RQ_FW
+
+Clique 34, 4 members, table size = 648:
+    API_medium_diclofenac, class_API_medium_diclofenac.API_PEC_eff_gL,
+    class_API_medium_diclofenac.API_RQ_FW,
+    class_API_medium_diclofenac.API_PEC_SW_gL
+
+Clique 33, 4 members, table size = 324:
+    API_medium_diclofenac, class_API_medium_diclofenac.API_RQ_FW,
+    class_API_medium_diclofenac.API_PEC_SW_gL,
+    class_API_medium_diclofenac.API_PNEC_gL
+
+Clique 32, 7 members, table size = 62208:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_sales_weight_kg
+
+Clique 31, 7 members, table size = 15552:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_medium_diclofenac, class_API_medium_diclofenac.API_sales_weight_kg,
+    class_API_medium_diclofenac.API_lm_intercept_kg,
+    class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+
+Clique 30, 10 members, table size = 3499200:
+    API_RQ_FW_Ethinylestradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL
+
+Clique 29, 7 members, table size = 48600:
+    API_RQ_FW_Ethinylestradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal
+
+Clique 28, 9 members, table size = 1012500:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal,
+    class_API_light_ethinylestradiol.API_removal_WWT_1,
+    class_API_light_ethinylestradiol.API_removal_WWT_2,
+    class_API_light_ethinylestradiol.API_vet_prop
+
+Clique 27, 5 members, table size = 3888:
+    API_RQ_FW_Ethinylestradiol, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL
+
+Clique 26, 4 members, table size = 648:
+    API_RQ_FW_Ethinylestradiol, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL,
+    class_API_light_ethinylestradiol.API_RQ_FW
+
+Clique 25, 4 members, table size = 648:
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL,
+    class_API_light_ethinylestradiol.API_RQ_FW,
+    class_API_light_ethinylestradiol.API_PEC_SW_gL
+
+Clique 24, 4 members, table size = 324:
+    API_light_ethinylestradiol, class_API_light_ethinylestradiol.API_RQ_FW,
+    class_API_light_ethinylestradiol.API_PEC_SW_gL,
+    class_API_light_ethinylestradiol.API_PNEC_gL
+
+Clique 23, 7 members, table size = 54432:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_sales_weight_kg
+
+Clique 22, 7 members, table size = 13608:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_sales_weight_kg,
+    class_API_light_ethinylestradiol.API_lm_intercept_kg,
+    class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+
+Clique 21, 10 members, table size = 3499200:
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL
+
+Clique 20, 7 members, table size = 48600:
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_light_estradiol, class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal
+
+Clique 19, 9 members, table size = 1012500:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal,
+    class_API_light_estradiol.API_removal_WWT_1,
+    class_API_light_estradiol.API_removal_WWT_2,
+    class_API_light_estradiol.API_vet_prop
+
+Clique 18, 5 members, table size = 3888:
+    API_RQ_FW_Estradiol, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal,
+    class_API_light_estradiol.API_PEC_eff_gL
+
+Clique 17, 4 members, table size = 648:
+    API_RQ_FW_Estradiol, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_eff_gL,
+    class_API_light_estradiol.API_RQ_FW
+
+Clique 16, 4 members, table size = 648:
+    API_light_estradiol, class_API_light_estradiol.API_PEC_eff_gL,
+    class_API_light_estradiol.API_RQ_FW,
+    class_API_light_estradiol.API_PEC_SW_gL
+
+Clique 15, 4 members, table size = 324:
+    API_light_estradiol, class_API_light_estradiol.API_RQ_FW,
+    class_API_light_estradiol.API_PEC_SW_gL,
+    class_API_light_estradiol.API_PNEC_gL
+
+Clique 14, 7 members, table size = 54432:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_sales_weight_kg
+
+Clique 13, 7 members, table size = 13608:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_light_estradiol, class_API_light_estradiol.API_sales_weight_kg,
+    class_API_light_estradiol.API_lm_intercept_kg,
+    class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+
+Clique 12, 10 members, table size = 3499200:
+    API_RQ_FW_Ciprofloxacin, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL
+
+Clique 11, 7 members, table size = 48600:
+    API_RQ_FW_Ciprofloxacin, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal
+
+Clique 10, 9 members, table size = 1012500:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal,
+    class_API_medium_ciprofloxacin.API_removal_WWT_1,
+    class_API_medium_ciprofloxacin.API_removal_WWT_2,
+    class_API_medium_ciprofloxacin.API_vet_prop
+
+Clique 9, 5 members, table size = 3888:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal,
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL
+
+Clique 8, 4 members, table size = 648:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL,
+    class_API_medium_ciprofloxacin.API_RQ_FW
+
+Clique 7, 4 members, table size = 648:
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_PEC_eff_gL,
+    class_API_medium_ciprofloxacin.API_RQ_FW,
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL
+
+Clique 6, 4 members, table size = 324:
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_RQ_FW,
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL,
+    class_API_medium_ciprofloxacin.API_PNEC_gL
+
+Clique 5, 7 members, table size = 62208:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_sales_weight_kg
+
+Clique 4, 7 members, table size = 15552:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_sales_weight_kg,
+    class_API_medium_ciprofloxacin.API_lm_intercept_kg,
+    class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+
+Clique 3, 5 members, table size = 7776:
+    API_RQ_FW_Ciprofloxacin, API_RQ_FW_Ethinylestradiol, API_RQ_FW_Estradiol,
+    SumRQ_Painkillers, SumRQ_Estrogens
+
+Clique 2, 4 members, table size = 1296:
+    API_RQ_FW_Ciprofloxacin, SumRQ_Painkillers, SumRQ_Estrogens,
+    SumRQ_Antibiotics
+
+Clique 1, 4 members, table size = 1296:
+    SumRQ_Painkillers, SumRQ_Estrogens, SumRQ_Antibiotics, SumRQ_Total
+
+Total clique table size: 192784204
+
+
+The junction forest:
+
+Creating junction tree with clique 66 as root ...
+
+Cliques 65 and 66 linked, separator has 3 members and table size = 8:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, PRQ_1_Antibiotics
+
+Cliques 64 and 65 linked, separator has 3 members and table size = 24:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, API_RQ_FW_Ciprofloxacin
+
+Cliques 63 and 64 linked, separator has 4 members and table size = 432:
+    PRQ_1_Painkillers, API_RQ_FW_Ciprofloxacin, API_RQ_FW_Ethinylestradiol,
+    API_RQ_FW_Estradiol
+
+Cliques 62 and 63 linked, separator has 9 members and table size = 388800:
+    PRQ_1_Painkillers, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, SumRQ_Painkillers
+
+Cliques 61 and 62 linked, separator has 8 members and table size = 194400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Ibuprofen
+
+Cliques 60 and 61 linked, separator has 6 members and table size = 5400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Ibuprofen,
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_PEC_inf_gL
+
+Cliques 59 and 60 linked, separator has 6 members and table size = 5400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal
+
+Cliques 58 and 60 linked, separator has 4 members and table size = 432:
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal
+
+Cliques 57 and 58 linked, separator has 3 members and table size = 72:
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_eff_gL
+
+Cliques 56 and 57 linked, separator has 3 members and table size = 72:
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_PEC_eff_gL,
+    class_API_heavy_ibuprofen.API_RQ_FW
+
+Cliques 55 and 56 linked, separator has 3 members and table size = 72:
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_RQ_FW,
+    class_API_heavy_ibuprofen.API_PEC_SW_gL
+
+Cliques 54 and 61 linked, separator has 6 members and table size = 5184:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL
+
+Cliques 53 and 54 linked, separator has 5 members and table size = 1008:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_sales_weight_kg
+
+Cliques 52 and 62 linked, separator has 8 members and table size = 194400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Paracetamol
+
+Cliques 51 and 52 linked, separator has 6 members and table size = 5400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Paracetamol,
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_PEC_inf_gL
+
+Cliques 50 and 51 linked, separator has 6 members and table size = 5400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal
+
+Cliques 49 and 51 linked, separator has 4 members and table size = 432:
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal
+
+Cliques 48 and 49 linked, separator has 3 members and table size = 72:
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_eff_gL
+
+Cliques 47 and 48 linked, separator has 3 members and table size = 72:
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_PEC_eff_gL,
+    class_API_heavy_paracetamol.API_RQ_FW
+
+Cliques 46 and 47 linked, separator has 3 members and table size = 72:
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_RQ_FW,
+    class_API_heavy_paracetamol.API_PEC_SW_gL
+
+Cliques 45 and 52 linked, separator has 6 members and table size = 5184:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL
+
+Cliques 44 and 45 linked, separator has 5 members and table size = 1008:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_sales_weight_kg
+
+Cliques 43 and 44 linked, separator has 2 members and table size = 12:
+    master_pop_mill, master_year
+
+Cliques 42 and 52 linked, separator has 6 members and table size = 16200:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, class_spatial.spatial_county_WW_ML
+
+Cliques 41 and 42 linked, separator has 5 members and table size = 1800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    class_spatial.spatial_county_WW_Lpd
+
+Cliques 40 and 41 linked, separator has 4 members and table size = 900:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, master_county
+
+Cliques 39 and 62 linked, separator has 8 members and table size = 194400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Diclofenac
+
+Cliques 38 and 39 linked, separator has 6 members and table size = 8100:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Diclofenac,
+    API_medium_diclofenac, class_API_medium_diclofenac.API_PEC_inf_gL
+
+Cliques 37 and 38 linked, separator has 6 members and table size = 8100:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal
+
+Cliques 36 and 38 linked, separator has 4 members and table size = 648:
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal
+
+Cliques 35 and 36 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_eff_gL
+
+Cliques 34 and 35 linked, separator has 3 members and table size = 108:
+    API_medium_diclofenac, class_API_medium_diclofenac.API_PEC_eff_gL,
+    class_API_medium_diclofenac.API_RQ_FW
+
+Cliques 33 and 34 linked, separator has 3 members and table size = 108:
+    API_medium_diclofenac, class_API_medium_diclofenac.API_RQ_FW,
+    class_API_medium_diclofenac.API_PEC_SW_gL
+
+Cliques 32 and 39 linked, separator has 6 members and table size = 7776:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL
+
+Cliques 31 and 32 linked, separator has 5 members and table size = 1728:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_medium_diclofenac, class_API_medium_diclofenac.API_sales_weight_kg
+
+Cliques 30 and 63 linked, separator has 8 members and table size = 194400:
+    API_RQ_FW_Ethinylestradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML
+
+Cliques 29 and 30 linked, separator has 6 members and table size = 8100:
+    API_RQ_FW_Ethinylestradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_light_ethinylestradiol, class_API_light_ethinylestradiol.API_PEC_inf_gL
+
+Cliques 28 and 29 linked, separator has 6 members and table size = 8100:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal
+
+Cliques 27 and 29 linked, separator has 4 members and table size = 648:
+    API_RQ_FW_Ethinylestradiol, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal
+
+Cliques 26 and 27 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Ethinylestradiol, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL
+
+Cliques 25 and 26 linked, separator has 3 members and table size = 108:
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL,
+    class_API_light_ethinylestradiol.API_RQ_FW
+
+Cliques 24 and 25 linked, separator has 3 members and table size = 108:
+    API_light_ethinylestradiol, class_API_light_ethinylestradiol.API_RQ_FW,
+    class_API_light_ethinylestradiol.API_PEC_SW_gL
+
+Cliques 23 and 30 linked, separator has 6 members and table size = 7776:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL
+
+Cliques 22 and 23 linked, separator has 5 members and table size = 1512:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_sales_weight_kg
+
+Cliques 21 and 63 linked, separator has 8 members and table size = 194400:
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML
+
+Cliques 20 and 21 linked, separator has 6 members and table size = 8100:
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_light_estradiol, class_API_light_estradiol.API_PEC_inf_gL
+
+Cliques 19 and 20 linked, separator has 6 members and table size = 8100:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal
+
+Cliques 18 and 20 linked, separator has 4 members and table size = 648:
+    API_RQ_FW_Estradiol, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal
+
+Cliques 17 and 18 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Estradiol, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_eff_gL
+
+Cliques 16 and 17 linked, separator has 3 members and table size = 108:
+    API_light_estradiol, class_API_light_estradiol.API_PEC_eff_gL,
+    class_API_light_estradiol.API_RQ_FW
+
+Cliques 15 and 16 linked, separator has 3 members and table size = 108:
+    API_light_estradiol, class_API_light_estradiol.API_RQ_FW,
+    class_API_light_estradiol.API_PEC_SW_gL
+
+Cliques 14 and 21 linked, separator has 6 members and table size = 7776:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL
+
+Cliques 13 and 14 linked, separator has 5 members and table size = 1512:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_light_estradiol, class_API_light_estradiol.API_sales_weight_kg
+
+Cliques 12 and 63 linked, separator has 8 members and table size = 194400:
+    API_RQ_FW_Ciprofloxacin, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML
+
+Cliques 11 and 12 linked, separator has 6 members and table size = 8100:
+    API_RQ_FW_Ciprofloxacin, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_PEC_inf_gL
+
+Cliques 10 and 11 linked, separator has 6 members and table size = 8100:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal
+
+Cliques 9 and 11 linked, separator has 4 members and table size = 648:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 108:
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_PEC_eff_gL,
+    class_API_medium_ciprofloxacin.API_RQ_FW
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 108:
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_RQ_FW,
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL
+
+Cliques 5 and 12 linked, separator has 6 members and table size = 7776:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL
+
+Cliques 4 and 5 linked, separator has 5 members and table size = 1728:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_sales_weight_kg
+
+Cliques 3 and 63 linked, separator has 4 members and table size = 1296:
+    API_RQ_FW_Ciprofloxacin, API_RQ_FW_Ethinylestradiol, API_RQ_FW_Estradiol,
+    SumRQ_Painkillers
+
+Cliques 2 and 3 linked, separator has 3 members and table size = 216:
+    API_RQ_FW_Ciprofloxacin, SumRQ_Painkillers, SumRQ_Estrogens
+
+Cliques 1 and 2 linked, separator has 3 members and table size = 216:
+    SumRQ_Painkillers, SumRQ_Estrogens, SumRQ_Antibiotics
+
+
+Assignment of potentials to cliques:
+
+    Node PRQ_1_Total assigned to clique 66
+    Node PRQ_1_Painkillers assigned to clique 62
+    Node PRQ_1_Antibiotics assigned to clique 65
+    Node PRQ_1_Estrogens assigned to clique 64
+    Node SumRQ_Total assigned to clique 1
+    Node SumRQ_Antibiotics assigned to clique 2
+    Node SumRQ_Estrogens assigned to clique 3
+    Node SumRQ_Painkillers assigned to clique 62
+    Node class_API_heavy_paracetamol.API_total_WWT_removal assigned to clique 50
+    Node class_API_heavy_paracetamol.API_PNEC_gL assigned to clique 46
+    Node class_API_heavy_paracetamol.API_RQ_FW assigned to clique 46
+    Node class_API_heavy_paracetamol.API_removal_WWT_1 assigned to clique 50
+    Node class_API_heavy_paracetamol.API_removal_WWT_2 assigned to clique 50
+    Node class_API_heavy_paracetamol.API_PEC_SW_gL assigned to clique 47
+    Node class_API_heavy_paracetamol.API_PEC_eff_gL assigned to clique 49
+    Node class_API_heavy_paracetamol.API_PEC_inf_gL assigned to clique 45
+    Node class_API_heavy_paracetamol.API_lm_intercept_kg assigned to clique 44
+    Node class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year assigned to clique 44
+    Node class_API_heavy_paracetamol.API_sales_weight_kg assigned to clique 44
+    Node class_API_heavy_paracetamol.API_vet_prop assigned to clique 50
+    Node API_RQ_FW_Paracetamol assigned to clique 48
+    Node API_heavy_ibuprofen assigned to clique 55
+    Node API_heavy_paracetamol assigned to clique 46
+    Node API_RQ_FW_Ibuprofen assigned to clique 57
+    Node class_API_heavy_ibuprofen.API_total_WWT_removal assigned to clique 59
+    Node class_API_heavy_ibuprofen.API_PNEC_gL assigned to clique 55
+    Node class_API_heavy_ibuprofen.API_RQ_FW assigned to clique 55
+    Node class_API_heavy_ibuprofen.API_removal_WWT_1 assigned to clique 59
+    Node class_API_heavy_ibuprofen.API_removal_WWT_2 assigned to clique 59
+    Node class_API_heavy_ibuprofen.API_PEC_SW_gL assigned to clique 56
+    Node class_API_heavy_ibuprofen.API_PEC_eff_gL assigned to clique 58
+    Node class_API_heavy_ibuprofen.API_PEC_inf_gL assigned to clique 54
+    Node class_API_heavy_ibuprofen.API_lm_intercept_kg assigned to clique 53
+    Node class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year assigned to clique 53
+    Node class_API_heavy_ibuprofen.API_sales_weight_kg assigned to clique 53
+    Node class_API_heavy_ibuprofen.API_vet_prop assigned to clique 59
+    Node API_RQ_FW_Ethinylestradiol assigned to clique 26
+    Node API_RQ_FW_Estradiol assigned to clique 17
+    Node API_light_estradiol assigned to clique 15
+    Node API_light_ethinylestradiol assigned to clique 24
+    Node class_API_light_estradiol.API_total_WWT_removal assigned to clique 19
+    Node class_API_light_estradiol.API_PNEC_gL assigned to clique 15
+    Node class_API_light_estradiol.API_RQ_FW assigned to clique 15
+    Node class_API_light_estradiol.API_removal_WWT_1 assigned to clique 19
+    Node class_API_light_estradiol.API_removal_WWT_2 assigned to clique 19
+    Node class_API_light_estradiol.API_PEC_SW_gL assigned to clique 16
+    Node class_API_light_estradiol.API_PEC_eff_gL assigned to clique 18
+    Node class_API_light_estradiol.API_PEC_inf_gL assigned to clique 14
+    Node class_API_light_estradiol.API_lm_intercept_kg assigned to clique 13
+    Node class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year assigned to clique 13
+    Node class_API_light_estradiol.API_sales_weight_kg assigned to clique 13
+    Node class_API_light_estradiol.API_vet_prop assigned to clique 19
+    Node class_API_light_ethinylestradiol.API_total_WWT_removal assigned to clique 28
+    Node class_API_light_ethinylestradiol.API_PNEC_gL assigned to clique 24
+    Node class_API_light_ethinylestradiol.API_RQ_FW assigned to clique 24
+    Node class_API_light_ethinylestradiol.API_removal_WWT_1 assigned to clique 28
+    Node class_API_light_ethinylestradiol.API_removal_WWT_2 assigned to clique 28
+    Node class_API_light_ethinylestradiol.API_PEC_SW_gL assigned to clique 25
+    Node class_API_light_ethinylestradiol.API_PEC_eff_gL assigned to clique 27
+    Node class_API_light_ethinylestradiol.API_PEC_inf_gL assigned to clique 23
+    Node class_API_light_ethinylestradiol.API_lm_intercept_kg assigned to clique 22
+    Node class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year assigned to clique 22
+    Node class_API_light_ethinylestradiol.API_sales_weight_kg assigned to clique 22
+    Node class_API_light_ethinylestradiol.API_vet_prop assigned to clique 28
+    Node API_RQ_FW_Ciprofloxacin assigned to clique 8
+    Node API_medium_ciprofloxacin assigned to clique 6
+    Node class_API_medium_ciprofloxacin.API_total_WWT_removal assigned to clique 10
+    Node class_API_medium_ciprofloxacin.API_PNEC_gL assigned to clique 6
+    Node class_API_medium_ciprofloxacin.API_RQ_FW assigned to clique 6
+    Node class_API_medium_ciprofloxacin.API_removal_WWT_1 assigned to clique 10
+    Node class_API_medium_ciprofloxacin.API_removal_WWT_2 assigned to clique 10
+    Node class_API_medium_ciprofloxacin.API_PEC_SW_gL assigned to clique 7
+    Node class_API_medium_ciprofloxacin.API_PEC_eff_gL assigned to clique 9
+    Node class_API_medium_ciprofloxacin.API_PEC_inf_gL assigned to clique 5
+    Node class_API_medium_ciprofloxacin.API_lm_intercept_kg assigned to clique 4
+    Node class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year assigned to clique 4
+    Node class_API_medium_ciprofloxacin.API_sales_weight_kg assigned to clique 4
+    Node class_API_medium_ciprofloxacin.API_vet_prop assigned to clique 10
+    Node class_API_medium_diclofenac.API_total_WWT_removal assigned to clique 37
+    Node class_API_medium_diclofenac.API_PNEC_gL assigned to clique 33
+    Node class_API_medium_diclofenac.API_RQ_FW assigned to clique 33
+    Node class_API_medium_diclofenac.API_removal_WWT_1 assigned to clique 37
+    Node class_API_medium_diclofenac.API_removal_WWT_2 assigned to clique 37
+    Node class_API_medium_diclofenac.API_PEC_SW_gL assigned to clique 34
+    Node class_API_medium_diclofenac.API_PEC_eff_gL assigned to clique 36
+    Node class_API_medium_diclofenac.API_PEC_inf_gL assigned to clique 32
+    Node class_API_medium_diclofenac.API_lm_intercept_kg assigned to clique 31
+    Node class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year assigned to clique 31
+    Node class_API_medium_diclofenac.API_sales_weight_kg assigned to clique 31
+    Node class_API_medium_diclofenac.API_vet_prop assigned to clique 37
+    Node class_spatial.spatial_county_WWT_2 assigned to clique 40
+    Node class_spatial.spatial_county_WWT_1 assigned to clique 40
+    Node class_spatial.spatial_county_WW_ML assigned to clique 42
+    Node class_spatial.spatial_county_pop_share assigned to clique 41
+    Node class_spatial.spatial_county_WWT_0 assigned to clique 40
+    Node class_spatial.spatial_county_WW_Lpd assigned to clique 41
+    Node API_medium_diclofenac assigned to clique 33
+    Node API_RQ_FW_Diclofenac assigned to clique 35
+    Node master_pop_mill assigned to clique 43
+    Node master_WWT_scenario assigned to clique 40
+    Node master_pop_scenario assigned to clique 43
+    Node master_year assigned to clique 43
+    Node master_county assigned to clique 40
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    PRQ_1_Total:
+	false      1.0088e-07
+	true       1
+
+    PRQ_1_Painkillers:
+	false      0.00618142
+	true       0.993819
+
+    PRQ_1_Antibiotics:
+	false      0.0275882
+	true       0.972412
+
+    PRQ_1_Estrogens:
+	false      0.000371225
+	true       0.999629
+
+    SumRQ_Total:
+	state0   1.34076e-09
+	state1   3.17499e-05
+	state2   0.0151565
+	state3   0.42538
+	state4   0.522007
+	state5   0.0374246
+
+    SumRQ_Antibiotics:
+	state0   0.0275882
+	state1   0.209143
+	state2   0.431613
+	state3   0.274925
+	state4   0.056569
+	state5   0.000161778
+
+    SumRQ_Estrogens:
+	state0   0.000178188
+	state1   0.00853991
+	state2   0.122011
+	state3   0.633777
+	state4   0.2308
+	state5   0.00469439
+
+    SumRQ_Painkillers:
+	state0   0.00102859
+	state1   0.0956221
+	state2   0.538562
+	state3   0.307864
+	state4   0.0567619
+	state5   0.000161781
+
+    class_API_heavy_paracetamol.API_total_WWT_removal:
+	state0   0
+	state1   0.354167
+	state2   0.5
+	state3   0.104167
+	state4   0
+	state5   0.0416667
+
+    class_API_heavy_paracetamol.API_PNEC_gL:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_paracetamol.API_RQ_FW:
+	state0   0.434212
+	state1   0.562653
+	state2   0.00313422
+	state3   0
+	state4   0
+	state5   0
+
+    class_API_heavy_paracetamol.API_removal_WWT_1:
+	state0   0.5
+	state1   0
+	state2   0.5
+	state3   0
+	state4   0
+
+    class_API_heavy_paracetamol.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.5
+	state3   0.5
+	state4   0
+
+    class_API_heavy_paracetamol.API_PEC_SW_gL:
+	state0   0
+	state1   0
+	state2   0.0131346
+	state3   0.947688
+	state4   0.0391778
+	state5   0
+
+    class_API_heavy_paracetamol.API_PEC_eff_gL:
+	state0   0
+	state1   0
+	state2   0
+	state3   0.0131346
+	state4   0.947688
+	state5   0.0391778
+
+    class_API_heavy_paracetamol.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0
+	state3   0
+	state4   0.102267
+	state5   0.897733
+
+    class_API_heavy_paracetamol.API_lm_intercept_kg:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_paracetamol.API_sales_weight_kg:
+	state0   0
+	state1   0.0625
+	state2   0.583333
+	state3   0.277778
+	state4   0.0555556
+	state5   0.0208333
+	state6   0
+
+    class_API_heavy_paracetamol.API_vet_prop --> 0
+
+    API_RQ_FW_Paracetamol:
+	state0   0.434212
+	state1   0.562653
+	state2   0.00313422
+	state3   0
+	state4   0
+	state5   0
+
+    API_heavy_ibuprofen:
+	paracetamol 0.5
+	ibuprofen  0.5
+
+    API_heavy_paracetamol:
+	paracetamol 0.5
+	ibuprofen  0.5
+
+    API_RQ_FW_Ibuprofen:
+	state0   0.434212
+	state1   0.562653
+	state2   0.00313422
+	state3   0
+	state4   0
+	state5   0
+
+    class_API_heavy_ibuprofen.API_total_WWT_removal:
+	state0   0
+	state1   0.354167
+	state2   0.5
+	state3   0.104167
+	state4   0
+	state5   0.0416667
+
+    class_API_heavy_ibuprofen.API_PNEC_gL:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_ibuprofen.API_RQ_FW:
+	state0   0.434212
+	state1   0.562653
+	state2   0.00313422
+	state3   0
+	state4   0
+	state5   0
+
+    class_API_heavy_ibuprofen.API_removal_WWT_1:
+	state0   0.5
+	state1   0
+	state2   0.5
+	state3   0
+	state4   0
+
+    class_API_heavy_ibuprofen.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.5
+	state3   0.5
+	state4   0
+
+    class_API_heavy_ibuprofen.API_PEC_SW_gL:
+	state0   0
+	state1   0
+	state2   0.0131346
+	state3   0.947688
+	state4   0.0391778
+	state5   0
+
+    class_API_heavy_ibuprofen.API_PEC_eff_gL:
+	state0   0
+	state1   0
+	state2   0
+	state3   0.0131346
+	state4   0.947688
+	state5   0.0391778
+
+    class_API_heavy_ibuprofen.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0
+	state3   0
+	state4   0.102267
+	state5   0.897733
+
+    class_API_heavy_ibuprofen.API_lm_intercept_kg:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_ibuprofen.API_sales_weight_kg:
+	state0   0
+	state1   0.0625
+	state2   0.583333
+	state3   0.277778
+	state4   0.0555556
+	state5   0.0208333
+	state6   0
+
+    class_API_heavy_ibuprofen.API_vet_prop --> 0
+
+    API_RQ_FW_Ethinylestradiol:
+	state0   0.0110134
+	state1   0.116425
+	state2   0.312831
+	state3   0.536797
+	state4   0.0229333
+	state5   0
+
+    API_RQ_FW_Estradiol:
+	state0   0.0110134
+	state1   0.116425
+	state2   0.312831
+	state3   0.536797
+	state4   0.0229333
+	state5   0
+
+    API_light_estradiol:
+	levonorgestrel 0.333333
+	ethinylestradiol 0.333333
+	estradiol  0.333333
+
+    API_light_ethinylestradiol:
+	levonorgestrel 0.333333
+	ethinylestradiol 0.333333
+	estradiol  0.333333
+
+    class_API_light_estradiol.API_total_WWT_removal:
+	state0   0
+	state1   0.222222
+	state2   0.319444
+	state3   0.305556
+	state4   0.0972222
+	state5   0.0555556
+
+    class_API_light_estradiol.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_estradiol.API_RQ_FW:
+	state0   0.0110134
+	state1   0.116425
+	state2   0.312831
+	state3   0.536797
+	state4   0.0229333
+	state5   0
+
+    class_API_light_estradiol.API_removal_WWT_1:
+	state0   0.666667
+	state1   0.333333
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_light_estradiol.API_removal_WWT_2:
+	state0   0
+	state1   0.333333
+	state2   0.333333
+	state3   0.333333
+	state4   0
+
+    class_API_light_estradiol.API_PEC_SW_gL:
+	state0   0
+	state1   0.000230519
+	state2   0.00361701
+	state3   0.0420719
+	state4   0.920036
+	state5   0.0340444
+
+    class_API_light_estradiol.API_PEC_eff_gL:
+	state0   0
+	state1   0.000230519
+	state2   0.00361701
+	state3   0.0420719
+	state4   0.920036
+	state5   0.0340444
+
+    class_API_light_estradiol.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0017037
+	state3   0.0158444
+	state4   0.235462
+	state5   0.74699
+
+    class_API_light_estradiol.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_estradiol.API_sales_weight_kg:
+	state0   0.106481
+	state1   0.462963
+	state2   0.296296
+	state3   0.106481
+	state4   0.0277778
+	state5   0
+	state6   0
+
+    class_API_light_estradiol.API_vet_prop --> 0
+
+    class_API_light_ethinylestradiol.API_total_WWT_removal:
+	state0   0
+	state1   0.222222
+	state2   0.319444
+	state3   0.305556
+	state4   0.0972222
+	state5   0.0555556
+
+    class_API_light_ethinylestradiol.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_ethinylestradiol.API_RQ_FW:
+	state0   0.0110134
+	state1   0.116425
+	state2   0.312831
+	state3   0.536797
+	state4   0.0229333
+	state5   0
+
+    class_API_light_ethinylestradiol.API_removal_WWT_1:
+	state0   0.666667
+	state1   0.333333
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_light_ethinylestradiol.API_removal_WWT_2:
+	state0   0
+	state1   0.333333
+	state2   0.333333
+	state3   0.333333
+	state4   0
+
+    class_API_light_ethinylestradiol.API_PEC_SW_gL:
+	state0   0
+	state1   0.000230519
+	state2   0.00361701
+	state3   0.0420719
+	state4   0.920036
+	state5   0.0340444
+
+    class_API_light_ethinylestradiol.API_PEC_eff_gL:
+	state0   0
+	state1   0.000230519
+	state2   0.00361701
+	state3   0.0420719
+	state4   0.920036
+	state5   0.0340444
+
+    class_API_light_ethinylestradiol.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0017037
+	state3   0.0158444
+	state4   0.235462
+	state5   0.74699
+
+    class_API_light_ethinylestradiol.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_ethinylestradiol.API_sales_weight_kg:
+	state0   0.106481
+	state1   0.462963
+	state2   0.296296
+	state3   0.106481
+	state4   0.0277778
+	state5   0
+	state6   0
+
+    class_API_light_ethinylestradiol.API_vet_prop --> 0
+
+    API_RQ_FW_Ciprofloxacin:
+	state0   0.0275882
+	state1   0.209143
+	state2   0.431613
+	state3   0.274925
+	state4   0.056569
+	state5   0.000161778
+
+    API_medium_ciprofloxacin:
+	amoxicillin 0.333333
+	ciprofloxacin 0.333333
+	diclofenac 0.333333
+
+    class_API_medium_ciprofloxacin.API_total_WWT_removal:
+	state0   0
+	state1   0.486111
+	state2   0.361111
+	state3   0.0694444
+	state4   0.0555556
+	state5   0.0277778
+
+    class_API_medium_ciprofloxacin.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_ciprofloxacin.API_RQ_FW:
+	state0   0.0275882
+	state1   0.209143
+	state2   0.431613
+	state3   0.274925
+	state4   0.056569
+	state5   0.000161778
+
+    class_API_medium_ciprofloxacin.API_removal_WWT_1:
+	state0   0.333333
+	state1   0.666667
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_medium_ciprofloxacin.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.333333
+	state3   0.666667
+	state4   0
+
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL:
+	state0   0
+	state1   0.0922429
+	state2   0.473378
+	state3   0.434091
+	state4   0.000288889
+	state5   0
+
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL:
+	state0   0
+	state1   0.0021083
+	state2   0.0901346
+	state3   0.473378
+	state4   0.434091
+	state5   0.000288889
+
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0145333
+	state3   0.464951
+	state4   0.459012
+	state5   0.0615037
+
+    class_API_medium_ciprofloxacin.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_ciprofloxacin.API_sales_weight_kg:
+	state0   0
+	state1   0
+	state2   0.0416667
+	state3   0.328704
+	state4   0.490741
+	state5   0.087963
+	state6   0.0509259
+	state7   0
+
+    class_API_medium_ciprofloxacin.API_vet_prop --> 0
+
+    class_API_medium_diclofenac.API_total_WWT_removal:
+	state0   0
+	state1   0.486111
+	state2   0.361111
+	state3   0.0694444
+	state4   0.0555556
+	state5   0.0277778
+
+    class_API_medium_diclofenac.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_diclofenac.API_RQ_FW:
+	state0   0.0275882
+	state1   0.209143
+	state2   0.431613
+	state3   0.274925
+	state4   0.056569
+	state5   0.000161778
+
+    class_API_medium_diclofenac.API_removal_WWT_1:
+	state0   0.333333
+	state1   0.666667
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_medium_diclofenac.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.333333
+	state3   0.666667
+	state4   0
+
+    class_API_medium_diclofenac.API_PEC_SW_gL:
+	state0   0
+	state1   0.0922429
+	state2   0.473378
+	state3   0.434091
+	state4   0.000288889
+	state5   0
+
+    class_API_medium_diclofenac.API_PEC_eff_gL:
+	state0   0
+	state1   0.0021083
+	state2   0.0901346
+	state3   0.473378
+	state4   0.434091
+	state5   0.000288889
+
+    class_API_medium_diclofenac.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0145333
+	state3   0.464951
+	state4   0.459012
+	state5   0.0615037
+
+    class_API_medium_diclofenac.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_diclofenac.API_sales_weight_kg:
+	state0   0
+	state1   0
+	state2   0.0416667
+	state3   0.328704
+	state4   0.490741
+	state5   0.087963
+	state6   0.0509259
+	state7   0
+
+    class_API_medium_diclofenac.API_vet_prop --> 0
+
+    class_spatial.spatial_county_WWT_2:
+	state0   0.125
+	state1   0
+	state2   0.0833333
+	state3   0.125
+	state4   0.666667
+
+    class_spatial.spatial_county_WWT_1:
+	state0   0.666667
+	state1   0.125
+	state2   0.0833333
+	state3   0.125
+	state4   0
+
+    class_spatial.spatial_county_WW_ML:
+	state0   0.95
+	state1   0.05
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+
+    class_spatial.spatial_county_pop_share:
+	state0   0.25
+	state1   0.416667
+	state2   0.166667
+	state3   0
+	state4   0.0833333
+	state5   0.0833333
+
+    class_spatial.spatial_county_WWT_0:
+	state0   0.916667
+	state1   0.0833333
+	state2   0
+
+    class_spatial.spatial_county_WW_Lpd:
+	state0   0.166667
+	state1   0.416667
+	state2   0.25
+	state3   0.166667
+
+    API_medium_diclofenac:
+	amoxicillin 0.333333
+	ciprofloxacin 0.333333
+	diclofenac 0.333333
+
+    API_RQ_FW_Diclofenac:
+	state0   0.0275882
+	state1   0.209143
+	state2   0.431613
+	state3   0.274925
+	state4   0.056569
+	state5   0.000161778
+
+    master_pop_mill:
+	state0   0
+	state1   0
+	state2   0.666667
+	state3   0.333333
+	state4   0
+	state5   0
+
+    master_WWT_scenario:
+	Current    0.5
+	Compliance 0.5
+
+    master_pop_scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    master_year:
+	state0   0.5
+	state1   0.5
+
+    master_county:
+	Total      0.0833333
+	Innlandet  0.0833333
+	Vestfold og Telemark 0.0833333
+	Agder      0.0833333
+	Rogaland   0.0833333
+	Vestland   0.0833333
+	Møre og Romsdal 0.0833333
+	Trøndelag 0.0833333
+	Nordland   0.0833333
+	Troms og Finnmark 0.0833333
+	Oslo       0.0833333
+	Viken      0.0833333
+Thu Oct 27 09:20:06 2022
+
+
+Moral links:
+
+    Marrying PRQ_1_Antibiotics and PRQ_1_Painkillers
+    Marrying PRQ_1_Estrogens and PRQ_1_Painkillers
+    Marrying PRQ_1_Estrogens and PRQ_1_Antibiotics
+    Marrying SumRQ_Estrogens and SumRQ_Antibiotics
+    Marrying SumRQ_Painkillers and SumRQ_Estrogens
+    Marrying SumRQ_Painkillers and SumRQ_Antibiotics
+    Marrying class_API_heavy_paracetamol.API_removal_WWT_2 and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_API_heavy_paracetamol.API_PEC_SW_gL and class_API_heavy_paracetamol.API_PNEC_gL
+    Marrying class_API_heavy_paracetamol.API_PEC_inf_gL and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_API_heavy_paracetamol.API_PEC_inf_gL and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year and class_API_heavy_paracetamol.API_lm_intercept_kg
+    Marrying API_RQ_FW_Ibuprofen and API_RQ_FW_Paracetamol
+    Marrying class_API_heavy_ibuprofen.API_removal_WWT_2 and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_API_heavy_ibuprofen.API_PEC_SW_gL and class_API_heavy_ibuprofen.API_PNEC_gL
+    Marrying class_API_heavy_ibuprofen.API_PEC_inf_gL and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_API_heavy_ibuprofen.API_PEC_inf_gL and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year and class_API_heavy_ibuprofen.API_lm_intercept_kg
+    Marrying API_RQ_FW_Estradiol and API_RQ_FW_Ethinylestradiol
+    Marrying class_API_light_estradiol.API_removal_WWT_2 and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_API_light_estradiol.API_PEC_SW_gL and class_API_light_estradiol.API_PNEC_gL
+    Marrying class_API_light_estradiol.API_PEC_inf_gL and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_API_light_estradiol.API_PEC_inf_gL and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year and class_API_light_estradiol.API_lm_intercept_kg
+    Marrying class_API_light_ethinylestradiol.API_removal_WWT_2 and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_API_light_ethinylestradiol.API_PEC_SW_gL and class_API_light_ethinylestradiol.API_PNEC_gL
+    Marrying class_API_light_ethinylestradiol.API_PEC_inf_gL and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_API_light_ethinylestradiol.API_PEC_inf_gL and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year and class_API_light_ethinylestradiol.API_lm_intercept_kg
+    Marrying class_API_medium_ciprofloxacin.API_removal_WWT_2 and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_API_medium_ciprofloxacin.API_PEC_SW_gL and class_API_medium_ciprofloxacin.API_PNEC_gL
+    Marrying class_API_medium_ciprofloxacin.API_PEC_inf_gL and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_API_medium_ciprofloxacin.API_PEC_inf_gL and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year and class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    Marrying class_API_medium_diclofenac.API_removal_WWT_2 and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_API_medium_diclofenac.API_PEC_SW_gL and class_API_medium_diclofenac.API_PNEC_gL
+    Marrying class_API_medium_diclofenac.API_PEC_inf_gL and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_API_medium_diclofenac.API_PEC_inf_gL and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year and class_API_medium_diclofenac.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_diclofenac.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_ethinylestradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_estradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_ibuprofen.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_paracetamol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_2 and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_diclofenac.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_spatial.spatial_county_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_ethinylestradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_estradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_ibuprofen.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_paracetamol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_1 and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WW_ML and class_API_medium_diclofenac.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_medium_ciprofloxacin.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_light_ethinylestradiol.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_light_estradiol.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_heavy_ibuprofen.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_WW_ML and class_API_heavy_paracetamol.API_sales_weight_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_diclofenac.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_light_ethinylestradiol.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_light_estradiol.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_heavy_ibuprofen.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_pop_share and class_API_heavy_paracetamol.API_lm_intercept_kg
+    Marrying class_spatial.spatial_county_pop_share and class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_diclofenac.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_spatial.spatial_county_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_spatial.spatial_county_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_diclofenac.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_diclofenac.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_ciprofloxacin.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_medium_ciprofloxacin.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_ethinylestradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_ethinylestradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_ethinylestradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_estradiol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_estradiol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_light_estradiol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_ibuprofen.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_ibuprofen.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_ibuprofen.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_paracetamol.API_PEC_inf_gL
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_paracetamol.API_removal_WWT_2
+    Marrying class_spatial.spatial_county_WWT_0 and class_API_heavy_paracetamol.API_removal_WWT_1
+    Marrying class_spatial.spatial_county_WW_Lpd and class_spatial.spatial_county_pop_share
+    Marrying API_RQ_FW_Diclofenac and API_RQ_FW_Paracetamol
+    Marrying API_RQ_FW_Diclofenac and API_RQ_FW_Ibuprofen
+    Marrying master_pop_mill and class_spatial.spatial_county_WW_Lpd
+    Marrying master_pop_mill and class_spatial.spatial_county_pop_share
+    Marrying master_pop_mill and class_API_medium_diclofenac.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_light_ethinylestradiol.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_light_estradiol.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_heavy_ibuprofen.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_pop_mill and class_API_heavy_paracetamol.API_lm_intercept_kg
+    Marrying master_pop_mill and class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and master_pop_scenario
+    Marrying master_year and class_spatial.spatial_county_pop_share
+    Marrying master_year and class_API_medium_diclofenac.API_lm_intercept_kg
+    Marrying master_year and class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    Marrying master_year and class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_light_ethinylestradiol.API_lm_intercept_kg
+    Marrying master_year and class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_light_estradiol.API_lm_intercept_kg
+    Marrying master_year and class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_heavy_ibuprofen.API_lm_intercept_kg
+    Marrying master_year and class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_year and class_API_heavy_paracetamol.API_lm_intercept_kg
+    Marrying master_year and class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+    Marrying master_county and master_WWT_scenario
+
+
+Triangulating prime component with 4 members:
+    PRQ_1_Total, PRQ_1_Painkillers, PRQ_1_Antibiotics, PRQ_1_Estrogens
+This component is a clique of cost 16
+
+Triangulating prime component with 4 members:
+    SumRQ_Total, SumRQ_Antibiotics, SumRQ_Estrogens, SumRQ_Painkillers
+This component is a clique of cost 1296
+
+Triangulating prime component with 3 members:
+    master_pop_mill, master_pop_scenario, master_year
+This component is a clique of cost 36
+
+Triangulating prime component with 93 members:
+    PRQ_1_Painkillers, PRQ_1_Antibiotics, PRQ_1_Estrogens, SumRQ_Antibiotics,
+    SumRQ_Estrogens, SumRQ_Painkillers,
+    class_API_heavy_paracetamol.API_total_WWT_removal,
+    class_API_heavy_paracetamol.API_PNEC_gL,
+    class_API_heavy_paracetamol.API_RQ_FW,
+    class_API_heavy_paracetamol.API_removal_WWT_1,
+    class_API_heavy_paracetamol.API_removal_WWT_2,
+    class_API_heavy_paracetamol.API_PEC_SW_gL,
+    class_API_heavy_paracetamol.API_PEC_eff_gL,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_lm_intercept_kg,
+    class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year,
+    class_API_heavy_paracetamol.API_sales_weight_kg, API_RQ_FW_Paracetamol,
+    API_heavy_ibuprofen, API_heavy_paracetamol, API_RQ_FW_Ibuprofen,
+    class_API_heavy_ibuprofen.API_total_WWT_removal,
+    class_API_heavy_ibuprofen.API_PNEC_gL, class_API_heavy_ibuprofen.API_RQ_FW,
+    class_API_heavy_ibuprofen.API_removal_WWT_1,
+    class_API_heavy_ibuprofen.API_removal_WWT_2,
+    class_API_heavy_ibuprofen.API_PEC_SW_gL,
+    class_API_heavy_ibuprofen.API_PEC_eff_gL,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_lm_intercept_kg,
+    class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year,
+    class_API_heavy_ibuprofen.API_sales_weight_kg, API_RQ_FW_Ethinylestradiol,
+    API_RQ_FW_Estradiol, API_light_estradiol, API_light_ethinylestradiol,
+    class_API_light_estradiol.API_total_WWT_removal,
+    class_API_light_estradiol.API_PNEC_gL, class_API_light_estradiol.API_RQ_FW,
+    class_API_light_estradiol.API_removal_WWT_1,
+    class_API_light_estradiol.API_removal_WWT_2,
+    class_API_light_estradiol.API_PEC_SW_gL,
+    class_API_light_estradiol.API_PEC_eff_gL,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_lm_intercept_kg,
+    class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year,
+    class_API_light_estradiol.API_sales_weight_kg,
+    class_API_light_ethinylestradiol.API_total_WWT_removal,
+    class_API_light_ethinylestradiol.API_PNEC_gL,
+    class_API_light_ethinylestradiol.API_RQ_FW,
+    class_API_light_ethinylestradiol.API_removal_WWT_1,
+    class_API_light_ethinylestradiol.API_removal_WWT_2,
+    class_API_light_ethinylestradiol.API_PEC_SW_gL,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_lm_intercept_kg,
+    class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year,
+    class_API_light_ethinylestradiol.API_sales_weight_kg,
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal,
+    class_API_medium_ciprofloxacin.API_PNEC_gL,
+    class_API_medium_ciprofloxacin.API_RQ_FW,
+    class_API_medium_ciprofloxacin.API_removal_WWT_1,
+    class_API_medium_ciprofloxacin.API_removal_WWT_2,
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL,
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_lm_intercept_kg,
+    class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year,
+    class_API_medium_ciprofloxacin.API_sales_weight_kg,
+    class_API_medium_diclofenac.API_total_WWT_removal,
+    class_API_medium_diclofenac.API_PNEC_gL,
+    class_API_medium_diclofenac.API_RQ_FW,
+    class_API_medium_diclofenac.API_removal_WWT_1,
+    class_API_medium_diclofenac.API_removal_WWT_2,
+    class_API_medium_diclofenac.API_PEC_SW_gL,
+    class_API_medium_diclofenac.API_PEC_eff_gL,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_lm_intercept_kg,
+    class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year,
+    class_API_medium_diclofenac.API_sales_weight_kg,
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WW_ML, class_spatial.spatial_county_pop_share,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_WW_Lpd,
+    API_medium_diclofenac, API_RQ_FW_Diclofenac, master_pop_mill, master_year,
+    master_county
+
+    Using the best greedy heuristic for triangulation
+
+
+Triangulating prime component with 5 members:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, master_WWT_scenario, master_county
+This component is a clique of cost 1800
+
+
+Total cost of triangulation for all prime components is 188294212
+
+
+Elimination sequence:
+
+    master_pop_scenario
+    SumRQ_Total
+    SumRQ_Antibiotics
+    class_API_medium_diclofenac.API_PNEC_gL
+    class_API_medium_diclofenac.API_PEC_SW_gL
+    class_API_medium_diclofenac.API_RQ_FW
+    class_API_medium_ciprofloxacin.API_PNEC_gL
+    class_API_medium_ciprofloxacin.API_RQ_FW
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL
+    class_API_light_estradiol.API_PNEC_gL
+    class_API_light_estradiol.API_PEC_SW_gL
+    class_API_light_estradiol.API_RQ_FW
+    class_API_light_ethinylestradiol.API_PNEC_gL
+    class_API_light_ethinylestradiol.API_PEC_SW_gL
+    class_API_light_ethinylestradiol.API_RQ_FW
+    class_API_heavy_ibuprofen.API_PNEC_gL
+    class_API_heavy_ibuprofen.API_PEC_SW_gL
+    class_API_heavy_ibuprofen.API_RQ_FW
+    class_API_heavy_paracetamol.API_PNEC_gL
+    class_API_heavy_paracetamol.API_PEC_SW_gL
+    class_API_heavy_paracetamol.API_RQ_FW
+    SumRQ_Estrogens
+    class_API_light_ethinylestradiol.API_PEC_eff_gL
+    class_API_light_estradiol.API_PEC_eff_gL
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL
+    class_API_medium_diclofenac.API_PEC_eff_gL
+    class_API_heavy_paracetamol.API_PEC_eff_gL
+    class_API_heavy_ibuprofen.API_PEC_eff_gL
+    master_WWT_scenario
+    master_county
+    class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+    class_API_medium_ciprofloxacin.API_lm_intercept_kg
+    class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+    class_API_medium_diclofenac.API_lm_intercept_kg
+    class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+    class_API_light_ethinylestradiol.API_lm_intercept_kg
+    class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+    class_API_light_estradiol.API_lm_intercept_kg
+    class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+    class_API_heavy_paracetamol.API_lm_intercept_kg
+    class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+    class_API_heavy_ibuprofen.API_lm_intercept_kg
+    class_API_light_ethinylestradiol.API_removal_WWT_2
+    class_API_light_ethinylestradiol.API_removal_WWT_1
+    class_API_light_estradiol.API_removal_WWT_2
+    class_API_light_estradiol.API_removal_WWT_1
+    class_API_medium_ciprofloxacin.API_removal_WWT_2
+    class_API_medium_ciprofloxacin.API_removal_WWT_1
+    class_API_medium_diclofenac.API_removal_WWT_2
+    class_API_medium_diclofenac.API_removal_WWT_1
+    class_API_heavy_paracetamol.API_removal_WWT_2
+    class_API_heavy_paracetamol.API_removal_WWT_1
+    class_API_heavy_ibuprofen.API_removal_WWT_2
+    class_API_heavy_ibuprofen.API_removal_WWT_1
+    class_spatial.spatial_county_WW_Lpd
+    class_API_medium_diclofenac.API_sales_weight_kg
+    class_API_medium_ciprofloxacin.API_sales_weight_kg
+    class_API_light_estradiol.API_sales_weight_kg
+    class_API_light_ethinylestradiol.API_sales_weight_kg
+    class_API_medium_diclofenac.API_total_WWT_removal
+    class_API_medium_ciprofloxacin.API_total_WWT_removal
+    class_API_light_estradiol.API_total_WWT_removal
+    class_API_light_ethinylestradiol.API_total_WWT_removal
+    class_API_heavy_ibuprofen.API_sales_weight_kg
+    class_API_heavy_paracetamol.API_sales_weight_kg
+    class_API_heavy_ibuprofen.API_total_WWT_removal
+    class_API_heavy_paracetamol.API_total_WWT_removal
+    class_API_light_ethinylestradiol.API_PEC_inf_gL
+    API_light_ethinylestradiol
+    class_API_light_estradiol.API_PEC_inf_gL
+    API_light_estradiol
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL
+    API_medium_ciprofloxacin
+    class_API_medium_diclofenac.API_PEC_inf_gL
+    API_medium_diclofenac
+    class_API_heavy_paracetamol.API_PEC_inf_gL
+    API_heavy_paracetamol
+    class_API_heavy_ibuprofen.API_PEC_inf_gL
+    API_heavy_ibuprofen
+    API_RQ_FW_Diclofenac
+    API_RQ_FW_Ibuprofen
+    API_RQ_FW_Paracetamol
+    SumRQ_Painkillers
+    class_spatial.spatial_county_WW_ML
+    master_year
+    master_pop_mill
+    class_spatial.spatial_county_pop_share
+    class_spatial.spatial_county_WWT_0
+    class_spatial.spatial_county_WWT_1
+    class_spatial.spatial_county_WWT_2
+    API_RQ_FW_Estradiol
+    API_RQ_FW_Ethinylestradiol
+    API_RQ_FW_Ciprofloxacin
+    PRQ_1_Total
+    PRQ_1_Antibiotics
+    PRQ_1_Estrogens
+    PRQ_1_Painkillers
+
+
+Cliques:
+
+Clique 66, 4 members, table size = 16:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, PRQ_1_Antibiotics, PRQ_1_Total
+
+Clique 65, 4 members, table size = 48:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, PRQ_1_Antibiotics,
+    API_RQ_FW_Ciprofloxacin
+
+Clique 64, 5 members, table size = 864:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, API_RQ_FW_Ciprofloxacin,
+    API_RQ_FW_Ethinylestradiol, API_RQ_FW_Estradiol
+
+Clique 63, 12 members, table size = 83980800:
+    PRQ_1_Painkillers, API_RQ_FW_Ciprofloxacin, API_RQ_FW_Ethinylestradiol,
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, SumRQ_Painkillers
+
+Clique 62, 12 members, table size = 83980800:
+    PRQ_1_Painkillers, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, SumRQ_Painkillers,
+    API_RQ_FW_Paracetamol, API_RQ_FW_Ibuprofen, API_RQ_FW_Diclofenac
+
+Clique 61, 10 members, table size = 2332800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL
+
+Clique 60, 7 members, table size = 32400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Ibuprofen,
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal
+
+Clique 59, 8 members, table size = 135000:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal,
+    class_API_heavy_ibuprofen.API_removal_WWT_1,
+    class_API_heavy_ibuprofen.API_removal_WWT_2
+
+Clique 58, 5 members, table size = 2592:
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal,
+    class_API_heavy_ibuprofen.API_PEC_eff_gL
+
+Clique 57, 4 members, table size = 432:
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_eff_gL,
+    class_API_heavy_ibuprofen.API_RQ_FW
+
+Clique 56, 4 members, table size = 432:
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_PEC_eff_gL,
+    class_API_heavy_ibuprofen.API_RQ_FW,
+    class_API_heavy_ibuprofen.API_PEC_SW_gL
+
+Clique 55, 4 members, table size = 144:
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_RQ_FW,
+    class_API_heavy_ibuprofen.API_PEC_SW_gL,
+    class_API_heavy_ibuprofen.API_PNEC_gL
+
+Clique 54, 7 members, table size = 36288:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_sales_weight_kg
+
+Clique 53, 7 members, table size = 4032:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_sales_weight_kg,
+    class_API_heavy_ibuprofen.API_lm_intercept_kg,
+    class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year
+
+Clique 52, 10 members, table size = 2332800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL
+
+Clique 51, 7 members, table size = 32400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Paracetamol,
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal
+
+Clique 50, 8 members, table size = 135000:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal,
+    class_API_heavy_paracetamol.API_removal_WWT_1,
+    class_API_heavy_paracetamol.API_removal_WWT_2
+
+Clique 49, 5 members, table size = 2592:
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal,
+    class_API_heavy_paracetamol.API_PEC_eff_gL
+
+Clique 48, 4 members, table size = 432:
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_eff_gL,
+    class_API_heavy_paracetamol.API_RQ_FW
+
+Clique 47, 4 members, table size = 432:
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_PEC_eff_gL,
+    class_API_heavy_paracetamol.API_RQ_FW,
+    class_API_heavy_paracetamol.API_PEC_SW_gL
+
+Clique 46, 4 members, table size = 144:
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_RQ_FW,
+    class_API_heavy_paracetamol.API_PEC_SW_gL,
+    class_API_heavy_paracetamol.API_PNEC_gL
+
+Clique 45, 7 members, table size = 36288:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_sales_weight_kg
+
+Clique 44, 7 members, table size = 4032:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_sales_weight_kg,
+    class_API_heavy_paracetamol.API_lm_intercept_kg,
+    class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year
+
+Clique 43, 3 members, table size = 36:
+    master_pop_mill, master_year, master_pop_scenario
+
+Clique 42, 7 members, table size = 64800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, class_spatial.spatial_county_WW_ML,
+    class_spatial.spatial_county_WW_Lpd
+
+Clique 41, 6 members, table size = 21600:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    class_spatial.spatial_county_WW_Lpd, master_county
+
+Clique 40, 5 members, table size = 1800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, master_county, master_WWT_scenario
+
+Clique 39, 10 members, table size = 3499200:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL
+
+Clique 38, 7 members, table size = 40500:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Diclofenac,
+    API_medium_diclofenac, class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal
+
+Clique 37, 8 members, table size = 168750:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal,
+    class_API_medium_diclofenac.API_removal_WWT_1,
+    class_API_medium_diclofenac.API_removal_WWT_2
+
+Clique 36, 5 members, table size = 3240:
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal,
+    class_API_medium_diclofenac.API_PEC_eff_gL
+
+Clique 35, 4 members, table size = 648:
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_eff_gL,
+    class_API_medium_diclofenac.API_RQ_FW
+
+Clique 34, 4 members, table size = 648:
+    API_medium_diclofenac, class_API_medium_diclofenac.API_PEC_eff_gL,
+    class_API_medium_diclofenac.API_RQ_FW,
+    class_API_medium_diclofenac.API_PEC_SW_gL
+
+Clique 33, 4 members, table size = 324:
+    API_medium_diclofenac, class_API_medium_diclofenac.API_RQ_FW,
+    class_API_medium_diclofenac.API_PEC_SW_gL,
+    class_API_medium_diclofenac.API_PNEC_gL
+
+Clique 32, 7 members, table size = 62208:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_sales_weight_kg
+
+Clique 31, 7 members, table size = 15552:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_medium_diclofenac, class_API_medium_diclofenac.API_sales_weight_kg,
+    class_API_medium_diclofenac.API_lm_intercept_kg,
+    class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year
+
+Clique 30, 10 members, table size = 3499200:
+    API_RQ_FW_Ciprofloxacin, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL
+
+Clique 29, 7 members, table size = 40500:
+    API_RQ_FW_Ciprofloxacin, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal
+
+Clique 28, 8 members, table size = 168750:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal,
+    class_API_medium_ciprofloxacin.API_removal_WWT_1,
+    class_API_medium_ciprofloxacin.API_removal_WWT_2
+
+Clique 27, 5 members, table size = 3240:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal,
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL
+
+Clique 26, 4 members, table size = 648:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL,
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL
+
+Clique 25, 4 members, table size = 648:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL,
+    class_API_medium_ciprofloxacin.API_RQ_FW
+
+Clique 24, 4 members, table size = 324:
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_PEC_SW_gL,
+    class_API_medium_ciprofloxacin.API_RQ_FW,
+    class_API_medium_ciprofloxacin.API_PNEC_gL
+
+Clique 23, 7 members, table size = 62208:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_sales_weight_kg
+
+Clique 22, 7 members, table size = 15552:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_sales_weight_kg,
+    class_API_medium_ciprofloxacin.API_lm_intercept_kg,
+    class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year
+
+Clique 21, 10 members, table size = 3499200:
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL
+
+Clique 20, 7 members, table size = 40500:
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_light_estradiol, class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal
+
+Clique 19, 8 members, table size = 168750:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal,
+    class_API_light_estradiol.API_removal_WWT_1,
+    class_API_light_estradiol.API_removal_WWT_2
+
+Clique 18, 5 members, table size = 3240:
+    API_RQ_FW_Estradiol, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal,
+    class_API_light_estradiol.API_PEC_eff_gL
+
+Clique 17, 4 members, table size = 648:
+    API_RQ_FW_Estradiol, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_eff_gL,
+    class_API_light_estradiol.API_RQ_FW
+
+Clique 16, 4 members, table size = 648:
+    API_light_estradiol, class_API_light_estradiol.API_PEC_eff_gL,
+    class_API_light_estradiol.API_RQ_FW,
+    class_API_light_estradiol.API_PEC_SW_gL
+
+Clique 15, 4 members, table size = 324:
+    API_light_estradiol, class_API_light_estradiol.API_RQ_FW,
+    class_API_light_estradiol.API_PEC_SW_gL,
+    class_API_light_estradiol.API_PNEC_gL
+
+Clique 14, 7 members, table size = 54432:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_sales_weight_kg
+
+Clique 13, 7 members, table size = 13608:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_light_estradiol, class_API_light_estradiol.API_sales_weight_kg,
+    class_API_light_estradiol.API_lm_intercept_kg,
+    class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year
+
+Clique 12, 10 members, table size = 3499200:
+    API_RQ_FW_Ethinylestradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL
+
+Clique 11, 7 members, table size = 40500:
+    API_RQ_FW_Ethinylestradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal
+
+Clique 10, 8 members, table size = 168750:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal,
+    class_API_light_ethinylestradiol.API_removal_WWT_1,
+    class_API_light_ethinylestradiol.API_removal_WWT_2
+
+Clique 9, 5 members, table size = 3240:
+    API_RQ_FW_Ethinylestradiol, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL
+
+Clique 8, 4 members, table size = 648:
+    API_RQ_FW_Ethinylestradiol, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL,
+    class_API_light_ethinylestradiol.API_RQ_FW
+
+Clique 7, 4 members, table size = 648:
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL,
+    class_API_light_ethinylestradiol.API_RQ_FW,
+    class_API_light_ethinylestradiol.API_PEC_SW_gL
+
+Clique 6, 4 members, table size = 324:
+    API_light_ethinylestradiol, class_API_light_ethinylestradiol.API_RQ_FW,
+    class_API_light_ethinylestradiol.API_PEC_SW_gL,
+    class_API_light_ethinylestradiol.API_PNEC_gL
+
+Clique 5, 7 members, table size = 54432:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_sales_weight_kg
+
+Clique 4, 7 members, table size = 13608:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_sales_weight_kg,
+    class_API_light_ethinylestradiol.API_lm_intercept_kg,
+    class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year
+
+Clique 3, 5 members, table size = 7776:
+    API_RQ_FW_Ciprofloxacin, API_RQ_FW_Ethinylestradiol, API_RQ_FW_Estradiol,
+    SumRQ_Painkillers, SumRQ_Estrogens
+
+Clique 2, 4 members, table size = 1296:
+    API_RQ_FW_Ciprofloxacin, SumRQ_Painkillers, SumRQ_Estrogens,
+    SumRQ_Antibiotics
+
+Clique 1, 4 members, table size = 1296:
+    SumRQ_Painkillers, SumRQ_Estrogens, SumRQ_Antibiotics, SumRQ_Total
+
+Total clique table size: 188294212
+
+
+The junction forest:
+
+Creating junction tree with clique 66 as root ...
+
+Cliques 65 and 66 linked, separator has 3 members and table size = 8:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, PRQ_1_Antibiotics
+
+Cliques 64 and 65 linked, separator has 3 members and table size = 24:
+    PRQ_1_Painkillers, PRQ_1_Estrogens, API_RQ_FW_Ciprofloxacin
+
+Cliques 63 and 64 linked, separator has 4 members and table size = 432:
+    PRQ_1_Painkillers, API_RQ_FW_Ciprofloxacin, API_RQ_FW_Ethinylestradiol,
+    API_RQ_FW_Estradiol
+
+Cliques 62 and 63 linked, separator has 9 members and table size = 388800:
+    PRQ_1_Painkillers, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, SumRQ_Painkillers
+
+Cliques 61 and 62 linked, separator has 8 members and table size = 194400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Ibuprofen
+
+Cliques 60 and 61 linked, separator has 6 members and table size = 5400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Ibuprofen,
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_PEC_inf_gL
+
+Cliques 59 and 60 linked, separator has 6 members and table size = 5400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal
+
+Cliques 58 and 60 linked, separator has 4 members and table size = 432:
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL,
+    class_API_heavy_ibuprofen.API_total_WWT_removal
+
+Cliques 57 and 58 linked, separator has 3 members and table size = 72:
+    API_RQ_FW_Ibuprofen, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_eff_gL
+
+Cliques 56 and 57 linked, separator has 3 members and table size = 72:
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_PEC_eff_gL,
+    class_API_heavy_ibuprofen.API_RQ_FW
+
+Cliques 55 and 56 linked, separator has 3 members and table size = 72:
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_RQ_FW,
+    class_API_heavy_ibuprofen.API_PEC_SW_gL
+
+Cliques 54 and 61 linked, separator has 6 members and table size = 5184:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_heavy_ibuprofen,
+    class_API_heavy_ibuprofen.API_PEC_inf_gL
+
+Cliques 53 and 54 linked, separator has 5 members and table size = 1008:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_heavy_ibuprofen, class_API_heavy_ibuprofen.API_sales_weight_kg
+
+Cliques 52 and 62 linked, separator has 8 members and table size = 194400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Paracetamol
+
+Cliques 51 and 52 linked, separator has 6 members and table size = 5400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Paracetamol,
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_PEC_inf_gL
+
+Cliques 50 and 51 linked, separator has 6 members and table size = 5400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal
+
+Cliques 49 and 51 linked, separator has 4 members and table size = 432:
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL,
+    class_API_heavy_paracetamol.API_total_WWT_removal
+
+Cliques 48 and 49 linked, separator has 3 members and table size = 72:
+    API_RQ_FW_Paracetamol, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_eff_gL
+
+Cliques 47 and 48 linked, separator has 3 members and table size = 72:
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_PEC_eff_gL,
+    class_API_heavy_paracetamol.API_RQ_FW
+
+Cliques 46 and 47 linked, separator has 3 members and table size = 72:
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_RQ_FW,
+    class_API_heavy_paracetamol.API_PEC_SW_gL
+
+Cliques 45 and 52 linked, separator has 6 members and table size = 5184:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_heavy_paracetamol,
+    class_API_heavy_paracetamol.API_PEC_inf_gL
+
+Cliques 44 and 45 linked, separator has 5 members and table size = 1008:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_heavy_paracetamol, class_API_heavy_paracetamol.API_sales_weight_kg
+
+Cliques 43 and 44 linked, separator has 2 members and table size = 12:
+    master_pop_mill, master_year
+
+Cliques 42 and 52 linked, separator has 6 members and table size = 16200:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, class_spatial.spatial_county_WW_ML
+
+Cliques 41 and 42 linked, separator has 5 members and table size = 1800:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    class_spatial.spatial_county_WW_Lpd
+
+Cliques 40 and 41 linked, separator has 4 members and table size = 900:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, master_county
+
+Cliques 39 and 62 linked, separator has 8 members and table size = 194400:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, class_spatial.spatial_county_pop_share,
+    master_pop_mill, master_year, class_spatial.spatial_county_WW_ML,
+    API_RQ_FW_Diclofenac
+
+Cliques 38 and 39 linked, separator has 6 members and table size = 8100:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_RQ_FW_Diclofenac,
+    API_medium_diclofenac, class_API_medium_diclofenac.API_PEC_inf_gL
+
+Cliques 37 and 38 linked, separator has 6 members and table size = 6750:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal
+
+Cliques 36 and 38 linked, separator has 4 members and table size = 540:
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL,
+    class_API_medium_diclofenac.API_total_WWT_removal
+
+Cliques 35 and 36 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Diclofenac, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_eff_gL
+
+Cliques 34 and 35 linked, separator has 3 members and table size = 108:
+    API_medium_diclofenac, class_API_medium_diclofenac.API_PEC_eff_gL,
+    class_API_medium_diclofenac.API_RQ_FW
+
+Cliques 33 and 34 linked, separator has 3 members and table size = 108:
+    API_medium_diclofenac, class_API_medium_diclofenac.API_RQ_FW,
+    class_API_medium_diclofenac.API_PEC_SW_gL
+
+Cliques 32 and 39 linked, separator has 6 members and table size = 7776:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_diclofenac,
+    class_API_medium_diclofenac.API_PEC_inf_gL
+
+Cliques 31 and 32 linked, separator has 5 members and table size = 1728:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_medium_diclofenac, class_API_medium_diclofenac.API_sales_weight_kg
+
+Cliques 30 and 63 linked, separator has 8 members and table size = 194400:
+    API_RQ_FW_Ciprofloxacin, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML
+
+Cliques 29 and 30 linked, separator has 6 members and table size = 8100:
+    API_RQ_FW_Ciprofloxacin, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_PEC_inf_gL
+
+Cliques 28 and 29 linked, separator has 6 members and table size = 6750:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal
+
+Cliques 27 and 29 linked, separator has 4 members and table size = 540:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL,
+    class_API_medium_ciprofloxacin.API_total_WWT_removal
+
+Cliques 26 and 27 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL
+
+Cliques 25 and 26 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Ciprofloxacin, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL
+
+Cliques 24 and 25 linked, separator has 3 members and table size = 108:
+    API_medium_ciprofloxacin, class_API_medium_ciprofloxacin.API_PEC_SW_gL,
+    class_API_medium_ciprofloxacin.API_RQ_FW
+
+Cliques 23 and 30 linked, separator has 6 members and table size = 7776:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL
+
+Cliques 22 and 23 linked, separator has 5 members and table size = 1728:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_medium_ciprofloxacin,
+    class_API_medium_ciprofloxacin.API_sales_weight_kg
+
+Cliques 21 and 63 linked, separator has 8 members and table size = 194400:
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML
+
+Cliques 20 and 21 linked, separator has 6 members and table size = 8100:
+    API_RQ_FW_Estradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_light_estradiol, class_API_light_estradiol.API_PEC_inf_gL
+
+Cliques 19 and 20 linked, separator has 6 members and table size = 6750:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal
+
+Cliques 18 and 20 linked, separator has 4 members and table size = 540:
+    API_RQ_FW_Estradiol, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL,
+    class_API_light_estradiol.API_total_WWT_removal
+
+Cliques 17 and 18 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Estradiol, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_eff_gL
+
+Cliques 16 and 17 linked, separator has 3 members and table size = 108:
+    API_light_estradiol, class_API_light_estradiol.API_PEC_eff_gL,
+    class_API_light_estradiol.API_RQ_FW
+
+Cliques 15 and 16 linked, separator has 3 members and table size = 108:
+    API_light_estradiol, class_API_light_estradiol.API_RQ_FW,
+    class_API_light_estradiol.API_PEC_SW_gL
+
+Cliques 14 and 21 linked, separator has 6 members and table size = 7776:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_estradiol,
+    class_API_light_estradiol.API_PEC_inf_gL
+
+Cliques 13 and 14 linked, separator has 5 members and table size = 1512:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_light_estradiol, class_API_light_estradiol.API_sales_weight_kg
+
+Cliques 12 and 63 linked, separator has 8 members and table size = 194400:
+    API_RQ_FW_Ethinylestradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML
+
+Cliques 11 and 12 linked, separator has 6 members and table size = 8100:
+    API_RQ_FW_Ethinylestradiol, class_spatial.spatial_county_WWT_2,
+    class_spatial.spatial_county_WWT_1, class_spatial.spatial_county_WWT_0,
+    API_light_ethinylestradiol, class_API_light_ethinylestradiol.API_PEC_inf_gL
+
+Cliques 10 and 11 linked, separator has 6 members and table size = 6750:
+    class_spatial.spatial_county_WWT_2, class_spatial.spatial_county_WWT_1,
+    class_spatial.spatial_county_WWT_0, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal
+
+Cliques 9 and 11 linked, separator has 4 members and table size = 540:
+    API_RQ_FW_Ethinylestradiol, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL,
+    class_API_light_ethinylestradiol.API_total_WWT_removal
+
+Cliques 8 and 9 linked, separator has 3 members and table size = 108:
+    API_RQ_FW_Ethinylestradiol, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 108:
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_eff_gL,
+    class_API_light_ethinylestradiol.API_RQ_FW
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 108:
+    API_light_ethinylestradiol, class_API_light_ethinylestradiol.API_RQ_FW,
+    class_API_light_ethinylestradiol.API_PEC_SW_gL
+
+Cliques 5 and 12 linked, separator has 6 members and table size = 7776:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    class_spatial.spatial_county_WW_ML, API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_PEC_inf_gL
+
+Cliques 4 and 5 linked, separator has 5 members and table size = 1512:
+    class_spatial.spatial_county_pop_share, master_pop_mill, master_year,
+    API_light_ethinylestradiol,
+    class_API_light_ethinylestradiol.API_sales_weight_kg
+
+Cliques 3 and 63 linked, separator has 4 members and table size = 1296:
+    API_RQ_FW_Ciprofloxacin, API_RQ_FW_Ethinylestradiol, API_RQ_FW_Estradiol,
+    SumRQ_Painkillers
+
+Cliques 2 and 3 linked, separator has 3 members and table size = 216:
+    API_RQ_FW_Ciprofloxacin, SumRQ_Painkillers, SumRQ_Estrogens
+
+Cliques 1 and 2 linked, separator has 3 members and table size = 216:
+    SumRQ_Painkillers, SumRQ_Estrogens, SumRQ_Antibiotics
+
+
+Assignment of potentials to cliques:
+
+    Node PRQ_1_Total assigned to clique 66
+    Node PRQ_1_Painkillers assigned to clique 62
+    Node PRQ_1_Antibiotics assigned to clique 65
+    Node PRQ_1_Estrogens assigned to clique 64
+    Node SumRQ_Total assigned to clique 1
+    Node SumRQ_Antibiotics assigned to clique 2
+    Node SumRQ_Estrogens assigned to clique 3
+    Node SumRQ_Painkillers assigned to clique 62
+    Node class_API_heavy_paracetamol.API_total_WWT_removal assigned to clique 50
+    Node class_API_heavy_paracetamol.API_PNEC_gL assigned to clique 46
+    Node class_API_heavy_paracetamol.API_RQ_FW assigned to clique 46
+    Node class_API_heavy_paracetamol.API_removal_WWT_1 assigned to clique 50
+    Node class_API_heavy_paracetamol.API_removal_WWT_2 assigned to clique 50
+    Node class_API_heavy_paracetamol.API_PEC_SW_gL assigned to clique 47
+    Node class_API_heavy_paracetamol.API_PEC_eff_gL assigned to clique 49
+    Node class_API_heavy_paracetamol.API_PEC_inf_gL assigned to clique 45
+    Node class_API_heavy_paracetamol.API_lm_intercept_kg assigned to clique 44
+    Node class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year assigned to clique 44
+    Node class_API_heavy_paracetamol.API_sales_weight_kg assigned to clique 44
+    Node API_RQ_FW_Paracetamol assigned to clique 48
+    Node API_heavy_ibuprofen assigned to clique 55
+    Node API_heavy_paracetamol assigned to clique 46
+    Node API_RQ_FW_Ibuprofen assigned to clique 57
+    Node class_API_heavy_ibuprofen.API_total_WWT_removal assigned to clique 59
+    Node class_API_heavy_ibuprofen.API_PNEC_gL assigned to clique 55
+    Node class_API_heavy_ibuprofen.API_RQ_FW assigned to clique 55
+    Node class_API_heavy_ibuprofen.API_removal_WWT_1 assigned to clique 59
+    Node class_API_heavy_ibuprofen.API_removal_WWT_2 assigned to clique 59
+    Node class_API_heavy_ibuprofen.API_PEC_SW_gL assigned to clique 56
+    Node class_API_heavy_ibuprofen.API_PEC_eff_gL assigned to clique 58
+    Node class_API_heavy_ibuprofen.API_PEC_inf_gL assigned to clique 54
+    Node class_API_heavy_ibuprofen.API_lm_intercept_kg assigned to clique 53
+    Node class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year assigned to clique 53
+    Node class_API_heavy_ibuprofen.API_sales_weight_kg assigned to clique 53
+    Node API_RQ_FW_Ethinylestradiol assigned to clique 8
+    Node API_RQ_FW_Estradiol assigned to clique 17
+    Node API_light_estradiol assigned to clique 15
+    Node API_light_ethinylestradiol assigned to clique 6
+    Node class_API_light_estradiol.API_total_WWT_removal assigned to clique 19
+    Node class_API_light_estradiol.API_PNEC_gL assigned to clique 15
+    Node class_API_light_estradiol.API_RQ_FW assigned to clique 15
+    Node class_API_light_estradiol.API_removal_WWT_1 assigned to clique 19
+    Node class_API_light_estradiol.API_removal_WWT_2 assigned to clique 19
+    Node class_API_light_estradiol.API_PEC_SW_gL assigned to clique 16
+    Node class_API_light_estradiol.API_PEC_eff_gL assigned to clique 18
+    Node class_API_light_estradiol.API_PEC_inf_gL assigned to clique 14
+    Node class_API_light_estradiol.API_lm_intercept_kg assigned to clique 13
+    Node class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year assigned to clique 13
+    Node class_API_light_estradiol.API_sales_weight_kg assigned to clique 13
+    Node class_API_light_ethinylestradiol.API_total_WWT_removal assigned to clique 10
+    Node class_API_light_ethinylestradiol.API_PNEC_gL assigned to clique 6
+    Node class_API_light_ethinylestradiol.API_RQ_FW assigned to clique 6
+    Node class_API_light_ethinylestradiol.API_removal_WWT_1 assigned to clique 10
+    Node class_API_light_ethinylestradiol.API_removal_WWT_2 assigned to clique 10
+    Node class_API_light_ethinylestradiol.API_PEC_SW_gL assigned to clique 7
+    Node class_API_light_ethinylestradiol.API_PEC_eff_gL assigned to clique 9
+    Node class_API_light_ethinylestradiol.API_PEC_inf_gL assigned to clique 5
+    Node class_API_light_ethinylestradiol.API_lm_intercept_kg assigned to clique 4
+    Node class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year assigned to clique 4
+    Node class_API_light_ethinylestradiol.API_sales_weight_kg assigned to clique 4
+    Node API_RQ_FW_Ciprofloxacin assigned to clique 25
+    Node API_medium_ciprofloxacin assigned to clique 24
+    Node class_API_medium_ciprofloxacin.API_total_WWT_removal assigned to clique 28
+    Node class_API_medium_ciprofloxacin.API_PNEC_gL assigned to clique 24
+    Node class_API_medium_ciprofloxacin.API_RQ_FW assigned to clique 24
+    Node class_API_medium_ciprofloxacin.API_removal_WWT_1 assigned to clique 28
+    Node class_API_medium_ciprofloxacin.API_removal_WWT_2 assigned to clique 28
+    Node class_API_medium_ciprofloxacin.API_PEC_SW_gL assigned to clique 26
+    Node class_API_medium_ciprofloxacin.API_PEC_eff_gL assigned to clique 27
+    Node class_API_medium_ciprofloxacin.API_PEC_inf_gL assigned to clique 23
+    Node class_API_medium_ciprofloxacin.API_lm_intercept_kg assigned to clique 22
+    Node class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year assigned to clique 22
+    Node class_API_medium_ciprofloxacin.API_sales_weight_kg assigned to clique 22
+    Node class_API_medium_diclofenac.API_total_WWT_removal assigned to clique 37
+    Node class_API_medium_diclofenac.API_PNEC_gL assigned to clique 33
+    Node class_API_medium_diclofenac.API_RQ_FW assigned to clique 33
+    Node class_API_medium_diclofenac.API_removal_WWT_1 assigned to clique 37
+    Node class_API_medium_diclofenac.API_removal_WWT_2 assigned to clique 37
+    Node class_API_medium_diclofenac.API_PEC_SW_gL assigned to clique 34
+    Node class_API_medium_diclofenac.API_PEC_eff_gL assigned to clique 36
+    Node class_API_medium_diclofenac.API_PEC_inf_gL assigned to clique 32
+    Node class_API_medium_diclofenac.API_lm_intercept_kg assigned to clique 31
+    Node class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year assigned to clique 31
+    Node class_API_medium_diclofenac.API_sales_weight_kg assigned to clique 31
+    Node class_spatial.spatial_county_WWT_2 assigned to clique 40
+    Node class_spatial.spatial_county_WWT_1 assigned to clique 40
+    Node class_spatial.spatial_county_WW_ML assigned to clique 42
+    Node class_spatial.spatial_county_pop_share assigned to clique 41
+    Node class_spatial.spatial_county_WWT_0 assigned to clique 40
+    Node class_spatial.spatial_county_WW_Lpd assigned to clique 41
+    Node API_medium_diclofenac assigned to clique 33
+    Node API_RQ_FW_Diclofenac assigned to clique 35
+    Node master_pop_mill assigned to clique 43
+    Node master_WWT_scenario assigned to clique 40
+    Node master_pop_scenario assigned to clique 43
+    Node master_year assigned to clique 43
+    Node master_county assigned to clique 40
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    PRQ_1_Total:
+	false      2.29383e-07
+	true       1
+
+    PRQ_1_Painkillers:
+	false      0.00328658
+	true       0.996713
+
+    PRQ_1_Antibiotics:
+	false      0.0346192
+	true       0.965381
+
+    PRQ_1_Estrogens:
+	false      0.00157946
+	true       0.998421
+
+    SumRQ_Total:
+	state0   3.04866e-09
+	state1   0.00017105
+	state2   0.0285035
+	state3   0.453765
+	state4   0.486124
+	state5   0.0314363
+
+    SumRQ_Antibiotics:
+	state0   0.0346192
+	state1   0.194068
+	state2   0.430512
+	state3   0.277343
+	state4   0.0634573
+	state5   0
+
+    SumRQ_Estrogens:
+	state0   0.000758139
+	state1   0.0152873
+	state2   0.169507
+	state3   0.643686
+	state4   0.170762
+	state5   0
+
+    SumRQ_Painkillers:
+	state0   0.000546887
+	state1   0.0843566
+	state2   0.542268
+	state3   0.309265
+	state4   0.0635632
+	state5   5.73222e-10
+
+    class_API_heavy_paracetamol.API_total_WWT_removal:
+	state0   0
+	state1   0.354167
+	state2   0.5
+	state3   0.104167
+	state4   0
+	state5   0.0416667
+
+    class_API_heavy_paracetamol.API_PNEC_gL:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_paracetamol.API_RQ_FW:
+	state0   0.434212
+	state1   0.562653
+	state2   0.00313422
+	state3   0
+	state4   0
+	state5   0
+
+    class_API_heavy_paracetamol.API_removal_WWT_1:
+	state0   0.5
+	state1   0
+	state2   0.5
+	state3   0
+	state4   0
+
+    class_API_heavy_paracetamol.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.5
+	state3   0.5
+	state4   0
+
+    class_API_heavy_paracetamol.API_PEC_SW_gL:
+	state0   0
+	state1   0
+	state2   0.0131346
+	state3   0.947688
+	state4   0.0391778
+	state5   0
+
+    class_API_heavy_paracetamol.API_PEC_eff_gL:
+	state0   0
+	state1   0
+	state2   0
+	state3   0.0131346
+	state4   0.947688
+	state5   0.0391778
+
+    class_API_heavy_paracetamol.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0
+	state3   0
+	state4   0.102267
+	state5   0.897733
+
+    class_API_heavy_paracetamol.API_lm_intercept_kg:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_paracetamol.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_paracetamol.API_sales_weight_kg:
+	state0   0
+	state1   0.0625
+	state2   0.583333
+	state3   0.277778
+	state4   0.0555556
+	state5   0.0208333
+	state6   0
+
+    API_RQ_FW_Paracetamol:
+	state0   0.434212
+	state1   0.562653
+	state2   0.00313422
+	state3   0
+	state4   0
+	state5   0
+
+    API_heavy_ibuprofen:
+	paracetamol 0.5
+	ibuprofen  0.5
+
+    API_heavy_paracetamol:
+	paracetamol 0.5
+	ibuprofen  0.5
+
+    API_RQ_FW_Ibuprofen:
+	state0   0.434212
+	state1   0.562653
+	state2   0.00313422
+	state3   0
+	state4   0
+	state5   0
+
+    class_API_heavy_ibuprofen.API_total_WWT_removal:
+	state0   0
+	state1   0.354167
+	state2   0.5
+	state3   0.104167
+	state4   0
+	state5   0.0416667
+
+    class_API_heavy_ibuprofen.API_PNEC_gL:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_ibuprofen.API_RQ_FW:
+	state0   0.434212
+	state1   0.562653
+	state2   0.00313422
+	state3   0
+	state4   0
+	state5   0
+
+    class_API_heavy_ibuprofen.API_removal_WWT_1:
+	state0   0.5
+	state1   0
+	state2   0.5
+	state3   0
+	state4   0
+
+    class_API_heavy_ibuprofen.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.5
+	state3   0.5
+	state4   0
+
+    class_API_heavy_ibuprofen.API_PEC_SW_gL:
+	state0   0
+	state1   0
+	state2   0.0131346
+	state3   0.947688
+	state4   0.0391778
+	state5   0
+
+    class_API_heavy_ibuprofen.API_PEC_eff_gL:
+	state0   0
+	state1   0
+	state2   0
+	state3   0.0131346
+	state4   0.947688
+	state5   0.0391778
+
+    class_API_heavy_ibuprofen.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0
+	state3   0
+	state4   0.102267
+	state5   0.897733
+
+    class_API_heavy_ibuprofen.API_lm_intercept_kg:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_ibuprofen.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.5
+	state1   0.5
+
+    class_API_heavy_ibuprofen.API_sales_weight_kg:
+	state0   0
+	state1   0.0625
+	state2   0.583333
+	state3   0.277778
+	state4   0.0555556
+	state5   0.0208333
+	state6   0
+
+    API_RQ_FW_Ethinylestradiol:
+	state0   0.0170663
+	state1   0.132061
+	state2   0.361424
+	state3   0.489448
+	state4   0
+	state5   0
+
+    API_RQ_FW_Estradiol:
+	state0   0.0170663
+	state1   0.132061
+	state2   0.361424
+	state3   0.489448
+	state4   0
+	state5   0
+
+    API_light_estradiol:
+	levonorgestrel 0.333333
+	ethinylestradiol 0.333333
+	estradiol  0.333333
+
+    API_light_ethinylestradiol:
+	levonorgestrel 0.333333
+	ethinylestradiol 0.333333
+	estradiol  0.333333
+
+    class_API_light_estradiol.API_total_WWT_removal:
+	state0   0
+	state1   0.222222
+	state2   0.319444
+	state3   0.305556
+	state4   0.152778
+
+    class_API_light_estradiol.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_estradiol.API_RQ_FW:
+	state0   0.0170663
+	state1   0.132061
+	state2   0.361424
+	state3   0.489448
+	state4   0
+	state5   0
+
+    class_API_light_estradiol.API_removal_WWT_1:
+	state0   0.666667
+	state1   0.333333
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_light_estradiol.API_removal_WWT_2:
+	state0   0
+	state1   0.333333
+	state2   0.333333
+	state3   0.333333
+	state4   0
+
+    class_API_light_estradiol.API_PEC_SW_gL:
+	state0   8.33422e-05
+	state1   0.00120446
+	state2   0.014564
+	state3   0.11305
+	state4   0.871099
+	state5   0
+
+    class_API_light_estradiol.API_PEC_eff_gL:
+	state0   8.33422e-05
+	state1   0.00120446
+	state2   0.014564
+	state3   0.11305
+	state4   0.871099
+	state5   0
+
+    class_API_light_estradiol.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0017037
+	state3   0.0158444
+	state4   0.235462
+	state5   0.74699
+
+    class_API_light_estradiol.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_estradiol.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_estradiol.API_sales_weight_kg:
+	state0   0.106481
+	state1   0.462963
+	state2   0.296296
+	state3   0.106481
+	state4   0.0277778
+	state5   0
+	state6   0
+
+    class_API_light_ethinylestradiol.API_total_WWT_removal:
+	state0   0
+	state1   0.222222
+	state2   0.319444
+	state3   0.305556
+	state4   0.152778
+
+    class_API_light_ethinylestradiol.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_ethinylestradiol.API_RQ_FW:
+	state0   0.0170663
+	state1   0.132061
+	state2   0.361424
+	state3   0.489448
+	state4   0
+	state5   0
+
+    class_API_light_ethinylestradiol.API_removal_WWT_1:
+	state0   0.666667
+	state1   0.333333
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_light_ethinylestradiol.API_removal_WWT_2:
+	state0   0
+	state1   0.333333
+	state2   0.333333
+	state3   0.333333
+	state4   0
+
+    class_API_light_ethinylestradiol.API_PEC_SW_gL:
+	state0   8.33422e-05
+	state1   0.00120446
+	state2   0.014564
+	state3   0.11305
+	state4   0.871099
+	state5   0
+
+    class_API_light_ethinylestradiol.API_PEC_eff_gL:
+	state0   8.33422e-05
+	state1   0.00120446
+	state2   0.014564
+	state3   0.11305
+	state4   0.871099
+	state5   0
+
+    class_API_light_ethinylestradiol.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0017037
+	state3   0.0158444
+	state4   0.235462
+	state5   0.74699
+
+    class_API_light_ethinylestradiol.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_ethinylestradiol.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_light_ethinylestradiol.API_sales_weight_kg:
+	state0   0.106481
+	state1   0.462963
+	state2   0.296296
+	state3   0.106481
+	state4   0.0277778
+	state5   0
+	state6   0
+
+    API_RQ_FW_Ciprofloxacin:
+	state0   0.0346192
+	state1   0.194068
+	state2   0.430512
+	state3   0.277343
+	state4   0.0634573
+	state5   0
+
+    API_medium_ciprofloxacin:
+	amoxicillin 0.333333
+	ciprofloxacin 0.333333
+	diclofenac 0.333333
+
+    class_API_medium_ciprofloxacin.API_total_WWT_removal:
+	state0   0
+	state1   0.486111
+	state2   0.361111
+	state3   0.0694444
+	state4   0.0833333
+
+    class_API_medium_ciprofloxacin.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_ciprofloxacin.API_RQ_FW:
+	state0   0.0346192
+	state1   0.194068
+	state2   0.430512
+	state3   0.277343
+	state4   0.0634573
+	state5   0
+
+    class_API_medium_ciprofloxacin.API_removal_WWT_1:
+	state0   0.333333
+	state1   0.666667
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_medium_ciprofloxacin.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.333333
+	state3   0.666667
+	state4   0
+
+    class_API_medium_ciprofloxacin.API_PEC_SW_gL:
+	state0   0.000961138
+	state1   0.100574
+	state2   0.43634
+	state3   0.462125
+	state4   0
+	state5   0
+
+    class_API_medium_ciprofloxacin.API_PEC_eff_gL:
+	state0   0.000961138
+	state1   0.0110439
+	state2   0.0895297
+	state3   0.43634
+	state4   0.462125
+	state5   0
+
+    class_API_medium_ciprofloxacin.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0145333
+	state3   0.464951
+	state4   0.459012
+	state5   0.0615037
+
+    class_API_medium_ciprofloxacin.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_ciprofloxacin.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_ciprofloxacin.API_sales_weight_kg:
+	state0   0
+	state1   0
+	state2   0.0416667
+	state3   0.328704
+	state4   0.490741
+	state5   0.087963
+	state6   0.0509259
+	state7   0
+
+    class_API_medium_diclofenac.API_total_WWT_removal:
+	state0   0
+	state1   0.486111
+	state2   0.361111
+	state3   0.0694444
+	state4   0.0833333
+
+    class_API_medium_diclofenac.API_PNEC_gL:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_diclofenac.API_RQ_FW:
+	state0   0.0346192
+	state1   0.194068
+	state2   0.430512
+	state3   0.277343
+	state4   0.0634573
+	state5   0
+
+    class_API_medium_diclofenac.API_removal_WWT_1:
+	state0   0.333333
+	state1   0.666667
+	state2   0
+	state3   0
+	state4   0
+
+    class_API_medium_diclofenac.API_removal_WWT_2:
+	state0   0
+	state1   0
+	state2   0.333333
+	state3   0.666667
+	state4   0
+
+    class_API_medium_diclofenac.API_PEC_SW_gL:
+	state0   0.000961138
+	state1   0.100574
+	state2   0.43634
+	state3   0.462125
+	state4   0
+	state5   0
+
+    class_API_medium_diclofenac.API_PEC_eff_gL:
+	state0   0.000961138
+	state1   0.0110439
+	state2   0.0895297
+	state3   0.43634
+	state4   0.462125
+	state5   0
+
+    class_API_medium_diclofenac.API_PEC_inf_gL:
+	state0   0
+	state1   0
+	state2   0.0145333
+	state3   0.464951
+	state4   0.459012
+	state5   0.0615037
+
+    class_API_medium_diclofenac.API_lm_intercept_kg:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_diclofenac.API_lm_coef_kg_per_mpop_per_year:
+	state0   0.333333
+	state1   0.333333
+	state2   0.333333
+
+    class_API_medium_diclofenac.API_sales_weight_kg:
+	state0   0
+	state1   0
+	state2   0.0416667
+	state3   0.328704
+	state4   0.490741
+	state5   0.087963
+	state6   0.0509259
+	state7   0
+
+    class_spatial.spatial_county_WWT_2:
+	state0   0.125
+	state1   0
+	state2   0.0833333
+	state3   0.125
+	state4   0.666667
+
+    class_spatial.spatial_county_WWT_1:
+	state0   0.666667
+	state1   0.125
+	state2   0.0833333
+	state3   0.125
+	state4   0
+
+    class_spatial.spatial_county_WW_ML:
+	state0   0.95
+	state1   0.05
+	state2   0
+	state3   0
+	state4   0
+	state5   0
+
+    class_spatial.spatial_county_pop_share:
+	state0   0.25
+	state1   0.416667
+	state2   0.166667
+	state3   0
+	state4   0.0833333
+	state5   0.0833333
+
+    class_spatial.spatial_county_WWT_0:
+	state0   0.916667
+	state1   0.0833333
+	state2   0
+
+    class_spatial.spatial_county_WW_Lpd:
+	state0   0.166667
+	state1   0.416667
+	state2   0.25
+	state3   0.166667
+
+    API_medium_diclofenac:
+	amoxicillin 0.333333
+	ciprofloxacin 0.333333
+	diclofenac 0.333333
+
+    API_RQ_FW_Diclofenac:
+	state0   0.0346192
+	state1   0.194068
+	state2   0.430512
+	state3   0.277343
+	state4   0.0634573
+	state5   0
+
+    master_pop_mill:
+	state0   0
+	state1   0
+	state2   0.666667
+	state3   0.333333
+	state4   0
+	state5   0
+
+    master_WWT_scenario:
+	Current    0.5
+	Compliance 0.5
+
+    master_pop_scenario:
+	Low        0.333333
+	Main       0.333333
+	High       0.333333
+
+    master_year:
+	state0   0.5
+	state1   0.5
+
+    master_county:
+	Total      0.0833333
+	Innlandet  0.0833333
+	Vestfold og Telemark 0.0833333
+	Agder      0.0833333
+	Rogaland   0.0833333
+	Vestland   0.0833333
+	Møre og Romsdal 0.0833333
+	Trøndelag 0.0833333
+	Nordland   0.0833333
+	Troms og Finnmark 0.0833333
+	Oslo       0.0833333
+	Viken      0.0833333
