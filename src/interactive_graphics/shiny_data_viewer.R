@@ -1,3 +1,4 @@
+### DATA PREPARATION
 # Set up data from main RMD
 pd_county <- splmaps::nor_nuts3_map_b2020_default_sf %>% 
     mutate(County_Code = str_extract(location_code, pattern = "[0-9]{2}")) %>% 
@@ -22,52 +23,52 @@ avg_RQ_county <- Hugin_Data_Output_Tall %>%
 
 pd_county_joined <- merge(pd_county, avg_RQ_county)
 
-### SHINY / LEAFLET ###
 
-## UI ##
-ui <- fluidPage(titlePanel("Average Sum of Pharmaceutical Risk Quotients, Norway"),
-
-                sidebarPanel(
-                    h2("Scenario Nodes"),
-                    
-                    radioButtons(inputId = "radio_pop_scen", 
-                                 h3("Population Growth Scenario"),
-                                 choices = list("Low", "Main", "High"),
-                                 selected = "Main"),
-
-                    radioButtons(inputId = "radio_wwt_scen", 
-                                 h3("WWT Scenario"),
-                                 choices = list("Current", "Compliance"),
-                                 selected = "Current"),
-                    
-                    sliderInput(inputId = "slider_year", 
-                                h3("Year"),
-                                       min = 2020, max = 2050, value = 2020, step = 30, sep = ""),
-                    
-                    selectInput(inputId = "select_API_name",
-                                h3("API or Group"),
-                                choices = c("Estradiol", "Ethinylestradiol", "Diclofenac",
-                                            "Ibuprofen", "Paracetamol", "Ciprofloxacin",
-                                            "Estrogens", "Antibiotics", "Painkillers", "Total"),
-                                selected = "Total")
-                ),
-                mainPanel(
-                    # Add a map to the UI
-                    leafletOutput("test_map"),
-                    # When was the dataset last updated?
-                    textOutput("last_modified", container = tags$h6)
-                )
-                           )
+Norway_map_bounds <- 
+    Norway_counties_dataframe %>% 
+    summarise(min_lat = min(lat),
+              max_lat = max(lat),
+              min_long = min(long),
+              max_long = max(long))
 
 
-## SERVER ##
-server <- function(input, output) {
-    # Create a palette for average Sum RQs
-    AvgRQ_Pal <- colorNumeric(palette = "viridis", domain = c(0, 6000))
+### UI ###
+
+ui <- bootstrapPage(
+    tags$style(type = "text/css", "html, body {width:100%;height:100%}"),
+    leafletOutput("map", width = "100%", height = "100%"),
+    absolutePanel(top = 10, right = 10,
+                  radioButtons(inputId = "radio_pop_scen", 
+                               "Population Growth Scenario",
+                               choices = list("Low", "Main", "High"),
+                               selected = "Main"
+                  ),
+                  radioButtons(inputId = "radio_wwt_scen", 
+                               "WWT Scenario",
+                               choices = list("Current", "Compliance"),
+                               selected = "Current"
+                  ),
+                  sliderInput("slider_year", "Year", min(pd_county_joined$master_year), max(pd_county_joined$master_year),
+                              value = 2020, step = 30, sep = ""
+                  ),
+                  selectInput(inputId = "select_API_name",
+                              "API or Group",
+                              choices = c("Estradiol", "Ethinylestradiol", "Diclofenac",
+                                          "Ibuprofen", "Paracetamol", "Ciprofloxacin",
+                                          "Estrogens", "Antibiotics", "Painkillers", "Total"),
+                              selected = "Total"
+                  ),
+                  checkboxInput("legend", "Show legend", TRUE
+                  ),
+                  textOutput("last_modified", container = tags$h6)
+    )
+)
+
+### SERVER ###
+
+server <- function(input, output, session) {
     
-    Hugin_Output_Last_Updated
-    
-    # Reactively filter pd_county_joined to the selected year and scenarios
+    # Reactive expression for the data subsetted to what the user selected
     pd_county_joined_filtered <- reactive({
         req(input$slider_year)
         pd_county_joined %>% filter(master_year == input$slider_year,
@@ -75,47 +76,56 @@ server <- function(input, output) {
                                     master_WWT_scenario == input$radio_wwt_scen,
                                     API_Name == input$select_API_name)
     })
-        
-    output$test_map <- renderLeaflet({
-        leaflet(data = pd_county_joined_filtered()) %>%
-            addProviderTiles("Stamen.TonerLite") %>% 
+    # Last modified date, taken from main .Rmd
+    Hugin_Output_Last_Updated
+    
+    AvgRQ_Pal <- colorNumeric(palette = "viridis", domain = c(0, 6000))
+    
+    output$map <- renderLeaflet({
+        # Use leaflet() here, and only include aspects of the map that
+        # won't need to change dynamically (at least, not unless the
+        # entire map is being torn down and recreated).
+        leaflet(pd_county_joined_filtered) %>% addTiles() %>%
+            fitBounds(lng1 = 4.641979, lng2 = 31.05787, lat1 = 57.97976, lat2 = 71.18488)
+    })
+    
+    # Incremental changes to the map (in this case, replacing the
+    # circles when a new color is chosen) should be performed in
+    # an observer. Each independent set of things that can change
+    # should be managed in its own observer.
+    
+    observe({
+        leafletProxy("map", data = pd_county_joined_filtered()) %>%
+            clearShapes() %>%
             addPolygons(data = pd_county_joined_filtered(),
                         weight = 0.3,
                         opacity = 1,
                         fillColor = ~AvgRQ_Pal(Avg_RQ),
                         layerId = ~County_Name,
                         color = "white",
-                        fillOpacity = 0.5,
-                        highlightOptions = highlightOptions(
-                            weight = 1,
-                            color = "#666",
-                            # If dashArray = "". as in the vignette, only the first polygon will appear
-                            dashArray = NULL,
-                            fillOpacity = 0.7,
-                            bringToFront = TRUE),
-                        label = sprintf(
-                            "<strong>%s</strong><br/>Mean RQ = %g",
-                            pd_county_joined_filtered()$County_Name, 
-                            pd_county_joined_filtered()$Avg_RQ) %>% 
-                            lapply(htmltools::HTML),
-                        labelOptions = labelOptions(
-                            style = list("font-weight" = "normal", padding = "3px 8px"),
-                            textsize = "15px",
-                            direction = "auto")
-                        ) %>% 
-            addLegend(position = "bottomright",
-                      pal = AvgRQ_Pal,
-                      values = c(0, 6000),
-                      opacity = 1,
-                      title = "Mean RQ",
-                     )
+                        fillOpacity = 0.5)
     })
+    
+    # Use a separate observer to recreate the legend as needed.
+    observe({
+        proxy <- leafletProxy("map", data = pd_county_joined_filtered)
+        
+        # Remove any existing legend, and only if the legend is
+        # enabled, create a new one.
+        proxy %>% clearControls()
+        if (input$legend) {
+            proxy %>% addLegend(position = "bottomright",
+                                pal = AvgRQ_Pal, values = c(0, 6000)
+            )
+        }
+    })
+    # Print the date the dataset csv was last modified
     output$last_modified <- renderText({
         sprintf("Hugin Dataset last modified: %s", Hugin_Output_Last_Updated)
     })
-    }
+}
 
-shinyApp(ui = ui, server = server)
+shinyApp(ui, server)
 
 # TODO:
 # * Implement Leaflet Proxy
