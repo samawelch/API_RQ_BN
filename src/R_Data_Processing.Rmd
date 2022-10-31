@@ -5,32 +5,13 @@ output: html_notebook
 
 Code for messing around with maps of Norway and WWTP by county.
 
-# Standardised county names
-
-Nomenclature of Territorial Units for Statistics
-NUTS1: N/A
-NUTS2: 7 Regions
-NUTS3: 11 Counties (Fylke) - 2020 borders
-LAU1: 89 Economic Regions
-LAU2: 431 Municipalities (Kommuner) - most recent?
-
-# WWTP Definitions
-
-UWWTD: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A01991L0271-20140101
-
-Article 1:
-
-7. ‘primary treatment’ means treatment of urban waste water by a physical and/or chemical process involving settlement of suspended solids, or other processes in which the BOD5 of the incoming waste water is reduced by at least 20 % before discharge and the total suspended solids of the incoming waste water are reduced by at least 50 %;
-
-8. ‘secondary treatment’ means treatment of urban waste water by a process generally involving biological treatment with a secondary settlement or other process in which the requirements established in Table 1 of Annex I are respected;
-
-In practical terms I've made a quick spreadsheet and attempted to classify all the treatment types used by SSB into Norwegian and EU classes. TODO: This needs QC, but I was unwilling to spend too much time on it and lose momentum.
-
 # 1. Setup
 
 ```{r packages}
+# Setup Renv for reproducible packages
 # renv::init()
 # renv::restore()
+options(renv.download.override = utils::download.file)
 
 # Library
 library(tidyverse)
@@ -67,6 +48,8 @@ analysed_APIs <- c("estradiol", "ethinylestradiol", "diclofenac",
                       "ibuprofen", "paracetamol", "ciprofloxacin")
 API_sales_weights_1999_2018 <- API_sales_weights_1999_2018 %>% 
   filter(API_Name %in% analysed_APIs)
+# API PNECs from various sources
+source(file = "src/data_importers/API_PNEC_import.R")
 
 # Norwegian and English classifications of WWT technologies
 source(file = "src/data_importers/WWT_class_import.R")
@@ -84,555 +67,51 @@ API_removal_rates <- API_removal_rates %>%
 ```
 
 
-## 2.5 Other Data
+# 3. Methods
 
-```{r other_data}
-
-### FK/FASS: API PNECs
-API_PNECs <- read.csv(file = "Data/APIs_PBMT_byYear_2022-09-01_12.12.csv") %>% 
-  select(API_Name, PNEC_gL) %>% 
-  distinct()
-```
-
-# 3. Dataset Processing
-
-## 3.1 Sales Weights 
-
-```{r add_APIs}
-
-
-# Worth considering how sales weights are distributed, and how we might want to discretise them
-ggplot(data = NIPH_Sales_Weights_Summed, 
-       mapping = aes(x = Total_Sold_kg)) +
-    geom_histogram(bins = 100) +
-    scale_x_log10()
-
-# Values vary from E+5 (paracetamol) to E-1 (ethinylestradiol)
-NIPH_Sales_Weights_dif_quants <- NIPH_Sales_Weights_Summed %>% 
-    group_by(API_Name) %>% 
-    summarise(diff_1999_2018 = max(Total_Sold_kg) - min(Total_Sold_kg)) %>% 
-    ungroup() %>% 
-    summarise(quantile = quantile(diff_1999_2018, c(0.33, 0.66, 1)))
-# Categorise APIs as light/medium/heavy based on which of the three quantiles they fall in
-# NIPH_Sales_Weights_Summed <- NIPH_Sales_Weights_Summed %>% 
-#     mutate(quantile = case_when())
-
-# YAH: A more pertinent way to discretise the API sales weights is probably actually to take the LMs and look at the variation there...
-
-# For now, we'll eyeball it: Light (0-100 kg), Medium (100 - 10000 kg), Heavy (10000 - 1000000 kg)
-NIPH_Sales_Weights_Summed <- NIPH_Sales_Weights_Summed %>% 
-    mutate(weight_class = case_when(pmax(Total_Sold_kg) <= 100 ~ "light",
-                                    pmax(Total_Sold_kg) <= 10000 ~ "medium",
-                                    pmax(Total_Sold_kg) <= 10000000 ~ "heavy"))
-```
-
-## 3.2 Population Share by County
-```{r population_share}
+```{r data_processing_geographic}
+# Summarise share of total population and WWTP class access by county (2020)
 source(file = "src/data_processing/pop_share_county.R")
-
-# We can then use Population_Share to estimate sales weights per API, per county
-API_sales_weight_by_county <- crossing(API_Sales, pop_share_by_county_2020) %>% 
-    transmute(API_Name,
-              Year,
-              Vet,
-              County_Code,
-              AmountSold_County_g =  Population_Share * AmountSold_g)
-
+source(file = "src/data_processing/WWTP_share_county.R")
 ```
-
-## 3.3 WWTP Share by County
-
-```{r wwtp_share}
-wwtp_by_county_2020 <- large_wwtp_by_county_2020 %>% 
-  pivot_longer(cols = 1:7, names_to = "treatment", values_to = "population") %>% 
-  mutate(size = "large") %>% 
-  add_row(
-    small_wwtp_by_county_2020 %>% 
-  pivot_longer(cols = 1:15, names_to = "treatment", values_to = "population") %>% 
-  mutate(size = "small")
-  ) %>% 
-  left_join(WWTP_definitions %>% select(Name_EN, Class_EU), by = c("treatment" = "Name_EN"))
-
-# How well do WWTP numbers and actual populations add up?
-wwtp_by_county_2020 %>% 
-  filter(treatment == "total") %>% 
-  group_by(County_Name) %>% 
-  summarise(sum(population), County_Code) %>% 
-  distinct() %>% 
-  left_join(y = pop_by_county_2020) %>% 
-  summarise(`sum(population)` / Population)
-# Pretty close, +- 5%, except for Troms & Finnmark, which is 15% higher than actual pop
-
-# In any case, we can now characterise the proportions of different treatment levels in each County
-wwt_share_by_county_2020 <- 
-  wwtp_by_county_2020 %>% 
-  filter(treatment != "total") %>% 
-  group_by(County_Name, Class_EU) %>% 
-  summarise(County_Name,
-            County_Code,
-            population = sum(population, na.rm = TRUE)) %>% 
-  distinct() %>% 
-  ungroup() %>% 
-  group_by(County_Name) %>% 
-  mutate(wwt_pop_share = round(population / sum(population), digits = 2))
-
-ggplot(data = wwt_share_by_county_2020, aes(x = wwt_pop_share, fill = Class_EU)) +
-  geom_histogram(bins = 5)
-
-# For discretisation of WWT nodes it'd be nice to get the range of each treatment level
-wwt_share_by_county_2020_disc <- 
-  wwt_share_by_county_2020 %>% 
-  # Discretise to 5 states (0 - 100%), rounding to nearest 25%
-  mutate(wwt_pop_share_disc = plyr::round_any(wwt_pop_share, 0.25, f = round))
-
-```
-
-# 4. Methods
-
-## 4.1 Population Discretisation
 
 Population discretisation was manually performed in Hugin, rounding population (in millions) up to the 
 next highest 0.5. This is replicated here so we can check our choices of LM parameters.
 
-```{r pop_discretisation}
-Norway_Pop_Discretisation <- Norway_Population_Year %>% 
-  transmute(Year,
-            Pop_mil = Population / 1e6,
-            Scenario = "Historic") %>% 
-  add_row(Norway_Population_Projections_21C %>% transmute(Year,
-                                                          Pop_mil = Population / 1e6,
-                                                          Scenario)) %>% 
-filter(Year <= 2050) %>% 
-  # Round to the highest 0.5 pop
-  mutate(Pop_mil_disc = plyr::round_any(Pop_mil, 0.5, f = ceiling))
-
-ggplot(data = Norway_Pop_Discretisation %>% filter(Year >= 2000), 
-       mapping = aes(x = Year,
-                     y = Pop_mil,
-                     colour = Scenario)) +
-  geom_point() +
-  geom_line(aes(y = Pop_mil_disc)) +
-    scale_colour_discrete(limits = c("Historic",
-                                     "Low national growth (LLL)",
-                                     "Main alternative (MMM)",
-                                     "High national growth (HHH)"))
+```{r data_processing_population}
+# Discretise population for diagnostic/summary graphs
+source(file = "src/data_processing/pop_discretisation_Norway.R")
 ```
 
-## 4.2 Linear Model: Sales weights by population & year
 
-Calculate a linear model of Sales weight (kg), explained by population (1000 people) and year, plus
+Calculate a linear model of Sales weight (kg), explained by population (mil) and year, plus
 an intercept. This is used to predict sales weights under various population scenarios to 2050.
 
-```{r API_sales_by_population}
-API_sales_by_population <- 
-  NIPH_Sales_Weights_Summed %>% left_join(y = Norway_Population_Year, by = c("Year"))
-
-# Linear Model: API ~ Population + Year
-LMs_API <- API_sales_by_population %>% 
-    mutate(Population_mil = Population / 1e6) %>% 
-    filter(Year != 2019) %>% 
-    group_by(API_Name) %>% 
-    summarise(lm_intercept_kg = coef(lm(Total_Sold_kg/Population_mil ~ Year))[[1]],
-            lm_coef_kg_per_mperson_per_year = coef(lm(Total_Sold_kg/Population_mil ~ Year))[[2]],
-            weight_class) %>% 
-    distinct() %>% 
-# Pop PNECs on the end so we have to import fewer dfs to python
-    left_join(API_PNECs, by = "API_Name")
-
-# Recalculate sales weights from the LM for comparison
-Sales_Projections_21C <- 
-  crossing(LMs_API, Norway_Pop_Discretisation) %>% 
-  mutate(Sales_Proj_kg = (Year * lm_coef_kg_per_mperson_per_year + lm_intercept_kg) 
-                          * Pop_mil_disc) %>% 
-  filter(Year %in% c(2010, 2020, 2030, 2040, 2050))
-
-# Join projections and records together to plot on one graph
-Sales_Projections_Records <- Sales_Projections_21C %>% 
-  transmute(API_Name,
-            Total_Sold_kg = Sales_Proj_kg,
-            Scenario,
-            Year) %>% 
-  add_row(NIPH_Sales_Weights_Summed %>% transmute(API_Name,
-                                                  Year,
-                                                  Total_Sold_kg,
-                                                  Scenario = "Measured")) %>% 
-  filter(Year != 2019)
-
-ggplot(data = Sales_Projections_Records %>% filter(Scenario != "Measured", API_Name != "diclofenac"),
-       mapping = aes(x = Year, 
-                     y = pmax(0, Total_Sold_kg),
-                     colour = Scenario,
-                     shape = Scenario)) + 
-  geom_point(size = 1, stroke = 1.3) +
-  geom_point(data = Sales_Projections_Records %>% filter(Scenario == "Measured", API_Name != "diclofenac"),
-            colour = "black", size = 1) + 
-  scale_shape_manual(values = c("Measured" = 16,
-                                "Historic" = 4,
-                                "High national growth (HHH)" = 4,
-                                "Main alternative (MMM)" = 4,
-                                "Low national growth (LLL)" = 4)) +
-  scale_colour_discrete(limits = c("Measured",
-                                   "Historic",
-                                "High national growth (HHH)",
-                                "Main alternative (MMM)",
-                                "Low national growth (LLL)")) +
-  scale_y_continuous(limits = c(0, NA)) +
-   facet_wrap(facets = vars(API_Name), scales = "free") +
-  labs(x = "Year", y = "Total Sold (kg)")
-
-
+```{r data_processing_API}
+# Fit linear models to sales data
+source(file = "src/data_processing/API_sales_LM.R")
 ```
 
-# 5. Hugin Datafiles
-
-## 5.1 R to Hugin
-
-We can automate running through all possible (360) combinations of APIs and scenarios in Hugin using
+We can automate running through all possible combinations of APIs and scenarios in Hugin using
 a data file (essentially a CSV) with scenario variables filled in, and specially formatted empty
 columns for variables we want to pull out.
 
-
-```{r Hugin_Data_Maker}
-
-# Make data files for automated data input/output to Hugin
-    
-All_RQ_Interval_Nodes <- append(paste0("API_RQ_FW_", str_to_title(analysed_APIs)), 
-                                c("SumRQ_Estrogens", "SumRQ_Antibiotics", 
-                                  "SumRQ_Painkillers","SumRQ_Total"))
-
-All_RQ_Boolean_Nodes <- c("PRQ_1_Estrogens", "PRQ_1_Antibiotics", "PRQ_1_Painkillers", "PRQ_1_Total")
-
-Hugin_Data_File <- tibble(master_pop_scenario = as_factor(c("Low", "Main", "High"))) %>% 
-  # Use vector recycling via crossing to set up the various scenario combinations easily
-  crossing(master_year = c("2020", "2050"),
-           master_WWT_scenario = c("Current", "Compliance"),
-           master_county = unlist(county_codes[2])) %>% 
-    # Add API node value presets
-    add_column(API_light_ethinylestradiol = "ethinylestradiol",
-               API_light_estriol = "estriol",
-               API_medium_diclofenac = "diclofenac",
-               API_medium_ciprofloxacin = "ciprofloxacin",
-               API_heavy_paracetamol = "paracetamol",
-               API_heavy_ibuprofen = "ibuprofen")
-    # Add columns to monitor RQ intervals for each API and Sum Node
-    for (v in 1:length(All_RQ_Interval_Nodes)) {
-        Temp_API_Name <- All_RQ_Interval_Nodes[v]
-        print(Temp_API_Name)
-        Hugin_Data_File <- Hugin_Data_File %>% 
-            add_column(!! glue("P(", "{Temp_API_Name}", "=0-1)") := NA,
-                       !! glue("P(", "{Temp_API_Name}", "=1-10)") := NA,
-                       !! glue("P(", "{Temp_API_Name}", "=10-100)") := NA,
-                       !! glue("P(", "{Temp_API_Name}", "=100-1000)") := NA,
-                       !! glue("P(", "{Temp_API_Name}", "=1000-10000)") := NA,
-                       !! glue("P(", "{Temp_API_Name}", "=10000-inf)") := NA)
-    }
-    # Likewise for each combined probability node
-    for (v in 1:length(All_RQ_Boolean_Nodes)) {
-        Temp_Bool_Name <- All_RQ_Boolean_Nodes[v]
-        print(Temp_Bool_Name)
-        Hugin_Data_File <- Hugin_Data_File %>% 
-            add_column(!! glue("P(", "{Temp_Bool_Name}", "=true)") := NA,
-                       !! glue("P(", "{Temp_Bool_Name}", "=false)") := NA)
-    }
-
-write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na = "")
+```{r data_processing_Hugin}
+source(file = "src/data_processing/R_to_Hugin.R")
 ```
 
-## 5.2 Hugin to R
+Now re-import data from Hugin
 
-```{r Hugin_Data_Reader}
-# Hugin has done its thing, so let's import the data
-Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_to_R_datafile.csv",
-                              show_col_types = FALSE) %>% 
-  # rename_with(cols = 8:15, ~str_remove(string = ., pattern = "\\[MEAN\\]")) %>% 
-  # rename_with(cols = 8:15, ~str_remove_all(string = ., pattern = "\\W"))
-# Need to refactorise population scenarios
-  mutate(master_pop_scenario = fct_relevel(master_pop_scenario, c("Low", "Main", "High")),
-         master_WWT_scenario = as.ordered(master_WWT_scenario)) %>% 
-    select(-c(5:10))
+```{r data_import_Hugin}
+source(file = "src/data_importers/Hugin_to_R_importer.R")
 ```
 
-```{r pivot_Hugin_data}
-# Hugin's many output interval columns need pivoting to tall data
-Hugin_Data_Output_Tall <- Hugin_Data_Output %>% 
-    pivot_longer(cols = 5:72,
-                 names_to = "Risk_Bin_String",
-                 values_to = "Probability") %>% 
-    mutate(Risk_Type = str_remove(Risk_Bin_String, pattern = "_[^_]+$") %>% 
-               str_remove(pattern = "P\\("),
-           API_Name = str_extract(Risk_Bin_String, pattern = "(?<=\\_)([[:alpha:]]*?)(?=\\=)"),
-           Risk_Bin = str_extract(Risk_Bin_String, pattern = "(?<==).[a-zA-Z0-9-]+")) %>% 
-    select(-Risk_Bin_String) %>% 
-    relocate(Probability, .after = last_col())
-    
+```{r data_processing_maps}
+source(file = "src/data_processing/map_preparation.R")
 ```
 
 # 6. Results
-## 6.1 BN Outputs
 
-```{r sales_weights}
-# I'm gonna make some graphs!
-# Sales Weight, by year, scenario & API
-# SW_by_Year_Scen_API <- ggplot(data = Hugin_Data_Output,
-#        mapping = aes(x = Year,
-#                      y = `[MEAN](API_Sales_Weight_kg)`,
-#                      colour = Population_Scenario,
-#                      shape = Population_Scenario)) +
-#   geom_point() +
-#   geom_path() +
-#   facet_wrap(facets = vars(API_Name), ncol = 4, scales = "free") +
-#   scale_color_discrete(breaks = c("Low", "Main", "High")) +
-#   scale_shape_discrete(breaks = c("Low", "Main", "High"))
-# 
-# SW_by_Year_Scen_API
+```{r shiny_map}
 
-# What's going on with these APIs?
-# Diclofenac_Weird <- Hugin_Data_Output %>% 
-#   filter(API_Name == "diclofenac",
-#          WWTP_Removal_Scenario == "0 - 0.001") %>% 
-#   select(API_Name, Year, `[MEAN](API_Sales_Weight_kg)`, Population_Scenario) %>% 
-#   distinct()
-
-```
-
-## 6.2 Pretty Maps
-
-### 6.2.1 County Map
-```{r county_map}
-# Append county names to the SPL map
-Norway_county_map_names <- Norway_counties_shapefile %>% 
-  left_join(y = county_codes, by = "County_Code") %>% 
-  left_join(pop_by_county_2020, by = "County_Code")
-
-# Find the centroids of counties for better labelling
-Norway_county_map_centroids <- Norway_county_map_names %>% 
-  group_by(County_Name) %>% 
-  summarise(lat = mean(range(lat)),
-            long = mean(range(long)))
-
-Norway_county_map <- ggplot(data = Norway_county_map_names, mapping = aes(x = long, 
-                                y = lat)) + 
-  geom_polygon(color = "grey",
-             size = 0.3,
-             aes(group = group)) +
-    theme_void() 
-```
-
-### 6.2.2 County Map with Cities
-
-```{r county_map_cities}
-# Cities of 50,000+ only
-Norway_Cities %>% filter(population > 50000) %>% 
-  summarise(sum(population))
-# This covers only 2.1 million people, not even half of the population
-# Removing the filter covers 4.3 million people, which is better...
-
-Norway_county_cities_map <- ggplot(data = Norway_county_map_names, mapping = aes(x = long, 
-                                y = lat)) + 
-  geom_polygon(color = "grey",
-             size = 0.1,
-             aes(group = group,
-                 fill = Population)) +
-  scale_fill_distiller(type = "seq",
-                        direction = 1,
-                        palette = "Greys") +
-  geom_text_repel(data = Norway_county_map_centroids,
-                  size = 4,
-                  alpha = 0.5,
-                   mapping = aes(label = County_Name),) +
-  geom_point(data = Norway_Cities %>% filter(population > 50000),
-             alpha = 1,
-             colour = "red",
-             aes(size = population)) +
-  geom_label_repel(data = Norway_Cities %>% filter(population > 50000), 
-                  mapping = aes(label = city))
-
-Norway_county_cities_map
-```
-
-
-### 6.2.3 Risk By County & Year
-
-```{r risk_by_county_year}
-# API_Sum_RQ <- Hugin_Data_Output_Tall %>% 
-#     filter(API_Name == "Total", Risk_Type == "SumRQ") %>% 
-#     rename(County_Name = master_county) %>% 
-#     left_join(Norway_county_map_names) %>% 
-#     filter( master_WWT_scenario == "Current") %>% 
-#     pivot_wider(names_from = "Risk_Bin", values_from = "Probability")
-# 
-# API_Sum_RQ_Centroids <- Norway_county_map_centroids %>% 
-#     left_join(Hugin_Data_Output_Tall, by = c("County_Name" = "master_county")) %>% 
-#     filter( master_WWT_scenario == "Current") %>% 
-#     filter(API_Name == "Total", Risk_Type == "SumRQ") %>% 
-#     filter(master_year== 2020, master_WWT_scenario == "Current")
-
-# # Make a barplot of risk 
-# test_bar_plot.list <- lapply(1:length(API_Sum_RQ_Centroids), function(i)) {
-#     # for 
-#     
-#     
-#     
-# }
-#     
-#     ggplot(data = API_Sum_RQ_Centroids %>% 
-#                                         filter(County_Name == "Agder", master_pop_scenario == "Main"),
-#        mapping = aes(x = Risk_Bin, y = Probability, fill = Risk_Bin)) +
-#     geom_col() +
-#     theme_void() +
-#     scale_fill_viridis_d() +
-#     theme(legend.position = "none",
-#           panel.background = element_rect(fill='transparent'),
-#           plot.background = element_rect(fill='transparent', color=NA),
-#           panel.grid.major = element_blank(),
-#           panel.grid.minor = element_blank(),
-#           legend.background = element_rect(fill='transparent'),
-#           legend.box.background = element_rect(fill='transparent'))
-# 
-# test_bar_plot_grob <- as.grob(test_bar_plot)
-
-# Create a tibble to contain the barplots
-# test_bar_plot_tibble = tibble(y = 58.82622, x = 7.87337, grob = list(test_bar_plot_grob))
-
-Norway_Risk_Map <- ggplot(data = API_Sum_RQ, 
-                            mapping = aes(x = long, 
-                                          y = lat)) + 
-    geom_polygon(color = "white",
-                 fill = "grey",
-                 size = 0.3,
-                 aes(group = group)) +
-    geom_point(data = Norway_county_map_centroids,
-              aes(colour = County_Name)) +
-    geom_grob(data = test_bar_plot_tibble, aes(x, y, label = grob))
-
-
-Norway_Risk_Map
-
-# Just a simple chloropleth for the meeting
-Norway_Risk_Chloropleth <- ggplot()
-
-```
-
-### 6.2.4 Risk of Exceedence By County and Year
-
-```{r exceedence_by_county_year}
-API_Exceedence_Risk <- Hugin_Data_Output_Tall %>% 
-    filter(API_Name == "Total", Risk_Type == "PRQ_1", master_WWT_scenario == "Current", Risk_Bin == "true") %>% 
-    rename(County_Name = master_county) %>% 
-    left_join(Norway_county_map_names) %>% 
-    pivot_wider(names_from = "Risk_Bin", values_from = "Probability")
-
-Norway_Exceedence_Map <- ggplot(data = API_Exceedence_Risk, 
-                            mapping = aes(x = long, 
-                                          y = lat, 
-                                          fill = true)) + 
-    geom_polygon(color = "white",
-                 size = 0.3,
-                 aes(group = group)) +
-    facet_grid(rows = vars(master_year), cols = vars(master_pop_scenario))
-
-
-Norway_Exceedence_Map
-
-```
-
-### 6.2.5 Sum RQ WWTP Scenarios
-
-```{r sumRQ_WWTP}
-sum_RQ_WWTP_data <- Hugin_Data_Output_Tall %>% filter(Risk_Type != "PRQ_1", 
-                            API_Name == "Total",
-                            master_county == "Agder") %>% 
-    mutate(Risk_Bin = as.ordered(Risk_Bin),
-           master_WWT_scenario = fct_relevel(master_WWT_scenario, c("Current", "Compliance")))  
-
-
-ggplot(data = sum_RQ_WWTP_data, 
-       mapping = aes(x = master_WWT_scenario, 
-                     y = Probability,
-                     fill = Risk_Bin)) +
-    geom_col(position = "stack") +
-    scale_fill_viridis_d() +
-    facet_grid(cols = vars(master_year))
-```
-
-## 6.3 RQ Column Graphs
-
-```{r RQ_columns}
-
-# Now we're gonna try and make some graphs like Sophie's!
-
-for (i in 1:length(Interesting_APIs)) {
-  
-  API_Name <- Interesting_APIs[i]
-  
-  RQ_Binned_Hugin_Output <- Hugin_Data_Output %>% 
-    filter(API_Name == Interesting_APIs[i]) %>% 
-    select(1:4, 16:21) %>% 
-    pivot_longer(cols = 5:10,
-                 names_to = "RQ_Bin",
-                 values_to = "Probability")
-  
-  RQ_by_Bin_Graph <- ggplot(data = RQ_Binned_Hugin_Output, 
-         mapping = aes(x = Year,
-                       y = Probability,
-                       fill = RQ_Bin)) +
-    geom_col(position = position_fill(reverse = TRUE)) +
-    facet_grid(rows = vars(Population_Scenario),
-               cols = vars(WWTP_Scenario)) +
-    scale_fill_viridis_d(option = "inferno", direction = 1) +
-    labs(title = Interesting_APIs[i])
-  
-  assign(paste("RQ_by_Bin_Graph", Interesting_APIs[i], sep = "_"), RQ_by_Bin_Graph) 
-
-}
-
-RQ_by_Bin_Graph_amoxicillin
-RQ_by_Bin_Graph_ciprofloxacin
-RQ_by_Bin_Graph_diclofenac
-RQ_by_Bin_Graph_estradiol
-RQ_by_Bin_Graph_ethinylestradiol
-RQ_by_Bin_Graph_ibuprofen
-RQ_by_Bin_Graph_levonorgestrel
-RQ_by_Bin_Graph_paracetamol
-```
-
-# 7. Misc.
-## 7.2 Checking Sales Weights
-
-```{r population_discretisation}
-Norway_Pop_Discretisation <- Norway_Population_Year %>% 
-  transmute(Year,
-            Pop_mil = Population / 1e6,
-            Scenario = "Historic",
-            Discretised = FALSE) %>% 
-  add_row(Norway_Population_Projections_21C %>% transmute(Year,
-                                                          Pop_mil = Population / 1e6,
-                                                          Scenario,
-                                                          Discretised = FALSE)) %>% 
-filter(Year <= 2050) %>% 
-add_row(
-Hugin_Data_Output %>% 
-  select(Year, Population_Scenario, `[MEAN](Population)`) %>% 
-  distinct() %>% 
-  transmute(Year, 
-            Pop_mil = `[MEAN](Population)`, 
-            Scenario = case_when(Population_Scenario == "Low" ~ "Low national growth (LLL)_D",
-                                 Population_Scenario == "Main" ~ "Main alternative (MMM)_D",
-                                 Population_Scenario == "High" ~ "High national growth (HHH)_D"),
-            Discretised = TRUE))
-
-ggplot(data = Norway_Pop_Discretisation, 
-       mapping = aes(x = Year,
-                     y = Pop_mil,
-                     colour = Scenario,
-                     linetype = Discretised)) +
-  geom_path() +
-  scale_color_discrete(limits = c("Historic",
-                                  "High national growth (HHH)",
-                                  "Main alternative (MMM)",
-                                  "Low national growth (LLL)",
-                                  "High national growth (HHH)_D",
-                                  "Main alternative (MMM)_D",
-                                  "Low national growth (LLL)_D")) +
-  scale_x_continuous(breaks = c(1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020, 2030, 2040, 2050))
 ```

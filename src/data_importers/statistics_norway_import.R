@@ -104,7 +104,7 @@ write_csv(x = Norway_Wastewater_Year, file = "data/temp/Norway_Wastewater_Year.c
 
 ### SSB: Norwegian Population Predictions (No Uncertainty Included)
 Norway_Population_Projections_21C <- read_xlsx(path = "data/raw/Statistics_Norway/Pop_Forecasts_21C.xlsx",
-                                               range = "B4:J7",
+                                               range = "B5:J7",
                                                col_names = c("Scenario", "2030", "2040", "2050", "2060", 
                                                              "2070", "2080", "2090", "2100")) %>% 
     pivot_longer(cols = 2:9,
