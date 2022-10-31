@@ -81,6 +81,16 @@ server <- function(input, output, session) {
     
     AvgRQ_Pal <- colorNumeric(palette = "viridis", domain = c(0, 6000))
     
+    # YAH: This is generating an empty list - possibly because it can't access pd_county_joined?
+    # something to do with reactive environments?
+    
+    
+    # Generate HTML labels from County info
+    # SumRQ_labels <- sprintf(
+    #     "<strong>%s</strong><br/>Mean sum of RQs = %g",
+    #     pd_county_joined$County_Name, pd_county_joined$Avg_SumRQ
+    # ) %>% lapply(htmltools::HTML)
+    
     output$map <- renderLeaflet({
         # Use leaflet() here, and only include aspects of the map that
         # won't need to change dynamically (at least, not unless the
@@ -103,7 +113,15 @@ server <- function(input, output, session) {
                         fillColor = ~AvgRQ_Pal(Avg_RQ),
                         layerId = ~County_Name,
                         color = "white",
-                        fillOpacity = 0.5)
+                        fillOpacity = 0.5,
+                            highlightOptions = highlightOptions(
+                            weight = 1,
+                            color = "#666",
+                            # If dashArray = "". as in the vignette, only the first polygon will appear
+                            dashArray = NULL,
+                            fillOpacity = 0.7,
+                            bringToFront = TRUE)
+                        )
     })
     
     # Use a separate observer to recreate the legend as needed.
@@ -128,7 +146,5 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 
 # TODO:
-# * Implement Leaflet Proxy
 # * Add RQ histograms on click
-# * Make map box bigger
 # * Host on shinyapps.io

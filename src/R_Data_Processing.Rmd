@@ -113,5 +113,20 @@ source(file = "src/data_processing/map_preparation.R")
 # 6. Results
 
 ```{r shiny_map}
+source(file = "src/interactive_graphics/shiny_data_viewer.R")
+shinyApp(ui, server)
 
+avg_RQ_county %>% 
+    filter(API_Name == "Total",
+           master_pop_scenario == "Main") %>% 
+    group_by(master_year, County_Name) %>% 
+    summarise(mean(Avg_RQ)) %>% 
+    arrange(County_Name) %>% 
+    ungroup() %>% 
+    group_by(County_Name) %>% 
+    summarise(perc_increase = max(`mean(Avg_RQ)`) / min(`mean(Avg_RQ)`))
+```
+
+```{r WWTP_bar}
+source(file = "src/graphics/WWTP_RQ_bars.R")
 ```
