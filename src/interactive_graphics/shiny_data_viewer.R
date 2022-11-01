@@ -70,7 +70,6 @@ server <- function(input, output, session) {
     
     # Reactive expression for the data subsetted to what the user selected
     pd_county_joined_filtered <- reactive({
-        req(input$slider_year)
         pd_county_joined %>% filter(master_year == input$slider_year,
                                     master_pop_scenario == input$radio_pop_scen,
                                     master_WWT_scenario == input$radio_wwt_scen,
@@ -81,15 +80,11 @@ server <- function(input, output, session) {
     
     AvgRQ_Pal <- colorNumeric(palette = "viridis", domain = c(0, 6000))
     
-    # YAH: This is generating an empty list - possibly because it can't access pd_county_joined?
-    # something to do with reactive environments?
-    
-    
     # Generate HTML labels from County info
-    # SumRQ_labels <- sprintf(
-    #     "<strong>%s</strong><br/>Mean sum of RQs = %g",
-    #     pd_county_joined$County_Name, pd_county_joined$Avg_SumRQ
-    # ) %>% lapply(htmltools::HTML)
+    SumRQ_labels <- sprintf(
+        "<strong>%s</strong><br/>Mean RQ = %g",
+        pd_county_joined$County_Name, pd_county_joined$Avg_RQ
+    ) %>% lapply(htmltools::HTML)
     
     output$map <- renderLeaflet({
         # Use leaflet() here, and only include aspects of the map that
@@ -120,7 +115,15 @@ server <- function(input, output, session) {
                             # If dashArray = "". as in the vignette, only the first polygon will appear
                             dashArray = NULL,
                             fillOpacity = 0.7,
-                            bringToFront = TRUE)
+                            bringToFront = TRUE),
+                        label = ~sprintf(
+                            "<strong>%s</strong><br/>Mean RQ = %g",
+                            County_Name, Avg_RQ
+                        ) %>% lapply(htmltools::HTML),
+                        labelOptions = labelOptions(
+                            style = list("font-weight" = "normal", padding = "3px 8px"),
+                            textsize = "15px",
+                            direction = "auto")
                         )
     })
     

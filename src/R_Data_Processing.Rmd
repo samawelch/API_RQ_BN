@@ -73,6 +73,22 @@ API_removal_rates <- API_removal_rates %>%
 # Summarise share of total population and WWTP class access by county (2020)
 source(file = "src/data_processing/pop_share_county.R")
 source(file = "src/data_processing/WWTP_share_county.R")
+
+# Disc of WWTP share:
+wwt_share_by_county_2020_disc <- wwt_share_by_county_2020 %>% 
+    mutate(wwt_pop_share_disc = plyr::round_any(wwt_pop_share, 0.25, f = round))
+# Check percentages = 100%
+wwt_share_by_county_2020_disc %>% group_by(County_Name) %>% 
+    summarise(sum(wwt_pop_share_disc))
+# total for Norway
+wwt_share_by_county_2020_disc %>% 
+    group_by(Class_EU) %>% 
+    summarise(sum(population)) %>% 
+    summarise(`sum(population)` / sum(`sum(population)`))
+
+# Scenarios:
+# Compliance: all secondary?
+# Upgrade: all tertiary
 ```
 
 Population discretisation was manually performed in Hugin, rounding population (in millions) up to the 
@@ -112,6 +128,8 @@ source(file = "src/data_processing/map_preparation.R")
 
 # 6. Results
 
+
+
 ```{r shiny_map}
 source(file = "src/interactive_graphics/shiny_data_viewer.R")
 shinyApp(ui, server)
@@ -129,4 +147,9 @@ avg_RQ_county %>%
 
 ```{r WWTP_bar}
 source(file = "src/graphics/WWTP_RQ_bars.R")
+WWTP_RQ_bars
+```
+
+```{r combined_risk_bar}
+source(file = "src/graphics/combined_risk_bar.R")
 ```

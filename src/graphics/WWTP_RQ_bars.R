@@ -1,4 +1,4 @@
-Hugin_Data_Output_Tall %>% 
+WWTP_RQ_bars <- Hugin_Data_Output_Tall %>% 
     filter(master_pop_scenario == "Main", 
            master_year == 2020, 
            master_county %in% c("Nordland", "Viken"),

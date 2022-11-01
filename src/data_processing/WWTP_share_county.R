@@ -9,7 +9,9 @@ wwtp_by_county_2020 <- large_wwtp_by_county_2020 %>%
             pivot_longer(cols = 1:15, names_to = "treatment", values_to = "population") %>% 
             mutate(size = "small")
     ) %>% 
-    left_join(WWT_definitions_Norway %>% select(Name_EN, Class_EU), by = c("treatment" = "Name_EN"))
+    left_join(WWT_definitions_Norway %>% select(Name_EN, Class_EU), by = c("treatment" = "Name_EN")) %>% 
+    # This double counts for some reason
+    distinct()
 
 # How well do WWTP numbers and actual populations add up?
 wwtp_by_county_2020 %>% 
