@@ -89,6 +89,33 @@ wwt_share_by_county_2020_disc %>%
 # Scenarios:
 # Compliance: all secondary?
 # Upgrade: all tertiary
+
+# generate CPTs for no WWT (%), Primary, Secondary, Tertiary
+
+# How many states should each node have? What values do these states have
+WWT_level_states <- wwt_share_by_county_2020_disc %>% 
+    group_by(Class_EU) %>% 
+    summarise(n_states = n_distinct(wwt_pop_share_disc)) %>% 
+    crossing(states = c(0, 0.25, 0.5, 0.75, 1)[n_states])
+# This omits some in-between levels (e.g there's no 0.75 for tertiary, but it shouldn't be a problem?)
+
+
+for (v in 1:length(wwt_share_by_county_2020_disc$Class_EU %>% unique())) {
+    temp_WWT_level <- (wwt_share_by_county_2020_disc$Class_EU %>% unique())[v]
+    print(temp_WWT_level)
+    temp_CPT_name <- glue("{temp_WWT_level}_WWT_CTP", temp_WWT_level)
+    wwt_share_by_county_2020_disc %>% filter(Class_EU == temp_WWT_level) %>% 
+        select(County_Name, wwt_pop_share_disc) %>% 
+        crossing(Scenario = c("Current", "Compliance", "Upgrade"),
+                 # use the WWT_level_states we set earlier to cross w/ relevant levels
+                 Value = WWT_level_states %>% 
+                     filter(Class_EU == temp_WWT_level) %>% 
+                     select(states) %>% 
+                     pull()) %>% 
+        mutate(present = as.numeric(wwt_pop_share_disc == Value))
+    # Set levels if scenario = Compliance (all 2+) or Upgrade (all 3+)
+    
+}
 ```
 
 Population discretisation was manually performed in Hugin, rounding population (in millions) up to the 
