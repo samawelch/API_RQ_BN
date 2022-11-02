@@ -96,11 +96,20 @@ wwt_share_by_county_2020_disc %>%
 WWT_level_states <- wwt_share_by_county_2020_disc %>% 
     group_by(Class_EU) %>% 
     summarise(n_states = n_distinct(wwt_pop_share_disc)) %>% 
-    crossing(states = c(0, 0.25, 0.5, 0.75, 1)[n_states])
-# This omits some in-between levels (e.g there's no 0.75 for tertiary, but it shouldn't be a problem?)
+    crossing(states = c(0, 0.25, 0.5, 0.75, 1)) %>% 
+    group_by(Class_EU) %>% 
+    # some intensely ugly code to produce a list of valid discretised states per treatment level
+    summarise(n_in_class = row_number(),
+              n_states,
+              states) %>% 
+    filter(n_in_class <= n_states) %>% 
+    select(Class_EU, states) %>% 
+    # no county has a tertiary level of 0.75, so we swap it for 1 (Oslo)
+    mutate(states = case_when((Class_EU == "tertiary"& states == 0.75) ~ 1 ,
+                              TRUE ~ states))
 
 # Set up a big dataframe of all node values
-temp <- wwt_share_by_county_2020_disc %>%
+all_removal_nodes <- wwt_share_by_county_2020_disc %>%
     select(County_Name, wwt_pop_share_disc, Class_EU) %>%
     # YAH: Make vector into a factor/preserve level order
     crossing(Scenario = factor(levels = c("Current", "Compliance", "Upgrade")),
@@ -110,29 +119,71 @@ temp <- wwt_share_by_county_2020_disc %>%
                  pull()) %>%
     mutate(present = as.numeric(wwt_pop_share_disc == Value)) %>% 
     arrange(Class_EU, County_Name, Scenario) %>% 
-    pivot_wider(names_from = c("County_Name", "Scenario"), values_from = present)
+    pivot_wider(names_from = c("County_Name", "Scenario"), 
+                values_from = present, 
+                values_fill = 0) %>% 
+    filter(wwt_pop_share_disc == Value)
+
+test_CPT_dataframe <- all_removal_nodes %>% filter(Class_EU == "none") 
 
 
-for (v in 1:length(wwt_share_by_county_2020_disc$Class_EU %>% unique())) {
-    temp_WWT_level <- (wwt_share_by_county_2020_disc$Class_EU %>% unique())[v]
-    print(temp_WWT_level)
-    temp_CPT_name <- glue("{temp_WWT_level}_WWT_CTP", temp_WWT_level)
-    wwt_share_by_county_2020_disc %>% 
-        select(County_Name, wwt_pop_share_disc, Class_EU) %>% 
-        crossing(Scenario = c("Current", "Compliance", "Upgrade"),
-                 # use the WWT_level_states we set earlier to cross w/ relevant levels
-                 Value = WWT_level_states %>% 
-                     filter(Class_EU == temp_WWT_level) %>% 
-                     select(states) %>% 
-                     pull()) %>% 
-        mutate(present = as.numeric(wwt_pop_share_disc == Value))
-        # Set levels if scenario = Compliance (all 2+) or Upgrade (all 3+)
-        # mutate(present = case_when(Scenario == "Current" ~ as.numeric(wwt_pop_share_disc == Value),
-        #                            Scenario == "Compliance" ~ ...,
-        #                            Scenario == "Upgrade" ~ ...))
 
+
+    # Take the submitted dataframe
+    # Remove columns used to format the CPT
+    CPT_dataframe_selected <- test_CPT_dataframe %>% 
+        select(-wwt_pop_share_disc, -Value, -Class_EU) %>% 
+        mutate(across(is.integer <- as.double()))
+    
+    CPT_dataframe_selected
+    
+    CPT_dataframe_selected <- CPT_dataframe_selected %>%
+    mutate(across(where(is.numeric), ~ num(., digits = 1)))
+# YAH: Printing num sets the number of digits correctly, but converts to a variable type that
+    # write_table can't print!
+
+
+    # Create a text file with HUGIN's preferred table header
+    write_lines(x = "CPT", file = "data/Hugin/test_cpt_plz_ignore.txt")
+    # Then add the CPT
+    write.table(x = CPT_dataframe_selected, 
+                file = "data/Hugin/test_cpt_plz_ignore.txt", 
+                append = TRUE, col.names = FALSE, row.names = FALSE,
+                sep = ",")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+save_CPT <- function(CPT_dataframe, CPT_save_path){
+    # Take the submitted dataframe
+    # Remove columns used to format the CPT
+    CPT_dataframe_selected <- CPT_dataframe %>% 
+        select(-wwt_pop_share_disc, -Value, -Class_EU) %>%
+
+    # Create a text file with HUGIN's preferred table header
+    write_lines(x = "CPT", file = CPT_save_path)
+    # Then add the CPT
+    write.table(x = CPT_dataframe_selected, 
+                file = CPT_save_path, 
+                append = TRUE, col.names = FALSE, row.names = FALSE,
+                sep = ",")
     
 }
+
+save_CPT(CPT_dataframe = test_CPT_dataframe,
+         CPT_save_path = "data/Hugin/test_cpt_plz_ignore.txt")
+
 ```
 
 Population discretisation was manually performed in Hugin, rounding population (in millions) up to the 
