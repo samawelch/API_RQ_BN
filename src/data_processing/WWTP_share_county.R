@@ -13,15 +13,17 @@ wwtp_by_county_2020 <- large_wwtp_by_county_2020 %>%
     # This double counts for some reason
     distinct()
 
+
 # How well do WWTP numbers and actual populations add up?
 wwtp_by_county_2020 %>% 
-    filter(treatment == "total") %>% 
+    filter(treatment == "total", County_Name != "Total") %>% 
     group_by(County_Name) %>% 
     summarise(sum(population), County_Code) %>% 
     distinct() %>% 
     left_join(y = pop_by_county_2020, by = "County_Code") %>% 
     summarise(`sum(population)` / Population)
 # Pretty close, +- 5%, except for Troms & Finnmark, which is 15% higher than actual pop
+
 
 # In any case, we can now characterise the proportions of different treatment levels in each County
 wwt_share_by_county_2020 <- 
@@ -33,5 +35,13 @@ wwt_share_by_county_2020 <-
               population = sum(population, na.rm = TRUE)) %>% 
     distinct() %>% 
     ungroup() %>% 
+    # Also calculate a national total
+    add_row(wwtp_by_county_2020 %>% 
+                group_by(Class_EU) %>% 
+                filter(!is.na(Class_EU)) %>% 
+                summarise(County_Name = "Total", 
+                          County_Code = NA,
+                          population = sum(population, na.rm = TRUE))) %>% 
     group_by(County_Name) %>% 
     mutate(wwt_pop_share = round(population / sum(population), digits = 2))
+

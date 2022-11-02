@@ -85,6 +85,7 @@ wwt_share_by_county_2020_disc %>%
     group_by(Class_EU) %>% 
     summarise(sum(population)) %>% 
     summarise(`sum(population)` / sum(`sum(population)`))
+# Add rows for total to the discretised dataframe
 
 # Scenarios:
 # Compliance: all secondary?
@@ -127,21 +128,16 @@ all_removal_nodes <- wwt_share_by_county_2020_disc %>%
 test_CPT_dataframe <- all_removal_nodes %>% filter(Class_EU == "none") 
 
 
-
-
+save_CPT <- function(CPT_dataframe, CPT_save_path){
     # Take the submitted dataframe
     # Remove columns used to format the CPT
-    CPT_dataframe_selected <- test_CPT_dataframe %>% 
-        select(-wwt_pop_share_disc, -Value, -Class_EU) %>% 
-        mutate(across(is.integer <- as.double()))
-    
-    CPT_dataframe_selected
-    
-    CPT_dataframe_selected <- CPT_dataframe_selected %>%
-    mutate(across(where(is.numeric), ~ num(., digits = 1)))
-# YAH: Printing num sets the number of digits correctly, but converts to a variable type that
-    # write_table can't print!
+    CPT_dataframe_selected <- CPT_dataframe %>% 
+        select(-wwt_pop_share_disc, -Value, -Class_EU)
 
+    # Values need decimal points or Hugin won't recognise them
+    CPT_dataframe_selected <- CPT_dataframe_selected %>%
+    mutate(across(everything(), as.character)) %>% 
+    mutate(across(everything(), ~ paste0(., ".0")))  
 
     # Create a text file with HUGIN's preferred table header
     write_lines(x = "CPT", file = "data/Hugin/test_cpt_plz_ignore.txt")
@@ -149,36 +145,7 @@ test_CPT_dataframe <- all_removal_nodes %>% filter(Class_EU == "none")
     write.table(x = CPT_dataframe_selected, 
                 file = "data/Hugin/test_cpt_plz_ignore.txt", 
                 append = TRUE, col.names = FALSE, row.names = FALSE,
-                sep = ",")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-save_CPT <- function(CPT_dataframe, CPT_save_path){
-    # Take the submitted dataframe
-    # Remove columns used to format the CPT
-    CPT_dataframe_selected <- CPT_dataframe %>% 
-        select(-wwt_pop_share_disc, -Value, -Class_EU) %>%
-
-    # Create a text file with HUGIN's preferred table header
-    write_lines(x = "CPT", file = CPT_save_path)
-    # Then add the CPT
-    write.table(x = CPT_dataframe_selected, 
-                file = CPT_save_path, 
-                append = TRUE, col.names = FALSE, row.names = FALSE,
-                sep = ",")
-    
+                sep = ",", quote = FALSE)
 }
 
 save_CPT(CPT_dataframe = test_CPT_dataframe,
