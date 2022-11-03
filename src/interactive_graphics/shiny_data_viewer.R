@@ -5,21 +5,26 @@ pd_county <- splmaps::nor_nuts3_map_b2020_default_sf %>%
     left_join(county_codes, by = "County_Code") %>% 
     select(-location_code)
 
+# Leaflet/shiny data for add_polygons (sf)
 avg_RQ_county <- Hugin_Data_Output_Tall %>% 
+    filter(Risk_Bin %notin% c("true", "false")) %>% 
     group_by(master_pop_scenario, master_year, master_WWT_scenario, master_county, API_Name) %>% 
-    mutate(Risk_Bin_avg = case_when(Risk_Bin == "0-1" ~ 0.5,
-                                    Risk_Bin == "1 - 10" ~ 5.5,
-                                    Risk_Bin == "10-100" ~ 55,
-                                    Risk_Bin == "100-1000" ~ 550,
-                                    Risk_Bin == "1000-10000" ~ 5500,
-                                    Risk_Bin == "10000-inf" ~ 10000),
-           County_Name = master_county) %>% 
-    summarise(Avg_RQ = sum(Risk_Bin_avg * Probability, na.rm = TRUE),
-              County_Name,
-              API_Name) %>% 
-    ungroup() %>% 
-    select(-master_county) %>% 
-    distinct()
+    pivot_wider(names_from = Risk_Bin, values_from = Probability) %>% 
+    mutate(Avg_RQ = sum(`0-1` * 0.5,
+                        `1-10` * 5.5,
+                        `10-100` * 55,
+                        `100-1000` * 550,
+                        `1000-10000` * 5500,
+                        `10000-inf` * 10000),
+           County_Name = master_county)
+
+# Leaflet.minicharts data w/ centroids, data table format
+RQ_county <- avg_RQ_county %>% 
+    select(-Avg_RQ) %>% 
+    left_join(Norway_county_map_centroids, by = "County_Name") %>% 
+    group_by(County_Name) %>% 
+# Needs a numerical ID by county name
+    mutate(County_ID = cur_group_id())
 
 pd_county_joined <- merge(pd_county, avg_RQ_county)
 
@@ -60,6 +65,11 @@ ui <- bootstrapPage(
                   ),
                   checkboxInput("legend", "Show legend", TRUE
                   ),
+                  radioButtons(inputId = "radio_display_pies", 
+                               "Show Risk Pie Charts?",
+                               choices = list("Yes", "No"),
+                               selected = "No"
+                  ),
                   textOutput("last_modified", container = tags$h6)
     )
 )
@@ -75,6 +85,14 @@ server <- function(input, output, session) {
                                     master_WWT_scenario == input$radio_wwt_scen,
                                     API_Name == input$select_API_name)
     })
+    # # Also filter pie chart data
+    # RQ_county_filtered <- reactive({
+    #     RQ_county %>% filter(master_year == input$slider_year,
+    #                                 master_pop_scenario == input$radio_pop_scen,
+    #                                 master_WWT_scenario == input$radio_wwt_scen,
+    #                                 API_Name == input$select_API_name)
+    # })
+    
     # Last modified date, taken from main .Rmd
     Hugin_Output_Last_Updated
     
@@ -85,13 +103,18 @@ server <- function(input, output, session) {
         "<strong>%s</strong><br/>Mean RQ = %g",
         pd_county_joined$County_Name, pd_county_joined$Avg_RQ
     ) %>% lapply(htmltools::HTML)
-    
+    # YAH: Struggling to get minicharts to work properly... may need to remake code entirely from example...
     output$map <- renderLeaflet({
         # Use leaflet() here, and only include aspects of the map that
         # won't need to change dynamically (at least, not unless the
         # entire map is being torn down and recreated).
         leaflet(pd_county_joined_filtered) %>% addTiles() %>%
-            fitBounds(lng1 = 4.641979, lng2 = 31.05787, lat1 = 57.97976, lat2 = 71.18488)
+            fitBounds(lng1 = 4.641979, lng2 = 31.05787, lat1 = 57.97976, lat2 = 71.18488)  
+            # addMinicharts(chartdata = RQ_county,
+            #               lat = RQ_county$lat, 
+            #               lng = RQ_county$long, 
+            #               layerId = RQ_county$County_ID,
+            #               width = 30, height = 30)
     })
     
     # Incremental changes to the map (in this case, replacing the
@@ -126,6 +149,25 @@ server <- function(input, output, session) {
                             direction = "auto")
                         )
     })
+    
+    # Use an observer to create pie charts per county when the relevant option is selected
+    # observe({
+    #     if (input$radio_display_pies == "Yes"){
+    #         RQ_county_filtered <- RQ_county %>% 
+    #             filter(filter(master_year == input$slider_year,
+    #                           master_pop_scenario == input$radio_pop_scen,
+    #                           master_WWT_scenario == input$radio_wwt_scen,
+    #                           API_Name == input$select_API_name))
+    #     
+    #     leafletProxy("map", data = pd_county_joined_filtered()) %>%
+    #         clearShapes() %>%
+    #         addMinicharts(type = "pie",
+    #                       chartdata = RQ_county_filtered,
+    #                       lat = RQ_county_filtered$lat,
+    #                       lng = RQ_county_filtered$long,
+    #                       width = 10)
+    #     }
+    # })
     
     # Use a separate observer to recreate the legend as needed.
     observe({

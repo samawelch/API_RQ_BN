@@ -112,9 +112,7 @@ source(file = "src/data_importers/Hugin_to_R_importer.R")
 source(file = "src/data_processing/map_preparation.R")
 ```
 
-# 6. Results
-
-
+# 4. Results
 
 ```{r shiny_map}
 source(file = "src/interactive_graphics/shiny_data_viewer.R")
@@ -134,6 +132,11 @@ avg_RQ_county %>%
 ```{r WWTP_bar}
 source(file = "src/graphics/WWTP_RQ_bars.R")
 WWTP_RQ_bars
+```
+
+```{r pop_scen_bar}
+source(file = "src/graphics/pop_scen_RQ_bars.R")
+pop_scen_RQ_bars
 ```
 
 ```{r combined_risk_bar}
