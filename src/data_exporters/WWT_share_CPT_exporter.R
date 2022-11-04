@@ -51,14 +51,21 @@ all_removal_nodes <- wwt_share_by_county_2020_disc %>%
                 values_fill = 0) %>% 
     filter(wwt_pop_share_disc == Value)
 
-test_CPT_dataframe <- all_removal_nodes %>% filter(Class_EU == "none") 
+# Set values for compliance and upgrade scenarios
 
+# a big problem RN: setting upgrade scenarios is a bit more complicated than I gave it credit for being
+# I think we need to set them earlier up the pipe
+all_removal_nodes_scenarios <- all_removal_nodes %>% 
+    mutate(across(.cols = contains("Compliance"), ~ case_when(((Class_EU == "secondary" & Value == 1) | 
+                                                                  (Class_EU != "secondary" && Value == 0)) ~ 1, 
+                                                              TRUE ~ 0)),
+           across(.cols = contains("Upgrade"), ~ case_when((Class_EU == "tertiary" & Value == 1) ~ 1, TRUE ~ 0))) %>% 
+    arrange(wwt_pop_share_disc)
 
 save_CPT <- function(CPT_dataframe, CPT_save_path){
     # Take the submitted dataframe
     # Remove columns used to format the CPT
-    CPT_dataframe_selected <- CPT_dataframe %>% 
-        select(-wwt_pop_share_disc, -Value, -Class_EU)
+    CPT_dataframe_selected <- CPT_dataframe
     
     # Values need decimal points or Hugin won't recognise them
     CPT_dataframe_selected <- CPT_dataframe_selected %>%
@@ -66,13 +73,26 @@ save_CPT <- function(CPT_dataframe, CPT_save_path){
         mutate(across(everything(), ~ paste0(., ".0")))  
     
     # Create a text file with HUGIN's preferred table header
-    write_lines(x = "CPT", file = "data/Hugin/test_cpt_plz_ignore.txt")
+    write_lines(x = "CPT", file = CPT_save_path)
     # Then add the CPT
     write.table(x = CPT_dataframe_selected, 
-                file = "data/Hugin/test_cpt_plz_ignore.txt", 
+                file = CPT_save_path, 
                 append = TRUE, col.names = FALSE, row.names = FALSE,
                 sep = ",", quote = FALSE)
 }
 
-save_CPT(CPT_dataframe = test_CPT_dataframe,
-         CPT_save_path = "data/Hugin/test_cpt_plz_ignore.txt")
+
+# Save CPTs for the various levels
+# No WWT
+save_CPT(CPT_dataframe = all_removal_nodes_scenarios %>% filter(Class_EU == "none") %>% select(-c(1:3)),
+         CPT_save_path = "data/Hugin/spatial_county_WWT_0_CPT.txt")
+
+# Primary WWT
+save_CPT(CPT_dataframe = all_removal_nodes_scenarios %>% filter(Class_EU == "primary") %>% select(-c(1:3)),
+         CPT_save_path = "data/Hugin/spatial_county_WWT_1_CPT.txt")
+# Secondary WWT
+save_CPT(CPT_dataframe = all_removal_nodes_scenarios %>% filter(Class_EU == "secondary") %>% select(-c(1:3)),
+         CPT_save_path = "data/Hugin/spatial_county_WWT_2_CPT.txt")
+# Tertiary WWT
+save_CPT(CPT_dataframe = all_removal_nodes_scenarios %>% filter(Class_EU == "tertiary") %>% select(-c(1:3)),
+         CPT_save_path = "data/Hugin/spatial_county_WWT_3_CPT.txt")

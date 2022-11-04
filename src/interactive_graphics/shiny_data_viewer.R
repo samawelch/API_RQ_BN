@@ -96,7 +96,7 @@ server <- function(input, output, session) {
     # Last modified date, taken from main .Rmd
     Hugin_Output_Last_Updated
     
-    AvgRQ_Pal <- colorNumeric(palette = "viridis", domain = c(0, 6000))
+    AvgRQ_Pal <- colorNumeric(palette = viridis_colour, domain = c(0, 6000))
     
     # Generate HTML labels from County info
     SumRQ_labels <- sprintf(
@@ -108,7 +108,7 @@ server <- function(input, output, session) {
         # Use leaflet() here, and only include aspects of the map that
         # won't need to change dynamically (at least, not unless the
         # entire map is being torn down and recreated).
-        leaflet(pd_county_joined_filtered) %>% addTiles() %>%
+        leaflet(pd_county_joined_filtered) %>% addProviderTiles(providers$Esri.WorldGrayCanvas) %>%
             fitBounds(lng1 = 4.641979, lng2 = 31.05787, lat1 = 57.97976, lat2 = 71.18488)  
             # addMinicharts(chartdata = RQ_county,
             #               lat = RQ_county$lat, 
@@ -131,13 +131,13 @@ server <- function(input, output, session) {
                         fillColor = ~AvgRQ_Pal(Avg_RQ),
                         layerId = ~County_Name,
                         color = "white",
-                        fillOpacity = 0.5,
+                        fillOpacity = 1,
                             highlightOptions = highlightOptions(
                             weight = 1,
                             color = "#666",
                             # If dashArray = "". as in the vignette, only the first polygon will appear
                             dashArray = NULL,
-                            fillOpacity = 0.7,
+                            fillOpacity = 1,
                             bringToFront = TRUE),
                         label = ~sprintf(
                             "<strong>%s</strong><br/>Mean RQ = %g",
