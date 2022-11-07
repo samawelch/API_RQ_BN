@@ -97,7 +97,8 @@ a data file (essentially a CSV) with scenario variables filled in, and specially
 columns for variables we want to pull out.
 
 ```{r data_processing_Hugin}
-source(file = "src/data_exporters/WWT_share_CPT_exporter.R")
+# This turned out to be hard to do automatically, so I did it by hand.
+# source(file = "src/data_exporters/WWT_share_CPT_exporter.R")
 
 source(file = "src/data_processing/R_to_Hugin.R")
 ```

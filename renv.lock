@@ -1304,7 +1304,8 @@
     "splmaps": {
       "Package": "splmaps",
       "Version": "2022.6.14",
-      "Source": "unknown",
+      "Source": "Repository",
+      "Repository": "SPLVERSE",
       "Hash": "d47b24a6ddecbdfc52ac8ba7197da9e6",
       "Requirements": [
         "data.table"

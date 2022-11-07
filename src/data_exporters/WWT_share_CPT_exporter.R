@@ -46,6 +46,9 @@ all_removal_nodes <- wwt_share_by_county_2020_disc %>%
                  pull()) %>%
     mutate(present = as.numeric(wwt_pop_share_disc == Value)) %>% 
     arrange(Class_EU, County_Name, Scenario) %>% 
+    # Set scenario values
+    # Upgrade: None = 0, Primary = 0, Secondary = 1 - tertiary, Tertiary unchanged
+
     pivot_wider(names_from = c("County_Name", "Scenario"), 
                 values_from = present, 
                 values_fill = 0) %>% 

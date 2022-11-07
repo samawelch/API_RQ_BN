@@ -33,7 +33,7 @@ class class_master
     HR_Desc = "";
     HR_OOBN_CheckConsistency = "1";
     HR_OOBN_FitExpand = "1";
-    HR_Zoom_ZoomFactor = "117";
+    HR_Zoom_ZoomFactor = "94";
     HR_Groups_GroupColors = "";
     HR_Groups_GroupNames = "";
     HR_Groups_UserGroupsNo = "0";
@@ -79,7 +79,7 @@ class class_master
     node PRQ_1_Total
     {
 	label = "P(RQ > 1)\nTotal";
-	position = (884 667);
+	position = (1815 669);
 	states = ("false" "true");
 	subtype = boolean;
 	HR_LinkMode = "";
@@ -99,7 +99,7 @@ class class_master
     node PRQ_1_Painkillers
     {
 	label = "P(RQ > 1)\nPainkillers";
-	position = (704 667);
+	position = (1669 669);
 	states = ("false" "true");
 	subtype = boolean;
 	HR_LinkControlPoints = "";
@@ -120,7 +120,7 @@ class class_master
     node PRQ_1_Antibiotics
     {
 	label = "P(RQ > 1)\nAntibiotics";
-	position = (706 742);
+	position = (1672 849);
 	states = ("false" "true");
 	subtype = boolean;
 	HR_LinkControlPoints = "";
@@ -141,7 +141,7 @@ class class_master
     node PRQ_1_Estrogens
     {
 	label = "P(RQ > 1)\nEstrogens";
-	position = (702 590);
+	position = (1562 725);
 	states = ("false" "true");
 	subtype = boolean;
 	HR_LinkControlPoints = "";
@@ -162,7 +162,7 @@ class class_master
     node SumRQ_Total
     {
 	label = "Total\nSum RQ";
-	position = (889 401);
+	position = (1911 444);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -183,7 +183,7 @@ class class_master
     node SumRQ_Antibiotics
     {
 	label = "Sum RQ\nAntibiotics";
-	position = (710 488);
+	position = (3280 516);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -205,7 +205,7 @@ class class_master
     node SumRQ_Estrogens
     {
 	label = "Sum RQ\nEstrogens";
-	position = (733 253);
+	position = (1035 207);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -227,7 +227,7 @@ class class_master
     node SumRQ_Painkillers
     {
 	label = "Sum RQ\nPainkillers";
-	position = (690 398);
+	position = (1750 441);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -246,10 +246,10 @@ class class_master
 	HR_Group = "6";
     }
 
-    instance class_API_heavy_paracetamol : class_API_heavy (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_heavy = API_heavy_paracetamol; class_API_heavy_paracetamol_API_RQ_FW = API_RQ_FW)
+    instance class_API_heavy_paracetamol : class_API_heavy (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_heavy = API_heavy_paracetamol, API_county_WWT_3 = class_spatial_spatial_county_WWT_3; class_API_heavy_paracetamol_API_RQ_FW = API_RQ_FW)
     {
 	label = "Paracetamol";
-	position = (303 621);
+	position = (244 622);
 	HR_LinkModeInstance = "";
 	HR_LinkControlPointsInstance = "";
 	HR_LinkGroupInstance = "[class_API_heavy_paracetamol_API_RQ_FW;API_RQ_Paracetamol:-4][class_API_heavy_paracetamol_API_RQ_FW;API_RQ_FW_Paracetamol:-4]";
@@ -266,7 +266,7 @@ class class_master
     node API_RQ_FW_Paracetamol
     {
 	label = "Paracetamol\nRQ";
-	position = (509 622);
+	position = (1511 633);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -288,7 +288,7 @@ class class_master
     node API_heavy_ibuprofen
     {
 	label = "Ibuprofen\n(heavy)";
-	position = (121 670);
+	position = (98 542);
 	states = ("paracetamol" "ibuprofen");
 	HR_LinkControlPoints = "";
 	HR_LinkGroup = "[Ibuprofen (class_API_heavy_ibuprofen)_API_heavy:0]";
@@ -305,7 +305,7 @@ class class_master
     node API_heavy_paracetamol
     {
 	label = "Paracetamol\n(heavy)";
-	position = (121 607);
+	position = (98 491);
 	states = ("paracetamol" "ibuprofen");
 	HR_State_0 = "";
 	HR_State_1 = "";
@@ -322,7 +322,7 @@ class class_master
     node API_RQ_FW_Ibuprofen
     {
 	label = "Ibuprofen\nRQ";
-	position = (511 690);
+	position = (1514 688);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -341,10 +341,10 @@ class class_master
 	HR_Group = "3";
     }
 
-    instance class_API_heavy_ibuprofen : class_API_heavy (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_heavy = API_heavy_ibuprofen; class_API_heavy_ibuprofen_API_RQ_FW = API_RQ_FW)
+    instance class_API_heavy_ibuprofen : class_API_heavy (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_heavy = API_heavy_ibuprofen, API_county_WWT_3 = class_spatial_spatial_county_WWT_3; class_API_heavy_ibuprofen_API_RQ_FW = API_RQ_FW)
     {
 	label = "Ibuprofen";
-	position = (303 688);
+	position = (284 686);
 	HR_LinkModeInstance = "";
 	HR_LinkControlPointsInstance = "";
 	HR_LinkGroupInstance = "[class_API_heavy_ibuprofen_API_RQ_FW;API_RQ_Ibuprofen:-4][class_API_heavy_ibuprofen_API_RQ_FW;API_RQ_Ibuprofen_1:-4][class_API_heavy_ibuprofen_API_RQ_FW;API_RQ_FW_Ibuprofen:-4]";
@@ -361,7 +361,7 @@ class class_master
     node API_RQ_FW_Ethinylestradiol
     {
 	label = "Ethinylestradiol\nRQ";
-	position = (497 428);
+	position = (1595 466);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -383,7 +383,7 @@ class class_master
     node API_RQ_FW_Estradiol
     {
 	label = "Estradiol\nRQ";
-	position = (480 360);
+	position = (285 409);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -405,7 +405,7 @@ class class_master
     node API_light_estradiol
     {
 	label = "Estradiol\n(light)";
-	position = (121 364);
+	position = (98 294);
 	states = ("levonorgestrel" "ethinylestradiol" "estradiol");
 	HR_LinkControlPoints = "";
 	HR_LinkGroup = "[Estradiol (class_API_light_estradiol)_API_light:0]";
@@ -422,7 +422,7 @@ class class_master
     node API_light_ethinylestradiol
     {
 	label = "Ethinylestradiol\n(light)";
-	position = (120 440);
+	position = (97 356);
 	states = ("levonorgestrel" "ethinylestradiol" "estradiol");
 	HR_LinkControlPoints = "";
 	HR_LinkGroup = "[Ethinylestradiol (class_API_light_ethinylestradiol)_API_light:0]";
@@ -436,10 +436,10 @@ class class_master
 	HR_Group = "1";
     }
 
-    instance class_API_light_estradiol : class_API_light (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_light = API_light_estradiol; class_API_light_estradiol_API_RQ_FW = API_RQ_FW)
+    instance class_API_light_estradiol : class_API_light (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_light = API_light_estradiol, API_county_WWT_3 = class_spatial_spatial_county_WWT_3; class_API_light_estradiol_API_RQ_FW = API_RQ_FW)
     {
 	label = "Estradiol";
-	position = (303 367);
+	position = (454 421);
 	HR_Input_Order = "API_county_WW_ML\tAPI_county_WWT_1\tAPI_county_WWT_2\tAPI_county_WWT_0\tAPI_year\tAPI_pop_mill\tspatial_county_pop_share\tAPI_light\t";
 	HR_LinkModeInstance = "";
 	HR_LinkControlPointsInstance = "";
@@ -454,10 +454,10 @@ class class_master
 	HR_Group = "1";
     }
 
-    instance class_API_light_ethinylestradiol : class_API_light (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_light = API_light_ethinylestradiol; class_API_light_ethinylestradiol_API_RQ_FW = API_RQ_FW)
+    instance class_API_light_ethinylestradiol : class_API_light (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_light = API_light_ethinylestradiol, API_county_WWT_3 = class_spatial_spatial_county_WWT_3; class_API_light_ethinylestradiol_API_RQ_FW = API_RQ_FW)
     {
 	label = "Ethinylestradiol";
-	position = (303 428);
+	position = (485 486);
 	HR_LinkModeInstance = "";
 	HR_LinkControlPointsInstance = "";
 	HR_LinkGroupInstance = "[class_API_light_ethinylestradiol_API_RQ_FW;API_RQ_FW_Ethinylestradiol:-4]";
@@ -474,7 +474,7 @@ class class_master
     node API_RQ_FW_Ciprofloxacin
     {
 	label = "Ciprofloxacin\nRQ";
-	position = (489 488);
+	position = (3101 516);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -496,7 +496,7 @@ class class_master
     node API_medium_ciprofloxacin
     {
 	label = "Ciprofloxacin\n(medium)";
-	position = (121 487);
+	position = (98 394);
 	states = ("amoxicillin" "ciprofloxacin" "diclofenac");
 	HR_LinkControlPoints = "";
 	HR_State_0 = "";
@@ -510,10 +510,10 @@ class class_master
 	HR_Group = "2";
     }
 
-    instance class_API_medium_ciprofloxacin : class_API_medium (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_medium = API_medium_ciprofloxacin; class_API_medium_ciprofloxacin_API_RQ_FW = API_RQ_FW)
+    instance class_API_medium_ciprofloxacin : class_API_medium (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_medium = API_medium_ciprofloxacin, API_county_WWT_3 = class_spatial_spatial_county_WWT_3; class_API_medium_ciprofloxacin_API_RQ_FW = API_RQ_FW)
     {
 	label = "Ciprofloxacin";
-	position = (311 488);
+	position = (254 514);
 	HR_LinkModeInstance = "";
 	HR_LinkControlPointsInstance = "";
 	HR_LinkGroup = "";
@@ -527,10 +527,10 @@ class class_master
 	HR_Group = "2";
     }
 
-    instance class_API_medium_diclofenac : class_API_medium (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_medium = API_medium_diclofenac; class_API_medium_diclofenac_API_RQ_FW = API_RQ_FW)
+    instance class_API_medium_diclofenac : class_API_medium (API_county_WW_ML = class_spatial_spatial_county_WW_ML, API_county_WWT_1 = class_spatial_spatial_county_WWT_1, API_county_WWT_2 = class_spatial_spatial_county_WWT_2, API_county_WWT_0 = class_spatial_spatial_county_WWT_0, API_year = master_year, API_pop_mill = master_pop_mill, spatial_county_pop_share = class_spatial_spatial_county_pop_share, API_medium = API_medium_diclofenac, API_county_WWT_3 = class_spatial_spatial_county_WWT_3; class_API_medium_diclofenac_API_RQ_FW = API_RQ_FW)
     {
 	label = "Diclofenac";
-	position = (303 558);
+	position = (552 551);
 	HR_LinkModeInstance = "";
 	HR_LinkControlPointsInstance = "";
 	HR_LinkGroupInstance = "[class_API_medium_diclofenac_API_RQ_FW;API_RQ_FW_Diclofenac:-4][class_API_medium_diclofenac_API_RQ_FW;API_RQ_FW_Diclofenac_1:-4]";
@@ -544,10 +544,12 @@ class class_master
 	HR_isCollapsed = "true";
     }
 
-    instance class_spatial : class_spatial (spatial_county = master_county, spatial_year = master_year, spatial_pop_mill = master_pop_mill, spatial_WWT_scenario = master_WWT_scenario; class_spatial_spatial_county_WWT_1 = spatial_county_WWT_1, class_spatial_spatial_county_WWT_2 = spatial_county_WWT_2, class_spatial_spatial_county_WWT_0 = spatial_county_WWT_0, class_spatial_spatial_county_WW_ML = spatial_county_WW_ML, class_spatial_spatial_county_pop_share = spatial_county_pop_share)
+    instance class_spatial : class_spatial (spatial_county = master_county, spatial_year = master_year, spatial_pop_mill = master_pop_mill; class_spatial_spatial_county_WWT_1 = spatial_county_WWT_1, class_spatial_spatial_county_WWT_2 = spatial_county_WWT_2, class_spatial_spatial_county_WWT_0 = spatial_county_WWT_0, class_spatial_spatial_county_WW_ML = spatial_county_WW_ML, class_spatial_spatial_county_pop_share = spatial_county_pop_share, class_spatial_spatial_county_WWT_3 = spatial_county_WWT_3)
     {
 	label = "County";
-	position = (303 181);
+	position = (551 227);
+	HR_LinkModeInstance = "";
+	HR_LinkControlPointsInstance = "";
 	HR_Input_Order = "spatial_pop_mill\tspatial_year\tspatial_county\tspatial_WWT_scenario\t";
 	HR_Output_Order = "class_spatial_spatial_county_pop_share\tclass_spatial_spatial_county_WWT_1\tclass_spatial_spatial_county_WWT_2\tclass_spatial_spatial_county_WWT_0\tclass_spatial_spatial_county_WW_ML\t";
 	HR_InterfaceNode_placement = "horizontal";
@@ -555,14 +557,14 @@ class class_master
 	HR_NodeSize = "(99, 59)";
 	HR_Group = "4";
 	HR_Desc = "";
-	HR_LinkGroupInstance = "[class_spatial_1_spatial_county_WWT_1;class_API_medium_1_API_county_WWT_1:-2][class_spatial_1_spatial_county_WWT_2;class_API_medium_1_API_county_WWT_2:-2][class_spatial_1_spatial_county_WWT_0;class_API_medium_1_API_county_WWT_0:-2][class_spatial_1_spatial_county_pop_share;class_API_medium_1_spatial_county_pop_share:-2][class_spatial_1_spatial_county_WW_ML;class_API_medium_1_API_county_WW_ML:-2][class_spatial_1_spatial_county_dilution;class_API_medium_1_API_county_dilution:-2][class_spatial_1_spatial_county_WW_ML;diclofenac (class_API_diclofenac)_API_county_WW_ML:-2][class_spatial_1_spatial_county_WWT_1;diclofenac (class_API_diclofenac)_API_county_WWT_1:-2][class_spatial_1_spatial_county_WWT_2;diclofenac (class_API_diclofenac)_API_county_WWT_2:-2][class_spatial_1_spatial_county_WWT_0;diclofenac (class_API_diclofenac)_API_county_WWT_0:-2][class_spatial_1_spatial_county_pop_share;diclofenac (class_API_diclofenac)_spatial_county_pop_share:-2][class_spatial_1_spatial_county_dilution;diclofenac (class_API_diclofenac)_API_county_dilution:-2][class_spatial_1_spatial_county_WWT_0;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_0:-2][class_spatial_1_spatial_county_pop_share;amoxicillin (class_API_medium_amoxicillin)_spatial_county_pop_share:-2][class_spatial_1_spatial_county_dilution;amoxicillin (class_API_medium_amoxicillin)_API_county_dilution:-2][class_spatial_1_spatial_county_WWT_2;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_2:-2][class_spatial_1_spatial_county_WWT_1;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_1:-2][class_spatial_1_spatial_county_WW_ML;amoxicillin (class_API_medium_amoxicillin)_API_county_WW_ML:-2][class_spatial_spatial_county_WW_ML;amoxicillin (class_API_medium_amoxicillin)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;amoxicillin (class_API_medium_amoxicillin)_spatial_county_pop_share:-2][class_spatial_spatial_county_dilution;amoxicillin (class_API_medium_amoxicillin)_API_county_dilution:-2][class_spatial_spatial_county_dilution;diclofenac (class_API_diclofenac)_API_county_dilution:-2][class_spatial_spatial_county_WW_ML;diclofenac (class_API_diclofenac)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;diclofenac (class_API_diclofenac)_API_county_WWT_1:-2][class_spatial_spatial_county_pop_share;diclofenac (class_API_diclofenac)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_2;diclofenac (class_API_diclofenac)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;diclofenac (class_API_diclofenac)_API_county_WWT_0:-2][class_spatial_spatial_county_WW_ML;diclofenac (class_API_medium_diclofenac)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;diclofenac (class_API_medium_diclofenac)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;diclofenac (class_API_medium_diclofenac)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;diclofenac (class_API_medium_diclofenac)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;diclofenac (class_API_medium_diclofenac)_spatial_county_pop_share:-2][class_spatial_spatial_county_WW_ML;Diclofenac (class_API_medium_diclofenac)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;Diclofenac (class_API_medium_diclofenac)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;Diclofenac (class_API_medium_diclofenac)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Diclofenac (class_API_medium_diclofenac)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;Diclofenac (class_API_medium_diclofenac)_spatial_county_pop_share:-2][class_spatial_spatial_county_pop_share;amoxcillin (class_API_medium_amoxcillin)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_0;amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_0:-2][class_spatial_spatial_county_WWT_2;amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_1;amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_1:-2][class_spatial_spatial_county_WW_ML;amoxcillin (class_API_medium_amoxcillin)_API_county_WW_ML:-2][class_spatial_spatial_county_pop_share;Ciprofloxacin (class_API_medium_ciprofloxacin)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_0;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WWT_0:-2][class_spatial_spatial_county_WWT_2;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_1;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WWT_1:-2][class_spatial_spatial_county_WW_ML;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WW_ML:-2][class_spatial_spatial_county_WW_ML;Amoxcillin (class_API_medium_amoxcillin)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;Amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;Amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;Amoxcillin (class_API_medium_amoxcillin)_spatial_county_pop_share:-2][class_spatial_spatial_county_WW_ML;Levonorgestrel (class_API_light_levonorgestrel)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_2;Levonorgestrel (class_API_light_levonorgestrel)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Levonorgestrel (class_API_light_levonorgestrel)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;County (class_spatial)_class_spatial_spatial_county_pop_share:-4][class_spatial_spatial_county_pop_share;Levonorgestrel (class_API_light_levonorgestrel)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_1;Levonorgestrel (class_API_light_levonorgestrel)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_0;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WWT_0:-2][class_spatial_spatial_county_WWT_2;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_1;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WWT_1:-2][class_spatial_spatial_county_WW_ML;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WW_ML:-2][class_spatial_spatial_county_pop_share;Ethinylestradiol (class_API_light_ethinylestradiol)_spatial_county_pop_share:-2][class_spatial_spatial_county_WW_ML;Estradiol (class_API_light_estradiol)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_0;Estradiol (class_API_light_estradiol)_API_county_WWT_0:-2][class_spatial_spatial_county_WWT_2;Estradiol (class_API_light_estradiol)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_1;Estradiol (class_API_light_estradiol)_API_county_WWT_1:-2][class_spatial_spatial_county_pop_share;Estradiol (class_API_light_estradiol)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_1;Paracetamol (class_API_heavy_paracetamol)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;Paracetamol (class_API_heavy_paracetamol)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Paracetamol (class_API_heavy_paracetamol)_API_county_WWT_0:-2][class_spatial_spatial_county_WW_ML;Paracetamol (class_API_heavy_paracetamol)_API_county_WW_ML:-2][class_spatial_spatial_county_pop_share;Paracetamol (class_API_heavy_paracetamol)_spatial_county_pop_share:-2][class_spatial_spatial_county_WW_ML;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;Ibuprofen (class_API_heavy_ibuprofen)_spatial_county_pop_share:-2]";
-	HR_isCollapsed = "true";
+	HR_LinkGroupInstance = "[class_spatial_1_spatial_county_WWT_1;class_API_medium_1_API_county_WWT_1:-2][class_spatial_1_spatial_county_WWT_2;class_API_medium_1_API_county_WWT_2:-2][class_spatial_1_spatial_county_WWT_0;class_API_medium_1_API_county_WWT_0:-2][class_spatial_1_spatial_county_pop_share;class_API_medium_1_spatial_county_pop_share:-2][class_spatial_1_spatial_county_WW_ML;class_API_medium_1_API_county_WW_ML:-2][class_spatial_1_spatial_county_dilution;class_API_medium_1_API_county_dilution:-2][class_spatial_1_spatial_county_WW_ML;diclofenac (class_API_diclofenac)_API_county_WW_ML:-2][class_spatial_1_spatial_county_WWT_1;diclofenac (class_API_diclofenac)_API_county_WWT_1:-2][class_spatial_1_spatial_county_WWT_2;diclofenac (class_API_diclofenac)_API_county_WWT_2:-2][class_spatial_1_spatial_county_WWT_0;diclofenac (class_API_diclofenac)_API_county_WWT_0:-2][class_spatial_1_spatial_county_pop_share;diclofenac (class_API_diclofenac)_spatial_county_pop_share:-2][class_spatial_1_spatial_county_dilution;diclofenac (class_API_diclofenac)_API_county_dilution:-2][class_spatial_1_spatial_county_WWT_0;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_0:-2][class_spatial_1_spatial_county_pop_share;amoxicillin (class_API_medium_amoxicillin)_spatial_county_pop_share:-2][class_spatial_1_spatial_county_dilution;amoxicillin (class_API_medium_amoxicillin)_API_county_dilution:-2][class_spatial_1_spatial_county_WWT_2;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_2:-2][class_spatial_1_spatial_county_WWT_1;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_1:-2][class_spatial_1_spatial_county_WW_ML;amoxicillin (class_API_medium_amoxicillin)_API_county_WW_ML:-2][class_spatial_spatial_county_WW_ML;amoxicillin (class_API_medium_amoxicillin)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;amoxicillin (class_API_medium_amoxicillin)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;amoxicillin (class_API_medium_amoxicillin)_spatial_county_pop_share:-2][class_spatial_spatial_county_dilution;amoxicillin (class_API_medium_amoxicillin)_API_county_dilution:-2][class_spatial_spatial_county_dilution;diclofenac (class_API_diclofenac)_API_county_dilution:-2][class_spatial_spatial_county_WW_ML;diclofenac (class_API_diclofenac)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;diclofenac (class_API_diclofenac)_API_county_WWT_1:-2][class_spatial_spatial_county_pop_share;diclofenac (class_API_diclofenac)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_2;diclofenac (class_API_diclofenac)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;diclofenac (class_API_diclofenac)_API_county_WWT_0:-2][class_spatial_spatial_county_WW_ML;diclofenac (class_API_medium_diclofenac)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;diclofenac (class_API_medium_diclofenac)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;diclofenac (class_API_medium_diclofenac)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;diclofenac (class_API_medium_diclofenac)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;diclofenac (class_API_medium_diclofenac)_spatial_county_pop_share:-2][class_spatial_spatial_county_WW_ML;Diclofenac (class_API_medium_diclofenac)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;Diclofenac (class_API_medium_diclofenac)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;Diclofenac (class_API_medium_diclofenac)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Diclofenac (class_API_medium_diclofenac)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;Diclofenac (class_API_medium_diclofenac)_spatial_county_pop_share:-2][class_spatial_spatial_county_pop_share;amoxcillin (class_API_medium_amoxcillin)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_0;amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_0:-2][class_spatial_spatial_county_WWT_2;amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_1;amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_1:-2][class_spatial_spatial_county_WW_ML;amoxcillin (class_API_medium_amoxcillin)_API_county_WW_ML:-2][class_spatial_spatial_county_pop_share;Ciprofloxacin (class_API_medium_ciprofloxacin)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_0;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WWT_0:-2][class_spatial_spatial_county_WWT_2;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_1;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WWT_1:-2][class_spatial_spatial_county_WW_ML;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WW_ML:-2][class_spatial_spatial_county_WW_ML;Amoxcillin (class_API_medium_amoxcillin)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;Amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;Amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Amoxcillin (class_API_medium_amoxcillin)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;Amoxcillin (class_API_medium_amoxcillin)_spatial_county_pop_share:-2][class_spatial_spatial_county_WW_ML;Levonorgestrel (class_API_light_levonorgestrel)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_2;Levonorgestrel (class_API_light_levonorgestrel)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Levonorgestrel (class_API_light_levonorgestrel)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;County (class_spatial)_class_spatial_spatial_county_pop_share:-4][class_spatial_spatial_county_pop_share;Levonorgestrel (class_API_light_levonorgestrel)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_1;Levonorgestrel (class_API_light_levonorgestrel)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_0;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WWT_0:-2][class_spatial_spatial_county_WWT_2;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_1;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WWT_1:-2][class_spatial_spatial_county_WW_ML;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WW_ML:-2][class_spatial_spatial_county_pop_share;Ethinylestradiol (class_API_light_ethinylestradiol)_spatial_county_pop_share:-2][class_spatial_spatial_county_WW_ML;Estradiol (class_API_light_estradiol)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_0;Estradiol (class_API_light_estradiol)_API_county_WWT_0:-2][class_spatial_spatial_county_WWT_2;Estradiol (class_API_light_estradiol)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_1;Estradiol (class_API_light_estradiol)_API_county_WWT_1:-2][class_spatial_spatial_county_pop_share;Estradiol (class_API_light_estradiol)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_1;Paracetamol (class_API_heavy_paracetamol)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;Paracetamol (class_API_heavy_paracetamol)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Paracetamol (class_API_heavy_paracetamol)_API_county_WWT_0:-2][class_spatial_spatial_county_WW_ML;Paracetamol (class_API_heavy_paracetamol)_API_county_WW_ML:-2][class_spatial_spatial_county_pop_share;Paracetamol (class_API_heavy_paracetamol)_spatial_county_pop_share:-2][class_spatial_spatial_county_WW_ML;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WW_ML:-2][class_spatial_spatial_county_WWT_1;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WWT_1:-2][class_spatial_spatial_county_WWT_2;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WWT_2:-2][class_spatial_spatial_county_WWT_0;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WWT_0:-2][class_spatial_spatial_county_pop_share;Ibuprofen (class_API_heavy_ibuprofen)_spatial_county_pop_share:-2][class_spatial_spatial_county_WWT_3;Estradiol (class_API_light_estradiol)_API_county_WWT_3:-2][class_spatial_spatial_county_WWT_3;Ethinylestradiol (class_API_light_ethinylestradiol)_API_county_WWT_3:-2][class_spatial_spatial_county_WWT_3;Diclofenac (class_API_medium_diclofenac)_API_county_WWT_3:-2][class_spatial_spatial_county_WWT_3;Ciprofloxacin (class_API_medium_ciprofloxacin)_API_county_WWT_3:-2][class_spatial_spatial_county_WWT_3;Paracetamol (class_API_heavy_paracetamol)_API_county_WWT_3:-2][class_spatial_spatial_county_WWT_3;Ibuprofen (class_API_heavy_ibuprofen)_API_county_WWT_3:-2]";
+	HR_isCollapsed = "false";
     }
 
     node API_medium_diclofenac
     {
 	label = "Diclofenac\n(medium)";
-	position = (121 547);
+	position = (98 443);
 	states = ("amoxicillin" "ciprofloxacin" "diclofenac");
 	HR_State_0 = "";
 	HR_State_1 = "";
@@ -578,7 +580,7 @@ class class_master
     node API_RQ_FW_Diclofenac
     {
 	label = "Diclofenac\nRQ";
-	position = (505 559);
+	position = (1402 699);
 	states = ("" "" "" "" "" "");
 	subtype = interval;
 	state_values = (0 1 10 100 1000 10000 infinity);
@@ -600,7 +602,7 @@ class class_master
     node master_pop_mill
     {
 	label = "Population of\nNorway (mil)";
-	position = (852 60);
+	position = (690 48);
 	states = ("" "" "" "" "" "");
 	subtype = number;
 	state_values = (4.5 5 5.5 6 6.5 7);
@@ -621,12 +623,13 @@ class class_master
     node master_WWT_scenario
     {
 	label = "WWT Scenario";
-	position = (121 60);
-	states = ("Current" "Compliance");
+	position = (98 48);
+	states = ("Current" "Compliance" "Upgrade");
+	HR_HTML_Desc = "";
 	HR_NodeSize = "(99, 59)";
 	HR_LinkControlPoints = "";
 	HR_LinkGroup = "[class_spatial_1_spatial_WWT_scenario:0][county (class_spatial)_spatial_WWT_scenario:0][County (class_spatial_1)_spatial_WWT_scenario:0][County (class_spatial)_spatial_WWT_scenario:0]";
-	HR_LinkMode = "[spatial_WWT_scenario:0]";
+	HR_LinkMode = "";
 	HR_State_2 = "";
 	HR_Group = "5";
 	HR_Desc = "";
@@ -637,7 +640,7 @@ class class_master
     node master_pop_scenario
     {
 	label = "Population\nScenario";
-	position = (364 60);
+	position = (294 48);
 	states = ("Low" "Main" "High");
 	HR_LinkControlPoints = "";
 	HR_NodeSize = "(99, 59)";
@@ -653,7 +656,7 @@ class class_master
     node master_year
     {
 	label = "Year";
-	position = (621 44);
+	position = (503 35);
 	states = ("" "");
 	subtype = number;
 	state_values = (2020 2050);
@@ -672,8 +675,10 @@ class class_master
     node master_county
     {
 	label = "County";
-	position = (121 181);
-	states = ("Total" "Innlandet" "Vestfold og Telemark" "Agder" "Rogaland" "Vestland" "M\303\270re og Romsdal" "Tr\303\270ndelag" "Nordland" "Troms og Finnmark" "Oslo" "Viken");
+	position = (98 146);
+	states = ("Total" "Agder" "Innlandet" "M\303\270re og Romsdal" "Nordland" "Oslo" "Rogaland" "Troms og Finnmark" "Tr\303\270ndelag" "Vestfold og Telemark" "Vestland" "Viken");
+	HR_NodeSize = "(100, 59)";
+	HR_HTML_Desc = "";
 	HR_LinkControlPoints = "";
 	HR_LinkMode = "[class_spatial_1_spatial_county_WWT_1:0][spatial_county:0]";
 	HR_LinkGroup = "[class_spatial_1_class_spatial_1_spatial_county_WWT_1:0][class_spatial_1_spatial_county:0][county (class_spatial)_spatial_county:0][County (class_spatial_1)_class_spatial_1_spatial_county_WWT_1:0][County (class_spatial_1)_spatial_county:0][County (class_spatial)_spatial_county:0]";
@@ -1595,7 +1600,7 @@ class class_master
 
     potential (master_WWT_scenario)
     {
-	data = ( 1 1 );
+	data = ( 1 1 1 );
     }
 
     potential (master_pop_scenario)
