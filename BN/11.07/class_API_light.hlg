@@ -1,354 +1,4 @@
-Using model for API_total_WWT_removal to generate a conditional probability table
-Mon Nov  7 10:28:11 2022
-
-
-Moral links:
-
-    Marrying spatial_county_WWT_3 and API_removal_WWT_3
-    Marrying API_pop_mill and spatial_county_pop_share
-    Marrying API_removal_WWT_1 and API_removal_WWT_3
-    Marrying API_removal_WWT_1 and spatial_county_WWT_3
-    Marrying API_removal_WWT_2 and API_removal_WWT_3
-    Marrying API_removal_WWT_2 and spatial_county_WWT_3
-    Marrying API_removal_WWT_2 and API_removal_WWT_1
-    Marrying API_PEC_SW_gL and API_PNEC_gL
-    Marrying API_PEC_inf_gL and API_removal_WWT_3
-    Marrying API_PEC_inf_gL and spatial_county_WWT_3
-    Marrying API_PEC_inf_gL and API_removal_WWT_2
-    Marrying API_PEC_inf_gL and API_removal_WWT_1
-    Marrying API_lm_intercept_kg and spatial_county_pop_share
-    Marrying API_lm_intercept_kg and API_pop_mill
-    Marrying API_lm_coef_kg_per_mpop_per_year and spatial_county_pop_share
-    Marrying API_lm_coef_kg_per_mpop_per_year and API_pop_mill
-    Marrying API_lm_coef_kg_per_mpop_per_year and API_lm_intercept_kg
-    Marrying API_county_WWT_0 and API_removal_WWT_3
-    Marrying API_county_WWT_0 and spatial_county_WWT_3
-    Marrying API_county_WWT_0 and API_PEC_inf_gL
-    Marrying API_county_WWT_0 and API_removal_WWT_2
-    Marrying API_county_WWT_0 and API_removal_WWT_1
-    Marrying API_county_WWT_2 and API_removal_WWT_3
-    Marrying API_county_WWT_2 and spatial_county_WWT_3
-    Marrying API_county_WWT_2 and API_PEC_inf_gL
-    Marrying API_county_WWT_2 and API_county_WWT_0
-    Marrying API_county_WWT_2 and API_removal_WWT_2
-    Marrying API_county_WWT_2 and API_removal_WWT_1
-    Marrying API_county_WWT_1 and API_removal_WWT_3
-    Marrying API_county_WWT_1 and spatial_county_WWT_3
-    Marrying API_county_WWT_1 and API_PEC_inf_gL
-    Marrying API_county_WWT_1 and API_county_WWT_2
-    Marrying API_county_WWT_1 and API_county_WWT_0
-    Marrying API_county_WWT_1 and API_removal_WWT_2
-    Marrying API_county_WWT_1 and API_removal_WWT_1
-    Marrying API_county_WW_ML and API_sales_weight_kg
-    Marrying API_year and spatial_county_pop_share
-    Marrying API_year and API_pop_mill
-    Marrying API_year and API_lm_intercept_kg
-    Marrying API_year and API_lm_coef_kg_per_mpop_per_year
-
-
-Triangulating prime component with 3 members:
-    API_PNEC_gL, API_RQ_FW, API_PEC_SW_gL
-This component is a clique of cost 108
-
-Triangulating prime component with 9 members:
-    API_removal_WWT_3, spatial_county_WWT_3, API_total_WWT_removal,
-    API_removal_WWT_1, API_removal_WWT_2, API_PEC_inf_gL, API_county_WWT_0,
-    API_county_WWT_2, API_county_WWT_1
-This component is a clique of cost 720000
-
-Triangulating prime component with 3 members:
-    API_PEC_inf_gL, API_sales_weight_kg, API_county_WW_ML
-This component is a clique of cost 252
-
-Triangulating prime component with 12 members:
-    API_removal_WWT_3, API_total_WWT_removal, API_PNEC_gL, API_light,
-    API_removal_WWT_1, API_removal_WWT_2, API_PEC_SW_gL, API_PEC_eff_gL,
-    API_PEC_inf_gL, API_lm_intercept_kg, API_lm_coef_kg_per_mpop_per_year,
-    API_sales_weight_kg
-
-    Using the best greedy heuristic for triangulation
-
-
-Triangulating prime component with 6 members:
-    spatial_county_pop_share, API_pop_mill, API_lm_intercept_kg,
-    API_lm_coef_kg_per_mpop_per_year, API_sales_weight_kg, API_year
-This component is a clique of cost 4536
-
-
-Total cost of triangulation for all prime components is 737163
-
-
-Elimination sequence:
-
-    API_county_WW_ML
-    API_year
-    API_pop_mill
-    spatial_county_pop_share
-    API_lm_coef_kg_per_mpop_per_year
-    API_lm_intercept_kg
-    API_sales_weight_kg
-    API_county_WWT_1
-    API_county_WWT_2
-    API_county_WWT_0
-    spatial_county_WWT_3
-    API_removal_WWT_2
-    API_removal_WWT_1
-    API_removal_WWT_3
-    API_total_WWT_removal
-    API_PEC_inf_gL
-    API_PEC_eff_gL
-    API_RQ_FW
-    API_PNEC_gL
-    API_PEC_SW_gL
-    API_light
-
-
-Cliques:
-
-Clique 10, 3 members, table size = 54:
-    API_light, API_PEC_SW_gL, API_PNEC_gL
-
-Clique 9, 3 members, table size = 108:
-    API_PEC_SW_gL, API_PNEC_gL, API_RQ_FW
-
-Clique 8, 3 members, table size = 108:
-    API_light, API_PEC_SW_gL, API_PEC_eff_gL
-
-Clique 7, 4 members, table size = 540:
-    API_light, API_PEC_eff_gL, API_PEC_inf_gL, API_total_WWT_removal
-
-Clique 6, 6 members, table size = 11250:
-    API_light, API_PEC_inf_gL, API_total_WWT_removal, API_removal_WWT_3,
-    API_removal_WWT_1, API_removal_WWT_2
-
-Clique 5, 9 members, table size = 720000:
-    API_PEC_inf_gL, API_total_WWT_removal, API_removal_WWT_3,
-    API_removal_WWT_1, API_removal_WWT_2, spatial_county_WWT_3,
-    API_county_WWT_0, API_county_WWT_2, API_county_WWT_1
-
-Clique 4, 3 members, table size = 126:
-    API_light, API_PEC_inf_gL, API_sales_weight_kg
-
-Clique 3, 4 members, table size = 189:
-    API_light, API_sales_weight_kg, API_lm_intercept_kg,
-    API_lm_coef_kg_per_mpop_per_year
-
-Clique 2, 6 members, table size = 4536:
-    API_sales_weight_kg, API_lm_intercept_kg, API_lm_coef_kg_per_mpop_per_year,
-    spatial_county_pop_share, API_pop_mill, API_year
-
-Clique 1, 3 members, table size = 252:
-    API_PEC_inf_gL, API_sales_weight_kg, API_county_WW_ML
-
-Total clique table size: 737163
-
-
-The junction forest:
-
-Creating junction tree with clique 10 as root ...
-
-Cliques 9 and 10 linked, separator has 2 members and table size = 18:
-    API_PEC_SW_gL, API_PNEC_gL
-
-Cliques 8 and 10 linked, separator has 2 members and table size = 18:
-    API_light, API_PEC_SW_gL
-
-Cliques 7 and 8 linked, separator has 2 members and table size = 18:
-    API_light, API_PEC_eff_gL
-
-Cliques 6 and 7 linked, separator has 3 members and table size = 90:
-    API_light, API_PEC_inf_gL, API_total_WWT_removal
-
-Cliques 5 and 6 linked, separator has 5 members and table size = 3750:
-    API_PEC_inf_gL, API_total_WWT_removal, API_removal_WWT_3,
-    API_removal_WWT_1, API_removal_WWT_2
-
-Cliques 4 and 7 linked, separator has 2 members and table size = 18:
-    API_light, API_PEC_inf_gL
-
-Cliques 3 and 4 linked, separator has 2 members and table size = 21:
-    API_light, API_sales_weight_kg
-
-Cliques 2 and 3 linked, separator has 3 members and table size = 63:
-    API_sales_weight_kg, API_lm_intercept_kg, API_lm_coef_kg_per_mpop_per_year
-
-Cliques 1 and 4 linked, separator has 2 members and table size = 42:
-    API_PEC_inf_gL, API_sales_weight_kg
-
-
-Assignment of potentials to cliques:
-
-    Node API_removal_WWT_3 assigned to clique 6
-    Node spatial_county_WWT_3 assigned to clique 5
-    Node API_total_WWT_removal assigned to clique 5
-    Node API_PNEC_gL assigned to clique 10
-    Node API_light assigned to clique 10
-    Node spatial_county_pop_share assigned to clique 2
-    Node API_pop_mill assigned to clique 2
-    Node API_RQ_FW assigned to clique 9
-    Node API_removal_WWT_1 assigned to clique 6
-    Node API_removal_WWT_2 assigned to clique 6
-    Node API_PEC_SW_gL assigned to clique 8
-    Node API_PEC_eff_gL assigned to clique 7
-    Node API_PEC_inf_gL assigned to clique 1
-    Node API_lm_intercept_kg assigned to clique 3
-    Node API_lm_coef_kg_per_mpop_per_year assigned to clique 3
-    Node API_sales_weight_kg assigned to clique 2
-    Node API_county_WWT_0 assigned to clique 5
-    Node API_county_WWT_2 assigned to clique 5
-    Node API_county_WWT_1 assigned to clique 5
-    Node API_county_WW_ML assigned to clique 1
-    Node API_year assigned to clique 2
-
-
-Checking conditional probability potentials:
-
-    No errors found
-
-
-Beliefs for chance nodes:
-
-    API_removal_WWT_3:
-	state0   0
-	state1   0.333333
-	state2   0.666667
-	state3   0
-	state4   0
-
-    spatial_county_WWT_3:
-	state0   0.25
-	state1   0.25
-	state2   0.25
-	state3   0.25
-
-    API_total_WWT_removal:
-	state0   0.0625
-	state1   0.104167
-	state2   0.152778
-	state3   0.1875
-	state4   0.493056
-
-    API_PNEC_gL:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
-
-    API_light:
-	levonorgestrel 0.333333
-	ethinylestradiol 0.333333
-	estradiol  0.333333
-
-    spatial_county_pop_share:
-	state0   0.166667
-	state1   0.166667
-	state2   0.166667
-	state3   0.166667
-	state4   0.166667
-	state5   0.166667
-
-    API_pop_mill:
-	state0   0.166667
-	state1   0.166667
-	state2   0.166667
-	state3   0.166667
-	state4   0.166667
-	state5   0.166667
-
-    API_RQ_FW:
-	state0   0.141243
-	state1   0.230104
-	state2   0.323222
-	state3   0.305432
-	state4   0
-	state5   0
-
-    API_removal_WWT_1:
-	state0   0.666667
-	state1   0.333333
-	state2   0
-	state3   0
-	state4   0
-
-    API_removal_WWT_2:
-	state0   0
-	state1   0.333333
-	state2   0.333333
-	state3   0.333333
-	state4   0
-
-    API_PEC_SW_gL:
-	state0   0.00407402
-	state1   0.0284412
-	state2   0.157779
-	state3   0.303076
-	state4   0.50663
-	state5   0
-
-    API_PEC_eff_gL:
-	state0   0.00407402
-	state1   0.0284412
-	state2   0.157779
-	state3   0.303076
-	state4   0.50663
-	state5   0
-
-    API_PEC_inf_gL:
-	state0   0.0012
-	state1   0.0122889
-	state2   0.140281
-	state3   0.298315
-	state4   0.310642
-	state5   0.237273
-
-    API_lm_intercept_kg:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
-
-    API_lm_coef_kg_per_mpop_per_year:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
-
-    API_sales_weight_kg:
-	state0   0.0833333
-	state1   0.351852
-	state2   0.300926
-	state3   0.203704
-	state4   0.0601852
-	state5   0
-	state6   0
-
-    API_county_WWT_0:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
-
-    API_county_WWT_2:
-	state0   0.25
-	state1   0.25
-	state2   0.25
-	state3   0.25
-
-    API_county_WWT_1:
-	state0   0.25
-	state1   0.25
-	state2   0.25
-	state3   0.25
-
-    API_county_WW_ML:
-	state0   0.166667
-	state1   0.166667
-	state2   0.166667
-	state3   0.166667
-	state4   0.166667
-	state5   0.166667
-
-    API_year:
-	state0   0.5
-	state1   0.5
-Using model for API_total_WWT_removal to generate a conditional probability table
-Mon Nov  7 10:28:42 2022
+Tue Nov  8 08:48:31 2022
 
 
 Moral links:
@@ -403,7 +53,7 @@ Triangulating prime component with 9 members:
     API_removal_WWT_3, API_county_WWT_3, API_total_WWT_removal,
     API_removal_WWT_1, API_removal_WWT_2, API_PEC_inf_gL, API_county_WWT_0,
     API_county_WWT_2, API_county_WWT_1
-This component is a clique of cost 720000
+This component is a clique of cost 600000
 
 Triangulating prime component with 3 members:
     API_PEC_inf_gL, API_sales_weight_kg, API_county_WW_ML
@@ -424,7 +74,7 @@ Triangulating prime component with 6 members:
 This component is a clique of cost 4536
 
 
-Total cost of triangulation for all prime components is 737163
+Total cost of triangulation for all prime components is 617163
 
 
 Elimination sequence:
@@ -470,7 +120,7 @@ Clique 6, 6 members, table size = 11250:
     API_light, API_PEC_inf_gL, API_total_WWT_removal, API_removal_WWT_3,
     API_removal_WWT_1, API_removal_WWT_2
 
-Clique 5, 9 members, table size = 720000:
+Clique 5, 9 members, table size = 600000:
     API_PEC_inf_gL, API_total_WWT_removal, API_removal_WWT_3,
     API_removal_WWT_1, API_removal_WWT_2, API_county_WWT_3, API_county_WWT_0,
     API_county_WWT_2, API_county_WWT_1
@@ -489,7 +139,7 @@ Clique 2, 6 members, table size = 4536:
 Clique 1, 3 members, table size = 252:
     API_PEC_inf_gL, API_sales_weight_kg, API_county_WW_ML
 
-Total clique table size: 737163
+Total clique table size: 617163
 
 
 The junction forest:
@@ -571,11 +221,11 @@ Beliefs for chance nodes:
 	state3   0.25
 
     API_total_WWT_removal:
-	state0   0.0225694
-	state1   0.0520833
-	state2   0.0868056
-	state3   0.137153
-	state4   0.701389
+	state0   0.0270833
+	state1   0.0666667
+	state2   0.104167
+	state3   0.15625
+	state4   0.645833
 
     API_PNEC_gL:
 	state0   0.333333
@@ -604,10 +254,10 @@ Beliefs for chance nodes:
 	state5   0.166667
 
     API_RQ_FW:
-	state0   0.127166
-	state1   0.227036
-	state2   0.329425
-	state3   0.316373
+	state0   0.129838
+	state1   0.227203
+	state2   0.328023
+	state3   0.314937
 	state4   0
 	state5   0
 
@@ -626,19 +276,19 @@ Beliefs for chance nodes:
 	state4   0
 
     API_PEC_SW_gL:
-	state0   0.00247021
-	state1   0.0202987
-	state2   0.149002
-	state3   0.300167
-	state4   0.528062
+	state0   0.00272185
+	state1   0.0217751
+	state2   0.150526
+	state3   0.300512
+	state4   0.524465
 	state5   0
 
     API_PEC_eff_gL:
-	state0   0.00247021
-	state1   0.0202987
-	state2   0.149002
-	state3   0.300167
-	state4   0.528062
+	state0   0.00272185
+	state1   0.0217751
+	state2   0.150526
+	state3   0.300512
+	state4   0.524465
 	state5   0
 
     API_PEC_inf_gL:
@@ -669,363 +319,15 @@ Beliefs for chance nodes:
 	state6   0
 
     API_county_WWT_0:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
-
-    API_county_WWT_2:
-	state0   0.25
-	state1   0.25
-	state2   0.25
-	state3   0.25
-
-    API_county_WWT_1:
-	state0   0.25
-	state1   0.25
-	state2   0.25
-	state3   0.25
-
-    API_county_WW_ML:
-	state0   0.166667
-	state1   0.166667
-	state2   0.166667
-	state3   0.166667
-	state4   0.166667
-	state5   0.166667
-
-    API_year:
 	state0   0.5
 	state1   0.5
-Mon Nov  7 10:29:58 2022
-
-
-Moral links:
-
-    Marrying API_county_WWT_3 and API_removal_WWT_3
-    Marrying API_pop_mill and spatial_county_pop_share
-    Marrying API_removal_WWT_1 and API_removal_WWT_3
-    Marrying API_removal_WWT_1 and API_county_WWT_3
-    Marrying API_removal_WWT_2 and API_removal_WWT_3
-    Marrying API_removal_WWT_2 and API_county_WWT_3
-    Marrying API_removal_WWT_2 and API_removal_WWT_1
-    Marrying API_PEC_SW_gL and API_PNEC_gL
-    Marrying API_PEC_inf_gL and API_removal_WWT_3
-    Marrying API_PEC_inf_gL and API_county_WWT_3
-    Marrying API_PEC_inf_gL and API_removal_WWT_2
-    Marrying API_PEC_inf_gL and API_removal_WWT_1
-    Marrying API_lm_intercept_kg and spatial_county_pop_share
-    Marrying API_lm_intercept_kg and API_pop_mill
-    Marrying API_lm_coef_kg_per_mpop_per_year and spatial_county_pop_share
-    Marrying API_lm_coef_kg_per_mpop_per_year and API_pop_mill
-    Marrying API_lm_coef_kg_per_mpop_per_year and API_lm_intercept_kg
-    Marrying API_county_WWT_0 and API_removal_WWT_3
-    Marrying API_county_WWT_0 and API_county_WWT_3
-    Marrying API_county_WWT_0 and API_PEC_inf_gL
-    Marrying API_county_WWT_0 and API_removal_WWT_2
-    Marrying API_county_WWT_0 and API_removal_WWT_1
-    Marrying API_county_WWT_2 and API_removal_WWT_3
-    Marrying API_county_WWT_2 and API_county_WWT_3
-    Marrying API_county_WWT_2 and API_PEC_inf_gL
-    Marrying API_county_WWT_2 and API_county_WWT_0
-    Marrying API_county_WWT_2 and API_removal_WWT_2
-    Marrying API_county_WWT_2 and API_removal_WWT_1
-    Marrying API_county_WWT_1 and API_removal_WWT_3
-    Marrying API_county_WWT_1 and API_county_WWT_3
-    Marrying API_county_WWT_1 and API_PEC_inf_gL
-    Marrying API_county_WWT_1 and API_county_WWT_2
-    Marrying API_county_WWT_1 and API_county_WWT_0
-    Marrying API_county_WWT_1 and API_removal_WWT_2
-    Marrying API_county_WWT_1 and API_removal_WWT_1
-    Marrying API_county_WW_ML and API_sales_weight_kg
-    Marrying API_year and spatial_county_pop_share
-    Marrying API_year and API_pop_mill
-    Marrying API_year and API_lm_intercept_kg
-    Marrying API_year and API_lm_coef_kg_per_mpop_per_year
-
-
-Triangulating prime component with 3 members:
-    API_PNEC_gL, API_RQ_FW, API_PEC_SW_gL
-This component is a clique of cost 108
-
-Triangulating prime component with 9 members:
-    API_removal_WWT_3, API_county_WWT_3, API_total_WWT_removal,
-    API_removal_WWT_1, API_removal_WWT_2, API_PEC_inf_gL, API_county_WWT_0,
-    API_county_WWT_2, API_county_WWT_1
-This component is a clique of cost 720000
-
-Triangulating prime component with 3 members:
-    API_PEC_inf_gL, API_sales_weight_kg, API_county_WW_ML
-This component is a clique of cost 252
-
-Triangulating prime component with 12 members:
-    API_removal_WWT_3, API_total_WWT_removal, API_PNEC_gL, API_light,
-    API_removal_WWT_1, API_removal_WWT_2, API_PEC_SW_gL, API_PEC_eff_gL,
-    API_PEC_inf_gL, API_lm_intercept_kg, API_lm_coef_kg_per_mpop_per_year,
-    API_sales_weight_kg
-
-    Using the best greedy heuristic for triangulation
-
-
-Triangulating prime component with 6 members:
-    spatial_county_pop_share, API_pop_mill, API_lm_intercept_kg,
-    API_lm_coef_kg_per_mpop_per_year, API_sales_weight_kg, API_year
-This component is a clique of cost 4536
-
-
-Total cost of triangulation for all prime components is 737163
-
-
-Elimination sequence:
-
-    API_county_WW_ML
-    API_year
-    API_pop_mill
-    spatial_county_pop_share
-    API_lm_coef_kg_per_mpop_per_year
-    API_lm_intercept_kg
-    API_sales_weight_kg
-    API_county_WWT_1
-    API_county_WWT_2
-    API_county_WWT_0
-    API_county_WWT_3
-    API_removal_WWT_2
-    API_removal_WWT_1
-    API_removal_WWT_3
-    API_total_WWT_removal
-    API_PEC_inf_gL
-    API_PEC_eff_gL
-    API_RQ_FW
-    API_PNEC_gL
-    API_PEC_SW_gL
-    API_light
-
-
-Cliques:
-
-Clique 10, 3 members, table size = 54:
-    API_light, API_PEC_SW_gL, API_PNEC_gL
-
-Clique 9, 3 members, table size = 108:
-    API_PEC_SW_gL, API_PNEC_gL, API_RQ_FW
-
-Clique 8, 3 members, table size = 108:
-    API_light, API_PEC_SW_gL, API_PEC_eff_gL
-
-Clique 7, 4 members, table size = 540:
-    API_light, API_PEC_eff_gL, API_PEC_inf_gL, API_total_WWT_removal
-
-Clique 6, 6 members, table size = 11250:
-    API_light, API_PEC_inf_gL, API_total_WWT_removal, API_removal_WWT_3,
-    API_removal_WWT_1, API_removal_WWT_2
-
-Clique 5, 9 members, table size = 720000:
-    API_PEC_inf_gL, API_total_WWT_removal, API_removal_WWT_3,
-    API_removal_WWT_1, API_removal_WWT_2, API_county_WWT_3, API_county_WWT_0,
-    API_county_WWT_2, API_county_WWT_1
-
-Clique 4, 3 members, table size = 126:
-    API_light, API_PEC_inf_gL, API_sales_weight_kg
-
-Clique 3, 4 members, table size = 189:
-    API_light, API_sales_weight_kg, API_lm_intercept_kg,
-    API_lm_coef_kg_per_mpop_per_year
-
-Clique 2, 6 members, table size = 4536:
-    API_sales_weight_kg, API_lm_intercept_kg, API_lm_coef_kg_per_mpop_per_year,
-    spatial_county_pop_share, API_pop_mill, API_year
-
-Clique 1, 3 members, table size = 252:
-    API_PEC_inf_gL, API_sales_weight_kg, API_county_WW_ML
-
-Total clique table size: 737163
-
-
-The junction forest:
-
-Creating junction tree with clique 10 as root ...
-
-Cliques 9 and 10 linked, separator has 2 members and table size = 18:
-    API_PEC_SW_gL, API_PNEC_gL
-
-Cliques 8 and 10 linked, separator has 2 members and table size = 18:
-    API_light, API_PEC_SW_gL
-
-Cliques 7 and 8 linked, separator has 2 members and table size = 18:
-    API_light, API_PEC_eff_gL
-
-Cliques 6 and 7 linked, separator has 3 members and table size = 90:
-    API_light, API_PEC_inf_gL, API_total_WWT_removal
-
-Cliques 5 and 6 linked, separator has 5 members and table size = 3750:
-    API_PEC_inf_gL, API_total_WWT_removal, API_removal_WWT_3,
-    API_removal_WWT_1, API_removal_WWT_2
-
-Cliques 4 and 7 linked, separator has 2 members and table size = 18:
-    API_light, API_PEC_inf_gL
-
-Cliques 3 and 4 linked, separator has 2 members and table size = 21:
-    API_light, API_sales_weight_kg
-
-Cliques 2 and 3 linked, separator has 3 members and table size = 63:
-    API_sales_weight_kg, API_lm_intercept_kg, API_lm_coef_kg_per_mpop_per_year
-
-Cliques 1 and 4 linked, separator has 2 members and table size = 42:
-    API_PEC_inf_gL, API_sales_weight_kg
-
-
-Assignment of potentials to cliques:
-
-    Node API_removal_WWT_3 assigned to clique 6
-    Node API_county_WWT_3 assigned to clique 5
-    Node API_total_WWT_removal assigned to clique 5
-    Node API_PNEC_gL assigned to clique 10
-    Node API_light assigned to clique 10
-    Node spatial_county_pop_share assigned to clique 2
-    Node API_pop_mill assigned to clique 2
-    Node API_RQ_FW assigned to clique 9
-    Node API_removal_WWT_1 assigned to clique 6
-    Node API_removal_WWT_2 assigned to clique 6
-    Node API_PEC_SW_gL assigned to clique 8
-    Node API_PEC_eff_gL assigned to clique 7
-    Node API_PEC_inf_gL assigned to clique 1
-    Node API_lm_intercept_kg assigned to clique 3
-    Node API_lm_coef_kg_per_mpop_per_year assigned to clique 3
-    Node API_sales_weight_kg assigned to clique 2
-    Node API_county_WWT_0 assigned to clique 5
-    Node API_county_WWT_2 assigned to clique 5
-    Node API_county_WWT_1 assigned to clique 5
-    Node API_county_WW_ML assigned to clique 1
-    Node API_year assigned to clique 2
-
-
-Checking conditional probability potentials:
-
-    No errors found
-
-
-Beliefs for chance nodes:
-
-    API_removal_WWT_3:
-	state0   0
-	state1   0.333333
-	state2   0.666667
-	state3   0
-	state4   0
-
-    API_county_WWT_3:
-	state0   0.25
-	state1   0.25
-	state2   0.25
-	state3   0.25
-
-    API_total_WWT_removal:
-	state0   0.0225694
-	state1   0.0520833
-	state2   0.0868056
-	state3   0.137153
-	state4   0.701389
-
-    API_PNEC_gL:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
-
-    API_light:
-	levonorgestrel 0.333333
-	ethinylestradiol 0.333333
-	estradiol  0.333333
-
-    spatial_county_pop_share:
-	state0   0.166667
-	state1   0.166667
-	state2   0.166667
-	state3   0.166667
-	state4   0.166667
-	state5   0.166667
-
-    API_pop_mill:
-	state0   0.166667
-	state1   0.166667
-	state2   0.166667
-	state3   0.166667
-	state4   0.166667
-	state5   0.166667
-
-    API_RQ_FW:
-	state0   0.127166
-	state1   0.227036
-	state2   0.329425
-	state3   0.316373
-	state4   0
-	state5   0
-
-    API_removal_WWT_1:
-	state0   0.666667
-	state1   0.333333
-	state2   0
-	state3   0
-	state4   0
-
-    API_removal_WWT_2:
-	state0   0
-	state1   0.333333
-	state2   0.333333
-	state3   0.333333
-	state4   0
-
-    API_PEC_SW_gL:
-	state0   0.00247021
-	state1   0.0202987
-	state2   0.149002
-	state3   0.300167
-	state4   0.528062
-	state5   0
-
-    API_PEC_eff_gL:
-	state0   0.00247021
-	state1   0.0202987
-	state2   0.149002
-	state3   0.300167
-	state4   0.528062
-	state5   0
-
-    API_PEC_inf_gL:
-	state0   0.0012
-	state1   0.0122889
-	state2   0.140281
-	state3   0.298315
-	state4   0.310642
-	state5   0.237273
-
-    API_lm_intercept_kg:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
-
-    API_lm_coef_kg_per_mpop_per_year:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
-
-    API_sales_weight_kg:
-	state0   0.0833333
-	state1   0.351852
-	state2   0.300926
-	state3   0.203704
-	state4   0.0601852
-	state5   0
-	state6   0
-
-    API_county_WWT_0:
-	state0   0.333333
-	state1   0.333333
-	state2   0.333333
 
     API_county_WWT_2:
-	state0   0.25
-	state1   0.25
-	state2   0.25
-	state3   0.25
+	state0   0.2
+	state1   0.2
+	state2   0.2
+	state3   0.2
+	state4   0.2
 
     API_county_WWT_1:
 	state0   0.25

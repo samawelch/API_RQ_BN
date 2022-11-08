@@ -50,7 +50,7 @@ ui <- bootstrapPage(
                   ),
                   radioButtons(inputId = "radio_wwt_scen", 
                                "WWT Scenario",
-                               choices = list("Current", "Compliance"),
+                               choices = list("Current", "Compliance", "Upgrade"),
                                selected = "Current"
                   ),
                   sliderInput("slider_year", "Year", min(pd_county_joined$master_year), max(pd_county_joined$master_year),
@@ -64,11 +64,6 @@ ui <- bootstrapPage(
                               selected = "Total"
                   ),
                   checkboxInput("legend", "Show legend", TRUE
-                  ),
-                  radioButtons(inputId = "radio_display_pies", 
-                               "Show Risk Pie Charts?",
-                               choices = list("Yes", "No"),
-                               selected = "No"
                   ),
                   textOutput("last_modified", container = tags$h6)
     )

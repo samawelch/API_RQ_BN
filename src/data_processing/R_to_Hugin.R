@@ -10,7 +10,7 @@ Hugin_Data_File <- tibble(master_pop_scenario = as_factor(c("Low", "Main", "High
     # Use vector recycling via crossing to set up the various scenario combinations easily
     crossing(master_year = c("2020", "2050"),
              master_WWT_scenario = c("Current", "Compliance", "Upgrade"),
-             master_county = unlist(county_codes[2])) %>% 
+             master_county = c("Total", unlist(county_codes[2]))) %>% 
     # Add API node value presets
     add_column(API_light_ethinylestradiol = "ethinylestradiol",
                API_light_estriol = "estriol",

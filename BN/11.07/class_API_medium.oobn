@@ -97,7 +97,7 @@ class class_API_medium
 	HR_State_2 = "";
 	HR_State_1 = "";
 	HR_State_0 = "";
-	HR_NodeSize = "(100, 59)";
+	HR_NodeSize = "(100, 61)";
 	HR_Group = "1";
     }
 
@@ -149,8 +149,8 @@ class class_API_medium
 	position = (689 135);
 	states = ("amoxicillin" "ciprofloxacin" "diclofenac");
 	HR_LinkControlPoints = "";
-	HR_LinkGroup = "[API_lm_coef_kg_per_mpop_per_year:0][API_lm_intercept_kg:0][API_removal_WWT_2:0][API_removal_WWT_1:0][API_PNEC_gL:0][API_RQ_FW_Diclofenac:0]";
-	HR_LinkMode = "[API_lm_coef_kg_per_mpop_per_year_1:0][API_lm_coef_kg_per_mpop_per_year:0][API_lm_intercept_kg:0][API_removal_WWT_2:0][API_removal_WWT_1:0][API_PNEC_gL:0][API_RQ_FW_Diclofenac:0]";
+	HR_LinkGroup = "[API_lm_coef_kg_per_mpop_per_year:0][API_lm_intercept_kg:0][API_removal_WWT_2:0][API_removal_WWT_1:0][API_PNEC_gL:0][API_RQ_FW_Diclofenac:0][API_removal_WWT_3:0]";
+	HR_LinkMode = "[API_lm_coef_kg_per_mpop_per_year_1:0][API_lm_coef_kg_per_mpop_per_year:0][API_lm_intercept_kg:0][API_removal_WWT_2:0][API_removal_WWT_1:0][API_PNEC_gL:0][API_RQ_FW_Diclofenac:0][API_removal_WWT_3:0]";
 	HR_State_2 = "";
 	HR_NodeSize = "(100, 61)";
 	HR_Group = "1";
@@ -231,7 +231,7 @@ class class_API_medium
 	position = (1040 640);
 	states = ("" "" "" "" "");
 	subtype = number;
-	state_values = (0 0.25 0.5 0.75 1);
+	state_values = (0 0.5 0.25 0.75 1);
 	HR_LinkControlPoints = "";
 	HR_NodeSize = "(100, 59)";
 	HR_HTML_Desc = "";
@@ -424,9 +424,9 @@ class class_API_medium
     {
 	label = "Secondary\nWWT (%)";
 	position = (1120 680);
-	states = ("" "" "" "");
+	states = ("" "" "" "" "");
 	subtype = number;
-	state_values = (0 0.25 0.5 0.75);
+	state_values = (0 0.25 0.5 0.75 1);
 	HR_NodeSize = "(100, 61)";
 	HR_HTML_Desc = "";
 	HR_LinkControlPoints = "";
@@ -503,9 +503,11 @@ class class_API_medium
 	HR_Group = "1";
     }
 
-    potential (API_removal_WWT_3)
+    potential (API_removal_WWT_3 | API_medium)
     {
-	data = ( 0 1 0 0 0 );
+	data = (( 0 1 0 0 0 )	%  API_medium=amoxicillin
+		( 0 0 1 0 0 )	%  API_medium=ciprofloxacin
+		( 0 1 0 0 0 ));	%  API_medium=diclofenac
     }
 
     potential (API_county_WWT_3)
@@ -1356,7 +1358,7 @@ class class_API_medium
 
     potential (API_county_WWT_2)
     {
-	data = ( 1 1 1 1 );
+	data = ( 1 1 1 1 1 );
     }
 
     potential (API_county_WWT_1)
