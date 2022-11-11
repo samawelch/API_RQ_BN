@@ -8,6 +8,7 @@ pd_county <- splmaps::nor_nuts3_map_b2020_default_sf %>%
 # Leaflet/shiny data for add_polygons (sf)
 avg_RQ_county <- Hugin_Data_Output_Tall %>% 
     filter(Risk_Bin %notin% c("true", "false")) %>% 
+    distinct() %>% 
     group_by(master_pop_scenario, master_year, master_WWT_scenario, master_county, API_Name) %>% 
     pivot_wider(names_from = Risk_Bin, values_from = Probability) %>% 
     mutate(Avg_RQ = sum(`0-1` * 0.5,

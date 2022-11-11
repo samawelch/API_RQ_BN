@@ -14,6 +14,6 @@ Norway_county_map_centroids <- Norway_county_map_names %>%
 Norway_county_map <- ggplot(data = Norway_county_map_names, mapping = aes(x = long, 
                                                                           y = lat)) + 
     geom_polygon(color = "grey",
-                 size = 0.3,
+                 linewidth = 0.3,
                  aes(group = group)) +
     theme_void() 

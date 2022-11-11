@@ -12,6 +12,13 @@ Code for messing around with maps of Norway and WWTP by county.
 # renv::init()
 # renv::restore()
 options(renv.download.override = utils::download.file)
+# Update to a new version of R
+# renv::upgrade() 
+# renv::hydrate(update = "all") # populates the renv cache with copies of up to 
+#                               # date package versions, needed by the project
+#   # renv::update() should have no effect now, but running it as well won't harm 
+#   # to check that all packages are indeed up to date
+# renv::snapshot() # inspect the message before confirming to overwrite renv.lock
 
 # Library
 library(tidyverse)
@@ -28,12 +35,48 @@ library(rgdal)
 library(shiny)
 library(svglite)
 library(scatterpie)
+library(scico)
 
 `%notin%` <- negate(`%in%`)
 
 # Disable summarise informative message:
 options(dplyr.summarise.inform = FALSE)
 ```
+
+TODO: Experiment with colours more when it's a more relevant issue. 
+https://brushingupscience.com/2019/10/01/default-colormaps-are-parula-and-viridis-really-an-improvement-over-jet/
+https://www.vis4.net/palettes/#/20|d|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1
+
+```{r graphics theme}
+# consistent_colours <- c(type = "scico", palette = "roma")
+# 
+# colour_scale_consistent_discrete <- function(region, begin = 0, end = 1, direction = 1) {
+#     if(region == "fill") {
+#         scale_fill_scico_d(palette = consistent_colours[[1]], 
+#                            begin = begin, 
+#                            end = end, 
+#                            direction = direction)
+#     }
+#     if(region == "colour" | region == "color") {
+#         scale_colour_scico_d(palette = consistent_colours[[1]], 
+#                            begin = begin, 
+#                            end = end, 
+#                            direction = direction)
+#     }
+# }
+#     
+viridis_colour <- c("viridis", "magma", "plasma", "inferno")[4]
+
+API_labeller <- str_to_title(pull(LMs_API[1]))
+names(API_labeller) <- API_labeller
+API_labeller <- c(API_labeller, AllAPI = "All APIs")
+county_labels <- as_labeller(c(Viken = "Viken (Urban)",
+                               Nordland = "Nordland (Rural)",
+                               Oslo = "Oslo (Urban)",
+                               `Whole Country` = "Whole Country",
+                               API_labeller))
+```
+
 
 # 2. Data
 Import Statistics Norway and Norwegian Institute for Public Health (NIPH) data and maps.
@@ -85,13 +128,26 @@ next highest 0.5. This is replicated here so we can check our choices of LM para
 source(file = "src/data_processing/pop_discretisation_Norway.R")
 ```
 
+```{r data_processing_maps}
+# Set up a base map of Norway
+source(file = "src/data_processing/map_preparation.R")
+```
 
 ```{r map_of_counties}
 source(file = "src/graphics/WWTP_share_map.R")
 
-Norway_county_WWT_map
+Norway_county_WWT_map 
+ggsave(filename = "output/images/raw/figure02_map_WWT.svg", device = "svg", 
+       width = 5, height = 10, units = "cm")
 
 Norway_county_pies_WWT
+ggsave(filename = "output/images/raw/figure02_pies_WWT.svg", device = "svg", 
+       width = 20, height = 10, units = "cm")
+
+API_removal_rates_bars
+ggsave(filename = "output/images/raw/figure02_bars_removal.svg", device = "svg", 
+       width = 20, height = 5, units = "cm")
+
 ```
 
 Calculate a linear model of Sales weight (kg), explained by population (mil) and year, plus
@@ -119,32 +175,15 @@ Now re-import data from Hugin
 source(file = "src/data_importers/Hugin_to_R_importer.R")
 ```
 
-```{r data_processing_maps}
-source(file = "src/data_processing/map_preparation.R")
-```
 
 # 4. Results
 
-NB: Try different Viridis-style colour scheme throughout
-
-```{r graphics theme}
-viridis_colour <- c("viridis", "magma", "plasma", "inferno")[4]
-
-API_labeller <- str_to_title(pull(LMs_API[1]))
-names(API_labeller) <- API_labeller
-county_labels <- as_labeller(c(Viken = "Viken (Urban)",
-                               Nordland = "Nordland (Rural)",
-                               Oslo = "Oslo (Urban)",
-                               Total = "Total",
-                               API_labeller))
-```
-
 ```{r shiny_map}
-source(file = "src/interactive_graphics/shiny_data_viewer.R")
-shinyApp(ui, server)
+# source(file = "src/interactive_graphics/shiny_data_viewer.R")
+# shinyApp(ui, server)
 
 avg_RQ_county %>% 
-    filter(API_Name == "Total",
+    filter(API_Name == "AllAPI",
            master_pop_scenario == "Main") %>% 
     group_by(master_year, County_Name) %>% 
     summarise(mean(Avg_RQ)) %>% 
@@ -160,12 +199,12 @@ source(file = "src/graphics/RQ_map_year.R")
 # Save as SVG for modification
 Norway_county_pies_RQ
 
-ggsave(filename = "output/images/raw/figure03_pies_RQ.svg", device = "svg", 
+ggsave(filename = "output/images/raw/figure04_pies_RQ.svg", device = "svg", 
        width = 20, height = 10, units = "cm")
 
 Norway_county_RQ_map
 
-ggsave(filename = "output/images/raw/figure03_map_RQ.svg", device = "svg", 
+ggsave(filename = "output/images/raw/figure04_map_RQ.svg", device = "svg", 
        width = 20, height = 10, units = "cm")
 
 ```
@@ -174,7 +213,7 @@ ggsave(filename = "output/images/raw/figure03_map_RQ.svg", device = "svg",
 source(file = "src/graphics/WWTP_RQ_bars.R")
 WWTP_RQ_bars
 
-ggsave(filename = "output/images/ready/figure04_wwtp_scenario_RQ.png", device = "png", 
+ggsave(filename = "output/images/ready/figure05_wwtp_scenario_RQ.png", device = "png", 
        width = 20, height = 10, units = "cm")
 ```
 
@@ -182,7 +221,7 @@ ggsave(filename = "output/images/ready/figure04_wwtp_scenario_RQ.png", device = 
 source(file = "src/graphics/pop_scen_RQ_bars.R")
 pop_scen_RQ_bars
 
-ggsave(filename = "output/images/ready/figure05_pop_scenario_RQ.png", device = "png", 
+ggsave(filename = "output/images/ready/figure06_pop_scenario_RQ.png", device = "png", 
        width = 20, height = 10, units = "cm")
 ```
 
@@ -190,6 +229,6 @@ ggsave(filename = "output/images/ready/figure05_pop_scenario_RQ.png", device = "
 source(file = "src/graphics/combined_risk_bar.R")
 combined_RQ_bars
 
-ggsave(filename = "output/images/ready/figure06_combined_RQ.png", device = "png", 
+ggsave(filename = "output/images/ready/figure07_combined_RQ.png", device = "png", 
        width = 20, height = 15, units = "cm")
 ```

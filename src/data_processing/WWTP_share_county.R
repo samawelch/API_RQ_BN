@@ -43,5 +43,5 @@ wwt_share_by_county_2020 <-
                           County_Code = NA,
                           population = sum(population, na.rm = TRUE))) %>% 
     group_by(County_Name) %>% 
-    mutate(wwt_pop_share = round(population / sum(population), digits = 2))
+    mutate(wwt_pop_share = population / sum(population))
 

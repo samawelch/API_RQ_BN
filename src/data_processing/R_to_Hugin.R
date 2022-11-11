@@ -2,15 +2,16 @@
 
 All_RQ_Interval_Nodes <- append(paste0("API_RQ_FW_", str_to_title(analysed_APIs)), 
                                 c("SumRQ_Estrogens", "SumRQ_Antibiotics", 
-                                  "SumRQ_Painkillers","SumRQ_Total"))
+                                  "SumRQ_Painkillers","SumRQ_AllAPI"))
 
-All_RQ_Boolean_Nodes <- c("PRQ_1_Estrogens", "PRQ_1_Antibiotics", "PRQ_1_Painkillers", "PRQ_1_Total")
+All_RQ_Boolean_Nodes <- c("PRQ_GT_Estrogens", "PRQ_GT_Antibiotics", "PRQ_GT_Painkillers", "PRQ_GT_AllAPI")
 
 Hugin_Data_File <- tibble(master_pop_scenario = as_factor(c("Low", "Main", "High"))) %>% 
     # Use vector recycling via crossing to set up the various scenario combinations easily
     crossing(master_year = c("2020", "2050"),
-             master_WWT_scenario = c("Current", "Compliance", "Upgrade"),
-             master_county = c("Total", unlist(county_codes[2]))) %>% 
+             master_WWT_scenario = c("Current", "2+", "3", "Best"),
+             master_county = c("Whole Country", unlist(county_codes[2])),
+             master_RQ_threshold = c(100, 500, 1000)[2]) %>% 
     # Add API node value presets
     add_column(API_light_ethinylestradiol = "ethinylestradiol",
                API_light_estriol = "estriol",

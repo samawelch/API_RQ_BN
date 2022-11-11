@@ -5,7 +5,7 @@
 
 Norway_county_map_RQ_data <- Norway_county_map_names %>% 
     left_join(Hugin_Data_Output_Tall, by = c("County_Name" = "master_county")) %>% 
-    filter(master_pop_scenario == "Main", master_WWT_scenario == "Current", API_Name == "Total",
+    filter(master_pop_scenario == "Main", master_WWT_scenario == "Current", API_Name == "AllAPI",
            Risk_Bin %notin% c("true", "false")) %>% 
     group_by(County_Name, master_year) %>% 
     # What's the most probable bin?
@@ -39,9 +39,9 @@ Norway_county_RQ_map
 Norway_county_pie_RQ_data <- Hugin_Data_Output_Tall %>% 
     filter(master_pop_scenario == "Main", 
            master_WWT_scenario == "Current", 
-           API_Name == "Total",
+           API_Name == "AllAPI",
            Risk_Bin %notin% c("true", "false"),
-           master_county %in% c("Nordland", "Viken", "Total"))
+           master_county %in% c("Nordland", "Viken", "Whole Country"))
 
 Norway_county_pies_RQ <- ggplot(data = Norway_county_pie_RQ_data, aes(fill = Risk_Bin, x = "", y = Probability)) +
     geom_bar(width = 1, stat = "identity") +
