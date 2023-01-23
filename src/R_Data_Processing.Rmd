@@ -141,8 +141,6 @@ columns for variables we want to pull out.
 # source(file = "src/data_exporters/WWT_share_CPT_exporter.R")
 
 source(file = "src/data_processing/R_to_Hugin.R")
-
-
 ```
 
 Now re-import data from Hugin
