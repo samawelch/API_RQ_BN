@@ -1,0 +1,590 @@
+class class_API_heavy_new
+{
+    inputs = (API_heavy wwt_removal_rate county_dilution_2020_GL county_population_mil API_years_after_2000);
+    outputs = (API_RQ_FW);
+    node_size = (100 60);
+    HR_CPT_Font_Size = "-12";
+    HR_CPT_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
+    HR_CPT_Font_Italic = "0";
+    HR_CPT_Font_Weight = "400";
+    HR_Monitor_Display_Prob_DD = "0";
+    HR_TextLabel_IDs = "2";
+    HR_Instantiated_in = "\"a1233_scenario_remake\"";
+    HR_DBN_Use_BK = "0";
+    HR_Html_Desc = "0";
+    HR_HTML_Desc = "";
+    HR_Link_Groups_IDs = "";
+    HR_Groups_IDs = "1";
+    HR_Group_1_Description = "";
+    HR_Group_1_Color = "56";
+    HR_Group_1_Name = "Done";
+    HR_Node_Label_Style = "0";
+    HR_DBN_Num_Slices = "5";
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "51";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Utility_Link = "63";
+    HR_Probabilistic_Link = "63";
+    HR_Functional_Link = "63";
+    HR_Binding_Link = "63";
+    HR_Information_Arc = "63";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_DiscreteFunction = "5";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "8";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
+    HR_Grid_GridShow = "1";
+    HR_Grid_GridSnap = "1";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    node API_years_after_2000
+    {
+	label = "Years after \n2000";
+	position = (233 146);
+	states = ("" "");
+	subtype = number;
+	state_values = (20 50);
+	HR_LinkMode = "[API_sales_weight_kg:0]";
+	HR_LinkGroup = "[API_sales_weight_kg:0]";
+	HR_State_2 = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_NodeSize = "(101, 59)";
+	HR_LinkControlPoints = "";
+	HR_HTML_Desc = "";
+	HR_Group = "1";
+    }
+
+    node county_population_mil
+    {
+	label = "County\nPopulation";
+	position = (233 204);
+	states = ("" "" "" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0.1 0.3 0.5 0.7 0.9 1.1 1.3 1.5 1.7);
+	HR_State_7 = "";
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_NodeSize = "(101, 59)";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_State_2 = "";
+	HR_Desc = "";
+	HR_LinkGroup = "[API_sales_weight_kg:0]";
+	HR_LinkMode = "[API_sales_weight_kg:0]";
+	HR_Group = "0";
+    }
+
+    node county_dilution_2020_GL
+    {
+	label = "Water\nConsumption\nin 2020 (GL)";
+	position = (233 262);
+	states = ("" "" "" "" "" "" "" "");
+	subtype = interval;
+	state_values = (10 20 30 40 50 60 70 80 infinity);
+	HR_State_7 = "";
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_LinkControlPoints = "";
+	HR_NodeSize = "(101, 59)";
+	HR_LinkMode = "[API_PEC_inf_gL:0]";
+	HR_LinkGroup = "[API_PEC_inf_gL:0]";
+	HR_Desc = "";
+	HR_State_2 = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_Group = "0";
+    }
+
+    node wwt_removal_rate
+    {
+	label = "WWT\nRemoval Rate\n(%)";
+	position = (233 321);
+	states = ("" "" "" "" "" "");
+	subtype = number;
+	state_values = (0.15 0.3 0.5 0.65 0.7 0.85);
+	HR_NodeSize = "(101, 59)";
+	HR_LinkControlPoints = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_LinkGroup = "[API_PEC_eff_gL:0]";
+	HR_LinkMode = "[API_PEC_eff_gL:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_State_2 = "";
+	HR_Desc = "";
+	HR_HTML_Desc = "";
+	HR_State_5 = "";
+	HR_Group = "0";
+    }
+
+    node API_PNEC_gL
+    {
+	label = "API PNEC\n(g/L)";
+	position = (58 407);
+	states = ("" "");
+	subtype = number;
+	state_values = (1E-06 9.2E-06);
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[API_RQ_FW:0]";
+	HR_LinkGroup = "[API_RQ_FW:0]";
+	HR_State_2 = "";
+	HR_HTML_Desc = "";
+	HR_NodeSize = "(96, 59)";
+	HR_LinkControlPoints = "";
+	HR_Group = "1";
+    }
+
+    node API_heavy
+    {
+	label = "API\n(heavy)";
+	position = (144 57);
+	states = ("paracetamol" "ibuprofen");
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[API_lm_coef_kg_per_mpop_per_year:0][API_lm_intercept_kg:0][API_PNEC_gL:0][API_county_WWT_3:0]";
+	HR_LinkMode = "[API_lm_coef_kg_per_mpop_per_year:0][API_lm_intercept_kg:0][API_PNEC_gL:0][API_county_WWT_3:0]";
+	HR_State_2 = "";
+	HR_NodeSize = "(100, 61)";
+	HR_Group = "1";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node API_RQ_FW
+    {
+	label = "RQ\n(freshwater)";
+	position = (145 436);
+	states = ("" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1 10 100 1000 10000 infinity);
+	HR_LinkMode = "";
+	HR_LinkGroup = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_NodeSize = "(98, 56)";
+	HR_HTML_Desc = "";
+	HR_State_2 = "";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node API_PEC_SW_gL
+    {
+	label = "PEC Surface\nWater (g/L) ";
+	position = (146 379);
+	states = ("" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1E-09 1E-07 1E-06 1E-05 0.0001 infinity);
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_LinkControlPoints = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(98, 56)";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[API_RQ_FW:0]";
+	HR_LinkGroup = "[API_RQ_FW:0]";
+	HR_Group = "0";
+    }
+
+    node API_PEC_eff_gL
+    {
+	label = "PEC effluent\n(g/L)";
+	position = (145 320);
+	states = ("" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1E-08 1E-07 1E-06 1E-05 0.0001 infinity);
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_NodeSize = "(98, 59)";
+	HR_HTML_Desc = "";
+	HR_State_2 = "";
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[API_PEC_SW_gL:0]";
+	HR_LinkMode = "[API_PEC_SW_gL:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_Group = "0";
+    }
+
+    node API_PEC_inf_gL
+    {
+	label = "PEC influent\n(g/L)";
+	position = (146 261);
+	states = ("" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1E-08 1E-07 1E-06 1E-05 0.0001 infinity);
+	HR_State_7 = "";
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_LinkControlPoints = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(98, 59)";
+	HR_HTML_Desc = "";
+	HR_LinkMode = "[API_PEC_eff_gL_1:0][API_PEC_eff_gL:0]";
+	HR_LinkGroup = "[API_PEC_eff_gL:0]";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node API_lm_intercept_kg
+    {
+	label = "API Intercept\n(kg)";
+	position = (146 146);
+	states = ("" "");
+	subtype = number;
+	state_values = (3844.842 21889.56);
+	HR_LinkControlPoints = "";
+	HR_NodeSize = "(99, 58)";
+	HR_HTML_Desc = "";
+	HR_State_2 = "";
+	HR_LinkGroup = "[API_sales_weight_kg:0]";
+	HR_LinkMode = "[API_sales_weight_kg:0]";
+	HR_Group = "1";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node API_lm_coef_kg_per_mpop_per_year
+    {
+	label = "API kg per\nmpop per year";
+	position = (86 145);
+	states = ("" "");
+	subtype = number;
+	state_values = (273.57959 1617.1222);
+	HR_LinkControlPoints = "";
+	HR_NodeSize = "(99, 58)";
+	HR_HTML_Desc = "";
+	HR_State_2 = "";
+	HR_LinkGroup = "[API_sales_weight_kg:0]";
+	HR_LinkMode = "[API_sales_weight_kg:0]";
+	HR_State_0 = "";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_Group = "1";
+    }
+
+    node API_sales_weight_kg
+    {
+	label = "API Sales\nWeight (kg)";
+	position = (145 204);
+	states = ("" "" "" "" "" "" "");
+	subtype = interval;
+	state_values = (0 1000 3000 30000 100000 300000 1000000 infinity);
+	HR_State_7 = "";
+	HR_LinkControlPoints = "";
+	HR_State_6 = "";
+	HR_State_5 = "";
+	HR_State_4 = "";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(96, 55)";
+	HR_HTML_Desc = "";
+	HR_LinkMode = "[API_PEC_inf_gL:0]";
+	HR_LinkGroup = "[API_PEC_inf_gL:0]";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    potential (API_years_after_2000)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (county_population_mil)
+    {
+	data = ( 1 1 1 1 1 1 1 1 );
+    }
+
+    potential (county_dilution_2020_GL)
+    {
+	data = ( 1 1 1 1 1 1 1 1 );
+    }
+
+    potential (wwt_removal_rate)
+    {
+	data = ( 1 1 1 1 1 1 );
+    }
+
+    potential (API_PNEC_gL | API_heavy)
+    {
+	data = (( 0 1 )	%  API_heavy=paracetamol
+		( 1 0 ));	%  API_heavy=ibuprofen
+    }
+
+    potential (API_heavy)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (API_RQ_FW | API_PNEC_gL API_PEC_SW_gL)
+    {
+	model_nodes = ();
+	model_data = ( API_PEC_SW_gL / API_PNEC_gL );
+	data = ((( 1 0 0 0 0 0 )	%  API_PNEC_gL=1E-06  API_PEC_SW_gL=interval(0,1E-09)
+		 ( 1 0 0 0 0 0 )	%  API_PNEC_gL=1E-06  API_PEC_SW_gL=interval(1E-09,1E-07)
+		 ( 1 0 0 0 0 0 )	%  API_PNEC_gL=1E-06  API_PEC_SW_gL=interval(1E-07,1E-06)
+		 ( 0 1 0 0 0 0 )	%  API_PNEC_gL=1E-06  API_PEC_SW_gL=interval(1E-06,1E-05)
+		 ( 0 0 1 0 0 0 )	%  API_PNEC_gL=1E-06  API_PEC_SW_gL=interval(1E-05,0.0001)
+		 ( 0 0 0 1 0 0 ))	%  API_PNEC_gL=1E-06  API_PEC_SW_gL=interval(0.0001,infinity)
+		(( 1 0 0 0 0 0 )	%  API_PNEC_gL=9.2E-06  API_PEC_SW_gL=interval(0,1E-09)
+		 ( 1 0 0 0 0 0 )	%  API_PNEC_gL=9.2E-06  API_PEC_SW_gL=interval(1E-09,1E-07)
+		 ( 1 0 0 0 0 0 )	%  API_PNEC_gL=9.2E-06  API_PEC_SW_gL=interval(1E-07,1E-06)
+		 ( 0.92 0.08 0 0 0 0 )	%  API_PNEC_gL=9.2E-06  API_PEC_SW_gL=interval(1E-06,1E-05)
+		 ( 0 0.92 0.08 0 0 0 )	%  API_PNEC_gL=9.2E-06  API_PEC_SW_gL=interval(1E-05,0.0001)
+		 ( 0 0 1 0 0 0 )));	%  API_PNEC_gL=9.2E-06  API_PEC_SW_gL=interval(0.0001,infinity)
+    }
+
+    potential (API_PEC_SW_gL | API_PEC_eff_gL)
+    {
+	model_nodes = ();
+	model_data = ( API_PEC_eff_gL / 10 );
+	data = (( 1 0 0 0 0 0 )	%  API_PEC_eff_gL=interval(0,1E-08)
+		( 0 1 0 0 0 0 )	%  API_PEC_eff_gL=interval(1E-08,1E-07)
+		( 0 1 0 0 0 0 )	%  API_PEC_eff_gL=interval(1E-07,1E-06)
+		( 0 0 1 0 0 0 )	%  API_PEC_eff_gL=interval(1E-06,1E-05)
+		( 0 0 0 1 0 0 )	%  API_PEC_eff_gL=interval(1E-05,0.0001)
+		( 0 0 0 0 1 0 ));	%  API_PEC_eff_gL=interval(0.0001,infinity)
+    }
+
+    potential (API_PEC_eff_gL | wwt_removal_rate API_PEC_inf_gL)
+    {
+	model_nodes = ();
+	model_data = ( API_PEC_inf_gL * (1 - wwt_removal_rate) );
+	data = ((( 1 0 0 0 0 0 )	%  wwt_removal_rate=0.15  API_PEC_inf_gL=interval(0,1E-08)
+		 ( 0 1 0 0 0 0 )	%  wwt_removal_rate=0.15  API_PEC_inf_gL=interval(1E-08,1E-07)
+		 ( 0 0 1 0 0 0 )	%  wwt_removal_rate=0.15  API_PEC_inf_gL=interval(1E-07,1E-06)
+		 ( 0 0 0 1 0 0 )	%  wwt_removal_rate=0.15  API_PEC_inf_gL=interval(1E-06,1E-05)
+		 ( 0 0 0 0 1 0 )	%  wwt_removal_rate=0.15  API_PEC_inf_gL=interval(1E-05,0.0001)
+		 ( 0 0 0 0 1 0 ))	%  wwt_removal_rate=0.15  API_PEC_inf_gL=interval(0.0001,infinity)
+		(( 1 0 0 0 0 0 )	%  wwt_removal_rate=0.3  API_PEC_inf_gL=interval(0,1E-08)
+		 ( 0.04 0.96 0 0 0 0 )	%  wwt_removal_rate=0.3  API_PEC_inf_gL=interval(1E-08,1E-07)
+		 ( 0 0.04 0.96 0 0 0 )	%  wwt_removal_rate=0.3  API_PEC_inf_gL=interval(1E-07,1E-06)
+		 ( 0 0 0.04 0.96 0 0 )	%  wwt_removal_rate=0.3  API_PEC_inf_gL=interval(1E-06,1E-05)
+		 ( 0 0 0 0.04 0.96 0 )	%  wwt_removal_rate=0.3  API_PEC_inf_gL=interval(1E-05,0.0001)
+		 ( 0 0 0 0 1 0 ))	%  wwt_removal_rate=0.3  API_PEC_inf_gL=interval(0.0001,infinity)
+		(( 1 0 0 0 0 0 )	%  wwt_removal_rate=0.5  API_PEC_inf_gL=interval(0,1E-08)
+		 ( 0.12 0.88 0 0 0 0 )	%  wwt_removal_rate=0.5  API_PEC_inf_gL=interval(1E-08,1E-07)
+		 ( 0 0.12 0.88 0 0 0 )	%  wwt_removal_rate=0.5  API_PEC_inf_gL=interval(1E-07,1E-06)
+		 ( 0 0 0.12 0.88 0 0 )	%  wwt_removal_rate=0.5  API_PEC_inf_gL=interval(1E-06,1E-05)
+		 ( 0 0 0 0.12 0.88 0 )	%  wwt_removal_rate=0.5  API_PEC_inf_gL=interval(1E-05,0.0001)
+		 ( 0 0 0 0 1 0 ))	%  wwt_removal_rate=0.5  API_PEC_inf_gL=interval(0.0001,infinity)
+		(( 1 0 0 0 0 0 )	%  wwt_removal_rate=0.65  API_PEC_inf_gL=interval(0,1E-08)
+		 ( 0.2 0.8 0 0 0 0 )	%  wwt_removal_rate=0.65  API_PEC_inf_gL=interval(1E-08,1E-07)
+		 ( 0 0.2 0.8 0 0 0 )	%  wwt_removal_rate=0.65  API_PEC_inf_gL=interval(1E-07,1E-06)
+		 ( 0 0 0.2 0.8 0 0 )	%  wwt_removal_rate=0.65  API_PEC_inf_gL=interval(1E-06,1E-05)
+		 ( 0 0 0 0.2 0.8 0 )	%  wwt_removal_rate=0.65  API_PEC_inf_gL=interval(1E-05,0.0001)
+		 ( 0 0 0 0 1 0 ))	%  wwt_removal_rate=0.65  API_PEC_inf_gL=interval(0.0001,infinity)
+		(( 1 0 0 0 0 0 )	%  wwt_removal_rate=0.7  API_PEC_inf_gL=interval(0,1E-08)
+		 ( 0.24 0.76 0 0 0 0 )	%  wwt_removal_rate=0.7  API_PEC_inf_gL=interval(1E-08,1E-07)
+		 ( 0 0.24 0.76 0 0 0 )	%  wwt_removal_rate=0.7  API_PEC_inf_gL=interval(1E-07,1E-06)
+		 ( 0 0 0.24 0.76 0 0 )	%  wwt_removal_rate=0.7  API_PEC_inf_gL=interval(1E-06,1E-05)
+		 ( 0 0 0 0.24 0.76 0 )	%  wwt_removal_rate=0.7  API_PEC_inf_gL=interval(1E-05,0.0001)
+		 ( 0 0 0 0 1 0 ))	%  wwt_removal_rate=0.7  API_PEC_inf_gL=interval(0.0001,infinity)
+		(( 1 0 0 0 0 0 )	%  wwt_removal_rate=0.85  API_PEC_inf_gL=interval(0,1E-08)
+		 ( 0.64 0.36 0 0 0 0 )	%  wwt_removal_rate=0.85  API_PEC_inf_gL=interval(1E-08,1E-07)
+		 ( 0 0.64 0.36 0 0 0 )	%  wwt_removal_rate=0.85  API_PEC_inf_gL=interval(1E-07,1E-06)
+		 ( 0 0 0.64 0.36 0 0 )	%  wwt_removal_rate=0.85  API_PEC_inf_gL=interval(1E-06,1E-05)
+		 ( 0 0 0 0.64 0.36 0 )	%  wwt_removal_rate=0.85  API_PEC_inf_gL=interval(1E-05,0.0001)
+		 ( 0 0 0 0 1 0 )));	%  wwt_removal_rate=0.85  API_PEC_inf_gL=interval(0.0001,infinity)
+    }
+
+    potential (API_PEC_inf_gL | county_dilution_2020_GL API_sales_weight_kg)
+    {
+	model_nodes = ();
+	model_data = ( API_sales_weight_kg / (county_dilution_2020_GL * 1E+06) );
+	data = ((( 0 0 0 0.152 0.848 0 )	%  county_dilution_2020_GL=interval(10,20)  API_sales_weight_kg=interval(0,1000)
+		 ( 0 0 0 0 0.2496 0.7504 )	%  county_dilution_2020_GL=interval(10,20)  API_sales_weight_kg=interval(1000,3000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(10,20)  API_sales_weight_kg=interval(3000,30000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(10,20)  API_sales_weight_kg=interval(30000,100000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(10,20)  API_sales_weight_kg=interval(100000,300000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(10,20)  API_sales_weight_kg=interval(300000,1000000)
+		 ( 0 0 0 0 0 1 ))	%  county_dilution_2020_GL=interval(10,20)  API_sales_weight_kg=interval(1000000,infinity)
+		(( 0 0 0.04 0.208 0.752 0 )	%  county_dilution_2020_GL=interval(20,30)  API_sales_weight_kg=interval(0,1000)
+		 ( 0 0 0 0 0.7504 0.2496 )	%  county_dilution_2020_GL=interval(20,30)  API_sales_weight_kg=interval(1000,3000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(20,30)  API_sales_weight_kg=interval(3000,30000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(20,30)  API_sales_weight_kg=interval(30000,100000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(20,30)  API_sales_weight_kg=interval(100000,300000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(20,30)  API_sales_weight_kg=interval(300000,1000000)
+		 ( 0 0 0 0 0 1 ))	%  county_dilution_2020_GL=interval(20,30)  API_sales_weight_kg=interval(1000000,infinity)
+		(( 0 0 0.04 0.312 0.648 0 )	%  county_dilution_2020_GL=interval(30,40)  API_sales_weight_kg=interval(0,1000)
+		 ( 0 0 0 0 1 0 )	%  county_dilution_2020_GL=interval(30,40)  API_sales_weight_kg=interval(1000,3000)
+		 ( 0 0 0 0 0.0176 0.9824 )	%  county_dilution_2020_GL=interval(30,40)  API_sales_weight_kg=interval(3000,30000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(30,40)  API_sales_weight_kg=interval(30000,100000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(30,40)  API_sales_weight_kg=interval(100000,300000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(30,40)  API_sales_weight_kg=interval(300000,1000000)
+		 ( 0 0 0 0 0 1 ))	%  county_dilution_2020_GL=interval(30,40)  API_sales_weight_kg=interval(1000000,infinity)
+		(( 0 0 0.04 0.408 0.552 0 )	%  county_dilution_2020_GL=interval(40,50)  API_sales_weight_kg=interval(0,1000)
+		 ( 0 0 0 0 1 0 )	%  county_dilution_2020_GL=interval(40,50)  API_sales_weight_kg=interval(1000,3000)
+		 ( 0 0 0 0 0.0544 0.9456 )	%  county_dilution_2020_GL=interval(40,50)  API_sales_weight_kg=interval(3000,30000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(40,50)  API_sales_weight_kg=interval(30000,100000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(40,50)  API_sales_weight_kg=interval(100000,300000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(40,50)  API_sales_weight_kg=interval(300000,1000000)
+		 ( 0 0 0 0 0 1 ))	%  county_dilution_2020_GL=interval(40,50)  API_sales_weight_kg=interval(1000000,infinity)
+		(( 0 0 0.04 0.512 0.448 0 )	%  county_dilution_2020_GL=interval(50,60)  API_sales_weight_kg=interval(0,1000)
+		 ( 0 0 0 0 1 0 )	%  county_dilution_2020_GL=interval(50,60)  API_sales_weight_kg=interval(1000,3000)
+		 ( 0 0 0 0 0.0912 0.9088 )	%  county_dilution_2020_GL=interval(50,60)  API_sales_weight_kg=interval(3000,30000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(50,60)  API_sales_weight_kg=interval(30000,100000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(50,60)  API_sales_weight_kg=interval(100000,300000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(50,60)  API_sales_weight_kg=interval(300000,1000000)
+		 ( 0 0 0 0 0 1 ))	%  county_dilution_2020_GL=interval(50,60)  API_sales_weight_kg=interval(1000000,infinity)
+		(( 0 0 0.08 0.568 0.352 0 )	%  county_dilution_2020_GL=interval(60,70)  API_sales_weight_kg=interval(0,1000)
+		 ( 0 0 0 0 1 0 )	%  county_dilution_2020_GL=interval(60,70)  API_sales_weight_kg=interval(1000,3000)
+		 ( 0 0 0 0 0.128 0.872 )	%  county_dilution_2020_GL=interval(60,70)  API_sales_weight_kg=interval(3000,30000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(60,70)  API_sales_weight_kg=interval(30000,100000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(60,70)  API_sales_weight_kg=interval(100000,300000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(60,70)  API_sales_weight_kg=interval(300000,1000000)
+		 ( 0 0 0 0 0 1 ))	%  county_dilution_2020_GL=interval(60,70)  API_sales_weight_kg=interval(1000000,infinity)
+		(( 0 0 0.08 0.672 0.248 0 )	%  county_dilution_2020_GL=interval(70,80)  API_sales_weight_kg=interval(0,1000)
+		 ( 0 0 0 0 1 0 )	%  county_dilution_2020_GL=interval(70,80)  API_sales_weight_kg=interval(1000,3000)
+		 ( 0 0 0 0 0.1648 0.8352 )	%  county_dilution_2020_GL=interval(70,80)  API_sales_weight_kg=interval(3000,30000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(70,80)  API_sales_weight_kg=interval(30000,100000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(70,80)  API_sales_weight_kg=interval(100000,300000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(70,80)  API_sales_weight_kg=interval(300000,1000000)
+		 ( 0 0 0 0 0 1 ))	%  county_dilution_2020_GL=interval(70,80)  API_sales_weight_kg=interval(1000000,infinity)
+		(( 0 0 0.08 0.72 0.2 0 )	%  county_dilution_2020_GL=interval(80,infinity)  API_sales_weight_kg=interval(0,1000)
+		 ( 0 0 0 0 1 0 )	%  county_dilution_2020_GL=interval(80,infinity)  API_sales_weight_kg=interval(1000,3000)
+		 ( 0 0 0 0 0.2 0.8 )	%  county_dilution_2020_GL=interval(80,infinity)  API_sales_weight_kg=interval(3000,30000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(80,infinity)  API_sales_weight_kg=interval(30000,100000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(80,infinity)  API_sales_weight_kg=interval(100000,300000)
+		 ( 0 0 0 0 0 1 )	%  county_dilution_2020_GL=interval(80,infinity)  API_sales_weight_kg=interval(300000,1000000)
+		 ( 0 0 0 0 0 1 )));	%  county_dilution_2020_GL=interval(80,infinity)  API_sales_weight_kg=interval(1000000,infinity)
+    }
+
+    potential (API_lm_intercept_kg | API_heavy)
+    {
+	data = (( 0 1 )	%  API_heavy=paracetamol
+		( 1 0 ));	%  API_heavy=ibuprofen
+    }
+
+    potential (API_lm_coef_kg_per_mpop_per_year | API_heavy)
+    {
+	data = (( 0 1 )	%  API_heavy=paracetamol
+		( 1 0 ));	%  API_heavy=ibuprofen
+    }
+
+    potential (API_sales_weight_kg | API_years_after_2000 county_population_mil API_lm_intercept_kg API_lm_coef_kg_per_mpop_per_year)
+    {
+	model_nodes = ();
+	model_data = ( max (0, API_years_after_2000 * API_lm_coef_kg_per_mpop_per_year + API_lm_intercept_kg) * county_population_mil );
+	data = ((((( 0.04 0.96 0 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.1,0.3)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 1 0 0 0 0 ))	%  API_years_after_2000=20  county_population_mil=interval(0.1,0.3)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0.04 0.96 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.1,0.3)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 1 0 0 0 0 )))	%  API_years_after_2000=20  county_population_mil=interval(0.1,0.3)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0.12 0.88 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.3,0.5)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 1 0 0 0 0 ))	%  API_years_after_2000=20  county_population_mil=interval(0.3,0.5)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.3,0.5)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 1 0 0 0 0 )))	%  API_years_after_2000=20  county_population_mil=interval(0.3,0.5)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.5,0.7)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 1 0 0 0 0 ))	%  API_years_after_2000=20  county_population_mil=interval(0.5,0.7)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.5,0.7)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0.28 0.72 0 0 0 )))	%  API_years_after_2000=20  county_population_mil=interval(0.5,0.7)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.7,0.9)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0.64 0.36 0 0 0 ))	%  API_years_after_2000=20  county_population_mil=interval(0.7,0.9)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.7,0.9)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 )))	%  API_years_after_2000=20  county_population_mil=interval(0.7,0.9)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.9,1.1)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 ))	%  API_years_after_2000=20  county_population_mil=interval(0.9,1.1)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(0.9,1.1)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 )))	%  API_years_after_2000=20  county_population_mil=interval(0.9,1.1)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(1.1,1.3)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 ))	%  API_years_after_2000=20  county_population_mil=interval(1.1,1.3)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 0 1 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(1.1,1.3)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 )))	%  API_years_after_2000=20  county_population_mil=interval(1.1,1.3)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(1.3,1.5)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 ))	%  API_years_after_2000=20  county_population_mil=interval(1.3,1.5)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 0 1 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(1.3,1.5)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 )))	%  API_years_after_2000=20  county_population_mil=interval(1.3,1.5)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(1.5,1.7)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 ))	%  API_years_after_2000=20  county_population_mil=interval(1.5,1.7)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 0 1 0 0 0 )	%  API_years_after_2000=20  county_population_mil=interval(1.5,1.7)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 ))))	%  API_years_after_2000=20  county_population_mil=interval(1.5,1.7)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		(((( 0 0.36 0.64 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.1,0.3)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 1 0 0 0 0 ))	%  API_years_after_2000=50  county_population_mil=interval(0.1,0.3)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.1,0.3)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0.96 0.04 0 0 0 )))	%  API_years_after_2000=50  county_population_mil=interval(0.1,0.3)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.3,0.5)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0.28 0.72 0 0 0 ))	%  API_years_after_2000=50  county_population_mil=interval(0.3,0.5)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.3,0.5)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 )))	%  API_years_after_2000=50  county_population_mil=interval(0.3,0.5)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.5,0.7)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 ))	%  API_years_after_2000=50  county_population_mil=interval(0.5,0.7)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.5,0.7)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 )))	%  API_years_after_2000=50  county_population_mil=interval(0.5,0.7)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.7,0.9)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 ))	%  API_years_after_2000=50  county_population_mil=interval(0.7,0.9)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 0.72 0.28 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.7,0.9)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 )))	%  API_years_after_2000=50  county_population_mil=interval(0.7,0.9)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.9,1.1)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 1 0 0 0 ))	%  API_years_after_2000=50  county_population_mil=interval(0.9,1.1)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 0 1 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(0.9,1.1)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 0.36 0.64 0 0 )))	%  API_years_after_2000=50  county_population_mil=interval(0.9,1.1)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(1.1,1.3)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 0.4 0.6 0 0 ))	%  API_years_after_2000=50  county_population_mil=interval(1.1,1.3)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 0 1 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(1.1,1.3)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 0 1 0 0 )))	%  API_years_after_2000=50  county_population_mil=interval(1.1,1.3)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(1.3,1.5)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 0 1 0 0 ))	%  API_years_after_2000=50  county_population_mil=interval(1.3,1.5)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 0 1 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(1.3,1.5)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 0 1 0 0 )))	%  API_years_after_2000=50  county_population_mil=interval(1.3,1.5)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		 ((( 0 0 1 0 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(1.5,1.7)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 0 1 0 0 ))	%  API_years_after_2000=50  county_population_mil=interval(1.5,1.7)  API_lm_intercept_kg=3844.842  API_lm_coef_kg_per_mpop_per_year=1617.1222
+		  (( 0 0 0 1 0 0 0 )	%  API_years_after_2000=50  county_population_mil=interval(1.5,1.7)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=273.57959
+		   ( 0 0 0 0 1 0 0 )))));	%  API_years_after_2000=50  county_population_mil=interval(1.5,1.7)  API_lm_intercept_kg=21889.56  API_lm_coef_kg_per_mpop_per_year=1617.1222
+    }
+} % class class_API_heavy_new

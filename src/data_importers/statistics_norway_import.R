@@ -4,28 +4,15 @@
 pop_by_county_2020 <- read_excel(path = "data/raw/Statistics_Norway/Pop_2020_Counties.xlsx",
                                  range = "A5:B15",
                                  col_names = c("County", "Population")) %>% 
-    transmute(County_Code = str_extract(string = County, pattern = "[0-9]{2}"),
+    transmute(County_Name = str_extract(string = County, pattern = "[A-z](?:(?! -).)*"),
               Population)
 # Save to temp
 write_csv(x = pop_by_county_2020, file = "data/temp/pop_by_county_2020.csv")
 
-### SSB WWTP TREATMENT AND CONNECTION BY MUNICIPALITY, 2020
-# https://www.ssb.no/en/statbank/table/11793/tableViewLayout1/
-WWTP_connection_by_municipality <- read_excel(path = "data/raw/Statistics_Norway/Norway_WWTP_Connect_Regions_2020.xlsx", 
-                                              skip = 2, 
-                                              col_names = c("Municipality", 
-                                                            "Pop_Connected_WWTP_>50PE", 
-                                                            "Pop_Connected_WWTP_>50PE_Chem_Treat",
-                                                            "Pop_Connected_WWTP_>50PE_BioChem_Treat",
-                                                            "Pop_Connected_WWTP_>50PE_BioChemMechNat_Treat",
-                                                            "Pop_Connected_WWTP_>50PE_No_Treat")) %>% 
-    na_if(y = "..") %>% 
-    # Remove old kommune and KOSTRA counties
-    filter(!is.na(Municipality), 
-           `Pop_Connected_WWTP_>50PE` != ".", 
-           !str_detect(string = Municipality, pattern = "EAK"),
-           !str_detect(string = Municipality, pattern = "EKA"))
-write_csv(x = WWTP_connection_by_municipality, file = "data/temp/WWTP_connection_by_municipality.csv")
+# Import a table of Norwegian and English language WWT technology definitions
+# Own work, adapted from Statistics Norway reports
+
+WWT_definitions_Norway <- read_excel(path = "data/raw/WWT_definitions_norway.xlsx")
 
 ### SSB: Inhabitants Connected to Small WWTPs (05272)
 # https://www.ssb.no/statbank/table/05272/
@@ -73,6 +60,42 @@ large_wwtp_by_county_2020 <- read_excel(path = "data/raw/Statistics_Norway/WWTP_
     select(-County) 
 write_csv(x = large_wwtp_by_county_2020, file = "data/temp/large_wwtp_by_county_2020.csv")
 
+# Merge data for access to large and small WWTP in Norway 2020, by county
+# Convert Norwegian names to English/EU classes, based on WWT_definitions_Norway
+
+wwtp_by_county_2020 <- large_wwtp_by_county_2020 %>% 
+    pivot_longer(cols = 1:7, names_to = "treatment", values_to = "population") %>% 
+    mutate(size = "large") %>% 
+    add_row(
+        small_wwtp_by_county_2020 %>% 
+            pivot_longer(cols = 1:15, names_to = "treatment", values_to = "population") %>% 
+            mutate(size = "small")
+    ) %>% 
+    left_join(WWT_definitions_Norway %>% select(Name_EN, Class_EU), by = c("treatment" = "Name_EN")) %>% 
+    # This double counts for some reason
+    distinct()
+
+
+# In any case, we can now characterise the proportions of different treatment levels in each County
+wwt_share_by_county_2020 <- 
+    wwtp_by_county_2020 %>% 
+    filter(treatment != "total") %>% 
+    group_by(County_Name, Class_EU) %>% 
+    summarise(County_Name,
+              population = sum(population, na.rm = TRUE)) %>% 
+    distinct() %>% 
+    ungroup() %>% 
+    # Also calculate a national total
+    add_row(wwtp_by_county_2020 %>% 
+                group_by(Class_EU) %>% 
+                filter(!is.na(Class_EU)) %>% 
+                summarise(County_Name = "Total", 
+                          population = sum(population, na.rm = TRUE))) %>% 
+    group_by(County_Name) %>% 
+    mutate(wwt_pop_share = population / sum(population))
+
+
+
 # Create a helper csv matching county codes to names
 county_codes <- large_wwtp_by_county_2020 %>% 
     select(County_Code, County_Name)
@@ -88,18 +111,10 @@ Norway_Population_Year <- read_xlsx(path = "data/raw/Statistics_Norway/Pop_1951_
 write_csv(x = Norway_Population_Year, file = "data/temp/Norway_Population_Year.csv")
 
 
-### SSB: wastewater consumption per person per day in Norway 2015 - 2020 (11787)
-Norway_Wastewater_Year <- read_xlsx(path = "data/raw/Statistics_Norway/WW_per_PD_2015_2020.xlsx",
-                                    range = "B4:G5") %>% 
-    # Pivot into long data
-    pivot_longer(cols = 1:6,
-                 names_to = "Year",
-                 values_to = "L_per_person_per_day") %>% 
-    # Make sure Year is numeric so it doesn't break everything
-    mutate(Year = as.numeric(Year)) %>% 
-    # Obviously this doesn't go back far enough, so we'll backfill it to 1999 with fake data
-    add_row(Year = 1999:2014, L_per_person_per_day = 180)
-write_csv(x = Norway_Wastewater_Year, file = "data/temp/Norway_Wastewater_Year.csv")
+### SSB: Water consumption per person per day (11787) by County
+Norway_Wastewater_County_2020 <- read_excel("data/raw/Statistics_Norway/WW_production_by_County_2020.xlsx",
+                                            range = "A5:B15",col_names = c("County_Name", "Consumption_PPerson_PDay")) %>% 
+    mutate(County_Name = str_remove(string = County_Name, pattern = "EKA[0-9]{2} "))
 
 
 ### SSB: Norwegian Population Predictions (No Uncertainty Included)
@@ -110,5 +125,44 @@ Norway_Population_Projections_21C <- read_xlsx(path = "data/raw/Statistics_Norwa
     pivot_longer(cols = 2:9,
                  names_to = "Year",
                  values_to = "Population") %>% 
-    mutate(Year = as.double(Year))
+    mutate(Year = as.double(Year),
+           # Compare to population in 2020
+           Pop_over_2020 = Population / 5367580)
 write_csv(x = Norway_Population_Projections_21C, file = "data/temp/Norway_Population_Projections_21C.csv")
+
+### SSB: 05212: Population, by region, contents, year and densely/sparsely populated areas
+Norway_County_Urbanisation_2020 <- read_xlsx(path = "data/raw/Statistics_Norway/Norway_Pop_Urban.xlsx",
+                                             range = "A6:C16",
+                                             col_names = c("County", "Pop_Dense_Area", "Pop_Sparse_Area")) %>% 
+    transmute(County_Name = str_extract(string = County, pattern = "[A-z](?:(?! -).)*") %>% 
+                  str_replace(" og ", " & "),
+              pop_urban = Pop_Dense_Area / (Pop_Dense_Area + Pop_Sparse_Area),
+              quantile = ntile(x = pop_urban,
+                               n = 3))
+
+# Merge relevant urban data into a single dataset
+Norway_County_General_2020 <- Norway_County_Urbanisation_2020 %>% 
+    left_join(Norway_Wastewater_County_2020, by = "County_Name") %>% 
+    mutate(urb_quantile = case_when(quantile == 1 ~ "Rural", 
+                                    quantile == 2 ~ "Semi-Urban", 
+                                    quantile == 3 ~ "Urban")) %>% 
+    left_join(pop_by_county_2020, by = "County_Name") %>% 
+    mutate(Annual_WW_ML = Population * Consumption_PPerson_PDay * 365 / 1e6) %>% 
+    left_join(
+        wwtp_by_county_2020 %>% 
+        select(-size, -County_Code) %>% 
+        filter(!is.na(Class_EU)) %>% 
+        group_by(Class_EU, County_Name) %>% 
+        summarise(population = sum(population, na.rm = TRUE)) %>% 
+        group_by(County_Name) %>% 
+        mutate(population_frac = population / sum(population, na.rm = TRUE)) %>% 
+        select(-population) %>% 
+        pivot_wider(names_from = Class_EU, values_from = population_frac),
+        by = "County_Name") %>% 
+    replace_na(list(none = 0, primary = 0, secondary = 0, tertiary = 0)) %>% 
+    relocate(County_Name, urb_quantile, Population, Annual_WW_ML, none, primary, secondary, tertiary) %>% 
+    select(-quantile) %>% 
+    mutate(exemplar = case_when(County_Name %in% c("Viken", "Trøndelag", "Troms & Finnmark") ~ TRUE,
+                                 TRUE ~ FALSE)) %>% 
+    mutate(Arbitrary_WWT_Index = (primary * 1 + secondary * 2 + tertiary * 3) / 3)
+

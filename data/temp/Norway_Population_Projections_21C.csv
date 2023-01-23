@@ -1,25 +1,25 @@
-Scenario,Year,Population
-Main alternative (MMM),2030,5629226
-Main alternative (MMM),2040,5856848
-Main alternative (MMM),2050,6001759
-Main alternative (MMM),2060,6073637
-Main alternative (MMM),2070,6133044
-Main alternative (MMM),2080,6197498
-Main alternative (MMM),2090,6222878
-Main alternative (MMM),2100,6253696
-Low national growth (LLL),2030,5471314
-Low national growth (LLL),2040,5469668
-Low national growth (LLL),2050,5366121
-Low national growth (LLL),2060,5163329
-Low national growth (LLL),2070,4912394
-Low national growth (LLL),2080,4650851
-Low national growth (LLL),2090,4338480
-Low national growth (LLL),2100,4021932
-High national growth (HHH),2030,5788246
-High national growth (HHH),2040,6233432
-High national growth (HHH),2050,6653729
-High national growth (HHH),2060,7080670
-High national growth (HHH),2070,7564676
-High national growth (HHH),2080,8102586
-High national growth (HHH),2090,8665701
-High national growth (HHH),2100,9289902
+Scenario,Year,Population,Pop_over_2020
+Main alternative (MMM),2030,5629226,1.048745617205519
+Main alternative (MMM),2040,5856848,1.0911524374112729
+Main alternative (MMM),2050,6001759,1.1181498925027666
+Main alternative (MMM),2060,6073637,1.1315410296632746
+Main alternative (MMM),2070,6133044,1.1426087734137171
+Main alternative (MMM),2080,6197498,1.1546167919248524
+Main alternative (MMM),2090,6222878,1.1593451797644376
+Main alternative (MMM),2100,6253696,1.1650866871103924
+Low national growth (LLL),2030,5471314,1.0193260277443466
+Low national growth (LLL),2040,5469668,1.019019371858454
+Low national growth (LLL),2050,5366121,0.9997281829055179
+Low national growth (LLL),2060,5163329,0.9619472835057885
+Low national growth (LLL),2070,4912394,0.9151971652029406
+Low national growth (LLL),2080,4650851,0.8664707372782521
+Low national growth (LLL),2090,4338480,0.8082748650229713
+Low national growth (LLL),2100,4021932,0.749300802223721
+High national growth (HHH),2030,5788246,1.078371631163392
+High national growth (HHH),2040,6233432,1.1613114289866198
+High national growth (HHH),2050,6653729,1.2396143140856772
+High national growth (HHH),2060,7080670,1.319155000950149
+High national growth (HHH),2070,7564676,1.4093271083057914
+High national growth (HHH),2080,8102586,1.5095417301651768
+High national growth (HHH),2090,8665701,1.6144521367171052
+High national growth (HHH),2100,9289902,1.7307430909273827

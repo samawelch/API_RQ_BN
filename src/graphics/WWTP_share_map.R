@@ -1,21 +1,74 @@
 # Make a map of Norway with pie charts per fylke depicting access to various WWTP levels
 # I'd love to do this automatically, but scatterpie is too primitive and I'm strapped for time
 
-Norway_county_map_WWT_data <- Norway_county_map_names %>% 
-    left_join(wwt_share_by_county_2020, by = c("County_Name"))
+Norway_county_map_data <- Norway_county_map_names %>% 
+    select(-Population) %>% 
+    left_join(Norway_County_General_2020, by = c("County_Name")) %>% 
+    mutate(Pop_mil = Population / 1e6)
 
+Norway_County_General_2020 <- Norway_County_General_2020 %>% 
+    mutate(Pop_mil = Population / 1e6)
 
-Norway_county_WWT_map <- ggplot(data = Norway_county_map_WWT_data, mapping = aes(x = long, 
-                                                                               y = lat)) + 
-    geom_polygon(fill = "lightgrey",
-                 colour = "white",
-                 size = 0.5,
+Norway_county_map <- ggplot(data = Norway_county_map_data, mapping = aes(x = long, 
+                                                                         y = lat,
+                                                                         fill = exemplar)) + 
+    geom_polygon(colour = "white",
+                 linewidth = 0.5,
                  aes(group = group)) +
+    scale_fill_manual(values = c("darkgreen", "lightgreen")) +
+    
     theme_void() +
     coord_fixed()
 
-Norway_county_WWT_map
+Norway_county_map
 
+# Boxplots of County Variation
+Norway_county_boxplot_urb <- 
+    ggplot(data = Norway_County_General_2020, mapping = aes(x = urb_quantile, y = pop_urban)) +
+    geom_point(aes(colour = exemplar), size = 2) +
+    scale_colour_manual(values = c("darkgreen", "lightgreen")) +
+    geom_boxplot(alpha = 0) +
+    theme(legend.position = "none") +
+    labs(x = "Urbanisation Quartile", y = "Urban Population Proportion")
+
+# Norway_county_boxplot_urb
+
+Norway_county_boxplot_pop <- 
+    ggplot(data = Norway_County_General_2020, mapping = aes(x = urb_quantile, y = Pop_mil)) +
+    geom_point(aes(colour = exemplar), size = 2) +
+    scale_colour_manual(values = c("darkgreen", "lightgreen")) +
+    geom_boxplot(alpha = 0) +
+    theme(legend.position = "none") +
+    labs(x = "Urbanisation Quartile", y = "County Population (mil)")
+
+# Norway_county_boxplot_pop
+
+Norway_county_boxplot_ww <- 
+    ggplot(data = Norway_County_General_2020, mapping = aes(x = urb_quantile, y = Consumption_PPerson_PDay)) +
+    geom_point(aes(colour = exemplar), size = 2) +
+    scale_colour_manual(values = c("darkgreen", "lightgreen")) +
+    geom_boxplot(alpha = 0) +
+    theme(legend.position = "none") +
+    labs(x = "Urbanisation Quartile", y = "Wastewater Produced Per Person Per Day (L)")
+
+# Norway_county_boxplot_ww
+
+Norway_county_boxplot_wwt <- 
+    ggplot(data = Norway_County_General_2020, mapping = aes(x = urb_quantile, y = Arbitrary_WWT_Index)) +
+    geom_point(aes(colour = exemplar), size = 2) +
+    scale_colour_manual(values = c("darkgreen", "lightgreen")) +
+    geom_boxplot(alpha = 0) +
+    theme(legend.position = "none")  +
+    labs(x = "Urbanisation Quartile", y = "Arbitrary Wastewater Treatment Index (0 = none, 1 = all 3ary)")
+
+# Norway_county_boxplot_wwt
+
+Norway_county_boxplots <- plot_grid(Norway_county_boxplot_urb,
+                                    Norway_county_boxplot_pop,
+                                    Norway_county_boxplot_ww,
+                                    Norway_county_boxplot_wwt, 
+                                    nrow = 2)
+Norway_county_boxplots
 # Pie charts
 
 # Generate some additional scenario pies for the whole country
@@ -58,3 +111,7 @@ API_removal_rates_bars <- API_removal_rates %>%
 API_removal_rates_bars
 
 wwt_share_by_county_2020 %>% group_by(County_Name) %>% summarise(sum((wwt_pop_share)))
+
+# Water consumption per county
+ggplot(data = Norway_Wastewater_County_2020, mapping = aes(x = County_Name, y = Consumption_PPerson_PDay)) +
+    geom_col()

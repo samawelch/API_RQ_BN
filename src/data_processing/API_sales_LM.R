@@ -7,16 +7,29 @@ API_sales_by_population <-
                                     pmax(Total_Sold_kg) <= 10000 ~ "medium",
                                     pmax(Total_Sold_kg) <= 10000000 ~ "heavy"))
 
-# Linear Model: API ~ Population + Year
+# Linear Model: Sales Weight / Population ~ Year
 LMs_API <- API_sales_by_population %>% 
     mutate(Population_mil = Population / 1e6) %>% 
-    filter(Year != 2019) %>% 
+    filter(Year != 2019, Year != 1999) %>% 
     group_by(API_Name) %>% 
-    summarise(lm_intercept_kg = coef(lm(Total_Sold_kg/Population_mil ~ Year))[[1]],
-              lm_coef_kg_per_mperson_per_year = coef(lm(Total_Sold_kg/Population_mil ~ Year))[[2]],
-              weight_class) %>% 
-    distinct() %>% 
+    mutate(Year = Year - 2000)
+
+LM_parameters <- tibble()
+
+for (x in unique(LMs_API$API_Name)) {
+    temp_lm <- lm(data = LMs_API %>% filter(API_Name == x), 
+       formula = Total_Sold_kg/Population_mil ~ Year)
+    LM_parameters <- bind_rows(LM_parameters, c(API_Name = x, temp_lm$coefficients))
+}
+
+LM_parameters <- LM_parameters %>% 
+    transmute(API_Name,
+              Intercept_kg_per_mpop = as.numeric(`(Intercept)`),
+              Coeff_kg_per_mpop_per_year = as.numeric(Year)) %>% 
     # Pop PNECs on the end
     left_join(API_PNECs, by = "API_Name")
+
+LM_parameters
+
 
 

@@ -2,8 +2,8 @@
 
 # Append county names to the SPL map
 Norway_county_map_names <- Norway_counties_dataframe %>% 
-    left_join(y = county_codes, by = "County_Code") %>% 
-    left_join(pop_by_county_2020, by = "County_Code")
+    left_join(county_codes, by = "County_Code") %>% 
+    left_join(pop_by_county_2020, by = "County_Name")
 
 # Find the centroids of counties for better labelling
 Norway_county_map_centroids <- Norway_county_map_names %>% 

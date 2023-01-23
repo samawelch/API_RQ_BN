@@ -5,7 +5,7 @@ Hugin_Data_Output <- read_csv(file = "Data/Hugin/Hugin_to_R_datafile.csv",
     # rename_with(cols = 8:15, ~str_remove_all(string = ., pattern = "\\W"))
     # Need to refactorise population scenarios
     mutate(master_pop_scenario = fct_relevel(master_pop_scenario, c("Low", "Main", "High")),
-           master_WWT_scenario = fct_relevel(master_WWT_scenario, c("Current", "2+", "3", "Best"))) %>% 
+           master_WWT_scenario = fct_relevel(master_WWT_scenario, c("Current", "Secondary or better", "Best (tertiary)"))) %>% 
     select(-c(6:11))
 
 # Note the threshold used
@@ -24,7 +24,9 @@ Hugin_Data_Output_Tall <- Hugin_Data_Output %>%
                                               "Diclofenac", "Ibuprofen", "Paracetamol", 
                                               "Estrogens", "Antibiotics", "Painkillers", "AllAPI"))) %>% 
     select(-Risk_Bin_String) %>% 
-    relocate(Probability, .after = last_col())
+    relocate(Probability, .after = last_col()) %>% 
+    # Replace "og" in county names with "&" for consistency
+    mutate(master_county = str_replace(master_county, pattern = " og ", replacement = " & "))
 
 # When was the dataset last updated?
 Hugin_Output_Last_Updated <- file.info("Data/Hugin/Hugin_to_R_datafile.csv")$mtime

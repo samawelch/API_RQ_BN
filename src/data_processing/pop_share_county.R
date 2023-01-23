@@ -4,8 +4,8 @@ total_pop_2020 <- pop_by_county_2020 %>%
     pull()
 
 pop_share_by_county_2020 <- pop_by_county_2020 %>% 
-    group_by(County_Code) %>% 
-    summarise(County_Code,
+    group_by(County_Name) %>% 
+    summarise(County_Name,
               Population,
               Population_Share = round(Population / total_pop_2020, digits = 2))
 

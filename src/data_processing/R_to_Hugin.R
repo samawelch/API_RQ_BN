@@ -9,7 +9,7 @@ All_RQ_Boolean_Nodes <- c("PRQ_GT_Estrogens", "PRQ_GT_Antibiotics", "PRQ_GT_Pain
 Hugin_Data_File <- tibble(master_pop_scenario = as_factor(c("Low", "Main", "High"))) %>% 
     # Use vector recycling via crossing to set up the various scenario combinations easily
     crossing(master_year = c("2020", "2050"),
-             master_WWT_scenario = c("Current", "2+", "3", "Best"),
+             master_WWT_scenario = c("Current", "Secondary or better", "Best (tertiary)"),
              master_county = c("Whole Country", unlist(county_codes[2])),
              master_RQ_threshold = c(100, 500, 1000)[2]) %>% 
     # Add API node value presets

@@ -28,55 +28,21 @@ library(glue)
 
 # Leaflet stuff
 library(splmaps)
+library(rgdal)
 options("rgdal_show_exportToProj4_warnings"="none")
 library(sf)
 library(leaflet)
-library(rgdal)
 library(shiny)
 library(svglite)
 library(scatterpie)
 library(scico)
+library(cowplot)
 
 `%notin%` <- negate(`%in%`)
 
 # Disable summarise informative message:
 options(dplyr.summarise.inform = FALSE)
 ```
-
-TODO: Experiment with colours more when it's a more relevant issue. 
-https://brushingupscience.com/2019/10/01/default-colormaps-are-parula-and-viridis-really-an-improvement-over-jet/
-https://www.vis4.net/palettes/#/20|d|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1
-
-```{r graphics theme}
-# consistent_colours <- c(type = "scico", palette = "roma")
-# 
-# colour_scale_consistent_discrete <- function(region, begin = 0, end = 1, direction = 1) {
-#     if(region == "fill") {
-#         scale_fill_scico_d(palette = consistent_colours[[1]], 
-#                            begin = begin, 
-#                            end = end, 
-#                            direction = direction)
-#     }
-#     if(region == "colour" | region == "color") {
-#         scale_colour_scico_d(palette = consistent_colours[[1]], 
-#                            begin = begin, 
-#                            end = end, 
-#                            direction = direction)
-#     }
-# }
-#     
-viridis_colour <- c("viridis", "magma", "plasma", "inferno")[4]
-
-API_labeller <- str_to_title(pull(LMs_API[1]))
-names(API_labeller) <- API_labeller
-API_labeller <- c(API_labeller, AllAPI = "All APIs")
-county_labels <- as_labeller(c(Viken = "Viken (Urban)",
-                               Nordland = "Nordland (Rural)",
-                               Oslo = "Oslo (Urban)",
-                               `Whole Country` = "Whole Country",
-                               API_labeller))
-```
-
 
 # 2. Data
 Import Statistics Norway and Norwegian Institute for Public Health (NIPH) data and maps.
@@ -96,8 +62,8 @@ API_sales_weights_1999_2018 <- API_sales_weights_1999_2018 %>%
 # API PNECs from various sources
 source(file = "src/data_importers/API_PNEC_import.R")
 
-# Norwegian and English classifications of WWT technologies
-source(file = "src/data_importers/WWT_class_import.R")
+# # Norwegian and English classifications of WWT technologies
+# source(file = "src/data_importers/WWT_class_import.R")
 
 # van Dijk et al.'s unpublished pharmaceutical removal rates dataset
 source(file = "src/data_importers/WWT_removal_import.R")
@@ -115,9 +81,8 @@ API_removal_rates <- API_removal_rates %>%
 # 3. Methods
 
 ```{r data_processing_geographic}
-# Summarise share of total population and WWTP class access by county (2020)
+# Summarise share of total population by county (2020)
 source(file = "src/data_processing/pop_share_county.R")
-source(file = "src/data_processing/WWTP_share_county.R")
 ```
 
 Population discretisation was manually performed in Hugin, rounding population (in millions) up to the 
@@ -136,17 +101,17 @@ source(file = "src/data_processing/map_preparation.R")
 ```{r map_of_counties}
 source(file = "src/graphics/WWTP_share_map.R")
 
-Norway_county_WWT_map 
-ggsave(filename = "output/images/raw/figure02_map_WWT.svg", device = "svg", 
-       width = 5, height = 10, units = "cm")
-
-Norway_county_pies_WWT
-ggsave(filename = "output/images/raw/figure02_pies_WWT.svg", device = "svg", 
-       width = 20, height = 10, units = "cm")
-
-API_removal_rates_bars
-ggsave(filename = "output/images/raw/figure02_bars_removal.svg", device = "svg", 
-       width = 20, height = 5, units = "cm")
+# Norway_county_WWT_map 
+# ggsave(filename = "output/images/raw/figure02_map_WWT.svg", device = "svg", 
+#        width = 5, height = 10, units = "cm")
+# 
+# Norway_county_pies_WWT
+# ggsave(filename = "output/images/raw/figure02_pies_WWT.svg", device = "svg", 
+#        width = 20, height = 10, units = "cm")
+# 
+# API_removal_rates_bars
+# ggsave(filename = "output/images/raw/figure02_bars_removal.svg", device = "svg", 
+#        width = 20, height = 5, units = "cm")
 
 ```
 
@@ -154,8 +119,17 @@ Calculate a linear model of Sales weight (kg), explained by population (mil) and
 an intercept. This is used to predict sales weights under various population scenarios to 2050.
 
 ```{r data_processing_API}
-# Fit linear models to sales data
+# YAH 15:14 - 13/01/2023 - changed the year value in the lm to n - 2000, now
+# need to tweak the rest accordingly
+# Fit linear models to sales data, and predict future sales from models
 source(file = "src/data_processing/API_sales_LM.R")
+# Graph out predictions from LMs
+source(file = "src/graphics/sales_prediction_graph.R")
+figure03_lm_graphs +
+  theme_minimal()
+
+ggsave(filename = "output/images/raw/figure03_lm_graphs.svg", device = "svg", 
+       width = 23, height = 12, units = "cm")
 ```
 
 We can automate running through all possible combinations of APIs and scenarios in Hugin using
@@ -167,6 +141,8 @@ columns for variables we want to pull out.
 # source(file = "src/data_exporters/WWT_share_CPT_exporter.R")
 
 source(file = "src/data_processing/R_to_Hugin.R")
+
+
 ```
 
 Now re-import data from Hugin
@@ -175,37 +151,55 @@ Now re-import data from Hugin
 source(file = "src/data_importers/Hugin_to_R_importer.R")
 ```
 
+TODO: Experiment with colours more when it's a more relevant issue. 
+https://brushingupscience.com/2019/10/01/default-colormaps-are-parula-and-viridis-really-an-improvement-over-jet/
+https://www.vis4.net/palettes/#/20|d|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1
+
+```{r graphics theme}
+viridis_colour <- c("viridis", "magma", "plasma", "inferno")[4]
+
+# Set a consistent mapping of RQs to scale values
+viridis_RQ_mapping <- Hugin_Data_Output_Tall %>% 
+    select(Risk_Bin) %>% 
+    filter(Risk_Bin %notin% c("true", "false")) %>% 
+    distinct() %>% 
+        pull()
+
+API_labeller <- str_to_title(pull(LMs_API[1]))
+names(API_labeller) <- API_labeller
+API_labeller <- c(API_labeller, AllAPI = "All APIs")
+county_labels <- as_labeller(c(Viken = "Viken (Urban)",
+                               Nordland = "Nordland (Rural)",
+                               Oslo = "Oslo (Urban)",
+                               `Whole Country` = "Whole Country",
+                               API_labeller))
+```
 
 # 4. Results
 
-```{r shiny_map}
-# source(file = "src/interactive_graphics/shiny_data_viewer.R")
-# shinyApp(ui, server)
-
-avg_RQ_county %>% 
-    filter(API_Name == "AllAPI",
-           master_pop_scenario == "Main") %>% 
-    group_by(master_year, County_Name) %>% 
-    summarise(mean(Avg_RQ)) %>% 
-    arrange(County_Name) %>% 
-    ungroup() %>% 
-    group_by(County_Name) %>% 
-    summarise(perc_increase = max(`mean(Avg_RQ)`) / min(`mean(Avg_RQ)`))
-```
-
-```{r boring_map}
+```{r simple_map}
 source(file = "src/graphics/RQ_map_year.R")
 
 # Save as SVG for modification
 Norway_county_pies_RQ
 
-ggsave(filename = "output/images/raw/figure04_pies_RQ.svg", device = "svg", 
+ggsave(filename = "output/images/raw/figure04a_pies_RQ.svg", device = "svg", 
        width = 20, height = 10, units = "cm")
 
 Norway_county_RQ_map
 
-ggsave(filename = "output/images/raw/figure04_map_RQ.svg", device = "svg", 
+ggsave(filename = "output/images/raw/figure04b_map_RQ.svg", device = "svg", 
        width = 20, height = 10, units = "cm")
+
+Norway_county_bars_RQ <- Norway_county_bars_RQ +
+    theme(legend.position = "none")
+
+plot_grid(Norway_county_RQ_map, Norway_county_bars_RQ, 
+          align = "v", 
+          nrow = 2, rel_heights = c(2, 1))
+
+ggsave(filename = "output/images/raw/figure04bc_map_bars_RQ.svg", device = "svg", 
+       width = 25, height = 15, units = "cm")
 
 ```
 
@@ -230,5 +224,5 @@ source(file = "src/graphics/combined_risk_bar.R")
 combined_RQ_bars
 
 ggsave(filename = "output/images/ready/figure07_combined_RQ.png", device = "png", 
-       width = 20, height = 15, units = "cm")
+       width = 23, height = 15, units = "cm")
 ```

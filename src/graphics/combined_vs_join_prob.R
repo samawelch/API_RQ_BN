@@ -1,8 +1,12 @@
 # Work out what Jannicke suggests, and make it
 
 Hugin_Threshold_Data <- Hugin_Data_Output_Tall %>% 
-    filter(Risk_Type == "PRQ_GT", master_year == 2020, master_pop_scenario == "Main", master_WWT_scenario == "Current", Risk_Bin == "true") %>% 
-    filter(master_county %in% c("Nordland", "Viken", "Total"))
+    filter(Risk_Type == "PRQ_GT", 
+           master_year == 2020, 
+           master_pop_scenario == "Main", 
+           master_WWT_scenario == "Current", 
+           Risk_Bin == "true") %>% 
+    filter(master_county %in% c("Nordland", "Viken", "Whole Country"))
 
 ggplot(data = Hugin_Threshold_Data,
        aes(y = Probability, x = API_Name)) +
