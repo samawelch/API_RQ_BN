@@ -164,5 +164,8 @@ Norway_County_General_2020 <- Norway_County_Urbanisation_2020 %>%
     select(-quantile) %>% 
     mutate(exemplar = case_when(County_Name %in% c("Viken", "Trøndelag", "Troms & Finnmark") ~ TRUE,
                                  TRUE ~ FALSE)) %>% 
-    mutate(Arbitrary_WWT_Index = (primary * 1 + secondary * 2 + tertiary * 3) / 3)
+    mutate(Arbitrary_WWT_Index = (primary * 1 + secondary * 2 + tertiary * 3) / 3) %>% 
+    mutate(Pop_mil = Population / 1e6,
+           Type = case_when(!exemplar ~ urb_quantile,
+                            TRUE ~ paste0(urb_quantile, ", exemplar")))
 

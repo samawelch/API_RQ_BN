@@ -99,19 +99,14 @@ source(file = "src/data_processing/map_preparation.R")
 ```
 
 ```{r map_of_counties}
+## Figure 02 ##
 source(file = "src/graphics/WWTP_share_map.R")
 
-# Norway_county_WWT_map 
-# ggsave(filename = "output/images/raw/figure02_map_WWT.svg", device = "svg", 
-#        width = 5, height = 10, units = "cm")
-# 
-# Norway_county_pies_WWT
-# ggsave(filename = "output/images/raw/figure02_pies_WWT.svg", device = "svg", 
-#        width = 20, height = 10, units = "cm")
-# 
-# API_removal_rates_bars
-# ggsave(filename = "output/images/raw/figure02_bars_removal.svg", device = "svg", 
-#        width = 20, height = 5, units = "cm")
+Norway_county_graphic
+ggsave(filename = "output/images/raw/figure02_counties.svg", device = "svg",
+       width = 35, height = 20, units = "cm")
+
+
 
 ```
 
@@ -119,14 +114,13 @@ Calculate a linear model of Sales weight (kg), explained by population (mil) and
 an intercept. This is used to predict sales weights under various population scenarios to 2050.
 
 ```{r data_processing_API}
-# YAH 15:14 - 13/01/2023 - changed the year value in the lm to n - 2000, now
-# need to tweak the rest accordingly
+## Figure 03 ##
+
 # Fit linear models to sales data, and predict future sales from models
 source(file = "src/data_processing/API_sales_LM.R")
 # Graph out predictions from LMs
 source(file = "src/graphics/sales_prediction_graph.R")
-figure03_lm_graphs +
-  theme_minimal()
+figure03_lm_graphs 
 
 ggsave(filename = "output/images/raw/figure03_lm_graphs.svg", device = "svg", 
        width = 23, height = 12, units = "cm")
@@ -171,56 +165,38 @@ county_labels <- as_labeller(c(Viken = "Viken (Urban)",
                                Oslo = "Oslo (Urban)",
                                `Whole Country` = "Whole Country",
                                API_labeller))
+
+another_colour_palette <- c("#b82929", "#de5700", "#ecaa36", "#f5eb50", "#e1ffb9", "#f2fefa") %>% rev()
+
 ```
 
 # 4. Results
 
-```{r simple_map}
+```{r rq_by_year_growth}
+## Figure 05 ##
 source(file = "src/graphics/RQ_map_year.R")
 
-# Save as SVG for modification
-Norway_county_pies_RQ
+RQ_Distribts_by_Year_Growth
 
-ggsave(filename = "output/images/raw/figure04a_pies_RQ.svg", device = "svg", 
-       width = 20, height = 10, units = "cm")
-
-Norway_county_RQ_map
-
-ggsave(filename = "output/images/raw/figure04b_map_RQ.svg", device = "svg", 
-       width = 20, height = 10, units = "cm")
-
-Norway_county_bars_RQ <- Norway_county_bars_RQ +
-    theme(legend.position = "none")
-
-plot_grid(Norway_county_RQ_map, Norway_county_bars_RQ, 
-          align = "v", 
-          nrow = 2, rel_heights = c(2, 1))
-
-ggsave(filename = "output/images/raw/figure04bc_map_bars_RQ.svg", device = "svg", 
-       width = 25, height = 15, units = "cm")
+# 7:8 Aspect Ratio to keep API names in full view
+ggsave(filename = "output/images/ready/figure05_yeargrowth_RQ.png", device = "png", 
+       width = 21, height = 24, units = "cm")
 
 ```
 
 ```{r WWTP_bar}
+## Figure 06 ##
 source(file = "src/graphics/WWTP_RQ_bars.R")
 WWTP_RQ_bars
 
-ggsave(filename = "output/images/ready/figure05_wwtp_scenario_RQ.png", device = "png", 
-       width = 20, height = 10, units = "cm")
+ggsave(filename = "output/images/ready/figure06_wwtp_scenario_RQ.png", device = "png", 
+       width = 21, height = 24, units = "cm")
 ```
-
-```{r pop_scen_bar}
-source(file = "src/graphics/pop_scen_RQ_bars.R")
-pop_scen_RQ_bars
-
-ggsave(filename = "output/images/ready/figure06_pop_scenario_RQ.png", device = "png", 
-       width = 20, height = 10, units = "cm")
-```
-
 ```{r combined_risk_bar}
-source(file = "src/graphics/combined_risk_bar.R")
-combined_RQ_bars
+## Figure 07 ##
+source(file = "src/graphics/combined_vs_join_prob.R")
+combined_join_comparison_bars
 
-ggsave(filename = "output/images/ready/figure07_combined_RQ.png", device = "png", 
-       width = 23, height = 15, units = "cm")
+ggsave(filename = "output/images/ready/figure07_combined_vs_joint_RQ.png", device = "png", 
+       width = 23, height = 22, units = "cm")
 ```

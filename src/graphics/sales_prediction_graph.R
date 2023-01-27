@@ -41,14 +41,16 @@ figure03_lm_graphs <- ggplot(data = Sales_Projections_Records %>% filter(Scenari
                                   "High national growth (HHH)",
                                   "Main alternative (MMM)",
                                   "Low national growth (LLL)")) +
-    scale_colour_discrete(limits = c("Measured",
+    scale_color_brewer(palette = "Set1",
+                       limits = c("Measured",
                                      "Historic",
                                      "High national growth (HHH)",
                                      "Main alternative (MMM)",
                                      "Low national growth (LLL)")) +
     scale_y_continuous(limits = c(0, NA)) +
-    scale_x_continuous(breaks = c(0, 20, 40)) +
+    scale_x_continuous(breaks = c(0, 10, 20, 30, 40, 50)) +
     facet_wrap(facets = vars(API_Name), scales = "free") +
-    labs(x = "Years After 2000", y = "Total Sold (kg)")
+    labs(x = "Years After 2000", y = "Total Sold (kg)") +
+    theme_bw()
 
 figure03_lm_graphs

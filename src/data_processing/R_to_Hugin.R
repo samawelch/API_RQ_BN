@@ -3,7 +3,9 @@
 All_RQ_Interval_Nodes <- append(paste0("API_RQ_FW_", tolower(analysed_APIs)), 
                                 c("RQ_FW_Estrogens", "RQ_FW_Painkillers","RQ_FW_AllAPI"))
 
-All_RQ_Boolean_Nodes <- c("PRQ_GT_Estrogens", "PRQ_GT_Painkillers", "PRQ_GT_AllAPI")
+All_RQ_Boolean_Nodes <- c("PRQ_GT_n_1", "PRQ_GT_n_2", "PRQ_GT_n_3", "PRQ_GT_n_4", "PRQ_GT_n_5", "PRQ_GT_n_6")
+
+All_Boolean_Thresholds <- c(100, 500, 1000)
 
 Hugin_Data_File <- tibble(scenario_number = 1:36) %>% 
     # Add API node value presets
@@ -12,7 +14,8 @@ Hugin_Data_File <- tibble(scenario_number = 1:36) %>%
                API_medium_diclofenac = "diclofenac",
                API_medium_ciprofloxacin = "ciprofloxacin",
                API_heavy_paracetamol = "paracetamol",
-               API_heavy_ibuprofen = "ibuprofen")
+               API_heavy_ibuprofen = "ibuprofen") %>% 
+    crossing(PGT_Threshold = All_Boolean_Thresholds)
 # Add columns to monitor RQ intervals for each API and Sum Node
 for (v in 1:length(All_RQ_Interval_Nodes)) {
     Temp_API_Name <- All_RQ_Interval_Nodes[v]
@@ -30,8 +33,7 @@ for (v in 1:length(All_RQ_Boolean_Nodes)) {
     Temp_Bool_Name <- All_RQ_Boolean_Nodes[v]
     # print(Temp_Bool_Name)
     Hugin_Data_File <- Hugin_Data_File %>% 
-        add_column(!! glue("P(", "{Temp_Bool_Name}", "=true)") := NA,
-                   !! glue("P(", "{Temp_Bool_Name}", "=false)") := NA)
+        add_column(!! glue("P(", "{Temp_Bool_Name}", "=true)") := NA)
 }
 
 write_csv(x = Hugin_Data_File, file = "Data/Hugin/R_to_Hugin_datafile.csv", na = "")
