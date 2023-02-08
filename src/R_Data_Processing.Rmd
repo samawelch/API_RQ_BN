@@ -99,12 +99,15 @@ source(file = "src/data_processing/map_preparation.R")
 ```
 
 ```{r map_of_counties}
+library(ragg)
 ## Figure 02 ##
 source(file = "src/graphics/WWTP_share_map.R")
 
-Norway_county_graphic
-ggsave(filename = "output/images/raw/figure02_counties.svg", device = "svg",
-       width = 35, height = 20, units = "cm")
+Norway_county_graphic 
+
+ggsave(filename = "output/images/ready/figure02_counties.png", device = agg_png,
+       width = 30, height = 20, units = "cm", res = 300,
+       scaling = 1.3) 
 
 
 
@@ -122,8 +125,12 @@ source(file = "src/data_processing/API_sales_LM.R")
 source(file = "src/graphics/sales_prediction_graph.R")
 figure03_lm_graphs 
 
-ggsave(filename = "output/images/raw/figure03_lm_graphs.svg", device = "svg", 
-       width = 23, height = 12, units = "cm")
+ggsave(filename = "output/images/ready/figure03_lm_graphs.png", device = agg_png, 
+       width = 23, height = 12, units = "cm", dpi = 300,
+       scaling = 1.2)
+
+# Table 03
+write_excel_csv(x = LM_parameters, file = "output/tables/tab_03_lm_params.csv")
 ```
 
 We can automate running through all possible combinations of APIs and scenarios in Hugin using
@@ -131,9 +138,6 @@ a data file (essentially a CSV) with scenario variables filled in, and specially
 columns for variables we want to pull out.
 
 ```{r data_processing_Hugin}
-# This turned out to be hard to do automatically, so I did it by hand.
-# source(file = "src/data_exporters/WWT_share_CPT_exporter.R")
-
 source(file = "src/data_processing/R_to_Hugin.R")
 ```
 
@@ -141,46 +145,27 @@ Now re-import data from Hugin
 
 ```{r data_import_Hugin}
 source(file = "src/data_importers/Hugin_to_R_importer.R")
+# save a copy of data to output
+write_excel_csv(x = Hugin_Data_Output_Tall_Labelled,
+                file = "output/data/data_output.csv")
+
 ```
 
 TODO: Experiment with colours more when it's a more relevant issue. 
 https://brushingupscience.com/2019/10/01/default-colormaps-are-parula-and-viridis-really-an-improvement-over-jet/
 https://www.vis4.net/palettes/#/20|d|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1
 
-```{r graphics theme}
-viridis_colour <- c("viridis", "magma", "plasma", "inferno")[4]
-
-# Set a consistent mapping of RQs to scale values
-viridis_RQ_mapping <- Hugin_Data_Output_Tall %>% 
-    select(Risk_Bin) %>% 
-    filter(Risk_Bin %notin% c("true", "false")) %>% 
-    distinct() %>% 
-        pull()
-
-API_labeller <- str_to_title(pull(LMs_API[1]))
-names(API_labeller) <- API_labeller
-API_labeller <- c(API_labeller, AllAPI = "All APIs")
-county_labels <- as_labeller(c(Viken = "Viken (Urban)",
-                               Nordland = "Nordland (Rural)",
-                               Oslo = "Oslo (Urban)",
-                               `Whole Country` = "Whole Country",
-                               API_labeller))
-
-another_colour_palette <- c("#b82929", "#de5700", "#ecaa36", "#f5eb50", "#e1ffb9", "#f2fefa") %>% rev()
-
-```
-
 # 4. Results
 
 ```{r rq_by_year_growth}
 ## Figure 05 ##
-source(file = "src/graphics/RQ_map_year.R")
+source(file = "src/graphics/RQ_yeargrowth_bars.R")
 
 RQ_Distribts_by_Year_Growth
 
 # 7:8 Aspect Ratio to keep API names in full view
 ggsave(filename = "output/images/ready/figure05_yeargrowth_RQ.png", device = "png", 
-       width = 21, height = 24, units = "cm")
+       width = 20, height = 20, units = "cm")
 
 ```
 
@@ -190,13 +175,12 @@ source(file = "src/graphics/WWTP_RQ_bars.R")
 WWTP_RQ_bars
 
 ggsave(filename = "output/images/ready/figure06_wwtp_scenario_RQ.png", device = "png", 
-       width = 21, height = 24, units = "cm")
+       width = 20, height = 20, units = "cm")
 ```
 ```{r combined_risk_bar}
 ## Figure 07 ##
 source(file = "src/graphics/combined_vs_join_prob.R")
 combined_join_comparison_bars
-
 ggsave(filename = "output/images/ready/figure07_combined_vs_joint_RQ.png", device = "png", 
-       width = 23, height = 22, units = "cm")
+       width = 20, height = 20, units = "cm")
 ```

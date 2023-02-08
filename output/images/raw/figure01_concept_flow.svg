@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="2298"
-   height="1628"
+   width="2402"
+   height="1653"
    overflow="hidden"
    version="1.1"
-   id="svg20453"
+   id="svg539"
    sodipodi:docname="figure01_concept_flow.svg"
+   inkscape:export-filename="figure01_concept_flow.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -13,7 +16,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview20455"
+     id="namedview541"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -22,24 +25,24 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.14496314"
-     inkscape:cx="644.99153"
-     inkscape:cy="814"
+     inkscape:zoom="1.1421658"
+     inkscape:cx="1670.9484"
+     inkscape:cy="1338.6849"
      inkscape:window-width="1920"
      inkscape:window-height="1137"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg20453" />
+     inkscape:current-layer="svg539" />
   <defs
-     id="defs20017">
+     id="defs65">
     <clipPath
        id="clip0">
       <path
-         d="M-333-158 1965-158 1965 1470-333 1470Z"
+         d="M-429-164 1973-164 1973 1489-429 1489Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19954" />
+         id="path2" />
     </clipPath>
     <image
        width="128"
@@ -53,7 +56,7 @@
          d="M191-140 291-140 291-40 191-40Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19958" />
+         id="path6" />
     </clipPath>
     <image
        width="128"
@@ -67,7 +70,7 @@
          d="M931 271 1031 271 1031 371 931 371Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19962" />
+         id="path10" />
     </clipPath>
     <image
        width="128"
@@ -81,7 +84,7 @@
          d="M640-145 740-145 740-45 640-45Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19966" />
+         id="path14" />
     </clipPath>
     <image
        width="100"
@@ -92,10 +95,10 @@
     <clipPath
        id="clip8">
       <path
-         d="M1529 798 1621 798 1621 890 1529 890Z"
+         d="M1569 798 1661 798 1661 890 1569 890Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19970" />
+         id="path18" />
     </clipPath>
     <image
        width="128"
@@ -109,7 +112,7 @@
          d="M0 0 91 0 91 91 0 91Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19974" />
+         id="path22" />
     </clipPath>
     <image
        width="128"
@@ -120,10 +123,10 @@
     <clipPath
        id="clip12">
       <path
-         d="M954 1174 1049 1174 1049 1269 954 1269Z"
+         d="M944 1174 1039 1174 1039 1269 944 1269Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19978" />
+         id="path26" />
     </clipPath>
     <image
        width="128"
@@ -137,7 +140,7 @@
          d="M425 1184 519 1184 519 1278 425 1278Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19982" />
+         id="path30" />
     </clipPath>
     <image
        width="128"
@@ -148,10 +151,10 @@
     <clipPath
        id="clip16">
       <path
-         d="M379 1000 473 1000 473 1094 379 1094Z"
+         d="M379 1008 473 1008 473 1102 379 1102Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19986" />
+         id="path34" />
     </clipPath>
     <image
        width="128"
@@ -165,7 +168,7 @@
          d="M364 816 458 816 458 910 364 910Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19990" />
+         id="path38" />
     </clipPath>
     <image
        width="128"
@@ -179,7 +182,7 @@
          d="M0 36.0689 84.0689 36.0689 84.0689 84.0689 0 84.0689Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19994" />
+         id="path42" />
     </clipPath>
     <image
        width="64"
@@ -193,7 +196,7 @@
          d="M0 0 47 0 47 47 0 47Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path19998" />
+         id="path46" />
     </clipPath>
     <image
        width="125"
@@ -207,7 +210,7 @@
          d="M377 70 469 70 469 162 377 162Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path20002" />
+         id="path50" />
     </clipPath>
     <image
        width="125"
@@ -221,7 +224,7 @@
          d="M381 268 464 268 464 351 381 351Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path20006" />
+         id="path54" />
     </clipPath>
     <image
        width="100"
@@ -235,7 +238,7 @@
          d="M934 635 1034 635 1034 735 934 735Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path20010" />
+         id="path58" />
     </clipPath>
     <image
        width="128"
@@ -249,788 +252,892 @@
          d="M947 830 1020 830 1020 903 947 903Z"
          fill-rule="evenodd"
          clip-rule="evenodd"
-         id="path20014" />
+         id="path62" />
     </clipPath>
   </defs>
   <g
      clip-path="url(#clip0)"
-     transform="translate(333 158)"
-     id="g20451"
-     inkscape:export-filename="..\ready\figure01_concept_flow.png"
-     inkscape:export-xdpi="300"
-     inkscape:export-ydpi="300">
+     transform="translate(429 164)"
+     id="g537">
     <g
        clip-path="url(#clip2)"
-       id="g20021">
+       id="g69">
       <use
          width="100%"
          height="100%"
          xlink:href="#img1"
          transform="matrix(0.78125 0 0 0.78125 191 -140)"
-         id="use20019" />
+         id="use67" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(307.371 -127)"
-       id="text20029">Historic Medicine <tspan
+       font-size="27"
+       transform="translate(305.123 -129)"
+       id="text77">Historic Medicine <tspan
    x="0"
-   y="29"
-   id="tspan20023">Sales Weights</tspan><tspan
+   y="32"
+   id="tspan71">Sales Weights</tspan><tspan
    font-weight="400"
    x="0"
-   y="58"
-   id="tspan20025">Norwegian Institute</tspan><tspan
+   y="64"
+   id="tspan73">Norwegian Institute</tspan><tspan
    font-weight="400"
    x="0"
-   y="87"
-   id="tspan20027">for Public Health</tspan></text>
+   y="96"
+   id="tspan75">for Public Health</tspan></text>
     <g
        clip-path="url(#clip4)"
-       id="g20033">
+       id="g81">
       <use
          width="100%"
          height="100%"
          xlink:href="#img3"
          transform="matrix(0.78125 0 0 0.78125 931 271)"
-         id="use20031" />
+         id="use79" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(1042.26 302)"
-       id="text20039">Forecast Population<tspan
+       font-size="27"
+       transform="translate(1042.26 299)"
+       id="text87">Forecast Population<tspan
    x="0"
-   y="29"
-   id="tspan20035">Scenarios</tspan><tspan
+   y="32"
+   id="tspan83">Scenarios</tspan><tspan
    font-weight="400"
    x="0"
-   y="58"
-   id="tspan20037">Statistics Norway</tspan></text>
+   y="64"
+   id="tspan85">Statistics Norway</tspan></text>
     <g
        clip-path="url(#clip6)"
-       id="g20043">
+       id="g91">
       <use
          width="100%"
          height="100%"
          xlink:href="#img5"
          transform="matrix(0.78125 0 0 0.78125 640 -145)"
-         id="use20041" />
+         id="use89" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(759.746 -113)"
-       id="text20055">Historic Population<tspan
+       font-size="27"
+       transform="translate(759.422 -116)"
+       id="text103">Historic Population<tspan
    x="0"
-   y="29"
-   id="tspan20045">Data</tspan><tspan
+   y="32"
+   id="tspan93">Data</tspan><tspan
    font-weight="400"
    x="0"
-   y="58"
-   id="tspan20047">Statistics Norway</tspan><tspan
-   x="874.991"
-   y="939"
-   id="tspan20049">Wastewater Treatment</tspan><tspan
-   x="874.991"
-   y="968"
-   id="tspan20051">Upgrade Scenarios</tspan><tspan
+   y="64"
+   id="tspan95">Statistics Norway</tspan><tspan
+   x="915.315"
+   y="945"
+   id="tspan97">Wastewater Treatment</tspan><tspan
+   x="915.315"
+   y="977"
+   id="tspan99">Upgrade Scenarios</tspan><tspan
    font-weight="400"
-   x="874.991"
-   y="997"
-   id="tspan20053">Theoretical</tspan></text>
+   x="915.315"
+   y="1009"
+   id="tspan101">Theoretical</tspan></text>
     <g
        clip-path="url(#clip8)"
-       id="g20059">
+       id="g107">
       <use
          width="100%"
          height="100%"
          xlink:href="#img7"
-         transform="matrix(0.92 0 0 0.92 1529 798)"
-         id="use20057" />
+         transform="matrix(0.92 0 0 0.92 1569 798)"
+         id="use105" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(472.98 674)"
-       id="text20063">Predicted Environment<tspan
+       font-size="27"
+       transform="translate(472.98 677)"
+       id="text111">Predicted Environment<tspan
    x="0"
-   y="29"
-   id="tspan20061">Concentration in Influent</tspan></text>
+   y="32"
+   id="tspan109">Concentration in Influent</tspan></text>
     <g
        clip-path="url(#clip10)"
        transform="matrix(1.01099 0 -0 1 367 635)"
-       id="g20067">
+       id="g115">
       <use
          width="100%"
          height="100%"
          xlink:href="#img9"
          transform="scale(0.710938 0.710938)"
-         id="use20065" />
+         id="use113" />
     </g>
     <g
        clip-path="url(#clip12)"
-       id="g20071">
+       id="g119">
       <use
          width="100%"
          height="100%"
          xlink:href="#img11"
-         transform="matrix(0.742188 0 0 0.742188 954 1174)"
-         id="use20069" />
+         transform="matrix(0.742188 0 0 0.742188 944 1174)"
+         id="use117" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(1058.24 1220)"
-       id="text20075">Predicted Toxicity<tspan
+       font-size="27"
+       transform="translate(1048.24 1223)"
+       id="text123">Predicted Toxicity<tspan
    font-weight="400"
    x="0"
-   y="29"
-   id="tspan20073">(PNEC)</tspan></text>
+   y="32"
+   id="tspan121">(PNEC)</tspan></text>
     <g
        clip-path="url(#clip14)"
-       id="g20079">
+       id="g127">
       <use
          width="100%"
          height="100%"
          xlink:href="#img13"
          transform="matrix(0.734375 0 0 0.734375 425 1184)"
-         id="use20077" />
+         id="use125" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(534.411 1225)"
-       id="text20083">Predicted Risk<tspan
+       font-size="27"
+       transform="translate(534.411 1228)"
+       id="text131">Predicted Risk<tspan
    font-weight="400"
    x="0"
-   y="29"
-   id="tspan20081">(Risk Quotient)</tspan></text>
+   y="32"
+   id="tspan129">(Risk Quotient)</tspan></text>
     <g
        clip-path="url(#clip16)"
-       id="g20087">
+       id="g135">
       <use
          width="100%"
          height="100%"
          xlink:href="#img15"
-         transform="matrix(0.734375 0 0 0.734375 379 1000)"
-         id="use20085" />
+         transform="matrix(0.734375 0 0 0.734375 379 1008)"
+         id="use133" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(483.034 1040)"
-       id="text20097">Predicted Environment<tspan
+       font-size="27"
+       transform="translate(486.772 1036)"
+       id="text145">Predicted Environment<tspan
    x="0"
-   y="29"
-   id="tspan20089">Concentration in </tspan><tspan
+   y="32"
+   id="tspan137">Concentration in </tspan><tspan
    x="0"
-   y="58"
-   id="tspan20091">Surface Water</tspan><tspan
-   x="-8.95676"
-   y="-186"
-   id="tspan20093">Predicted Environment</tspan><tspan
-   x="-8.95676"
-   y="-157"
-   id="tspan20095">Concentration in Effluent</tspan></text>
+   y="64"
+   id="tspan139">Surface Water</tspan><tspan
+   x="-12.6948"
+   y="-179"
+   id="tspan141">Predicted Environment</tspan><tspan
+   x="-12.6948"
+   y="-147"
+   id="tspan143">Concentration in Effluent</tspan></text>
     <g
        clip-path="url(#clip18)"
-       id="g20101">
+       id="g149">
       <use
          width="100%"
          height="100%"
          xlink:href="#img17"
          transform="matrix(0.734375 0 0 0.734375 364 816)"
-         id="use20099" />
+         id="use147" />
     </g>
     <g
        clip-path="url(#clip20)"
        transform="matrix(1.03487 0 -0 1 405 460.931)"
-       id="g20105">
+       id="g153">
       <use
          width="100%"
          height="100%"
          xlink:href="#img19"
          transform="scale(0.656789 0.656789)"
-         id="use20103" />
+         id="use151" />
     </g>
     <g
        clip-path="url(#clip22)"
        transform="matrix(1.04255 0 -0 1 424 451)"
-       id="g20109">
+       id="g157">
       <use
          width="100%"
          height="100%"
          xlink:href="#img21"
          transform="scale(0.734375 0.734375)"
-         id="use20107" />
+         id="use155" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(501.557 490)"
-       id="text20117">Predicted Medicine<tspan
+       font-size="27"
+       transform="translate(501.557 493)"
+       id="text165">Predicted Medicine<tspan
    x="0"
-   y="29"
-   id="tspan20111">Sales Weights</tspan><tspan
+   y="32"
+   id="tspan159">Sales Weights</tspan><tspan
    x="-22.2772"
    y="-382"
-   id="tspan20113">Linear Model Fitted to </tspan><tspan
+   id="tspan161">Linear Model Fitted to </tspan><tspan
    x="-22.2772"
-   y="-353"
-   id="tspan20115">Sales Data, Population, Year</tspan></text>
+   y="-350"
+   id="tspan163">Sales Data, Population, Year</tspan></text>
     <g
        clip-path="url(#clip24)"
-       id="g20121">
+       id="g169">
       <use
          width="100%"
          height="100%"
          xlink:href="#img23"
          transform="matrix(0.736 0 0 0.736 377 70)"
-         id="use20119" />
+         id="use167" />
     </g>
     <path
        d="M558 427.302 565.667 427.302 565.667 360 570.333 360 570.333 427.302 578 427.302 568 452Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20123" />
+       id="path171" />
     <path
        d="M465.156 37.8413 470.577 32.4202 423.021-15.1356 426.321-18.4354 473.877 29.1204 479.298 23.6992 489.691 48.2345Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20125" />
+       id="path173" />
     <path
        d="M558 611.302 565.667 611.302 565.667 544 570.333 544 570.333 611.302 578 611.302 568 636Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20127" />
+       id="path175" />
     <path
        d="M558 792.302 565.667 792.302 565.667 725 570.333 725 570.333 792.302 578 792.302 568 817Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20129" />
+       id="path177" />
     <path
        d="M558 976.302 565.667 976.302 565.667 909 570.333 909 570.333 976.302 578 976.302 568 1001Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20131" />
+       id="path179" />
     <path
        d="M802.698 849 802.698 856.667 870 856.667 870 861.333 802.698 861.333 802.698 869 778 859Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20133" />
+       id="path181" />
     <path
        d="M558 1160.3 565.667 1160.3 565.667 1117 570.333 1117 570.333 1160.3 578 1160.3 568 1185Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20135" />
+       id="path183" />
     <path
        d="M802.698 1219 802.698 1226.67 870 1226.67 870 1231.33 802.698 1231.33 802.698 1239 778 1229Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20137" />
+       id="path185" />
     <path
        d="M487.041 1335.44 492.64 1340.68 538.588 1291.57 541.996 1294.76 496.048 1343.87 501.646 1349.11 477.47 1360.31Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20139" />
+       id="path187" />
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(479.279 302)"
-       id="text20143">Medicine Sales Weight<tspan
+       font-size="27"
+       transform="translate(479.279 305)"
+       id="text191">Medicine Sales Weight<tspan
    x="0"
-   y="29"
-   id="tspan20141">Linear Models</tspan></text>
+   y="32"
+   id="tspan189">Linear Models</tspan></text>
     <g
        clip-path="url(#clip26)"
-       id="g20147">
+       id="g195">
       <use
          width="100%"
          height="100%"
          xlink:href="#img25"
          transform="matrix(0.664 0 0 0.664 381 268)"
-         id="use20145" />
+         id="use193" />
     </g>
     <path
        d="M548 232.302 555.667 232.302 555.667 165 560.333 165 560.333 232.302 568 232.302 558 257Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20149" />
+       id="path197" />
     <path
        d="M0 67.254 7.6667 67.254 7.6667 0 12.3333 0 12.3333 67.254 20 67.254 10 91.9521Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
        transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 658.027 -9.7144)"
-       id="path20151" />
+       id="path199" />
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
        font-size="37"
        transform="translate(131.203 -77)"
-       id="text20177">a)<tspan
+       id="text225">a)<tspan
    x="464.117"
    y="-2"
-   id="tspan20153">b)</tspan><tspan
+   id="tspan201">b)</tspan><tspan
    x="176.168"
    y="204"
-   id="tspan20155">c)</tspan><tspan
+   id="tspan203">c)</tspan><tspan
    x="176.168"
    y="400"
-   id="tspan20157">d)</tspan><tspan
+   id="tspan205">d)</tspan><tspan
    x="176.168"
    y="589"
-   id="tspan20159">f)</tspan><tspan
+   id="tspan207">f)</tspan><tspan
    x="176.168"
    y="777"
-   id="tspan20161">g)</tspan><tspan
+   id="tspan209">g)</tspan><tspan
    x="176.168"
    y="966"
-   id="tspan20163">i</tspan><tspan
+   id="tspan211">i</tspan><tspan
    x="186.501"
    y="966"
-   id="tspan20165">)</tspan><tspan
+   id="tspan213">)</tspan><tspan
    x="176.168"
    y="1155"
-   id="tspan20167">l)</tspan><tspan
+   id="tspan215">l)</tspan><tspan
    x="176.168"
    y="1344"
-   id="tspan20169">n)</tspan><tspan
+   id="tspan217">n)</tspan><tspan
    x="748.866"
    y="406"
-   id="tspan20171">e)</tspan><tspan
-   x="1348.1"
+   id="tspan219">e)</tspan><tspan
+   x="1388.1"
    y="943"
-   id="tspan20173">k)</tspan><tspan
+   id="tspan221">k)</tspan><tspan
    x="765.145"
    y="1321"
-   id="tspan20175">l)</tspan></text>
+   id="tspan223">l)</tspan></text>
     <path
        d="M788.698 306 788.698 313.667 856 313.667 856 318.333 788.698 318.333 788.698 326 764 316Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20179" />
+       id="path227" />
     <g
        clip-path="url(#clip28)"
-       id="g20183">
+       id="g231">
       <use
          width="100%"
          height="100%"
          xlink:href="#img27"
          transform="translate(934 635)"
-         id="use20181" />
+         id="use229" />
     </g>
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(1065.82 665)"
-       id="text20191">2020 <tspan
-   x="60"
-   y="0"
-   id="tspan20185">Water </tspan><tspan
+       font-size="27"
+       transform="translate(1065.82 668)"
+       id="text237">2020 Water <tspan
    x="0"
-   y="29"
-   id="tspan20187">Consumption</tspan><tspan
+   y="32"
+   id="tspan233">Consumption</tspan><tspan
    font-weight="400"
    x="0"
-   y="58"
-   id="tspan20189">Statistics Norway</tspan></text>
+   y="64"
+   id="tspan235">Statistics Norway</tspan></text>
     <path
-       d="M790.698 666 790.698 673.667 858 673.667 858 678.333 790.698 678.333 790.698 686 766 676Z"
+       d="M800.698 666 800.698 673.667 868 673.667 868 678.333 800.698 678.333 800.698 686 776 676Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20193" />
+       id="path239" />
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
        font-size="37"
        transform="translate(886.304 688)"
-       id="text20227">h)<tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
+       id="text241">h)</text>
+    <rect
+       x="-362"
+       y="664"
+       width="642"
+       height="63"
+       fill="#F2F2F2"
+       id="rect243" />
+    <text
+       font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
+       font-weight="400"
+       font-size="33"
+       transform="translate(-362.17 705)"
+       id="text275">𝑃𝐸𝐶<tspan
    font-size="24"
-   x="-1068.45"
-   y="5"
-   id="tspan20195">𝑃𝐸𝐶</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-1025.69"
-   y="10"
-   id="tspan20197">𝑖𝑛𝑓𝑙𝑢𝑒𝑛𝑡</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
+   x="59.38"
+   y="6"
+   id="tspan245">𝑖𝑛𝑓𝑙𝑢𝑒𝑛𝑡</tspan><tspan
+   x="173.68"
+   y="0"
+   id="tspan247">=</tspan><tspan
+   x="203.14"
+   y="0"
+   id="tspan249" /><tspan
    font-size="24"
-   x="-943.56"
-   y="5"
-   id="tspan20199">=</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
+   x="215.107"
+   y="-20"
+   id="tspan251">𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑒𝑑</tspan><tspan
    font-size="24"
-   x="-922.227"
-   y="5"
-   id="tspan20201" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-913.56"
-   y="-9"
-   id="tspan20203">𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑒𝑑</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-828.34"
-   y="-9"
-   id="tspan20205" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-824.507"
-   y="-9"
-   id="tspan20207">𝑀𝑒𝑑𝑖𝑐𝑖𝑛𝑒</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-745.98"
-   y="-9"
-   id="tspan20209" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-742.147"
-   y="-9"
-   id="tspan20211">𝑆𝑎𝑙𝑒𝑠</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-696.954"
-   y="-9"
-   id="tspan20213" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-693.12"
-   y="-9"
-   id="tspan20215">𝑊𝑒𝑖𝑔ℎ𝑡𝑠</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-879.887"
-   y="17"
-   id="tspan20217">𝑇𝑜𝑡𝑎𝑙</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-833.287"
-   y="17"
-   id="tspan20219" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-829.454"
-   y="17"
-   id="tspan20221">𝑊𝑎𝑡𝑒𝑟</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-774.234"
-   y="17"
-   id="tspan20223" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-770.4"
-   y="17"
-   id="tspan20225">𝐶𝑜𝑛𝑠𝑢𝑚𝑝𝑡𝑖𝑜𝑛</tspan></text>
+   x="333.213"
+   y="-20"
+   id="tspan253" /><tspan
+   font-size="24"
+   x="338.547"
+   y="-20"
+   id="tspan255">𝑀𝑒𝑑𝑖𝑐𝑖𝑛𝑒</tspan><tspan
+   font-size="24"
+   x="447.613"
+   y="-20"
+   id="tspan257" /><tspan
+   font-size="24"
+   x="452.947"
+   y="-20"
+   id="tspan259">𝑆𝑎𝑙𝑒𝑠</tspan><tspan
+   font-size="24"
+   x="515.613"
+   y="-20"
+   id="tspan261" /><tspan
+   font-size="24"
+   x="520.947"
+   y="-20"
+   id="tspan263">𝑊𝑒𝑖𝑔ℎ𝑡𝑠</tspan><tspan
+   font-size="24"
+   x="261.767"
+   y="16"
+   id="tspan265">𝑇𝑜𝑡𝑎𝑙</tspan><tspan
+   font-size="24"
+   x="326.267"
+   y="16"
+   id="tspan267" /><tspan
+   font-size="24"
+   x="331.6"
+   y="16"
+   id="tspan269">𝑊𝑎𝑡𝑒𝑟</tspan><tspan
+   font-size="24"
+   x="408.04"
+   y="16"
+   id="tspan271" /><tspan
+   font-size="24"
+   x="413.373"
+   y="16"
+   id="tspan273">𝐶𝑜𝑛𝑠𝑢𝑚𝑝𝑡𝑖𝑜𝑛</tspan></text>
     <path
-       d="M-27.1435 684.751 70.1898 684.751 167.523 684.751 264.856 684.751 264.856 686.751 167.523 686.751 70.1898 686.751-27.1435 686.751Z"
+       d="M-147.17 693.69-11.8369 693.69 123.496 693.69 258.83 693.69 258.83 695.69 123.496 695.69-11.8369 695.69-147.17 695.69Z"
        fill-rule="evenodd"
-       id="path20229" />
+       id="path277" />
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(1038.3 857)"
-       id="text20237">Mean Medicine <tspan
-   x="177.333"
-   y="0"
-   id="tspan20231">Removal Rates</tspan><tspan
+       font-size="27"
+       transform="translate(1038.3 860)"
+       id="text283">Mean Medicine Removal Rates<tspan
    font-weight="400"
    x="0"
-   y="29"
-   id="tspan20233">van Dijk et al. (in review)</tspan><tspan
+   y="32"
+   id="tspan279">van Dijk et al. (in review)</tspan><tspan
    font-size="37"
    x="-143.61"
-   y="18"
-   id="tspan20235">j)</tspan></text>
+   y="15"
+   id="tspan281">j)</tspan></text>
     <g
        clip-path="url(#clip30)"
-       id="g20241">
+       id="g287">
       <use
          width="100%"
          height="100%"
          xlink:href="#img29"
          transform="matrix(0.570313 0 0 0.570313 947 830)"
-         id="use20239" />
+         id="use285" />
     </g>
     <path
-       d="M1428.46 842 1428.46 849.283 1470 849.283 1470 853.717 1428.46 853.717 1428.46 861 1405 851.5Z"
+       d="M1468.46 842 1468.46 849.283 1510 849.283 1510 853.717 1468.46 853.717 1468.46 861 1445 851.5Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20243" />
+       id="path289" />
+    <rect
+       x="-429"
+       y="833"
+       width="664"
+       height="88"
+       fill="#F2F2F2"
+       id="rect291" />
     <text
        font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
        font-weight="400"
-       font-size="24"
-       transform="translate(-332.747 884)"
-       id="text20293">𝑃𝐸𝐶<tspan
-   font-size="18"
-   x="42.76"
-   y="4"
-   id="tspan20245">𝑒𝑓𝑓𝑙𝑢𝑒𝑛𝑡</tspan><tspan
-   x="127.387"
+       font-size="33"
+       transform="translate(-197.997 865)"
+       id="text321">𝑃𝐸𝐶<tspan
+   font-size="24"
+   x="59.38"
+   y="7"
+   id="tspan293">𝑒𝑓𝑓𝑙𝑢𝑒𝑛𝑡</tspan><tspan
+   x="177.18"
    y="0"
-   id="tspan20247">=</tspan><tspan
-   x="152.053"
-   y="0"
-   id="tspan20249">𝑃𝐸𝐶</tspan><tspan
-   font-size="18"
-   x="194.813"
-   y="4"
-   id="tspan20251">𝑖𝑛𝑓𝑙𝑢𝑒𝑛𝑡</tspan><tspan
-   x="272.94"
-   y="0"
-   id="tspan20253" /><tspan
-   x="280.94"
-   y="0"
-   id="tspan20255">×</tspan><tspan
-   x="303.44"
-   y="0"
-   id="tspan20257">(</tspan>1<tspan
-   x="332.107"
-   y="0"
-   id="tspan20259">−</tspan><tspan
-   x="355.44"
-   y="0"
-   id="tspan20261">𝑀𝑒𝑑𝑖𝑐𝑖𝑛𝑒</tspan><tspan
-   x="454.133"
-   y="0"
-   id="tspan20263" /><tspan
-   x="459.467"
-   y="0"
-   id="tspan20265">𝑅𝑒𝑚𝑜𝑣𝑎𝑙</tspan><tspan
-   x="554.227"
-   y="0"
-   id="tspan20267" /><tspan
-   x="559.56"
-   y="0"
-   id="tspan20269">𝑅𝑎𝑡𝑒</tspan><tspan
-   x="610.087"
-   y="0"
-   id="tspan20271">)</tspan><tspan
-   x="211.518"
-   y="181"
-   id="tspan20273">𝑃𝐸𝐶</tspan><tspan
-   font-size="18"
-   x="254.278"
-   y="186"
-   id="tspan20275">𝑠𝑢𝑟𝑓𝑎𝑐𝑒</tspan><tspan
-   font-size="18"
-   x="323.804"
-   y="186"
-   id="tspan20277" /><tspan
-   font-size="18"
-   x="327.638"
-   y="186"
-   id="tspan20279">𝑤𝑎𝑡𝑒𝑟</tspan><tspan
-   x="387.684"
-   y="181"
-   id="tspan20281">=</tspan><tspan
-   x="409.018"
-   y="181"
-   id="tspan20283" /><tspan
-   x="442.791"
-   y="162"
-   id="tspan20285">𝑃𝐸𝐶</tspan><tspan
-   font-size="18"
-   x="485.551"
-   y="167"
-   id="tspan20287">𝑖𝑛𝑓𝑙𝑢𝑒𝑛𝑡</tspan><tspan
-   x="417.684"
-   y="197"
-   id="tspan20289">𝐷𝑖𝑙𝑢𝑡𝑖𝑜𝑛</tspan><tspan
-   x="507.598"
-   y="197"
-   id="tspan20291" />𝐹𝑎𝑐𝑡𝑜𝑟</text>
+   id="tspan295">=</tspan><tspan
+   x="-230.66"
+   y="43"
+   id="tspan297">𝑃𝐸𝐶</tspan><tspan
+   font-size="24"
+   x="-171.28"
+   y="50"
+   id="tspan299">𝑖𝑛𝑓𝑙𝑢𝑒𝑛𝑡</tspan><tspan
+   x="-62.54"
+   y="43"
+   id="tspan301" /><tspan
+   x="-51.5"
+   y="43"
+   id="tspan303">×</tspan><tspan
+   x="-20.26"
+   y="43"
+   id="tspan305">(</tspan><tspan
+   x="-6.42667"
+   y="43"
+   id="tspan307">1</tspan><tspan
+   x="19.48"
+   y="43"
+   id="tspan309">−</tspan><tspan
+   x="51.72"
+   y="43"
+   id="tspan311">𝑀𝑒𝑑𝑖𝑐𝑖𝑛𝑒</tspan><tspan
+   x="188.62"
+   y="43"
+   id="tspan313" />𝑅𝑒𝑚𝑜𝑣𝑎𝑙<tspan
+   x="327.68"
+   y="43"
+   id="tspan315" /><tspan
+   x="335.013"
+   y="43"
+   id="tspan317">𝑅𝑎𝑡𝑒</tspan><tspan
+   x="405.08"
+   y="43"
+   id="tspan319">)</tspan></text>
+    <rect
+       x="-306"
+       y="1027"
+       width="532"
+       height="77"
+       fill="#F2F2F2"
+       id="rect323" />
     <path
-       d="M85.2441 1057.01 169.244 1057.01 253.244 1057.01 253.244 1059.01 169.244 1059.01 85.2441 1059.01Z"
+       d="M-287.604 1060.37C-288.27 1060.37-288.969 1060.39-289.699 1060.42L-291.891 1070.18-290.215 1070.18C-288.915 1070.18-287.865 1070.05-287.065 1069.78-286.264 1069.51-285.609 1069.09-285.099 1068.53-284.589 1067.97-284.194 1067.3-283.914 1066.52-283.635 1065.75-283.496 1064.9-283.496 1063.98-283.496 1062.73-283.812 1061.82-284.446 1061.24-285.08 1060.66-286.133 1060.37-287.604 1060.37ZM-273.356 1058.95-258.532 1058.95-259.643 1063.9-261.19 1063.9C-261.233 1062.96-261.314 1062.26-261.432 1061.79-261.55 1061.31-261.693 1060.99-261.859 1060.81-262.026 1060.64-262.224 1060.52-262.455 1060.46-262.686 1060.4-263.017 1060.37-263.446 1060.37L-268.699 1060.37-270.536 1068.81-267.458 1068.81C-266.696 1068.81-266.113 1068.63-265.71 1068.27-265.307 1067.91-264.902 1067.32-264.494 1066.49L-263.027 1066.49-264.477 1072.68-265.847 1072.68C-265.847 1071.82-265.901 1071.24-266.008 1070.93-266.116 1070.63-266.274 1070.43-266.484 1070.35-266.693 1070.27-267.072 1070.23-267.62 1070.23L-270.842 1070.23-272.905 1079.53-268.135 1079.53C-267.501 1079.53-266.999 1079.46-266.629 1079.33-266.258 1079.21-265.909 1079-265.581 1078.71-265.254 1078.42-264.926 1078.01-264.598 1077.49-264.271 1076.97-263.881 1076.26-263.43 1075.37L-261.867 1075.37-263.285 1080.95-277.578 1080.95-277.4 1080.16C-276.992 1080.09-276.686 1079.99-276.482 1079.84-276.278 1079.7-276.106 1079.5-275.966 1079.24-275.827 1078.98-275.698 1078.67-275.579 1078.3-275.461 1077.93-275.284 1077.21-275.048 1076.14L-272.309 1063.74C-272.072 1062.66-271.954 1061.8-271.954 1061.14-271.954 1060.64-272.08 1060.29-272.333 1060.09-272.585 1059.89-272.985 1059.77-273.533 1059.74ZM-294.356 1058.95-287.25 1058.95C-285.972 1058.95-284.922 1059.05-284.1 1059.25-283.278 1059.45-282.601 1059.75-282.069 1060.17-281.538 1060.58-281.14 1061.11-280.877 1061.74-280.614 1062.37-280.482 1063.11-280.482 1063.95-280.482 1065.56-280.864 1066.95-281.626 1068.14-282.389 1069.32-283.423 1070.19-284.728 1070.75-286.033 1071.31-287.599 1071.58-289.425 1071.58-290.521 1071.58-291.434 1071.56-292.164 1071.52L-293.196 1076.26C-293.292 1076.7-293.36 1077.04-293.397 1077.27-293.435 1077.51-293.467 1077.76-293.494 1078.04-293.521 1078.31-293.534 1078.56-293.534 1078.77-293.534 1079.1-293.48 1079.36-293.373 1079.55-293.266 1079.74-293.104 1079.88-292.89 1079.96-292.675 1080.05-292.304 1080.11-291.778 1080.16L-291.955 1080.95-298.578 1080.95-298.4 1080.16C-297.992 1080.09-297.686 1079.99-297.482 1079.84-297.278 1079.7-297.106 1079.5-296.966 1079.24-296.827 1078.98-296.698 1078.67-296.579 1078.3-296.461 1077.93-296.284 1077.21-296.048 1076.14L-293.309 1063.74C-293.072 1062.66-292.954 1061.81-292.954 1061.19-292.954 1060.67-293.078 1060.3-293.325 1060.1-293.572 1059.89-293.975 1059.77-294.533 1059.74ZM-243.784 1058.69C-242.806 1058.69-241.901 1058.75-241.069 1058.87-240.236 1058.99-239.309 1059.2-238.289 1059.52L-239.256 1063.88-240.803 1063.88C-240.889 1062.56-241.176 1061.61-241.665 1061.02-242.153 1060.44-242.94 1060.14-244.025 1060.14-245.508 1060.14-246.885 1060.89-248.158 1062.37-249.431 1063.85-250.438 1065.81-251.18 1068.24-251.921 1070.67-252.291 1072.93-252.291 1075.02-252.291 1076.65-252.001 1077.85-251.421 1078.63-250.841 1079.4-249.95 1079.79-248.746 1079.79-247.941 1079.79-247.237 1079.67-246.636 1079.42-246.034 1079.18-245.47 1078.77-244.944 1078.2-244.417 1077.62-243.896 1076.82-243.381 1075.79L-241.834 1075.79-242.817 1080.37C-244.826 1080.92-246.931 1081.2-249.133 1081.2-251.153 1081.2-252.689 1080.62-253.742 1079.46-254.794 1078.3-255.321 1076.61-255.321 1074.37-255.321 1072.79-255.039 1070.97-254.475 1068.91-253.911 1066.85-253.113 1065.04-252.082 1063.48-251.051 1061.92-249.831 1060.73-248.424 1059.92-247.017 1059.1-245.47 1058.69-243.784 1058.69Z"
        fill-rule="evenodd"
-       id="path20295" />
+       id="path325" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="22.5103"
+       x="-298.578"
+       y="1078.39"
+       id="text327">𝑃𝐸𝐶</text>
     <path
-       d="M990.691 1019.09C1007.48 1030.24 1012.06 1052.9 1000.91 1069.69 989.756 1086.48 967.103 1091.06 950.309 1079.91 933.516 1068.76 928.942 1046.1 940.093 1029.31 946.857 1019.12 958.272 1013 970.5 1013L970.5 1049.5Z"
+       d="M-148.772 1076.95C-149.202 1076.95-149.626 1077.05-150.044 1077.26-150.462 1077.48-150.856 1077.77-151.227 1078.16-151.598 1078.55-151.936 1079.02-152.241 1079.57-152.546 1080.12-152.8 1080.73-153.003 1081.41-152.011 1081.41-151.157 1081.33-150.442 1081.18-149.727 1081.03-149.141 1080.83-148.684 1080.57-148.227 1080.31-147.891 1080.01-147.677 1079.66-147.462 1079.3-147.354 1078.92-147.354 1078.5-147.354 1078.01-147.475 1077.63-147.718 1077.36-147.96 1077.08-148.311 1076.95-148.772 1076.95ZM-176.854 1076.95C-177.315 1076.95-177.745 1077.05-178.143 1077.25-178.542 1077.46-178.905 1077.73-179.233 1078.08-179.561 1078.44-179.852 1078.84-180.106 1079.3-180.36 1079.76-180.575 1080.25-180.751 1080.77-180.927 1081.28-181.059 1081.81-181.149 1082.36-181.239 1082.9-181.284 1083.42-181.284 1083.92-181.284 1084.76-181.165 1085.39-180.927 1085.8-180.688 1086.21-180.304 1086.42-179.772 1086.42-179.507 1086.42-179.251 1086.37-179.005 1086.28-178.759 1086.18-178.499 1086.03-178.225 1085.83-177.538 1085.29-176.952 1084.64-176.468 1083.86-175.983 1083.09-175.62 1082.17-175.378 1081.12-175.268 1080.64-175.182 1080.2-175.12 1079.81-175.057 1079.42-175.026 1079.05-175.026 1078.69-175.026 1078.07-175.173 1077.62-175.466 1077.35-175.759 1077.08-176.221 1076.95-176.854 1076.95ZM-148.268 1075.79C-147.268 1075.79-146.509 1076.01-145.989 1076.44-145.47 1076.88-145.21 1077.5-145.21 1078.31-145.21 1081.14-147.886 1082.55-153.237 1082.55-153.276 1082.75-153.307 1082.97-153.331 1083.21-153.354 1083.45-153.366 1083.71-153.366 1083.99-153.366 1084.84-153.192 1085.46-152.845 1085.85-152.497 1086.25-151.956 1086.44-151.221 1086.44-150.839 1086.44-150.475 1086.4-150.132 1086.32-149.788 1086.24-149.45 1086.11-149.118 1085.94-148.786 1085.76-148.452 1085.54-148.116 1085.27-147.78 1085-147.429 1084.68-147.061 1084.31L-146.182 1085.26C-147.089 1086.16-147.993 1086.83-148.895 1087.28-149.798 1087.74-150.768 1087.96-151.807 1087.96-152.417 1087.96-152.958 1087.87-153.43 1087.69-153.903 1087.5-154.302 1087.24-154.626 1086.89-154.95 1086.53-155.196 1086.11-155.364 1085.6-155.532 1085.1-155.616 1084.53-155.616 1083.9-155.616 1083.45-155.577 1082.99-155.499 1082.51-155.421 1082.03-155.3 1081.55-155.136 1081.07-154.971 1080.59-154.768 1080.12-154.526 1079.66-154.284 1079.2-153.999 1078.78-153.671 1078.38-153.014 1077.57-152.223 1076.93-151.298 1076.47-150.372 1076.02-149.362 1075.79-148.268 1075.79ZM-161.444 1075.79C-160.874 1075.79-160.345 1075.82-159.856 1075.88-159.368 1075.94-158.862 1076.04-158.339 1076.17L-158.995 1079.05-160.378 1079.05C-160.386 1078.64-160.415 1078.3-160.466 1078.03-160.516 1077.76-160.598 1077.55-160.712 1077.39-160.825 1077.24-160.973 1077.13-161.157 1077.06-161.341 1076.99-161.565 1076.96-161.831 1076.95-162.253 1076.95-162.657 1077.04-163.044 1077.23-163.43 1077.42-163.79 1077.68-164.122 1078.01-164.454 1078.34-164.757 1078.73-165.03 1079.17-165.304 1079.62-165.538 1080.1-165.733 1080.62-165.929 1081.13-166.079 1081.67-166.184 1082.23-166.29 1082.79-166.343 1083.34-166.343 1083.9-166.343 1084.73-166.179 1085.36-165.85 1085.79-165.522 1086.22-165.03 1086.44-164.374 1086.44-164.007 1086.44-163.667 1086.41-163.354 1086.34-163.042 1086.27-162.737 1086.16-162.44 1086.01-162.143 1085.85-161.837 1085.65-161.52 1085.39-161.204 1085.14-160.854 1084.82-160.471 1084.45-160.323 1084.6-160.18 1084.76-160.044 1084.91-159.907 1085.06-159.764 1085.22-159.616 1085.37-160.46 1086.25-161.304 1086.9-162.147 1087.33-162.991 1087.75-163.897 1087.96-164.866 1087.96-166.077 1087.96-167.005 1087.61-167.649 1086.9-168.294 1086.2-168.616 1085.19-168.616 1083.87-168.616 1083.14-168.534 1082.43-168.37 1081.75-168.206 1081.06-167.97 1080.42-167.661 1079.82-167.352 1079.22-166.983 1078.67-166.554 1078.18-166.124 1077.69-165.643 1077.26-165.112 1076.91-164.581 1076.55-164.007 1076.28-163.389 1076.08-162.772 1075.89-162.124 1075.79-161.444 1075.79ZM-177.065 1075.79C-176.448 1075.79-175.903 1075.86-175.43 1076-174.958 1076.15-174.526 1076.35-174.136 1076.6L-172.999 1075.79-172.05 1076.03-173.819 1083.71C-173.921 1084.15-173.991 1084.51-174.03 1084.79-174.069 1085.08-174.089 1085.33-174.089 1085.55-174.089 1085.85-174.028 1086.06-173.907 1086.19-173.786 1086.33-173.612 1086.39-173.386 1086.39-173.245 1086.39-173.106 1086.37-172.97 1086.31-172.833 1086.26-172.684 1086.17-172.524 1086.05-172.364 1085.94-172.188 1085.79-171.997 1085.6-171.805 1085.42-171.589 1085.2-171.346 1084.94-171.221 1085.07-171.093 1085.2-170.96 1085.33-170.827 1085.46-170.698 1085.59-170.573 1085.71-170.964 1086.11-171.319 1086.45-171.639 1086.74-171.96 1087.02-172.27 1087.26-172.571 1087.44-172.872 1087.63-173.167 1087.76-173.456 1087.84-173.745 1087.92-174.046 1087.96-174.358 1087.96-174.921 1087.96-175.358 1087.78-175.671 1087.42-175.983 1087.06-176.139 1086.56-176.139 1085.92-176.139 1085.57-176.085 1085.24-175.975 1084.92L-176.139 1084.85C-176.538 1085.4-176.925 1085.87-177.3 1086.26-177.675 1086.66-178.046 1086.98-178.413 1087.23-178.78 1087.49-179.151 1087.67-179.526 1087.79-179.901 1087.91-180.292 1087.96-180.698 1087.96-181.628 1087.96-182.346 1087.63-182.854 1086.96-183.362 1086.29-183.616 1085.32-183.616 1084.05-183.616 1083.29-183.536 1082.56-183.376 1081.86-183.216 1081.17-182.989 1080.51-182.696 1079.9-182.403 1079.28-182.054 1078.72-181.647 1078.22-181.241 1077.72-180.796 1077.28-180.311 1076.92-179.827 1076.57-179.311 1076.29-178.764 1076.09-178.218 1075.89-177.651 1075.79-177.065 1075.79ZM-207.85 1075.79C-207.272 1075.79-206.825 1075.98-206.509 1076.36-206.192 1076.74-206.034 1077.23-206.034 1077.85-206.034 1078.2-206.089 1078.51-206.198 1078.79L-206.034 1078.86C-205.245 1077.8-204.477 1077.03-203.731 1076.53-202.985 1076.04-202.218 1075.79-201.429 1075.79-201.132 1075.79-200.852 1075.8-200.591 1075.83-200.329 1075.87-200.077 1075.91-199.835 1075.95L-200.432 1078.79-201.792 1078.79C-201.831 1078.32-201.93 1077.98-202.091 1077.78-202.251 1077.58-202.483 1077.48-202.788 1077.48-202.968 1077.47-203.175 1077.52-203.409 1077.64-203.643 1077.76-203.891 1077.92-204.153 1078.14-204.415 1078.36-204.675 1078.62-204.932 1078.92-205.19 1079.21-205.434 1079.54-205.665 1079.89-205.895 1080.24-206.096 1080.61-206.268 1081.01-206.44 1081.4-206.569 1081.8-206.655 1082.2L-207.85 1087.75-210.147 1087.75-208.389 1080.11C-208.28 1079.66-208.204 1079.28-208.161 1078.99-208.118 1078.69-208.096 1078.44-208.096 1078.24-208.096 1077.67-208.327 1077.38-208.788 1077.38-208.936 1077.38-209.083 1077.41-209.227 1077.47-209.372 1077.53-209.522 1077.62-209.679 1077.73-209.835 1077.85-210.007 1078-210.194 1078.18-210.382 1078.36-210.593 1078.57-210.827 1078.81L-211.636 1078.05C-211.245 1077.65-210.887 1077.31-210.563 1077.02-210.239 1076.74-209.929 1076.5-209.632 1076.32-209.335 1076.14-209.042 1076-208.753 1075.92-208.464 1075.83-208.163 1075.79-207.85 1075.79ZM-223.792 1075.79C-223.229 1075.79-222.78 1075.98-222.444 1076.36-222.108 1076.74-221.94 1077.24-221.94 1077.87-221.94 1078.22-221.971 1078.6-222.034 1079.02-222.096 1079.44-222.202 1079.92-222.35 1080.44-222.647 1081.51-222.882 1082.45-223.054 1083.25-223.225 1084.06-223.311 1084.65-223.311 1085.02-223.311 1085.49-223.22 1085.84-223.036 1086.07-222.852 1086.3-222.557 1086.42-222.151 1086.42-221.784 1086.42-221.391 1086.28-220.973 1086.01-220.555 1085.73-220.155 1085.38-219.772 1084.95-219.389 1084.51-219.048 1084.03-218.747 1083.49-218.446 1082.96-218.225 1082.43-218.085 1081.91L-216.796 1076.03-214.487 1076.03-216.292 1083.69C-216.386 1084.08-216.452 1084.44-216.491 1084.75-216.53 1085.07-216.55 1085.33-216.55 1085.55-216.55 1085.85-216.495 1086.06-216.386 1086.19-216.276 1086.33-216.1 1086.39-215.858 1086.39-215.71 1086.39-215.565 1086.37-215.425 1086.31-215.284 1086.26-215.134 1086.17-214.973 1086.05-214.813 1085.94-214.639 1085.79-214.452 1085.6-214.264 1085.42-214.054 1085.2-213.819 1084.94L-213.011 1085.71C-213.401 1086.11-213.761 1086.45-214.089 1086.74-214.417 1087.02-214.729 1087.26-215.026 1087.44-215.323 1087.63-215.618 1087.76-215.911 1087.84-216.204 1087.92-216.507 1087.96-216.819 1087.96-217.382 1087.96-217.821 1087.78-218.137 1087.42-218.454 1087.06-218.612 1086.56-218.612 1085.92-218.612 1085.76-218.6 1085.59-218.577 1085.43-218.554 1085.26-218.511 1085.1-218.448 1084.94L-218.589 1084.89C-219.362 1085.92-220.114 1086.68-220.845 1087.2-221.575 1087.71-222.335 1087.96-223.124 1087.96-223.952 1087.96-224.575 1087.75-224.993 1087.31-225.411 1086.87-225.62 1086.24-225.62 1085.42-225.62 1085.21-225.583 1084.92-225.509 1084.54-225.434 1084.17-225.343 1083.75-225.233 1083.29-225.124 1082.83-225.007 1082.34-224.882 1081.84-224.757 1081.34-224.639 1080.85-224.53 1080.39-224.421 1079.92-224.329 1079.5-224.255 1079.12-224.18 1078.74-224.143 1078.45-224.143 1078.24-224.143 1077.67-224.378 1077.38-224.846 1077.38-224.995 1077.38-225.139 1077.41-225.28 1077.47-225.421 1077.53-225.571 1077.62-225.731 1077.73-225.891 1077.85-226.065 1078-226.253 1078.18-226.44 1078.36-226.651 1078.57-226.886 1078.81L-227.682 1078.05C-227.261 1077.63-226.884 1077.27-226.552 1076.98-226.22 1076.69-225.905 1076.46-225.608 1076.29-225.311 1076.11-225.018 1075.98-224.729 1075.91-224.44 1075.83-224.128 1075.79-223.792 1075.79ZM-233.155 1075.79C-232.397 1075.79-231.7 1075.83-231.063 1075.93-230.427 1076.02-229.807 1076.16-229.206 1076.34L-229.768 1078.99-230.811 1078.99C-230.897 1078.28-231.13 1077.76-231.509 1077.43-231.887 1077.09-232.475 1076.92-233.272 1076.92-233.593 1076.92-233.889 1076.97-234.163 1077.05-234.436 1077.14-234.671 1077.26-234.866 1077.41-235.061 1077.56-235.214 1077.75-235.323 1077.96-235.432 1078.17-235.487 1078.4-235.487 1078.65-235.487 1078.87-235.46 1079.08-235.405 1079.27-235.35 1079.46-235.243 1079.64-235.083 1079.82-234.923 1080-234.696 1080.19-234.403 1080.38-234.11 1080.58-233.725 1080.8-233.249 1081.05-232.749 1081.32-232.333 1081.58-232.001 1081.83-231.669 1082.08-231.405 1082.34-231.21 1082.6-231.014 1082.85-230.878 1083.13-230.8 1083.42-230.721 1083.72-230.682 1084.04-230.682 1084.4-230.682 1084.96-230.796 1085.45-231.022 1085.9-231.249 1086.34-231.565 1086.71-231.971 1087.01-232.378 1087.32-232.856 1087.55-233.407 1087.72-233.958 1087.88-234.561 1087.96-235.218 1087.96-235.936 1087.96-236.643 1087.92-237.339 1087.82-238.034 1087.73-238.768 1087.57-239.542 1087.34L-238.932 1084.67-237.913 1084.67C-237.874 1085.4-237.645 1085.94-237.227 1086.31-236.809 1086.67-236.163 1086.85-235.288 1086.85-234.507 1086.85-233.891 1086.68-233.442 1086.35-232.993 1086.01-232.768 1085.54-232.768 1084.94-232.768 1084.67-232.796 1084.43-232.85 1084.23-232.905 1084.03-233.012 1083.84-233.173 1083.66-233.333 1083.48-233.552 1083.3-233.829 1083.11-234.106 1082.92-234.468 1082.69-234.913 1082.44-235.374 1082.19-235.77 1081.93-236.102 1081.68-236.434 1081.43-236.708 1081.18-236.923 1080.92-237.137 1080.66-237.296 1080.39-237.397 1080.11-237.499 1079.83-237.55 1079.53-237.55 1079.21-237.55 1078.72-237.446 1078.26-237.239 1077.84-237.032 1077.43-236.737 1077.07-236.354 1076.76-235.971 1076.46-235.511 1076.22-234.971 1076.05-234.432 1075.87-233.827 1075.79-233.155 1075.79ZM-187.315 1071.37C-186.886 1071.37-186.507 1071.39-186.179 1071.43-185.85 1071.48-185.534 1071.53-185.229 1071.59L-185.71 1073.77-186.87 1073.77C-186.925 1073.33-187.057 1073-187.268 1072.79-187.479 1072.59-187.761 1072.48-188.112 1072.48-188.518 1072.48-188.86 1072.57-189.137 1072.75-189.415 1072.92-189.657 1073.19-189.864 1073.54-190.071 1073.9-190.249 1074.32-190.397 1074.79-190.546 1075.27-190.647 1075.68-190.702 1076.03L-187.456 1076.03-187.714 1077.33-190.971 1077.33-193.093 1087.38C-193.46 1089.09-194.055 1090.36-194.88 1091.18-195.704 1092-196.804 1092.42-198.179 1092.42-198.538 1092.42-198.8 1092.39-198.964 1092.35-198.917 1092.15-198.874 1091.95-198.835 1091.74-198.796 1091.54-198.749 1091.33-198.694 1091.14-198.647 1091.16-198.581 1091.16-198.495 1091.16-198.409 1091.16-198.288 1091.16-198.132 1091.16-197.827 1091.16-197.548 1091.11-197.294 1091.02-197.04 1090.92-196.807 1090.74-196.596 1090.49-196.386 1090.24-196.192 1089.89-196.016 1089.45-195.841 1089-195.675 1088.44-195.518 1087.74L-193.175 1077.33-195.19 1077.33-194.979 1076.43C-194.55 1076.41-194.208 1076.38-193.954 1076.35-193.7 1076.32-193.485 1076.25-193.309 1076.15-193.134 1076.04-193.003 1075.86-192.917 1075.61-192.464 1074.18-191.782 1073.12-190.872 1072.42-189.962 1071.72-188.776 1071.37-187.315 1071.37Z"
+       fill-rule="evenodd"
+       id="path329" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="21.0469"
+       x="-239.542"
+       y="1089.79"
+       id="text331">𝑠𝑢𝑟𝑓𝑎𝑐𝑒</text>
+    <path
+       d="M-83.8723 1076.95C-84.3019 1076.95-84.7258 1077.05-85.1437 1077.26-85.5617 1077.48-85.9562 1077.77-86.3273 1078.16-86.6984 1078.55-87.0363 1079.02-87.341 1079.57-87.6457 1080.12-87.8996 1080.73-88.1027 1081.41-87.1105 1081.41-86.257 1081.33-85.5422 1081.18-84.8273 1081.03-84.2414 1080.83-83.7844 1080.57-83.3273 1080.31-82.9914 1080.01-82.7766 1079.66-82.5617 1079.3-82.4543 1078.92-82.4543 1078.5-82.4543 1078.01-82.5754 1077.63-82.8176 1077.36-83.0598 1077.08-83.4113 1076.95-83.8723 1076.95ZM-109.954 1076.95C-110.415 1076.95-110.845 1077.05-111.243 1077.25-111.642 1077.46-112.005 1077.73-112.333 1078.08-112.661 1078.44-112.952 1078.84-113.206 1079.3-113.46 1079.76-113.675 1080.25-113.851 1080.77-114.027 1081.28-114.159 1081.81-114.249 1082.36-114.339 1082.9-114.384 1083.42-114.384 1083.92-114.384 1084.76-114.265 1085.39-114.027 1085.8-113.788 1086.21-113.404 1086.42-112.872 1086.42-112.607 1086.42-112.351 1086.37-112.105 1086.28-111.859 1086.18-111.599 1086.03-111.325 1085.83-110.638 1085.29-110.052 1084.64-109.568 1083.86-109.083 1083.09-108.72 1082.17-108.478 1081.12-108.368 1080.64-108.282 1080.2-108.22 1079.81-108.157 1079.42-108.126 1079.05-108.126 1078.69-108.126 1078.07-108.273 1077.62-108.566 1077.35-108.859 1077.08-109.321 1076.95-109.954 1076.95ZM-137.337 1076.03-133.95 1076.03-133.036 1085.55C-132.536 1084.78-132.095 1084.08-131.712 1083.45-131.329 1082.83-130.993 1082.25-130.704 1081.73-130.415 1081.21-130.165 1080.72-129.954 1080.28-129.743 1079.83-129.566 1079.41-129.421 1079-129.277 1078.59-129.155 1078.19-129.058 1077.8-128.96 1077.41-128.876 1077.01-128.806 1076.6L-128.665 1076.03-126.79 1076.03-125.771 1085.55C-124.482 1083.79-123.507 1082.25-122.847 1080.94-122.187 1079.62-121.857 1078.57-121.857 1077.78-121.857 1077.44-121.939 1077.19-122.103 1077.05-122.267 1076.91-122.564 1076.82-122.993 1076.78L-122.853 1076.03-119.548 1076.03-119.138 1076.71C-119.466 1077.57-119.827 1078.41-120.222 1079.23-120.616 1080.06-121.079 1080.92-121.611 1081.82-122.142 1082.71-122.763 1083.66-123.474 1084.66-124.185 1085.66-125.021 1086.75-125.982 1087.94L-127.482 1087.94-128.431 1079.81C-128.946 1081-129.597 1082.26-130.382 1083.6-131.167 1084.95-132.091 1086.39-133.154 1087.94L-134.864 1087.94-135.966 1079.09C-136.029 1078.62-136.083 1078.25-136.13 1077.96-136.177 1077.68-136.249 1077.45-136.347 1077.29-136.445 1077.13-136.583 1077.02-136.763 1076.95-136.943 1076.88-137.193 1076.82-137.513 1076.78ZM-74.9504 1075.79C-74.3723 1075.79-73.925 1075.98-73.6086 1076.36-73.2922 1076.74-73.134 1077.23-73.134 1077.85-73.134 1078.2-73.1887 1078.51-73.298 1078.79L-73.134 1078.86C-72.3449 1077.8-71.5773 1077.03-70.8312 1076.53-70.0851 1076.04-69.3176 1075.79-68.5285 1075.79-68.2316 1075.79-67.9523 1075.8-67.6906 1075.83-67.4289 1075.87-67.1769 1075.91-66.9348 1075.95L-67.5324 1078.79-68.8918 1078.79C-68.9308 1078.32-69.0305 1077.98-69.1906 1077.78-69.3508 1077.58-69.5832 1077.48-69.8879 1077.48-70.0676 1077.47-70.2746 1077.52-70.509 1077.64-70.7433 1077.76-70.9914 1077.92-71.2531 1078.14-71.5148 1078.36-71.7746 1078.62-72.0324 1078.92-72.2902 1079.21-72.5344 1079.54-72.7648 1079.89-72.9953 1080.24-73.1965 1080.61-73.3683 1081.01-73.5402 1081.4-73.6691 1081.8-73.7551 1082.2L-74.9504 1087.75-77.2473 1087.75-75.4894 1080.11C-75.3801 1079.66-75.3039 1079.28-75.2609 1078.99-75.218 1078.69-75.1965 1078.44-75.1965 1078.24-75.1965 1077.67-75.4269 1077.38-75.8879 1077.38-76.0363 1077.38-76.1828 1077.41-76.3273 1077.47-76.4719 1077.53-76.6223 1077.62-76.7785 1077.73-76.9348 1077.85-77.1066 1078-77.2941 1078.18-77.4816 1078.36-77.6926 1078.57-77.9269 1078.81L-78.7355 1078.05C-78.3449 1077.65-77.9875 1077.31-77.6633 1077.02-77.3391 1076.74-77.0285 1076.5-76.7316 1076.32-76.4348 1076.14-76.1418 1076-75.8527 1075.92-75.5637 1075.83-75.2629 1075.79-74.9504 1075.79ZM-83.3683 1075.79C-82.3683 1075.79-81.6086 1076.01-81.0891 1076.44-80.5695 1076.88-80.3098 1077.5-80.3098 1078.31-80.3098 1081.14-82.9855 1082.55-88.3371 1082.55-88.3762 1082.75-88.4074 1082.97-88.4308 1083.21-88.4543 1083.45-88.466 1083.71-88.466 1083.99-88.466 1084.84-88.2922 1085.46-87.9445 1085.85-87.5969 1086.25-87.0558 1086.44-86.3215 1086.44-85.9387 1086.44-85.5754 1086.4-85.2316 1086.32-84.8879 1086.24-84.55 1086.11-84.218 1085.94-83.8859 1085.76-83.5519 1085.54-83.216 1085.27-82.8801 1085-82.5285 1084.68-82.1613 1084.31L-81.2824 1085.26C-82.1887 1086.16-83.093 1086.83-83.9953 1087.28-84.8976 1087.74-85.8683 1087.96-86.9074 1087.96-87.5168 1087.96-88.0578 1087.87-88.5305 1087.69-89.0031 1087.5-89.4016 1087.24-89.7258 1086.89-90.05 1086.53-90.2961 1086.11-90.4641 1085.6-90.632 1085.1-90.716 1084.53-90.716 1083.9-90.716 1083.45-90.6769 1082.99-90.5988 1082.51-90.5207 1082.03-90.3996 1081.55-90.2355 1081.07-90.0715 1080.59-89.8683 1080.12-89.6262 1079.66-89.384 1079.2-89.0988 1078.78-88.7707 1078.38-88.1144 1077.57-87.3234 1076.93-86.3976 1076.47-85.4719 1076.02-84.4621 1075.79-83.3683 1075.79ZM-110.165 1075.79C-109.548 1075.79-109.003 1075.86-108.53 1076-108.058 1076.15-107.626 1076.35-107.236 1076.6L-106.099 1075.79-105.15 1076.03-106.919 1083.71C-107.021 1084.15-107.091 1084.51-107.13 1084.79-107.169 1085.08-107.189 1085.33-107.189 1085.55-107.189 1085.85-107.128 1086.06-107.007 1086.19-106.886 1086.33-106.712 1086.39-106.486 1086.39-106.345 1086.39-106.206 1086.37-106.07 1086.31-105.933 1086.26-105.784 1086.17-105.624 1086.05-105.464 1085.94-105.288 1085.79-105.097 1085.6-104.905 1085.42-104.689 1085.2-104.446 1084.94-104.321 1085.07-104.193 1085.2-104.06 1085.33-103.927 1085.46-103.798 1085.59-103.673 1085.71-104.064 1086.11-104.419 1086.45-104.739 1086.74-105.06 1087.02-105.37 1087.26-105.671 1087.44-105.972 1087.63-106.267 1087.76-106.556 1087.84-106.845 1087.92-107.146 1087.96-107.458 1087.96-108.021 1087.96-108.458 1087.78-108.771 1087.42-109.083 1087.06-109.239 1086.56-109.239 1085.92-109.239 1085.57-109.185 1085.24-109.075 1084.92L-109.239 1084.85C-109.638 1085.4-110.025 1085.87-110.4 1086.26-110.775 1086.66-111.146 1086.98-111.513 1087.23-111.88 1087.49-112.251 1087.67-112.626 1087.79-113.001 1087.91-113.392 1087.96-113.798 1087.96-114.728 1087.96-115.446 1087.63-115.954 1086.96-116.462 1086.29-116.716 1085.32-116.716 1084.05-116.716 1083.29-116.636 1082.56-116.476 1081.86-116.316 1081.17-116.089 1080.51-115.796 1079.9-115.503 1079.28-115.154 1078.72-114.747 1078.22-114.341 1077.72-113.896 1077.28-113.411 1076.92-112.927 1076.57-112.411 1076.29-111.864 1076.09-111.318 1075.89-110.751 1075.79-110.165 1075.79ZM-98.1769 1073.06-96.3488 1073.06-97.0168 1076.03-93.0324 1076.03-93.3019 1077.33-97.2746 1077.33-98.4699 1082.25C-98.548 1082.57-98.6125 1082.87-98.6633 1083.13-98.7141 1083.39-98.7551 1083.63-98.7863 1083.84-98.8176 1084.05-98.8391 1084.24-98.8508 1084.41-98.8625 1084.58-98.8683 1084.75-98.8683 1084.89-98.8683 1085.36-98.7707 1085.73-98.5754 1086-98.3801 1086.26-98.0598 1086.39-97.6144 1086.39-97.2394 1086.39-96.841 1086.25-96.4191 1085.98-95.9973 1085.7-95.5168 1085.26-94.9777 1084.67L-94.1691 1085.49C-94.5676 1085.94-94.9465 1086.32-95.3058 1086.63-95.6652 1086.94-96.0168 1087.2-96.3605 1087.4-96.7043 1087.59-97.0441 1087.74-97.3801 1087.83-97.716 1087.92-98.0598 1087.96-98.4113 1087.96-99.341 1087.96-100.034 1087.75-100.491 1087.31-100.948 1086.87-101.177 1086.23-101.177 1085.37-101.177 1085.08-101.155 1084.77-101.112 1084.42-101.07 1084.07-101.009 1083.73-100.931 1083.41L-99.5363 1077.33-101.552 1077.33-101.318 1076.43C-100.849 1076.43-100.484 1076.39-100.222 1076.3-99.9601 1076.21-99.7394 1076.08-99.5598 1075.93-99.4426 1075.82-99.3293 1075.68-99.2199 1075.52-99.1105 1075.36-99.0012 1075.17-98.8918 1074.94-98.7824 1074.72-98.6711 1074.45-98.5578 1074.14-98.4445 1073.83-98.3176 1073.47-98.1769 1073.06Z"
+       fill-rule="evenodd"
+       id="path333" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="14.9063"
+       x="-137.513"
+       y="1086.1"
+       id="text335">𝑤𝑎𝑡𝑒𝑟</text>
+    <path
+       d="M-52.7285 1073.79-32.8769 1073.79-32.8769 1075.94-52.7285 1075.94ZM-52.7285 1067.1-32.8769 1067.1-32.8769 1069.25-52.7285 1069.25Z"
+       fill-rule="evenodd"
+       id="path337" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="8.83008"
+       x="-52.7285"
+       y="1074.83"
+       id="text339">=</text>
+    <path
+       d="M32.7089 1034C32.0429 1034 31.3447 1034.02 30.6142 1034.05L28.4228 1043.82 30.0986 1043.82C31.3984 1043.82 32.4484 1043.68 33.2487 1043.41 34.049 1043.14 34.7043 1042.73 35.2146 1042.16 35.7248 1041.6 36.1196 1040.93 36.3989 1040.16 36.6782 1039.38 36.8178 1038.54 36.8178 1037.61 36.8178 1036.37 36.5009 1035.45 35.8671 1034.87 35.2333 1034.29 34.1806 1034 32.7089 1034ZM46.9575 1032.58 61.7817 1032.58 60.6699 1037.53 59.123 1037.53C59.08 1036.6 58.9995 1035.89 58.8813 1035.42 58.7631 1034.95 58.6208 1034.62 58.4543 1034.45 58.2878 1034.27 58.0891 1034.15 57.8581 1034.09 57.6271 1034.03 57.2968 1034 56.8671 1034L51.6142 1034 49.7773 1042.45 52.8549 1042.45C53.6176 1042.45 54.2004 1042.27 54.6032 1041.91 55.0061 1041.55 55.4116 1040.95 55.8198 1040.13L57.2861 1040.13 55.8359 1046.31 54.4663 1046.31C54.4663 1045.45 54.4125 1044.87 54.3051 1044.57 54.1977 1044.26 54.0393 1044.07 53.8298 1043.99 53.6203 1043.9 53.2416 1043.86 52.6938 1043.86L49.4711 1043.86 47.4086 1053.16 52.1782 1053.16C52.812 1053.16 53.3142 1053.1 53.6848 1052.97 54.0554 1052.84 54.4045 1052.63 54.7321 1052.34 55.0598 1052.05 55.3874 1051.64 55.715 1051.12 56.0427 1050.6 56.4321 1049.9 56.8832 1049L58.4462 1049 57.0283 1054.58 42.7358 1054.58 42.913 1053.79C43.3212 1053.73 43.6274 1053.62 43.8315 1053.48 44.0356 1053.33 44.2075 1053.13 44.3471 1052.87 44.4868 1052.61 44.6157 1052.3 44.7338 1051.93 44.852 1051.56 45.0292 1050.84 45.2656 1049.78L48.0048 1037.37C48.2412 1036.3 48.3593 1035.43 48.3593 1034.78 48.3593 1034.27 48.2331 1033.92 47.9807 1033.72 47.7282 1033.52 47.3281 1033.41 46.7802 1033.37ZM25.9575 1032.58 33.0634 1032.58C34.3417 1032.58 35.3918 1032.68 36.2136 1032.88 37.0354 1033.08 37.7121 1033.39 38.2438 1033.8 38.7756 1034.22 39.173 1034.74 39.4362 1035.37 39.6994 1036.01 39.831 1036.74 39.831 1037.58 39.831 1039.19 39.4497 1040.59 38.687 1041.77 37.9243 1042.95 36.8903 1043.82 35.5852 1044.38 34.28 1044.94 32.7143 1045.22 30.8881 1045.22 29.7924 1045.22 28.8793 1045.2 28.1489 1045.15L27.1176 1049.89C27.0209 1050.33 26.9538 1050.67 26.9162 1050.91 26.8786 1051.14 26.8464 1051.4 26.8195 1051.67 26.7927 1051.95 26.7792 1052.19 26.7792 1052.4 26.7792 1052.74 26.833 1053 26.9404 1053.19 27.0478 1053.37 27.2089 1053.51 27.4238 1053.6 27.6386 1053.68 28.0092 1053.75 28.5356 1053.79L28.3583 1054.58 21.7358 1054.58 21.913 1053.79C22.3212 1053.73 22.6274 1053.62 22.8315 1053.48 23.0356 1053.33 23.2075 1053.13 23.3471 1052.87 23.4868 1052.61 23.6157 1052.3 23.7338 1051.93 23.852 1051.56 24.0292 1050.84 24.2656 1049.78L27.0048 1037.37C27.2412 1036.3 27.3593 1035.45 27.3593 1034.82 27.3593 1034.3 27.2358 1033.93 26.9887 1033.73 26.7416 1033.52 26.3388 1033.41 25.7802 1033.37ZM76.5297 1032.33C77.5073 1032.33 78.4123 1032.39 79.2448 1032.5 80.0773 1032.62 81.0039 1032.84 82.0244 1033.15L81.0576 1037.52 79.5107 1037.52C79.4248 1036.19 79.1374 1035.24 78.6486 1034.66 78.1599 1034.07 77.373 1033.78 76.288 1033.78 74.8056 1033.78 73.4279 1034.52 72.155 1036 70.882 1037.48 69.8749 1039.44 69.1337 1041.87 68.3925 1044.31 68.0219 1046.57 68.0219 1048.65 68.0219 1050.28 68.312 1051.49 68.892 1052.26 69.4721 1053.03 70.3637 1053.42 71.5668 1053.42 72.3725 1053.42 73.0761 1053.3 73.6777 1053.06 74.2792 1052.82 74.8432 1052.41 75.3696 1051.83 75.8959 1051.26 76.4169 1050.45 76.9326 1049.42L78.4794 1049.42 77.4965 1054C75.4877 1054.56 73.3823 1054.84 71.1801 1054.84 69.1606 1054.84 67.6245 1054.26 66.5717 1053.1 65.519 1051.94 64.9926 1050.24 64.9926 1048.01 64.9926 1046.43 65.2746 1044.61 65.8386 1042.54 66.4025 1040.48 67.2001 1038.67 68.2314 1037.11 69.2626 1035.56 70.4819 1034.37 71.8891 1033.55 73.2963 1032.74 74.8432 1032.33 76.5297 1032.33Z"
+       fill-rule="evenodd"
+       id="path341" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="22.5103"
+       x="21.7358"
+       y="1052.02"
+       id="text343">𝑃𝐸𝐶</text>
+    <path
+       d="M151.541 1050.58C151.111 1050.58 150.688 1050.69 150.27 1050.9 149.852 1051.11 149.457 1051.41 149.086 1051.79 148.715 1052.18 148.377 1052.65 148.072 1053.2 147.768 1053.75 147.514 1054.37 147.311 1055.05 148.303 1055.04 149.156 1054.96 149.871 1054.81 150.586 1054.66 151.172 1054.46 151.629 1054.2 152.086 1053.94 152.422 1053.64 152.637 1053.29 152.852 1052.94 152.959 1052.55 152.959 1052.13 152.959 1051.64 152.838 1051.27 152.596 1050.99 152.354 1050.72 152.002 1050.58 151.541 1050.58ZM85.8223 1049.54 86.3966 1049.54 84.6622 1057.34C84.5528 1057.8 84.4766 1058.17 84.4337 1058.44 84.3907 1058.72 84.3692 1058.96 84.3692 1059.18 84.3692 1059.48 84.4298 1059.69 84.5508 1059.83 84.6719 1059.96 84.8536 1060.03 85.0958 1060.03 85.2364 1060.03 85.377 1060 85.5176 1059.94 85.6583 1059.89 85.8087 1059.8 85.9688 1059.69 86.129 1059.57 86.3048 1059.42 86.4962 1059.24 86.6876 1059.05 86.9005 1058.83 87.1348 1058.57L87.9317 1059.35C87.5255 1059.76 87.1563 1060.11 86.8243 1060.4 86.4923 1060.68 86.1778 1060.91 85.8809 1061.09 85.5841 1061.27 85.293 1061.4 85.0079 1061.48 84.7227 1061.56 84.42 1061.6 84.0997 1061.6 83.8028 1061.6 83.5352 1061.54 83.2969 1061.43 83.0587 1061.32 82.8536 1061.17 82.6817 1060.98 82.5098 1060.79 82.377 1060.56 82.2833 1060.3 82.1895 1060.03 82.1426 1059.74 82.1426 1059.42 82.1426 1059.16 82.1739 1058.84 82.2364 1058.46 82.2989 1058.07 82.379 1057.66 82.4766 1057.21 82.5743 1056.76 82.6817 1056.29 82.7989 1055.8 82.9161 1055.3 83.0313 1054.82 83.1446 1054.33 83.2579 1053.85 83.3594 1053.38 83.4493 1052.93 83.5391 1052.48 83.6036 1052.07 83.6426 1051.71 83.6583 1051.64 83.6661 1051.58 83.6661 1051.52 83.6661 1051.47 83.6661 1051.41 83.6661 1051.37 83.6505 1051.06 83.543 1050.84 83.3438 1050.7 83.1446 1050.56 82.7911 1050.48 82.2833 1050.46L82.4239 1049.67ZM161.463 1049.42C162.041 1049.42 162.488 1049.61 162.805 1049.99 163.121 1050.37 163.279 1050.87 163.279 1051.48 163.279 1051.64 163.266 1051.8 163.238 1051.98 163.211 1052.15 163.162 1052.31 163.092 1052.47L163.256 1052.53C164.014 1051.49 164.762 1050.71 165.5 1050.19 166.238 1049.68 167.002 1049.42 167.791 1049.42 168.619 1049.42 169.238 1049.64 169.648 1050.09 170.059 1050.53 170.264 1051.16 170.264 1051.96 170.264 1052.21 170.229 1052.54 170.158 1052.97 170.088 1053.4 169.998 1053.87 169.889 1054.38 169.779 1054.89 169.662 1055.41 169.537 1055.94 169.412 1056.48 169.295 1056.97 169.186 1057.43 169.076 1057.88 168.986 1058.27 168.916 1058.59 168.846 1058.91 168.811 1059.1 168.811 1059.18 168.811 1059.48 168.865 1059.69 168.975 1059.83 169.084 1059.96 169.26 1060.03 169.502 1060.03 169.65 1060.03 169.797 1060 169.941 1059.94 170.086 1059.89 170.236 1059.8 170.393 1059.69 170.549 1059.57 170.721 1059.42 170.908 1059.24 171.096 1059.05 171.307 1058.83 171.541 1058.57L172.35 1059.35C171.967 1059.74 171.615 1060.07 171.295 1060.35 170.975 1060.64 170.664 1060.87 170.363 1061.05 170.063 1061.24 169.764 1061.37 169.467 1061.46 169.17 1061.55 168.854 1061.6 168.518 1061.6 168.236 1061.6 167.977 1061.54 167.738 1061.43 167.5 1061.32 167.295 1061.17 167.123 1060.98 166.951 1060.79 166.818 1060.56 166.725 1060.3 166.631 1060.04 166.584 1059.75 166.584 1059.44 166.584 1059.13 166.617 1058.76 166.684 1058.35 166.75 1057.93 166.85 1057.47 166.982 1056.97 167.123 1056.46 167.254 1055.97 167.375 1055.51 167.496 1055.04 167.602 1054.61 167.691 1054.22 167.781 1053.83 167.852 1053.47 167.902 1053.17 167.953 1052.86 167.979 1052.6 167.979 1052.4 167.979 1051.91 167.887 1051.56 167.703 1051.33 167.52 1051.1 167.225 1050.99 166.818 1050.99 166.584 1050.99 166.332 1051.05 166.063 1051.17 165.793 1051.29 165.522 1051.46 165.248 1051.68 164.975 1051.89 164.707 1052.15 164.445 1052.44 164.184 1052.73 163.943 1053.04 163.725 1053.38 163.506 1053.71 163.313 1054.06 163.145 1054.42 162.977 1054.78 162.854 1055.14 162.775 1055.5L161.463 1061.39 159.166 1061.39 160.924 1053.75C161.025 1053.34 161.1 1052.98 161.147 1052.66 161.193 1052.34 161.217 1052.07 161.217 1051.87 161.217 1051.3 160.986 1051.02 160.525 1051.02 160.385 1051.02 160.242 1051.04 160.098 1051.1 159.953 1051.16 159.801 1051.25 159.641 1051.37 159.481 1051.48 159.307 1051.63 159.119 1051.81 158.932 1051.99 158.721 1052.2 158.486 1052.44L157.678 1051.68C158.068 1051.28 158.426 1050.94 158.75 1050.66 159.074 1050.37 159.383 1050.14 159.676 1049.95 159.969 1049.77 160.26 1049.64 160.549 1049.55 160.838 1049.46 161.143 1049.42 161.463 1049.42ZM152.045 1049.42C153.045 1049.42 153.805 1049.64 154.324 1050.08 154.844 1050.52 155.104 1051.14 155.104 1051.94 155.104 1054.77 152.428 1056.18 147.076 1056.18 147.037 1056.39 147.006 1056.61 146.982 1056.85 146.959 1057.08 146.947 1057.34 146.947 1057.62 146.947 1058.48 147.121 1059.1 147.469 1059.49 147.816 1059.88 148.357 1060.07 149.092 1060.07 149.475 1060.07 149.838 1060.03 150.182 1059.95 150.525 1059.87 150.863 1059.74 151.195 1059.57 151.527 1059.4 151.861 1059.18 152.197 1058.91 152.533 1058.64 152.885 1058.32 153.252 1057.94L154.131 1058.89C153.225 1059.79 152.32 1060.46 151.418 1060.92 150.516 1061.37 149.545 1061.6 148.506 1061.6 147.897 1061.6 147.356 1061.51 146.883 1061.32 146.41 1061.14 146.012 1060.87 145.688 1060.52 145.363 1060.17 145.117 1059.74 144.949 1059.24 144.781 1058.73 144.697 1058.16 144.697 1057.53 144.697 1057.09 144.736 1056.62 144.815 1056.14 144.893 1055.66 145.014 1055.18 145.178 1054.7 145.342 1054.22 145.545 1053.75 145.787 1053.29 146.029 1052.84 146.315 1052.41 146.643 1052.01 147.299 1051.2 148.09 1050.56 149.016 1050.11 149.941 1049.65 150.951 1049.42 152.045 1049.42ZM132.522 1049.42C133.084 1049.42 133.533 1049.61 133.869 1049.99 134.205 1050.37 134.373 1050.87 134.373 1051.51 134.373 1051.85 134.342 1052.23 134.279 1052.66 134.217 1053.08 134.111 1053.55 133.963 1054.07 133.666 1055.14 133.432 1056.08 133.26 1056.89 133.088 1057.69 133.002 1058.28 133.002 1058.66 133.002 1059.12 133.094 1059.47 133.277 1059.7 133.461 1059.94 133.756 1060.05 134.162 1060.05 134.529 1060.05 134.922 1059.91 135.34 1059.64 135.758 1059.37 136.158 1059.01 136.541 1058.58 136.924 1058.15 137.266 1057.66 137.566 1057.13 137.867 1056.59 138.088 1056.06 138.229 1055.54L139.518 1049.67 141.826 1049.67 140.022 1057.32C139.928 1057.72 139.861 1058.07 139.822 1058.39 139.783 1058.7 139.764 1058.96 139.764 1059.18 139.764 1059.48 139.818 1059.69 139.928 1059.83 140.037 1059.96 140.213 1060.03 140.455 1060.03 140.604 1060.03 140.748 1060 140.889 1059.94 141.029 1059.89 141.18 1059.8 141.34 1059.69 141.5 1059.57 141.674 1059.42 141.861 1059.24 142.049 1059.05 142.26 1058.83 142.494 1058.57L143.303 1059.35C142.912 1059.75 142.553 1060.09 142.225 1060.37 141.897 1060.66 141.584 1060.89 141.287 1061.08 140.99 1061.26 140.695 1061.39 140.402 1061.47 140.109 1061.56 139.807 1061.6 139.494 1061.6 138.932 1061.6 138.492 1061.42 138.176 1061.05 137.859 1060.69 137.701 1060.19 137.701 1059.56 137.701 1059.39 137.713 1059.23 137.736 1059.06 137.76 1058.89 137.803 1058.73 137.865 1058.57L137.725 1058.53C136.951 1059.55 136.199 1060.32 135.469 1060.83 134.738 1061.34 133.979 1061.6 133.19 1061.6 132.361 1061.6 131.738 1061.38 131.32 1060.94 130.902 1060.5 130.693 1059.87 130.693 1059.05 130.693 1058.84 130.731 1058.55 130.805 1058.18 130.879 1057.8 130.971 1057.38 131.08 1056.92 131.19 1056.46 131.307 1055.98 131.432 1055.47 131.557 1054.97 131.674 1054.49 131.783 1054.02 131.893 1053.56 131.984 1053.13 132.059 1052.76 132.133 1052.38 132.17 1052.08 132.17 1051.87 132.17 1051.3 131.936 1051.02 131.467 1051.02 131.318 1051.02 131.174 1051.04 131.033 1051.1 130.893 1051.16 130.742 1051.25 130.582 1051.37 130.422 1051.48 130.248 1051.63 130.061 1051.81 129.873 1051.99 129.662 1052.2 129.428 1052.44L128.631 1051.68C129.053 1051.26 129.43 1050.91 129.762 1050.62 130.094 1050.33 130.408 1050.1 130.705 1049.92 131.002 1049.74 131.295 1049.62 131.584 1049.54 131.873 1049.46 132.186 1049.42 132.522 1049.42ZM93.463 1049.42C94.0411 1049.42 94.4883 1049.61 94.8048 1049.99 95.1212 1050.37 95.2794 1050.87 95.2794 1051.48 95.2794 1051.64 95.2657 1051.8 95.2383 1051.98 95.211 1052.15 95.1622 1052.31 95.0919 1052.47L95.2559 1052.53C96.0137 1051.49 96.7618 1050.71 97.5001 1050.19 98.2383 1049.68 99.002 1049.42 99.7911 1049.42 100.619 1049.42 101.238 1049.64 101.649 1050.09 102.059 1050.53 102.264 1051.16 102.264 1051.96 102.264 1052.21 102.229 1052.54 102.158 1052.97 102.088 1053.4 101.998 1053.87 101.889 1054.38 101.779 1054.89 101.662 1055.41 101.537 1055.94 101.412 1056.48 101.295 1056.97 101.186 1057.43 101.076 1057.88 100.986 1058.27 100.916 1058.59 100.846 1058.91 100.811 1059.1 100.811 1059.18 100.811 1059.48 100.865 1059.69 100.975 1059.83 101.084 1059.96 101.26 1060.03 101.502 1060.03 101.65 1060.03 101.797 1060 101.941 1059.94 102.086 1059.89 102.236 1059.8 102.393 1059.69 102.549 1059.57 102.721 1059.42 102.908 1059.24 103.096 1059.05 103.307 1058.83 103.541 1058.57L104.35 1059.35C103.967 1059.74 103.615 1060.07 103.295 1060.35 102.975 1060.64 102.664 1060.87 102.363 1061.05 102.063 1061.24 101.764 1061.37 101.467 1061.46 101.17 1061.55 100.854 1061.6 100.518 1061.6 100.236 1061.6 99.9766 1061.54 99.7383 1061.43 99.5001 1061.32 99.295 1061.17 99.1231 1060.98 98.9512 1060.79 98.8184 1060.56 98.7247 1060.3 98.6309 1060.04 98.5841 1059.75 98.5841 1059.44 98.5841 1059.13 98.6173 1058.76 98.6837 1058.35 98.7501 1057.93 98.8497 1057.47 98.9825 1056.97 99.1231 1056.46 99.254 1055.97 99.3751 1055.51 99.4962 1055.04 99.6016 1054.61 99.6915 1054.22 99.7813 1053.83 99.8516 1053.47 99.9024 1053.17 99.9532 1052.86 99.9786 1052.6 99.9786 1052.4 99.9786 1051.91 99.8868 1051.56 99.7032 1051.33 99.5196 1051.1 99.2247 1050.99 98.8184 1050.99 98.5841 1050.99 98.3321 1051.05 98.0626 1051.17 97.793 1051.29 97.5216 1051.46 97.2481 1051.68 96.9747 1051.89 96.7071 1052.15 96.4454 1052.44 96.1837 1052.73 95.9434 1053.04 95.7247 1053.38 95.5059 1053.71 95.3126 1054.06 95.1446 1054.42 94.9766 1054.78 94.8536 1055.14 94.7755 1055.5L93.463 1061.39 91.1661 1061.39 92.9239 1053.75C93.0255 1053.34 93.0997 1052.98 93.1466 1052.66 93.1934 1052.34 93.2169 1052.07 93.2169 1051.87 93.2169 1051.3 92.9864 1051.02 92.5255 1051.02 92.3848 1051.02 92.2423 1051.04 92.0977 1051.1 91.9532 1051.16 91.8008 1051.25 91.6407 1051.37 91.4805 1051.48 91.3067 1051.63 91.1192 1051.81 90.9317 1051.99 90.7208 1052.2 90.4864 1052.44L89.6778 1051.68C90.0684 1051.28 90.4258 1050.94 90.7501 1050.66 91.0743 1050.37 91.3829 1050.14 91.6758 1049.95 91.9688 1049.77 92.2598 1049.64 92.5489 1049.55 92.838 1049.46 93.1426 1049.42 93.463 1049.42ZM177.236 1046.69 179.065 1046.69 178.397 1049.67 182.381 1049.67 182.111 1050.97 178.139 1050.97 176.943 1055.88C176.865 1056.21 176.801 1056.5 176.75 1056.76 176.699 1057.02 176.658 1057.26 176.627 1057.47 176.596 1057.68 176.574 1057.87 176.563 1058.05 176.551 1058.22 176.545 1058.38 176.545 1058.53 176.545 1059 176.643 1059.36 176.838 1059.63 177.033 1059.89 177.354 1060.03 177.799 1060.03 178.174 1060.03 178.572 1059.89 178.994 1059.61 179.416 1059.33 179.897 1058.9 180.436 1058.3L181.244 1059.12C180.846 1059.57 180.467 1059.95 180.107 1060.26 179.748 1060.57 179.397 1060.83 179.053 1061.03 178.709 1061.23 178.369 1061.37 178.033 1061.46 177.697 1061.55 177.354 1061.6 177.002 1061.6 176.072 1061.6 175.379 1061.38 174.922 1060.94 174.465 1060.5 174.236 1059.86 174.236 1059.01 174.236 1058.72 174.258 1058.4 174.301 1058.05 174.344 1057.7 174.404 1057.37 174.482 1057.04L175.877 1050.97 173.861 1050.97 174.096 1050.07C174.565 1050.07 174.93 1050.02 175.191 1049.93 175.453 1049.84 175.674 1049.72 175.854 1049.56 175.971 1049.45 176.084 1049.32 176.193 1049.16 176.303 1049 176.412 1048.8 176.522 1048.58 176.631 1048.35 176.742 1048.08 176.856 1047.77 176.969 1047.47 177.096 1047.1 177.236 1046.69ZM125.443 1045.39 126.287 1045.39C125.803 1047.57 125.359 1049.56 124.957 1051.37 124.555 1053.17 124.115 1055.16 123.639 1057.34 123.529 1057.81 123.451 1058.18 123.404 1058.45 123.357 1058.72 123.334 1058.96 123.334 1059.18 123.334 1059.48 123.395 1059.69 123.516 1059.83 123.637 1059.96 123.822 1060.03 124.072 1060.03 124.213 1060.03 124.354 1060 124.494 1059.94 124.635 1059.89 124.783 1059.8 124.94 1059.69 125.096 1059.57 125.27 1059.42 125.461 1059.24 125.652 1059.05 125.869 1058.83 126.111 1058.57L126.873 1059.35C126.475 1059.75 126.113 1060.1 125.789 1060.38 125.465 1060.67 125.156 1060.9 124.863 1061.08 124.57 1061.26 124.281 1061.39 123.996 1061.47 123.711 1061.56 123.404 1061.6 123.076 1061.6 122.779 1061.6 122.512 1061.54 122.274 1061.43 122.035 1061.32 121.83 1061.17 121.658 1060.98 121.486 1060.79 121.354 1060.56 121.26 1060.3 121.166 1060.03 121.119 1059.74 121.119 1059.42 121.119 1059.13 121.149 1058.77 121.207 1058.35 121.266 1057.92 121.357 1057.44 121.482 1056.9 121.818 1055.4 122.152 1053.9 122.484 1052.41 122.816 1050.92 123.088 1049.77 123.299 1048.98 123.486 1048.12 123.58 1047.54 123.58 1047.23 123.58 1047.07 123.559 1046.93 123.516 1046.82 123.473 1046.71 123.395 1046.62 123.281 1046.55 123.168 1046.48 123.014 1046.43 122.818 1046.4 122.623 1046.37 122.369 1046.34 122.057 1046.33L122.221 1045.53ZM115.998 1045C116.428 1045 116.807 1045.02 117.135 1045.07 117.463 1045.11 117.779 1045.16 118.084 1045.23L117.604 1047.41 116.443 1047.41C116.389 1046.96 116.256 1046.63 116.045 1046.43 115.834 1046.22 115.553 1046.12 115.201 1046.12 114.795 1046.12 114.453 1046.2 114.176 1046.38 113.899 1046.56 113.656 1046.82 113.449 1047.18 113.242 1047.53 113.065 1047.95 112.916 1048.43 112.768 1048.9 112.666 1049.32 112.611 1049.67L115.857 1049.67 115.6 1050.97 112.342 1050.97 110.221 1061.01C109.854 1062.72 109.258 1063.99 108.434 1064.81 107.609 1065.64 106.51 1066.05 105.135 1066.05 104.775 1066.05 104.514 1066.03 104.35 1065.98 104.397 1065.78 104.44 1065.58 104.479 1065.38 104.518 1065.17 104.565 1064.97 104.619 1064.77 104.666 1064.79 104.732 1064.8 104.818 1064.8 104.904 1064.8 105.025 1064.8 105.182 1064.8 105.486 1064.8 105.766 1064.75 106.02 1064.65 106.274 1064.55 106.506 1064.38 106.717 1064.12 106.928 1063.87 107.121 1063.52 107.297 1063.08 107.473 1062.64 107.639 1062.07 107.795 1061.37L110.139 1050.97 108.123 1050.97 108.334 1050.07C108.764 1050.04 109.106 1050.02 109.359 1049.98 109.613 1049.95 109.828 1049.88 110.004 1049.78 110.18 1049.67 110.311 1049.5 110.397 1049.25 110.85 1047.82 111.531 1046.75 112.441 1046.05 113.352 1045.35 114.537 1045 115.998 1045ZM85.1426 1044.82 87.4864 1044.82 86.9122 1047.34 84.5919 1047.34Z"
+       fill-rule="evenodd"
+       id="path345" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="21.2344"
+       x="82.1426"
+       y="1063.4"
+       id="text347">𝑖𝑛𝑓𝑙𝑢𝑒𝑛𝑡</text>
+    <path
+       d="M83.497 1088.87C82.3799 1088.87 81.405 1089.34 80.5725 1090.28 79.74 1091.21 79.0847 1092.55 78.6067 1094.29 78.1286 1096.03 77.8896 1097.53 77.8896 1098.78 77.8896 1099.96 78.134 1100.84 78.6228 1101.4 79.1115 1101.97 79.8501 1102.25 80.8383 1102.25 81.8911 1102.25 82.8257 1101.77 83.6421 1100.83 84.4585 1099.88 85.103 1098.56 85.5757 1096.86 86.0483 1095.15 86.2846 1093.66 86.2846 1092.37 86.2846 1091.21 86.0591 1090.34 85.6079 1089.75 85.1567 1089.17 84.4531 1088.87 83.497 1088.87ZM68.9843 1087.7 69.935 1087.7 67.6147 1098.04C67.3784 1099.09 67.2602 1099.89 67.2602 1100.43 67.2602 1100.86 67.33 1101.17 67.4697 1101.36 67.6093 1101.55 67.8296 1101.65 68.1303 1101.65 68.4526 1101.65 68.7964 1101.52 69.1616 1101.26 69.5268 1100.99 70.0424 1100.49 70.7085 1099.75L71.6269 1100.65C70.5742 1101.76 69.7202 1102.51 69.0649 1102.91 68.4096 1103.31 67.6738 1103.5 66.8574 1103.5 66.1591 1103.5 65.6006 1103.25 65.1816 1102.74 64.7627 1102.23 64.5532 1101.58 64.5532 1100.78 64.5532 1099.96 64.7036 1098.92 65.0044 1097.65L66.2129 1092.39C66.4599 1091.31 66.5835 1090.51 66.5835 1089.97 66.5835 1089.49 66.468 1089.16 66.237 1088.99 66.0061 1088.81 65.5522 1088.72 64.8755 1088.7L65.0527 1087.84ZM15.9843 1087.7 16.935 1087.7 14.6147 1098.04C14.3784 1099.09 14.2602 1099.89 14.2602 1100.43 14.2602 1100.86 14.33 1101.17 14.4697 1101.36 14.6093 1101.55 14.8296 1101.65 15.1303 1101.65 15.4526 1101.65 15.7964 1101.52 16.1616 1101.26 16.5268 1100.99 17.0424 1100.49 17.7085 1099.75L18.6269 1100.65C17.5742 1101.76 16.7202 1102.51 16.0649 1102.91 15.4096 1103.31 14.6738 1103.5 13.8574 1103.5 13.1592 1103.5 12.6006 1103.25 12.1816 1102.74 11.7627 1102.23 11.5532 1101.58 11.5532 1100.78 11.5532 1099.96 11.7036 1098.92 12.0044 1097.65L13.2129 1092.39C13.4599 1091.31 13.5835 1090.51 13.5835 1089.97 13.5835 1089.49 13.468 1089.16 13.237 1088.99 13.0061 1088.81 12.5522 1088.72 11.8755 1088.7L12.0527 1087.84ZM83.8193 1087.58C85.5381 1087.58 86.8486 1088.05 87.7509 1088.99 88.6533 1089.93 89.1045 1091.28 89.1045 1093.03 89.1045 1094.28 88.8869 1095.61 88.4519 1097.03 88.0168 1098.44 87.4206 1099.64 86.6633 1100.6 85.906 1101.57 85.0009 1102.3 83.9482 1102.79 82.8955 1103.28 81.687 1103.52 80.3227 1103.52 78.6577 1103.52 77.3659 1103.05 76.4475 1102.12 75.529 1101.18 75.0698 1099.84 75.0698 1098.09 75.0698 1097.23 75.1987 1096.24 75.4565 1095.11 75.7895 1093.58 76.3481 1092.25 77.1323 1091.11 77.9165 1089.97 78.8833 1089.1 80.0327 1088.49 81.1821 1087.89 82.4443 1087.58 83.8193 1087.58ZM96.373 1087.57C97.0498 1087.57 97.5842 1087.79 97.9763 1088.24 98.3684 1088.68 98.5644 1089.27 98.5644 1089.98 98.5644 1090.55 98.4355 1091.19 98.1777 1091.89L98.3711 1091.95C99.4238 1090.47 100.426 1089.37 101.376 1088.66 102.327 1087.94 103.307 1087.58 104.317 1087.58 105.316 1087.58 106.084 1087.87 106.621 1088.45 107.158 1089.02 107.427 1089.82 107.427 1090.84 107.427 1091.52 107.271 1092.48 106.959 1093.72L105.912 1097.94C105.622 1099.12 105.477 1099.94 105.477 1100.43 105.477 1100.86 105.547 1101.17 105.686 1101.36 105.826 1101.55 106.046 1101.65 106.347 1101.65 106.669 1101.65 107.013 1101.52 107.378 1101.26 107.744 1100.99 108.259 1100.49 108.925 1099.75L109.844 1100.65C108.92 1101.64 108.114 1102.36 107.427 1102.82 106.739 1103.28 105.955 1103.5 105.074 1103.5 104.376 1103.5 103.817 1103.25 103.398 1102.75 102.979 1102.26 102.77 1101.62 102.77 1100.85 102.77 1100.15 102.947 1099.12 103.302 1097.77L104.011 1094.98C104.269 1093.97 104.438 1093.22 104.518 1092.74 104.599 1092.26 104.639 1091.86 104.639 1091.56 104.639 1090.82 104.516 1090.29 104.269 1089.96 104.021 1089.63 103.619 1089.47 103.06 1089.47 102.609 1089.47 102.123 1089.65 101.602 1090.01 101.081 1090.37 100.528 1090.91 99.9421 1091.64 99.3567 1092.36 98.8867 1093.07 98.5322 1093.75 98.1777 1094.43 97.8877 1095.27 97.6621 1096.27L96.1313 1103.25 93.3437 1103.25 95.6963 1093.03C95.9326 1092 96.0508 1091.2 96.0508 1090.65 96.0508 1090.22 95.9809 1089.9 95.8413 1089.71 95.7016 1089.52 95.4814 1089.42 95.1806 1089.42 94.8476 1089.42 94.4958 1089.56 94.1252 1089.83 93.7546 1090.11 93.247 1090.6 92.6025 1091.32L91.6841 1090.42C92.6723 1089.39 93.4941 1088.66 94.1494 1088.22 94.8047 1087.79 95.5459 1087.57 96.373 1087.57ZM35.5019 1087.57C36.1894 1087.57 36.7319 1087.8 37.1294 1088.26 37.5268 1088.72 37.7256 1089.35 37.7256 1090.13 37.7256 1090.98 37.5591 1092.04 37.226 1093.3L36.5171 1096.09C36.3344 1096.8 36.2028 1097.35 36.1223 1097.75 36.0417 1098.15 35.9826 1098.49 35.945 1098.78 35.9074 1099.07 35.8886 1099.31 35.8886 1099.51 35.8886 1100.25 36.0122 1100.78 36.2592 1101.11 36.5063 1101.44 36.9091 1101.6 37.4677 1101.6 37.9189 1101.6 38.405 1101.42 38.926 1101.06 39.447 1100.7 40.0002 1100.16 40.5857 1099.44 41.1711 1098.71 41.6411 1098.01 41.9956 1097.32 42.3501 1096.64 42.6401 1095.8 42.8657 1094.8L44.3965 1087.83 47.184 1087.83 44.8315 1098.04C44.5952 1099.07 44.477 1099.87 44.477 1100.43 44.477 1100.86 44.5468 1101.17 44.6865 1101.36 44.8261 1101.55 45.0464 1101.65 45.3471 1101.65 45.6694 1101.65 46.0132 1101.52 46.3784 1101.26 46.7436 1100.99 47.2592 1100.49 47.9253 1099.75L48.8437 1100.65C47.8662 1101.69 47.0337 1102.43 46.3462 1102.86 45.6587 1103.29 44.9282 1103.5 44.1548 1103.5 43.4887 1103.5 42.957 1103.28 42.5595 1102.84 42.1621 1102.4 41.9633 1101.82 41.9633 1101.09 41.9633 1100.51 42.0923 1099.87 42.3501 1099.19L42.1567 1099.12C41.0932 1100.61 40.0862 1101.72 39.1355 1102.42 38.1848 1103.13 37.2099 1103.49 36.2109 1103.49 35.2119 1103.49 34.4438 1103.2 33.9067 1102.63 33.3696 1102.05 33.101 1101.25 33.101 1100.23 33.101 1099.56 33.2568 1098.59 33.5683 1097.35L34.6157 1093.13C34.9057 1091.96 35.0507 1091.13 35.0507 1090.65 35.0507 1090.22 34.9809 1089.9 34.8413 1089.71 34.7016 1089.52 34.4814 1089.42 34.1806 1089.42 33.8476 1089.42 33.4958 1089.56 33.1252 1089.83 32.7546 1090.11 32.247 1090.6 31.6025 1091.32L30.6841 1090.42C31.5971 1089.5 32.2846 1088.86 32.7465 1088.52 33.2085 1088.17 33.6516 1087.93 34.0759 1087.79 34.5002 1087.64 34.9756 1087.57 35.5019 1087.57ZM55.5976 1083.86 57.8213 1083.86 56.935 1087.84 61.8335 1087.84 61.479 1089.47 56.5805 1089.47 55.1465 1095.72C54.8672 1096.94 54.6899 1097.81 54.6147 1098.34 54.5395 1098.87 54.5019 1099.3 54.5019 1099.62 54.5019 1100.95 55.0551 1101.62 56.1616 1101.62 56.6342 1101.62 57.1364 1101.44 57.6682 1101.08 58.1999 1100.72 58.831 1100.1 59.5615 1099.23L60.4961 1100.2C59.5615 1101.33 58.6618 1102.16 57.7971 1102.7 56.9323 1103.24 56.0273 1103.5 55.082 1103.5 52.8369 1103.5 51.7143 1102.37 51.7143 1100.1 51.7143 1099.38 51.8056 1098.63 51.9882 1097.83L53.8896 1089.47 51.1826 1089.47 51.4243 1088.36C52.0581 1088.35 52.5388 1088.3 52.8664 1088.21 53.1941 1088.13 53.468 1088.01 53.6882 1087.86 53.9084 1087.71 54.1098 1087.49 54.2924 1087.21 54.4751 1086.93 54.6523 1086.58 54.8242 1086.14 54.9961 1085.71 55.2539 1084.95 55.5976 1083.86ZM-2.40726 1082.65C-2.87992 1082.65-3.39017 1082.67-3.93802 1082.7L-8.11136 1101.76C-7.79984 1101.8-7.20365 1101.81-6.32278 1101.81-4.58255 1101.81-3.1055 1101.51-1.89163 1100.9-0.677767 1100.29 0.369597 1099.34 1.25046 1098.05 2.13132 1096.76 2.78122 1095.39 3.20016 1093.96 3.61911 1092.52 3.82858 1091.01 3.82858 1089.42 3.82858 1087.18 3.3049 1085.49 2.25754 1084.35 1.21017 1083.22-0.344758 1082.65-2.40726 1082.65ZM68.5493 1081.53 71.4013 1081.53 70.6601 1084.65 67.8081 1084.65ZM15.5493 1081.53 18.4013 1081.53 17.6601 1084.65 14.8081 1084.65ZM-8.56253 1081.25-2.4556 1081.25C-0.833528 1081.25 0.48239 1081.38 1.49216 1081.62 2.50192 1081.87 3.44455 1082.32 4.32004 1082.96 5.19553 1083.6 5.85348 1084.46 6.29391 1085.53 6.73434 1086.6 6.95456 1087.86 6.95456 1089.32 6.95456 1090.77 6.78805 1092.16 6.45505 1093.48 6.12204 1094.8 5.64401 1096.02 5.02096 1097.13 4.39792 1098.24 3.65134 1099.21 2.78122 1100.03 1.9111 1100.85 1.06784 1101.48 0.251433 1101.92-0.564973 1102.37-1.47806 1102.7-2.48782 1102.92-3.49759 1103.14-4.67386 1103.25-6.01663 1103.25L-12.7842 1103.25-12.607 1102.46C-12.1988 1102.39-11.8926 1102.29-11.6885 1102.14-11.4844 1102-11.3125 1101.8-11.1729 1101.54-11.0332 1101.28-10.9043 1100.97-10.7862 1100.6-10.668 1100.22-10.4908 1099.51-10.2544 1098.44L-7.51517 1086.04C-7.27884 1084.96-7.16068 1084.1-7.16068 1083.44-7.16068 1082.94-7.2869 1082.59-7.53934 1082.39-7.79178 1082.19-8.19193 1082.07-8.73978 1082.04ZM28.5957 1080.2 29.5464 1080.2 25.5825 1098.04C25.3462 1099.11 25.228 1099.9 25.228 1100.43 25.228 1100.86 25.2978 1101.17 25.4375 1101.36 25.5771 1101.55 25.7973 1101.65 26.0981 1101.65 26.4204 1101.65 26.7641 1101.52 27.1294 1101.26 27.4946 1100.99 28.0102 1100.49 28.6762 1099.75L29.5947 1100.65C28.5527 1101.75 27.7014 1102.5 27.0407 1102.9 26.3801 1103.3 25.6416 1103.5 24.8252 1103.5 24.1269 1103.5 23.5683 1103.25 23.1494 1102.74 22.7304 1102.23 22.521 1101.58 22.521 1100.78 22.521 1100.06 22.6714 1099.02 22.9721 1097.65L25.8564 1084.75C25.9853 1084.18 26.0766 1083.72 26.1303 1083.39 26.184 1083.05 26.2109 1082.73 26.2109 1082.44 26.2109 1082.12 26.1518 1081.88 26.0337 1081.71 25.9155 1081.54 25.7463 1081.42 25.5261 1081.35 25.3059 1081.27 24.9111 1081.22 24.3418 1081.19L24.5351 1080.35Z"
+       fill-rule="evenodd"
+       id="path349" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="23.3159"
+       x="-12.7842"
+       y="1100.61"
+       id="text351">𝐷𝑖𝑙𝑢𝑡𝑖𝑜𝑛</text>
+    <path
+       d="M195.23 1088.87C194.113 1088.87 193.138 1089.34 192.306 1090.28 191.473 1091.21 190.818 1092.55 190.34 1094.29 189.862 1096.03 189.623 1097.53 189.623 1098.78 189.623 1099.96 189.867 1100.84 190.356 1101.4 190.845 1101.97 191.583 1102.25 192.572 1102.25 193.624 1102.25 194.559 1101.77 195.375 1100.83 196.192 1099.88 196.836 1098.56 197.309 1096.86 197.782 1095.15 198.018 1093.66 198.018 1092.37 198.018 1091.21 197.792 1090.34 197.341 1089.75 196.89 1089.17 196.186 1088.87 195.23 1088.87ZM148.359 1088.84C147.253 1088.84 146.259 1089.29 145.378 1090.18 144.497 1091.07 143.81 1092.27 143.316 1093.76 142.822 1095.26 142.575 1096.76 142.575 1098.25 142.575 1099.37 142.728 1100.2 143.034 1100.76 143.34 1101.31 143.853 1101.59 144.573 1101.59 145.282 1101.59 145.977 1101.28 146.659 1100.67 147.341 1100.06 148.045 1099.18 148.77 1098.05 149.495 1096.92 150.008 1095.61 150.309 1094.13L150.454 1093.43C150.551 1092.99 150.615 1092.61 150.647 1092.29 150.68 1091.97 150.696 1091.62 150.696 1091.24 150.696 1090.41 150.518 1089.81 150.164 1089.42 149.809 1089.03 149.208 1088.84 148.359 1088.84ZM195.553 1087.58C197.271 1087.58 198.582 1088.05 199.484 1088.99 200.387 1089.93 200.838 1091.28 200.838 1093.03 200.838 1094.28 200.62 1095.61 200.185 1097.03 199.75 1098.44 199.154 1099.64 198.397 1100.6 197.639 1101.57 196.734 1102.3 195.682 1102.79 194.629 1103.28 193.42 1103.52 192.056 1103.52 190.391 1103.52 189.099 1103.05 188.181 1102.12 187.262 1101.18 186.803 1099.84 186.803 1098.09 186.803 1097.23 186.932 1096.24 187.19 1095.11 187.523 1093.58 188.081 1092.25 188.866 1091.11 189.65 1089.97 190.617 1089.1 191.766 1088.49 192.915 1087.89 194.178 1087.58 195.553 1087.58ZM167.698 1087.58C169.126 1087.58 170.442 1087.75 171.645 1088.07L170.856 1091.71 169.164 1091.71C169.142 1090.89 169.075 1090.3 168.963 1089.94 168.85 1089.57 168.667 1089.3 168.415 1089.11 168.162 1088.93 167.805 1088.84 167.343 1088.84 166.258 1088.84 165.283 1089.27 164.419 1090.14 163.554 1091 162.848 1092.23 162.3 1093.81 161.752 1095.4 161.478 1096.92 161.478 1098.38 161.478 1099.48 161.693 1100.29 162.122 1100.82 162.552 1101.35 163.197 1101.62 164.056 1101.62 165.034 1101.62 165.88 1101.43 166.594 1101.06 167.308 1100.69 168.063 1100.11 168.858 1099.31L169.841 1100.3C168.831 1101.41 167.813 1102.23 166.787 1102.75 165.761 1103.26 164.658 1103.52 163.476 1103.52 161.918 1103.52 160.737 1103.06 159.931 1102.13 159.125 1101.21 158.723 1099.87 158.723 1098.11 158.723 1096.96 158.937 1095.69 159.367 1094.32 159.797 1092.94 160.425 1091.74 161.252 1090.69 162.079 1089.65 163.046 1088.87 164.153 1088.36 165.259 1087.84 166.441 1087.58 167.698 1087.58ZM208.09 1087.57C208.767 1087.57 209.301 1087.79 209.694 1088.24 210.086 1088.68 210.282 1089.27 210.282 1089.98 210.282 1090.52 210.18 1091.08 209.975 1091.64L210.185 1091.73C211.238 1090.3 212.25 1089.25 213.222 1088.58 214.194 1087.92 215.18 1087.58 216.179 1087.58 216.963 1087.58 217.619 1087.64 218.145 1087.76L217.371 1091.37 215.712 1091.37C215.647 1090.92 215.556 1090.57 215.438 1090.32 215.32 1090.08 215.18 1089.9 215.019 1089.81 214.858 1089.71 214.654 1089.66 214.407 1089.66 214.02 1089.66 213.598 1089.83 213.142 1090.16 212.685 1090.5 212.172 1091.02 211.603 1091.73 211.034 1092.43 210.58 1093.12 210.241 1093.77 209.903 1094.43 209.621 1095.26 209.395 1096.27L207.865 1103.25 205.077 1103.25 207.413 1093.03C207.564 1092.39 207.661 1091.89 207.704 1091.53 207.746 1091.18 207.768 1090.88 207.768 1090.65 207.768 1090.22 207.698 1089.9 207.559 1089.71 207.419 1089.52 207.199 1089.42 206.898 1089.42 206.565 1089.42 206.213 1089.56 205.842 1089.83 205.472 1090.11 204.964 1090.6 204.32 1091.32L203.401 1090.42C204.39 1089.39 205.217 1088.66 205.883 1088.22 206.549 1087.79 207.285 1087.57 208.09 1087.57ZM148.037 1087.57C148.735 1087.57 149.388 1087.65 149.995 1087.8 150.602 1087.96 151.227 1088.23 151.872 1088.63L153.354 1087.57 154.386 1087.83 152.017 1098.04C151.781 1099.06 151.663 1099.86 151.663 1100.43 151.663 1100.86 151.732 1101.17 151.872 1101.36 152.012 1101.55 152.232 1101.65 152.533 1101.65 152.855 1101.65 153.199 1101.52 153.564 1101.26 153.929 1100.99 154.445 1100.49 155.111 1099.75L156.029 1100.65C155.062 1101.68 154.238 1102.42 153.556 1102.85 152.874 1103.29 152.135 1103.5 151.34 1103.5 150.674 1103.5 150.142 1103.28 149.745 1102.84 149.348 1102.4 149.149 1101.82 149.149 1101.09 149.149 1100.5 149.272 1099.87 149.519 1099.2L149.31 1099.14C148.279 1100.64 147.301 1101.74 146.377 1102.44 145.454 1103.14 144.476 1103.49 143.445 1103.49 142.263 1103.49 141.347 1103.04 140.697 1102.15 140.048 1101.26 139.723 1100.01 139.723 1098.4 139.723 1096.55 140.085 1094.77 140.81 1093.07 141.535 1091.37 142.532 1090.03 143.799 1089.04 145.067 1088.06 146.479 1087.57 148.037 1087.57ZM178.331 1083.86 180.555 1083.86 179.668 1087.84 184.567 1087.84 184.212 1089.47 179.314 1089.47 177.88 1095.72C177.6 1096.94 177.423 1097.81 177.348 1098.34 177.273 1098.87 177.235 1099.3 177.235 1099.62 177.235 1100.95 177.788 1101.62 178.895 1101.62 179.368 1101.62 179.87 1101.44 180.402 1101.08 180.933 1100.72 181.564 1100.1 182.295 1099.23L183.229 1100.2C182.295 1101.33 181.395 1102.16 180.53 1102.7 179.666 1103.24 178.761 1103.5 177.815 1103.5 175.57 1103.5 174.448 1102.37 174.448 1100.1 174.448 1099.38 174.539 1098.63 174.722 1097.83L176.623 1089.47 173.916 1089.47 174.158 1088.36C174.791 1088.35 175.272 1088.3 175.6 1088.21 175.927 1088.13 176.201 1088.01 176.422 1087.86 176.642 1087.71 176.843 1087.49 177.026 1087.21 177.208 1086.93 177.386 1086.58 177.558 1086.14 177.729 1085.71 177.987 1084.95 178.331 1083.86ZM123.171 1081.25 137.705 1081.25 136.593 1086.2 135.046 1086.2C135.003 1085.37 134.936 1084.72 134.845 1084.24 134.754 1083.76 134.625 1083.42 134.458 1083.21 134.292 1083 134.09 1082.86 133.854 1082.78 133.618 1082.71 133.263 1082.67 132.79 1082.67L127.828 1082.67 125.91 1091.44 128.923 1091.44C129.396 1091.44 129.788 1091.37 130.1 1091.24 130.411 1091.11 130.701 1090.88 130.97 1090.54 131.238 1090.2 131.571 1089.63 131.969 1088.81L133.435 1088.81 131.872 1095.61 130.454 1095.61C130.454 1094.52 130.419 1093.84 130.349 1093.57 130.279 1093.3 130.145 1093.11 129.946 1093.01 129.748 1092.9 129.353 1092.85 128.762 1092.85L125.604 1092.85 124.331 1098.56C124.105 1099.57 123.993 1100.4 123.993 1101.07 123.993 1101.4 124.046 1101.66 124.154 1101.85 124.261 1102.04 124.422 1102.18 124.637 1102.26 124.852 1102.35 125.223 1102.41 125.749 1102.46L125.572 1103.25 118.949 1103.25 119.126 1102.46C119.535 1102.39 119.841 1102.29 120.045 1102.14 120.249 1102 120.421 1101.8 120.56 1101.54 120.7 1101.28 120.829 1100.97 120.947 1100.6 121.065 1100.22 121.243 1099.51 121.479 1098.44L124.218 1086.04C124.454 1084.96 124.573 1084.11 124.573 1083.49 124.573 1082.96 124.449 1082.6 124.202 1082.4 123.955 1082.19 123.552 1082.07 122.994 1082.04Z"
+       fill-rule="evenodd"
+       id="path353" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="22.2686"
+       x="118.949"
+       y="1100.74"
+       id="text355">𝐹𝑎𝑐𝑡𝑜𝑟</text>
+    <path
+       d="M-13.7827 1069.95 102.717 1069.95 219.217 1069.95 219.217 1071.95 102.717 1071.95-13.7827 1071.95Z"
+       fill-rule="evenodd"
+       id="path357" />
+    <path
+       d="M1009.69 1016.09C1026.48 1027.24 1031.06 1049.9 1019.91 1066.69 1008.76 1083.48 986.103 1088.06 969.309 1076.91 952.516 1065.76 947.942 1043.1 959.093 1026.31 965.857 1016.12 977.272 1010 989.5 1010L989.5 1046.5Z"
        fill="#99EEFF"
        fill-rule="evenodd"
-       id="path20297" />
+       id="path359" />
     <path
-       d="M972.778 1006.01C980.216 1005.86 987.522 1007.99 993.717 1012.11L973.5 1042.5Z"
+       d="M990.778 1004.01C998.216 1003.86 1005.52 1005.99 1011.72 1010.11L991.5 1040.5Z"
        fill="#B5E6A8"
        fill-rule="evenodd"
-       id="path20299" />
+       id="path361" />
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
        font-size="37"
        transform="translate(889.004 1060)"
-       id="text20301">m)</text>
+       id="text363">m)</text>
     <path
        d="M803.698 1039 803.698 1046.67 870 1046.67 870 1051.33 803.698 1051.33 803.698 1059 779 1049Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
-       id="path20303" />
+       id="path365" />
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(1029.34 1041)"
-       id="text20339">Dilution Rate<tspan
+       font-size="27"
+       transform="translate(1051.85 1043)"
+       id="text369">Dilution Factor<tspan
    font-weight="400"
    x="0"
-   y="29"
-   id="tspan20305">Fixed (10)</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   x="-1170.86"
-   y="231"
-   id="tspan20307">𝑅𝑄</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-1140.12"
-   y="236"
-   id="tspan20309">𝑠𝑢𝑟𝑓𝑎𝑐𝑒</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-1070.59"
-   y="236"
-   id="tspan20311" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-1066.76"
-   y="236"
-   id="tspan20313">𝑤𝑎𝑡𝑒𝑟</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   x="-1006.71"
-   y="231"
-   id="tspan20315">=</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   x="-985.378"
-   y="231"
-   id="tspan20317" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   x="-967.965"
-   y="212"
-   id="tspan20319">𝑃𝐸𝐶</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-925.205"
-   y="217"
-   id="tspan20321">𝑠𝑢𝑟𝑓𝑎𝑐𝑒</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-855.678"
-   y="217"
-   id="tspan20323" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-851.845"
-   y="217"
-   id="tspan20325">𝑤𝑎𝑡𝑒𝑟</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   x="-976.712"
-   y="247"
-   id="tspan20327">𝑃</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   x="-961.878"
-   y="247"
-   id="tspan20329">𝑁</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   x="-944.378"
-   y="247"
-   id="tspan20331">𝐸𝐶</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-916.452"
-   y="252"
-   id="tspan20333">𝑠𝑢𝑟𝑓𝑎𝑐𝑒</tspan><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-846.925"
-   y="252"
-   id="tspan20335" /><tspan
-   font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-   font-weight="400"
-   font-size="18"
-   x="-843.092"
-   y="252"
-   id="tspan20337">𝑤𝑎𝑡𝑒𝑟</tspan></text>
+   y="32"
+   id="tspan367">Fixed (10)</tspan></text>
+    <rect
+       x="-271"
+       y="1198"
+       width="542"
+       height="88"
+       fill="#F2F2F2"
+       id="rect371" />
     <path
-       d="M52.8916 1263.96 146.392 1263.96 239.892 1263.96 239.892 1265.96 146.392 1265.96 52.8916 1265.96Z"
+       d="M-252.642 1231.34C-253.211 1231.34-253.813 1231.36-254.447 1231.4L-256.509 1240.73-254.608 1240.73C-253.05 1240.73-251.82 1240.53-250.918 1240.11-250.016 1239.69-249.301 1239-248.775 1238.04-248.249 1237.09-247.985 1236.06-247.985 1234.95-247.985 1234.49-248.028 1234.08-248.114 1233.72-248.2 1233.36-248.313 1233.06-248.453 1232.82-248.592 1232.59-248.77 1232.38-248.984 1232.19-249.199 1232.01-249.468 1231.85-249.79 1231.72-250.112 1231.58-250.486 1231.49-250.91 1231.43-251.334 1231.37-251.912 1231.34-252.642 1231.34ZM-229.757 1231.08C-230.917 1231.08-231.999 1231.5-233.004 1232.32-234.008 1233.15-234.889 1234.33-235.646 1235.87-236.404 1237.4-236.992 1239.09-237.411 1240.93-237.83 1242.76-238.039 1244.39-238.039 1245.79-238.039 1249.11-236.831 1250.77-234.414 1250.77-232.92 1250.77-231.551 1250.08-230.305 1248.69-229.059 1247.3-228.054 1245.37-227.292 1242.91-226.529 1240.45-226.148 1238.15-226.148 1236.01-226.148 1234.41-226.443 1233.19-227.034 1232.35-227.625 1231.5-228.532 1231.08-229.757 1231.08ZM-259.104 1229.92-251.933 1229.92C-250.794 1229.92-249.865 1229.99-249.146 1230.12-248.426 1230.26-247.811 1230.46-247.301 1230.73-246.79 1231-246.363 1231.34-246.02 1231.77-245.676 1232.19-245.418 1232.67-245.246 1233.2-245.074 1233.73-244.988 1234.3-244.988 1234.9-244.988 1236.56-245.493 1237.96-246.503 1239.12-247.513 1240.28-249.001 1241.16-250.966 1241.77L-250.966 1241.94C-250.451 1242.33-250.034 1242.79-249.718 1243.33-249.401 1243.87-249.146 1244.61-248.952 1245.57L-248.582 1247.44C-248.463 1248.03-248.329 1248.56-248.179 1249.03-248.028 1249.51-247.848 1249.88-247.639 1250.16-247.43 1250.44-247.193 1250.65-246.93 1250.79-246.667 1250.93-246.283 1251.04-245.778 1251.13L-245.939 1251.92-250.402 1251.92C-250.746 1250.96-251.052 1249.82-251.321 1248.5L-252.03 1245.09C-252.148 1244.49-252.29 1244-252.457 1243.59-252.623 1243.19-252.822 1242.88-253.053 1242.66-253.284 1242.44-253.553 1242.29-253.859 1242.22-254.165 1242.16-254.538 1242.12-254.979 1242.12L-256.815 1242.12-257.943 1247.23C-258.04 1247.65-258.107 1247.98-258.145 1248.23-258.182 1248.47-258.215 1248.73-258.242 1249.01-258.268 1249.28-258.282 1249.53-258.282 1249.74-258.282 1250.07-258.228 1250.34-258.121 1250.52-258.013 1250.71-257.852 1250.85-257.637 1250.93-257.422 1251.02-257.052 1251.08-256.525 1251.13L-256.703 1251.92-263.325 1251.92-263.148 1251.13C-262.74 1251.06-262.434 1250.96-262.23 1250.81-262.025 1250.67-261.854 1250.47-261.714 1250.21-261.574 1249.95-261.445 1249.64-261.327 1249.27-261.209 1248.9-261.032 1248.18-260.795 1247.12L-258.056 1234.71C-257.82 1233.63-257.702 1232.79-257.702 1232.16-257.702 1231.64-257.825 1231.27-258.072 1231.07-258.319 1230.86-258.722 1230.74-259.281 1230.71ZM-229.58 1229.66C-227.506 1229.66-225.909 1230.27-224.786 1231.47-223.663 1232.67-223.102 1234.41-223.102 1236.69-223.102 1238.19-223.338 1239.88-223.811 1241.73-224.284 1243.59-224.934 1245.23-225.761 1246.66-226.588 1248.08-227.547 1249.23-228.637 1250.1-229.727 1250.97-230.912 1251.57-232.19 1251.9-231.943 1252.69-231.712 1253.33-231.497 1253.84-231.282 1254.35-231.076 1254.77-230.877 1255.08-230.678 1255.4-230.482 1255.64-230.289 1255.79-230.095 1255.95-229.902 1256.05-229.709 1256.11-229.515 1256.16-229.29 1256.19-229.032 1256.19-228.624 1256.19-228.21 1256.07-227.791 1255.83-227.372 1255.6-226.905 1255.19-226.389 1254.61L-225.551 1255.51C-226.411 1256.44-227.211 1257.11-227.952 1257.49-228.693 1257.88-229.456 1258.07-230.24 1258.07-231.132 1258.07-231.86 1257.87-232.424 1257.48-232.988 1257.08-233.476 1256.44-233.89 1255.57-234.304 1254.7-234.704 1253.57-235.09 1252.16-237.035 1252.05-238.517 1251.41-239.538 1250.23-240.558 1249.04-241.068 1247.38-241.068 1245.23-241.068 1243.62-240.797 1241.8-240.255 1239.77-239.712 1237.74-238.928 1235.95-237.902 1234.39-236.876 1232.84-235.652 1231.67-234.228 1230.87-232.805 1230.06-231.255 1229.66-229.58 1229.66Z"
        fill-rule="evenodd"
-       id="path20341" />
+       id="path373" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="28.4077"
+       x="-263.325"
+       y="1254.52"
+       id="text375">𝑅𝑄</text>
+    <path
+       d="M-130.293 1247.92C-130.723 1247.92-131.147 1248.02-131.565 1248.24-131.983 1248.45-132.377 1248.75-132.748 1249.13-133.119 1249.52-133.457 1249.99-133.762 1250.54-134.067 1251.09-134.321 1251.7-134.524 1252.38-133.532 1252.38-132.678 1252.3-131.963 1252.15-131.248 1252-130.662 1251.8-130.205 1251.54-129.748 1251.28-129.412 1250.98-129.198 1250.63-128.983 1250.27-128.875 1249.89-128.875 1249.47-128.875 1248.98-128.996 1248.6-129.239 1248.33-129.481 1248.06-129.832 1247.92-130.293 1247.92ZM-158.375 1247.92C-158.836 1247.92-159.266 1248.02-159.664 1248.22-160.063 1248.43-160.426 1248.7-160.754 1249.06-161.082 1249.41-161.373 1249.81-161.627 1250.27-161.881 1250.74-162.096 1251.22-162.272 1251.74-162.448 1252.26-162.58 1252.78-162.67 1253.33-162.76 1253.87-162.805 1254.39-162.805 1254.89-162.805 1255.74-162.686 1256.36-162.448 1256.77-162.209 1257.18-161.825 1257.39-161.293 1257.39-161.028 1257.39-160.772 1257.34-160.526 1257.25-160.28 1257.15-160.02 1257.01-159.746 1256.8-159.059 1256.26-158.473 1255.61-157.989 1254.83-157.504 1254.06-157.141 1253.15-156.899 1252.09-156.789 1251.61-156.703 1251.17-156.641 1250.78-156.578 1250.39-156.547 1250.02-156.547 1249.67-156.547 1249.04-156.694 1248.59-156.987 1248.32-157.28 1248.05-157.743 1247.92-158.375 1247.92ZM-129.789 1246.76C-128.789 1246.76-128.03 1246.98-127.51 1247.42-126.991 1247.85-126.731 1248.47-126.731 1249.28-126.731 1252.11-129.407 1253.52-134.758 1253.52-134.797 1253.72-134.828 1253.94-134.852 1254.18-134.875 1254.42-134.887 1254.68-134.887 1254.96-134.887 1255.81-134.713 1256.43-134.366 1256.83-134.018 1257.22-133.477 1257.41-132.743 1257.41-132.36 1257.41-131.996 1257.37-131.653 1257.29-131.309 1257.21-130.971 1257.08-130.639 1256.91-130.307 1256.74-129.973 1256.51-129.637 1256.25-129.301 1255.98-128.95 1255.65-128.582 1255.28L-127.703 1256.23C-128.61 1257.13-129.514 1257.8-130.416 1258.26-131.319 1258.71-132.289 1258.93-133.328 1258.93-133.938 1258.93-134.479 1258.84-134.952 1258.66-135.424 1258.48-135.823 1258.21-136.147 1257.86-136.471 1257.51-136.717 1257.08-136.885 1256.57-137.053 1256.07-137.137 1255.5-137.137 1254.87-137.137 1254.42-137.098 1253.96-137.02 1253.48-136.942 1253-136.821 1252.52-136.657 1252.04-136.493 1251.56-136.289 1251.09-136.047 1250.63-135.805 1250.17-135.52 1249.75-135.192 1249.35-134.535 1248.54-133.744 1247.9-132.819 1247.44-131.893 1246.99-130.883 1246.76-129.789 1246.76ZM-142.965 1246.76C-142.395 1246.76-141.866 1246.79-141.377 1246.85-140.889 1246.92-140.383 1247.01-139.86 1247.15L-140.516 1250.02-141.899 1250.02C-141.907 1249.61-141.936 1249.27-141.987 1249-142.037 1248.73-142.119 1248.52-142.233 1248.36-142.346 1248.21-142.494 1248.1-142.678 1248.03-142.862 1247.96-143.086 1247.93-143.352 1247.92-143.774 1247.92-144.178 1248.01-144.565 1248.2-144.952 1248.39-145.311 1248.65-145.643 1248.98-145.975 1249.31-146.278 1249.7-146.551 1250.15-146.825 1250.59-147.059 1251.07-147.254 1251.59-147.45 1252.1-147.6 1252.64-147.705 1253.2-147.811 1253.76-147.864 1254.31-147.864 1254.87-147.864 1255.7-147.7 1256.33-147.371 1256.76-147.043 1257.19-146.551 1257.41-145.895 1257.41-145.528 1257.41-145.188 1257.38-144.875 1257.31-144.563 1257.25-144.258 1257.13-143.961 1256.98-143.664 1256.82-143.358 1256.62-143.041 1256.36-142.725 1256.11-142.375 1255.79-141.993 1255.42-141.844 1255.58-141.702 1255.73-141.565 1255.88-141.428 1256.03-141.285 1256.19-141.137 1256.34-141.981 1257.22-142.825 1257.87-143.668 1258.3-144.512 1258.72-145.418 1258.93-146.387 1258.93-147.598 1258.93-148.526 1258.58-149.17 1257.87-149.815 1257.17-150.137 1256.16-150.137 1254.84-150.137 1254.11-150.055 1253.4-149.891 1252.72-149.727 1252.03-149.491 1251.39-149.182 1250.79-148.873 1250.19-148.504 1249.64-148.075 1249.15-147.645 1248.66-147.164 1248.23-146.633 1247.88-146.102 1247.52-145.528 1247.25-144.91 1247.05-144.293 1246.86-143.645 1246.76-142.965 1246.76ZM-158.586 1246.76C-157.969 1246.76-157.424 1246.83-156.952 1246.98-156.479 1247.12-156.047 1247.32-155.657 1247.57L-154.52 1246.76-153.571 1247.01-155.34 1254.68C-155.442 1255.12-155.512 1255.48-155.551 1255.76-155.59 1256.05-155.61 1256.3-155.61 1256.52-155.61 1256.82-155.549 1257.03-155.428 1257.17-155.307 1257.3-155.133 1257.36-154.907 1257.36-154.766 1257.36-154.627 1257.34-154.491 1257.28-154.354 1257.23-154.205 1257.14-154.045 1257.02-153.885 1256.91-153.709 1256.76-153.518 1256.57-153.327 1256.39-153.11 1256.17-152.868 1255.91-152.743 1256.04-152.614 1256.17-152.481 1256.3-152.348 1256.43-152.219 1256.56-152.094 1256.68-152.485 1257.08-152.84 1257.42-153.16 1257.71-153.481 1258-153.791 1258.23-154.092 1258.41-154.393 1258.6-154.688 1258.73-154.977 1258.81-155.266 1258.89-155.567 1258.93-155.879 1258.93-156.442 1258.93-156.879 1258.75-157.192 1258.39-157.504 1258.03-157.66 1257.53-157.66 1256.9-157.66 1256.54-157.606 1256.21-157.496 1255.89L-157.66 1255.82C-158.059 1256.37-158.446 1256.84-158.821 1257.24-159.196 1257.63-159.567 1257.95-159.934 1258.2-160.301 1258.46-160.672 1258.64-161.047 1258.76-161.422 1258.88-161.813 1258.93-162.219 1258.93-163.149 1258.93-163.868 1258.6-164.375 1257.93-164.883 1257.26-165.137 1256.29-165.137 1255.02-165.137 1254.26-165.057 1253.53-164.897 1252.84-164.737 1252.14-164.51 1251.48-164.217 1250.87-163.924 1250.25-163.575 1249.69-163.168 1249.19-162.762 1248.69-162.317 1248.26-161.832 1247.9-161.348 1247.54-160.832 1247.26-160.285 1247.06-159.739 1246.86-159.172 1246.76-158.586 1246.76ZM-189.371 1246.76C-188.793 1246.76-188.346 1246.95-188.03 1247.33-187.713 1247.71-187.555 1248.2-187.555 1248.82-187.555 1249.17-187.61 1249.49-187.719 1249.76L-187.555 1249.83C-186.766 1248.77-185.998 1248-185.252 1247.5-184.506 1247.01-183.739 1246.76-182.95 1246.76-182.653 1246.76-182.373 1246.77-182.112 1246.81-181.85 1246.84-181.598 1246.88-181.356 1246.92L-181.953 1249.76-183.313 1249.76C-183.352 1249.29-183.452 1248.95-183.612 1248.75-183.772 1248.55-184.004 1248.45-184.309 1248.45-184.489 1248.44-184.696 1248.49-184.93 1248.61-185.164 1248.73-185.412 1248.9-185.674 1249.11-185.936 1249.33-186.196 1249.59-186.453 1249.89-186.711 1250.18-186.955 1250.51-187.186 1250.86-187.416 1251.21-187.618 1251.59-187.789 1251.98-187.961 1252.37-188.09 1252.77-188.176 1253.17L-189.371 1258.72-191.668 1258.72-189.91 1251.08C-189.801 1250.63-189.725 1250.26-189.682 1249.96-189.639 1249.66-189.618 1249.41-189.618 1249.21-189.618 1248.64-189.848 1248.35-190.309 1248.35-190.457 1248.35-190.604 1248.38-190.748 1248.44-190.893 1248.5-191.043 1248.59-191.2 1248.7-191.356 1248.82-191.528 1248.97-191.715 1249.15-191.903 1249.33-192.114 1249.54-192.348 1249.78L-193.157 1249.02C-192.766 1248.62-192.409 1248.28-192.084 1248-191.76 1247.71-191.45 1247.48-191.153 1247.29-190.856 1247.11-190.563 1246.97-190.274 1246.89-189.985 1246.8-189.684 1246.76-189.371 1246.76ZM-205.313 1246.76C-204.75 1246.76-204.301 1246.95-203.965 1247.33-203.629 1247.71-203.461 1248.21-203.461 1248.84-203.461 1249.19-203.493 1249.57-203.555 1249.99-203.618 1250.42-203.723 1250.89-203.871 1251.41-204.168 1252.48-204.403 1253.42-204.575 1254.22-204.746 1255.03-204.832 1255.62-204.832 1255.99-204.832 1256.46-204.741 1256.81-204.557 1257.04-204.373 1257.27-204.078 1257.39-203.672 1257.39-203.305 1257.39-202.912 1257.25-202.494 1256.98-202.077 1256.7-201.676 1256.35-201.293 1255.92-200.91 1255.48-200.569 1255-200.268 1254.46-199.967 1253.93-199.746 1253.4-199.606 1252.88L-198.317 1247.01-196.008 1247.01-197.813 1254.66C-197.907 1255.06-197.973 1255.41-198.012 1255.72-198.051 1256.04-198.071 1256.3-198.071 1256.52-198.071 1256.82-198.016 1257.03-197.907 1257.17-197.797 1257.3-197.621 1257.36-197.379 1257.36-197.231 1257.36-197.086 1257.34-196.946 1257.28-196.805 1257.23-196.655 1257.14-196.494 1257.02-196.334 1256.91-196.16 1256.76-195.973 1256.57-195.785 1256.39-195.575 1256.17-195.34 1255.91L-194.532 1256.68C-194.922 1257.08-195.282 1257.42-195.61 1257.71-195.938 1258-196.25 1258.23-196.547 1258.41-196.844 1258.6-197.139 1258.73-197.432 1258.81-197.725 1258.89-198.028 1258.93-198.34 1258.93-198.903 1258.93-199.342 1258.75-199.659 1258.39-199.975 1258.03-200.133 1257.53-200.133 1256.9-200.133 1256.73-200.121 1256.57-200.098 1256.4-200.075 1256.23-200.032 1256.07-199.969 1255.91L-200.11 1255.86C-200.883 1256.89-201.635 1257.66-202.366 1258.17-203.096 1258.68-203.856 1258.93-204.645 1258.93-205.473 1258.93-206.096 1258.72-206.514 1258.28-206.932 1257.84-207.141 1257.21-207.141 1256.39-207.141 1256.18-207.104 1255.89-207.03 1255.51-206.955 1255.14-206.864 1254.72-206.754 1254.26-206.645 1253.8-206.528 1253.32-206.403 1252.81-206.278 1252.31-206.16 1251.82-206.051 1251.36-205.942 1250.89-205.85 1250.47-205.776 1250.09-205.702 1249.71-205.664 1249.42-205.664 1249.21-205.664 1248.64-205.899 1248.35-206.368 1248.35-206.516 1248.35-206.66 1248.38-206.801 1248.44-206.942 1248.5-207.092 1248.59-207.252 1248.7-207.412 1248.82-207.586 1248.97-207.774 1249.15-207.961 1249.33-208.172 1249.54-208.407 1249.78L-209.203 1249.02C-208.782 1248.6-208.405 1248.24-208.073 1247.95-207.741 1247.67-207.426 1247.43-207.129 1247.26-206.832 1247.08-206.539 1246.95-206.25 1246.88-205.961 1246.8-205.649 1246.76-205.313 1246.76ZM-214.676 1246.76C-213.918 1246.76-213.221 1246.81-212.584 1246.9-211.948 1246.99-211.328 1247.13-210.727 1247.31L-211.289 1249.96-212.332 1249.96C-212.418 1249.26-212.651 1248.74-213.03 1248.4-213.409 1248.06-213.996 1247.9-214.793 1247.9-215.114 1247.9-215.41 1247.94-215.684 1248.02-215.957 1248.11-216.192 1248.23-216.387 1248.38-216.582 1248.53-216.735 1248.72-216.844 1248.93-216.953 1249.14-217.008 1249.37-217.008 1249.62-217.008 1249.84-216.981 1250.05-216.926 1250.24-216.871 1250.43-216.764 1250.61-216.604 1250.79-216.444 1250.97-216.217 1251.16-215.924 1251.35-215.631 1251.55-215.246 1251.77-214.77 1252.02-214.27 1252.29-213.854 1252.56-213.522 1252.81-213.19 1253.06-212.926 1253.31-212.731 1253.57-212.535 1253.83-212.399 1254.1-212.321 1254.39-212.243 1254.69-212.203 1255.01-212.203 1255.37-212.203 1255.93-212.317 1256.42-212.543 1256.87-212.77 1257.31-213.086 1257.68-213.493 1257.99-213.899 1258.29-214.377 1258.52-214.928 1258.69-215.479 1258.85-216.082 1258.93-216.739 1258.93-217.457 1258.93-218.164 1258.89-218.86 1258.79-219.555 1258.7-220.289 1258.54-221.063 1258.31L-220.453 1255.64-219.434 1255.64C-219.395 1256.37-219.166 1256.91-218.748 1257.28-218.33 1257.64-217.684 1257.82-216.809 1257.82-216.028 1257.82-215.412 1257.65-214.963 1257.32-214.514 1256.98-214.289 1256.51-214.289 1255.91-214.289 1255.64-214.317 1255.4-214.371 1255.2-214.426 1255-214.534 1254.81-214.694 1254.63-214.854 1254.45-215.073 1254.27-215.35 1254.08-215.627 1253.89-215.989 1253.67-216.434 1253.42-216.895 1253.16-217.291 1252.9-217.623 1252.65-217.955 1252.4-218.229 1252.15-218.444 1251.89-218.659 1251.63-218.817 1251.36-218.918 1251.08-219.02 1250.8-219.071 1250.5-219.071 1250.18-219.071 1249.69-218.967 1249.23-218.76 1248.82-218.553 1248.4-218.258 1248.04-217.875 1247.73-217.493 1247.43-217.032 1247.19-216.493 1247.02-215.953 1246.84-215.348 1246.76-214.676 1246.76ZM-168.836 1242.34C-168.407 1242.34-168.028 1242.36-167.7 1242.41-167.371 1242.45-167.055 1242.5-166.75 1242.56L-167.231 1244.74-168.391 1244.74C-168.446 1244.3-168.578 1243.97-168.789 1243.76-169 1243.56-169.282 1243.45-169.633 1243.45-170.039 1243.45-170.381 1243.54-170.659 1243.72-170.936 1243.89-171.178 1244.16-171.385 1244.51-171.592 1244.87-171.77 1245.29-171.918 1245.76-172.067 1246.24-172.168 1246.65-172.223 1247.01L-168.977 1247.01-169.235 1248.31-172.493 1248.31-174.614 1258.35C-174.981 1260.06-175.577 1261.33-176.401 1262.15-177.225 1262.98-178.325 1263.39-179.7 1263.39-180.059 1263.39-180.321 1263.36-180.485 1263.32-180.438 1263.12-180.395 1262.92-180.356 1262.71-180.317 1262.51-180.27 1262.31-180.215 1262.11-180.168 1262.13-180.102 1262.13-180.016 1262.13-179.93 1262.13-179.809 1262.13-179.653 1262.13-179.348 1262.13-179.069 1262.09-178.815 1261.99-178.561 1261.89-178.328 1261.71-178.118 1261.46-177.907 1261.21-177.713 1260.86-177.537 1260.42-177.362 1259.98-177.196 1259.41-177.039 1258.71L-174.696 1248.31-176.711 1248.31-176.5 1247.4C-176.071 1247.38-175.729 1247.35-175.475 1247.32-175.221 1247.29-175.006 1247.22-174.83 1247.12-174.655 1247.01-174.524 1246.83-174.438 1246.58-173.985 1245.15-173.303 1244.09-172.393 1243.39-171.483 1242.69-170.297 1242.34-168.836 1242.34Z"
+       fill-rule="evenodd"
+       id="path377" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="21.0469"
+       x="-221.063"
+       y="1260.76"
+       id="text379">𝑠𝑢𝑟𝑓𝑎𝑐𝑒</text>
+    <path
+       d="M-65.3933 1247.92C-65.823 1247.92-66.2468 1248.02-66.6648 1248.24-67.0828 1248.45-67.4773 1248.75-67.8484 1249.13-68.2195 1249.52-68.5574 1249.99-68.8621 1250.54-69.1667 1251.09-69.4206 1251.7-69.6238 1252.38-68.6316 1252.38-67.7781 1252.3-67.0632 1252.15-66.3484 1252-65.7624 1251.8-65.3054 1251.54-64.8484 1251.28-64.5124 1250.98-64.2976 1250.63-64.0828 1250.27-63.9753 1249.89-63.9753 1249.47-63.9753 1248.98-64.0964 1248.6-64.3386 1248.33-64.5808 1248.06-64.9324 1247.92-65.3933 1247.92ZM-91.4753 1247.92C-91.9363 1247.92-92.366 1248.02-92.7644 1248.22-93.1628 1248.43-93.5261 1248.7-93.8542 1249.06-94.1824 1249.41-94.4734 1249.81-94.7273 1250.27-94.9812 1250.74-95.196 1251.22-95.3718 1251.74-95.5476 1252.26-95.6804 1252.78-95.7703 1253.33-95.8601 1253.87-95.905 1254.39-95.905 1254.89-95.905 1255.74-95.7859 1256.36-95.5476 1256.77-95.3093 1257.18-94.9246 1257.39-94.3933 1257.39-94.1277 1257.39-93.8718 1257.34-93.6257 1257.25-93.3796 1257.15-93.1199 1257.01-92.8464 1256.8-92.1589 1256.26-91.573 1255.61-91.0886 1254.83-90.6042 1254.06-90.241 1253.15-89.9988 1252.09-89.8894 1251.61-89.8035 1251.17-89.741 1250.78-89.6785 1250.39-89.6472 1250.02-89.6472 1249.67-89.6472 1249.04-89.7937 1248.59-90.0867 1248.32-90.3796 1248.05-90.8425 1247.92-91.4753 1247.92ZM-118.858 1247.01-115.471 1247.01-114.557 1256.52C-114.057 1255.75-113.616 1255.05-113.233 1254.42-112.85 1253.8-112.514 1253.22-112.225 1252.7-111.936 1252.18-111.686 1251.69-111.475 1251.25-111.264 1250.8-111.087 1250.38-110.942 1249.97-110.798 1249.56-110.677 1249.17-110.579 1248.77-110.481 1248.38-110.397 1247.98-110.327 1247.57L-110.186 1247.01-108.311 1247.01-107.292 1256.52C-106.003 1254.76-105.028 1253.23-104.368 1251.91-103.708 1250.59-103.378 1249.54-103.378 1248.75-103.378 1248.41-103.46 1248.17-103.624 1248.02-103.788 1247.88-104.085 1247.79-104.514 1247.76L-104.374 1247.01-101.069 1247.01-100.659 1247.68C-100.987 1248.54-101.348 1249.38-101.743 1250.2-102.137 1251.03-102.6 1251.89-103.132 1252.79-103.663 1253.68-104.284 1254.63-104.995 1255.63-105.706 1256.63-106.542 1257.72-107.503 1258.91L-109.003 1258.91-109.952 1250.78C-110.468 1251.97-111.118 1253.23-111.903 1254.58-112.688 1255.92-113.612 1257.36-114.675 1258.91L-116.385 1258.91-117.487 1250.06C-117.55 1249.59-117.604 1249.22-117.651 1248.93-117.698 1248.65-117.77 1248.42-117.868 1248.26-117.966 1248.1-118.104 1247.99-118.284 1247.92-118.464 1247.85-118.714 1247.79-119.034 1247.76ZM-56.4714 1246.76C-55.8933 1246.76-55.446 1246.95-55.1296 1247.33-54.8132 1247.71-54.655 1248.2-54.655 1248.82-54.655 1249.17-54.7097 1249.49-54.8191 1249.76L-54.655 1249.83C-53.866 1248.77-53.0984 1248-52.3523 1247.5-51.6062 1247.01-50.8386 1246.76-50.0496 1246.76-49.7527 1246.76-49.4734 1246.77-49.2117 1246.81-48.9499 1246.84-48.698 1246.88-48.4558 1246.92L-49.0535 1249.76-50.4128 1249.76C-50.4519 1249.29-50.5515 1248.95-50.7117 1248.75-50.8718 1248.55-51.1042 1248.45-51.4089 1248.45-51.5886 1248.44-51.7956 1248.49-52.03 1248.61-52.2644 1248.73-52.5124 1248.9-52.7742 1249.11-53.0359 1249.33-53.2956 1249.59-53.5535 1249.89-53.8113 1250.18-54.0554 1250.51-54.2859 1250.86-54.5163 1251.21-54.7175 1251.59-54.8894 1251.98-55.0613 1252.37-55.1902 1252.77-55.2761 1253.17L-56.4714 1258.72-58.7683 1258.72-57.0105 1251.08C-56.9011 1250.63-56.8249 1250.26-56.782 1249.96-56.739 1249.66-56.7175 1249.41-56.7175 1249.21-56.7175 1248.64-56.948 1248.35-57.4089 1248.35-57.5574 1248.35-57.7038 1248.38-57.8484 1248.44-57.9929 1248.5-58.1433 1248.59-58.2996 1248.7-58.4558 1248.82-58.6277 1248.97-58.8152 1249.15-59.0027 1249.33-59.2136 1249.54-59.448 1249.78L-60.2566 1249.02C-59.866 1248.62-59.5085 1248.28-59.1843 1248-58.8601 1247.71-58.5496 1247.48-58.2527 1247.29-57.9558 1247.11-57.6628 1246.97-57.3738 1246.89-57.0847 1246.8-56.7839 1246.76-56.4714 1246.76ZM-64.8894 1246.76C-63.8894 1246.76-63.1296 1246.98-62.6101 1247.42-62.0906 1247.85-61.8308 1248.47-61.8308 1249.28-61.8308 1252.11-64.5066 1253.52-69.8581 1253.52-69.8972 1253.72-69.9285 1253.94-69.9519 1254.18-69.9753 1254.42-69.9871 1254.68-69.9871 1254.96-69.9871 1255.81-69.8132 1256.43-69.4656 1256.83-69.1179 1257.22-68.5769 1257.41-67.8425 1257.41-67.4597 1257.41-67.0964 1257.37-66.7527 1257.29-66.4089 1257.21-66.071 1257.08-65.739 1256.91-65.407 1256.74-65.073 1256.51-64.7371 1256.25-64.4011 1255.98-64.0496 1255.65-63.6824 1255.28L-62.8035 1256.23C-63.7097 1257.13-64.614 1257.8-65.5163 1258.26-66.4187 1258.71-67.3894 1258.93-68.4285 1258.93-69.0378 1258.93-69.5788 1258.84-70.0515 1258.66-70.5242 1258.48-70.9226 1258.21-71.2468 1257.86-71.571 1257.51-71.8171 1257.08-71.9851 1256.57-72.1531 1256.07-72.2371 1255.5-72.2371 1254.87-72.2371 1254.42-72.198 1253.96-72.1199 1253.48-72.0417 1253-71.9206 1252.52-71.7566 1252.04-71.5925 1251.56-71.3894 1251.09-71.1472 1250.63-70.905 1250.17-70.6199 1249.75-70.2917 1249.35-69.6355 1248.54-68.8445 1247.9-67.9187 1247.44-66.9929 1246.99-65.9831 1246.76-64.8894 1246.76ZM-91.6863 1246.76C-91.0691 1246.76-90.5242 1246.83-90.0515 1246.98-89.5788 1247.12-89.1472 1247.32-88.7566 1247.57L-87.6199 1246.76-86.6706 1247.01-88.4402 1254.68C-88.5417 1255.12-88.6121 1255.48-88.6511 1255.76-88.6902 1256.05-88.7097 1256.3-88.7097 1256.52-88.7097 1256.82-88.6492 1257.03-88.5281 1257.17-88.407 1257.3-88.2331 1257.36-88.0066 1257.36-87.866 1257.36-87.7273 1257.34-87.5906 1257.28-87.4538 1257.23-87.3054 1257.14-87.1453 1257.02-86.9851 1256.91-86.8093 1256.76-86.6179 1256.57-86.4265 1256.39-86.2097 1256.17-85.9675 1255.91-85.8425 1256.04-85.7136 1256.17-85.5808 1256.3-85.448 1256.43-85.3191 1256.56-85.1941 1256.68-85.5847 1257.08-85.9402 1257.42-86.2605 1257.71-86.5808 1258-86.8913 1258.23-87.1921 1258.41-87.4929 1258.6-87.7878 1258.73-88.0769 1258.81-88.366 1258.89-88.6667 1258.93-88.9792 1258.93-89.5417 1258.93-89.9792 1258.75-90.2917 1258.39-90.6042 1258.03-90.7605 1257.53-90.7605 1256.9-90.7605 1256.54-90.7058 1256.21-90.5964 1255.89L-90.7605 1255.82C-91.1589 1256.37-91.5456 1256.84-91.9206 1257.24-92.2956 1257.63-92.6667 1257.95-93.0339 1258.2-93.4011 1258.46-93.7722 1258.64-94.1472 1258.76-94.5222 1258.88-94.9128 1258.93-95.3191 1258.93-96.2488 1258.93-96.9675 1258.6-97.4753 1257.93-97.9831 1257.26-98.2371 1256.29-98.2371 1255.02-98.2371 1254.26-98.157 1253.53-97.9968 1252.84-97.8367 1252.14-97.6101 1251.48-97.3171 1250.87-97.0242 1250.25-96.6746 1249.69-96.2683 1249.19-95.8621 1248.69-95.4167 1248.26-94.9324 1247.9-94.448 1247.54-93.9324 1247.26-93.3855 1247.06-92.8386 1246.86-92.2722 1246.76-91.6863 1246.76ZM-79.698 1244.03-77.8699 1244.03-78.5378 1247.01-74.5535 1247.01-74.823 1248.31-78.7956 1248.31-79.991 1253.22C-80.0691 1253.54-80.1335 1253.84-80.1843 1254.1-80.2351 1254.36-80.2761 1254.6-80.3074 1254.81-80.3386 1255.02-80.3601 1255.21-80.3718 1255.38-80.3835 1255.56-80.3894 1255.72-80.3894 1255.86-80.3894 1256.33-80.2917 1256.7-80.0964 1256.97-79.9011 1257.23-79.5808 1257.36-79.1355 1257.36-78.7605 1257.36-78.3621 1257.23-77.9402 1256.95-77.5183 1256.67-77.0378 1256.24-76.4988 1255.64L-75.6902 1256.46C-76.0886 1256.91-76.4675 1257.29-76.8269 1257.6-77.1863 1257.91-77.5378 1258.17-77.8816 1258.37-78.2253 1258.57-78.5652 1258.71-78.9011 1258.8-79.2371 1258.89-79.5808 1258.93-79.9324 1258.93-80.8621 1258.93-81.5554 1258.72-82.0124 1258.28-82.4695 1257.84-82.698 1257.2-82.698 1256.34-82.698 1256.06-82.6765 1255.74-82.6335 1255.39-82.5906 1255.04-82.53 1254.7-82.4519 1254.38L-81.0574 1248.31-83.073 1248.31-82.8386 1247.4C-82.3699 1247.4-82.0046 1247.36-81.7429 1247.27-81.4812 1247.18-81.2605 1247.06-81.0808 1246.9-80.9636 1246.79-80.8503 1246.66-80.741 1246.5-80.6316 1246.34-80.5222 1246.14-80.4128 1245.92-80.3035 1245.69-80.1921 1245.42-80.0788 1245.11-79.9656 1244.8-79.8386 1244.44-79.698 1244.03Z"
+       fill-rule="evenodd"
+       id="path381" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="14.9063"
+       x="-119.034"
+       y="1257.07"
+       id="text383">𝑤𝑎𝑡𝑒𝑟</text>
+    <path
+       d="M-34.2495 1244.76-14.3979 1244.76-14.3979 1246.91-34.2495 1246.91ZM-34.2495 1238.08-14.3979 1238.08-14.3979 1240.22-34.2495 1240.22Z"
+       fill-rule="evenodd"
+       id="path385" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="8.83008"
+       x="-34.2495"
+       y="1245.8"
+       id="text387">=</text>
+    <path
+       d="M28.8345 1204.97C28.1685 1204.97 27.4703 1204.99 26.7398 1205.02L24.5484 1214.79 26.2242 1214.79C27.524 1214.79 28.5741 1214.65 29.3743 1214.38 30.1746 1214.12 30.8299 1213.7 31.3402 1213.14 31.8504 1212.57 32.2452 1211.9 32.5245 1211.13 32.8038 1210.36 32.9434 1209.51 32.9434 1208.58 32.9434 1207.34 32.6265 1206.42 31.9928 1205.84 31.359 1205.26 30.3062 1204.97 28.8345 1204.97ZM43.0831 1203.56 57.9073 1203.56 56.7955 1208.5 55.2486 1208.5C55.2056 1207.57 55.1251 1206.86 55.0069 1206.39 54.8887 1205.92 54.7464 1205.59 54.5799 1205.42 54.4134 1205.24 54.2147 1205.12 53.9837 1205.06 53.7528 1205 53.4224 1204.97 52.9928 1204.97L47.7398 1204.97 45.9029 1213.42 48.9805 1213.42C49.7432 1213.42 50.326 1213.24 50.7288 1212.88 51.1317 1212.52 51.5372 1211.92 51.9454 1211.1L53.4117 1211.1 51.9615 1217.28 50.5919 1217.28C50.5919 1216.42 50.5382 1215.84 50.4307 1215.54 50.3233 1215.23 50.1649 1215.04 49.9554 1214.96 49.7459 1214.88 49.3673 1214.84 48.8194 1214.84L45.5968 1214.84 43.5343 1224.13 48.3038 1224.13C48.9376 1224.13 49.4398 1224.07 49.8104 1223.94 50.181 1223.81 50.5301 1223.6 50.8577 1223.31 51.1854 1223.02 51.513 1222.62 51.8407 1222.09 52.1683 1221.57 52.5577 1220.87 53.0089 1219.98L54.5719 1219.98 53.1539 1225.55 38.8614 1225.55 39.0387 1224.76C39.4469 1224.7 39.753 1224.59 39.9571 1224.45 40.1612 1224.3 40.3331 1224.1 40.4727 1223.84 40.6124 1223.58 40.7413 1223.27 40.8595 1222.9 40.9776 1222.53 41.1549 1221.81 41.3912 1220.75L44.1304 1208.34C44.3668 1207.27 44.4849 1206.4 44.4849 1205.75 44.4849 1205.24 44.3587 1204.89 44.1063 1204.69 43.8538 1204.49 43.4537 1204.38 42.9058 1204.35ZM22.0831 1203.56 29.189 1203.56C30.4674 1203.56 31.5174 1203.66 32.3392 1203.85 33.161 1204.05 33.8377 1204.36 34.3695 1204.77 34.9012 1205.19 35.2987 1205.71 35.5618 1206.34 35.825 1206.98 35.9566 1207.71 35.9566 1208.55 35.9566 1210.16 35.5753 1211.56 34.8126 1212.74 34.0499 1213.92 33.0159 1214.79 31.7108 1215.35 30.4056 1215.91 28.8399 1216.19 27.0137 1216.19 25.918 1216.19 25.005 1216.17 24.2745 1216.12L23.2432 1220.86C23.1466 1221.3 23.0794 1221.64 23.0418 1221.88 23.0042 1222.11 22.972 1222.37 22.9451 1222.64 22.9183 1222.92 22.9049 1223.16 22.9049 1223.38 22.9049 1223.71 22.9586 1223.97 23.066 1224.16 23.1734 1224.34 23.3345 1224.48 23.5494 1224.57 23.7642 1224.65 24.1348 1224.72 24.6612 1224.76L24.484 1225.55 17.8614 1225.55 18.0387 1224.76C18.4469 1224.7 18.753 1224.59 18.9571 1224.45 19.1612 1224.3 19.3331 1224.1 19.4727 1223.84 19.6124 1223.58 19.7413 1223.27 19.8595 1222.9 19.9776 1222.53 20.1549 1221.81 20.3912 1220.75L23.1304 1208.34C23.3668 1207.27 23.4849 1206.42 23.4849 1205.8 23.4849 1205.27 23.3614 1204.9 23.1143 1204.7 22.8673 1204.5 22.4644 1204.38 21.9058 1204.35ZM72.6553 1203.3C73.6329 1203.3 74.5379 1203.36 75.3704 1203.48 76.203 1203.59 77.1295 1203.81 78.15 1204.12L77.1832 1208.49 75.6363 1208.49C75.5504 1207.17 75.263 1206.21 74.7742 1205.63 74.2855 1205.04 73.4986 1204.75 72.4137 1204.75 70.9312 1204.75 69.5535 1205.49 68.2806 1206.97 67.0076 1208.45 66.0006 1210.41 65.2594 1212.85 64.5181 1215.28 64.1475 1217.54 64.1475 1219.62 64.1475 1221.25 64.4376 1222.46 65.0177 1223.23 65.5977 1224 66.4893 1224.39 67.6925 1224.39 68.4981 1224.39 69.2017 1224.27 69.8033 1224.03 70.4049 1223.79 70.9688 1223.38 71.4952 1222.8 72.0216 1222.23 72.5426 1221.43 73.0582 1220.39L74.6051 1220.39 73.6221 1224.97C71.6134 1225.53 69.5079 1225.81 67.3057 1225.81 65.2862 1225.81 63.7501 1225.23 62.6973 1224.07 61.6446 1222.91 61.1182 1221.21 61.1182 1218.98 61.1182 1217.4 61.4002 1215.58 61.9642 1213.51 62.5282 1211.45 63.3258 1209.64 64.357 1208.08 65.3883 1206.53 66.6075 1205.34 68.0147 1204.52 69.422 1203.71 70.9688 1203.3 72.6553 1203.3Z"
+       fill-rule="evenodd"
+       id="path389" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="22.5103"
+       x="17.8614"
+       y="1222.99"
+       id="text391">𝑃𝐸𝐶</text>
+    <path
+       d="M167.667 1221.55C167.237 1221.55 166.813 1221.66 166.395 1221.87 165.977 1222.08 165.583 1222.38 165.212 1222.77 164.841 1223.15 164.503 1223.62 164.198 1224.17 163.893 1224.72 163.639 1225.34 163.436 1226.02 164.428 1226.01 165.282 1225.93 165.997 1225.78 166.712 1225.63 167.298 1225.43 167.755 1225.17 168.212 1224.92 168.548 1224.61 168.762 1224.26 168.977 1223.91 169.085 1223.52 169.085 1223.1 169.085 1222.61 168.964 1222.24 168.721 1221.96 168.479 1221.69 168.128 1221.55 167.667 1221.55ZM139.585 1221.55C139.124 1221.55 138.694 1221.65 138.296 1221.86 137.897 1222.06 137.534 1222.34 137.206 1222.69 136.878 1223.04 136.587 1223.45 136.333 1223.91 136.079 1224.37 135.864 1224.86 135.688 1225.37 135.512 1225.89 135.38 1226.42 135.29 1226.96 135.2 1227.5 135.155 1228.03 135.155 1228.53 135.155 1229.37 135.274 1230 135.512 1230.41 135.751 1230.82 136.135 1231.02 136.667 1231.02 136.932 1231.02 137.188 1230.97 137.434 1230.88 137.68 1230.79 137.94 1230.64 138.214 1230.44 138.901 1229.9 139.487 1229.24 139.971 1228.47 140.456 1227.69 140.819 1226.78 141.061 1225.72 141.171 1225.24 141.257 1224.8 141.319 1224.41 141.382 1224.02 141.413 1223.65 141.413 1223.3 141.413 1222.67 141.266 1222.23 140.973 1221.96 140.68 1221.69 140.217 1221.55 139.585 1221.55ZM168.171 1220.39C169.171 1220.39 169.93 1220.61 170.45 1221.05 170.969 1221.49 171.229 1222.11 171.229 1222.91 171.229 1225.74 168.553 1227.15 163.202 1227.15 163.163 1227.36 163.132 1227.58 163.108 1227.82 163.085 1228.05 163.073 1228.31 163.073 1228.6 163.073 1229.45 163.247 1230.07 163.594 1230.46 163.942 1230.85 164.483 1231.04 165.217 1231.04 165.6 1231.04 165.964 1231 166.307 1230.92 166.651 1230.84 166.989 1230.71 167.321 1230.54 167.653 1230.37 167.987 1230.15 168.323 1229.88 168.659 1229.61 169.01 1229.29 169.378 1228.91L170.257 1229.86C169.35 1230.76 168.446 1231.44 167.544 1231.89 166.641 1232.34 165.671 1232.57 164.632 1232.57 164.022 1232.57 163.481 1232.48 163.008 1232.29 162.536 1232.11 162.137 1231.84 161.813 1231.49 161.489 1231.14 161.243 1230.71 161.075 1230.21 160.907 1229.7 160.823 1229.13 160.823 1228.5 160.823 1228.06 160.862 1227.59 160.94 1227.11 161.018 1226.63 161.139 1226.15 161.303 1225.67 161.467 1225.19 161.671 1224.72 161.913 1224.27 162.155 1223.81 162.44 1223.38 162.768 1222.98 163.424 1222.17 164.216 1221.53 165.141 1221.08 166.067 1220.62 167.077 1220.39 168.171 1220.39ZM154.995 1220.39C155.565 1220.39 156.094 1220.42 156.583 1220.49 157.071 1220.55 157.577 1220.65 158.1 1220.78L157.444 1223.65 156.061 1223.65C156.053 1223.24 156.024 1222.91 155.973 1222.64 155.923 1222.37 155.841 1222.15 155.727 1222 155.614 1221.84 155.466 1221.73 155.282 1221.66 155.098 1221.6 154.874 1221.56 154.608 1221.55 154.186 1221.55 153.782 1221.65 153.395 1221.83 153.008 1222.02 152.649 1222.28 152.317 1222.61 151.985 1222.94 151.682 1223.33 151.409 1223.78 151.135 1224.22 150.901 1224.7 150.706 1225.22 150.51 1225.74 150.36 1226.27 150.255 1226.83 150.149 1227.39 150.096 1227.95 150.096 1228.5 150.096 1229.33 150.26 1229.96 150.589 1230.39 150.917 1230.83 151.409 1231.04 152.065 1231.04 152.432 1231.04 152.772 1231.01 153.085 1230.94 153.397 1230.88 153.702 1230.77 153.999 1230.61 154.296 1230.45 154.602 1230.25 154.919 1230 155.235 1229.74 155.585 1229.43 155.967 1229.05 156.116 1229.21 156.258 1229.36 156.395 1229.52 156.532 1229.67 156.674 1229.82 156.823 1229.98 155.979 1230.85 155.135 1231.5 154.292 1231.93 153.448 1232.36 152.542 1232.57 151.573 1232.57 150.362 1232.57 149.434 1232.21 148.79 1231.51 148.145 1230.8 147.823 1229.79 147.823 1228.48 147.823 1227.74 147.905 1227.03 148.069 1226.35 148.233 1225.67 148.469 1225.03 148.778 1224.42 149.087 1223.82 149.456 1223.28 149.885 1222.78 150.315 1222.29 150.796 1221.87 151.327 1221.51 151.858 1221.16 152.432 1220.88 153.049 1220.69 153.667 1220.49 154.315 1220.39 154.995 1220.39ZM139.374 1220.39C139.991 1220.39 140.536 1220.46 141.008 1220.61 141.481 1220.75 141.913 1220.95 142.303 1221.2L143.44 1220.39 144.389 1220.64 142.62 1228.31C142.518 1228.75 142.448 1229.11 142.409 1229.4 142.37 1229.68 142.35 1229.94 142.35 1230.15 142.35 1230.45 142.411 1230.67 142.532 1230.8 142.653 1230.93 142.827 1231 143.053 1231 143.194 1231 143.333 1230.97 143.469 1230.92 143.606 1230.86 143.755 1230.78 143.915 1230.66 144.075 1230.54 144.251 1230.39 144.442 1230.21 144.633 1230.02 144.85 1229.8 145.092 1229.54 145.217 1229.68 145.346 1229.81 145.479 1229.94 145.612 1230.07 145.741 1230.19 145.866 1230.32 145.475 1230.72 145.12 1231.06 144.799 1231.34 144.479 1231.63 144.169 1231.86 143.868 1232.05 143.567 1232.23 143.272 1232.36 142.983 1232.44 142.694 1232.53 142.393 1232.57 142.081 1232.57 141.518 1232.57 141.081 1232.39 140.768 1232.02 140.456 1231.66 140.299 1231.16 140.299 1230.53 140.299 1230.18 140.354 1229.84 140.464 1229.52L140.299 1229.45C139.901 1230.01 139.514 1230.48 139.139 1230.87 138.764 1231.26 138.393 1231.58 138.026 1231.84 137.659 1232.09 137.288 1232.28 136.913 1232.39 136.538 1232.51 136.147 1232.57 135.741 1232.57 134.811 1232.57 134.092 1232.23 133.585 1231.57 133.077 1230.9 132.823 1229.93 132.823 1228.65 132.823 1227.9 132.903 1227.17 133.063 1226.47 133.223 1225.77 133.45 1225.11 133.743 1224.5 134.036 1223.89 134.385 1223.33 134.792 1222.82 135.198 1222.32 135.643 1221.89 136.128 1221.53 136.612 1221.17 137.128 1220.89 137.674 1220.69 138.221 1220.49 138.788 1220.39 139.374 1220.39ZM108.589 1220.39C109.167 1220.39 109.614 1220.58 109.93 1220.96 110.247 1221.34 110.405 1221.84 110.405 1222.45 110.405 1222.81 110.35 1223.12 110.241 1223.39L110.405 1223.46C111.194 1222.41 111.962 1221.63 112.708 1221.14 113.454 1220.64 114.221 1220.39 115.01 1220.39 115.307 1220.39 115.587 1220.41 115.848 1220.44 116.11 1220.47 116.362 1220.51 116.604 1220.56L116.007 1223.39 114.647 1223.39C114.608 1222.92 114.508 1222.59 114.348 1222.38 114.188 1222.18 113.956 1222.08 113.651 1222.08 113.471 1222.07 113.264 1222.13 113.03 1222.24 112.796 1222.36 112.548 1222.53 112.286 1222.75 112.024 1222.97 111.764 1223.22 111.507 1223.52 111.249 1223.82 111.005 1224.14 110.774 1224.49 110.544 1224.85 110.342 1225.22 110.171 1225.61 109.999 1226.01 109.87 1226.4 109.784 1226.8L108.589 1232.36 106.292 1232.36 108.05 1224.72C108.159 1224.26 108.235 1223.89 108.278 1223.59 108.321 1223.29 108.342 1223.04 108.342 1222.84 108.342 1222.27 108.112 1221.99 107.651 1221.99 107.503 1221.99 107.356 1222.02 107.212 1222.07 107.067 1222.13 106.917 1222.22 106.76 1222.34 106.604 1222.45 106.432 1222.6 106.245 1222.78 106.057 1222.96 105.846 1223.17 105.612 1223.42L104.803 1222.65C105.194 1222.26 105.551 1221.91 105.876 1221.63 106.2 1221.34 106.51 1221.11 106.807 1220.93 107.104 1220.74 107.397 1220.61 107.686 1220.52 107.975 1220.44 108.276 1220.39 108.589 1220.39ZM92.6472 1220.39C93.2097 1220.39 93.6589 1220.58 93.9948 1220.96 94.3308 1221.34 94.4987 1221.85 94.4987 1222.48 94.4987 1222.82 94.4675 1223.2 94.405 1223.63 94.3425 1224.05 94.237 1224.52 94.0886 1225.04 93.7917 1226.11 93.5573 1227.05 93.3854 1227.86 93.2136 1228.66 93.1276 1229.25 93.1276 1229.63 93.1276 1230.1 93.2194 1230.44 93.403 1230.68 93.5866 1230.91 93.8815 1231.02 94.2878 1231.02 94.655 1231.02 95.0476 1230.88 95.4655 1230.61 95.8835 1230.34 96.2839 1229.98 96.6667 1229.55 97.0495 1229.12 97.3913 1228.63 97.6921 1228.1 97.9929 1227.56 98.2136 1227.03 98.3542 1226.51L99.6433 1220.64 101.952 1220.64 100.147 1228.29C100.053 1228.69 99.987 1229.04 99.9479 1229.36 99.9089 1229.67 99.8894 1229.94 99.8894 1230.15 99.8894 1230.45 99.944 1230.67 100.053 1230.8 100.163 1230.93 100.339 1231 100.581 1231 100.729 1231 100.874 1230.97 101.014 1230.92 101.155 1230.86 101.305 1230.78 101.466 1230.66 101.626 1230.54 101.8 1230.39 101.987 1230.21 102.175 1230.02 102.385 1229.8 102.62 1229.54L103.428 1230.32C103.038 1230.72 102.678 1231.06 102.35 1231.34 102.022 1231.63 101.71 1231.86 101.413 1232.05 101.116 1232.23 100.821 1232.36 100.528 1232.44 100.235 1232.53 99.9323 1232.57 99.6198 1232.57 99.0573 1232.57 98.6179 1232.39 98.3015 1232.02 97.9851 1231.66 97.8269 1231.16 97.8269 1230.53 97.8269 1230.36 97.8386 1230.2 97.862 1230.03 97.8854 1229.86 97.9284 1229.7 97.9909 1229.54L97.8503 1229.5C97.0769 1230.52 96.3249 1231.29 95.5944 1231.8 94.864 1232.31 94.1042 1232.57 93.3151 1232.57 92.487 1232.57 91.864 1232.35 91.446 1231.91 91.028 1231.47 90.819 1230.85 90.819 1230.03 90.819 1229.81 90.8561 1229.52 90.9304 1229.15 91.0046 1228.77 91.0964 1228.35 91.2058 1227.89 91.3151 1227.43 91.4323 1226.95 91.5573 1226.44 91.6823 1225.94 91.7995 1225.46 91.9089 1224.99 92.0183 1224.53 92.1101 1224.11 92.1843 1223.73 92.2585 1223.35 92.2956 1223.05 92.2956 1222.84 92.2956 1222.27 92.0612 1221.99 91.5925 1221.99 91.444 1221.99 91.2995 1222.02 91.1589 1222.07 91.0183 1222.13 90.8679 1222.22 90.7077 1222.34 90.5476 1222.45 90.3737 1222.6 90.1862 1222.78 89.9987 1222.96 89.7878 1223.17 89.5534 1223.42L88.7565 1222.65C89.1784 1222.23 89.5554 1221.88 89.8874 1221.59 90.2194 1221.3 90.5339 1221.07 90.8308 1220.89 91.1276 1220.71 91.4206 1220.59 91.7097 1220.51 91.9987 1220.43 92.3112 1220.39 92.6472 1220.39ZM83.2839 1220.39C84.0417 1220.39 84.739 1220.44 85.3757 1220.53 86.0124 1220.63 86.6315 1220.76 87.2331 1220.94L86.6706 1223.59 85.6276 1223.59C85.5417 1222.89 85.3093 1222.37 84.9304 1222.03 84.5515 1221.7 83.9636 1221.53 83.1667 1221.53 82.8464 1221.53 82.5495 1221.57 82.2761 1221.66 82.0026 1221.74 81.7683 1221.86 81.5729 1222.02 81.3776 1222.17 81.2253 1222.35 81.1159 1222.56 81.0065 1222.77 80.9519 1223 80.9519 1223.25 80.9519 1223.48 80.9792 1223.69 81.0339 1223.87 81.0886 1224.06 81.196 1224.24 81.3561 1224.42 81.5163 1224.6 81.7429 1224.79 82.0358 1224.99 82.3288 1225.18 82.7136 1225.4 83.1901 1225.65 83.6901 1225.93 84.1061 1226.19 84.4382 1226.44 84.7702 1226.69 85.0339 1226.94 85.2292 1227.2 85.4245 1227.46 85.5612 1227.73 85.6394 1228.03 85.7175 1228.32 85.7565 1228.65 85.7565 1229.01 85.7565 1229.56 85.6433 1230.06 85.4167 1230.5 85.1901 1230.94 84.8737 1231.31 84.4675 1231.62 84.0612 1231.92 83.5827 1232.16 83.0319 1232.32 82.4811 1232.49 81.8776 1232.57 81.2214 1232.57 80.5026 1232.57 79.7956 1232.52 79.1003 1232.43 78.405 1232.33 77.6706 1232.17 76.8972 1231.95L77.5065 1229.28 78.5261 1229.28C78.5651 1230 78.7936 1230.55 79.2116 1230.91 79.6296 1231.27 80.2761 1231.45 81.1511 1231.45 81.9323 1231.45 82.5476 1231.29 82.9968 1230.95 83.446 1230.61 83.6706 1230.15 83.6706 1229.54 83.6706 1229.27 83.6433 1229.03 83.5886 1228.84 83.5339 1228.64 83.4265 1228.45 83.2663 1228.27 83.1061 1228.09 82.8874 1227.9 82.6101 1227.71 82.3327 1227.52 81.9714 1227.3 81.5261 1227.05 81.0651 1226.79 80.6686 1226.54 80.3366 1226.29 80.0046 1226.04 79.7311 1225.78 79.5163 1225.53 79.3015 1225.27 79.1433 1225 79.0417 1224.72 78.9401 1224.44 78.8894 1224.13 78.8894 1223.81 78.8894 1223.32 78.9929 1222.87 79.1999 1222.45 79.4069 1222.03 79.7019 1221.67 80.0847 1221.36 80.4675 1221.06 80.9284 1220.82 81.4675 1220.65 82.0065 1220.48 82.612 1220.39 83.2839 1220.39ZM129.124 1215.97C129.553 1215.97 129.932 1216 130.26 1216.04 130.589 1216.08 130.905 1216.13 131.21 1216.2L130.729 1218.38 129.569 1218.38C129.514 1217.93 129.382 1217.61 129.171 1217.4 128.96 1217.19 128.678 1217.09 128.327 1217.09 127.921 1217.09 127.579 1217.18 127.301 1217.35 127.024 1217.53 126.782 1217.79 126.575 1218.15 126.368 1218.5 126.19 1218.92 126.042 1219.4 125.893 1219.87 125.792 1220.29 125.737 1220.64L128.983 1220.64 128.725 1221.94 125.467 1221.94 123.346 1231.98C122.979 1233.69 122.383 1234.96 121.559 1235.78 120.735 1236.61 119.635 1237.02 118.26 1237.02 117.901 1237.02 117.639 1237 117.475 1236.95 117.522 1236.76 117.565 1236.55 117.604 1236.35 117.643 1236.14 117.69 1235.94 117.745 1235.74 117.792 1235.76 117.858 1235.77 117.944 1235.77 118.03 1235.77 118.151 1235.77 118.307 1235.77 118.612 1235.77 118.891 1235.72 119.145 1235.62 119.399 1235.52 119.632 1235.35 119.842 1235.09 120.053 1234.84 120.247 1234.49 120.423 1234.05 120.598 1233.61 120.764 1233.04 120.921 1232.35L123.264 1221.94 121.249 1221.94 121.46 1221.04C121.889 1221.01 122.231 1220.99 122.485 1220.95 122.739 1220.92 122.954 1220.86 123.13 1220.75 123.305 1220.64 123.436 1220.47 123.522 1220.22 123.975 1218.79 124.657 1217.72 125.567 1217.02 126.477 1216.32 127.663 1215.97 129.124 1215.97Z"
+       fill-rule="evenodd"
+       id="path393" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="21.0469"
+       x="76.8972"
+       y="1234.39"
+       id="text395">𝑠𝑢𝑟𝑓𝑎𝑐𝑒</text>
+    <path
+       d="M232.567 1221.55C232.137 1221.55 231.713 1221.66 231.295 1221.87 230.877 1222.08 230.483 1222.38 230.112 1222.77 229.741 1223.15 229.403 1223.62 229.098 1224.17 228.793 1224.72 228.539 1225.34 228.336 1226.02 229.328 1226.01 230.182 1225.93 230.897 1225.78 231.612 1225.63 232.198 1225.43 232.655 1225.17 233.112 1224.92 233.448 1224.61 233.662 1224.26 233.877 1223.91 233.985 1223.52 233.985 1223.1 233.985 1222.61 233.864 1222.24 233.621 1221.96 233.379 1221.69 233.028 1221.55 232.567 1221.55ZM206.485 1221.55C206.024 1221.55 205.594 1221.65 205.196 1221.86 204.797 1222.06 204.434 1222.34 204.106 1222.69 203.778 1223.04 203.487 1223.45 203.233 1223.91 202.979 1224.37 202.764 1224.86 202.588 1225.37 202.412 1225.89 202.28 1226.42 202.19 1226.96 202.1 1227.5 202.055 1228.03 202.055 1228.53 202.055 1229.37 202.174 1230 202.412 1230.41 202.651 1230.82 203.035 1231.02 203.567 1231.02 203.832 1231.02 204.088 1230.97 204.334 1230.88 204.58 1230.79 204.84 1230.64 205.114 1230.44 205.801 1229.9 206.387 1229.24 206.871 1228.47 207.356 1227.69 207.719 1226.78 207.961 1225.72 208.071 1225.24 208.157 1224.8 208.219 1224.41 208.282 1224.02 208.313 1223.65 208.313 1223.3 208.313 1222.67 208.166 1222.23 207.873 1221.96 207.58 1221.69 207.117 1221.55 206.485 1221.55ZM179.102 1220.64 182.489 1220.64 183.403 1230.15C183.903 1229.38 184.344 1228.68 184.727 1228.06 185.11 1227.43 185.446 1226.86 185.735 1226.33 186.024 1225.81 186.274 1225.33 186.485 1224.88 186.696 1224.44 186.873 1224.01 187.018 1223.6 187.162 1223.2 187.283 1222.8 187.381 1222.41 187.479 1222.02 187.563 1221.61 187.633 1221.2L187.774 1220.64 189.649 1220.64 190.668 1230.15C191.957 1228.4 192.932 1226.86 193.592 1225.54 194.252 1224.23 194.582 1223.17 194.582 1222.38 194.582 1222.04 194.5 1221.8 194.336 1221.66 194.172 1221.52 193.875 1221.43 193.446 1221.39L193.586 1220.64 196.891 1220.64 197.301 1221.32C196.973 1222.17 196.612 1223.01 196.217 1223.84 195.823 1224.67 195.36 1225.53 194.828 1226.42 194.297 1227.32 193.676 1228.26 192.965 1229.26 192.254 1230.26 191.418 1231.36 190.457 1232.54L188.957 1232.54 188.008 1224.41C187.492 1225.6 186.842 1226.86 186.057 1228.21 185.272 1229.55 184.348 1231 183.285 1232.54L181.575 1232.54 180.473 1223.7C180.41 1223.23 180.356 1222.85 180.309 1222.57 180.262 1222.28 180.19 1222.06 180.092 1221.9 179.994 1221.74 179.856 1221.62 179.676 1221.55 179.496 1221.48 179.246 1221.43 178.926 1221.39ZM241.489 1220.39C242.067 1220.39 242.514 1220.58 242.83 1220.96 243.147 1221.34 243.305 1221.84 243.305 1222.45 243.305 1222.81 243.25 1223.12 243.141 1223.39L243.305 1223.46C244.094 1222.41 244.862 1221.63 245.608 1221.14 246.354 1220.64 247.121 1220.39 247.91 1220.39 248.207 1220.39 248.487 1220.41 248.748 1220.44 249.01 1220.47 249.262 1220.51 249.504 1220.56L248.907 1223.39 247.547 1223.39C247.508 1222.92 247.408 1222.59 247.248 1222.38 247.088 1222.18 246.856 1222.08 246.551 1222.08 246.371 1222.07 246.164 1222.13 245.93 1222.24 245.696 1222.36 245.448 1222.53 245.186 1222.75 244.924 1222.97 244.664 1223.22 244.407 1223.52 244.149 1223.82 243.905 1224.14 243.674 1224.49 243.444 1224.85 243.242 1225.22 243.071 1225.61 242.899 1226.01 242.77 1226.4 242.684 1226.8L241.489 1232.36 239.192 1232.36 240.95 1224.72C241.059 1224.26 241.135 1223.89 241.178 1223.59 241.221 1223.29 241.242 1223.04 241.242 1222.84 241.242 1222.27 241.012 1221.99 240.551 1221.99 240.403 1221.99 240.256 1222.02 240.112 1222.07 239.967 1222.13 239.817 1222.22 239.66 1222.34 239.504 1222.45 239.332 1222.6 239.145 1222.78 238.957 1222.96 238.746 1223.17 238.512 1223.42L237.703 1222.65C238.094 1222.26 238.451 1221.91 238.776 1221.63 239.1 1221.34 239.41 1221.11 239.707 1220.93 240.004 1220.74 240.297 1220.61 240.586 1220.52 240.875 1220.44 241.176 1220.39 241.489 1220.39ZM233.071 1220.39C234.071 1220.39 234.83 1220.61 235.35 1221.05 235.869 1221.49 236.129 1222.11 236.129 1222.91 236.129 1225.74 233.453 1227.15 228.102 1227.15 228.063 1227.36 228.032 1227.58 228.008 1227.82 227.985 1228.05 227.973 1228.31 227.973 1228.6 227.973 1229.45 228.147 1230.07 228.494 1230.46 228.842 1230.85 229.383 1231.04 230.117 1231.04 230.5 1231.04 230.864 1231 231.207 1230.92 231.551 1230.84 231.889 1230.71 232.221 1230.54 232.553 1230.37 232.887 1230.15 233.223 1229.88 233.559 1229.61 233.91 1229.29 234.278 1228.91L235.157 1229.86C234.25 1230.76 233.346 1231.44 232.444 1231.89 231.541 1232.34 230.571 1232.57 229.532 1232.57 228.922 1232.57 228.381 1232.48 227.908 1232.29 227.436 1232.11 227.037 1231.84 226.713 1231.49 226.389 1231.14 226.143 1230.71 225.975 1230.21 225.807 1229.7 225.723 1229.13 225.723 1228.5 225.723 1228.06 225.762 1227.59 225.84 1227.11 225.918 1226.63 226.039 1226.15 226.203 1225.67 226.367 1225.19 226.571 1224.72 226.813 1224.27 227.055 1223.81 227.34 1223.38 227.668 1222.98 228.325 1222.17 229.116 1221.53 230.041 1221.08 230.967 1220.62 231.977 1220.39 233.071 1220.39ZM206.274 1220.39C206.891 1220.39 207.436 1220.46 207.908 1220.61 208.381 1220.75 208.813 1220.95 209.203 1221.2L210.34 1220.39 211.289 1220.64 209.52 1228.31C209.418 1228.75 209.348 1229.11 209.309 1229.4 209.27 1229.68 209.25 1229.94 209.25 1230.15 209.25 1230.45 209.311 1230.67 209.432 1230.8 209.553 1230.93 209.727 1231 209.953 1231 210.094 1231 210.233 1230.97 210.369 1230.92 210.506 1230.86 210.655 1230.78 210.815 1230.66 210.975 1230.54 211.151 1230.39 211.342 1230.21 211.533 1230.02 211.75 1229.8 211.992 1229.54 212.117 1229.68 212.246 1229.81 212.379 1229.94 212.512 1230.07 212.641 1230.19 212.766 1230.32 212.375 1230.72 212.02 1231.06 211.7 1231.34 211.379 1231.63 211.069 1231.86 210.768 1232.05 210.467 1232.23 210.172 1232.36 209.883 1232.44 209.594 1232.53 209.293 1232.57 208.981 1232.57 208.418 1232.57 207.981 1232.39 207.668 1232.02 207.356 1231.66 207.2 1231.16 207.2 1230.53 207.2 1230.18 207.254 1229.84 207.364 1229.52L207.2 1229.45C206.801 1230.01 206.414 1230.48 206.039 1230.87 205.664 1231.26 205.293 1231.58 204.926 1231.84 204.559 1232.09 204.188 1232.28 203.813 1232.39 203.438 1232.51 203.047 1232.57 202.641 1232.57 201.711 1232.57 200.992 1232.23 200.485 1231.57 199.977 1230.9 199.723 1229.93 199.723 1228.65 199.723 1227.9 199.803 1227.17 199.963 1226.47 200.123 1225.77 200.35 1225.11 200.643 1224.5 200.936 1223.89 201.285 1223.33 201.692 1222.82 202.098 1222.32 202.543 1221.89 203.028 1221.53 203.512 1221.17 204.028 1220.89 204.575 1220.69 205.121 1220.49 205.688 1220.39 206.274 1220.39ZM218.262 1217.66 220.09 1217.66 219.422 1220.64 223.407 1220.64 223.137 1221.94 219.164 1221.94 217.969 1226.85C217.891 1227.18 217.826 1227.47 217.776 1227.73 217.725 1228 217.684 1228.23 217.653 1228.44 217.621 1228.65 217.6 1228.85 217.588 1229.02 217.576 1229.19 217.571 1229.35 217.571 1229.5 217.571 1229.97 217.668 1230.33 217.864 1230.6 218.059 1230.86 218.379 1231 218.825 1231 219.2 1231 219.598 1230.86 220.02 1230.58 220.442 1230.3 220.922 1229.87 221.461 1229.28L222.27 1230.1C221.871 1230.54 221.492 1230.92 221.133 1231.23 220.774 1231.54 220.422 1231.8 220.078 1232 219.735 1232.2 219.395 1232.34 219.059 1232.43 218.723 1232.52 218.379 1232.57 218.028 1232.57 217.098 1232.57 216.405 1232.35 215.948 1231.91 215.491 1231.47 215.262 1230.83 215.262 1229.98 215.262 1229.69 215.283 1229.37 215.326 1229.02 215.369 1228.68 215.43 1228.34 215.508 1228.01L216.903 1221.94 214.887 1221.94 215.121 1221.04C215.59 1221.04 215.955 1220.99 216.217 1220.9 216.479 1220.81 216.7 1220.69 216.879 1220.53 216.996 1220.42 217.11 1220.29 217.219 1220.13 217.328 1219.97 217.438 1219.78 217.547 1219.55 217.657 1219.32 217.768 1219.05 217.881 1218.75 217.994 1218.44 218.121 1218.08 218.262 1217.66Z"
+       fill-rule="evenodd"
+       id="path397" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="14.9063"
+       x="178.926"
+       y="1230.7"
+       id="text399">𝑤𝑎𝑡𝑒𝑟</text>
+    <path
+       d="M16.6679 1253.64C16.0019 1253.64 15.3036 1253.66 14.5732 1253.69L12.3817 1263.45 14.0575 1263.45C15.3573 1263.45 16.4074 1263.32 17.2077 1263.05 18.008 1262.78 18.6632 1262.37 19.1735 1261.8 19.6838 1261.24 20.0785 1260.57 20.3578 1259.8 20.6371 1259.02 20.7768 1258.17 20.7768 1257.25 20.7768 1256 20.4599 1255.09 19.8261 1254.51 19.1923 1253.93 18.1396 1253.64 16.6679 1253.64ZM9.91642 1252.22 17.0224 1252.22C18.3007 1252.22 19.3507 1252.32 20.1725 1252.52 20.9943 1252.72 21.6711 1253.03 22.2028 1253.44 22.7345 1253.85 23.132 1254.38 23.3952 1255.01 23.6584 1255.64 23.79 1256.38 23.79 1257.22 23.79 1258.83 23.4086 1260.23 22.6459 1261.41 21.8832 1262.59 20.8493 1263.46 19.5441 1264.02 18.2389 1264.58 16.6733 1264.86 14.8471 1264.86 13.7514 1264.86 12.8383 1264.83 12.1078 1264.79L11.0766 1269.53C10.9799 1269.97 10.9128 1270.31 10.8752 1270.54 10.8376 1270.78 10.8053 1271.03 10.7785 1271.31 10.7516 1271.58 10.7382 1271.83 10.7382 1272.04 10.7382 1272.37 10.7919 1272.64 10.8993 1272.82 11.0067 1273.01 11.1679 1273.15 11.3827 1273.23 11.5976 1273.32 11.9682 1273.38 12.4945 1273.43L12.3173 1274.22 5.69474 1274.22 5.87198 1273.43C6.28019 1273.36 6.58634 1273.26 6.79044 1273.11 6.99454 1272.97 7.16642 1272.77 7.30606 1272.51 7.44571 1272.25 7.57462 1271.94 7.69278 1271.57 7.81095 1271.2 7.98819 1270.48 8.22452 1269.42L10.9638 1257.01C11.2001 1255.93 11.3183 1255.09 11.3183 1254.46 11.3183 1253.94 11.1947 1253.57 10.9477 1253.37 10.7006 1253.16 10.2978 1253.04 9.73917 1253.01Z"
+       fill-rule="evenodd"
+       id="path401" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="21.9946"
+       x="5.69474"
+       y="1271.47"
+       id="text403">𝑃</text>
+    <path
+       d="M30.5509 1252.22 35.691 1252.22 39.9449 1264.77C40.5572 1266.58 41.0299 1268.1 41.3629 1269.35L41.5401 1269.35C41.6261 1268.7 41.8221 1267.61 42.1283 1266.08 42.4344 1264.55 42.7164 1263.22 42.9742 1262.08L44.1021 1257.01C44.3385 1255.94 44.4566 1255.08 44.4566 1254.41 44.4566 1253.91 44.3304 1253.56 44.078 1253.36 43.8255 1253.16 43.4254 1253.04 42.8775 1253.01L43.0548 1252.22 48.6944 1252.22 48.5172 1253.01C48.109 1253.1 47.8162 1253.19 47.639 1253.3 47.4617 1253.41 47.3033 1253.57 47.1637 1253.79 47.024 1254 46.879 1254.34 46.7286 1254.79 46.5782 1255.25 46.3902 1255.99 46.1646 1257.02L42.378 1274.22 40.1866 1274.22 35.4815 1260.39C34.9122 1258.74 34.4127 1257.09 33.983 1255.45L33.7735 1255.45C33.7091 1255.99 33.5318 1257.04 33.2418 1258.58 32.9517 1260.12 32.6456 1261.63 32.3233 1263.1L30.9053 1269.53C30.6798 1270.55 30.567 1271.39 30.567 1272.04 30.567 1272.53 30.6878 1272.87 30.9295 1273.06 31.1712 1273.26 31.5767 1273.38 32.1461 1273.43L31.9688 1274.22 26.3292 1274.22 26.5064 1273.43C26.9146 1273.36 27.2208 1273.26 27.4249 1273.11 27.629 1272.97 27.8009 1272.77 27.9405 1272.51 28.0802 1272.25 28.2091 1271.94 28.3272 1271.57 28.4454 1271.2 28.6226 1270.48 28.859 1269.42L31.5982 1257.01C31.7056 1256.55 31.7916 1256.11 31.856 1255.69 31.9205 1255.27 31.9527 1254.84 31.9527 1254.41 31.9527 1253.91 31.8265 1253.56 31.5741 1253.36 31.3216 1253.16 30.9215 1253.04 30.3736 1253.01Z"
+       fill-rule="evenodd"
+       id="path405" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="21.9946"
+       x="26.3292"
+       y="1271.47"
+       id="text407">𝑁</text>
+    <path
+       d="M54.9164 1252.22 69.7406 1252.22 68.6288 1257.17 67.0819 1257.17C67.039 1256.23 66.9584 1255.53 66.8402 1255.06 66.7221 1254.59 66.5797 1254.26 66.4132 1254.08 66.2467 1253.91 66.048 1253.79 65.817 1253.73 65.5861 1253.67 65.2558 1253.64 64.8261 1253.64L59.5732 1253.64 57.7362 1262.08 60.8139 1262.08C61.5766 1262.08 62.1593 1261.9 62.5622 1261.54 62.965 1261.18 63.3705 1260.59 63.7787 1259.76L65.245 1259.76 63.7948 1265.95 62.4252 1265.95C62.4252 1265.09 62.3715 1264.51 62.2641 1264.2 62.1567 1263.9 61.9982 1263.7 61.7887 1263.62 61.5793 1263.54 61.2006 1263.5 60.6527 1263.5L57.4301 1263.5 55.3676 1272.8 60.1371 1272.8C60.7709 1272.8 61.2731 1272.73 61.6437 1272.61 62.0143 1272.48 62.3634 1272.27 62.6911 1271.98 63.0187 1271.69 63.3463 1271.28 63.674 1270.76 64.0016 1270.24 64.391 1269.53 64.8422 1268.64L66.4052 1268.64 64.9872 1274.22 50.6947 1274.22 50.872 1273.43C51.2802 1273.36 51.5863 1273.26 51.7904 1273.11 51.9945 1272.97 52.1664 1272.77 52.3061 1272.51 52.4457 1272.25 52.5746 1271.94 52.6928 1271.57 52.8109 1271.2 52.9882 1270.48 53.2245 1269.42L55.9638 1257.01C56.2001 1255.93 56.3183 1255.07 56.3183 1254.41 56.3183 1253.91 56.1921 1253.56 55.9396 1253.36 55.6872 1253.16 55.287 1253.04 54.7392 1253.01ZM84.4887 1251.96C85.4662 1251.96 86.3712 1252.02 87.2038 1252.14 88.0363 1252.26 88.9628 1252.47 89.9833 1252.79L89.0165 1257.15 87.4696 1257.15C87.3837 1255.83 87.0963 1254.88 86.6076 1254.29 86.1188 1253.71 85.3319 1253.41 84.247 1253.41 82.7646 1253.41 81.3869 1254.16 80.1139 1255.64 78.841 1257.12 77.8339 1259.08 77.0927 1261.51 76.3515 1263.94 75.9809 1266.2 75.9809 1268.29 75.9809 1269.92 76.2709 1271.12 76.851 1271.9 77.4311 1272.67 78.3227 1273.06 79.5258 1273.06 80.3315 1273.06 81.0351 1272.94 81.6366 1272.69 82.2382 1272.45 82.8022 1272.04 83.3285 1271.47 83.8549 1270.9 84.3759 1270.09 84.8915 1269.06L86.4384 1269.06 85.4555 1273.64C83.4467 1274.2 81.3412 1274.47 79.1391 1274.47 77.1195 1274.47 75.5834 1273.89 74.5307 1272.73 73.4779 1271.57 72.9516 1269.88 72.9516 1267.64 72.9516 1266.06 73.2336 1264.24 73.7975 1262.18 74.3615 1260.12 75.1591 1258.31 76.1903 1256.75 77.2216 1255.19 78.4408 1254.01 79.8481 1253.19 81.2553 1252.37 82.8022 1251.96 84.4887 1251.96Z"
+       fill-rule="evenodd"
+       id="path409" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="22.5103"
+       x="50.6947"
+       y="1271.66"
+       id="text411">𝐸𝐶</text>
+    <path
+       d="M179.833 1270.22C179.404 1270.22 178.98 1270.32 178.562 1270.54 178.144 1270.75 177.749 1271.05 177.378 1271.43 177.007 1271.82 176.669 1272.29 176.365 1272.84 176.06 1273.39 175.806 1274 175.603 1274.68 176.595 1274.68 177.449 1274.6 178.163 1274.45 178.878 1274.3 179.464 1274.1 179.921 1273.84 180.378 1273.58 180.714 1273.28 180.929 1272.93 181.144 1272.57 181.251 1272.19 181.251 1271.77 181.251 1271.28 181.13 1270.9 180.888 1270.63 180.646 1270.36 180.294 1270.22 179.833 1270.22ZM151.751 1270.22C151.29 1270.22 150.861 1270.32 150.462 1270.52 150.064 1270.73 149.701 1271 149.372 1271.36 149.044 1271.71 148.753 1272.11 148.499 1272.57 148.245 1273.04 148.031 1273.52 147.855 1274.04 147.679 1274.55 147.546 1275.08 147.456 1275.63 147.367 1276.17 147.322 1276.69 147.322 1277.19 147.322 1278.04 147.441 1278.66 147.679 1279.07 147.917 1279.48 148.302 1279.69 148.833 1279.69 149.099 1279.69 149.355 1279.64 149.601 1279.55 149.847 1279.45 150.107 1279.3 150.38 1279.1 151.068 1278.56 151.654 1277.91 152.138 1277.13 152.622 1276.36 152.986 1275.45 153.228 1274.39 153.337 1273.91 153.423 1273.47 153.486 1273.08 153.548 1272.69 153.579 1272.32 153.579 1271.97 153.579 1271.34 153.433 1270.89 153.14 1270.62 152.847 1270.35 152.384 1270.22 151.751 1270.22ZM180.337 1269.06C181.337 1269.06 182.097 1269.28 182.617 1269.72 183.136 1270.15 183.396 1270.77 183.396 1271.58 183.396 1274.41 180.72 1275.82 175.369 1275.82 175.329 1276.02 175.298 1276.24 175.275 1276.48 175.251 1276.72 175.24 1276.98 175.24 1277.26 175.24 1278.11 175.413 1278.73 175.761 1279.13 176.109 1279.52 176.65 1279.71 177.384 1279.71 177.767 1279.71 178.13 1279.67 178.474 1279.59 178.818 1279.51 179.156 1279.38 179.488 1279.21 179.82 1279.04 180.154 1278.81 180.49 1278.55 180.826 1278.28 181.177 1277.95 181.544 1277.58L182.423 1278.53C181.517 1279.43 180.613 1280.1 179.71 1280.55 178.808 1281.01 177.837 1281.23 176.798 1281.23 176.189 1281.23 175.648 1281.14 175.175 1280.96 174.703 1280.78 174.304 1280.51 173.98 1280.16 173.656 1279.8 173.41 1279.38 173.242 1278.87 173.074 1278.37 172.99 1277.8 172.99 1277.17 172.99 1276.72 173.029 1276.26 173.107 1275.78 173.185 1275.3 173.306 1274.82 173.47 1274.34 173.634 1273.86 173.837 1273.39 174.079 1272.93 174.322 1272.47 174.607 1272.05 174.935 1271.65 175.591 1270.84 176.382 1270.2 177.308 1269.74 178.234 1269.29 179.244 1269.06 180.337 1269.06ZM167.161 1269.06C167.732 1269.06 168.261 1269.09 168.749 1269.15 169.238 1269.22 169.744 1269.31 170.267 1269.45L169.611 1272.32 168.228 1272.32C168.22 1271.91 168.191 1271.57 168.14 1271.3 168.089 1271.03 168.007 1270.82 167.894 1270.66 167.781 1270.51 167.632 1270.4 167.449 1270.33 167.265 1270.26 167.04 1270.23 166.775 1270.22 166.353 1270.22 165.949 1270.31 165.562 1270.5 165.175 1270.69 164.816 1270.95 164.484 1271.28 164.152 1271.61 163.849 1272 163.576 1272.45 163.302 1272.89 163.068 1273.37 162.872 1273.89 162.677 1274.4 162.527 1274.94 162.421 1275.5 162.316 1276.06 162.263 1276.61 162.263 1277.17 162.263 1278 162.427 1278.63 162.755 1279.06 163.083 1279.49 163.576 1279.71 164.232 1279.71 164.599 1279.71 164.939 1279.68 165.251 1279.61 165.564 1279.55 165.869 1279.43 166.165 1279.28 166.462 1279.12 166.769 1278.92 167.085 1278.66 167.402 1278.41 167.751 1278.09 168.134 1277.72 168.283 1277.88 168.425 1278.03 168.562 1278.18 168.699 1278.33 168.841 1278.49 168.99 1278.64 168.146 1279.52 167.302 1280.17 166.458 1280.6 165.615 1281.02 164.708 1281.23 163.74 1281.23 162.529 1281.23 161.601 1280.88 160.956 1280.17 160.312 1279.47 159.99 1278.46 159.99 1277.14 159.99 1276.41 160.072 1275.7 160.236 1275.02 160.4 1274.33 160.636 1273.69 160.945 1273.09 161.253 1272.49 161.622 1271.94 162.052 1271.45 162.482 1270.96 162.962 1270.53 163.494 1270.18 164.025 1269.82 164.599 1269.55 165.216 1269.35 165.833 1269.16 166.482 1269.06 167.161 1269.06ZM151.54 1269.06C152.158 1269.06 152.703 1269.13 153.175 1269.28 153.648 1269.42 154.079 1269.62 154.47 1269.87L155.607 1269.06 156.556 1269.3 154.786 1276.98C154.685 1277.42 154.615 1277.78 154.576 1278.06 154.536 1278.35 154.517 1278.6 154.517 1278.82 154.517 1279.12 154.578 1279.33 154.699 1279.47 154.82 1279.6 154.994 1279.66 155.22 1279.66 155.361 1279.66 155.499 1279.64 155.636 1279.58 155.773 1279.53 155.921 1279.44 156.081 1279.32 156.242 1279.21 156.417 1279.06 156.609 1278.87 156.8 1278.69 157.017 1278.47 157.259 1278.21 157.384 1278.34 157.513 1278.47 157.646 1278.6 157.779 1278.73 157.908 1278.86 158.033 1278.98 157.642 1279.38 157.286 1279.72 156.966 1280.01 156.646 1280.3 156.335 1280.53 156.035 1280.71 155.734 1280.9 155.439 1281.03 155.15 1281.11 154.861 1281.19 154.56 1281.23 154.247 1281.23 153.685 1281.23 153.247 1281.05 152.935 1280.69 152.622 1280.33 152.466 1279.83 152.466 1279.2 152.466 1278.84 152.521 1278.51 152.63 1278.19L152.466 1278.12C152.068 1278.67 151.681 1279.14 151.306 1279.54 150.931 1279.93 150.56 1280.25 150.193 1280.5 149.826 1280.76 149.454 1280.94 149.079 1281.06 148.704 1281.18 148.314 1281.23 147.908 1281.23 146.978 1281.23 146.259 1280.9 145.751 1280.23 145.244 1279.56 144.99 1278.59 144.99 1277.32 144.99 1276.56 145.07 1275.83 145.23 1275.14 145.39 1274.44 145.617 1273.78 145.91 1273.17 146.203 1272.55 146.552 1271.99 146.958 1271.49 147.365 1270.99 147.81 1270.55 148.294 1270.2 148.779 1269.84 149.294 1269.56 149.841 1269.36 150.388 1269.16 150.954 1269.06 151.54 1269.06ZM120.755 1269.06C121.333 1269.06 121.781 1269.25 122.097 1269.63 122.413 1270.01 122.572 1270.5 122.572 1271.12 122.572 1271.47 122.517 1271.79 122.408 1272.06L122.572 1272.13C123.361 1271.07 124.128 1270.3 124.874 1269.8 125.62 1269.31 126.388 1269.06 127.177 1269.06 127.474 1269.06 127.753 1269.07 128.015 1269.11 128.277 1269.14 128.529 1269.18 128.771 1269.22L128.173 1272.06 126.814 1272.06C126.775 1271.59 126.675 1271.25 126.515 1271.05 126.355 1270.85 126.122 1270.75 125.818 1270.75 125.638 1270.74 125.431 1270.79 125.197 1270.91 124.962 1271.03 124.714 1271.2 124.453 1271.41 124.191 1271.63 123.931 1271.89 123.673 1272.19 123.415 1272.48 123.171 1272.81 122.941 1273.16 122.71 1273.51 122.509 1273.89 122.337 1274.28 122.165 1274.67 122.036 1275.07 121.951 1275.47L120.755 1281.02 118.458 1281.02 120.216 1273.38C120.326 1272.93 120.402 1272.55 120.445 1272.26 120.488 1271.96 120.509 1271.71 120.509 1271.51 120.509 1270.94 120.279 1270.65 119.818 1270.65 119.669 1270.65 119.523 1270.68 119.378 1270.74 119.234 1270.8 119.083 1270.89 118.927 1271 118.771 1271.12 118.599 1271.27 118.411 1271.45 118.224 1271.63 118.013 1271.84 117.779 1272.08L116.97 1271.32C117.361 1270.92 117.718 1270.58 118.042 1270.3 118.367 1270.01 118.677 1269.78 118.974 1269.59 119.271 1269.41 119.564 1269.27 119.853 1269.19 120.142 1269.1 120.443 1269.06 120.755 1269.06ZM104.814 1269.06C105.376 1269.06 105.826 1269.25 106.161 1269.63 106.497 1270.01 106.665 1270.51 106.665 1271.14 106.665 1271.49 106.634 1271.87 106.572 1272.29 106.509 1272.72 106.404 1273.19 106.255 1273.71 105.958 1274.78 105.724 1275.72 105.552 1276.52 105.38 1277.33 105.294 1277.92 105.294 1278.29 105.294 1278.76 105.386 1279.11 105.57 1279.34 105.753 1279.57 106.048 1279.69 106.454 1279.69 106.822 1279.69 107.214 1279.55 107.632 1279.28 108.05 1279 108.451 1278.65 108.833 1278.22 109.216 1277.78 109.558 1277.3 109.859 1276.76 110.16 1276.23 110.38 1275.7 110.521 1275.18L111.81 1269.3 114.119 1269.3 112.314 1276.96C112.22 1277.36 112.154 1277.71 112.115 1278.02 112.076 1278.34 112.056 1278.6 112.056 1278.82 112.056 1279.12 112.111 1279.33 112.22 1279.47 112.329 1279.6 112.505 1279.66 112.747 1279.66 112.896 1279.66 113.04 1279.64 113.181 1279.58 113.322 1279.53 113.472 1279.44 113.632 1279.32 113.792 1279.21 113.966 1279.06 114.154 1278.87 114.341 1278.69 114.552 1278.47 114.786 1278.21L115.595 1278.98C115.204 1279.38 114.845 1279.72 114.517 1280.01 114.189 1280.3 113.876 1280.53 113.579 1280.71 113.283 1280.9 112.988 1281.03 112.695 1281.11 112.402 1281.19 112.099 1281.23 111.786 1281.23 111.224 1281.23 110.785 1281.05 110.468 1280.69 110.152 1280.33 109.994 1279.83 109.994 1279.2 109.994 1279.03 110.005 1278.87 110.029 1278.7 110.052 1278.53 110.095 1278.37 110.158 1278.21L110.017 1278.16C109.244 1279.19 108.492 1279.96 107.761 1280.47 107.031 1280.98 106.271 1281.23 105.482 1281.23 104.654 1281.23 104.031 1281.02 103.613 1280.58 103.195 1280.14 102.986 1279.51 102.986 1278.69 102.986 1278.48 103.023 1278.19 103.097 1277.81 103.171 1277.44 103.263 1277.02 103.372 1276.56 103.482 1276.1 103.599 1275.62 103.724 1275.11 103.849 1274.61 103.966 1274.12 104.076 1273.66 104.185 1273.19 104.277 1272.77 104.351 1272.39 104.425 1272.01 104.462 1271.72 104.462 1271.51 104.462 1270.94 104.228 1270.65 103.759 1270.65 103.611 1270.65 103.466 1270.68 103.326 1270.74 103.185 1270.8 103.035 1270.89 102.874 1271 102.714 1271.12 102.54 1271.27 102.353 1271.45 102.165 1271.63 101.954 1271.84 101.72 1272.08L100.923 1271.32C101.345 1270.9 101.722 1270.54 102.054 1270.25 102.386 1269.97 102.701 1269.73 102.997 1269.56 103.294 1269.38 103.587 1269.25 103.876 1269.18 104.165 1269.1 104.478 1269.06 104.814 1269.06ZM95.4506 1269.06C96.2084 1269.06 96.9056 1269.11 97.5424 1269.2 98.1791 1269.29 98.7982 1269.43 99.3998 1269.61L98.8373 1272.26 97.7943 1272.26C97.7084 1271.55 97.4759 1271.04 97.097 1270.7 96.7181 1270.36 96.1302 1270.2 95.3334 1270.2 95.0131 1270.2 94.7162 1270.24 94.4427 1270.32 94.1693 1270.41 93.9349 1270.53 93.7396 1270.68 93.5443 1270.83 93.392 1271.02 93.2826 1271.23 93.1732 1271.44 93.1185 1271.67 93.1185 1271.92 93.1185 1272.14 93.1459 1272.35 93.2006 1272.54 93.2552 1272.73 93.3627 1272.91 93.5228 1273.09 93.683 1273.27 93.9095 1273.46 94.2025 1273.65 94.4955 1273.85 94.8802 1274.07 95.3568 1274.32 95.8568 1274.59 96.2728 1274.86 96.6049 1275.11 96.9369 1275.36 97.2006 1275.61 97.3959 1275.87 97.5912 1276.13 97.7279 1276.4 97.806 1276.69 97.8841 1276.99 97.9232 1277.31 97.9232 1277.67 97.9232 1278.23 97.8099 1278.72 97.5834 1279.17 97.3568 1279.61 97.0404 1279.98 96.6341 1280.29 96.2279 1280.59 95.7494 1280.82 95.1986 1280.99 94.6478 1281.15 94.0443 1281.23 93.3881 1281.23 92.6693 1281.23 91.9623 1281.19 91.267 1281.09 90.5716 1281 89.8373 1280.84 89.0638 1280.61L89.6732 1277.94 90.6927 1277.94C90.7318 1278.67 90.9603 1279.21 91.3783 1279.58 91.7963 1279.94 92.4427 1280.12 93.3177 1280.12 94.099 1280.12 94.7142 1279.95 95.1634 1279.62 95.6127 1279.28 95.8373 1278.81 95.8373 1278.21 95.8373 1277.94 95.8099 1277.7 95.7552 1277.5 95.7006 1277.3 95.5931 1277.11 95.433 1276.93 95.2728 1276.75 95.0541 1276.57 94.7767 1276.38 94.4994 1276.19 94.1381 1275.97 93.6927 1275.72 93.2318 1275.46 92.8353 1275.2 92.5033 1274.95 92.1713 1274.7 91.8978 1274.45 91.683 1274.19 91.4681 1273.93 91.3099 1273.66 91.2084 1273.38 91.1068 1273.1 91.056 1272.8 91.056 1272.48 91.056 1271.99 91.1595 1271.53 91.3666 1271.12 91.5736 1270.7 91.8685 1270.34 92.2513 1270.03 92.6341 1269.73 93.0951 1269.49 93.6341 1269.32 94.1732 1269.14 94.7787 1269.06 95.4506 1269.06ZM141.29 1264.64C141.72 1264.64 142.099 1264.66 142.427 1264.71 142.755 1264.75 143.072 1264.8 143.376 1264.86L142.896 1267.04 141.736 1267.04C141.681 1266.6 141.548 1266.27 141.337 1266.06 141.126 1265.86 140.845 1265.75 140.494 1265.75 140.087 1265.75 139.745 1265.84 139.468 1266.02 139.191 1266.19 138.949 1266.46 138.742 1266.81 138.535 1267.17 138.357 1267.59 138.208 1268.06 138.06 1268.54 137.958 1268.95 137.904 1269.3L141.15 1269.3 140.892 1270.61 137.634 1270.61 135.513 1280.65C135.146 1282.36 134.55 1283.63 133.726 1284.45 132.902 1285.28 131.802 1285.69 130.427 1285.69 130.068 1285.69 129.806 1285.66 129.642 1285.62 129.689 1285.42 129.732 1285.22 129.771 1285.01 129.81 1284.81 129.857 1284.61 129.911 1284.41 129.958 1284.43 130.025 1284.43 130.111 1284.43 130.197 1284.43 130.318 1284.43 130.474 1284.43 130.779 1284.43 131.058 1284.39 131.312 1284.29 131.566 1284.19 131.798 1284.01 132.009 1283.76 132.22 1283.51 132.413 1283.16 132.589 1282.72 132.765 1282.28 132.931 1281.71 133.087 1281.01L135.431 1270.61 133.415 1270.61 133.626 1269.7C134.056 1269.68 134.398 1269.65 134.652 1269.62 134.906 1269.59 135.12 1269.52 135.296 1269.42 135.472 1269.31 135.603 1269.13 135.689 1268.88 136.142 1267.45 136.824 1266.39 137.734 1265.69 138.644 1264.99 139.829 1264.64 141.29 1264.64Z"
+       fill-rule="evenodd"
+       id="path413" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="21.0469"
+       x="89.0638"
+       y="1283.06"
+       id="text415">𝑠𝑢𝑟𝑓𝑎𝑐𝑒</text>
+    <path
+       d="M244.733 1270.22C244.304 1270.22 243.88 1270.32 243.462 1270.54 243.044 1270.75 242.649 1271.05 242.278 1271.43 241.907 1271.82 241.569 1272.29 241.265 1272.84 240.96 1273.39 240.706 1274 240.503 1274.68 241.495 1274.68 242.349 1274.6 243.063 1274.45 243.778 1274.3 244.364 1274.1 244.821 1273.84 245.278 1273.58 245.614 1273.28 245.829 1272.93 246.044 1272.57 246.151 1272.19 246.151 1271.77 246.151 1271.28 246.03 1270.9 245.788 1270.63 245.546 1270.36 245.194 1270.22 244.733 1270.22ZM218.651 1270.22C218.19 1270.22 217.761 1270.32 217.362 1270.52 216.964 1270.73 216.601 1271 216.272 1271.36 215.944 1271.71 215.653 1272.11 215.399 1272.57 215.145 1273.04 214.931 1273.52 214.755 1274.04 214.579 1274.55 214.446 1275.08 214.356 1275.63 214.267 1276.17 214.222 1276.69 214.222 1277.19 214.222 1278.04 214.341 1278.66 214.579 1279.07 214.817 1279.48 215.202 1279.69 215.733 1279.69 215.999 1279.69 216.255 1279.64 216.501 1279.55 216.747 1279.45 217.007 1279.3 217.28 1279.1 217.968 1278.56 218.554 1277.91 219.038 1277.13 219.522 1276.36 219.886 1275.45 220.128 1274.39 220.237 1273.91 220.323 1273.47 220.386 1273.08 220.448 1272.69 220.479 1272.32 220.479 1271.97 220.479 1271.34 220.333 1270.89 220.04 1270.62 219.747 1270.35 219.284 1270.22 218.651 1270.22ZM191.269 1269.3 194.655 1269.3 195.569 1278.82C196.069 1278.05 196.511 1277.35 196.894 1276.72 197.276 1276.1 197.612 1275.52 197.901 1275 198.19 1274.48 198.44 1273.99 198.651 1273.55 198.862 1273.1 199.04 1272.68 199.185 1272.27 199.329 1271.86 199.45 1271.47 199.548 1271.07 199.645 1270.68 199.729 1270.28 199.8 1269.87L199.94 1269.3 201.815 1269.3 202.835 1278.82C204.124 1277.06 205.099 1275.53 205.759 1274.21 206.419 1272.89 206.749 1271.84 206.749 1271.05 206.749 1270.71 206.667 1270.47 206.503 1270.32 206.339 1270.18 206.042 1270.09 205.612 1270.05L205.753 1269.3 209.058 1269.3 209.468 1269.98C209.14 1270.84 208.778 1271.68 208.384 1272.5 207.989 1273.33 207.526 1274.19 206.995 1275.09 206.464 1275.98 205.843 1276.93 205.132 1277.93 204.421 1278.93 203.585 1280.02 202.624 1281.21L201.124 1281.21 200.175 1273.08C199.659 1274.27 199.009 1275.53 198.224 1276.88 197.438 1278.22 196.515 1279.66 195.452 1281.21L193.741 1281.21 192.64 1272.36C192.577 1271.89 192.522 1271.52 192.476 1271.23 192.429 1270.95 192.356 1270.72 192.259 1270.56 192.161 1270.4 192.022 1270.29 191.843 1270.22 191.663 1270.15 191.413 1270.09 191.093 1270.05ZM253.655 1269.06C254.233 1269.06 254.681 1269.25 254.997 1269.63 255.313 1270.01 255.472 1270.5 255.472 1271.12 255.472 1271.47 255.417 1271.79 255.308 1272.06L255.472 1272.13C256.261 1271.07 257.028 1270.3 257.774 1269.8 258.52 1269.31 259.288 1269.06 260.077 1269.06 260.374 1269.06 260.653 1269.07 260.915 1269.11 261.177 1269.14 261.429 1269.18 261.671 1269.22L261.073 1272.06 259.714 1272.06C259.675 1271.59 259.575 1271.25 259.415 1271.05 259.255 1270.85 259.022 1270.75 258.718 1270.75 258.538 1270.74 258.331 1270.79 258.097 1270.91 257.862 1271.03 257.614 1271.2 257.353 1271.41 257.091 1271.63 256.831 1271.89 256.573 1272.19 256.315 1272.48 256.071 1272.81 255.841 1273.16 255.61 1273.51 255.409 1273.89 255.237 1274.28 255.065 1274.67 254.936 1275.07 254.851 1275.47L253.655 1281.02 251.358 1281.02 253.116 1273.38C253.226 1272.93 253.302 1272.55 253.345 1272.26 253.388 1271.96 253.409 1271.71 253.409 1271.51 253.409 1270.94 253.179 1270.65 252.718 1270.65 252.569 1270.65 252.423 1270.68 252.278 1270.74 252.134 1270.8 251.983 1270.89 251.827 1271 251.671 1271.12 251.499 1271.27 251.311 1271.45 251.124 1271.63 250.913 1271.84 250.679 1272.08L249.87 1271.32C250.261 1270.92 250.618 1270.58 250.942 1270.3 251.267 1270.01 251.577 1269.78 251.874 1269.59 252.171 1269.41 252.464 1269.27 252.753 1269.19 253.042 1269.1 253.343 1269.06 253.655 1269.06ZM245.237 1269.06C246.237 1269.06 246.997 1269.28 247.517 1269.72 248.036 1270.15 248.296 1270.77 248.296 1271.58 248.296 1274.41 245.62 1275.82 240.269 1275.82 240.229 1276.02 240.198 1276.24 240.175 1276.48 240.151 1276.72 240.14 1276.98 240.14 1277.26 240.14 1278.11 240.313 1278.73 240.661 1279.13 241.009 1279.52 241.55 1279.71 242.284 1279.71 242.667 1279.71 243.03 1279.67 243.374 1279.59 243.718 1279.51 244.056 1279.38 244.388 1279.21 244.72 1279.04 245.054 1278.81 245.39 1278.55 245.726 1278.28 246.077 1277.95 246.444 1277.58L247.323 1278.53C246.417 1279.43 245.513 1280.1 244.61 1280.55 243.708 1281.01 242.737 1281.23 241.698 1281.23 241.089 1281.23 240.548 1281.14 240.075 1280.96 239.603 1280.78 239.204 1280.51 238.88 1280.16 238.556 1279.8 238.31 1279.38 238.142 1278.87 237.974 1278.37 237.89 1277.8 237.89 1277.17 237.89 1276.72 237.929 1276.26 238.007 1275.78 238.085 1275.3 238.206 1274.82 238.37 1274.34 238.534 1273.86 238.737 1273.39 238.979 1272.93 239.222 1272.47 239.507 1272.05 239.835 1271.65 240.491 1270.84 241.282 1270.2 242.208 1269.74 243.134 1269.29 244.144 1269.06 245.237 1269.06ZM218.44 1269.06C219.058 1269.06 219.603 1269.13 220.075 1269.28 220.548 1269.42 220.979 1269.62 221.37 1269.87L222.507 1269.06 223.456 1269.3 221.686 1276.98C221.585 1277.42 221.515 1277.78 221.476 1278.06 221.436 1278.35 221.417 1278.6 221.417 1278.82 221.417 1279.12 221.478 1279.33 221.599 1279.47 221.72 1279.6 221.894 1279.66 222.12 1279.66 222.261 1279.66 222.399 1279.64 222.536 1279.58 222.673 1279.53 222.821 1279.44 222.981 1279.32 223.142 1279.21 223.317 1279.06 223.509 1278.87 223.7 1278.69 223.917 1278.47 224.159 1278.21 224.284 1278.34 224.413 1278.47 224.546 1278.6 224.679 1278.73 224.808 1278.86 224.933 1278.98 224.542 1279.38 224.186 1279.72 223.866 1280.01 223.546 1280.3 223.235 1280.53 222.935 1280.71 222.634 1280.9 222.339 1281.03 222.05 1281.11 221.761 1281.19 221.46 1281.23 221.147 1281.23 220.585 1281.23 220.147 1281.05 219.835 1280.69 219.522 1280.33 219.366 1279.83 219.366 1279.2 219.366 1278.84 219.421 1278.51 219.53 1278.19L219.366 1278.12C218.968 1278.67 218.581 1279.14 218.206 1279.54 217.831 1279.93 217.46 1280.25 217.093 1280.5 216.726 1280.76 216.354 1280.94 215.979 1281.06 215.604 1281.18 215.214 1281.23 214.808 1281.23 213.878 1281.23 213.159 1280.9 212.651 1280.23 212.144 1279.56 211.89 1278.59 211.89 1277.32 211.89 1276.56 211.97 1275.83 212.13 1275.14 212.29 1274.44 212.517 1273.78 212.81 1273.17 213.103 1272.55 213.452 1271.99 213.858 1271.49 214.265 1270.99 214.71 1270.55 215.194 1270.2 215.679 1269.84 216.194 1269.56 216.741 1269.36 217.288 1269.16 217.854 1269.06 218.44 1269.06ZM230.429 1266.33 232.257 1266.33 231.589 1269.3 235.573 1269.3 235.304 1270.61 231.331 1270.61 230.136 1275.52C230.058 1275.84 229.993 1276.14 229.942 1276.4 229.892 1276.66 229.851 1276.9 229.819 1277.11 229.788 1277.32 229.767 1277.51 229.755 1277.68 229.743 1277.86 229.737 1278.02 229.737 1278.16 229.737 1278.63 229.835 1279 230.03 1279.27 230.226 1279.53 230.546 1279.66 230.991 1279.66 231.366 1279.66 231.765 1279.53 232.186 1279.25 232.608 1278.97 233.089 1278.54 233.628 1277.94L234.436 1278.76C234.038 1279.21 233.659 1279.59 233.3 1279.9 232.94 1280.21 232.589 1280.47 232.245 1280.67 231.901 1280.87 231.561 1281.01 231.226 1281.1 230.89 1281.19 230.546 1281.23 230.194 1281.23 229.265 1281.23 228.571 1281.02 228.114 1280.58 227.657 1280.14 227.429 1279.5 227.429 1278.64 227.429 1278.36 227.45 1278.04 227.493 1277.69 227.536 1277.34 227.597 1277 227.675 1276.68L229.069 1270.61 227.054 1270.61 227.288 1269.7C227.757 1269.7 228.122 1269.66 228.384 1269.57 228.645 1269.48 228.866 1269.36 229.046 1269.2 229.163 1269.09 229.276 1268.96 229.386 1268.8 229.495 1268.64 229.604 1268.44 229.714 1268.22 229.823 1267.99 229.935 1267.72 230.048 1267.41 230.161 1267.1 230.288 1266.74 230.429 1266.33Z"
+       fill-rule="evenodd"
+       id="path417" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="14.9063"
+       x="191.093"
+       y="1279.37"
+       id="text419">𝑤𝑎𝑡𝑒𝑟</text>
+    <path
+       d="M4.40295 1240.92 133.903 1240.92 263.403 1240.92 263.403 1242.92 133.903 1242.92 4.40295 1242.92Z"
+       fill-rule="evenodd"
+       id="path421" />
     <path
        d="M0 67.254 7.6667 67.254 7.6667 0 12.3333 0 12.3333 67.254 20 67.254 10 91.9521Z"
        fill="#A5A5A5"
        fill-rule="evenodd"
        transform="matrix(-0.730224 0.683207 0.683207 0.730224 601.729 1286.33)"
-       id="path20343" />
+       id="path423" />
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(383.123 1406)"
-       id="text20349">Predicted <tspan
+       font-size="27"
+       transform="translate(383.123 1409)"
+       id="text429">Predicted <tspan
    x="0"
-   y="29"
-   id="tspan20345">Sum of Risks</tspan><tspan
+   y="32"
+   id="tspan425">Sum of Risks</tspan><tspan
    font-size="37"
    x="-132.96"
-   y="13"
-   id="tspan20347">o)</tspan></text>
+   y="10"
+   id="tspan427">o)</tspan></text>
     <path
        d="M305 1388.67C305 1382.78 309.776 1378 315.667 1378L358.333 1378C364.224 1378 369 1382.78 369 1388.67L369 1431.33C369 1437.22 364.224 1442 358.333 1442L315.667 1442C309.776 1442 305 1437.22 305 1431.33Z"
        fill="#FFC000"
        fill-rule="evenodd"
-       id="path20351" />
+       id="path431" />
     <text
        fill="#E1721F"
        font-family="Calibri,Calibri_MSFontService,sans-serif"
        font-weight="700"
        font-size="48"
        transform="translate(325.196 1426)"
-       id="text20353">Σ</text>
+       id="text433">Σ</text>
     <path
        d="M359 1384C361.209 1384 363 1386.01 363 1388.5"
        stroke="#FFFFFF"
@@ -1039,35 +1146,35 @@
        stroke-miterlimit="8"
        fill="none"
        fill-rule="evenodd"
-       id="path20355" />
+       id="path435" />
     <text
        font-family="Arial,Arial_MSFontService,sans-serif"
        font-weight="700"
-       font-size="24"
-       transform="translate(750.769 1392)"
-       id="text20363">Predicted <tspan
+       font-size="27"
+       transform="translate(750.769 1395)"
+       id="text443">Predicted <tspan
    x="0"
-   y="29"
-   id="tspan20357">Joint Probability of Risk</tspan><tspan
+   y="32"
+   id="tspan437">Joint Probability of Risk</tspan><tspan
    x="0"
-   y="58"
-   id="tspan20359">Threshold Exceedance</tspan><tspan
+   y="64"
+   id="tspan439">Threshold Exceedance</tspan><tspan
    font-size="37"
    x="-131.419"
-   y="25"
-   id="tspan20361">p)</tspan></text>
+   y="22"
+   id="tspan441">p)</tspan></text>
     <path
        d="M674 1387.67C674 1381.78 678.776 1377 684.667 1377L727.333 1377C733.224 1377 738 1381.78 738 1387.67L738 1430.33C738 1436.22 733.224 1441 727.333 1441L684.667 1441C678.776 1441 674 1436.22 674 1430.33Z"
        fill="#FFC080"
        fill-rule="evenodd"
-       id="path20365" />
+       id="path445" />
     <text
        fill="#E1721F"
        font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
        font-weight="700"
        font-size="43"
        transform="translate(688.589 1423)"
-       id="text20367">⋂</text>
+       id="text447">⋂</text>
     <path
        d="M728 1383C730.209 1383 732 1384.79 732 1387"
        stroke="#FFFFFF"
@@ -1076,154 +1183,191 @@
        stroke-miterlimit="8"
        fill="none"
        fill-rule="evenodd"
-       id="path20369" />
+       id="path449" />
+    <rect
+       x="-360"
+       y="1346"
+       width="593"
+       height="142"
+       fill="#F2F2F2"
+       id="rect451" />
     <path
-       d="M5.47266-28.2305 19.4531-9.24609 19.4531-7.82813 4.35938 12.6563 24.6914 12.6563C25.5898 12.6562 26.2773 12.3398 26.7539 11.707 27.2305 11.0742 27.6406 9.66016 27.9844 7.46484L29.7188 7.46484 29.1211 16.0547 0.304688 16.0547 0.304688 14.8945 16.7227-7.35938 0.785156-28.6523 0.785156-29.7656 29.0859-29.7656 29.0859-22.8281 27.5391-22.8281C27.3594-24.4922 26.9961-25.8086 26.4492-26.7773 25.9023-27.7461 25.0742-28.2305 23.9648-28.2305Z"
-       transform="translate(-291.509 1416)"
-       id="path20371" />
-    <text
-       font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-       font-weight="400"
-       font-size="24"
-       transform="translate(-255.696 1416)"
-       id="text20381">𝑅𝑄<tspan
-   x="38.8667"
-   y="0"
-   id="tspan20373">=</tspan><tspan
-   x="63.5333"
-   y="0"
-   id="tspan20375">(</tspan>𝑅𝑄<tspan
-   font-size="18"
-   x="104.273"
-   y="5"
-   id="tspan20377">𝑐𝑖𝑝𝑟𝑜𝑓𝑙𝑜𝑥𝑎𝑐𝑖𝑛</tspan><tspan
-   x="231.233"
-   y="0"
-   id="tspan20379">+</tspan></text>
-    <path
-       d="M29.7746 1397.94 35.0012 1397.94 35.0012 1420.29 29.7746 1420.29 29.7746 1419.39 33.0559 1419.39 33.0559 1398.84 29.7746 1398.84ZM1.54257 1397.94 6.76913 1397.94 6.76913 1398.84 3.48788 1398.84 3.48788 1419.39 6.76913 1419.39 6.76913 1420.29 1.54257 1420.29Z"
+       d="M-127.157 1359.42-88.2433 1359.42-88.2433 1368.96-90.3703 1368.96C-90.6173 1366.67-91.1169 1364.86-91.8688 1363.53-92.6208 1362.2-93.7594 1361.53-95.2848 1361.53L-120.712 1361.53-101.488 1387.63-101.488 1389.58-122.242 1417.75-94.2858 1417.75C-93.0504 1417.75-92.1051 1417.31-91.4499 1416.44-90.7946 1415.57-90.2306 1413.63-89.758 1410.61L-87.3732 1410.61-88.195 1422.42-127.818 1422.42-127.818 1420.83-105.243 1390.23-127.157 1360.95Z"
        fill-rule="evenodd"
-       id="path20383" />
+       id="path453" />
     <text
-       font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-       font-weight="400"
-       font-size="24"
-       transform="translate(7.27072 1416)"
-       id="text20397">…<tspan
-   x="35.7333"
-   y="0"
-   id="tspan20385">+</tspan><tspan
-   x="56.4"
-   y="0"
-   id="tspan20387" /><tspan
-   x="64.4"
-   y="0"
-   id="tspan20389">𝑅𝑄</tspan><tspan
-   font-size="18"
-   x="95.14"
-   y="5"
-   id="tspan20391">𝑝𝑎𝑟𝑎𝑐𝑒𝑡𝑎𝑚𝑜𝑙</tspan><tspan
-   x="208.9"
-   y="0"
-   id="tspan20393">)</tspan><tspan
-   x="1047.61"
-   y="4"
-   id="tspan20395">𝑃</tspan></text>
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="63.0029"
+       x="-127.818"
+       y="1414.55"
+       id="text455">෍</text>
     <path
-       d="M1382.35 1401.95C1384.63 1402.55 1386.38 1403.85 1387.6 1405.85 1388.83 1407.84 1389.44 1410.25 1389.44 1413.07 1389.44 1415.9 1388.83 1418.31 1387.61 1420.3 1386.39 1422.28 1384.64 1423.58 1382.35 1424.18L1382.07 1423.28C1383.87 1422.68 1385.21 1421.49 1386.09 1419.72 1386.97 1417.94 1387.41 1415.69 1387.41 1412.95 1387.41 1410.31 1386.97 1408.12 1386.1 1406.37 1385.22 1404.63 1383.87 1403.45 1382.03 1402.85ZM1079.5 1401.95 1079.81 1402.85C1077.99 1403.45 1076.63 1404.63 1075.75 1406.37 1074.88 1408.12 1074.44 1410.31 1074.44 1412.95 1074.44 1415.69 1074.88 1417.94 1075.75 1419.72 1076.63 1421.49 1077.97 1422.68 1079.78 1423.28L1079.5 1424.18C1077.21 1423.58 1075.46 1422.28 1074.24 1420.3 1073.02 1418.31 1072.41 1415.9 1072.41 1413.07 1072.41 1410.25 1073.02 1407.84 1074.24 1405.85 1075.46 1403.85 1077.22 1402.55 1079.5 1401.95Z"
+       d="M-66.8949 1379.77C-67.4642 1379.77-68.0658 1379.79-68.6996 1379.84L-70.7621 1389.16-68.8607 1389.16C-67.3031 1389.16-66.0731 1388.96-65.1708 1388.54-64.2684 1388.12-63.5541 1387.43-63.0277 1386.47-62.5014 1385.52-62.2382 1384.49-62.2382 1383.38-62.2382 1382.92-62.2811 1382.51-62.3671 1382.15-62.453 1381.79-62.5658 1381.49-62.7055 1381.25-62.8451 1381.02-63.0224 1380.81-63.2372 1380.62-63.452 1380.44-63.7206 1380.28-64.0429 1380.15-64.3651 1380.02-64.7384 1379.92-65.1627 1379.86-65.5871 1379.8-66.1644 1379.77-66.8949 1379.77ZM-44.0097 1379.51C-45.1698 1379.51-46.2521 1379.93-47.2565 1380.75-48.2609 1381.58-49.1417 1382.76-49.8991 1384.3-50.6564 1385.83-51.2445 1387.52-51.6635 1389.36-52.0824 1391.19-52.2919 1392.82-52.2919 1394.22-52.2919 1397.54-51.0834 1399.2-48.6664 1399.2-47.1732 1399.2-45.8036 1398.51-44.5575 1397.12-43.3114 1395.73-42.307 1393.8-41.5443 1391.34-40.7816 1388.88-40.4003 1386.58-40.4003 1384.44-40.4003 1382.84-40.6957 1381.62-41.2865 1380.78-41.8773 1379.93-42.785 1379.51-44.0097 1379.51ZM-73.3563 1378.35-66.1859 1378.35C-65.0473 1378.35-64.1181 1378.42-63.3983 1378.55-62.6786 1378.69-62.0636 1378.89-61.5534 1379.16-61.0431 1379.43-60.6161 1379.77-60.2724 1380.2-59.9286 1380.62-59.6708 1381.1-59.4989 1381.63-59.327 1382.16-59.2411 1382.73-59.2411 1383.33-59.2411 1384.99-59.746 1386.39-60.7558 1387.55-61.7655 1388.71-63.2533 1389.59-65.2191 1390.2L-65.2191 1390.37C-64.7035 1390.76-64.2872 1391.22-63.9704 1391.76-63.6535 1392.3-63.3983 1393.04-63.205 1394L-62.8344 1395.87C-62.7162 1396.46-62.5819 1396.99-62.4315 1397.46-62.2811 1397.94-62.1012 1398.31-61.8917 1398.59-61.6823 1398.87-61.4459 1399.08-61.1828 1399.22-60.9196 1399.36-60.5355 1399.47-60.0307 1399.56L-60.1918 1400.35-64.6552 1400.35C-64.9989 1399.39-65.3051 1398.25-65.5736 1396.93L-66.2826 1393.52C-66.4008 1392.92-66.5431 1392.43-66.7096 1392.02-66.8761 1391.62-67.0748 1391.31-67.3058 1391.09-67.5368 1390.87-67.8053 1390.72-68.1115 1390.66-68.4176 1390.59-68.7909 1390.55-69.2313 1390.55L-71.0683 1390.55-72.1962 1395.66C-72.2929 1396.08-72.36 1396.41-72.3976 1396.66-72.4352 1396.9-72.4674 1397.16-72.4943 1397.44-72.5211 1397.71-72.5346 1397.96-72.5346 1398.17-72.5346 1398.51-72.4809 1398.77-72.3734 1398.95-72.266 1399.14-72.1049 1399.28-71.89 1399.36-71.6752 1399.45-71.3046 1399.51-70.7782 1399.56L-70.9555 1400.35-77.578 1400.35-77.4008 1399.56C-76.9926 1399.49-76.6864 1399.39-76.4823 1399.24-76.2782 1399.1-76.1063 1398.9-75.9667 1398.64-75.827 1398.38-75.6981 1398.07-75.58 1397.7-75.4618 1397.33-75.2846 1396.61-75.0482 1395.55L-72.309 1383.14C-72.0726 1382.06-71.9545 1381.22-71.9545 1380.59-71.9545 1380.07-72.078 1379.7-72.3251 1379.5-72.5722 1379.29-72.975 1379.17-73.5336 1379.14ZM-43.8324 1378.09C-41.7592 1378.09-40.1613 1378.7-39.0387 1379.9-37.9162 1381.1-37.3549 1382.84-37.3549 1385.12-37.3549 1386.62-37.5912 1388.31-38.0639 1390.16-38.5365 1392.02-39.1864 1393.66-40.0136 1395.09-40.8407 1396.51-41.7995 1397.66-42.8898 1398.53-43.9801 1399.4-45.1644 1400-46.4428 1400.33-46.1957 1401.12-45.9647 1401.76-45.7499 1402.27-45.535 1402.78-45.3283 1403.2-45.1295 1403.51-44.9308 1403.83-44.7348 1404.07-44.5414 1404.22-44.348 1404.38-44.1547 1404.48-43.9613 1404.54-43.768 1404.59-43.5424 1404.62-43.2846 1404.62-42.8764 1404.62-42.4628 1404.5-42.0438 1404.26-41.6249 1404.03-41.1576 1403.62-40.642 1403.04L-39.8041 1403.94C-40.6635 1404.88-41.4638 1405.54-42.205 1405.92-42.9462 1406.31-43.7089 1406.5-44.4931 1406.5-45.3847 1406.5-46.1124 1406.3-46.6764 1405.91-47.2404 1405.51-47.7291 1404.88-48.1427 1404.01-48.5563 1403.13-48.9564 1402-49.3432 1400.59-51.2875 1400.48-52.7699 1399.84-53.7904 1398.66-54.8109 1397.47-55.3212 1395.81-55.3212 1393.66-55.3212 1392.05-55.0499 1390.23-54.5075 1388.2-53.965 1386.17-53.1808 1384.38-52.1549 1382.82-51.129 1381.27-49.9044 1380.1-48.4811 1379.3-47.0578 1378.49-45.5082 1378.09-43.8324 1378.09Z"
        fill-rule="evenodd"
-       id="path20399" />
+       id="path457" />
     <text
-       font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
-       font-weight="400"
-       font-size="24"
-       transform="translate(1080.26 1420)"
-       id="text20421">𝑎𝑡<tspan
-   x="23.42"
-   y="0"
-   id="tspan20401" /><tspan
-   x="28.7534"
-   y="0"
-   id="tspan20403">𝑙𝑒𝑎𝑠𝑡</tspan><tspan
-   x="82.6733"
-   y="0"
-   id="tspan20405" /><tspan
-   x="88.0067"
-   y="0"
-   id="tspan20407">𝑜𝑛𝑒</tspan><tspan
-   x="127.033"
-   y="0"
-   id="tspan20409" /><tspan
-   x="132.367"
-   y="0"
-   id="tspan20411">𝑅𝑄</tspan><tspan
-   x="171.233"
-   y="0"
-   id="tspan20413">&gt;</tspan><tspan
-   x="195.9"
-   y="0"
-   id="tspan20415">𝑡ℎ𝑟𝑒𝑠ℎ𝑜𝑙𝑑</tspan><tspan
-   x="317.953"
-   y="0"
-   id="tspan20417">=</tspan><tspan
-   x="342.62"
-   y="0"
-   id="tspan20419">𝑃</tspan></text>
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="28.4077"
+       x="-77.578"
+       y="1402.95"
+       id="text459">𝑅𝑄</text>
     <path
-       d="M1647.17 1398.57C1649.6 1399.21 1651.48 1400.87 1652.8 1403.55 1654.12 1406.23 1654.78 1409.4 1654.78 1413.07 1654.78 1416.73 1654.12 1419.9 1652.8 1422.58 1651.48 1425.26 1649.6 1426.92 1647.17 1427.56L1646.87 1426.6C1648.76 1425.89 1650.2 1424.34 1651.17 1421.96 1652.14 1419.57 1652.63 1416.61 1652.63 1413.08 1652.63 1409.54 1652.14 1406.58 1651.17 1404.18 1650.2 1401.79 1648.76 1400.24 1646.87 1399.53ZM1448.03 1398.57 1448.32 1399.53C1446.43 1400.24 1445 1401.79 1444.02 1404.18 1443.05 1406.58 1442.56 1409.54 1442.56 1413.08 1442.56 1416.61 1443.05 1419.57 1444.02 1421.96 1445 1424.34 1446.43 1425.89 1448.32 1426.6L1448.03 1427.56C1445.59 1426.92 1443.71 1425.26 1442.39 1422.58 1441.07 1419.9 1440.41 1416.73 1440.41 1413.07 1440.41 1409.4 1441.07 1406.23 1442.39 1403.55 1443.71 1400.87 1445.59 1399.21 1448.03 1398.57Z"
+       d="M-22.1956 1393.19-2.34403 1393.19-2.34403 1395.34-22.1956 1395.34ZM-22.1956 1386.51-2.34403 1386.51-2.34403 1388.65-22.1956 1388.65Z"
        fill-rule="evenodd"
-       id="path20423" />
+       id="path461" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial,Arial_MSFontService,sans-serif"
+       font-size="8.83008"
+       x="-22.1956"
+       y="1394.23"
+       id="text463">=</text>
     <text
        font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
        font-weight="400"
-       font-size="24"
-       transform="translate(1449.08 1420)"
-       id="text20433">𝑅𝑄<tspan
-   font-size="18"
-   x="30.74"
-   y="5"
-   id="tspan20425">𝑐𝑖𝑝𝑟𝑜𝑓𝑙𝑜𝑥𝑎𝑐𝑖𝑛</tspan><tspan
-   x="159.033"
+       font-size="33"
+       transform="translate(-353.956 1475)"
+       id="text471">(<tspan
+   x="13.8333"
    y="0"
-   id="tspan20427">&gt;</tspan><tspan
-   x="183.7"
+   id="tspan465">𝑅𝑄</tspan><tspan
+   font-size="24"
+   x="56.44"
+   y="7"
+   id="tspan467">𝑐𝑖𝑝𝑟𝑜𝑓𝑙𝑜𝑥𝑎𝑐𝑖𝑛</tspan><tspan
+   x="232.647"
    y="0"
-   id="tspan20429">1</tspan><tspan
-   x="213.147"
-   y="0"
-   id="tspan20431">∩</tspan></text>
+   id="tspan469">+</tspan></text>
     <path
-       d="M1714.8 1401.89 1720.02 1401.89 1720.02 1424.24 1714.8 1424.24 1714.8 1423.33 1718.08 1423.33 1718.08 1402.79 1714.8 1402.79ZM1686.56 1401.89 1691.79 1401.89 1691.79 1402.79 1688.51 1402.79 1688.51 1423.33 1691.79 1423.33 1691.79 1424.24 1686.56 1424.24Z"
+       d="M-46.157 1450.55-38.9704 1450.55-38.9704 1481.27-46.157 1481.27-46.157 1480.03-41.6452 1480.03-41.6452 1451.79-46.157 1451.79ZM-85.396 1450.55-78.2095 1450.55-78.2095 1451.79-82.7212 1451.79-82.7212 1480.03-78.2095 1480.03-78.2095 1481.27-85.396 1481.27Z"
        fill-rule="evenodd"
-       id="path20435" />
+       id="path473" />
     <text
        font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
        font-weight="400"
-       font-size="24"
-       transform="translate(1692.29 1420)"
-       id="text20439">…<tspan
-   x="35.7333"
+       font-size="33"
+       transform="translate(-77.4031 1475)"
+       id="text485">…<tspan
+   x="49.6267"
    y="0"
-   id="tspan20437">∩</tspan></text>
+   id="tspan475">+</tspan><tspan
+   x="78.16"
+   y="0"
+   id="tspan477" /><tspan
+   x="89.2"
+   y="0"
+   id="tspan479">𝑅𝑄</tspan><tspan
+   font-size="24"
+   x="131.807"
+   y="7"
+   id="tspan481">𝑝𝑎𝑟𝑎𝑐𝑒𝑡𝑎𝑚𝑜𝑙</tspan><tspan
+   x="289.527"
+   y="0"
+   id="tspan483">)</tspan></text>
+    <rect
+       x="1121"
+       y="1357"
+       width="731"
+       height="83"
+       fill="#F2F2F2"
+       id="rect487" />
+    <text
+       font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
+       font-weight="400"
+       font-size="32"
+       transform="translate(1246.03 1388)"
+       id="text489">𝑃</text>
     <path
-       d="M1950.69 1398.57C1953.13 1399.21 1955.01 1400.87 1956.33 1403.55 1957.65 1406.23 1958.31 1409.4 1958.31 1413.07 1958.31 1416.73 1957.65 1419.9 1956.33 1422.58 1955.01 1425.26 1953.13 1426.92 1950.69 1427.56L1950.4 1426.6C1952.29 1425.89 1953.72 1424.34 1954.7 1421.96 1955.67 1419.57 1956.15 1416.61 1956.15 1413.08 1956.15 1409.54 1955.67 1406.58 1954.7 1404.18 1953.72 1401.79 1952.29 1400.24 1950.4 1399.53ZM1759.42 1398.57 1759.71 1399.53C1757.82 1400.24 1756.39 1401.79 1755.42 1404.18 1754.44 1406.58 1753.96 1409.54 1753.96 1413.08 1753.96 1416.61 1754.44 1419.57 1755.42 1421.96 1756.39 1424.34 1757.82 1425.89 1759.71 1426.6L1759.42 1427.56C1756.98 1426.92 1755.1 1425.26 1753.78 1422.58 1752.46 1419.9 1751.8 1416.73 1751.8 1413.07 1751.8 1409.4 1752.46 1406.23 1753.78 1403.55 1755.1 1400.87 1756.98 1399.21 1759.42 1398.57Z"
+       d="M1682.76 1363.73C1685.8 1364.53 1688.14 1366.27 1689.77 1368.93 1691.4 1371.59 1692.21 1374.8 1692.21 1378.56 1692.21 1382.33 1691.4 1385.54 1689.78 1388.19 1688.15 1390.84 1685.81 1392.57 1682.76 1393.37L1682.38 1392.17C1684.79 1391.37 1686.58 1389.78 1687.75 1387.42 1688.92 1385.05 1689.51 1382.05 1689.51 1378.4 1689.51 1374.88 1688.93 1371.96 1687.76 1369.63 1686.59 1367.3 1684.79 1365.74 1682.34 1364.93ZM1278.91 1363.73 1279.33 1364.93C1276.89 1365.74 1275.09 1367.3 1273.92 1369.63 1272.75 1371.96 1272.16 1374.88 1272.16 1378.4 1272.16 1382.05 1272.75 1385.05 1273.92 1387.42 1275.09 1389.78 1276.88 1391.37 1279.28 1392.17L1278.91 1393.37C1275.86 1392.57 1273.52 1390.84 1271.89 1388.19 1270.27 1385.54 1269.46 1382.33 1269.46 1378.56 1269.46 1374.8 1270.27 1371.59 1271.9 1368.93 1273.53 1366.27 1275.87 1364.53 1278.91 1363.73Z"
        fill-rule="evenodd"
-       id="path20441" />
+       id="path491" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(1279.92,1388)"
+       id="text507">𝑎𝑡 <tspan
+   x="31.280001"
+   y="0"
+   id="tspan493" />𝑙𝑒𝑎𝑠𝑡 <tspan
+   x="110.393"
+   y="0"
+   id="tspan495" />𝑜𝑛𝑒<tspan
+   x="169.25999"
+   y="0"
+   id="tspan497" />𝑅𝑄<tspan
+   x="228.08701"
+   y="0"
+   id="tspan499">&gt;</tspan><tspan
+   x="260.97299"
+   y="0"
+   id="tspan501">𝑡ℎ𝑟𝑒𝑠ℎ𝑜𝑙𝑑</tspan><tspan
+   x="423.987"
+   y="0"
+   id="tspan503">=</tspan><tspan
+   x="-151.453"
+   y="41"
+   id="tspan505">𝑃</tspan></text>
+    <path
+       d="M1427.52 1400.22C1430.77 1401.08 1433.27 1403.29 1435.03 1406.86 1436.79 1410.43 1437.67 1414.66 1437.67 1419.55 1437.67 1424.43 1436.79 1428.66 1435.03 1432.24 1433.27 1435.81 1430.77 1438.02 1427.52 1438.88L1427.13 1437.6C1429.65 1436.65 1431.56 1434.58 1432.85 1431.4 1434.15 1428.22 1434.8 1424.27 1434.8 1419.56 1434.8 1414.85 1434.15 1410.89 1432.85 1407.71 1431.56 1404.52 1429.65 1402.45 1427.13 1401.5ZM1162.05 1400.22 1162.44 1401.5C1159.92 1402.45 1158.01 1404.52 1156.72 1407.71 1155.42 1410.89 1154.77 1414.85 1154.77 1419.56 1154.77 1424.27 1155.42 1428.22 1156.72 1431.4 1158.01 1434.58 1159.92 1436.65 1162.44 1437.6L1162.05 1438.88C1158.8 1438.02 1156.3 1435.81 1154.54 1432.24 1152.78 1428.66 1151.9 1424.43 1151.9 1419.55 1151.9 1414.66 1152.78 1410.43 1154.54 1406.86 1156.3 1403.29 1158.8 1401.08 1162.05 1400.22Z"
+       fill-rule="evenodd"
+       id="path509" />
     <text
        font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
        font-weight="400"
-       font-size="24"
-       transform="translate(1760.47 1420)"
-       id="text20449">𝑅𝑄<tspan
-   font-size="18"
-   x="30.74"
-   y="5"
-   id="tspan20443">𝑝𝑎𝑟𝑎𝑐𝑒𝑡𝑎𝑚𝑜𝑙</tspan><tspan
-   x="151.167"
+       font-size="32"
+       transform="translate(1163.46 1429)"
+       id="text519">𝑅𝑄<tspan
+   font-size="23"
+   x="40.9866"
+   y="6"
+   id="tspan511">𝑐𝑖𝑝𝑟𝑜𝑓𝑙𝑜𝑥𝑎𝑐𝑖𝑛</tspan><tspan
+   x="212.1"
    y="0"
-   id="tspan20445">&gt;</tspan><tspan
-   x="175.833"
+   id="tspan513">&gt;</tspan><tspan
+   x="244.987"
    y="0"
-   id="tspan20447">1</tspan></text>
+   id="tspan515">1</tspan><tspan
+   x="284.14"
+   y="0"
+   id="tspan517">∩</tspan></text>
+    <path
+       d="M1517.75 1404.65 1524.72 1404.65 1524.72 1434.45 1517.75 1434.45 1517.75 1433.24 1522.12 1433.24 1522.12 1405.85 1517.75 1405.85ZM1480.11 1404.65 1487.08 1404.65 1487.08 1405.85 1482.7 1405.85 1482.7 1433.24 1487.08 1433.24 1487.08 1434.45 1480.11 1434.45Z"
+       fill-rule="evenodd"
+       id="path521" />
+    <text
+       font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
+       font-weight="400"
+       font-size="32"
+       transform="translate(1487.74 1429)"
+       id="text525">…<tspan
+   x="47.6466"
+   y="0"
+   id="tspan523">∩</tspan></text>
+    <path
+       d="M1832.34 1400.22C1835.59 1401.08 1838.09 1403.29 1839.85 1406.86 1841.61 1410.43 1842.49 1414.66 1842.49 1419.55 1842.49 1424.43 1841.61 1428.66 1839.85 1432.24 1838.09 1435.81 1835.59 1438.02 1832.34 1438.88L1831.95 1437.6C1834.47 1436.65 1836.38 1434.58 1837.67 1431.4 1838.97 1428.22 1839.62 1424.27 1839.62 1419.56 1839.62 1414.85 1838.97 1410.89 1837.67 1407.71 1836.38 1404.52 1834.47 1402.45 1831.95 1401.5ZM1577.31 1400.22 1577.7 1401.5C1575.18 1402.45 1573.27 1404.52 1571.97 1407.71 1570.67 1410.89 1570.02 1414.85 1570.02 1419.56 1570.02 1424.27 1570.67 1428.22 1571.97 1431.4 1573.27 1434.58 1575.18 1436.65 1577.7 1437.6L1577.31 1438.88C1574.06 1438.02 1571.55 1435.81 1569.79 1432.24 1568.03 1428.66 1567.15 1424.43 1567.15 1419.55 1567.15 1414.66 1568.03 1410.43 1569.79 1406.86 1571.55 1403.29 1574.06 1401.08 1577.31 1400.22Z"
+       fill-rule="evenodd"
+       id="path527" />
+    <text
+       font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
+       font-weight="400"
+       font-size="32"
+       transform="translate(1578.71 1429)"
+       id="text535">𝑅𝑄<tspan
+   font-size="23"
+   x="40.9867"
+   y="6"
+   id="tspan529">𝑝𝑎𝑟𝑎𝑐𝑒𝑡𝑎𝑚𝑜𝑙</tspan><tspan
+   x="201.667"
+   y="0"
+   id="tspan531">&gt;</tspan><tspan
+   x="234.553"
+   y="0"
+   id="tspan533">1</tspan></text>
   </g>
 </svg>

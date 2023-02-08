@@ -51,6 +51,12 @@ figure03_lm_graphs <- ggplot(data = Sales_Projections_Records %>% filter(Scenari
     scale_x_continuous(breaks = c(0, 10, 20, 30, 40, 50)) +
     facet_wrap(facets = vars(API_Name), scales = "free") +
     labs(x = "Years After 2000", y = "Total Sold (kg)") +
-    theme_bw()
+    theme_bw() +
+    theme(legend.position = "bottom", 
+          legend.box = "vertical", 
+          legend.margin = margin(),
+          legend.text = element_text(size = 11)) +
+    guides(fill = guide_legend(nrow = 2, byrow = TRUE),
+           shape = guide_legend(nrow = 2, byrow = TRUE))
 
 figure03_lm_graphs

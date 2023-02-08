@@ -14,10 +14,12 @@ threshold_bars_100 <- PGT_n_data %>%
     scale_x_continuous(breaks = c(1:6)) +
     scale_y_continuous(limits = c(0, 1)) +
     facet_grid(cols = vars(scenario_number), labeller = scenario_facet_labeller) +
-    labs(title = "(a) Probability of at least one RQ > 100 with Number of APIs", 
+    labs(title = "(b) Probability of at least one RQ > 100 with Number of APIs", 
          x = "Number of APIs", 
          y = "P(RQ > 100)") +
-    theme_bw()
+    theme_bw() +
+    theme(panel.grid.major.x = element_blank(),
+          panel.grid.minor.x = element_blank())
 
 threshold_bars_500 <- PGT_n_data %>% 
     filter(PGT_Threshold == 500) %>% 
@@ -26,10 +28,12 @@ threshold_bars_500 <- PGT_n_data %>%
     scale_x_continuous(breaks = c(1:6)) +
     scale_y_continuous(limits = c(0, 1)) +
     facet_grid(cols = vars(scenario_number), labeller = scenario_facet_labeller) +
-    labs(title = "(b) Probability of at least one RQ > 500 with Number of APIs", 
+    labs(title = "(c) Probability of at least one RQ > 500 with Number of APIs", 
          x = "Number of APIs", 
          y = "P(RQ > 500)") +
-    theme_bw()
+    theme_bw() +
+    theme(panel.grid.major.x = element_blank(),
+      panel.grid.minor.x = element_blank())
 
 sum_RQ_bars <- Hugin_Data_Output_Tall_Labelled %>% 
     filter(scenario_number %in% c(1:3), Risk_Type == "API_RQ_FW", PGT_Threshold == 100) %>% 
@@ -51,10 +55,12 @@ sum_RQ_bars <- Hugin_Data_Output_Tall_Labelled %>%
     geom_col(fill = "#ffc000") +
     scale_x_continuous(breaks = c(1:6)) +
     facet_grid(cols = vars(scenario_number), labeller = scenario_facet_labeller) +
-    labs(title = "(c) Sum of Mean RQs", 
+    labs(title = "(a) Sum of Mean RQs", 
          x = "Number of APIs", 
          y = "Σ Mean RQs") +
-    theme_bw()
+    theme_bw() +
+    theme(panel.grid.major.x = element_blank(),
+          panel.grid.minor.x = element_blank())
 
 combined_join_comparison_bars <- plot_grid(sum_RQ_bars,
                                            threshold_bars_100, 
