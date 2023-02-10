@@ -25,17 +25,9 @@ library(tidyverse)
 library(splmaps)
 library(readxl)
 library(glue)
-
-# Leaflet stuff
-library(splmaps)
 library(rgdal)
 options("rgdal_show_exportToProj4_warnings"="none")
 library(sf)
-library(leaflet)
-library(shiny)
-library(svglite)
-library(scatterpie)
-library(scico)
 library(cowplot)
 
 `%notin%` <- negate(`%in%`)
@@ -62,9 +54,6 @@ API_sales_weights_1999_2018 <- API_sales_weights_1999_2018 %>%
 # API PNECs from various sources
 source(file = "src/data_importers/API_PNEC_import.R")
 
-# # Norwegian and English classifications of WWT technologies
-# source(file = "src/data_importers/WWT_class_import.R")
-
 # van Dijk et al.'s unpublished pharmaceutical removal rates dataset
 source(file = "src/data_importers/WWT_removal_import.R")
 # match names using InChIKeys and filter results
@@ -79,11 +68,6 @@ API_removal_rates <- API_removal_rates %>%
 
 
 # 3. Methods
-
-```{r data_processing_geographic}
-# Summarise share of total population by county (2020)
-source(file = "src/data_processing/pop_share_county.R")
-```
 
 Population discretisation was manually performed in Hugin, rounding population (in millions) up to the 
 next highest 0.5. This is replicated here so we can check our choices of LM parameters.
@@ -108,8 +92,6 @@ Norway_county_graphic
 ggsave(filename = "output/images/ready/figure02_counties.png", device = agg_png,
        width = 30, height = 20, units = "cm", res = 300,
        scaling = 1.3) 
-
-
 
 ```
 
