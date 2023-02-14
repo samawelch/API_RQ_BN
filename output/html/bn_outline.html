@@ -1,0 +1,1730 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><title>Network Documentation - class_master</title></head>
+<body>
+<Table width=100% bgcolor=#aaaaee><tr><td>
+<H1><a name=Class-class_master>class_master</a></H1>
+</td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+No description<p>
+
+<p>
+The model is depicted below:<p>
+<image SRC="test_images/class_master.png" BORDER="0" ALT="class_master"USEMAP=#class_master_image_map><p>
+<MAP NAME="class_master_image_map"> <AREA COORDS="1062,795,1172,860," href="#COM.hugin.HAPI.Class@500b6f38-PGT_Threshold" ALT="RQ Threshold">
+ <AREA COORDS="1193,627,1304,693," href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_6" ALT="P(6 RQs >Threshold)">
+ <AREA COORDS="1092,661,1202,726," href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_5" ALT="P(5 RQs >Threshold)">
+ <AREA COORDS="1006,701,1116,766," href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_4" ALT="P(4 RQs >Threshold)">
+ <AREA COORDS="918,744,1028,809," href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_3" ALT="P(3 RQs >Threshold)">
+ <AREA COORDS="827,782,937,847," href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_2" ALT="P(2 RQs >Threshold)">
+ <AREA COORDS="719,819,829,884," href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_1" ALT="P(1 RQ  >Threshold) ">
+ <AREA COORDS="1186,517,1297,582," href="#COM.hugin.HAPI.Class@500b6f38-RQ_FW_AllAPI" ALT="Sum RQ All APIs">
+ <AREA COORDS="878,633,988,698," href="#COM.hugin.HAPI.Class@500b6f38-RQ_FW_Painkillers" ALT="Sum RQ Painkillers">
+ <AREA COORDS="232,752,348,821," href="#COM.hugin.HAPI.Class@500b6f38-API_heavy_ibuprofen" ALT="API (heavy) ibuprofen">
+ <AREA COORDS="232,809,348,878," href="#COM.hugin.HAPI.Class@500b6f38-API_heavy_paracetamol" ALT="API (heavy) paracetamol">
+ <AREA COORDS="565,819,676,884," href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_paracetamol" ALT="RQ paracetamol (freshwater)">
+ <AREA COORDS="563,761,673,826," href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ibuprofen" ALT="RQ ibuprofen (freshwater)">
+ <AREA COORDS="561,702,671,767," href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_diclofenac" ALT="RQ diclofenac (freshwater)">
+ <AREA COORDS="232,695,348,764," href="#COM.hugin.HAPI.Class@500b6f38-API_medium_diclofenac" ALT="API (medium) diclofenac">
+ <AREA COORDS="563,643,673,708," href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ciprofloxacin" ALT="RQ ciprofloxacin (freshwater)">
+ <AREA COORDS="232,637,348,706," href="#COM.hugin.HAPI.Class@500b6f38-API_medium_ciprofloxacin" ALT="API (medium) ciprofloxacin">
+ <AREA COORDS="404,695,520,764," href="#COM.hugin.HAPI.Class@500b6f38-class_API_medium_new_diclofenac" ALT="Diclofenac">
+ <AREA COORDS="404,637,520,706," href="#COM.hugin.HAPI.Class@500b6f38-class_API_medium_new_ciprofloxacin" ALT="Ciprofloxacin">
+ <AREA COORDS="404,752,520,821," href="#COM.hugin.HAPI.Class@500b6f38-class_API_heavy_new_ibuprofen" ALT="Ibuprofen">
+ <AREA COORDS="404,809,520,878," href="#COM.hugin.HAPI.Class@500b6f38-class_API_heavy_new_paracetamol" ALT="Paracetamol">
+ <AREA COORDS="347,8,463,73," href="#COM.hugin.HAPI.Class@500b6f38-API_years_after_2000" ALT="Years after 2000">
+ <AREA COORDS="880,526,991,591," href="#COM.hugin.HAPI.Class@500b6f38-RQ_FW_Estrogens" ALT="Sum RQ Estrogens">
+ <AREA COORDS="232,580,348,649," href="#COM.hugin.HAPI.Class@500b6f38-API_light_estradiol" ALT="API (light) estradiol">
+ <AREA COORDS="561,583,671,648," href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_estradiol" ALT="RQ estradiol (freshwater)">
+ <AREA COORDS="404,580,520,649," href="#COM.hugin.HAPI.Class@500b6f38-class_API_light_new_2" ALT="Estradiol ">
+ <AREA COORDS="232,522,348,591," href="#COM.hugin.HAPI.Class@500b6f38-API_light_ethinylestradiol" ALT="API (light) ethinylestradiol">
+ <AREA COORDS="175,178,291,247," href="#COM.hugin.HAPI.Class@500b6f38-county" ALT="County">
+ <AREA COORDS="558,523,669,588," href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ethinylestradiol" ALT="RQ ethinylestradiol (freshwater)">
+ <AREA COORDS="404,522,520,591," href="#COM.hugin.HAPI.Class@500b6f38-class_API_light_new_1" ALT="Ethinylestradiol">
+ <AREA COORDS="691,236,808,305," href="#COM.hugin.HAPI.Class@500b6f38-county_dilution_2020_GL" ALT="Water Consumption in 2020 (GL)">
+ <AREA COORDS="175,6,291,75," href="#COM.hugin.HAPI.Class@500b6f38-year_and_growth" ALT="Year & Growth Scenario">
+ <AREA COORDS="175,350,291,419," href="#COM.hugin.HAPI.Class@500b6f38-wwt_scenario" ALT="Wastewater Treatment Scenario">
+ <AREA COORDS="519,121,636,190," href="#COM.hugin.HAPI.Class@500b6f38-county_population_mil" ALT="County Population (mil)">
+ <AREA COORDS="863,350,980,419," href="#COM.hugin.HAPI.Class@500b6f38-wwt_removal_rate" ALT="WWT Removal Rate (%)">
+ <AREA COORDS="2,180,118,249," href="#COM.hugin.HAPI.Class@500b6f38-scenario_number" ALT="Scenario Number">
+ </MAP><table bgcolor=#ccccee width=100%><tr><td><H2><a name=Groups>Groups</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+The nodes can be assigned to the following groups:
+<TABLE>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#ffc0ff" WIDTH=10></TD><TD>API_Light</TD></TR>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#c0c0ff" WIDTH=10></TD><TD>API_med</TD></TR>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#80c0ff" WIDTH=10></TD><TD>API_heavy</TD></TR>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#ffc000" WIDTH=10></TD><TD>sum_risk</TD></TR>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#ffc080" WIDTH=10></TD><TD>joint_risk</TD></TR>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#80ff80" WIDTH=10></TD><TD>scenario</TD></TR>
+
+</TABLE>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-scenario>scenario</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to scenario:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-county">County</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-county_population_mil">County Population (mil)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-scenario_number">Scenario Number</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-wwt_removal_rate">WWT Removal Rate (%)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-wwt_scenario">Wastewater Treatment Scenario</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-county_dilution_2020_GL">Water Consumption in 2020 (GL)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-year_and_growth">Year & Growth Scenario</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_years_after_2000">Years after 2000</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-joint_risk>joint_risk</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to joint_risk:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_1">P(1 RQ  >Threshold) </a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_2">P(2 RQs >Threshold)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_3">P(3 RQs >Threshold)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_4">P(4 RQs >Threshold)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_5">P(5 RQs >Threshold)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_6">P(6 RQs >Threshold)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PGT_Threshold">RQ Threshold</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-sum_risk>sum_risk</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to sum_risk:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-RQ_FW_AllAPI">Sum RQ All APIs</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-RQ_FW_Estrogens">Sum RQ Estrogens</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-RQ_FW_Painkillers">Sum RQ Painkillers</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-API_heavy>API_heavy</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to API_heavy:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_heavy_ibuprofen">API (heavy) ibuprofen</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_heavy_paracetamol">API (heavy) paracetamol</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-class_API_heavy_new_ibuprofen">Ibuprofen</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-class_API_heavy_new_paracetamol">Paracetamol</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ibuprofen">RQ ibuprofen (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_paracetamol">RQ paracetamol (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-API_med>API_med</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to API_med:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_medium_ciprofloxacin">API (medium) ciprofloxacin</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_medium_diclofenac">API (medium) diclofenac</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-class_API_medium_new_ciprofloxacin">Ciprofloxacin</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-class_API_medium_new_diclofenac">Diclofenac</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ciprofloxacin">RQ ciprofloxacin (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_diclofenac">RQ diclofenac (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-API_Light>API_Light</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to API_Light:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_light_estradiol">API (light) estradiol</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-class_API_light_new_2">Estradiol </a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_light_ethinylestradiol">API (light) ethinylestradiol</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-class_API_light_new_1">Ethinylestradiol</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_estradiol">RQ estradiol (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ethinylestradiol">RQ ethinylestradiol (freshwater)</a>
+</UL>
+</td></tr></table>
+<table bgcolor=#ccccee width=100%><tr><td><H2><a name=class_master-Nodes>Nodes</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-county>County</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county</it></td></tr>
+<tr><td>Label</td><td>= County</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>Viken (Urban)</td><td>: No description</td></tr>
+<tr><td>Trøndelag (Semi-Urban)</td><td>: No description</td></tr>
+<tr><td>Troms & Finnmark (Rural)</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-scenario_number">Scenario Number</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-county_population_mil>County Population (mil)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county_population_mil</it></td></tr>
+<tr><td>Label</td><td>= County
+Population
+(mil)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.1 - 0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3 - 0.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.5 - 0.7</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.7 - 0.9</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.9 - 1.1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.1 - 1.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.3 - 1.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.5 - 1.7</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-year_and_growth">Year & Growth Scenario</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-county">County</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-scenario_number>Scenario Number</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>scenario_number</it></td></tr>
+<tr><td>Label</td><td>= Scenario
+Number</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>1</td><td><td></td><td>: No description</td></tr>
+<tr><td>2</td><td><td></td><td>: No description</td></tr>
+<tr><td>3</td><td><td></td><td>: No description</td></tr>
+<tr><td>4</td><td><td></td><td>: No description</td></tr>
+<tr><td>5</td><td><td></td><td>: No description</td></tr>
+<tr><td>6</td><td><td></td><td>: No description</td></tr>
+<tr><td>7</td><td><td></td><td>: No description</td></tr>
+<tr><td>8</td><td><td></td><td>: No description</td></tr>
+<tr><td>9</td><td><td></td><td>: No description</td></tr>
+<tr><td>10</td><td><td></td><td>: No description</td></tr>
+<tr><td>11</td><td><td></td><td>: No description</td></tr>
+<tr><td>12</td><td><td></td><td>: No description</td></tr>
+<tr><td>13</td><td><td></td><td>: No description</td></tr>
+<tr><td>14</td><td><td></td><td>: No description</td></tr>
+<tr><td>15</td><td><td></td><td>: No description</td></tr>
+<tr><td>16</td><td><td></td><td>: No description</td></tr>
+<tr><td>17</td><td><td></td><td>: No description</td></tr>
+<tr><td>18</td><td><td></td><td>: No description</td></tr>
+<tr><td>19</td><td><td></td><td>: No description</td></tr>
+<tr><td>20</td><td><td></td><td>: No description</td></tr>
+<tr><td>21</td><td><td></td><td>: No description</td></tr>
+<tr><td>22</td><td><td></td><td>: No description</td></tr>
+<tr><td>23</td><td><td></td><td>: No description</td></tr>
+<tr><td>24</td><td><td></td><td>: No description</td></tr>
+<tr><td>25</td><td><td></td><td>: No description</td></tr>
+<tr><td>26</td><td><td></td><td>: No description</td></tr>
+<tr><td>27</td><td><td></td><td>: No description</td></tr>
+<tr><td>28</td><td><td></td><td>: No description</td></tr>
+<tr><td>29</td><td><td></td><td>: No description</td></tr>
+<tr><td>30</td><td><td></td><td>: No description</td></tr>
+<tr><td>31</td><td><td></td><td>: No description</td></tr>
+<tr><td>32</td><td><td></td><td>: No description</td></tr>
+<tr><td>33</td><td><td></td><td>: No description</td></tr>
+<tr><td>34</td><td><td></td><td>: No description</td></tr>
+<tr><td>35</td><td><td></td><td>: No description</td></tr>
+<tr><td>36</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-wwt_removal_rate>WWT Removal Rate (%)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>wwt_removal_rate</it></td></tr>
+<tr><td>Label</td><td>= WWT
+Removal Rate
+(%)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.15</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.65</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.7</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.85</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-county">County</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-wwt_scenario">Wastewater Treatment Scenario</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-wwt_scenario>Wastewater Treatment Scenario</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>wwt_scenario</it></td></tr>
+<tr><td>Label</td><td>= Wastewater
+Treatment
+Scenario</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>Current</td><td>: No description</td></tr>
+<tr><td>Secondary or Better</td><td>: No description</td></tr>
+<tr><td>Full Tertiary Upgrade</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-scenario_number">Scenario Number</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-county_dilution_2020_GL>Water Consumption in 2020 (GL)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county_dilution_2020_GL</it></td></tr>
+<tr><td>Label</td><td>= Water
+Consumption
+in 2020 (GL)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>10 - 20</td><td><td></td><td>: No description</td></tr>
+<tr><td>20 - 30</td><td><td></td><td>: No description</td></tr>
+<tr><td>30 - 40</td><td><td></td><td>: No description</td></tr>
+<tr><td>40 - 50</td><td><td></td><td>: No description</td></tr>
+<tr><td>50 - 60</td><td><td></td><td>: No description</td></tr>
+<tr><td>60 - 70</td><td><td></td><td>: No description</td></tr>
+<tr><td>70 - 80</td><td><td></td><td>: No description</td></tr>
+<tr><td>80 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-county">County</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-year_and_growth>Year & Growth Scenario</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>year_and_growth</it></td></tr>
+<tr><td>Label</td><td>= Year &
+Growth
+Scenario</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>2020 & zero</td><td>: No description</td></tr>
+<tr><td>2050 & low (x1)</td><td>: No description</td></tr>
+<tr><td>2050 & main (x1.12)</td><td>: No description</td></tr>
+<tr><td>2050 & high (x1.24)</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-scenario_number">Scenario Number</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_years_after_2000>Years after 2000</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_years_after_2000</it></td></tr>
+<tr><td>Label</td><td>= Years after
+2000</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>20</td><td><td></td><td>: No description</td></tr>
+<tr><td>50</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-year_and_growth">Year & Growth Scenario</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_1>P(1 RQ  >Threshold) </a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>PRQ_GT_n_1</it></td></tr>
+<tr><td>Label</td><td>= P(1 RQ 
+>Threshold) </td></tr>
+<tr><td>Type</td><td>= Discrete Boolean Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>false</td><td>: No description</td></tr>
+<tr><td>true</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PGT_Threshold">RQ Threshold</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_paracetamol">RQ paracetamol (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_2>P(2 RQs >Threshold)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>PRQ_GT_n_2</it></td></tr>
+<tr><td>Label</td><td>= P(2 RQs
+>Threshold)</td></tr>
+<tr><td>Type</td><td>= Discrete Boolean Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>false</td><td>: No description</td></tr>
+<tr><td>true</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PGT_Threshold">RQ Threshold</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ibuprofen">RQ ibuprofen (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_1">P(1 RQ  >Threshold) </a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_3>P(3 RQs >Threshold)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>PRQ_GT_n_3</it></td></tr>
+<tr><td>Label</td><td>= P(3 RQs
+>Threshold)</td></tr>
+<tr><td>Type</td><td>= Discrete Boolean Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>false</td><td>: No description</td></tr>
+<tr><td>true</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PGT_Threshold">RQ Threshold</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_2">P(2 RQs >Threshold)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_diclofenac">RQ diclofenac (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_4>P(4 RQs >Threshold)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>PRQ_GT_n_4</it></td></tr>
+<tr><td>Label</td><td>= P(4 RQs
+>Threshold)</td></tr>
+<tr><td>Type</td><td>= Discrete Boolean Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>false</td><td>: No description</td></tr>
+<tr><td>true</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PGT_Threshold">RQ Threshold</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ciprofloxacin">RQ ciprofloxacin (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_3">P(3 RQs >Threshold)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_5>P(5 RQs >Threshold)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>PRQ_GT_n_5</it></td></tr>
+<tr><td>Label</td><td>= P(5 RQs
+>Threshold)</td></tr>
+<tr><td>Type</td><td>= Discrete Boolean Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>false</td><td>: No description</td></tr>
+<tr><td>true</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PGT_Threshold">RQ Threshold</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_estradiol">RQ estradiol (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_4">P(4 RQs >Threshold)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_6>P(6 RQs >Threshold)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>PRQ_GT_n_6</it></td></tr>
+<tr><td>Label</td><td>= P(6 RQs
+>Threshold)</td></tr>
+<tr><td>Type</td><td>= Discrete Boolean Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>false</td><td>: No description</td></tr>
+<tr><td>true</td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PGT_Threshold">RQ Threshold</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ethinylestradiol">RQ ethinylestradiol (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-PRQ_GT_n_5">P(5 RQs >Threshold)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-PGT_Threshold>RQ Threshold</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>PGT_Threshold</it></td></tr>
+<tr><td>Label</td><td>= RQ Threshold</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>100</td><td><td></td><td>: No description</td></tr>
+<tr><td>500</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-RQ_FW_AllAPI>Sum RQ All APIs</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>RQ_FW_AllAPI</it></td></tr>
+<tr><td>Label</td><td>= Sum RQ
+All APIs</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ciprofloxacin">RQ ciprofloxacin (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-RQ_FW_Painkillers">Sum RQ Painkillers</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-RQ_FW_Estrogens">Sum RQ Estrogens</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-RQ_FW_Estrogens>Sum RQ Estrogens</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>RQ_FW_Estrogens</it></td></tr>
+<tr><td>Label</td><td>= Sum RQ
+Estrogens</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_estradiol">RQ estradiol (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ethinylestradiol">RQ ethinylestradiol (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-RQ_FW_Painkillers>Sum RQ Painkillers</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>RQ_FW_Painkillers</it></td></tr>
+<tr><td>Label</td><td>= Sum RQ
+Painkillers</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_paracetamol">RQ paracetamol (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ibuprofen">RQ ibuprofen (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_diclofenac">RQ diclofenac (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_heavy_ibuprofen>API (heavy) ibuprofen</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_heavy_ibuprofen</it></td></tr>
+<tr><td>Label</td><td>= API (heavy)
+ibuprofen</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>paracetamol</td><td>: No description</td></tr>
+<tr><td>ibuprofen</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_heavy_paracetamol>API (heavy) paracetamol</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_heavy_paracetamol</it></td></tr>
+<tr><td>Label</td><td>= API (heavy)
+paracetamol</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>paracetamol</td><td>: No description</td></tr>
+<tr><td>ibuprofen</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-class_API_heavy_new_ibuprofen>Ibuprofen</a></H3></td></tr></table>
+No description<p>
+
+<a href="#Class-class_API_heavy_new"><image SRC="test_images/node-class_API_heavy_new_ibuprofen.png" BORDER="0" ALT="Ibuprofen (class_API_heavy_new_ibuprofen)"></a><p>
+<table border="0">
+<tr><td>Name</td><td> = class_API_heavy_new_ibuprofen</td></tr>
+<tr><td>Label</td><td> = Ibuprofen</td></tr>
+<tr><td>Instantiated from </td><td> <a href="#Class-class_API_heavy_new">class_API_heavy_new</a></td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-class_API_heavy_new_paracetamol>Paracetamol</a></H3></td></tr></table>
+No description<p>
+
+<a href="#Class-class_API_heavy_new"><image SRC="test_images/node-class_API_heavy_new_paracetamol.png" BORDER="0" ALT="Paracetamol (class_API_heavy_new_paracetamol)"></a><p>
+<table border="0">
+<tr><td>Name</td><td> = class_API_heavy_new_paracetamol</td></tr>
+<tr><td>Label</td><td> = Paracetamol</td></tr>
+<tr><td>Instantiated from </td><td> <a href="#Class-class_API_heavy_new">class_API_heavy_new</a></td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ibuprofen>RQ ibuprofen (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW_ibuprofen</it></td></tr>
+<tr><td>Label</td><td>= RQ
+ibuprofen
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_RQ_FW">Ibuprofen.RQ (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_paracetamol>RQ paracetamol (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW_paracetamol</it></td></tr>
+<tr><td>Label</td><td>= RQ
+paracetamol
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_RQ_FW">Paracetamol.RQ (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_medium_ciprofloxacin>API (medium) ciprofloxacin</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_medium_ciprofloxacin</it></td></tr>
+<tr><td>Label</td><td>= API (medium)
+ciprofloxacin</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>ciprofloxacin</td><td>: No description</td></tr>
+<tr><td>diclofenac</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_medium_diclofenac>API (medium) diclofenac</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_medium_diclofenac</it></td></tr>
+<tr><td>Label</td><td>= API (medium)
+diclofenac</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>ciprofloxacin</td><td>: No description</td></tr>
+<tr><td>diclofenac</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-class_API_medium_new_ciprofloxacin>Ciprofloxacin</a></H3></td></tr></table>
+No description<p>
+
+<a href="#Class-class_API_medium_new"><image SRC="test_images/node-class_API_medium_new_ciprofloxacin.png" BORDER="0" ALT="Ciprofloxacin (class_API_medium_new_ciprofloxacin)"></a><p>
+<table border="0">
+<tr><td>Name</td><td> = class_API_medium_new_ciprofloxacin</td></tr>
+<tr><td>Label</td><td> = Ciprofloxacin</td></tr>
+<tr><td>Instantiated from </td><td> <a href="#Class-class_API_medium_new">class_API_medium_new</a></td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-class_API_medium_new_diclofenac>Diclofenac</a></H3></td></tr></table>
+No description<p>
+
+<a href="#Class-class_API_medium_new"><image SRC="test_images/node-class_API_medium_new_diclofenac.png" BORDER="0" ALT="Diclofenac (class_API_medium_new_diclofenac)"></a><p>
+<table border="0">
+<tr><td>Name</td><td> = class_API_medium_new_diclofenac</td></tr>
+<tr><td>Label</td><td> = Diclofenac</td></tr>
+<tr><td>Instantiated from </td><td> <a href="#Class-class_API_medium_new">class_API_medium_new</a></td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ciprofloxacin>RQ ciprofloxacin (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW_ciprofloxacin</it></td></tr>
+<tr><td>Label</td><td>= RQ
+ciprofloxacin
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_RQ_FW">Ciprofloxacin.RQ (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_diclofenac>RQ diclofenac (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW_diclofenac</it></td></tr>
+<tr><td>Label</td><td>= RQ
+diclofenac
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_RQ_FW">Diclofenac.RQ (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_light_estradiol>API (light) estradiol</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_light_estradiol</it></td></tr>
+<tr><td>Label</td><td>= API (light)
+estradiol</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>ethinylestradiol</td><td>: No description</td></tr>
+<tr><td>estradiol</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-class_API_light_new_2>Estradiol </a></H3></td></tr></table>
+No description<p>
+
+<a href="#Class-class_API_light_new"><image SRC="test_images/node-class_API_light_new_2.png" BORDER="0" ALT="Estradiol  (class_API_light_new_2)"></a><p>
+<table border="0">
+<tr><td>Name</td><td> = class_API_light_new_2</td></tr>
+<tr><td>Label</td><td> = Estradiol
+</td></tr>
+<tr><td>Instantiated from </td><td> <a href="#Class-class_API_light_new">class_API_light_new</a></td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_light_ethinylestradiol>API (light) ethinylestradiol</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_light_ethinylestradiol</it></td></tr>
+<tr><td>Label</td><td>= API (light)
+ethinylestradiol</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>ethinylestradiol</td><td>: No description</td></tr>
+<tr><td>estradiol</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-class_API_light_new_1>Ethinylestradiol</a></H3></td></tr></table>
+No description<p>
+
+<a href="#Class-class_API_light_new"><image SRC="test_images/node-class_API_light_new_1.png" BORDER="0" ALT="Ethinylestradiol (class_API_light_new_1)"></a><p>
+<table border="0">
+<tr><td>Name</td><td> = class_API_light_new_1</td></tr>
+<tr><td>Label</td><td> = Ethinylestradiol</td></tr>
+<tr><td>Instantiated from </td><td> <a href="#Class-class_API_light_new">class_API_light_new</a></td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_estradiol>RQ estradiol (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW_estradiol</it></td></tr>
+<tr><td>Label</td><td>= RQ
+estradiol
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_RQ_FW">Estradiol .RQ (freshwater)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@500b6f38-API_RQ_FW_ethinylestradiol>RQ ethinylestradiol (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW_ethinylestradiol</it></td></tr>
+<tr><td>Label</td><td>= RQ
+ethinylestradiol
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_RQ_FW">Ethinylestradiol.RQ (freshwater)</a>
+</UL>
+</td></tr></table>
+</td></tr></table>
+<table bgcolor=#ccccee width=100%><tr><td><H2><a name=class_master-Textlabels>Textlabels</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+</td></tr></table>
+<Table width=100% bgcolor=#aaaaee><tr><td>
+<H1><a name=Class-class_API_heavy_new>class_API_heavy_new</a></H1>
+</td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+No description<p>
+
+<p>
+The model is depicted below:<p>
+<image SRC="test_images/class_API_heavy_new.png" BORDER="0" ALT="class_API_heavy_new"USEMAP=#class_API_heavy_new_image_map><p>
+<MAP NAME="class_API_heavy_new_image_map"> <AREA COORDS="245,8,350,71," href="#COM.hugin.HAPI.Class@572e09a6-API_years_after_2000" ALT="Years after  2000">
+ <AREA COORDS="404,8,509,71," href="#COM.hugin.HAPI.Class@572e09a6-county_population_mil" ALT="County Population">
+ <AREA COORDS="561,8,666,71," href="#COM.hugin.HAPI.Class@572e09a6-county_dilution_2020_GL" ALT="Water Consumption in 2020 (GL)">
+ <AREA COORDS="721,8,826,71," href="#COM.hugin.HAPI.Class@572e09a6-wwt_removal_rate" ALT="WWT Removal Rate (%)">
+ <AREA COORDS="167,325,267,387," href="#COM.hugin.HAPI.Class@572e09a6-API_PNEC_gL" ALT="API PNEC (g/L)">
+ <AREA COORDS="7,166,112,228," href="#COM.hugin.HAPI.Class@572e09a6-API_heavy" ALT="API (heavy)">
+ <AREA COORDS="957,169,1061,228," href="#COM.hugin.HAPI.Class@572e09a6-API_RQ_FW" ALT="RQ (freshwater)">
+ <AREA COORDS="800,169,903,228," href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_SW_gL" ALT="PEC Surface Water (g/L) ">
+ <AREA COORDS="642,166,745,228," href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_eff_gL" ALT="PEC effluent (g/L)">
+ <AREA COORDS="483,167,586,230," href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_inf_gL" ALT="PEC influent (g/L)">
+ <AREA COORDS="166,168,271,229," href="#COM.hugin.HAPI.Class@572e09a6-API_lm_intercept_kg" ALT="API Intercept (kg)">
+ <AREA COORDS="165,246,270,307," href="#COM.hugin.HAPI.Class@572e09a6-API_lm_coef_kg_per_mpop_per_year" ALT="API kg per mpop per year">
+ <AREA COORDS="325,170,425,227," href="#COM.hugin.HAPI.Class@572e09a6-API_sales_weight_kg" ALT="API Sales Weight (kg)">
+ </MAP><table bgcolor=#ccccee width=100%><tr><td><H2><a name=Groups>Groups</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+The nodes can be assigned to the following groups:
+<TABLE>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#80c0ff" WIDTH=10></TD><TD>heavy_API</TD></TR>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#80ff80" WIDTH=10></TD><TD>scenario_input</TD></TR>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#ffc000" WIDTH=10></TD><TD>risk</TD></TR>
+
+</TABLE>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-scenario_input>scenario_input</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to scenario_input:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-county_population_mil">County Population</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-wwt_removal_rate">WWT Removal Rate (%)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-county_dilution_2020_GL">Water Consumption in 2020 (GL)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_years_after_2000">Years after  2000</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-heavy_API>heavy_API</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to heavy_API:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_heavy">API (heavy)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_lm_intercept_kg">API Intercept (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_PNEC_gL">API PNEC (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_sales_weight_kg">API Sales Weight (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_lm_coef_kg_per_mpop_per_year">API kg per mpop per year</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_SW_gL">PEC Surface Water (g/L) </a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_eff_gL">PEC effluent (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_inf_gL">PEC influent (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_RQ_FW">RQ (freshwater)</a>
+</UL>
+</td></tr></table>
+<table bgcolor=#ccccee width=100%><tr><td><H2><a name=class_API_heavy_new-Nodes>Nodes</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-county_population_mil>County Population</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county_population_mil</it></td></tr>
+<tr><td>Label</td><td>= County
+Population</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.1 - 0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3 - 0.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.5 - 0.7</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.7 - 0.9</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.9 - 1.1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.1 - 1.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.3 - 1.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.5 - 1.7</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-wwt_removal_rate>WWT Removal Rate (%)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>wwt_removal_rate</it></td></tr>
+<tr><td>Label</td><td>= WWT
+Removal Rate
+(%)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.15</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.65</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.7</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.85</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-county_dilution_2020_GL>Water Consumption in 2020 (GL)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county_dilution_2020_GL</it></td></tr>
+<tr><td>Label</td><td>= Water
+Consumption
+in 2020 (GL)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>10 - 20</td><td><td></td><td>: No description</td></tr>
+<tr><td>20 - 30</td><td><td></td><td>: No description</td></tr>
+<tr><td>30 - 40</td><td><td></td><td>: No description</td></tr>
+<tr><td>40 - 50</td><td><td></td><td>: No description</td></tr>
+<tr><td>50 - 60</td><td><td></td><td>: No description</td></tr>
+<tr><td>60 - 70</td><td><td></td><td>: No description</td></tr>
+<tr><td>70 - 80</td><td><td></td><td>: No description</td></tr>
+<tr><td>80 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_years_after_2000>Years after  2000</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_years_after_2000</it></td></tr>
+<tr><td>Label</td><td>= Years after 
+2000</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>20</td><td><td></td><td>: No description</td></tr>
+<tr><td>50</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_heavy>API (heavy)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_heavy</it></td></tr>
+<tr><td>Label</td><td>= API
+(heavy)</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>paracetamol</td><td>: No description</td></tr>
+<tr><td>ibuprofen</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_lm_intercept_kg>API Intercept (kg)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_lm_intercept_kg</it></td></tr>
+<tr><td>Label</td><td>= API Intercept
+(kg)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>3844.842</td><td><td></td><td>: No description</td></tr>
+<tr><td>21889.56</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_heavy">API (heavy)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_PNEC_gL>API PNEC (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PNEC_gL</it></td></tr>
+<tr><td>Label</td><td>= API PNEC
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>1.0E-6</td><td><td></td><td>: No description</td></tr>
+<tr><td>9.2E-6</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_heavy">API (heavy)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_sales_weight_kg>API Sales Weight (kg)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_sales_weight_kg</it></td></tr>
+<tr><td>Label</td><td>= API Sales
+Weight (kg)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 3000</td><td><td></td><td>: No description</td></tr>
+<tr><td>3000 - 30000</td><td><td></td><td>: No description</td></tr>
+<tr><td>30000 - 100000</td><td><td></td><td>: No description</td></tr>
+<tr><td>100000 - 300000</td><td><td></td><td>: No description</td></tr>
+<tr><td>300000 - 1000000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_years_after_2000">Years after  2000</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-county_population_mil">County Population</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_lm_intercept_kg">API Intercept (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_lm_coef_kg_per_mpop_per_year">API kg per mpop per year</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_lm_coef_kg_per_mpop_per_year>API kg per mpop per year</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_lm_coef_kg_per_mpop_per_year</it></td></tr>
+<tr><td>Label</td><td>= API kg per
+mpop per year</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>273.57959</td><td><td></td><td>: No description</td></tr>
+<tr><td>1617.1222</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_heavy">API (heavy)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_PEC_SW_gL>PEC Surface Water (g/L) </a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_SW_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC Surface
+Water (g/L) </td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-9</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-9 - 1.0E-7</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-7 - 1.0E-6</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-6 - 1.0E-5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-5 - 0.0001</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.0001 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_eff_gL">PEC effluent (g/L)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_PEC_eff_gL>PEC effluent (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_eff_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC effluent
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-8</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-8 - 1.0E-7</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-7 - 1.0E-6</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-6 - 1.0E-5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-5 - 0.0001</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.0001 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-wwt_removal_rate">WWT Removal Rate (%)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_inf_gL">PEC influent (g/L)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_PEC_inf_gL>PEC influent (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_inf_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC influent
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-8</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-8 - 1.0E-7</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-7 - 1.0E-6</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-6 - 1.0E-5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-5 - 0.0001</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.0001 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-county_dilution_2020_GL">Water Consumption in 2020 (GL)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_sales_weight_kg">API Sales Weight (kg)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@572e09a6-API_RQ_FW>RQ (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW</it></td></tr>
+<tr><td>Label</td><td>= RQ
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_PNEC_gL">API PNEC (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@572e09a6-API_PEC_SW_gL">PEC Surface Water (g/L) </a>
+</UL>
+</td></tr></table>
+</td></tr></table>
+<table bgcolor=#ccccee width=100%><tr><td><H2><a name=class_API_heavy_new-Textlabels>Textlabels</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<Table width=100% bgcolor=#aaaaee><tr><td>
+<H1><a name=Class-class_API_medium_new>class_API_medium_new</a></H1>
+</td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+No description<p>
+
+<p>
+The model is depicted below:<p>
+<image SRC="test_images/class_API_medium_new.png" BORDER="0" ALT="class_API_medium_new"USEMAP=#class_API_medium_new_image_map><p>
+<MAP NAME="class_API_medium_new_image_map"> <AREA COORDS="371,130,463,184," href="#COM.hugin.HAPI.Class@66cb4aa5-API_years_after_2000" ALT="Years after  2000">
+ <AREA COORDS="371,250,463,305," href="#COM.hugin.HAPI.Class@66cb4aa5-county_population_mil" ALT="County Population">
+ <AREA COORDS="371,331,463,385," href="#COM.hugin.HAPI.Class@66cb4aa5-county_dilution_2020_GL" ALT="Water Consumption in 2020 (GL)">
+ <AREA COORDS="371,413,463,467," href="#COM.hugin.HAPI.Class@66cb4aa5-wwt_removal_rate" ALT="WWT Removal Rate (%)">
+ <AREA COORDS="12,491,102,545," href="#COM.hugin.HAPI.Class@66cb4aa5-API_PNEC_gL" ALT="API PNEC (g/L)">
+ <AREA COORDS="208,11,300,65," href="#COM.hugin.HAPI.Class@66cb4aa5-API_medium" ALT="API (medium)">
+ <AREA COORDS="211,575,301,626," href="#COM.hugin.HAPI.Class@66cb4aa5-API_RQ_FW" ALT="RQ (freshwater)">
+ <AREA COORDS="210,493,300,544," href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_SW_gL" ALT="PEC Surface Water (g/L) ">
+ <AREA COORDS="211,415,300,469," href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_eff_gL" ALT="PEC effluent (g/L)">
+ <AREA COORDS="211,332,300,386," href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_inf_gL" ALT="PEC influent (g/L)">
+ <AREA COORDS="209,132,300,186," href="#COM.hugin.HAPI.Class@66cb4aa5-API_lm_intercept_kg" ALT="API Intercept (kg)">
+ <AREA COORDS="89,131,180,185," href="#COM.hugin.HAPI.Class@66cb4aa5-API_lm_coef_kg_per_mpop_per_year" ALT="API kg per mpop per year">
+ <AREA COORDS="211,253,301,304," href="#COM.hugin.HAPI.Class@66cb4aa5-API_sales_weight_kg" ALT="API Sales Weight (kg)">
+ </MAP><table bgcolor=#ccccee width=100%><tr><td><H2><a name=Groups>Groups</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+The nodes can be assigned to the following groups:
+<TABLE>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#c0c0ff" WIDTH=10></TD><TD>Medium_API</TD></TR>
+
+</TABLE>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-Medium_API>Medium_API</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to Medium_API:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_medium">API (medium)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_lm_intercept_kg">API Intercept (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_PNEC_gL">API PNEC (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_lm_coef_kg_per_mpop_per_year">API kg per mpop per year</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_years_after_2000">Years after  2000</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-No Group>No Group</a></H3></td></tr></table>
+The following nodes are not part of any group:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_sales_weight_kg">API Sales Weight (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-county_population_mil">County Population</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_SW_gL">PEC Surface Water (g/L) </a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_eff_gL">PEC effluent (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_inf_gL">PEC influent (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_RQ_FW">RQ (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-wwt_removal_rate">WWT Removal Rate (%)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-county_dilution_2020_GL">Water Consumption in 2020 (GL)</a>
+</UL>
+</td></tr></table>
+<table bgcolor=#ccccee width=100%><tr><td><H2><a name=class_API_medium_new-Nodes>Nodes</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_medium>API (medium)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_medium</it></td></tr>
+<tr><td>Label</td><td>= API
+(medium)</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>ciprofloxacin</td><td>: No description</td></tr>
+<tr><td>diclofenac</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_lm_intercept_kg>API Intercept (kg)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_lm_intercept_kg</it></td></tr>
+<tr><td>Label</td><td>= API Intercept
+(kg)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>67.05139</td><td><td></td><td>: No description</td></tr>
+<tr><td>216.082</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_medium">API (medium)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_PNEC_gL>API PNEC (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PNEC_gL</it></td></tr>
+<tr><td>Label</td><td>= API PNEC
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>5.0E-9</td><td><td></td><td>: No description</td></tr>
+<tr><td>5.0E-8</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_medium">API (medium)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_lm_coef_kg_per_mpop_per_year>API kg per mpop per year</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_lm_coef_kg_per_mpop_per_year</it></td></tr>
+<tr><td>Label</td><td>= API kg per
+mpop per year</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>9.0281928</td><td><td></td><td>: No description</td></tr>
+<tr><td>15.608563</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_medium">API (medium)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_years_after_2000>Years after  2000</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_years_after_2000</it></td></tr>
+<tr><td>Label</td><td>= Years after 
+2000</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>20</td><td><td></td><td>: No description</td></tr>
+<tr><td>50</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_sales_weight_kg>API Sales Weight (kg)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_sales_weight_kg</it></td></tr>
+<tr><td>Label</td><td>= API Sales
+Weight (kg)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 30</td><td><td></td><td>: No description</td></tr>
+<tr><td>30 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 300</td><td><td></td><td>: No description</td></tr>
+<tr><td>300 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 3000</td><td><td></td><td>: No description</td></tr>
+<tr><td>3000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_years_after_2000">Years after  2000</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-county_population_mil">County Population</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_lm_intercept_kg">API Intercept (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_lm_coef_kg_per_mpop_per_year">API kg per mpop per year</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-county_population_mil>County Population</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county_population_mil</it></td></tr>
+<tr><td>Label</td><td>= County
+Population</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.1 - 0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3 - 0.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.5 - 0.7</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.7 - 0.9</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.9 - 1.1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.1 - 1.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.3 - 1.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.5 - 1.7</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_PEC_SW_gL>PEC Surface Water (g/L) </a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_SW_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC Surface
+Water (g/L) </td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-9</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-9 - 1.0E-7</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-7 - 1.0E-6</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-6 - 1.0E-5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-5 - 0.0001</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.0001 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_eff_gL">PEC effluent (g/L)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_PEC_eff_gL>PEC effluent (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_eff_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC effluent
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-8</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-8 - 1.0E-7</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-7 - 1.0E-6</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-6 - 1.0E-5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-5 - 0.0001</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.0001 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-wwt_removal_rate">WWT Removal Rate (%)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_inf_gL">PEC influent (g/L)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_PEC_inf_gL>PEC influent (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_inf_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC influent
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-8</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-8 - 1.0E-7</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-7 - 1.0E-6</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-6 - 1.0E-5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-5 - 0.0001</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.0001 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-county_dilution_2020_GL">Water Consumption in 2020 (GL)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_sales_weight_kg">API Sales Weight (kg)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-API_RQ_FW>RQ (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW</it></td></tr>
+<tr><td>Label</td><td>= RQ
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_PNEC_gL">API PNEC (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@66cb4aa5-API_PEC_SW_gL">PEC Surface Water (g/L) </a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-wwt_removal_rate>WWT Removal Rate (%)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>wwt_removal_rate</it></td></tr>
+<tr><td>Label</td><td>= WWT
+Removal Rate
+(%)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.15</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.65</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.7</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.85</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@66cb4aa5-county_dilution_2020_GL>Water Consumption in 2020 (GL)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county_dilution_2020_GL</it></td></tr>
+<tr><td>Label</td><td>= Water
+Consumption
+in 2020 (GL)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>10 - 20</td><td><td></td><td>: No description</td></tr>
+<tr><td>20 - 30</td><td><td></td><td>: No description</td></tr>
+<tr><td>30 - 40</td><td><td></td><td>: No description</td></tr>
+<tr><td>40 - 50</td><td><td></td><td>: No description</td></tr>
+<tr><td>50 - 60</td><td><td></td><td>: No description</td></tr>
+<tr><td>60 - 70</td><td><td></td><td>: No description</td></tr>
+<tr><td>70 - 80</td><td><td></td><td>: No description</td></tr>
+<tr><td>80 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+<table bgcolor=#ccccee width=100%><tr><td><H2><a name=class_API_medium_new-Textlabels>Textlabels</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<Table width=100% bgcolor=#aaaaee><tr><td>
+<H1><a name=Class-class_API_light_new>class_API_light_new</a></H1>
+</td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+No description<p>
+
+<p>
+The model is depicted below:<p>
+<image SRC="test_images/class_API_light_new.png" BORDER="0" ALT="class_API_light_new"USEMAP=#class_API_light_new_image_map><p>
+<MAP NAME="class_API_light_new_image_map"> <AREA COORDS="411,460,513,519," href="#COM.hugin.HAPI.Class@35ad503a-wwt_removal_rate" ALT="WWT Removal Rate (%)">
+ <AREA COORDS="411,370,513,429," href="#COM.hugin.HAPI.Class@35ad503a-county_dilution_2020_GL" ALT="Water Consumption in 2020 (GL)">
+ <AREA COORDS="411,281,513,340," href="#COM.hugin.HAPI.Class@35ad503a-county_population_mil" ALT="County Population">
+ <AREA COORDS="9,549,107,610," href="#COM.hugin.HAPI.Class@35ad503a-API_PNEC_gL" ALT="API PNEC (g/L)">
+ <AREA COORDS="232,9,334,69," href="#COM.hugin.HAPI.Class@35ad503a-API_light" ALT="API (light)">
+ <AREA COORDS="234,640,332,698," href="#COM.hugin.HAPI.Class@35ad503a-API_RQ_FW" ALT="RQ (freshwater)">
+ <AREA COORDS="234,551,332,608," href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_SW_gL" ALT="PEC Surface Water (g/L) ">
+ <AREA COORDS="234,460,332,519," href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_eff_gL" ALT="PEC effluent (g/L)">
+ <AREA COORDS="234,370,332,429," href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_inf_gL" ALT="PEC influent (g/L)">
+ <AREA COORDS="233,145,334,206," href="#COM.hugin.HAPI.Class@35ad503a-API_lm_intercept_kg" ALT="API Intercept (kg)">
+ <AREA COORDS="97,145,198,206," href="#COM.hugin.HAPI.Class@35ad503a-API_lm_coef_kg_per_mpop_per_year" ALT="API kg per mpop per year">
+ <AREA COORDS="234,282,332,339," href="#COM.hugin.HAPI.Class@35ad503a-API_sales_weight_kg" ALT="API Sales Weight (kg)">
+ <AREA COORDS="411,145,513,205," href="#COM.hugin.HAPI.Class@35ad503a-API_years_after_2000" ALT="Years after  2000">
+ </MAP><table bgcolor=#ccccee width=100%><tr><td><H2><a name=Groups>Groups</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+The nodes can be assigned to the following groups:
+<TABLE>
+<TR><TD WIDTH=10></TD><TD BORDER="1" BGCOLOR="#ffc0ff" WIDTH=10></TD><TD>API_Light</TD></TR>
+
+</TABLE>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-API_Light>API_Light</a></H3></td></tr></table>
+No description
+<p>
+The following nodes are assigned to API_Light:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_light">API (light)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_lm_intercept_kg">API Intercept (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_PNEC_gL">API PNEC (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_sales_weight_kg">API Sales Weight (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_lm_coef_kg_per_mpop_per_year">API kg per mpop per year</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_SW_gL">PEC Surface Water (g/L) </a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_eff_gL">PEC effluent (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_inf_gL">PEC influent (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_RQ_FW">RQ (freshwater)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_years_after_2000">Years after  2000</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=group-No Group>No Group</a></H3></td></tr></table>
+The following nodes are not part of any group:
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-county_population_mil">County Population</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-wwt_removal_rate">WWT Removal Rate (%)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-county_dilution_2020_GL">Water Consumption in 2020 (GL)</a>
+</UL>
+</td></tr></table>
+<table bgcolor=#ccccee width=100%><tr><td><H2><a name=class_API_light_new-Nodes>Nodes</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_light>API (light)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_light</it></td></tr>
+<tr><td>Label</td><td>= API
+(light)</td></tr>
+<tr><td>Type</td><td>= Discrete Labelled Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>ethinylestradiol</td><td>: No description</td></tr>
+<tr><td>estradiol</td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_lm_intercept_kg>API Intercept (kg)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_lm_intercept_kg</it></td></tr>
+<tr><td>Label</td><td>= API Intercept
+(kg)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.0675</td><td><td></td><td>: No description</td></tr>
+<tr><td>4.5</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_light">API (light)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_PNEC_gL>API PNEC (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PNEC_gL</it></td></tr>
+<tr><td>Label</td><td>= API PNEC
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>1.0E-11</td><td><td></td><td>: No description</td></tr>
+<tr><td>3.5E-11</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.8E-10</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_light">API (light)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_sales_weight_kg>API Sales Weight (kg)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_sales_weight_kg</it></td></tr>
+<tr><td>Label</td><td>= API Sales
+Weight (kg)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 3</td><td><td></td><td>: No description</td></tr>
+<tr><td>3 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 30</td><td><td></td><td>: No description</td></tr>
+<tr><td>30 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-county_population_mil">County Population</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_lm_intercept_kg">API Intercept (kg)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_years_after_2000">Years after  2000</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_lm_coef_kg_per_mpop_per_year">API kg per mpop per year</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_lm_coef_kg_per_mpop_per_year>API kg per mpop per year</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_lm_coef_kg_per_mpop_per_year</it></td></tr>
+<tr><td>Label</td><td>= API kg per
+mpop per year</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>-0.0943</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.0244</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_light">API (light)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_PEC_SW_gL>PEC Surface Water (g/L) </a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_SW_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC Surface
+Water (g/L) </td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-12</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-12 - 1.0E-11</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-11 - 1.0E-10</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-10 - 1.0E-9</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-9 - 1.0E-8</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-8 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_eff_gL">PEC effluent (g/L)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_PEC_eff_gL>PEC effluent (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_eff_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC effluent
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-11</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-11 - 1.0E-10</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-10 - 1.0E-9</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-9 - 1.0E-8</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-8 - 1.0E-7</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-7 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-wwt_removal_rate">WWT Removal Rate (%)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_inf_gL">PEC influent (g/L)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_PEC_inf_gL>PEC influent (g/L)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_PEC_inf_gL</it></td></tr>
+<tr><td>Label</td><td>= PEC influent
+(g/L)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1.0E-11</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-11 - 1.0E-10</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-10 - 1.0E-9</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-9 - 1.0E-8</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-8 - 1.0E-7</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.0E-7 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-county_dilution_2020_GL">Water Consumption in 2020 (GL)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_sales_weight_kg">API Sales Weight (kg)</a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_RQ_FW>RQ (freshwater)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_RQ_FW</it></td></tr>
+<tr><td>Label</td><td>= RQ
+(freshwater)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0 - 1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1 - 10</td><td><td></td><td>: No description</td></tr>
+<tr><td>10 - 100</td><td><td></td><td>: No description</td></tr>
+<tr><td>100 - 1000</td><td><td></td><td>: No description</td></tr>
+<tr><td>1000 - 10000</td><td><td></td><td>: No description</td></tr>
+<tr><td>10000 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+<H4>Parents</H4>
+<UL>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_PNEC_gL">API PNEC (g/L)</a>
+<LI><a href="#COM.hugin.HAPI.Class@35ad503a-API_PEC_SW_gL">PEC Surface Water (g/L) </a>
+</UL>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-API_years_after_2000>Years after  2000</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>API_years_after_2000</it></td></tr>
+<tr><td>Label</td><td>= Years after 
+2000</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>20</td><td><td></td><td>: No description</td></tr>
+<tr><td>50</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-county_population_mil>County Population</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county_population_mil</it></td></tr>
+<tr><td>Label</td><td>= County
+Population</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.1 - 0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3 - 0.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.5 - 0.7</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.7 - 0.9</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.9 - 1.1</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.1 - 1.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.3 - 1.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>1.5 - 1.7</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-wwt_removal_rate>WWT Removal Rate (%)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>wwt_removal_rate</it></td></tr>
+<tr><td>Label</td><td>= WWT
+Removal Rate
+(%)</td></tr>
+<tr><td>Type</td><td>= Discrete Numbered Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>0.15</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.3</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.5</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.65</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.7</td><td><td></td><td>: No description</td></tr>
+<tr><td>0.85</td><td><td></td><td>: No description</td></tr>
+</table>
+<table bgcolor=#ddddee width=100%><tr><td><H3><a name=COM.hugin.HAPI.Class@35ad503a-county_dilution_2020_GL>Water Consumption in 2020 (GL)</a></H3></td></tr></table>
+No description<p>
+
+<table border="0">
+<tr><td>Name</td><td>= <it>county_dilution_2020_GL</it></td></tr>
+<tr><td>Label</td><td>= Water
+Consumption
+in 2020 (GL)</td></tr>
+<tr><td>Type</td><td>= Discrete Interval Node</td></tr>
+</table><H4>States</H4>
+<table border="0">
+<tr><td>10 - 20</td><td><td></td><td>: No description</td></tr>
+<tr><td>20 - 30</td><td><td></td><td>: No description</td></tr>
+<tr><td>30 - 40</td><td><td></td><td>: No description</td></tr>
+<tr><td>40 - 50</td><td><td></td><td>: No description</td></tr>
+<tr><td>50 - 60</td><td><td></td><td>: No description</td></tr>
+<tr><td>60 - 70</td><td><td></td><td>: No description</td></tr>
+<tr><td>70 - 80</td><td><td></td><td>: No description</td></tr>
+<tr><td>80 - inf</td><td><td></td><td>: No description</td></tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+<table bgcolor=#ccccee width=100%><tr><td><H2><a name=class_API_light_new-Textlabels>Textlabels</a></H2></td></tr></table>
+<table width=100%><tr><td width=3%></td><td>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+
+
+<HR>
+<center>Created on Fri Feb 10 09:39:13 CET 2023</center>
+</body><html>
