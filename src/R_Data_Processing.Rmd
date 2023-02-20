@@ -133,9 +133,6 @@ write_excel_csv(x = Hugin_Data_Output_Tall_Labelled,
 
 ```
 
-TODO: Experiment with colours more when it's a more relevant issue. 
-https://brushingupscience.com/2019/10/01/default-colormaps-are-parula-and-viridis-really-an-improvement-over-jet/
-https://www.vis4.net/palettes/#/20|d|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1
 
 # 4. Results
 

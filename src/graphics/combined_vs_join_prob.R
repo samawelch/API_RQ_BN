@@ -14,7 +14,7 @@ threshold_bars_100 <- PGT_n_data %>%
     scale_x_continuous(breaks = c(1:6)) +
     scale_y_continuous(limits = c(0, 1)) +
     facet_grid(cols = vars(scenario_number), labeller = scenario_facet_labeller) +
-    labs(title = "(b) Probability of at least one RQ > 100 with Number of APIs", 
+    labs(title = "(b) Joint Probability of RQ > 100", 
          x = "Number of APIs", 
          y = "P(RQ > 100)") +
     theme_bw() +
@@ -28,7 +28,7 @@ threshold_bars_500 <- PGT_n_data %>%
     scale_x_continuous(breaks = c(1:6)) +
     scale_y_continuous(limits = c(0, 1)) +
     facet_grid(cols = vars(scenario_number), labeller = scenario_facet_labeller) +
-    labs(title = "(c) Probability of at least one RQ > 500 with Number of APIs", 
+    labs(title = "(c) Joint Probability of RQ > 500", 
          x = "Number of APIs", 
          y = "P(RQ > 500)") +
     theme_bw() +

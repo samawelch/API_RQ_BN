@@ -21,7 +21,7 @@ Hugin_Data_Output_Tall <- Hugin_Data_Output %>%
                                                    pattern = "(?<=\\_)([[:alpha:]]*?)(?=\\=)"))) %>% 
     mutate(API_Name = str_replace(API_Name, "AllAPI", "ΣRQ")) %>% 
     mutate(Risk_Bin = str_extract(Risk_Bin_String, pattern = "(?<==).[a-zA-Z0-9-]+"),
-           API_Name = fct_relevel(API_Name, c("estradiol", "ethinylestradiol", "ciprofloxacin", 
+           API_Name = fct_relevel(API_Name, c("ethinylestradiol", "estradiol", "ciprofloxacin", 
                                               "diclofenac", "ibuprofen", "paracetamol", 
                                               "Estrogens", "Painkillers", "ΣRQ", 
                                               "GT_n_1", "GT_n_2", "GT_n_3", 
