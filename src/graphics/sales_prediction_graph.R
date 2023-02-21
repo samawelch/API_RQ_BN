@@ -20,8 +20,8 @@ Sales_Projections_Records <- Sales_Projections_21C %>%
                                                       Total_Sold_kg,
                                                       Scenario = "Measured")) %>% 
     filter(Year != 2019, Year != 1999) %>% 
-    mutate(API_Name = fct(API_Name, levels = c("ethinylestradiol", "estradiol", "ciprofloxacin",
-                                               "diclofenac", "ibuprofen", "paracetamol")))
+    mutate(API_Name = fct(API_Name, levels = c("ethinylestradiol", "ciprofloxacin", "ibuprofen",
+                                               "estradiol", "diclofenac", "paracetamol")))
 
 figure03_lm_graphs <- ggplot(data = Sales_Projections_Records %>% filter(Scenario != "Measured"),
        mapping = aes(x = Year, 
