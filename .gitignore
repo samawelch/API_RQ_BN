@@ -2,17 +2,17 @@
 .Rhistory
 .RData
 .Ruserdata
-Documents/BN_Paper_Outline.docx
 *.docx
+*.hlg
+*.oobn
+*.tif
+*.pdf
+*.pptx
 Documents/BN_Paper_Outline.docx
 Images/Conceptual_BN_Flow.png
 R/R_Data_Processing.nb.html
 *.pper
 BN/Archive/
 *.pper
-docs/Archive/another_bn_concept.pptx
-docs/Archive/bad_complicated_ bn_prototype.pptx
-docs/Archive/Hugin_Cheat_Sheet.pptx
-docs/Archive/Removal_Calculation_Tester.xlsx
-docs/Archive/SAW_BN_Thoughts.pptx
-docs/Archive/scenarios_diagram.pptx
+docs/Archive/
+docs/revisions/

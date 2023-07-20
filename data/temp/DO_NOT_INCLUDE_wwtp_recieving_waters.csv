@@ -1,0 +1,327 @@
+﻿STP_Code,STP_Name,STP_Capacity,WaterBodyType,NUTS,County,Treatment_Level
+NO0301.0979.01,Bekkelaget renseanlegg med tilførselstuneller og overløp,300000,Coastal water,NO01,Oslo og Akershus,Tertiary
+NO3019.0024.01,Søndre Follo renseanlegg,25000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3021.0016.01,Nordre Follo renseanlegg,56000,Coastal water,NO01,Oslo og Akershus,Tertiary
+NO3022.0019.01,Frogn renseanlegg,24000,Coastal water,NO01,Oslo og Akershus,Tertiary
+NO3023.0015.01,Buhrestua renseanlegg,9030,Coastal water,NO01,Oslo og Akershus,Tertiary
+NO3025.0059.01,Sentralrenseanlegg Vest (VEAS),700000,Coastal water,NO01,Oslo og Akershus,Tertiary
+NO3026.0021.02,Bjørkelangen sentralrenseanlegg,10000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3026.0022.01,Løken renseanlegg,4000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3028.0019.01,Flateby renseanlegg,4000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3028.0038.01,Kirkebygda sentralrenseanlegg,12500,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3030.0078.01,NRA (Nedre Romerike avløpsanlegg),150000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3030.0241.01,Midtre Romerike avløpsselskap IKS (MIRA),63000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3031.0035.01,Rotnes renseanlegg,10000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3031.0036.01,Slattum renseanlegg,7500,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3031.0037.01,Åneby renseanlegg,7500,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3033.0031.01,Kløfta renseanlegg,12000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3033.0071.01,Gardermoen sentralrenseanlegg,75000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3034.0026.01,Fjellfoten renseanlegg,30000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3035.0025.01,Bårlidalen renseanlegg,35000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3037.0003.01,Hurdal Sentrum renseanlegg,2300,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3053.0011.01,Jevnaker renseanlegg,9900,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3054.0009.01,Harestua renseanlegg,6000,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3054.0010.01,Volla renseanlegg,3900,Freshwater,NO01,Oslo og Akershus,Tertiary
+NO3401.0051.02,Kongsvinger renseanlegg,15000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3405.0033.01,Lillehammer renseanlegg,100000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3407.0119.02,Rambekk renseanlegg,45000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3411.0086.01,Moelv renseanlegg,28500,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3411.0233.01,Nes renseanlegg,5000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3413.0082.01,HIAS renseanlegg,165000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3414.0018.01,Sand renseanlegg,3000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3415.0029.01,Skarnes renseanlegg,6600,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3416.0016.01,Skotterud renseanlegg,2800,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3416.0017.01,Magnor renseanlegg,2800,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3417.0023.01,Kirkenær renseanlegg,3000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3418.0037.01,Flisa renseanlegg,8100,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3419.0015.01,Våler renseanlegg,4200,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3420.0049.01,Elverum renseanlegg,42700,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3421.0045.01,"Innbygda renseanlegg, Mosanden",32000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3422.0018.01,Rena rensepark,5300,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3426.0013.01,Tolga renseanlegg,2529,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3427.0041.01,Tynset renseanlegg,3400,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3428.0014.01,Alvdal renseanlegg,9500,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3431.0009.01,Dombås renseanlegg,3700,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3431.0011.01,Dovre renseanlegg,3000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3432.0007.01,Lesja renseanlegg (Hosetmoen),3000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3432.0008.01,Bjorli  renseanlegg,3000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3434.0005.01,Fossbergom renseanlegg,3000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3435.0004.01,Vågåmo renseanlegg,3400,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3436.0008.01,Vinstra renseanlegg,5300,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3437.0016.01,Otta renseanlegg,14000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3439.0009.01,Ringebu kloakkrenseanlegg,3450,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3439.0010.01,Fåvang renseanlegg,8500,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3439.0011.01,Frya avløpsanlegg,9000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3440.0009.01,Tretten renseanlegg,6400,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3442.0013.01,Lena renseanlegg,4150,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3442.0015.01,Kapp renseanlegg,6200,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3442.0017.01,Skreia renseanlegg,12800,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3443.0016.01,Breiskallen renseanlegg,14500,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3446.0017.01,Brandbu renseanlegg,9200,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3447.0008.01,Hov renseanlegg,6200,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3448.0009.01,Dokka renseanlegg,6700,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3451.0008.01,Aurdal renseanlegg,6000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3451.0009.01,Fagernes-Leira renseanlegg,7500,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3452.0005.01,Røn renseanlegg,2100,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3452.0006.01,Vaset renseanlegg,3197,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3453.0007.01,Beito renseanlegg,6000,Freshwater,NO02,Hedmark og Oppland,Tertiary
+NO3001.0055.01,Remmendalen avløpsanlegg,42000,Coastal water,NO03,Sør-Østlandet,Tertiary
+NO3002.0052.03,Kambo avløpsanlegg,26000,Coastal water,NO03,Sør-Østlandet,Tertiary
+NO3002.0153.01,Fuglevik avløpsanlegg,80000,Coastal water,NO03,Sør-Østlandet,Tertiary
+NO3003.0070.01,Alvim renseanlegg,62100,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3004.0134.01,Øra avløpsanlegg,120000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3005.0187.01,Solumstrand avløpsanlegg,130000,Coastal water,NO03,Sør-Østlandet,Tertiary
+NO3005.0201.01,Muusøya avløpsanlegg,22000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3005.0449.01,Mjøndalen avløpsanlegg,25000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3006.0045.01,Sellikdalen avløpsanlegg,24000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3007.0057.01,Monserud avløpsanlegg,24000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3013.0012.01,Bommen avløpsanlegg,2000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3014.0031.04,AHSA avløpsanlegg,41300,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3014.0114.01,Skjønhaug avløpsanlegg,3000,Coastal water,NO03,Sør-Østlandet,Tertiary
+NO3014.0118.01,Mysen avløpsanlegg,14000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3016.0021.01,Bodal avløpsanlegg,30000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3025.0179.01,Lahell avløpsanlegg,6000,Coastal water,NO03,Sør-Østlandet,Tertiary
+NO3038.0006.01,Hole avløpsanlegg,6500,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3040.0012.01,Nesbyen avløpsanlegg,5300,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3041.0011.01,Gol avløpsanlegg,12000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3041.0018.01,Golsfjellet avløpsanlegg,5100,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3042.0008.01,Trøim avløpsanlegg,14000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3043.0040.01,Sundre avløpsanlegg,10500,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3044.0008.01,Geilo avløpsanlegg,30000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3044.0011.01,Ustaoset avløpsanlegg,3450,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3045.0008.01,Eggedal avløpsanlegg,3900,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3045.0014.01,Haglebu avløpsanlegg,2900,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3046.0009.01,Noresund avløpsanlegg,4000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3047.0023.01,Bårud avløpsanlegg,4000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3047.0026.01,Elvika avløpsanlegg,9850,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3048.0031.01,Hokksund avløpsanlegg,16000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3049.0091.01,Linnes avløpsanlegg,26500,Coastal water,NO03,Sør-Østlandet,Tertiary
+NO3801.0045.01,Falkensten renseanlegg,25000,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3802.0025.01,Holmestrand renseanlegg,19300,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3802.0083.01,Lersbryggen renseanlegg,8700,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3803.0110.01,Tønsberg renseanlegg,160000,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3804.0070.01,Sandefjord renseanlegg,41100,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3804.0173.01,Andebu sentrum renseanlegg,2500,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3804.0206.01,Vårnes avløpsrenseanlegg,15000,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3805.0040.01,Lillevik renseanlegg,65000,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3806.0074.01,Knarrdalstrand renseanlegg,82500,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3806.0077.01,Heistad avløpsrenseanlegg,13000,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3807.0106.01,Elstrøm renseanlegg,25500,Freshwater,NO03,Sør-Østlandet,#N/A
+NO3808.0027.01,Ramsflog renseanlegg,20000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3813.0044.01,Salen avløpsrenseanlegg,14000,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3814.0125.01,Kragerø renseanlegg,12000,Coastal water,NO03,Sør-Østlandet,#N/A
+NO3816.0018.01,Søvitt avløpsrenseanlegg,6000,Freshwater,NO03,Sør-Østlandet,#N/A
+NO3817.0015.01,Bø avløpsrenseanlegg,9600,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3818.0025.01,Rjukan avløpsrenseanlegg,7700,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3819.0015.02,Kovstulheia Russmarken avløpsrenseanlegg,10000,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3820.0010.01,Seljord avløpsrenseanlegg,2000,Freshwater,NO03,Sør-Østlandet,#N/A
+NO3821.0008.01,Vrådal renseanlegg,5900,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3823.0005.01,Fyresdal avløpsrenseanlegg,4200,Freshwater,NO03,Sør-Østlandet,Tertiary
+NO3825.0010.01,Rauland avløpsrenseanlegg,14000,Freshwater,NO03,Sør-Østlandet,#N/A
+NO3825.0012.01,Vågslid reinseanlegg,10000,Freshwater,NO03,Sør-Østlandet,#N/A
+NO1101.0039.01,Hestnes renseanlegg,50000,Coastal water,NO04,Agder og Rogaland,Primary
+NO1106.0057.01,Årabrot  avløpsanlegg,62350,Coastal water,NO04,Agder og Rogaland,Primary
+NO1119.0013.02,Grødaland renseanlegg,150000,Coastal water,NO04,Agder og Rogaland,Primary
+NO1119.0030.01,Nærbø avløpsrenseanlegg,30000,Coastal water,NO04,Agder og Rogaland,Primary
+NO1120.0023.01,Vik renseanlegg,65000,Coastal water,NO04,Agder og Rogaland,Secondary
+NO1120.0025.01,Bore avløpsrenseanlegg,30000,Coastal water,NO04,Agder og Rogaland,Primary
+NO1127.0012.01,Sentralrenseanlegget for Nord Jæren SNJ,500000,Coastal water,NO04,Agder og Rogaland,Secondary
+NO4202.0046.01,Groos renseanlegg,25000,Coastal water,NO04,Agder og Rogaland,Tertiary
+NO4203.0106.01,Saulekilen renseanlegg,85000,Coastal water,NO04,Agder og Rogaland,Tertiary
+NO4204.0222.01,Odderøya renseanlegg,200000,Coastal water,NO04,Agder og Rogaland,Tertiary
+NO4204.0338.01,Bredalsholmen renseanlegg,35000,Coastal water,NO04,Agder og Rogaland,Tertiary
+NO4204.0671.01,Høllen renseanlegg,16000,Coastal water,NO04,Agder og Rogaland,Tertiary
+NO4205.0084.01,Grønvika renseanlegg - Mandal,16000,Coastal water,NO04,Agder og Rogaland,Tertiary
+NO4206.0050.01,Huseby renseanlegg,16400,Coastal water,NO04,Agder og Rogaland,Primary
+NO4207.0047.01,Skådeviga renseanlegg,13800,Coastal water,NO04,Agder og Rogaland,Tertiary
+NO4214.0011.01,Neset renseanlegg,4000,Freshwater,NO04,Agder og Rogaland,Tertiary
+NO4215.0030.01,Fossbekk renseanlegg,14000,Coastal water,NO04,Agder og Rogaland,Tertiary
+NO4216.0018.01,Birkeland renseanlegg,4000,Freshwater,NO04,Agder og Rogaland,Tertiary
+NO4219.0019.01,Fennefoss renseanlegg,4500,Freshwater,NO04,Agder og Rogaland,Tertiary
+NO4220.0007.01,Byglandsfjord renseanlegg,2450,Freshwater,NO04,Agder og Rogaland,Tertiary
+NO4221.0012.01,Brokke vatn og avlaupsanlegg/avlaupsverk AS,1050,Freshwater,NO04,Agder og Rogaland,Tertiary
+NO4222.0014.01,Hartevatn renseanlegg,14400,Freshwater,NO04,Agder og Rogaland,Tertiary
+NO4228.0004.01,Handeland renseanlegg - Sirdal,15000,Freshwater,NO04,Agder og Rogaland,Tertiary
+NO1505.0057.01,Grunden,1250,Coastal water,NO05,Vestlandet,Primary
+NO1505.0058.01,Dale,5000,Coastal water,NO05,Vestlandet,Primary
+NO1505.0060.01,Løkkemyra,4900,Coastal water,NO05,Vestlandet,Primary
+NO1505.0061.01,Jonassenskjærva,1000,Coastal water,NO05,Vestlandet,Primary
+NO1505.0063.01,Hagelin,30000,Coastal water,NO05,Vestlandet,Primary
+NO1505.0068.01,Byskogen,200,Coastal water,NO05,Vestlandet,Primary
+NO1506.0047.01,RA1 Cap Clara,8245,Coastal water,NO05,Vestlandet,Primary
+NO1506.0048.01,RA2 Nøisomhed,23000,Coastal water,NO05,Vestlandet,Primary
+NO1507.0094.01,RA5 Breivika,7000,Coastal water,NO05,Vestlandet,Primary
+NO1507.0103.01,RA15 Løvika,300,Coastal water,NO05,Vestlandet,Primary
+NO1507.0107.01,RA4 Åse,25000,Coastal water,NO05,Vestlandet,Tertiary
+NO1507.0109.01,RA18 Borgundgavlen,150,Coastal water,NO05,Vestlandet,Primary
+NO1507.0133.01,RA3 Larsgården,8000,Coastal water,NO05,Vestlandet,Primary
+NO1507.0151.01,RA2 Aspøy,21000,Coastal water,NO05,Vestlandet,Primary
+NO1507.0182.01,RA6 Flisnes,16500,Coastal water,NO05,Vestlandet,Primary
+NO1507.0214.01,RA21 Bingsa,400,Coastal water,NO05,Vestlandet,Primary
+NO1507.0246.01,RA1 Hessa,5000,Coastal water,NO05,Vestlandet,Primary
+NO1507.0248.01,RA20 Flatholmen,500,Coastal water,NO05,Vestlandet,Primary
+NO1507.0254.01,RA26 Hankane,250,Coastal water,NO05,Vestlandet,Secondary
+NO1531.0025.01,RA1-Geilneset,5000,Coastal water,NO05,Vestlandet,Primary
+NO1531.0026.01,RA2 Djupvika,3000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0295.05,Lokketona,170,Coastal water,NO05,Vestlandet,Primary
+NO4601.0318.01,Mjølkeråen,2500,Coastal water,NO05,Vestlandet,Primary
+NO4601.0319.01,Alvøen,111,Coastal water,NO05,Vestlandet,Primary
+NO4601.0320.01,Tellevik,3000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0321.01,Kjøkkelvik,3000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0323.01,Steinestø,3000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0324.01,Fagerdalen,3000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0325.01,Godvik,3200,Coastal water,NO05,Vestlandet,Primary
+NO4601.0328.01,Håkonshella,140,Coastal water,NO05,Vestlandet,Primary
+NO4601.0329.01,Saudalskleivane,140,Coastal water,NO05,Vestlandet,Primary
+NO4601.0330.01,Flesland renseanlegg,152000,Coastal water,NO05,Vestlandet,Secondary
+NO4601.0333.01,Hagardsviken-Garnes,700,Coastal water,NO05,Vestlandet,Primary
+NO4601.0334.01,Garnes,15000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0335.01,Helleneset,1500,Coastal water,NO05,Vestlandet,Primary
+NO4601.0336.01,Eikeviken,1200,Coastal water,NO05,Vestlandet,Primary
+NO4601.0337.01,Knappen renseanlegg,63000,Coastal water,NO05,Vestlandet,Tertiary
+NO4601.0338.01,Kvernevik,56000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0340.01,Lokketodalen,700,Coastal water,NO05,Vestlandet,Primary
+NO4601.0341.01,Drotningsvik,3000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0342.01,Kistebakkane,205,Coastal water,NO05,Vestlandet,Primary
+NO4601.0344.01,Holen renseanlegg,134000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0400.01,Hordvikneset,190,Coastal water,NO05,Vestlandet,Primary
+NO4601.0402.01,Naustvegen,250,Coastal water,NO05,Vestlandet,Primary
+NO4601.0403.01,Skarehaugane,190,Coastal water,NO05,Vestlandet,Primary
+NO4601.0404.01,Skareveien,125,Coastal water,NO05,Vestlandet,Primary
+NO4601.0405.01,Slembevegen,50,Coastal water,NO05,Vestlandet,Primary
+NO4601.0406.01,Ytre Morvik,150,Coastal water,NO05,Vestlandet,Primary
+NO4601.0407.01,Ytre Sandviken RA,44000,Coastal water,NO05,Vestlandet,Primary
+NO4601.0853.01,Brøstaneset renseanlegg,210,Coastal water,NO05,Vestlandet,Secondary
+NO4602.0023.01,Fjord Base AS,300,Coastal water,NO05,Vestlandet,Primary
+NO4602.0024.01,Storåsen Sør (RD 9),1943,Coastal water,NO05,Vestlandet,Primary
+NO4602.0027.01,Kvalvågen (RD 4),730,Coastal water,NO05,Vestlandet,Primary
+NO4602.0028.01,Brandsøyåsen Nord-Vest,514,Coastal water,NO05,Vestlandet,Primary
+NO4602.0029.01,Solheimsfeltet (RD 11),1251,Coastal water,NO05,Vestlandet,Primary
+NO4602.0031.01,FLO32 Krokane Vest-Nygård,460,Coastal water,NO05,Vestlandet,Primary
+NO4602.0032.01,Ragnarrud/Hovland,1764,Coastal water,NO05,Vestlandet,Primary
+NO4602.0033.01,Kleven Florø AS,180,Coastal water,NO05,Vestlandet,Primary
+NO4602.0037.01,Sentrum,100,Coastal water,NO05,Vestlandet,Primary
+NO4602.0039.01,Nordnes,191,Coastal water,NO05,Vestlandet,Primary
+NO4602.0040.01,Breivika,680,Coastal water,NO05,Vestlandet,Not Connected
+NO4602.0041.01,Havreneset Sør (RD 6),979,Coastal water,NO05,Vestlandet,Primary
+NO4602.0044.01,Kleiva/Soldal,1174,Coastal water,NO05,Vestlandet,Primary
+NO4602.0046.01,Industrivegen (RD 7),214,Coastal water,NO05,Vestlandet,Primary
+NO4602.0047.01,Gunnhildvågen (RD 8),449,Coastal water,NO05,Vestlandet,Primary
+NO4602.0048.01,FLO26 Brendøyvn/Kystmuseet,800,Coastal water,NO05,Vestlandet,Primary
+NO4602.0050.01,FLO28 Gaddevågen (29-30-31),680,Coastal water,NO05,Vestlandet,Primary
+NO4602.0052.01,Brandsøysundet (RD 14),740,Coastal water,NO05,Vestlandet,Primary
+NO4602.0098.01,Kanalen Sør (RD10),2682,Coastal water,NO05,Vestlandet,Primary
+NO4602.0109.01,Silanlegg Sentrum/Stranda (RD3),8000,Coastal water,NO05,Vestlandet,Primary
+NO4614.0026.01,"Aker Stord II, Kjøtteinståa",1000,Coastal water,NO05,Vestlandet,Secondary
+NO4614.0058.01,"Aker Stord I, Eldøyane",1000,Coastal water,NO05,Vestlandet,Primary
+NO4614.0065.01,Leirvik Nord  - Frugarden avløpsanlegg,2600,Coastal water,NO05,Vestlandet,Primary
+NO4614.0068.01,Djupavik,4200,Coastal water,NO05,Vestlandet,Primary
+NO4614.0102.01,Skjersholmane,6700,Coastal water,NO05,Vestlandet,Primary
+NO4618.0052.01,Håra AR,2100,Freshwater,NO05,Vestlandet,Tertiary
+NO4618.0053.01,Seljestad AR,3000,Freshwater,NO05,Vestlandet,Tertiary
+NO4621.0040.02,Voss reinseanlegg,20000,Freshwater,NO05,Vestlandet,Tertiary
+NO4621.0069.01,Myrkdalen reinseanlegg,2420,Freshwater,NO05,Vestlandet,Tertiary
+NO4622.0023.01,Laupsa,300,Coastal water,NO05,Vestlandet,Primary
+NO4622.0031.01,Tolo renseanlegg - Norheimsund,6349,Coastal water,NO05,Vestlandet,Primary
+NO4622.0058.01,Notaneset renseanlegg,4800,Coastal water,NO05,Vestlandet,Primary
+NO4624.0030.01,Oselv,8000,Coastal water,NO05,Vestlandet,Primary
+NO4624.0031.01,Solstrand fjordhotell,914,Coastal water,NO05,Vestlandet,Primary
+NO4624.0033.01,"Halhjem, Auredalen",1500,Coastal water,NO05,Vestlandet,Primary
+NO4624.0040.01,Kunhlevågen,2100,Coastal water,NO05,Vestlandet,Primary
+NO4624.0066.01,Solstrandsfjæra,300,Coastal water,NO05,Vestlandet,Primary
+NO4624.0067.01,Tøkjesundet sør,233,Coastal water,NO05,Vestlandet,Primary
+NO4626.0037.01,Brattholmen,1200,Coastal water,NO05,Vestlandet,Primary
+NO4626.0043.01,Hjelteryggen,1400,Coastal water,NO05,Vestlandet,Primary
+NO4626.0049.01,Søre Straumetoppen,75,Coastal water,NO05,Vestlandet,Primary
+NO4626.0052.01,Bildøy Sør,1088,Coastal water,NO05,Vestlandet,Primary
+NO4626.0054.01,Valen,1500,Coastal water,NO05,Vestlandet,Primary
+NO4626.0079.01,Våge RA,5600,Coastal water,NO05,Vestlandet,Primary
+NO4626.0127.01,Knarrevik avløpsanlegg,440,Coastal water,NO05,Vestlandet,Primary
+NO4627.0037.01,Strand,300,Coastal water,NO05,Vestlandet,Primary
+NO4627.0038.01,Marikovneset,120,Coastal water,NO05,Vestlandet,Primary
+NO4627.0039.01,Marikoven  - Nord,500,Coastal water,NO05,Vestlandet,Primary
+NO4627.0040.01,"Træet, Follese",1600,Coastal water,NO05,Vestlandet,Primary
+NO4627.0046.01,Bakervågen I,250,Coastal water,NO05,Vestlandet,Primary
+NO4627.0047.01,Bakervågen II,250,Coastal water,NO05,Vestlandet,Primary
+NO4627.0048.01,Ekrene Florvåg,275,Coastal water,NO05,Vestlandet,Primary
+NO4627.0049.01,Badeelva,3000,Coastal water,NO05,Vestlandet,Primary
+NO4627.0050.01,Askehavn,300,Coastal water,NO05,Vestlandet,Primary
+NO4627.0051.01,Juvik,2500,Coastal water,NO05,Vestlandet,Primary
+NO4627.0052.01,Kyrkjevika (o),200,Coastal water,NO05,Vestlandet,Primary
+NO4627.0056.01,Drageide (Florvåg),3500,Coastal water,NO05,Vestlandet,Primary
+NO4627.0061.01,Skogliheimen I,100,Coastal water,NO05,Vestlandet,Primary
+NO4627.0062.01,Skogliheimen II,120,Coastal water,NO05,Vestlandet,Primary
+NO4627.0063.01,Kleppestø renseanlegg,7000,Coastal water,NO05,Vestlandet,Primary
+NO4627.0066.01,"Skiftesvik, Strusshamn",100,Coastal water,NO05,Vestlandet,Primary
+NO4627.0099.01,Flensberghamn (p),75,Coastal water,NO05,Vestlandet,Primary
+NO4627.0100.01,Kyrkjevika (p),200,Coastal water,NO05,Vestlandet,Primary
+NO4627.0102.01,Hopshamn,150,Coastal water,NO05,Vestlandet,Primary
+NO4627.0103.01,Olaviken,450,Coastal water,NO05,Vestlandet,Primary
+NO4627.0104.01,Skogsvik I,350,Coastal water,NO05,Vestlandet,Primary
+NO4627.0105.01,Skogsvik II,50,Coastal water,NO05,Vestlandet,Primary
+NO4627.0106.01,Marikovfjæra,250,Coastal water,NO05,Vestlandet,Primary
+NO4627.0107.01,Alvheimsfeltet,110,Coastal water,NO05,Vestlandet,Primary
+NO4627.0108.01,Søre Østerdalen,50,Coastal water,NO05,Vestlandet,Primary
+NO4627.0109.01,Gullskjærvik,100,Coastal water,NO05,Vestlandet,Primary
+NO4627.0111.01,Skarholmen renseanlegg,100,Coastal water,NO05,Vestlandet,Primary
+NO4627.0112.01,Sveabrotet,300,Coastal water,NO05,Vestlandet,Primary
+NO4627.0113.01,Marikoven Sør,450,Coastal water,NO05,Vestlandet,Primary
+NO4627.0114.01,Follesevågen,150,Coastal water,NO05,Vestlandet,Primary
+NO4627.0115.01,"Haugadalen, Follese",200,Coastal water,NO05,Vestlandet,Primary
+NO4627.0116.01,"Eide, Hetlevik",800,Coastal water,NO05,Vestlandet,Primary
+NO4627.0117.01,"Fabrikken, Hetlevik",200,Coastal water,NO05,Vestlandet,Primary
+NO4627.0119.01,Lavik,90,Coastal water,NO05,Vestlandet,Primary
+NO4627.0120.01,Polleelva,1500,Coastal water,NO05,Vestlandet,Primary
+NO4627.0121.01,Kråvik,300,Coastal water,NO05,Vestlandet,Primary
+NO4627.0122.01,Tømmervik (p),50,Coastal water,NO05,Vestlandet,Primary
+NO4627.0123.01,Hauglandshella,3500,Coastal water,NO05,Vestlandet,Primary
+NO4627.0124.01,Kollevåg,300,Coastal water,NO05,Vestlandet,Primary
+NO4627.0125.01,Ytre Skarholmen renseanlegg,200,Coastal water,NO05,Vestlandet,Secondary
+NO4627.0137.01,Strusshamn renseanlegg,3500,Coastal water,NO05,Vestlandet,Primary
+NO4627.0143.03,Horsøy renseanlegg,300,Coastal water,NO05,Vestlandet,Secondary
+NO4627.0196.01,Tveitevågen renseanlegg,520,Coastal water,NO05,Vestlandet,Tertiary
+NO4647.0021.01,Førde by - Øyrane reinseanlegg,32000,Coastal water,NO05,Vestlandet,Tertiary
+NO4650.0016.01,Byrkjelo,7800,Freshwater,NO05,Vestlandet,Tertiary
+NO5001.0210.01,Ladehammeren renseanlegg,122000,Coastal water,NO06,Trøndelag,Primary
+NO5001.0214.01,Høvringen renseanlegg,170000,Coastal water,NO06,Trøndelag,Primary
+NO5001.0465.01,Ostangen renseanlegg,3800,Freshwater,NO06,Trøndelag,Primary
+NO5006.0072.01,Løsberga renseanlegg,32000,Freshwater,NO06,Trøndelag,Primary
+NO5007.0058.01,Tiendeholmen renseanlegg,22500,Coastal water,NO06,Trøndelag,Primary
+NO5021.0014.03,Oppdal sentrum renseanlegg,10800,Freshwater,NO06,Trøndelag,Secondary
+NO5025.0023.01,Røros renseanlegg,5000,Freshwater,NO06,Trøndelag,Tertiary
+NO5027.0018.01,Moøya renseanlegg,5000,Freshwater,NO06,Trøndelag,Tertiary
+NO5028.0029.01,Varmbo renseanlegg,14000,Freshwater,NO06,Trøndelag,Primary
+NO5034.0007.01,Meråker renseanlegg,3200,Freshwater,NO06,Trøndelag,Tertiary
+NO5035.0071.01,Stjørdal ARA renseanlegg,35000,Coastal water,NO06,Trøndelag,Tertiary
+NO5037.0051.01,Levanger sentrum Havna renseanlegg,17700,Coastal water,NO06,Trøndelag,Tertiary
+NO5038.0060.01,Ørin renseanlegg,28000,Coastal water,NO06,Trøndelag,Tertiary
+NO5059.0029.01,Gammelosen renseanlegg,14000,Coastal water,NO06,Trøndelag,Primary
+NO1804.0080.01,Alstad renseanlegg,780,Coastal water,NO07,Nord-Norge,Primary
+NO1804.0081.01,Hammervika renseanlegg,7000,Coastal water,NO07,Nord-Norge,Primary
+NO1804.0088.01,Mørkvedodden renseanlegg,11000,Coastal water,NO07,Nord-Norge,Primary
+NO1804.0145.01,Kvalvikodden renseanlegg,15500,Coastal water,NO07,Nord-Norge,Primary
+NO1804.0147.01,Jensvoll renseanlegg,3100,Coastal water,NO07,Nord-Norge,Primary
+NO1804.0151.01,Skansenodden renseanlegg,6150,Coastal water,NO07,Nord-Norge,Primary
+NO1806.0049.01,Narvik renseanlegg,15000,Coastal water,NO07,Nord-Norge,Primary
+NO1824.0043.01,Mosjøen (Bordvedneset),10000,Coastal water,NO07,Nord-Norge,Primary
+NO1824.0046.01,Kulstad renseanlegg,7000,Coastal water,NO07,Nord-Norge,Primary
+NO1833.0081.01,Langnes avløpsrenseanlegg,74,Coastal water,NO07,Nord-Norge,Primary
+NO1833.0083.01,Ytre-Båsmo avløpsrenseanlegg,84,Coastal water,NO07,Nord-Norge,Primary
+NO1833.0084.01,Moskjæran avløpsrenseanlegg,6550,Coastal water,NO07,Nord-Norge,Primary
+NO1833.0085.01,Mjølan avløpsrenseanlegg,19200,Coastal water,NO07,Nord-Norge,Primary
+NO5401.0143.01,Strandvegen renseanlegg,20500,Coastal water,NO07,Nord-Norge,Primary
+NO5401.0152.01,Breivika avløpsrenseanlegg,18700,Coastal water,NO07,Nord-Norge,Primary
+NO5401.0155.01,Tomasjord  avløpsrenseanlegg,38400,Coastal water,NO07,Nord-Norge,Primary
+NO5401.0159.01,Langnes avløpsrenseanlegg,19300,Coastal water,NO07,Nord-Norge,Primary
+NO5402.0072.01,Bergsodden renseanlegg,5500,Coastal water,NO07,Nord-Norge,Primary
+NO5402.0074.01,Medkila renseanlegg,4200,Coastal water,NO07,Nord-Norge,Primary
+NO5402.0075.01,Stangnes renseanlegg,7000,Coastal water,NO07,Nord-Norge,Primary
+NO5402.0076.01,Ruggevik renseanlegg,1215,Coastal water,NO07,Nord-Norge,Primary
+NO5402.0077.01,Holte renseanlegg,1215,Coastal water,NO07,Nord-Norge,Primary
+NO5402.0080.01,Holstneset renseanlegg,10000,Coastal water,NO07,Nord-Norge,Primary
+NO5402.0081.01,Trondenes (Revsbekken) renseanlegg,2500,Coastal water,NO07,Nord-Norge,Primary
+NO5406.0123.01,Renseanlegg Hammerfest tettsted (Rossmolla),12600,Coastal water,NO07,Nord-Norge,Primary
+NO5416.0012.01,Bardu renseanlegg,8500,Freshwater,NO07,Nord-Norge,Tertiary
+NO5418.0019.01,Øverbygd renseanlegg,3350,Freshwater,NO07,Nord-Norge,Tertiary
+NO5418.0022.01,Andslimoen renseanlegg,12800,Freshwater,NO07,Nord-Norge,Tertiary
+NO5437.0005.02,Karasjok tettsted avløpsrenseanlegg,6161,Freshwater,NO07,Nord-Norge,Tertiary

@@ -1,7 +1,7 @@
 {
     "installOptions": {
         "installFromRepository": true,
-        "libraryPath": "C:/Users/SAW/OneDrive/Projects/Papers/03_Bayesian_Mixture_Toxicity/API_RQ_BN/renv/library/R-4.2/x86_64-w64-mingw32",
+        "libraryPath": "C:/Users/SAW/R/win-library/4.3.1",
         "installDependencies": true
     }
 }

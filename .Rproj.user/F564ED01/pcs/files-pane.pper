@@ -1,13 +1,13 @@
 {
     "sortOrder": [
         {
-            "columnIndex": 4,
-            "ascending": false
-        },
-        {
             "columnIndex": 2,
             "ascending": true
+        },
+        {
+            "columnIndex": 4,
+            "ascending": false
         }
     ],
-    "path": "C:/Users/SAW/OneDrive/Projects/Papers/03_Bayesian_Mixture_Toxicity/API_RQ_BN/src/graphics"
+    "path": "C:/Users/SAW/OneDrive/Projects/Papers/03_Bayesian_Mixture_Toxicity/API_RQ_BN_IEAM_revision/src/graphics"
 }
