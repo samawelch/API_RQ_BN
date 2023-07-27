@@ -1,5 +1,22 @@
-# Make a map of Norway with pie charts per fylke depicting access to various WWTP levels
-# I'd love to do this automatically, but scatterpie is too primitive and I'm strapped for time
+# Append county names to the CSDS map file, and find centroids for future use
+
+Norway_counties_sf <- nor_county_map_b2020_default_sf |> 
+    mutate(County_Code = str_extract(location_code, "[0-9]{2}"))
+
+# Append county names to the SPL map
+Norway_county_map_names <- Norway_counties_sf %>% 
+    left_join(county_codes, by = "County_Code") %>% 
+    left_join(pop_by_county_2020, by = "County_Name")
+
+# Find the centroids of counties for better labelling
+# Norway_county_map_centroids <- Norway_county_map_names %>% 
+#     group_by(County_Name) %>% 
+#     st_centroid()
+
+Norway_county_map <- ggplot(data = Norway_county_map_names) + 
+    geom_sf(color = "grey",
+            linewidth = 0.3) +
+    theme_void() 
 
 Norway_county_map_data <- Norway_county_map_names %>% 
     select(-Population) %>% 
@@ -12,21 +29,23 @@ Norway_County_General_2020 <- Norway_County_General_2020 %>%
                                                           `Semi-` = "S",
                                                           Rural = "R")))
 
-library("rnaturalearth")
-library("rnaturalearthdata")
-library(ggrepel)
 
-Norway_ylim <- c(min(Norway_counties_dataframe$lat) - 0.5, max(Norway_counties_dataframe$lat) + 0.5)
-Norway_xlim <- c(min(Norway_counties_dataframe$long) - 0.5, max(Norway_counties_dataframe$long) + 0.5)
+# 
+# Norway_ylim <- c(4.641979 - 0.5, max(Norway_counties_dataframe$lat) + 0.5)
+# Norway_xlim <- c(min(Norway_counties_dataframe$long) - 0.5, max(Norway_counties_dataframe$long) + 0.5)
 
-world <- ne_countries(scale = "medium", returnclass = "sf")
-class(world)
+# Switch to planar geometry (needed to crop world to bounding box)
+sf_use_s2(FALSE)
+
+world <- ne_countries(scale = "medium", returnclass = "sf") |> 
+    st_make_valid() |> 
+    st_crop(xmin = -1, ymin = 57, xmax = 32, ymax = 73) 
 
 Norway_county_map <- ggplot(data = world) + 
     geom_sf() +
     geom_sf(data = Norway_county_map_data, aes(fill = Type)) +
+    coord_sf(expand = FALSE) +
     theme_bw() +
-    coord_sf(xlim = Norway_xlim, ylim = Norway_ylim, expand = FALSE) +
     scale_fill_brewer(palette = "Paired") +
     geom_label_repel(Norway_county_map_data, 
                      mapping = aes(label = County_Name,
@@ -106,10 +125,10 @@ Norway_county_boxplots <- plot_grid(Norway_county_boxplot_urb,
                                     Norway_county_boxplot_ww,
                                     Norway_county_boxplot_wwt, 
                                     nrow = 4)
-Norway_county_graphic <- plot_grid(Norway_county_map,
+figureS01_counties <- plot_grid(Norway_county_map,
                                    Norway_county_boxplots,
                                    nrow = 1,
                                    rel_widths = c(1.5, 1.5),
                                    align = "h")
 
-Norway_county_graphic
+figureS01_counties

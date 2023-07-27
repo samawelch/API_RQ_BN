@@ -1,7 +1,6 @@
 # Make data files for automated data input/output to Hugin
 
-All_RQ_Interval_Nodes <- c(paste0("API_RQ_FW_", tolower(analysed_APIs)),
-                                c("Sum_RQ_Estrogens", "Sum_RQ_Analgesics","Sum_RQ_Total"))
+All_RQ_Interval_Nodes <- c(paste0("API_RQ_FW_", tolower(analysed_APIs)))
 # 
 # All_RQ_Boolean_Nodes <- c("PRQ_GT_n_1", "PRQ_GT_n_2", "PRQ_GT_n_3", "PRQ_GT_n_4", "PRQ_GT_n_5", "PRQ_GT_n_6")
 # 

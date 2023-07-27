@@ -3,8 +3,6 @@ title: "Bayesian Network Environmental Risk Assessment of Pharmaceuticals"
 output: html_notebook
 ---
 
-Code for messing around with maps of Norway and WWTP by county.
-
 # 1. Setup
 
 ```{r packages}
@@ -12,13 +10,19 @@ Code for messing around with maps of Norway and WWTP by county.
 library(tidyverse)
 library(readxl)
 library(glue)
-library(rgdal)
-options("rgdal_show_exportToProj4_warnings"="none")
-library(sf)
+
+# ggplot extensions
 library(cowplot)
 library(ggpmisc)
-library(here)
+library(ggrepel)
 library(ragg)
+library(EnvStats)
+
+# Mapping/GIS
+library(sf)
+suppressMessages(library(rnaturalearth)) # supress warnings about sf package depreciation
+library(rnaturalearthdata)
+library(csmaps)
 
 `%notin%` <- negate(`%in%`)
 
@@ -34,33 +38,17 @@ Import Statistics Norway and Norwegian Institute for Public Health (NIPH) data a
 ```{r data_import}
 getwd()
 # Various Statistics Norway datasets
-source(file = "src/data_importers/statistics_norway_import.R")
+source(file = "src/data_importers/import_Norway_data.R")
 
-# SPL maps from the Norwegian Institute for Public Health
-# source(file = "src/data_importers/spl_map_import.R")
+# Sales weights for 6 high-risk APIs, adapted from NIPH data
+source(file = "src/data_importers/import_sales.R")
 
-# Sales weights for 8 high-risk APIs, adapted from NIPH data
-source(file = "src/data_importers/API_sales_import.R")
-# Filter to the 6 APIs used in the Bayesian Network
-analysed_APIs <- c("estradiol", "ethinylestradiol", "diclofenac", 
-                      "ibuprofen", "paracetamol", "ciprofloxacin")
-API_sales_weights_1999_2018 <- API_sales_weights_1999_2018 %>% 
-  filter(API_Name %in% analysed_APIs)
 # API PNECs from various sources
-source(file = "src/data_importers/API_PNEC_import.R")
+source(file = "src/data_importers/import_PNECs.R")
 
 # van Dijk et al.'s unpublished pharmaceutical removal rates dataset
-source(file = "src/data_importers/WWT_removal_import.R")
-# match names using InChIKeys and filter results
-API_removal_rates <- API_removal_rates %>% 
-  left_join(API_sales_weights_1999_2018 %>% select(API_Name, InChIKey_string), 
-            by = "InChIKey_string") %>% 
-  distinct() %>% 
-  mutate(API_Name = case_when(InChIKey_string == "mean" ~ "mean",
-        TRUE ~ API_Name)) %>% 
-  filter(!is.na(API_Name))
+source(file = "src/data_importers/import_removal.R")
 ```
-
 
 # 3. Methods
 
@@ -72,41 +60,25 @@ next highest 0.5. This is replicated here so we can check our choices of LM para
 source(file = "src/data_processing/pop_discretisation_Norway.R")
 ```
 
-```{r data_processing_maps}
-# Set up a base map of Norway
-# source(file = "src/data_processing/map_preparation.R")
-```
-
-```{r map_of_counties}
-# library(ragg)
-# ## Figure 02 ##
-# # source(file = "src/graphics/WWTP_share_map.R")
-# 
-# Norway_county_graphic 
-# 
-# ggsave(filename = "output/images/ready/figure02_counties.png", device = agg_png,
-#        width = 30, height = 20, units = "cm", res = 300,
-#        scaling = 1.3) 
-
-```
-
 Calculate a linear model of Sales weight (kg), explained by population (mil) and year, plus
 an intercept. This is used to predict sales weights under various population scenarios to 2050.
 
+## 3.1 API LMs & Figure 02
+
 ```{r data_processing_API}
-## Figure 03 ##
+## Figure 02 ##
 
 # Fit linear models to sales data, and predict future sales from models
 source(file = "src/data_processing/API_sales_LM.R")
 # Graph out predictions from LMs
 source(file = "src/graphics/make_figure02_sales.R")
-figure03_lm_graphs 
+figure02_sales 
 
-ggsave(filename = "output/images/ready/figure02_sales.png", device = agg_png, 
+ggsave(filename = "output/images/ready/figure02_sales.tif", device = "tiff",
        width = 23, height = 18, units = "cm", dpi = 300,
        scaling = 1.2)
 
-# Table 03
+## Table 03 ##
 write_excel_csv(x = LM_parameters, file = "output/tables/tab_03_lm_params.csv")
 ```
 
@@ -121,7 +93,7 @@ source(file = "src/data_processing/R_to_Hugin.R")
 Now re-import data from Hugin
 
 ```{r data_import_Hugin}
-source(file = "src/data_importers/Hugin_to_R_importer.R")
+source(file = "src/data_importers/import_Hugin_data.R")
 # save a copy of data to output
 write_excel_csv(x = Hugin_Data_Output_Tall_Labelled,
                 file = "output/data/data_output.csv")
@@ -131,30 +103,48 @@ write_excel_csv(x = Hugin_Data_Output_Tall_Labelled,
 
 # 4. Results
 
-```{r rq_by_year_growth}
+## 4.1 Figure 04
+
+```{r make_figure04_population}
+## Figure 04 ##
+source(file = "src/graphics/make_figure04_population.R")
+
+figure04_population
+
+ggsave(filename = "output/images/ready/figure04_population.tiff", device = "tiff", 
+       width = 20, height = 20, units = "cm")
+
+```
+
+## 4.2 Figure 05
+
+```{r make_figure05_WWT}
 ## Figure 05 ##
-source(file = "src/graphics/RQ_yeargrowth_bars.R")
+source(file = "src/graphics/make_figure05_WWT.R")
 
-RQ_Distribts_by_Year_Growth
+figure05_WWT
 
-# 7:8 Aspect Ratio to keep API names in full view
-ggsave(filename = "output/images/ready/figure05_yeargrowth_RQ.png", device = "png", 
-       width = 20, height = 20, units = "cm")
-
-```
-
-```{r WWTP_bar}
-## Figure 06 ##
-source(file = "src/graphics/WWTP_RQ_bars.R")
-WWTP_RQ_bars
-
-ggsave(filename = "output/images/ready/figure06_wwtp_scenario_RQ.png", device = "png", 
+ggsave(filename = "output/images/ready/figure05_WWT.tif", device = "tiff", 
        width = 20, height = 20, units = "cm")
 ```
-```{r combined_risk_bar}
-## Figure 07 ##
-source(file = "src/graphics/combined_vs_join_prob.R")
-combined_join_comparison_bars
-ggsave(filename = "output/images/ready/figure07_combined_vs_joint_RQ.png", device = "png", 
+
+## 4.3 Figure 06
+
+```{r summed_deterministic_risk}
+source(file = "src/graphics/make_figure06_summed.R")
+
+figure06_summed
+
+ggsave(filename = "output/images/ready/figure06_summed.tif", device = "tiff", 
        width = 20, height = 20, units = "cm")
+```
+
+# S1. Supporting Information
+
+```{r make_supporting_figures}
+source(file = "src/graphics/make_figureS01_counties.R")
+# figure S02 is hand-made
+source(file = "src/graphics/make_figureS03_removal.R")
+source(file = "src/graphics/make_figureS04_normals.R")
+source(file = "src/graphics/make_figureS05_population.R")
 ```
